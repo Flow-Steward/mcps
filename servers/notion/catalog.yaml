@@ -1,14 +1,13 @@
 # Reviewed 2026-10-10: https://developers.notion.com/docs/get-started-with-mcp names https://mcp.notion.com/mcp; sign-in is OAuth with dynamic client registration.
-revision: 1
+revision: 2
 source:
   registry: com.notion/mcp
 title: Notion
 description: Search, read, and update Notion pages and databases, and create new pages in the workspaces
-  you authorize.
+  you authorize. The user signs in to Notion and picks the pages the connection may use.
 category: productivity
 website_url: https://www.notion.com
 help_url: https://developers.notion.com/docs/get-started-with-mcp
-preview_note: The user signs in to Notion and picks the pages the connection may use.
 official:
   vendor: Notion
   evidence_url: https://developers.notion.com/docs/get-started-with-mcp

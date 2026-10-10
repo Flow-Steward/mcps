@@ -1,14 +1,13 @@
 # Reviewed 2026-10-10: https://docs.gitlab.com/user/model_context_protocol/mcp_server/ names https://gitlab.com/api/v4/mcp; sign-in is OAuth with dynamic client registration.
-revision: 1
+revision: 2
 source:
   registry: com.gitlab/mcp
 title: GitLab
 description: 'Work with GitLab.com projects: read and create issues and merge requests, search code, and
-  inspect pipelines.'
+  inspect pipelines. MCP access must be turned on for the top-level group on GitLab.com.'
 category: developer-tools
 website_url: https://about.gitlab.com
 help_url: https://docs.gitlab.com/user/model_context_protocol/mcp_server/
-preview_note: MCP access must be turned on for the top-level group on GitLab.com.
 official:
   vendor: GitLab
   evidence_url: https://docs.gitlab.com/user/model_context_protocol/mcp_server/
