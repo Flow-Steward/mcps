@@ -1,0 +1,38 @@
+name: Validate submission
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The base branch is needed to require a raised revision on every changed entry.
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Test the index builder
+        run: python -m pytest -q scripts
+      - name: Check the entries with the base branch's checker
+        env:
+          FS_CATALOG_ROOT: ${{ github.workspace }}
+        run: |
+          # The pull request's own copy of the checker is not trusted to judge it.
+          # Until the first merge the base branch has none, so the bootstrap uses its own.
+          if git show "origin/${{ github.base_ref }}:scripts/build_index.py" > "$RUNNER_TEMP/build_index.py" 2>/dev/null; then
+            checker="$RUNNER_TEMP/build_index.py"
+          else
+            checker=scripts/build_index.py
+          fi
+          python "$checker" --check --base "origin/${{ github.base_ref }}"
+      - name: The categories are the extension catalog's
+        # One list for every catalog: change it in Flow-Steward/extensions, then copy it here.
+        run: curl -fsSL https://raw.githubusercontent.com/Flow-Steward/extensions/main/categories.json | diff - categories.json

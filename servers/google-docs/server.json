@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/google-docs",
+  "title": "Google Docs",
+  "description": "Google Docs MCP server from Google Workspace (Developer Preview).",
+  "version": "1.0.0",
+  "websiteUrl": "https://workspace.google.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://docsmcp.googleapis.com/mcp/v1"
+    }
+  ]
+}

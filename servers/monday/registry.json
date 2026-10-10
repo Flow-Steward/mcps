@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2025-10-23T14:57:35.277178Z",
+      "status": "active",
+      "statusChangedAt": "2025-10-23T14:57:35.277178Z",
+      "updatedAt": "2025-10-23T14:57:35.277178Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+    "description": "MCP server for monday.com integration.",
+    "name": "com.monday/monday.com",
+    "remotes": [
+      {
+        "headers": [
+          {
+            "description": "monday.com API token (format: 'Bearer your_token_here' or just 'your_token_here')",
+            "isSecret": true,
+            "name": "Authorization"
+          }
+        ],
+        "type": "streamable-http",
+        "url": "https://mcp.monday.com/mcp"
+      },
+      {
+        "headers": [
+          {
+            "description": "monday.com API token (format: 'Bearer your_token_here' or just 'your_token_here')",
+            "isSecret": true,
+            "name": "Authorization"
+          }
+        ],
+        "type": "sse",
+        "url": "https://mcp.monday.com/sse"
+      }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/mondaycom/mcp"
+    },
+    "version": "0.0.1"
+  }
+}

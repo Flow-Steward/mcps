@@ -1,0 +1,43 @@
+name: Publish index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "servers/**"
+      - "categories.json"
+      - "scripts/build_index.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-index
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Commit times and the commit that last changed each icon come from history.
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Build index.json
+        run: python scripts/build_index.py
+      - name: Commit index.json when it changed
+        run: |
+          git add index.json
+          if git diff --cached --quiet; then
+            echo "index.json is up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Publish index"
+          git push

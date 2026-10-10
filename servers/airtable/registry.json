@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-05-08T19:18:18.585221Z",
+      "status": "active",
+      "statusChangedAt": "2026-05-08T19:18:18.585221Z",
+      "updatedAt": "2026-05-08T19:18:18.585221Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Official Airtable MCP server — database and operations layer for agents.",
+    "name": "com.airtable/mcp",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.airtable.com/mcp"
+      }
+    ],
+    "version": "0.1.0"
+  }
+}

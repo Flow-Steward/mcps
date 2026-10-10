@@ -1,0 +1,33 @@
+# Google Workspace MCP (Developer Preview). Not in the MCP Registry, so server.json is written here.
+# Needs the Developer Preview Program, a Google Cloud project with the MCP service enabled,
+# and the user's own OAuth client (Google offers no dynamic client registration).
+# Scopes and authorization parameters carried over unchanged from Flow Steward's former template.
+revision: 1
+title: Google Calendar
+description: Read calendars and events and check free/busy time in Google Calendar. Read-only access.
+category: productivity
+website_url: https://workspace.google.com
+help_url: https://developers.google.com/workspace/guides/configure-mcp-servers
+preview_note: Developer Preview
+official:
+  vendor: Google
+  evidence_url: https://developers.google.com/workspace/guides/configure-mcp-servers
+remotes:
+- id: default
+  label: Google Calendar
+  url: https://calendarmcp.googleapis.com/mcp/v1
+  allowed_hosts:
+  - calendarmcp.googleapis.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - https://www.googleapis.com/auth/calendar.calendarlist.readonly
+    - https://www.googleapis.com/auth/calendar.events.freebusy
+    - https://www.googleapis.com/auth/calendar.events.readonly
+    authorization_parameters:
+      access_type: offline
+      prompt: consent
+      include_granted_scopes: 'true'
+    refresh_token_required: true
+    setup_url: https://developers.google.com/workspace/guides/configure-mcp-servers

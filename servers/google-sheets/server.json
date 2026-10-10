@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/google-sheets",
+  "title": "Google Sheets",
+  "description": "Google Sheets MCP server from Google Workspace (Developer Preview).",
+  "version": "1.0.0",
+  "websiteUrl": "https://workspace.google.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sheetsmcp.googleapis.com/mcp/v1"
+    }
+  ]
+}

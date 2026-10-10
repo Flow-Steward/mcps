@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2025-10-28T22:06:18.495159Z",
+      "status": "active",
+      "statusChangedAt": "2025-10-28T22:06:18.495159Z",
+      "updatedAt": "2025-10-28T22:06:18.495159Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+    "description": "MCP server integrating with Stripe - tools for customers, products, payments, and more.",
+    "name": "com.stripe/mcp",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.stripe.com"
+      }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/stripe/agent-toolkit"
+    },
+    "version": "0.2.4"
+  }
+}

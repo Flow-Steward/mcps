@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://docs.stripe.com/mcp names https://mcp.stripe.com; sign-in is OAuth with dynamic client registration.
+revision: 1
+source:
+  registry: com.stripe/mcp
+title: Stripe
+description: 'Work with your Stripe account: look up customers, payments, and invoices, create products
+  and payment links, and search Stripe documentation.'
+category: finance
+website_url: https://stripe.com
+help_url: https://docs.stripe.com/mcp
+preview_note: Some write actions, such as refunds, ask a person to approve them through a link.
+official:
+  vendor: Stripe
+  evidence_url: https://docs.stripe.com/mcp
+remotes:
+- id: default
+  label: Stripe
+  url: https://mcp.stripe.com
+  allowed_hosts:
+  - mcp.stripe.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    setup_url: https://docs.stripe.com/mcp

@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-09-09T17:53:32.01107Z",
+      "status": "active",
+      "statusChangedAt": "2026-09-09T17:53:32.01107Z",
+      "updatedAt": "2026-09-09T17:53:32.01107Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Connect to Atlassian Jira, Confluence, Loom, and more to search, create, and manage your work.",
+    "name": "com.atlassian/atlassian-mcp-server",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.atlassian.com/v2/mcp"
+      },
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.atlassian.com/v1/mcp/authv2"
+      }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/atlassian/atlassian-mcp-server"
+    },
+    "title": "Atlassian Rovo MCP Server",
+    "version": "2.0.0",
+    "websiteUrl": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/"
+  }
+}

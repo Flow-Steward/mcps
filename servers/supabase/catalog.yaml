@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://supabase.com/docs/guides/getting-started/mcp names https://mcp.supabase.com/mcp; sign-in is OAuth with dynamic client registration.
+revision: 1
+source:
+  registry: com.supabase/mcp
+title: Supabase
+description: 'Manage Supabase projects: query and change database tables, run migrations, read logs, and
+  look up project settings.'
+category: developer-tools
+website_url: https://supabase.com
+help_url: https://supabase.com/docs/guides/getting-started/mcp
+official:
+  vendor: Supabase
+  evidence_url: https://supabase.com/docs/guides/getting-started/mcp
+remotes:
+- id: default
+  label: Supabase
+  url: https://mcp.supabase.com/mcp
+  allowed_hosts:
+  - mcp.supabase.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    setup_url: https://supabase.com/docs/guides/getting-started/mcp

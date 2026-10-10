@@ -1,0 +1,35 @@
+# Google Workspace MCP (Developer Preview). Not in the MCP Registry, so server.json is written here.
+# Needs the Developer Preview Program, a Google Cloud project with the MCP service enabled,
+# and the user's own OAuth client (Google offers no dynamic client registration).
+# Scopes and authorization parameters carried over unchanged from Flow Steward's former template.
+revision: 1
+title: Google Chat
+description: Read Google Chat spaces, members, and messages, and post new messages to spaces.
+category: messaging
+website_url: https://workspace.google.com
+help_url: https://developers.google.com/workspace/guides/configure-mcp-servers
+preview_note: Developer Preview
+official:
+  vendor: Google
+  evidence_url: https://developers.google.com/workspace/guides/configure-mcp-servers
+remotes:
+- id: default
+  label: Google Chat
+  url: https://chatmcp.googleapis.com/mcp/v1
+  allowed_hosts:
+  - chatmcp.googleapis.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - https://www.googleapis.com/auth/chat.spaces.readonly
+    - https://www.googleapis.com/auth/chat.memberships.readonly
+    - https://www.googleapis.com/auth/chat.messages.readonly
+    - https://www.googleapis.com/auth/chat.messages.create
+    - https://www.googleapis.com/auth/chat.users.readstate
+    authorization_parameters:
+      access_type: offline
+      prompt: consent
+      include_granted_scopes: 'true'
+    refresh_token_required: true
+    setup_url: https://developers.google.com/workspace/guides/configure-mcp-servers

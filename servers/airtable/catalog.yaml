@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://airtable.com/developers/agents/mcp/getting-started names https://mcp.airtable.com/mcp; sign-in is OAuth with dynamic client registration.
+revision: 1
+source:
+  registry: com.airtable/mcp
+title: Airtable
+description: Read and write Airtable records, inspect base schemas, and create tables and fields in the
+  bases you authorize.
+category: data
+website_url: https://www.airtable.com
+help_url: https://airtable.com/developers/agents/mcp/getting-started
+official:
+  vendor: Airtable
+  evidence_url: https://airtable.com/developers/agents/mcp/getting-started
+remotes:
+- id: default
+  label: Airtable
+  url: https://mcp.airtable.com/mcp
+  allowed_hosts:
+  - mcp.airtable.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    setup_url: https://airtable.com/developers/agents/mcp/getting-started

@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/ names https://mcp.atlassian.com/v2/mcp; sign-in is OAuth with dynamic client registration.
+revision: 1
+source:
+  registry: com.atlassian/atlassian-mcp-server
+title: Atlassian (Jira and Confluence)
+description: Search and update Jira issues and Confluence pages through the Atlassian Rovo MCP server,
+  with the permissions of the signed-in user.
+category: productivity
+website_url: https://www.atlassian.com
+help_url: https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/
+official:
+  vendor: Atlassian
+  evidence_url: https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/
+remotes:
+- id: default
+  label: Atlassian (Jira and Confluence)
+  url: https://mcp.atlassian.com/v2/mcp
+  allowed_hosts:
+  - mcp.atlassian.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    setup_url: https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/
