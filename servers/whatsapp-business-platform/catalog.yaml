@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: vendor docs not found
+# Could not find a Meta developer doc page for this endpoint (search budget exhausted). Endpoint is Meta-run: its protected-resource metadata names authorization server https://www.facebook.com/whatsapp_business_tools and the three scopes. Aimed at developers on the WhatsApp Cloud API; reviewer should
+revision: 1
+title: WhatsApp Business Platform
+description: Manage and debug WhatsApp Business Platform assets such as phone numbers, message templates, and webhooks.
+category: messaging
+website_url: https://business.whatsapp.com
+keywords:
+- WhatsApp
+- Meta
+- Facebook
+remotes:
+- id: default
+  label: WhatsApp Business Platform
+  url: https://mcp.facebook.com/whatsapp_business_tools
+  allowed_hosts:
+  - mcp.facebook.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - business_management
+    - whatsapp_business_management
+    - whatsapp_business_messaging

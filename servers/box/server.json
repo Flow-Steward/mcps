@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/box",
+  "title": "Box",
+  "description": "Search, read, and organize Box files and folders, and ask Box AI questions or extract metadata from…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.box.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.box.com"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://circleback.ai/docs/mcp
+# Docs confirm Streamable HTTP with OAuth and dynamic client registration. Write tools need write access granted at connect time.
+revision: 1
+title: Circleback
+description: Search Circleback meeting notes, transcripts, action items, calendar events, and emails, and manage
+  action items.
+category: productivity
+website_url: https://circleback.ai
+help_url: https://circleback.ai/docs/mcp
+official:
+  vendor: Circleback
+  evidence_url: https://circleback.ai/docs/mcp
+remotes:
+- id: default
+  label: Circleback
+  url: https://circleback.ai/api/mcp
+  allowed_hosts:
+  - circleback.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - user
+    - user:write

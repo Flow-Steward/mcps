@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://github.com/timescale/pg-aiguide
+# Public, no auth; README in Tiger Data's official GitHub org calls it 'our publicly available MCP server endpoint hosted by TigerData'. No dedicated tigerdata.com doc page found for this endpoint; Tiger MCP docs (tigerdata.com/docs/ai/latest/mcp-server/) say the Tiger CLI proxies it.
+revision: 1
+title: pg-aiguide (Tiger Data)
+description: Search PostgreSQL and TimescaleDB documentation and read Postgres best-practice guides while writing
+  code.
+category: developer-tools
+website_url: https://www.tigerdata.com
+help_url: https://github.com/timescale/pg-aiguide
+keywords:
+- Timescale
+- TimescaleDB
+- Tiger Data
+- PostgreSQL
+- Postgres
+official:
+  vendor: Tiger Data
+  evidence_url: https://github.com/timescale/pg-aiguide
+remotes:
+- id: default
+  label: pg-aiguide (Tiger Data)
+  url: https://mcp.tigerdata.com/docs
+  allowed_hosts:
+  - mcp.tigerdata.com
+  auth:
+    mode: none

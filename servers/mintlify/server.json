@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/mintlify",
+  "title": "Mintlify",
+  "description": "Edit Mintlify documentation pages, navigation, and settings, and open pull requests for your docs…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.mintlify.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mintlify.com"
+    }
+  ]
+}

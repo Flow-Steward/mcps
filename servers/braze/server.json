@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/braze",
+  "title": "Braze",
+  "description": "Query Braze campaign and Canvas analytics, segments, custom attributes and other workspace data from",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.braze.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.braze.com/mcp"
+    }
+  ]
+}

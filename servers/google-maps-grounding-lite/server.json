@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/google-maps-grounding-lite",
+  "title": "Google Maps Grounding Lite",
+  "description": "Search places, look up weather and compute routes with Google Maps Platform data from an AI agent.",
+  "version": "1.0.0",
+  "websiteUrl": "https://mapsplatform.google.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mapstools.googleapis.com/mcp",
+      "headers": [
+        {
+          "name": "X-Goog-Api-Key",
+          "description": "Google Maps Platform API key with the Maps Grounding Lite API enabled",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

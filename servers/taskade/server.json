@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/taskade",
+  "title": "Taskade",
+  "description": "Read and manage Taskade workspaces, projects, tasks and AI agents from an AI assistant.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.taskade.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.taskade.com/mcp"
+    }
+  ]
+}

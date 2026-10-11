@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/signnow",
+  "title": "SignNow",
+  "description": "Send SignNow documents and templates for e-signature, manage invites and signing order, and check…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.signnow.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-server.signnow.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/mailchimp-transactional",
+  "title": "Mailchimp Transactional",
+  "description": "Send transactional emails, manage templates and check delivery status through Mailchimp Transactiona",
+  "version": "1.0.0",
+  "websiteUrl": "https://mailchimp.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mandrillapp.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Mailchimp Transactional (Mandrill) API key; restricted keys need the 'AI Agents' permission group Enter it as: Bearer <key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

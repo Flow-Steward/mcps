@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/incident-io",
+  "title": "incident.io",
+  "description": "Create and update incidents, manage alerts and escalations, and check on-call schedules in…",
+  "version": "1.0.0",
+  "websiteUrl": "https://incident.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.incident.io/mcp"
+    }
+  ]
+}

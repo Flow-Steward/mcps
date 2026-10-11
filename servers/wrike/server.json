@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/wrike",
+  "title": "Wrike",
+  "description": "Search and update Wrike tasks, projects, folders, and comments from an AI assistant.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.wrike.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.wrike.com/v2",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Wrike permanent access token (Apps & Integrations > API). Enter it as: Bearer <key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

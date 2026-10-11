@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/clickhouse-cloud",
+  "title": "ClickHouse Cloud",
+  "description": "Explore databases and schemas, run read-only SQL, and check services, backups, ClickPipes and billin",
+  "version": "1.0.0",
+  "websiteUrl": "https://clickhouse.com/cloud",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.clickhouse.cloud/mcp"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Reviewed 2026-10-10: https://www.infobip.com/docs/mcp
+# OAuth 2.1 via Keycloak auth.infobip.com (DCR); alt: Authorization: App <API key> with matching scope.
+revision: 1
+title: Infobip People
+description: Create, update and search customer profiles, tags and attributes in Infobip People CDP.
+category: crm
+website_url: https://www.infobip.com
+help_url: https://www.infobip.com/docs/mcp
+keywords:
+- Infobip
+- CDP
+- Customer data
+official:
+  vendor: Infobip
+  evidence_url: https://www.infobip.com/docs/mcp/using-mcp
+remotes:
+- id: default
+  label: Infobip People
+  url: https://mcp.infobip.com/people
+  allowed_hosts:
+  - mcp.infobip.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - people:manage
+    setup_url: https://portal.infobip.com/dev/api-keys

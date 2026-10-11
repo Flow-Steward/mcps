@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/typeform",
+  "title": "Typeform",
+  "description": "Create and edit Typeform forms, read responses and insights, and manage workspaces and webhooks from",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.typeform.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.typeform.com/mcp"
+    }
+  ]
+}

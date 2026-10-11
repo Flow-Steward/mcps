@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/autodesk-product-help",
+  "title": "Autodesk Product Help",
+  "description": "Search official Autodesk help and support documentation across more than 110 Autodesk products.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.autodesk.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://developer.api.autodesk.com/knowledge/public/v1/mcp"
+    }
+  ]
+}

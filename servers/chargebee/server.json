@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/chargebee",
+  "title": "Chargebee",
+  "description": "Look up Chargebee customers, subscriptions, invoices and credit notes, or run your custom Chargebee…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{site}.mcp.chargebee.com/{server_slug}",
+      "variables": {
+        "site": {
+          "description": "Your Chargebee site name: the part before .chargebee.com in your Chargebee dashboard address (for example: acme)",
+          "isRequired": true
+        },
+        "server_slug": {
+          "description": "The MCP server to use: data_lookup_agent, knowledge_base_agent, onboarding_agent (test sites), or your custom server's slug shown in Settings > Configure Chargebee > Agentic AI > MCP Servers (for example: data_lookup_agent)",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "An MCP API key created on the server's Access & Authentication tab (Settings > Configure Chargebee > Agentic AI > MCP Servers, turn on MCP Access, choose API key; up to 5 keys per server). Value: Bearer <api-key>. This is not the REST API Basic-auth key. Enter it as: Bearer <value>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://www.chargebee.com/"
+}

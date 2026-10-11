@@ -1,0 +1,28 @@
+# Reviewed: https://docs.pinecone.io/guides/assistant/mcp-server
+# One server per assistant. Streamable HTTP; the old /sse endpoint is deprecated. The general Pinecone developer MCP is a separate local npm package and is not covered here.
+revision: 1
+title: Pinecone Assistant
+description: Retrieve grounded context from the documents uploaded to one of your Pinecone Assistants.
+category: ai
+website_url: https://www.pinecone.io
+help_url: https://docs.pinecone.io/guides/assistant/mcp-server
+keywords:
+- Pinecone
+- Vector database
+- RAG
+official:
+  vendor: Pinecone
+  evidence_url: https://docs.pinecone.io/guides/assistant/mcp-server
+remotes:
+- id: default
+  label: Pinecone Assistant
+  url: https://{instance_host}/mcp/assistants/{assistant_name}
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: Assistant host
+    assistant_name: Assistant name
+    Authorization: Pinecone API key
+  auth:
+    mode: headers
+    setup_url: https://app.pinecone.io

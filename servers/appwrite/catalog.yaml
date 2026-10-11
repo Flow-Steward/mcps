@@ -1,0 +1,153 @@
+# Reviewed 2026-10-10: https://appwrite.io/docs/tooling/ai/mcp-servers/api
+# Appwrite Cloud only; self-hosted Appwrite needs the local server with an API key.
+revision: 1
+source:
+  registry: io.github.appwrite/mcp
+title: Appwrite
+description: Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the
+  docs.
+category: developer-tools
+website_url: https://appwrite.io
+help_url: https://appwrite.io/docs/tooling/ai/mcp-servers/api
+official:
+  vendor: Appwrite
+  evidence_url: https://appwrite.io/docs/tooling/ai/mcp-servers/api
+remotes:
+- id: default
+  label: Appwrite
+  url: https://mcp.appwrite.io/
+  allowed_hosts:
+  - mcp.appwrite.io
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - profile
+    - email
+    - phone
+    - all
+    - project:all
+    - organization:all
+    - project:project.read
+    - project:project.write
+    - project:keys.read
+    - project:keys.write
+    - project:platforms.read
+    - project:platforms.write
+    - project:mocks.read
+    - project:mocks.write
+    - project:project.policies.read
+    - project:project.policies.write
+    - project:project.oauth2.read
+    - project:project.oauth2.write
+    - project:templates.read
+    - project:templates.write
+    - project:stages.read
+    - project:stages.write
+    - project:users.read
+    - project:users.write
+    - project:sessions.read
+    - project:sessions.write
+    - project:teams.read
+    - project:teams.write
+    - project:databases.read
+    - project:databases.write
+    - project:documentsdb.read
+    - project:documentsdb.write
+    - project:documentsdb.collections.read
+    - project:documentsdb.collections.write
+    - project:documentsdb.documents.read
+    - project:documentsdb.documents.write
+    - project:documentsdb.indexes.read
+    - project:documentsdb.indexes.write
+    - project:vectorsdb.read
+    - project:vectorsdb.write
+    - project:vectorsdb.collections.read
+    - project:vectorsdb.collections.write
+    - project:vectorsdb.documents.read
+    - project:vectorsdb.documents.write
+    - project:vectorsdb.indexes.read
+    - project:vectorsdb.indexes.write
+    - project:tables.read
+    - project:tables.write
+    - project:columns.read
+    - project:columns.write
+    - project:indexes.read
+    - project:indexes.write
+    - project:rows.read
+    - project:rows.write
+    - project:embeddings.write
+    - project:buckets.read
+    - project:buckets.write
+    - project:files.read
+    - project:files.write
+    - project:tokens.read
+    - project:tokens.write
+    - project:functions.read
+    - project:functions.write
+    - project:executions.read
+    - project:executions.write
+    - project:sites.read
+    - project:sites.write
+    - project:log.read
+    - project:log.write
+    - project:providers.read
+    - project:providers.write
+    - project:topics.read
+    - project:topics.write
+    - project:subscribers.read
+    - project:subscribers.write
+    - project:targets.read
+    - project:targets.write
+    - project:messages.read
+    - project:messages.write
+    - project:rules.read
+    - project:rules.write
+    - project:webhooks.read
+    - project:webhooks.write
+    - project:locale.read
+    - project:avatars.read
+    - project:health.read
+    - project:migrations.read
+    - project:migrations.write
+    - project:schedules.read
+    - project:schedules.write
+    - project:vcs.read
+    - project:vcs.write
+    - project:insights.read
+    - project:insights.write
+    - project:reports.read
+    - project:reports.write
+    - project:presences.read
+    - project:presences.write
+    - project:backups.policies.read
+    - project:backups.policies.write
+    - project:archives.read
+    - project:archives.write
+    - project:restorations.read
+    - project:restorations.write
+    - project:domains.read
+    - project:domains.write
+    - project:wafRules.read
+    - project:wafRules.write
+    - project:events.read
+    - project:proxy.invalidations.write
+    - project:apps.read
+    - project:apps.write
+    - project:oauth2.read
+    - project:oauth2.write
+    - project:oauth2.introspect
+    - project:usage.read
+    - organization:projects.read
+    - organization:projects.write
+    - organization:organization.installations.read
+    - organization:organization.installations.write
+    - organization:organization.memberships.read
+    - organization:organization.memberships.write
+    - organization:organization.read
+    - organization:organization.write
+    - organization:domains.read
+    - organization:domains.write
+    - organization:organization.keys.read
+    - organization:organization.keys.write

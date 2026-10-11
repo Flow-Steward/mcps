@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/brex",
+  "title": "Brex",
+  "description": "Review and update Brex expenses, receipts, cards, spend limits, bills, vendors, and travel bookings.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.brex.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.brex.com/mcp"
+    }
+  ]
+}

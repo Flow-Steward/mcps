@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: https://help.keboola.com/ai/mcp-server
+# Region-specific host; default US AWS https://mcp.keboola.com/mcp. Others: https://mcp.us-east4.gcp.keboola.com/mcp (US GCP, input URL), https://mcp.eu-central-1.keboola.com/mcp, https://mcp.north-europe.azure.keboola.com/mcp, https://mcp.europe-west3.gcp.keboola.com/mcp. User picks project at sign-i
+revision: 1
+title: Keboola
+description: Explore Keboola projects, query tables, and build and run data transformations and flows.
+category: data
+website_url: https://www.keboola.com
+help_url: https://help.keboola.com/ai/mcp-server
+official:
+  vendor: Keboola
+  evidence_url: https://help.keboola.com/ai/mcp-server
+remotes:
+- id: default
+  label: Keboola
+  url: https://mcp.keboola.com/mcp
+  allowed_hosts:
+  - mcp.keboola.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

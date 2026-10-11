@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://docs.coresignal.com/mcp/coresignal-mcp
+# v2 uses OAuth 2.1 via the Coresignal dashboard; requests consume API credits. Legacy /mcp (apikey header) is deprecated on 2026-11-01.
+revision: 1
+source:
+  registry: com.coresignal/mcp
+title: Coresignal
+description: Look up company, employee, and job posting data from Coresignal's B2B datasets.
+category: data
+website_url: https://coresignal.com
+help_url: https://docs.coresignal.com/mcp/coresignal-mcp
+official:
+  vendor: Coresignal
+  evidence_url: https://docs.coresignal.com/mcp/coresignal-mcp
+remotes:
+- id: default
+  label: Coresignal
+  url: https://mcp.coresignal.com/mcp/v2
+  allowed_hosts:
+  - mcp.coresignal.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

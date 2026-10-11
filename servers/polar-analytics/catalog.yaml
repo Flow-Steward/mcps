@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://intercom.help/polar-app/en/articles/12892599-using-polar-mcp-in-claude
+# Read-only. Help article names the api.polaranalytics.com host. Header alternative: 'Authorization: token <tenant_id|service_token>' from app.polaranalytics.com/mcp.
+revision: 1
+source:
+  registry: com.polaranalytics/polar
+title: Polar Analytics
+description: Query ecommerce metrics such as revenue, orders, ad spend, and ROAS from your Polar Analytics workspace.
+category: data
+website_url: https://www.polaranalytics.com
+help_url: https://intercom.help/polar-app/en/articles/12892599-using-polar-mcp-in-claude
+official:
+  vendor: Polar Analytics
+  evidence_url: https://intercom.help/polar-app/en/articles/12892599-using-polar-mcp-in-claude
+remotes:
+- id: default
+  label: Polar Analytics
+  url: https://api.polaranalytics.com/mcp
+  allowed_hosts:
+  - api.polaranalytics.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

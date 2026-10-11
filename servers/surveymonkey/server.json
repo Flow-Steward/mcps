@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/surveymonkey",
+  "title": "SurveyMonkey",
+  "description": "Create, edit, and search SurveyMonkey surveys and analyze responses.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.surveymonkey.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.surveymonkey.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/outreach",
+  "title": "Outreach",
+  "description": "Look up Outreach prospects, accounts, and sequences to review pipeline activity and prepare…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.outreach.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.outreach.io/mcp/"
+    }
+  ]
+}

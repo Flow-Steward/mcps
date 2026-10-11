@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://cal.com/help/cal-ai/mcp-server
+# Hosted server uses OAuth (DCR at https://mcp.cal.com/oauth/register); self-hosted npx variant uses a cal_live API key.
+revision: 1
+title: Cal.com
+description: Manage Cal.com bookings, event types, schedules and availability, and reschedule or cancel meetings.
+category: productivity
+website_url: https://cal.com
+help_url: https://cal.com/help/cal-ai/mcp-server
+keywords:
+- Cal
+- Scheduling
+official:
+  vendor: Cal.com
+  evidence_url: https://cal.com/help/cal-ai/mcp-server
+remotes:
+- id: default
+  label: Cal.com
+  url: https://mcp.cal.com/mcp
+  allowed_hosts:
+  - mcp.cal.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

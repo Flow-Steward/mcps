@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/railway",
+  "title": "Railway",
+  "description": "Deploy and manage Railway projects, services, environments, variables, and deployment logs.",
+  "version": "1.0.0",
+  "websiteUrl": "https://railway.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.railway.com"
+    }
+  ]
+}

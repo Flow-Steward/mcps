@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/semrush",
+  "title": "Semrush",
+  "description": "Pull Semrush SEO data: keyword research, domain and backlink analytics, and traffic trends.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.semrush.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.semrush.com/v2/mcp"
+    }
+  ]
+}

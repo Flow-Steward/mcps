@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://developers.plane.so/dev-tools/mcp-server
+# Cloud OAuth endpoint (DCR at https://mcp.plane.so/http/register; scopes read/write). PAT alternative: https://mcp.plane.so/http/api-key/mcp with Authorization: Bearer <PAT> + x-workspace-slug. SSE legacy deprecated. Self-hostable.
+revision: 1
+title: Plane
+description: Create and update Plane work items, cycles, modules and projects, and search your workspace from an
+  AI assistant.
+category: productivity
+website_url: https://plane.so
+help_url: https://developers.plane.so/dev-tools/mcp-server
+official:
+  vendor: Plane
+  evidence_url: https://developers.plane.so/dev-tools/mcp-server
+remotes:
+- id: default
+  label: Plane
+  url: https://mcp.plane.so/http/mcp
+  allowed_hosts:
+  - mcp.plane.so
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - read
+    - write

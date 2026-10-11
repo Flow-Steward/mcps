@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://developers.egnyte.com/docs/read/Remote_MCP_Server
+# Registry record com.egnyte/mcp-server declares an API-key header; this entry lists the OAuth endpoint only.
+# Users enter their Egnyte domain during sign-in. Needs a qualifying plan (Gen 4 Essential/Elite/Ultimate or some Gen 3). One Egnyte page calls it beta. Old /sse endpoint deprecated.
+revision: 1
+title: Egnyte
+description: Search, read, and summarize files and folders in Egnyte with the signed-in user's permissions.
+category: documents
+website_url: https://www.egnyte.com
+help_url: https://developers.egnyte.com/docs/read/Remote_MCP_Server
+preview_note: Preview
+official:
+  vendor: Egnyte
+  evidence_url: https://developers.egnyte.com/docs/read/Remote_MCP_Server
+remotes:
+- id: default
+  label: Egnyte
+  url: https://mcp-server.egnyte.com/mcp
+  allowed_hosts:
+  - mcp-server.egnyte.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP
+# Public beta since April 2026; Coda is now branded Superhuman Docs. Full access for Doc Makers in paid workspaces; Editors limited to 30 requests/week. OAuth only grants mcp:all; a Coda personal API token (Authorization: Bearer) is the alternative for read-only/limited access. DCR at https://coda.io/
+revision: 1
+title: Coda
+description: Read and edit Coda docs, pages and tables, including rows, views, charts and comments.
+category: documents
+website_url: https://coda.io
+help_url: https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP
+preview_note: Preview
+keywords:
+- Superhuman Docs
+- Docs
+official:
+  vendor: Superhuman (Coda)
+  evidence_url: https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP
+remotes:
+- id: default
+  label: Coda
+  url: https://coda.io/apis/mcp
+  allowed_hosts:
+  - coda.io
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:all

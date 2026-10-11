@@ -1,0 +1,19 @@
+# Reviewed 2026-10-10: https://mcp.trivago.com/docs
+# Vendor page says no API keys or configuration needed; probe confirmed unauthenticated access. Third-party directories wrongly list OAuth.
+revision: 1
+title: Trivago
+description: Search hotels by destination or radius with prices from booking sites, and see destination price trends.
+category: other
+website_url: https://www.trivago.com
+help_url: https://mcp.trivago.com/docs
+official:
+  vendor: trivago
+  evidence_url: https://mcp.trivago.com/
+remotes:
+- id: default
+  label: Trivago
+  url: https://mcp.trivago.com/mcp
+  allowed_hosts:
+  - mcp.trivago.com
+  auth:
+    mode: none

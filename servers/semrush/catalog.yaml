@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://developer.semrush.com/api/basics/semrush-mcp/
+# Input URL was the Claude-specific /claude/v1/mcp; vendor docs now give the generic /v2/mcp. API-key fallback: Authorization: Apikey <key>. Calls consume Semrush API units; needs a plan with API access (Semrush One, SEO, or Trends API).
+revision: 1
+title: Semrush
+description: 'Pull Semrush SEO data: keyword research, domain and backlink analytics, and traffic trends.'
+category: marketing
+website_url: https://www.semrush.com
+help_url: https://developer.semrush.com/api/basics/semrush-mcp/
+official:
+  vendor: Semrush
+  evidence_url: https://developer.semrush.com/api/basics/semrush-mcp/
+remotes:
+- id: default
+  label: Semrush
+  url: https://mcp.semrush.com/v2/mcp
+  allowed_hosts:
+  - mcp.semrush.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp.access
+    - offline_access

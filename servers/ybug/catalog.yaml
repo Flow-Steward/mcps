@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://ybug.io/docs/mcp
+# Not on FREE plan; read on BASIC, triage needs STARTUP or higher. Site banner key suggests recent beta launch.
+revision: 1
+title: Ybug
+description: 'Read and triage Ybug feedback reports: filter, change status, priority, assignee, and tags, and add
+  comments.'
+category: support
+website_url: https://ybug.io
+help_url: https://ybug.io/docs/mcp
+official:
+  vendor: Ybug
+  evidence_url: https://ybug.io/docs/mcp
+remotes:
+- id: default
+  label: Ybug
+  url: https://mcp.ybug.io/mcp
+  allowed_hosts:
+  - mcp.ybug.io
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - feedback:read
+    - feedback:write

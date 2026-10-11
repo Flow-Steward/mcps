@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://www.mux.com/docs/integrations/mcp-server
+# User chooses the Mux environment during authorization. Code-mode server (docs search + sandboxed TypeScript execution); query options like ?tools=dynamic or ?resource=video.* narrow the tool set.
+revision: 1
+source:
+  registry: com.mux/mcp
+title: Mux
+description: Upload and manage Mux video assets, live streams, captions, and playback policies, and query Mux Data
+  metrics.
+category: media
+website_url: https://www.mux.com
+help_url: https://www.mux.com/docs/integrations/mcp-server
+official:
+  vendor: Mux
+  evidence_url: https://www.mux.com/docs/integrations/mcp-server
+remotes:
+- id: default
+  label: Mux
+  url: https://mcp.mux.com
+  allowed_hosts:
+  - mcp.mux.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://docs.granola.ai/help-center/sharing/integrations/mcp
+# Read-only. Free plan: own notes from last 30 days, no transcripts/folders; Business adds public workspace notes; Enterprise admins choose scopes (off if none enabled).
+revision: 1
+title: Granola
+description: Search and read your Granola meeting notes, folders, and transcripts.
+category: productivity
+website_url: https://www.granola.ai
+help_url: https://docs.granola.ai/help-center/sharing/integrations/mcp
+keywords:
+- Meeting notes
+official:
+  vendor: Granola
+  evidence_url: https://docs.granola.ai/help-center/sharing/integrations/mcp
+remotes:
+- id: default
+  label: Granola
+  url: https://mcp.granola.ai/mcp
+  allowed_hosts:
+  - mcp.granola.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp
+    - offline_access

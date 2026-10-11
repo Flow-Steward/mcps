@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/coindesk-data",
+  "title": "CoinDesk Data",
+  "description": "Get crypto spot, index, futures, options, on-chain DEX data, and CoinDesk news headlines.",
+  "version": "1.0.0",
+  "websiteUrl": "https://data.coindesk.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.coindesk.com/mcp"
+    }
+  ]
+}

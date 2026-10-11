@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://snov.io/knowledgebase/how-to-use-snov-io-mcp-with-your-ai-assistant/
+# Available on all plans including Trial; actions consume plan credits, recipients, and LinkedIn slots.
+revision: 1
+title: Snov.io
+description: Find and verify prospect email addresses, manage leads, and run email and LinkedIn outreach campaigns
+  in Snov.io.
+category: sales
+website_url: https://snov.io
+help_url: https://snov.io/knowledgebase/how-to-use-snov-io-mcp-with-your-ai-assistant/
+official:
+  vendor: Snov.io
+  evidence_url: https://snov.io/mcp
+remotes:
+- id: default
+  label: Snov.io
+  url: https://mcp.snov.io/mcp
+  allowed_hosts:
+  - mcp.snov.io
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp

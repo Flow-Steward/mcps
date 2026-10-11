@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/posthog",
+  "title": "PostHog",
+  "description": "Query product analytics, insights, feature flags, experiments, and error tracking data in your…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.posthog.com/mcp"
+    }
+  ]
+}

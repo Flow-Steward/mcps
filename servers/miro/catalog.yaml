@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://developers.miro.com/docs/mcp-intro
+# User selects one team during OAuth; only that team's boards are accessible. Disabled by default on Enterprise plans until an admin enables it (Admin settings > Apps & Integrations > MCP).
+revision: 1
+title: Miro
+description: Read and summarize Miro boards and create frames, sticky notes, shapes, tables, and diagrams on them.
+category: productivity
+website_url: https://miro.com
+help_url: https://developers.miro.com/docs/mcp-intro
+official:
+  vendor: Miro
+  evidence_url: https://developers.miro.com/docs/mcp-intro
+remotes:
+- id: default
+  label: Miro
+  url: https://mcp.miro.com/
+  allowed_hosts:
+  - mcp.miro.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - boards:read
+    - boards:write
+    - openid
+    - email

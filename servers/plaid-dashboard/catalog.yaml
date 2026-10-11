@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://plaid.com/docs/resources/mcp/
+# Under active development, breaking changes possible, limited support. Production data only; team must be approved for Production. Docs document client_credentials tokens (client ID + Production secret, 15-min expiry); interactive OAuth via Dashboard login; DCR from probe, not stated in docs.
+revision: 1
+title: Plaid Dashboard
+description: Debug Plaid Items, view Link conversion analytics, and check API usage for your Plaid team.
+category: finance
+website_url: https://plaid.com
+help_url: https://plaid.com/docs/resources/mcp/
+preview_note: Preview
+keywords:
+- Plaid
+official:
+  vendor: Plaid
+  evidence_url: https://plaid.com/docs/resources/mcp/
+remotes:
+- id: default
+  label: Plaid Dashboard
+  url: https://api.dashboard.plaid.com/mcp/
+  allowed_hosts:
+  - api.dashboard.plaid.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:dashboard

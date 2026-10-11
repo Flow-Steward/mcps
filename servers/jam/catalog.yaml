@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://jam.dev/docs/jam-mcp
+# Personal access tokens are an alternative for headless clients.
+revision: 1
+title: Jam
+description: Read Jam bug reports with screen recordings, console logs, network requests, and reproduction steps
+  for debugging.
+category: developer-tools
+website_url: https://jam.dev
+help_url: https://jam.dev/docs/jam-mcp
+official:
+  vendor: Jam
+  evidence_url: https://jam.dev/docs/jam-mcp
+remotes:
+- id: default
+  label: Jam
+  url: https://mcp.jam.dev/mcp
+  allowed_hosts:
+  - mcp.jam.dev
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:read
+    - mcp:write
+    setup_url: https://jam.dev/docs/personal-access-tokens

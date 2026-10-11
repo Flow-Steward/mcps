@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://whimsical.com/learn/integrations/remote-mcp
+revision: 1
+source:
+  registry: com.whimsical/mcp
+title: Whimsical
+description: Create flowcharts, mind maps, and wireframes, and search files in your Whimsical workspace.
+category: productivity
+website_url: https://whimsical.com
+help_url: https://whimsical.com/learn/integrations/remote-mcp
+official:
+  vendor: Whimsical
+  evidence_url: https://whimsical.com/learn/integrations/remote-mcp
+remotes:
+- id: default
+  label: Whimsical
+  url: https://mcp.whimsical.com/mcp
+  allowed_hosts:
+  - mcp.whimsical.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - profile
+    - mcp:read
+    - mcp:write

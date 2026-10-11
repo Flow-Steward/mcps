@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/planetscale",
+  "title": "PlanetScale",
+  "description": "Inspect PlanetScale organizations, databases, branches, and schemas, review Insights query…",
+  "version": "1.0.0",
+  "websiteUrl": "https://planetscale.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pscale.dev/mcp/planetscale"
+    }
+  ]
+}

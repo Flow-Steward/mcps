@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/crypto-com-market-data",
+  "title": "Crypto.com Market Data",
+  "description": "Get live cryptocurrency prices, order books, currency conversions, and candlestick charts.",
+  "version": "1.0.0",
+  "websiteUrl": "https://crypto.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.crypto.com/market-data/mcp"
+    }
+  ]
+}

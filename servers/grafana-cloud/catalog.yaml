@@ -1,0 +1,29 @@
+# Reviewed 2026-10-10: https://grafana.com/docs/grafana-cloud/ai-tools/mcp-servers/cloud-mcp/
+# Public preview. AS at https://mcp.grafana.com/mcp with DCR and client_id_metadata_document_supported=true; scopes grafana:read/query/write (write tools need grafana:write). Admin must accept Grafana Assistant terms; user needs Assistant Cloud MCP User role (Editor+ by default). Each MCP user counts 
+revision: 1
+title: Grafana Cloud
+description: Query metrics, logs, traces, dashboards, and alerts in your Grafana Cloud stack from an AI assistant.
+category: it
+website_url: https://grafana.com
+help_url: https://grafana.com/docs/grafana-cloud/ai-tools/mcp-servers/cloud-mcp/
+preview_note: Preview
+keywords:
+- Grafana
+- Observability
+- Dashboards
+official:
+  vendor: Grafana Labs
+  evidence_url: https://grafana.com/docs/grafana-cloud/ai-tools/mcp-servers/cloud-mcp/
+remotes:
+- id: default
+  label: Grafana Cloud
+  url: https://mcp.grafana.com/mcp
+  allowed_hosts:
+  - mcp.grafana.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - grafana:read
+    - grafana:query
+    - grafana:write

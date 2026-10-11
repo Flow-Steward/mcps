@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://www.lambdatest.com/support/docs/lambdatest-mcp-server/
+# LambdaTest rebranded as TestMu AI; OAuth sign-in redirects to testmuai.com.
+revision: 1
+source:
+  registry: io.github.LambdaTest/mcp
+title: TestMu AI (LambdaTest)
+description: Debug failed automation tests, run HyperExecute jobs, review SmartUI diffs, and run accessibility checks.
+category: developer-tools
+website_url: https://www.testmuai.com
+help_url: https://www.lambdatest.com/support/docs/lambdatest-mcp-server/
+keywords:
+- LambdaTest
+- TestMu
+official:
+  vendor: TestMu AI
+  evidence_url: https://www.lambdatest.com/support/docs/lambdatest-mcp-server/
+remotes:
+- id: default
+  label: TestMu AI (LambdaTest)
+  url: https://mcp.lambdatest.com/mcp
+  allowed_hosts:
+  - mcp.lambdatest.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

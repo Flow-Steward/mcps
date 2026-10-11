@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://developer.calendly.com/calendly-mcp-server
+# DCR at https://calendly.com/oauth/register (public client, PKCE). PATs and pre-registered client IDs are not supported.
+revision: 1
+title: Calendly
+description: View and manage Calendly event types, availability, scheduling links, and booked meetings.
+category: productivity
+website_url: https://calendly.com
+help_url: https://developer.calendly.com/calendly-mcp-server
+official:
+  vendor: Calendly
+  evidence_url: https://developer.calendly.com/calendly-mcp-server
+remotes:
+- id: default
+  label: Calendly
+  url: https://mcp.calendly.com
+  allowed_hosts:
+  - mcp.calendly.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:scheduling:read
+    - mcp:scheduling:write

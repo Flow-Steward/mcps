@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/
+# Netlify recommends the remote server over local @netlify/mcp. Host is on netlify.app but documented by Netlify. Probe scopes include a 'claudeai' scope; reviewer should confirm generic clients get through consent.
+revision: 1
+title: Netlify
+description: Create, build, and deploy Netlify sites and manage projects, environment variables, and forms.
+category: developer-tools
+website_url: https://www.netlify.com
+help_url: https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/
+official:
+  vendor: Netlify
+  evidence_url: https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/
+remotes:
+- id: default
+  label: Netlify
+  url: https://netlify-mcp.netlify.app/mcp
+  allowed_hosts:
+  - netlify-mcp.netlify.app
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access
+    - read
+    - write
+    - claudeai

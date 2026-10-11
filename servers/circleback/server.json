@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/circleback",
+  "title": "Circleback",
+  "description": "Search Circleback meeting notes, transcripts, action items, calendar events, and emails, and manage…",
+  "version": "1.0.0",
+  "websiteUrl": "https://circleback.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://circleback.ai/api/mcp"
+    }
+  ]
+}

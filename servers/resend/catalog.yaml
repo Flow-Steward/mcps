@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://resend.com/docs/knowledge-base/mcp-server
+# Headless alternative: 'Authorization: Bearer re_...' API key (can be sending-only). OAuth grants can be revoked in Team settings.
+revision: 1
+title: Resend
+description: Send emails and manage Resend domains, audiences, contacts, broadcasts, and API keys.
+category: email
+website_url: https://resend.com
+help_url: https://resend.com/docs/knowledge-base/mcp-server
+keywords:
+- Email
+- Transactional email
+official:
+  vendor: Resend
+  evidence_url: https://resend.com/changelog/remote-mcp-server
+remotes:
+- id: default
+  label: Resend
+  url: https://mcp.resend.com/mcp
+  allowed_hosts:
+  - mcp.resend.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

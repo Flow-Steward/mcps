@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://learn.hex.tech/docs/administration/mcp-server
+# Beta; Team and Enterprise plans only; Explorer role for read tools, Editor for notebook editing. Single-tenant/EU/HIPAA customers use their own host (e.g. https://eu.hex.tech/mcp).
+revision: 1
+title: Hex
+description: Search Hex projects, ask data questions through Hex Threads, and create or edit notebooks.
+category: data
+website_url: https://hex.tech
+help_url: https://learn.hex.tech/docs/administration/mcp-server
+preview_note: Preview
+official:
+  vendor: Hex Technologies
+  evidence_url: https://learn.hex.tech/docs/administration/mcp-server
+remotes:
+- id: default
+  label: Hex
+  url: https://app.hex.tech/mcp
+  allowed_hosts:
+  - app.hex.tech
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

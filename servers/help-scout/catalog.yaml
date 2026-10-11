@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports
+# GA, read-only for new connections. Needs a plan with API access (Standard/Plus/Pro); report tools need Plus or Pro. Optional Docs API key enables Docs tools. Verified PRM + DCR (registration_endpoint https://mcp.helpscout.net/oauth/register).
+revision: 1
+title: Help Scout
+description: Search Help Scout conversations, customers and Docs articles and pull mailbox reports, read-only.
+category: support
+website_url: https://www.helpscout.com
+help_url: https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports
+keywords:
+- Helpscout
+- Help desk
+- Shared inbox
+official:
+  vendor: Help Scout
+  evidence_url: https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports
+remotes:
+- id: default
+  label: Help Scout
+  url: https://mcp.helpscout.net/mcp
+  allowed_hosts:
+  - mcp.helpscout.net
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - helpscout

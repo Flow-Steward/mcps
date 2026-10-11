@@ -1,0 +1,27 @@
+# Reviewed 2026-10-10: https://support.app.sinch.com/hc/en-us/articles/16560195995663-Connect-to-the-Sinch-Engage-MCP-AU
+# Regional: AU https://au.app.api.sinch.com/mcp (documented), EU https://eu.app.api.sinch.com/mcp (EU guide; probed 401). Region-specific endpoint shown in API Settings. Admin + verified account needed. Old npx package messagemedia/sinch-engage-mcp-server deprecated (EOL 2026-11-30). Docs walk through
+revision: 1
+title: Sinch Engage
+description: Send SMS, manage contacts and contact groups, and run delivery and messaging reports in Sinch Engage
+  (MessageMedia).
+category: messaging
+website_url: https://sinch.com/engage/
+help_url: https://support.app.sinch.com/hc/en-us/articles/16560195995663-Connect-to-the-Sinch-Engage-MCP-AU
+keywords:
+- Sinch
+- MessageMedia
+- SMS
+official:
+  vendor: Sinch
+  evidence_url: https://support.app.sinch.com/hc/en-us/articles/16560195995663-Connect-to-the-Sinch-Engage-MCP-AU
+remotes:
+- id: default
+  label: Sinch Engage
+  url: https://au.app.api.sinch.com/mcp
+  allowed_hosts:
+  - au.app.api.sinch.com
+  field_labels:
+    Authorization: Sinch API key and secret
+  auth:
+    mode: headers
+    setup_url: https://hub.messagemedia.com/api-settings

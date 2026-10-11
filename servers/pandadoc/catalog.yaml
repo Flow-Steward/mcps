@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://developers.pandadoc.com/docs/how-to-use-the-pandadoc-mcp-server
+# Public API rate limits and plan document limits apply. AS metadata at https://mcp.pandadoc.com/.well-known/oauth-authorization-server has registration_endpoint (DCR); no PRM document found, endpoint answers 401 without token.
+revision: 1
+title: PandaDoc
+description: Search templates, create documents, send them for e-signature and track their status in PandaDoc.
+category: documents
+website_url: https://www.pandadoc.com
+help_url: https://developers.pandadoc.com/docs/how-to-use-the-pandadoc-mcp-server
+official:
+  vendor: PandaDoc
+  evidence_url: https://github.com/PandaDoc/mcp-server-guide
+remotes:
+- id: default
+  label: PandaDoc
+  url: https://mcp.pandadoc.com/v1/mcp
+  allowed_hosts:
+  - mcp.pandadoc.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - read
+    - write
+    - documents:read
+    - documents:edit
+    - documents:send

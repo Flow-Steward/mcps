@@ -1,0 +1,29 @@
+# Reviewed 2026-10-10: https://neon.com/docs/ai/neon-mcp-server
+# Alternative: Authorization: Bearer <Neon API key>. Neon recommends use for development/testing only, not production databases. OAuth covers personal-account projects by default; org projects need org_id/project_id. Allowlist 34.192.103.46 and 23.22.233.166 if IP Allow is enabled.
+revision: 1
+source:
+  registry: com.neon/mcp
+title: Neon
+description: Create and manage Neon Postgres projects, branches, and databases, run SQL queries, and plan schema
+  migrations.
+category: data
+website_url: https://neon.com
+help_url: https://neon.com/docs/ai/neon-mcp-server
+keywords:
+- Postgres
+- PostgreSQL
+- Neon Database
+official:
+  vendor: Neon
+  evidence_url: https://neon.com/docs/ai/neon-mcp-server
+remotes:
+- id: default
+  label: Neon
+  url: https://mcp.neon.tech/mcp
+  allowed_hosts:
+  - mcp.neon.tech
+  field_labels:
+    x-read-only: Read-only mode
+  auth:
+    mode: oauth2
+    client_registration: dcr

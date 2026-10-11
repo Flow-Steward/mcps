@@ -1,0 +1,60 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "com.neon/mcp",
+    "description": "Official Neon MCP server for managing Neon projects and Lakebase Postgres databases.",
+    "title": "Neon",
+    "repository": {
+      "url": "https://github.com/neondatabase/mcp-server-neon",
+      "source": "github"
+    },
+    "version": "1.0.0",
+    "websiteUrl": "https://neon.com/docs/ai/neon-mcp-server",
+    "icons": [
+      {
+        "src": "https://neon.com/brand/neon-logo-light-color.svg",
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ],
+        "theme": "light"
+      },
+      {
+        "src": "https://neon.com/brand/neon-logo-dark-color.svg",
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ],
+        "theme": "dark"
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.neon.tech/mcp",
+        "headers": [
+          {
+            "description": "Optional Bearer token with a Neon API key.",
+            "isSecret": true,
+            "name": "Authorization"
+          },
+          {
+            "description": "Optional header to enable read-only mode for tool filtering.",
+            "format": "boolean",
+            "default": "false",
+            "name": "x-read-only"
+          }
+        ]
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-09-17T20:38:56.695242Z",
+      "publishedAt": "2026-09-17T20:38:56.695242Z",
+      "updatedAt": "2026-09-17T20:38:56.695242Z",
+      "isLatest": true
+    }
+  }
+}

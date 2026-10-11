@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://docs.tavily.com/documentation/mcp
+# Docs also allow an API key in the Authorization header or as ?tavilyApiKey= query parameter (avoid the query form). Usage consumes Tavily API credits.
+revision: 1
+title: Tavily
+description: Search the web and extract, map, or crawl page content with the Tavily search API.
+category: ai
+website_url: https://www.tavily.com
+help_url: https://docs.tavily.com/documentation/mcp
+official:
+  vendor: Tavily
+  evidence_url: https://docs.tavily.com/documentation/mcp
+remotes:
+- id: default
+  label: Tavily
+  url: https://mcp.tavily.com/mcp
+  allowed_hosts:
+  - mcp.tavily.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - offline_access
+    setup_url: https://app.tavily.com

@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://devcenter.heroku.com/articles/heroku-remote-mcp-server
+# OAuth 2.0 browser flow; DCR at https://mcp.heroku.com/reg (scopes openid, offline_access). Local heroku-mcp-server package also exists.
+revision: 1
+title: Heroku
+description: Manage Heroku apps, dynos, add-ons, config vars, logs and Postgres databases in your account.
+category: developer-tools
+website_url: https://www.heroku.com
+help_url: https://devcenter.heroku.com/articles/heroku-remote-mcp-server
+keywords:
+- Salesforce Heroku
+official:
+  vendor: Salesforce (Heroku)
+  evidence_url: https://devcenter.heroku.com/articles/heroku-remote-mcp-server
+remotes:
+- id: default
+  label: Heroku
+  url: https://mcp.heroku.com/mcp
+  allowed_hosts:
+  - mcp.heroku.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - offline_access

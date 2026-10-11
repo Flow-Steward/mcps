@@ -1,0 +1,37 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+    "name": "io.github.appwrite/mcp",
+    "description": "Manage Appwrite projects, databases, auth, storage, functions, and messaging; search Appwrite docs",
+    "repository": {
+      "url": "https://github.com/appwrite/mcp",
+      "source": "github"
+    },
+    "version": "1.0.10",
+    "packages": [
+      {
+        "registryType": "pypi",
+        "identifier": "mcp-server-appwrite",
+        "version": "1.0.10",
+        "transport": {
+          "type": "stdio"
+        }
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.appwrite.io/"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-10-09T10:22:33.327675Z",
+      "publishedAt": "2026-10-09T10:22:33.327675Z",
+      "updatedAt": "2026-10-09T10:22:33.327675Z",
+      "isLatest": true
+    }
+  }
+}

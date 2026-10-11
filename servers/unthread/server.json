@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/unthread",
+  "title": "Unthread",
+  "description": "Search support conversations, manage tickets, monitor SLAs, and analyze support metrics in Unthread.",
+  "version": "1.0.0",
+  "websiteUrl": "https://unthread.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.unthread.io/api/mcp"
+    }
+  ]
+}

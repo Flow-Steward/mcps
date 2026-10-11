@@ -1,0 +1,27 @@
+# Reviewed 2026-10-10: https://docs.scite.ai/mcp/overview
+# Scite premium subscription required for OAuth use. Alternative: 'Authorization: Bearer <API key>' with mcp scope (Pro plan, scite.ai/users/me/api). scite.ai/mcp is titled 'Early Preview'.
+revision: 1
+source:
+  registry: ai.scite/mcp
+title: Scite
+description: Search scientific literature and get Smart Citation data, citation tallies, and article details by
+  DOI.
+category: data
+website_url: https://scite.ai
+help_url: https://docs.scite.ai/mcp/overview
+preview_note: Preview
+official:
+  vendor: Scite (Research Solutions)
+  evidence_url: https://docs.scite.ai/mcp/overview
+remotes:
+- id: default
+  label: Scite
+  url: https://api.scite.ai/mcp
+  allowed_hosts:
+  - api.scite.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp
+    - offline_access

@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://ads.tiktok.com/resources/help/article/about-tiktok-for-business-mcp-server
+# Two endpoints: progressive disclosure .../tt-ads-mcp-layer (~40 core tools, chosen here) and full disclosure .../tt-ads-mcp-flat (~400 tools, TikTok's recommendation for Claude). Each has its own OAuth AS at <endpoint>/oauth with DCR (public clients). Scope mcp:tt4b. Third parties report 30-day auth
+revision: 1
+title: TikTok for Business
+description: Create and manage TikTok ad campaigns, budgets, targeting, audiences, and creatives, and pull performance
+  reports.
+category: marketing
+website_url: https://ads.tiktok.com
+help_url: https://ads.tiktok.com/resources/help/article/about-tiktok-for-business-mcp-server
+keywords:
+- TikTok
+- TikTok Ads
+official:
+  vendor: TikTok
+  evidence_url: https://ads.tiktok.com/resources/help/article/about-tiktok-for-business-mcp-server
+remotes:
+- id: default
+  label: TikTok for Business
+  url: https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer
+  allowed_hosts:
+  - business-api.tiktok.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:tt4b

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/fellow",
+  "title": "Fellow",
+  "description": "Search Fellow meetings and read summaries, transcripts, and action items, and edit meeting agendas.",
+  "version": "1.0.0",
+  "websiteUrl": "https://fellow.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fellow.app/mcp"
+    }
+  ]
+}

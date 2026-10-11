@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/todoist",
+  "title": "Todoist",
+  "description": "Find, add, update, and complete Todoist tasks, projects, sections, and comments.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.todoist.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ai.todoist.net/mcp"
+    }
+  ]
+}

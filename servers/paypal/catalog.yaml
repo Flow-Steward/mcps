@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://developer.paypal.com/ai-tools/mcp-server
+# Registry record com.paypal.mcp/mcp declares an API-key header; this entry lists the OAuth endpoint only.
+# Docs list Streamable HTTP at https://mcp.paypal.com/http (directory remote_url /mcp also answers with OAuth). Sandbox: https://mcp.sandbox.paypal.com/http. SSE at /sse. Docs also allow 'Authorization: Bearer <access token>' from client ID/secret instead of browser login. Acts on real money in produc
+revision: 1
+title: PayPal
+description: Create invoices, orders, refunds, and subscriptions, and look up transactions and disputes in PayPal.
+category: finance
+website_url: https://www.paypal.com
+help_url: https://developer.paypal.com/ai-tools/mcp-server
+keywords:
+- Payments
+- Venmo
+official:
+  vendor: PayPal
+  evidence_url: https://developer.paypal.com/ai-tools/mcp-server.md
+remotes:
+- id: default
+  label: PayPal
+  url: https://mcp.paypal.com/mcp
+  allowed_hosts:
+  - mcp.paypal.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    setup_url: https://developer.paypal.com/dashboard/

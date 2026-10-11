@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/tally",
+  "title": "Tally",
+  "description": "Create and edit Tally forms, and read and analyze form submissions from your workspace.",
+  "version": "1.0.0",
+  "websiteUrl": "https://tally.so",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.tally.so/mcp"
+    }
+  ]
+}

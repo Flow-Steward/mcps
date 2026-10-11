@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/render",
+  "title": "Render",
+  "description": "Create and inspect Render services and Postgres databases, trigger deploys, read logs and metrics, a",
+  "version": "1.0.0",
+  "websiteUrl": "https://render.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.render.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Render API key from Account Settings > API Keys. Enter it as: Bearer <key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

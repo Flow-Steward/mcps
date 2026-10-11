@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://docs.umami.is/docs/cloud/mcp
+# Umami Cloud only; requires Pro, Business, or Enterprise plan. Alternative header x-umami-api-key. Self-hosted Umami (v3.4.0+) serves MCP on its own host.
+revision: 1
+title: Umami
+description: 'Ask about your website traffic in Umami Cloud: page views, visitors, referrers, events, and other
+  stats.'
+category: data
+website_url: https://umami.is
+help_url: https://docs.umami.is/docs/cloud/mcp
+official:
+  vendor: Umami Software
+  evidence_url: https://docs.umami.is/docs/cloud/mcp
+remotes:
+- id: default
+  label: Umami
+  url: https://cloud.umami.is/mcp
+  allowed_hosts:
+  - cloud.umami.is
+  field_labels:
+    Authorization: Umami API key
+  auth:
+    mode: headers
+    setup_url: https://docs.umami.is/docs/cloud/api-key

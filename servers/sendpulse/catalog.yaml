@@ -1,0 +1,30 @@
+# Reviewed 2026-10-10: https://sendpulse.com/knowledge-base/account-settings/mcp-server
+# Alternative header auth: X-SP-ID and X-SP-SECRET (API client ID/secret from Account settings > API).
+revision: 1
+source:
+  registry: com.sendpulse.mcp/mcp-server
+title: SendPulse
+description: Run SendPulse email and messaging campaigns, read statistics, and update contacts and mailing lists.
+category: marketing
+website_url: https://sendpulse.com
+help_url: https://sendpulse.com/knowledge-base/account-settings/mcp-server
+keywords:
+- Email marketing
+- Newsletter
+- SMS
+official:
+  vendor: SendPulse
+  evidence_url: https://sendpulse.com/knowledge-base/account-settings/mcp-server
+remotes:
+- id: default
+  label: SendPulse
+  url: https://mcp.sendpulse.com/mcp
+  allowed_hosts:
+  - mcp.sendpulse.com
+  field_labels:
+    X-SP-ID: SendPulse API ID
+    X-SP-SECRET: SendPulse API secret
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    setup_url: https://login.sendpulse.com/settings/#api

@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://developers.intercom.com/docs/guides/mcp
+# OAuth (DCR) is the recommended mode but non-localhost redirect URIs must be allowlisted by Intercom Support, so a self-hosted install should use the bearer token. Region: US default; EU https://mcp.eu.intercom.com/mcp. AU workspaces not supported. SSE endpoints are deprecated.
+revision: 1
+title: Intercom
+description: Search and read Intercom conversations, contacts, companies, and help articles, and add internal notes.
+category: support
+website_url: https://www.intercom.com
+help_url: https://developers.intercom.com/docs/guides/mcp
+official:
+  vendor: Intercom
+  evidence_url: https://developers.intercom.com/docs/guides/mcp
+remotes:
+- id: default
+  label: Intercom
+  url: https://mcp.intercom.com/mcp
+  allowed_hosts:
+  - mcp.intercom.com
+  field_labels:
+    Authorization: Intercom access token
+  auth:
+    mode: headers
+    setup_url: https://developers.intercom.com/docs/guides/mcp

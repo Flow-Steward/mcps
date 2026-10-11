@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://www.infobip.com/docs/mcp
+# OAuth 2.1 via Keycloak auth.infobip.com (DCR); alt: Authorization: App <API key> with matching scope.
+revision: 1
+title: Infobip Email
+description: Send emails and manage email domains, templates and delivery logs through the Infobip Email API.
+category: email
+website_url: https://www.infobip.com
+help_url: https://www.infobip.com/docs/mcp
+keywords:
+- Infobip
+- Email
+official:
+  vendor: Infobip
+  evidence_url: https://www.infobip.com/docs/mcp/using-mcp
+remotes:
+- id: default
+  label: Infobip Email
+  url: https://mcp.infobip.com/email
+  allowed_hosts:
+  - mcp.infobip.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - email:manage
+    setup_url: https://portal.infobip.com/dev/api-keys

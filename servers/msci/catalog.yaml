@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://www.msci.com/discover-msci/artificial-intelligence/msci-connector
+# Enterprise-only: requires MSCI client credentials and licensed products; IT must enable the connector. Evidence PDF names host mcp.msci.com but with the IndexAI path /index/index-mcp/v1.0/mcp; the exact /mcp/v1.0/mcp path was not found on a vendor page.
+revision: 1
+title: MSCI
+description: Query MSCI index, portfolio risk, and private assets data covered by your MSCI license.
+category: finance
+website_url: https://www.msci.com
+help_url: https://www.msci.com/discover-msci/artificial-intelligence/msci-connector
+official:
+  vendor: MSCI
+  evidence_url: https://www.msci.com/downloads/documents/index/resources/indexai-insights-user-guide-feb26.pdf
+remotes:
+- id: default
+  label: MSCI
+  url: https://mcp.msci.com/mcp/v1.0/mcp
+  allowed_hosts:
+  - mcp.msci.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

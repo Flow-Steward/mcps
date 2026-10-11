@@ -1,0 +1,29 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "com.zapier/mcp",
+    "description": "Hosted MCP server connecting AI assistants to 9,000+ apps and 40,000+ actions via Zapier.",
+    "title": "Zapier",
+    "repository": {
+      "url": "https://github.com/zapier/zapier-mcp",
+      "source": "github"
+    },
+    "version": "1.0.1",
+    "websiteUrl": "https://docs.zapier.com/mcp/home",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.zapier.com/api/v1/connect"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-07-29T18:56:40.112909Z",
+      "publishedAt": "2026-07-29T18:56:40.112909Z",
+      "updatedAt": "2026-07-29T18:56:40.112909Z",
+      "isLatest": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/ahrefs",
+  "title": "Ahrefs",
+  "description": "Look up Ahrefs SEO data such as backlinks, keywords, organic traffic, and site rankings for any…",
+  "version": "1.0.0",
+  "websiteUrl": "https://ahrefs.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.ahrefs.com/mcp/mcp"
+    }
+  ]
+}

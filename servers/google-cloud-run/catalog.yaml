@@ -1,0 +1,33 @@
+# Reviewed 2026-10-10: https://docs.cloud.google.com/mcp/supported-products
+# Google Cloud runs one remote MCP server per product (60+): e.g. compute.googleapis.com/mcp, container.googleapis.com/mcp (GKE), logging.googleapis.com/mcp, monitoring.googleapis.com/mcp, sqladmin.googleapis.com/mcp, storage.googleapis.com/storage/mcp, cloudresourcemanager.googleapis.com/mcp, cloudcl
+revision: 1
+title: Google Cloud Run
+description: Deploy and manage Cloud Run services and inspect revisions, jobs and their configuration in a Google
+  Cloud project.
+category: developer-tools
+website_url: https://cloud.google.com/run
+help_url: https://docs.cloud.google.com/mcp/supported-products
+keywords:
+- Google Cloud
+- GCP
+- Cloud Run
+official:
+  vendor: Google
+  evidence_url: https://docs.cloud.google.com/mcp/supported-products
+remotes:
+- id: default
+  label: Google Cloud Run
+  url: https://run.googleapis.com/mcp
+  allowed_hosts:
+  - run.googleapis.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - https://www.googleapis.com/auth/cloud-platform
+    authorization_parameters:
+      access_type: offline
+      prompt: consent
+      include_granted_scopes: 'true'
+    refresh_token_required: true
+    setup_url: https://console.cloud.google.com/apis/credentials

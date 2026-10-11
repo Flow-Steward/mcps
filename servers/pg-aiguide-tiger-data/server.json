@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/pg-aiguide-tiger-data",
+  "title": "pg-aiguide (Tiger Data)",
+  "description": "Search PostgreSQL and TimescaleDB documentation and read Postgres best-practice guides while…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.tigerdata.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.tigerdata.com/docs"
+    }
+  ]
+}

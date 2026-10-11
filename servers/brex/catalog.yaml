@@ -1,0 +1,44 @@
+# Reviewed 2026-10-10: https://developer.brex.com/docs/mcp
+# Beta. An account/card admin must accept the Developer API agreement (Settings > Developer) and enable 'Brex in AI assistants' under Settings > Beta features. API token as Bearer header is an alternative for admins.
+revision: 1
+title: Brex
+description: Review and update Brex expenses, receipts, cards, spend limits, bills, vendors, and travel bookings.
+category: finance
+website_url: https://www.brex.com
+help_url: https://developer.brex.com/docs/mcp
+preview_note: Preview
+official:
+  vendor: Brex
+  evidence_url: https://developer.brex.com/docs/mcp
+remotes:
+- id: default
+  label: Brex
+  url: https://api.brex.com/mcp
+  allowed_hosts:
+  - api.brex.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - offline_access
+    - email
+    - users.readonly
+    - departments.readonly
+    - locations.readonly
+    - titles.readonly
+    - legal_entities.readonly
+    - cards.readonly
+    - cards
+    - companies.readonly
+    - budgets.readonly
+    - travel.trips.readonly
+    - expenses.card.readonly
+    - expenses.card
+    - expenses.bill
+    - accounts.cash.readonly
+    - vendors.readonly
+    - accounting.integration.read
+    - accounting.record.read
+    - fields.read
+    - field_values.read

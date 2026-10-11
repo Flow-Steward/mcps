@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://developers.wrike.com/docs/wrike-mcp-server-overview
+# OAuth alternative needs an admin-created Wrike app (no DCR). Older docs list https://mcp.wrike.com/app/mcp/stream and an SSE URL; help center also mentions EU region (app-eu.wrike.com). Transport not explicitly stated for /v2; POST returns 401.
+revision: 1
+title: Wrike
+description: Search and update Wrike tasks, projects, folders, and comments from an AI assistant.
+category: productivity
+website_url: https://www.wrike.com
+help_url: https://developers.wrike.com/docs/wrike-mcp-server-overview
+official:
+  vendor: Wrike
+  evidence_url: https://developers.wrike.com/docs/setup-other-mcp-clients-with-wrike-mcp
+remotes:
+- id: default
+  label: Wrike
+  url: https://mcp.wrike.com/v2
+  allowed_hosts:
+  - mcp.wrike.com
+  field_labels:
+    Authorization: Wrike permanent access token
+  auth:
+    mode: headers
+    setup_url: https://www.wrike.com/frontend/apps/index.html#/api

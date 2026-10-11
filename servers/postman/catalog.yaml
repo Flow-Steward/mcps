@@ -1,0 +1,21 @@
+# Reviewed 2026-10-10: https://learning.postman.com/docs/reference/postman-api/postman-mcp-server/postman-mcp-remote-server
+# Registry record com.postman/postman-mcp-server declares an API-key header; this entry lists the OAuth endpoint only.
+# /mcp is the Full toolset (100+ tools); lighter variants at /minimal (Postman's default) and /code. EU host mcp.eu.postman.com supports API key only (Authorization: Bearer <Postman API key>). US also accepts the API key as Bearer.
+revision: 1
+title: Postman
+description: Manage Postman workspaces, collections, environments, specs, and mocks, and run collection requests.
+category: developer-tools
+website_url: https://www.postman.com
+help_url: https://learning.postman.com/docs/reference/postman-api/postman-mcp-server/postman-mcp-remote-server
+official:
+  vendor: Postman
+  evidence_url: https://learning.postman.com/docs/reference/postman-api/postman-mcp-server/postman-mcp-remote-server
+remotes:
+- id: default
+  label: Postman
+  url: https://mcp.postman.com/mcp
+  allowed_hosts:
+  - mcp.postman.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

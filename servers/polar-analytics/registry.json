@@ -1,0 +1,25 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "com.polaranalytics/polar",
+    "description": "The AI data platform for commerce: Shopify, Amazon, ads and Klaviyo data with metrics defined once.",
+    "title": "Polar Analytics",
+    "version": "1.0.0",
+    "websiteUrl": "https://www.polaranalytics.com/mcp-for-ecommerce/polar-analytics",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://api.polaranalytics.com/mcp"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-10-06T12:06:14.962737Z",
+      "publishedAt": "2026-10-06T12:06:14.962737Z",
+      "updatedAt": "2026-10-06T12:06:14.962737Z",
+      "isLatest": true
+    }
+  }
+}

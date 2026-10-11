@@ -1,0 +1,37 @@
+# Reviewed 2026-10-10: https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview
+# Docs: remote-hosted, works with any MCP-compatible agent. Probe: 401 with PRM; AS https://www.facebook.com/ads advertises DCR (https://mcp.facebook.com/.well-known/register/ads), PKCE, public clients; scopes ads_management ads_read catalog_management business_management pages_show_list pages_manage_
+revision: 1
+title: Meta Ads
+description: Create and manage Meta ad campaigns, catalogs and pages, and read ads insights and dataset quality
+  from an AI agent.
+category: marketing
+website_url: https://www.facebook.com/business/ads
+help_url: https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview
+preview_note: Preview
+keywords:
+- Facebook Ads
+- Instagram Ads
+- Meta
+- Facebook
+- Instagram
+official:
+  vendor: Meta
+  evidence_url: https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview
+remotes:
+- id: default
+  label: Meta Ads
+  url: https://mcp.facebook.com/ads
+  allowed_hosts:
+  - mcp.facebook.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - ads_management
+    - ads_read
+    - catalog_management
+    - business_management
+    - pages_show_list
+    - pages_manage_ads
+    - instagram_basic
+    - ads_mcp_management

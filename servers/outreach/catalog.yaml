@@ -1,0 +1,18 @@
+# Reviewed 2026-10-10: vendor docs not found
+# No Outreach doc page found naming the endpoint (search budget exhausted). Probe shows DCR, scope prospects.all. Admin enablement may be required.
+revision: 1
+title: Outreach
+description: Look up Outreach prospects, accounts, and sequences to review pipeline activity and prepare outreach.
+category: sales
+website_url: https://www.outreach.ai
+remotes:
+- id: default
+  label: Outreach
+  url: https://api.outreach.io/mcp/
+  allowed_hosts:
+  - api.outreach.io
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - prospects.all

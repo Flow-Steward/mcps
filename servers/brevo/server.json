@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/brevo",
+  "title": "Brevo",
+  "description": "Manage Brevo contacts, lists, email campaigns, deals, and transactional templates from an AI assista",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.brevo.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.brevo.com/v1/brevo/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Brevo API key generated with the MCP option enabled (Account > SMTP & API > API Keys). Enter it as: Bearer <key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

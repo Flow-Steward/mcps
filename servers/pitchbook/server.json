@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/pitchbook",
+  "title": "PitchBook",
+  "description": "Look up private market companies, investors, deals, and funds from PitchBook data.",
+  "version": "1.0.0",
+  "websiteUrl": "https://pitchbook.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://premium.mcp.pitchbook.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/neo4j-aura",
+  "title": "Neo4j Aura",
+  "description": "Query and explore the graph in your Neo4j Aura instance with Cypher through the MCP server hosted…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}",
+      "variables": {
+        "instance_host": {
+          "description": "Your Aura instance ID followed by .mcp-instances.neo4j.io; copy the instance ID from the Aura Console. (for example: a1b2c3d4.mcp-instances.neo4j.io)",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+  "websiteUrl": "https://neo4j.com/product/auradb/"
+}

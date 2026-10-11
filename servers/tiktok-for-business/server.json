@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/tiktok-for-business",
+  "title": "TikTok for Business",
+  "description": "Create and manage TikTok ad campaigns, budgets, targeting, audiences, and creatives, and pull perfor",
+  "version": "1.0.0",
+  "websiteUrl": "https://ads.tiktok.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer"
+    }
+  ]
+}

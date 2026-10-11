@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://windsor.ai/documentation/windsor-mcp/
+# Vendor docs describe sign-in with a Windsor account (free or paid plan, at least one connected data source) but do not print the endpoint URL; bare host from directory and probe.
+revision: 1
+title: Windsor.ai
+description: Query marketing and ads data from 350+ connected sources and pause or enable Google and Meta ad campaigns.
+category: marketing
+website_url: https://windsor.ai
+help_url: https://windsor.ai/documentation/windsor-mcp/
+keywords:
+- Windsor
+remotes:
+- id: default
+  label: Windsor.ai
+  url: https://mcp.windsor.ai
+  allowed_hosts:
+  - mcp.windsor.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - create
+    - delete
+    - offline_access

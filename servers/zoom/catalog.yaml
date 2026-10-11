@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://developers.zoom.us/docs/mcp/servers/
+# Probe shows no DCR/CIMD: register a General OAuth app on the Zoom App Marketplace (OAuth 2.1 + PKCE; scopes depend on tools). Vendor docs page only shows the pattern https://zoom.us/mcp/meeting/streamable; host mcp.zoom.us not confirmed on a vendor page. Other hosts reported: mcp-us.zoom.us, docs se
+revision: 1
+title: Zoom
+description: Search Zoom meetings, retrieve recordings, summaries, and meeting assets, and create Zoom Docs.
+category: productivity
+website_url: https://zoom.us
+help_url: https://developers.zoom.us/docs/mcp/servers/
+keywords:
+- Zoom Meetings
+- Video calls
+remotes:
+- id: default
+  label: Zoom
+  url: https://mcp.zoom.us/mcp/zoom/streamable
+  allowed_hosts:
+  - mcp.zoom.us
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    refresh_token_required: true
+    setup_url: https://marketplace.zoom.us/develop/create

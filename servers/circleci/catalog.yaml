@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: https://circleci.com/docs/guides/toolkit/connecting-to-the-circleci-mcp-server/
+# OAuth2 with DCR (https://app.circleci.com/oauth/register); a CircleCI personal API token is the documented alternative. The old npx local server is deprecated.
+revision: 1
+title: CircleCI
+description: Inspect CircleCI pipelines, failed jobs, build logs, flaky tests and config, and rerun workflows.
+category: developer-tools
+website_url: https://circleci.com
+help_url: https://circleci.com/docs/guides/toolkit/connecting-to-the-circleci-mcp-server/
+official:
+  vendor: CircleCI
+  evidence_url: https://circleci.com/docs/guides/toolkit/circleci-mcp-overview/
+remotes:
+- id: default
+  label: CircleCI
+  url: https://mcp.circleci.com/v1/mcp
+  allowed_hosts:
+  - mcp.circleci.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

@@ -1,0 +1,27 @@
+# Reviewed 2026-10-10: https://ifttt.com/mcp
+# No standalone doc page found (ifttt.com/docs/mcp returned 404); ifttt.com/mcp serves the endpoint and its OAuth protected-resource metadata (scope mcp). Some features may need a paid IFTTT plan.
+revision: 1
+source:
+  registry: com.ifttt/mcp
+title: IFTTT
+description: Find IFTTT services, build applets, and run actions across connected apps and devices.
+category: productivity
+website_url: https://ifttt.com
+help_url: https://ifttt.com/mcp
+keywords:
+- Automation
+- Applets
+official:
+  vendor: IFTTT
+  evidence_url: https://ifttt.com/mcp
+remotes:
+- id: default
+  label: IFTTT
+  url: https://ifttt.com/mcp
+  allowed_hosts:
+  - ifttt.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp

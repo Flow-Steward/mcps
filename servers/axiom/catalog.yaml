@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://axiom.co/docs/llms/mcp-server
+# Official hosted server; replaces the deprecated local axiomhq/mcp-server-axiom package (API tokens).
+revision: 1
+source:
+  registry: co.axiom/mcp
+title: Axiom
+description: Query Axiom logs, traces, and events with APL, and read datasets, dashboards, monitors, and saved queries.
+category: developer-tools
+website_url: https://axiom.co
+help_url: https://axiom.co/docs/llms/mcp-server
+official:
+  vendor: Axiom
+  evidence_url: https://axiom.co/docs/llms/mcp-server
+remotes:
+- id: default
+  label: Axiom
+  url: https://mcp.axiom.co/mcp
+  allowed_hosts:
+  - mcp.axiom.co
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

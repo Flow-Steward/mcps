@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/gorgias",
+  "title": "Gorgias",
+  "description": "Work with Gorgias helpdesk tickets, customers, macros, tags and analytics, and configure AI Agent se",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.gorgias.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gorgias.com/mcp"
+    }
+  ]
+}

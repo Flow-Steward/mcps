@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://github.com/Doist/todoist-mcp
+# Evidence is Doist's official GitHub README (no todoist.com help page found before search budget ran out).
+revision: 1
+title: Todoist
+description: Find, add, update, and complete Todoist tasks, projects, sections, and comments.
+category: productivity
+website_url: https://www.todoist.com
+help_url: https://github.com/Doist/todoist-mcp
+keywords:
+- Doist
+- Tasks
+official:
+  vendor: Doist
+  evidence_url: https://github.com/Doist/todoist-mcp
+remotes:
+- id: default
+  label: Todoist
+  url: https://ai.todoist.net/mcp
+  allowed_hosts:
+  - ai.todoist.net
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - data:read_write

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/wavix",
+  "title": "Wavix",
+  "description": "Send SMS and MMS, manage phone numbers, SIP trunks and 2FA, search call records, and check billing i",
+  "version": "1.0.0",
+  "websiteUrl": "https://wavix.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.wavix.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Wavix API key (Administration > API Keys) Enter it as: Bearer <key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

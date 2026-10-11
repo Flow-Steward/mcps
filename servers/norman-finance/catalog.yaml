@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://github.com/norman-finance/norman-mcp-server
+# Vendor docs live in the vendor's GitHub README. Aimed at German freelancers and small businesses. Some features (Inbox, MCP Events) marked in development.
+revision: 1
+source:
+  registry: finance.norman/mcp-server
+title: Norman Finance
+description: 'Manage Norman bookkeeping: create invoices, manage clients, categorize transactions, and prepare tax
+  reports.'
+category: finance
+website_url: https://norman.finance
+help_url: https://github.com/norman-finance/norman-mcp-server
+official:
+  vendor: Norman Finance
+  evidence_url: https://github.com/norman-finance/norman-mcp-server
+remotes:
+- id: default
+  label: Norman Finance
+  url: https://mcp.norman.finance/mcp
+  allowed_hosts:
+  - mcp.norman.finance
+  auth:
+    mode: oauth2
+    client_registration: dcr

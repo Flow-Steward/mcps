@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server
+# User must create an MCP Auth App in HubSpot (Development > MCP Auth Apps), set the redirect URL, and supply client ID/secret. PKCE required. Scopes come from the server's tools, not chosen by client. Activity objects are blocked when sensitive data is enabled. GA since 2026-04-13.
+revision: 1
+title: HubSpot
+description: Search, create, and update HubSpot contacts, companies, deals, tickets, and activities in your CRM.
+category: crm
+website_url: https://www.hubspot.com
+help_url: https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server
+keywords:
+- CRM
+official:
+  vendor: HubSpot
+  evidence_url: https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server
+remotes:
+- id: default
+  label: HubSpot
+  url: https://mcp.hubspot.com
+  allowed_hosts:
+  - mcp.hubspot.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    refresh_token_required: true
+    setup_url: https://app.hubspot.com/l/mcp-auth-apps/

@@ -1,0 +1,28 @@
+# Reviewed 2026-10-10: https://www.infobip.com/docs/mcp
+# OAuth 2.1 via Keycloak auth.infobip.com (DCR); alt: Authorization: App <API key> with matching scope.
+revision: 1
+title: Infobip 2FA
+description: Set up 2FA applications and message templates, then send and verify one-time PIN codes through Infobip.
+category: it
+website_url: https://www.infobip.com
+help_url: https://www.infobip.com/docs/mcp
+keywords:
+- Infobip
+- OTP
+- Verification
+official:
+  vendor: Infobip
+  evidence_url: https://www.infobip.com/docs/mcp/using-mcp
+remotes:
+- id: default
+  label: Infobip 2FA
+  url: https://mcp.infobip.com/2fa
+  allowed_hosts:
+  - mcp.infobip.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - 2fa:manage
+    - 2fa:pin:manage
+    setup_url: https://portal.infobip.com/dev/api-keys

@@ -1,0 +1,28 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "com.blockscout/mcp-server",
+    "description": "MCP server for Blockscout",
+    "repository": {
+      "url": "https://github.com/blockscout/mcp-server",
+      "source": "github"
+    },
+    "version": "0.19.0",
+    "websiteUrl": "https://blockscout.com",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.blockscout.com/mcp"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-09-08T03:19:38.110035Z",
+      "publishedAt": "2026-09-08T03:19:38.110035Z",
+      "updatedAt": "2026-09-08T03:19:38.110035Z",
+      "isLatest": true
+    }
+  }
+}

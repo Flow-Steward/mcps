@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/postiz",
+  "title": "Postiz",
+  "description": "List connected social accounts, schedule, draft or publish posts, and generate images and videos for",
+  "version": "1.0.0",
+  "websiteUrl": "https://postiz.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.postiz.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Postiz API key from Settings Enter it as: Bearer <key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

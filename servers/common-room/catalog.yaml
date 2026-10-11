@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: https://www.commonroom.io/docs/signals/mcp
+# Docs give the URL with a trailing slash. Requires a Common Room subscription.
+revision: 1
+title: Common Room
+description: Query Common Room contacts, organizations, activity, and segments for account research.
+category: sales
+website_url: https://www.commonroom.io
+help_url: https://www.commonroom.io/docs/signals/mcp
+official:
+  vendor: Common Room
+  evidence_url: https://www.commonroom.io/docs/signals/mcp
+remotes:
+- id: default
+  label: Common Room
+  url: https://mcp.commonroom.io/mcp/
+  allowed_hosts:
+  - mcp.commonroom.io
+  auth:
+    mode: oauth2
+    client_registration: dcr

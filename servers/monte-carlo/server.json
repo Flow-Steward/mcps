@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/monte-carlo",
+  "title": "Monte Carlo",
+  "description": "Investigate data quality alerts, monitors, incidents, and table lineage in Monte Carlo data…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.montecarlodata.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.getmontecarlo.com/mcp"
+    }
+  ]
+}

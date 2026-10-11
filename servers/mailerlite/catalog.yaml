@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://developers.mailerlite.com/mcp
+# Beta. Docs' ChatGPT section mistakenly shows mcp.mailersend.com; correct host is mcp.mailerlite.com.
+revision: 1
+title: MailerLite
+description: Manage MailerLite subscribers, groups, segments, campaigns, automations, and forms.
+category: email
+website_url: https://www.mailerlite.com
+help_url: https://developers.mailerlite.com/mcp
+preview_note: Preview
+keywords:
+- Email marketing
+- Newsletter
+official:
+  vendor: MailerLite
+  evidence_url: https://developers.mailerlite.com/mcp
+remotes:
+- id: default
+  label: MailerLite
+  url: https://mcp.mailerlite.com/mcp
+  allowed_hosts:
+  - mcp.mailerlite.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

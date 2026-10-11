@@ -1,0 +1,29 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "com.ifttt/mcp",
+    "description": "Automate 1,000+ services from any MCP-compatible AI agent: build Applets, run actions and queries.",
+    "title": "IFTTT MCP server",
+    "repository": {
+      "url": "https://github.com/IFTTT/ifttt-plugins",
+      "source": "github"
+    },
+    "version": "1.0.0",
+    "websiteUrl": "https://ifttt.com/mcp",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://ifttt.com/mcp"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-08-05T16:59:33.589619Z",
+      "publishedAt": "2026-08-05T16:59:33.589619Z",
+      "updatedAt": "2026-08-05T16:59:33.589619Z",
+      "isLatest": true
+    }
+  }
+}

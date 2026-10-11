@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/cb-insights",
+  "title": "CB Insights",
+  "description": "Research private companies, markets, investors, and deals with CB Insights data and ChatCBI.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.cbinsights.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.cbinsights.com"
+    }
+  ]
+}

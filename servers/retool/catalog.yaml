@@ -1,0 +1,29 @@
+# Reviewed: https://docs.retool.com/org-users/guides/mcp
+# Public beta; available on all Cloud plans and on self-hosted Retool 4.0.0+ (same requirements as the new app-building experience). OAuth 2.0 only, no token auth documented. Probe of example.retool.com confirmed RFC 8414 metadata on the instance with a registration_endpoint (/api/oauth2/register), scopes mcp:read/mcp:write/mcp:admin, and a 401 from /mcp pointing to the protected-resource metadata. 
+revision: 1
+title: Retool
+description: List, inspect and build Retool apps, resources and workflows in your own Retool organization, limited
+  to your user permissions.
+category: developer-tools
+website_url: https://retool.com
+help_url: https://docs.retool.com/org-users/guides/mcp
+preview_note: Preview
+keywords:
+- Internal tools
+official:
+  vendor: Retool
+  evidence_url: https://docs.retool.com/org-users/guides/mcp
+remotes:
+- id: default
+  label: Retool
+  url: https://{instance_host}/mcp
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: Retool address
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:read
+    - mcp:write

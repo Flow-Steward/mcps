@@ -1,0 +1,31 @@
+# Reviewed: https://neo4j.com/blog/genai/introducing-mcp-for-aura/
+# Hosted by Neo4j on every Aura instance (Free, Professional, Business Critical; not VDC yet). Users sign in with their Aura account; per earlier finding 'Tool authentication with Aura user' must be enabled on the instance. Vendor URL is the bare host with no path. Probe of mcp.neo4j.io metadata shows an Auth0 AS with registration_endpoint (aura-mcp.eu.auth0.com/oidc/register). Vendor docs show conn
+revision: 1
+title: Neo4j Aura
+description: Query and explore the graph in your Neo4j Aura instance with Cypher through the MCP server hosted for
+  every Aura instance.
+category: data
+website_url: https://neo4j.com/product/auradb/
+help_url: https://neo4j.com/blog/genai/introducing-mcp-for-aura/
+keywords:
+- Neo4j
+- Graph database
+- Cypher
+official:
+  vendor: Neo4j
+  evidence_url: https://neo4j.com/blog/genai/introducing-mcp-for-aura/
+remotes:
+- id: default
+  label: Neo4j Aura
+  url: https://{instance_host}
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: Aura MCP address
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - offline_access
+    setup_url: https://console.neo4j.io

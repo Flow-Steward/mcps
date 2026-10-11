@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/otter-ai",
+  "title": "Otter.ai",
+  "description": "Search Otter meeting conversations and read their transcripts, summaries, and action items.",
+  "version": "1.0.0",
+  "websiteUrl": "https://otter.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.otter.ai/mcp"
+    }
+  ]
+}

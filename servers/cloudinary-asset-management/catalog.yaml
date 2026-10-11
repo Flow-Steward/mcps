@@ -1,0 +1,30 @@
+# Reviewed 2026-10-10: https://cloudinary.com/documentation/cloudinary_llm_mcp
+# OAuth default; API credentials via headers also supported. Sibling servers: environment-config.mcp.cloudinary.com/mcp, structured-metadata.mcp.cloudinary.com/mcp, analysis (SSE only).
+revision: 1
+title: Cloudinary Asset Management
+description: Upload, search, rename, tag, and transform images and videos in your Cloudinary media library.
+category: media
+website_url: https://cloudinary.com
+help_url: https://cloudinary.com/documentation/cloudinary_llm_mcp
+keywords:
+- Cloudinary
+official:
+  vendor: Cloudinary
+  evidence_url: https://cloudinary.com/documentation/cloudinary_llm_mcp
+remotes:
+- id: default
+  label: Cloudinary Asset Management
+  url: https://asset-management.mcp.cloudinary.com/mcp
+  allowed_hosts:
+  - asset-management.mcp.cloudinary.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - profile
+    - email
+    - offline_access
+    - asset_management
+    - upload
+    - media_generation

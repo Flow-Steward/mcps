@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://docs.consensus.app/mcp-clients/other-mcp-clients
+# The /mcp path is required. Results and limits depend on the Consensus plan; API and MCP share one monthly pool, 1 request/second. Headless alternative: Consensus API key as Authorization: Bearer (created in API & MCP Dashboard > Keys and clients).
+revision: 1
+title: Consensus
+description: Search peer-reviewed academic papers with filters for year, study type, sample size, and journal quality.
+category: data
+website_url: https://consensus.app
+help_url: https://docs.consensus.app/mcp-clients/other-mcp-clients
+official:
+  vendor: Consensus
+  evidence_url: https://docs.consensus.app/mcp-clients/other-mcp-clients
+remotes:
+- id: default
+  label: Consensus
+  url: https://mcp.consensus.app/mcp
+  allowed_hosts:
+  - mcp.consensus.app
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - search

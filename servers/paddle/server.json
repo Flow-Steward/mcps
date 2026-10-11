@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/paddle",
+  "title": "Paddle",
+  "description": "Search and run Paddle Billing API operations for products, prices, customers, subscriptions, and tra",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.paddle.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.paddle.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/krisp",
+  "title": "Krisp",
+  "description": "Search Krisp meetings and read meeting notes, transcripts, and action items.",
+  "version": "1.0.0",
+  "websiteUrl": "https://krisp.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.krisp.ai/mcp"
+    }
+  ]
+}

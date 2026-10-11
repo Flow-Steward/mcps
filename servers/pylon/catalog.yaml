@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp
+# Admin must enable it under Settings > AI Controls > MCP Server; users need the 'MCP Access' role permission. Some tools require specific plan features.
+revision: 1
+title: Pylon
+description: Search and update Pylon support issues, accounts, contacts, knowledge base articles, and tasks.
+category: support
+website_url: https://www.usepylon.com
+help_url: https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp
+official:
+  vendor: Pylon
+  evidence_url: https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp
+remotes:
+- id: default
+  label: Pylon
+  url: https://mcp.usepylon.com/
+  allowed_hosts:
+  - mcp.usepylon.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

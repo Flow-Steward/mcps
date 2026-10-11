@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/context7",
+  "title": "Context7",
+  "description": "Look up current, version-specific documentation and code examples for programming libraries and…",
+  "version": "1.0.0",
+  "websiteUrl": "https://context7.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.context7.com/mcp/oauth"
+    }
+  ]
+}

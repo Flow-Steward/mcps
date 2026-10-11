@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/order-by-cash-app",
+  "title": "Order by Cash App",
+  "description": "Find nearby restaurants that sell through Square, browse menus, and build pickup orders to check…",
+  "version": "1.0.0",
+  "websiteUrl": "https://cash.app",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://connect.squareup.com/v2/mcp/cash-app"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+    "name": "com.twelvedata/mcp",
+    "description": "Twelve Data MCP: real-time & historical market data (stocks, crypto, forex, etc).",
+    "repository": {
+      "url": "https://github.com/twelvedata/mcp",
+      "source": "github"
+    },
+    "version": "2.0.0",
+    "websiteUrl": "https://twelvedata.com",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.twelvedata.com/mcp"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-07-23T15:13:03.720638Z",
+      "publishedAt": "2026-07-23T15:13:03.720638Z",
+      "updatedAt": "2026-07-23T15:13:03.720638Z",
+      "isLatest": true
+    }
+  }
+}

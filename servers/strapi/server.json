@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/strapi",
+  "title": "Strapi",
+  "description": "Create, read, update, publish and unpublish content in your own Strapi CMS through its Content…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "Host name of your Strapi server (where the admin panel and API are served), without https://. (for example: cms.acme.com)",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Admin token from Settings > Administration Panel > Admin Tokens (choose duration and per-content-type permissions). Content API tokens are rejected with 401. Enter it as: Bearer <value>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://strapi.io"
+}

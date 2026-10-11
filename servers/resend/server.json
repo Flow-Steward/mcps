@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/resend",
+  "title": "Resend",
+  "description": "Send emails and manage Resend domains, audiences, contacts, broadcasts, and API keys.",
+  "version": "1.0.0",
+  "websiteUrl": "https://resend.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.resend.com/mcp"
+    }
+  ]
+}

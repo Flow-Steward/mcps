@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/parallel-search",
+  "title": "Parallel Search",
+  "description": "Search the web and fetch page content for AI agents using Parallel's search API.",
+  "version": "1.0.0",
+  "websiteUrl": "https://parallel.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://search.parallel.ai/mcp"
+    }
+  ]
+}

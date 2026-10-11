@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://amplitude.com/docs/amplitude-ai/amplitude-mcp
+# EU data residency: https://mcp.eu.amplitude.com/mcp. Access governed by 'Use MCP (read)' / 'Use MCP (write)' role permissions. Optional ?discovery=progressive variant.
+revision: 1
+source:
+  registry: com.amplitude/mcp-server
+title: Amplitude
+description: Query Amplitude charts, dashboards, cohorts, and experiments, and analyze product usage data.
+category: data
+website_url: https://amplitude.com
+help_url: https://amplitude.com/docs/amplitude-ai/amplitude-mcp
+official:
+  vendor: Amplitude
+  evidence_url: https://amplitude.com/docs/amplitude-ai/amplitude-mcp
+remotes:
+- id: default
+  label: Amplitude
+  url: https://mcp.amplitude.com/mcp
+  allowed_hosts:
+  - mcp.amplitude.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:read
+    - mcp:write
+    - offline_access

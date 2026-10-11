@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: https://support.contentsquare.com/hc/en-us/articles/41563169756945
+# Vendor support article (403 to fetch) confirms MCP on Free/Growth/Pro/Enterprise with monthly tool-call limits per plan; endpoint URL only confirmed in third-party directories. Tokens expire hourly and refresh.
+revision: 1
+title: Contentsquare
+description: Query Contentsquare digital experience analytics such as page metrics, journeys, and conversion data
+  for your projects.
+category: data
+website_url: https://contentsquare.com
+help_url: https://support.contentsquare.com/hc/en-us/articles/41563169756945
+remotes:
+- id: default
+  label: Contentsquare
+  url: https://api.contentsquare.com/mcp
+  allowed_hosts:
+  - api.contentsquare.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - metrics

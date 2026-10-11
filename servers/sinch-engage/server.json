@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/sinch-engage",
+  "title": "Sinch Engage",
+  "description": "Send SMS, manage contacts and contact groups, and run delivery and messaging reports in Sinch Engage",
+  "version": "1.0.0",
+  "websiteUrl": "https://sinch.com/engage/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://au.app.api.sinch.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Base64-encoded Basic Authentication API key from Settings > API Settings Enter it as: Basic <key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

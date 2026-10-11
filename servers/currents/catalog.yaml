@@ -1,0 +1,39 @@
+# Reviewed 2026-10-10: https://docs.currents.dev/ai/mcp-server/remote
+# Docs: clients must identify via Client ID Metadata Document; DCR-only clients cannot do OAuth and must use an API key instead (Authorization: Bearer <Currents API key>, Read Only or Read & Write). Tools are filtered by granted permissions; delete tools run without confirmation.
+revision: 1
+source:
+  registry: dev.currents/mcp
+title: Currents
+description: Read Playwright test runs, failures, and flaky-test analytics in Currents, and manage projects, actions,
+  and webhooks.
+category: developer-tools
+website_url: https://currents.dev
+help_url: https://docs.currents.dev/ai/mcp-server/remote
+official:
+  vendor: Currents
+  evidence_url: https://docs.currents.dev/ai/mcp-server/remote
+remotes:
+- id: default
+  label: Currents
+  url: https://mcp.currents.dev/mcp
+  allowed_hosts:
+  - mcp.currents.dev
+  auth:
+    mode: oauth2
+    client_registration: client_metadata
+    requested_scopes:
+    - openid
+    - profile
+    - email
+    - offline_access
+    - projects:read
+    - projects:write
+    - results:read
+    - analytics:read
+    - actions:read
+    - actions:write
+    - issues:write
+    - runs:write
+    - webhooks:read
+    - webhooks:write
+    - shares:write

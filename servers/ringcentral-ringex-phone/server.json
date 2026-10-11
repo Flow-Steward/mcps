@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/ringcentral-ringex-phone",
+  "title": "RingCentral RingEX Phone",
+  "description": "Review RingCentral call logs, voicemail, SMS, contacts, and presence, and send SMS from an AI assist",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.ringcentral.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.labs.ringcentral.com/ringex/phone"
+    }
+  ]
+}

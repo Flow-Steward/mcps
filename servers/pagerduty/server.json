@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/pagerduty",
+  "title": "PagerDuty",
+  "description": "View and manage PagerDuty incidents, services, schedules, and on-call assignments.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.pagerduty.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pagerduty.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "PagerDuty user API token (My Profile > User Settings > API Access) or account REST API key. Enter it as: Token token=<key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

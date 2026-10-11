@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://porkbun.com/mcp
+# Official Porkbun hosted server (input name points to an unrelated community repo). Can spend account funds on registrations; safer variants /mcp/no-purchases and /mcp/no-topups.
+revision: 1
+source:
+  registry: com.porkbun/mcp
+title: Porkbun
+description: Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and
+  forwarding.
+category: it
+website_url: https://porkbun.com
+help_url: https://porkbun.com/mcp
+official:
+  vendor: Porkbun
+  evidence_url: https://porkbun.com/mcp
+remotes:
+- id: default
+  label: Porkbun
+  url: https://mcp.porkbun.com/mcp
+  allowed_hosts:
+  - mcp.porkbun.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - api
+    - offline_access

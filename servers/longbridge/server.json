@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/longbridge",
+  "title": "Longbridge",
+  "description": "Get market quotes and research, and view or manage your Longbridge brokerage positions, orders, and…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.longbridge.com"
+    }
+  ],
+  "websiteUrl": "https://longbridge.com"
+}

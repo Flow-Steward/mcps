@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/sybill",
+  "title": "Sybill",
+  "description": "Read Sybill call summaries, deal and account insights, and ask questions about your pipeline before…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.sybill.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.sybill.ai/mcp"
+    }
+  ]
+}

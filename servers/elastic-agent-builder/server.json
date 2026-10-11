@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/elastic-agent-builder",
+  "title": "Elastic Agent Builder",
+  "description": "Use Elastic Agent Builder tools to search and analyze your Elasticsearch data through your own…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/api/agent_builder/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "Kibana host name of your Elastic Cloud deployment, Serverless project or self-managed Kibana (copy the Kibana endpoint from the Elastic Cloud console and drop https://). For a custom Kibana space the path becomes /s/<space>/api/agent_builder/mcp. (for example: my-deployment.kb.us-central1.gcp.cloud.es.io)",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Elasticsearch API key with Agent Builder privileges, created in Kibana (Stack Management > API keys) or via the Agent Builder API-key guide; use the base64 'encoded' value returned at creation. Enter it as: ApiKey <value>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://www.elastic.co"
+}

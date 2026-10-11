@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://www.infobip.com/docs/mcp
+# OAuth 2.1 via Keycloak auth.infobip.com (DCR); alt: Authorization: App <API key> with matching scope.
+revision: 1
+title: Infobip Voice
+description: Send text-to-speech and voice messages and review call delivery reports through Infobip Voice.
+category: messaging
+website_url: https://www.infobip.com
+help_url: https://www.infobip.com/docs/mcp
+keywords:
+- Infobip
+- Voice calls
+official:
+  vendor: Infobip
+  evidence_url: https://www.infobip.com/docs/mcp/using-mcp
+remotes:
+- id: default
+  label: Infobip Voice
+  url: https://mcp.infobip.com/voice
+  allowed_hosts:
+  - mcp.infobip.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - message:send
+    setup_url: https://portal.infobip.com/dev/api-keys

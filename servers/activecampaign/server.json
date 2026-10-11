@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/activecampaign",
+  "title": "ActiveCampaign",
+  "description": "Manage ActiveCampaign contacts, lists, tags, deals and automations through the account-specific…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{account}.activehosted.com/api/agents/mcp/http",
+      "variables": {
+        "account": {
+          "description": "The part before .activehosted.com in your ActiveCampaign account URL (also shown in Settings > Developer as the Remote MCP URL) (for example: acme)",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+  "websiteUrl": "https://www.activecampaign.com/"
+}

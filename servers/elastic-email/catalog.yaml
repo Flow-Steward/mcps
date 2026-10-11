@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://help.elasticemail.com/en/articles/12595879-elastic-email-mcp
+# Docs give host https://mcp.elasticemail.com (root path; /mcp also answers 401). OAuth via oidc.elasticemail.com with DCR (/connect/register); alternative: API key in X-Auth-Token header. Campaign/contact tools not on Email API plans.
+revision: 1
+title: Elastic Email
+description: Add contacts to lists, create campaigns, send transactional and bulk email, and fetch lists, segments
+  and templates.
+category: email
+website_url: https://elasticemail.com
+help_url: https://help.elasticemail.com/en/articles/12595879-elastic-email-mcp
+keywords:
+- Email marketing
+official:
+  vendor: Elastic Email
+  evidence_url: https://help.elasticemail.com/en/articles/12595879-elastic-email-mcp
+remotes:
+- id: default
+  label: Elastic Email
+  url: https://mcp.elasticemail.com/
+  allowed_hosts:
+  - mcp.elasticemail.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

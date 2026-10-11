@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://docs.unthread.io/docs/unthread-mcp
+# OAuth 2.0 with PKCE. Service-account alternative: https://api.unthread.io/api/mcp with X-Api-Key header.
+revision: 1
+title: Unthread
+description: Search support conversations, manage tickets, monitor SLAs, and analyze support metrics in Unthread.
+category: support
+website_url: https://unthread.io
+help_url: https://docs.unthread.io/docs/unthread-mcp
+official:
+  vendor: Unthread
+  evidence_url: https://docs.unthread.io/docs/unthread-mcp
+remotes:
+- id: default
+  label: Unthread
+  url: https://app.unthread.io/api/mcp
+  allowed_hosts:
+  - app.unthread.io
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp

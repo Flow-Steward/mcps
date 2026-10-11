@@ -1,0 +1,21 @@
+# Reviewed 2026-10-10: https://docs.ahrefs.com/mcp/docs/introduction
+# Requires a paid Ahrefs plan (Lite or higher); calls consume monthly API units. OAuth creates an MCP-scoped key; a manually generated MCP key also works. Legacy SSE endpoint /mcp/mcpSse is deprecated.
+revision: 1
+title: Ahrefs
+description: Look up Ahrefs SEO data such as backlinks, keywords, organic traffic, and site rankings for any domain.
+category: marketing
+website_url: https://ahrefs.com
+help_url: https://docs.ahrefs.com/mcp/docs/introduction
+official:
+  vendor: Ahrefs
+  evidence_url: https://docs.ahrefs.com/mcp/docs/introduction
+remotes:
+- id: default
+  label: Ahrefs
+  url: https://api.ahrefs.com/mcp/mcp
+  allowed_hosts:
+  - api.ahrefs.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    setup_url: https://app.ahrefs.com/account/api-keys

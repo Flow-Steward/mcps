@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/teamwork-com",
+  "title": "Teamwork.com",
+  "description": "Manage Teamwork.com projects, tasks, time logs, and people, plus Teamwork Desk tickets and Spaces…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ai.teamwork.com"
+    }
+  ]
+}

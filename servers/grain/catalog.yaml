@@ -1,0 +1,16 @@
+# Reviewed 2026-10-10: vendor docs not found
+# Could not find a grain.com page naming the endpoint (search budget exhausted); endpoint from directories and probe. Reviewer should confirm on Grain docs.
+revision: 1
+title: Grain
+description: Search Grain meeting recordings and transcripts, and pull summaries, clips, and deal insights.
+category: productivity
+website_url: https://grain.com
+remotes:
+- id: default
+  label: Grain
+  url: https://api.grain.com/_/mcp
+  allowed_hosts:
+  - api.grain.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

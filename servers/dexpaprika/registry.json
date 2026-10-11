@@ -1,0 +1,32 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+    "name": "com.dexpaprika/dexpaprika",
+    "description": "DEX and on-chain data: liquidity pools, token prices, swaps, and trading volume.",
+    "title": "DexPaprika",
+    "repository": {
+      "url": "https://github.com/coinpaprika/dexpaprika-mcp",
+      "source": "github"
+    },
+    "version": "2.7.1",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.dexpaprika.com/streamable-http"
+      },
+      {
+        "type": "sse",
+        "url": "https://mcp.dexpaprika.com/sse"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-09-29T12:45:04.024248Z",
+      "publishedAt": "2026-09-29T12:45:04.024248Z",
+      "updatedAt": "2026-09-29T12:45:04.024248Z",
+      "isLatest": true
+    }
+  }
+}

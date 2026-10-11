@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://readwise.io/mcp
+revision: 1
+title: Readwise
+description: Search, create, and update Readwise highlights and save, tag, and organize Reader documents.
+category: productivity
+website_url: https://readwise.io
+help_url: https://readwise.io/mcp
+official:
+  vendor: Readwise
+  evidence_url: https://readwise.io/mcp
+remotes:
+- id: default
+  label: Readwise
+  url: https://mcp2.readwise.io/mcp
+  allowed_hosts:
+  - mcp2.readwise.io
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - read
+    - write

@@ -1,0 +1,31 @@
+# Reviewed 2026-10-10: https://developers.luminpdf.com
+# No vendor documentation page found that names the endpoint (search budget ran out); host is on Lumin's own domain and probe shows OAuth with DCR. Verify tool list live.
+revision: 1
+title: Lumin
+description: Upload documents, send and track e-signature requests, and convert Markdown to PDF in Lumin.
+category: documents
+website_url: https://www.luminpdf.com
+help_url: https://developers.luminpdf.com
+remotes:
+- id: default
+  label: Lumin
+  url: https://mcp.luminpdf.com/mcp
+  allowed_hosts:
+  - mcp.luminpdf.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - offline_access
+    - profile.read
+    - settings.configure
+    - pdf:files.read
+    - sign:requests.read
+    - pdf:circles.read
+    - sign:requests
+    - pdf:files
+    - workspaces.read
+    - templates.read
+    - templates
+    - agreements

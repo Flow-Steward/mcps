@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/retool",
+  "title": "Retool",
+  "description": "List, inspect and build Retool apps, resources and workflows in your own Retool organization,…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "Host name of your Retool organization (Cloud subdomain or self-hosted domain), as in the browser address bar when you are signed in to Retool. (for example: acme.retool.com)",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+  "websiteUrl": "https://retool.com"
+}

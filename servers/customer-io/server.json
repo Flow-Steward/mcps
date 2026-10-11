@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/customer-io",
+  "title": "Customer.io",
+  "description": "Query people, segments, campaigns and messaging performance in Customer.io and make changes with you",
+  "version": "1.0.0",
+  "websiteUrl": "https://customer.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.customer.io/mcp"
+    }
+  ]
+}

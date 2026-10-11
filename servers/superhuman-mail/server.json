@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/superhuman-mail",
+  "title": "Superhuman Mail",
+  "description": "Search your Superhuman inbox, draft and send replies, set reminders, and schedule meetings.",
+  "version": "1.0.0",
+  "websiteUrl": "https://superhuman.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mail.superhuman.com/mcp"
+    }
+  ]
+}

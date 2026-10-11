@@ -1,0 +1,34 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "io.github.apollographql/graphos-mcp-server",
+    "description": "Search Apollo docs, specs, and best practices",
+    "title": "GraphOS MCP Server",
+    "version": "1.17.0",
+    "websiteUrl": "https://www.apollographql.com/docs/graphos/platform/graphos-mcp-tools",
+    "icons": [
+      {
+        "src": "https://raw.githubusercontent.com/apollographql/apollo-client-devtools/main/assets/apollo-wordmark.svg",
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.apollographql.com"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-08-03T19:26:32.805007Z",
+      "publishedAt": "2026-08-03T19:26:32.805007Z",
+      "updatedAt": "2026-08-03T19:26:32.805007Z",
+      "isLatest": true
+    }
+  }
+}

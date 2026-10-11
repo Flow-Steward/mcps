@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://context7.com/docs/howto/oauth
+# OAuth requires the /mcp/oauth path. The plain https://mcp.context7.com/mcp endpoint instead takes an API key in a CONTEXT7_API_KEY header (key from context7.com dashboard).
+revision: 1
+title: Context7
+description: Look up current, version-specific documentation and code examples for programming libraries and frameworks.
+category: developer-tools
+website_url: https://context7.com
+help_url: https://context7.com/docs/howto/oauth
+official:
+  vendor: Upstash
+  evidence_url: https://context7.com/docs/howto/oauth
+remotes:
+- id: default
+  label: Context7
+  url: https://mcp.context7.com/mcp/oauth
+  allowed_hosts:
+  - mcp.context7.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - profile
+    - email
+    - offline_access

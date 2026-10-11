@@ -1,5 +1,5 @@
 # Reviewed 2026-10-10: https://linear.app/docs/mcp names https://mcp.linear.app/mcp; sign-in is OAuth with dynamic client registration.
-revision: 1
+revision: 3
 source:
   registry: app.linear/linear
 title: Linear
@@ -7,6 +7,9 @@ description: Find, create, and update Linear issues, projects, and comments, and
 category: productivity
 website_url: https://linear.app
 help_url: https://linear.app/docs/mcp
+keywords:
+- Issues
+- Tickets
 official:
   vendor: Linear
   evidence_url: https://linear.app/docs/mcp
@@ -19,4 +22,7 @@ remotes:
   auth:
     mode: oauth2
     client_registration: dcr
+    requested_scopes:
+    - read
+    - write
     setup_url: https://linear.app/docs/mcp

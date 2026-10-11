@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: vendor docs not found
+# No Superhuman doc page found (help center blocked fetch; search budget exhausted). Endpoint from directory and probe; can send email on the user's behalf.
+revision: 1
+title: Superhuman Mail
+description: Search your Superhuman inbox, draft and send replies, set reminders, and schedule meetings.
+category: email
+website_url: https://superhuman.com
+keywords:
+- Superhuman
+remotes:
+- id: default
+  label: Superhuman Mail
+  url: https://mcp.mail.superhuman.com/mcp
+  allowed_hosts:
+  - mcp.mail.superhuman.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

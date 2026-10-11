@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/inbox-zero",
+  "title": "Inbox Zero",
+  "description": "Search and read your inbox, create drafts, manage automation rules, and read email statistics in Inb",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.getinboxzero.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.getinboxzero.com/mcp"
+    }
+  ]
+}

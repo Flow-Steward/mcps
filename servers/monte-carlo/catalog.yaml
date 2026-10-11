@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://docs.getmontecarlo.com/docs/mcp-server
+# Docs confirm DCR (no OAuth app needed). MCP Server API keys (key id + secret headers) are an alternative for service accounts. Read-only mode and network access control are configurable by admins.
+revision: 1
+title: Monte Carlo
+description: Investigate data quality alerts, monitors, incidents, and table lineage in Monte Carlo data observability.
+category: data
+website_url: https://www.montecarlodata.com
+help_url: https://docs.getmontecarlo.com/docs/mcp-server
+official:
+  vendor: Monte Carlo
+  evidence_url: https://docs.getmontecarlo.com/docs/mcp-server
+remotes:
+- id: default
+  label: Monte Carlo
+  url: https://mcp.getmontecarlo.com/mcp
+  allowed_hosts:
+  - mcp.getmontecarlo.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

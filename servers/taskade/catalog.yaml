@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://www.taskade.com/docs/mcp/hosted-mcp
+# Paid plans only (docs differ: Business+ vs all paid). Local npm @taskade/mcp-server also exists. DCR at /oauth2/register.
+revision: 1
+title: Taskade
+description: Read and manage Taskade workspaces, projects, tasks and AI agents from an AI assistant.
+category: productivity
+website_url: https://www.taskade.com
+help_url: https://www.taskade.com/docs/mcp/hosted-mcp
+official:
+  vendor: Taskade
+  evidence_url: https://www.taskade.com/docs/mcp/hosted-mcp
+remotes:
+- id: default
+  label: Taskade
+  url: https://www.taskade.com/mcp
+  allowed_hosts:
+  - www.taskade.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp

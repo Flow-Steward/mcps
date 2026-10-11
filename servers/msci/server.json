@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/msci",
+  "title": "MSCI",
+  "description": "Query MSCI index, portfolio risk, and private assets data covered by your MSCI license.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.msci.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.msci.com/mcp/v1.0/mcp"
+    }
+  ]
+}

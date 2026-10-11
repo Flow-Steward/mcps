@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://www.apollographql.com/docs/graphos/platform/graphos-mcp-server/install
+# Renamed GraphOS MCP Server (2026-07-20). Docs tools work without auth; graph tools need GraphOS sign-in (MCP authorization spec, recommended) or x-api-key header with a personal/graph API key for headless clients. The input hint saying 'not an OAuth connector' is outdated.
+revision: 1
+source:
+  registry: io.github.apollographql/graphos-mcp-server
+title: Apollo GraphOS
+description: Search Apollo docs and Connectors spec and inspect your GraphOS graphs and organization.
+category: developer-tools
+website_url: https://www.apollographql.com
+help_url: https://www.apollographql.com/docs/graphos/platform/graphos-mcp-server/install
+keywords:
+- Apollo GraphQL
+- GraphQL
+official:
+  vendor: Apollo GraphQL
+  evidence_url: https://www.apollographql.com/docs/graphos/platform/graphos-mcp-server/install
+remotes:
+- id: default
+  label: Apollo GraphOS
+  url: https://mcp.apollographql.com
+  allowed_hosts:
+  - mcp.apollographql.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

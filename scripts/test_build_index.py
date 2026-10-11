@@ -111,6 +111,7 @@ def test_index_has_the_registry_list_shape_with_the_reviewed_overlay(root):
     assert overlay["source"] == {"registry": "com.example/mcp", "version": "1.2.0"}
     assert overlay["summary"] == "Search and update example records in the workspaces you authorize."
     assert overlay["official"] == {"vendor": "Example", "evidence_url": "https://docs.example.com/mcp"}
+    assert overlay["keywords"] == []
     assert overlay["remotes"] == [
         {
             "remote_id": "default",
@@ -165,6 +166,10 @@ def test_a_server_written_here_has_no_registry_bookkeeping(root):
         ({"official": {"vendor": "Example"}}, "official needs the vendor and an https evidence_url"),
         ({"source": {"registry": "com.other/mcp"}}, "source.registry says 'com.other/mcp'"),
         ({"remotes": []}, "remotes must list at least one endpoint"),
+        ({"keywords": "Jira"}, "keywords must list search terms"),
+        ({"keywords": ["Jira", " "]}, "keywords must list search terms"),
+        ({"keywords": ["Jira", "jira"]}, "keywords repeat a term"),
+        ({"keywords": [f"k{n}" for n in range(21)]}, "keywords lists more than 20"),
     ],
 )
 def test_entry_fields_are_checked(root, change, expected):
@@ -193,6 +198,10 @@ def _remote(**changes):
         (_remote(auth={"mode": "none", "requested_scopes": ["x"]}), "only allowed with auth.mode oauth2"),
         (_remote(auth={"mode": "headers"}), "declares no headers"),
         (_remote(id="Bad Id"), "id must be lowercase"),
+        (
+            _remote(auth={"mode": "oauth2", "client_registration": "dcr", "setup_url": "https://{host}/settings"}),
+            "setup_url must be a fixed https URL",
+        ),
     ],
 )
 def test_remotes_are_checked(root, remote, expected):
@@ -230,7 +239,24 @@ def test_host_variables_need_choices_inside_allowed_hosts_or_a_user_defined_host
         record=registry_record(url=url, variables=free),
         body=catalog(remotes=[_remote(url=url, allowed_hosts=["*.example.com"])]),
     )
-    assert "has no choices; set user_defined_host: true" in problems(root)
+    assert "has no choices" in problems(root)  # the whole host is free: not under a vendor domain
+
+    tenant = "https://{subdomain}.example.com/mcp"
+    write_entry(
+        root,
+        record=registry_record(url=tenant, variables={"subdomain": {"description": "your helpdesk"}}),
+        body=catalog(remotes=[_remote(url=tenant, allowed_hosts=["mcp.example.com"])]),
+    )
+    assert "has no choices" in problems(root)  # no wildcard owns the suffix
+
+    write_entry(
+        root,
+        record=registry_record(url=tenant, variables={"subdomain": {"description": "your helpdesk"}}),
+        body=catalog(remotes=[_remote(url=tenant, allowed_hosts=["*.example.com"])]),
+    )
+    overlay = bi.build_index(repository=REPO)["servers"][0]["server"]["_meta"][bi.CATALOG_META_KEY]
+    assert overlay["remotes"][0]["user_defined_host"] is False
+    assert overlay["remotes"][0]["allowed_hosts"] == ["*.example.com"]
 
     write_entry(
         root,
@@ -325,3 +351,22 @@ def test_a_changed_entry_must_raise_its_revision(root):
 def test_the_published_catalog_passes_its_own_check():
     """The real entries in servers/ — the state a pull request is merged into."""
     assert bi.main(["--check", "--repository", REPO]) == 0
+
+
+def test_keywords_are_published_trimmed(root):
+    write_entry(root, body=catalog(keywords=["Jira ", "Confluence"]))
+    overlay = bi.build_index(repository=REPO)["servers"][0]["server"]["_meta"][bi.CATALOG_META_KEY]
+    assert overlay["keywords"] == ["Jira", "Confluence"]
+
+
+def test_field_labels_name_declared_fields_only(root):
+    tenant = "https://{subdomain}.example.com/mcp"
+    record = registry_record(url=tenant, variables={"subdomain": {"description": "your helpdesk"}})
+    labelled = _remote(url=tenant, allowed_hosts=["*.example.com"], field_labels={"subdomain": "Example subdomain"})
+    write_entry(root, record=record, body=catalog(remotes=[labelled]))
+    overlay = bi.build_index(repository=REPO)["servers"][0]["server"]["_meta"][bi.CATALOG_META_KEY]
+    assert overlay["remotes"][0]["field_labels"] == {"subdomain": "Example subdomain"}
+
+    labelled["field_labels"] = {"tenant": "Tenant"}
+    write_entry(root, record=record, body=catalog(remotes=[labelled]))
+    assert "does not declare: ['tenant']" in problems(root)

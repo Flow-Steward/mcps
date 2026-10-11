@@ -1,0 +1,27 @@
+# Reviewed 2026-10-10: https://developers.brevo.com/docs/mcp-protocol
+# Main server covers 27 modules; per-module servers at https://mcp.brevo.com/v1/brevo_<module>/mcp (e.g. brevo_contacts). Server also advertises an OAuth AS with DCR at mcp.brevo.com but docs only describe the bearer token.
+revision: 1
+title: Brevo
+description: Manage Brevo contacts, lists, email campaigns, deals, and transactional templates from an AI assistant.
+category: marketing
+website_url: https://www.brevo.com
+help_url: https://developers.brevo.com/docs/mcp-protocol
+keywords:
+- Sendinblue
+- Email marketing
+- Newsletter
+- SMS
+official:
+  vendor: Brevo
+  evidence_url: https://developers.brevo.com/docs/mcp-protocol
+remotes:
+- id: default
+  label: Brevo
+  url: https://mcp.brevo.com/v1/brevo/mcp
+  allowed_hosts:
+  - mcp.brevo.com
+  field_labels:
+    Authorization: Brevo API key
+  auth:
+    mode: headers
+    setup_url: https://app.brevo.com/settings/keys/api

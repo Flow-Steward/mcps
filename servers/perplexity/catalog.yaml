@@ -1,0 +1,27 @@
+# Reviewed 2026-10-10: https://docs.perplexity.ai/guides/mcp-server
+# Usage billed to the chosen Perplexity API organization. Alt auth: 'Authorization: Bearer <Perplexity API key>'. AS supports DCR (https://api.perplexity.ai/oauth/register) and client_id_metadata_document_supported=true; scope perplexity_api.
+revision: 1
+title: Perplexity
+description: Run Perplexity web search, quick answers, deep research and reasoning queries from any AI assistant.
+category: ai
+website_url: https://www.perplexity.ai
+help_url: https://docs.perplexity.ai/guides/mcp-server
+keywords:
+- Perplexity AI
+- Sonar
+- Search
+official:
+  vendor: Perplexity AI
+  evidence_url: https://docs.perplexity.ai/guides/mcp-server
+remotes:
+- id: default
+  label: Perplexity
+  url: https://api.perplexity.ai/mcp
+  allowed_hosts:
+  - api.perplexity.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - perplexity_api
+    - offline_access

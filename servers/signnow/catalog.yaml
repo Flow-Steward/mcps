@@ -1,0 +1,28 @@
+# Reviewed 2026-10-10: https://docs.signnow.com/docs/mcp-hosted-setup
+# Included with paid SignNow plans. Open-source self-hosted variant also exists.
+revision: 1
+title: SignNow
+description: Send SignNow documents and templates for e-signature, manage invites and signing order, and check signing
+  status.
+category: documents
+website_url: https://www.signnow.com
+help_url: https://docs.signnow.com/docs/mcp-hosted-setup
+keywords:
+- E-signature
+- eSign
+- airSlate
+official:
+  vendor: airSlate
+  evidence_url: https://docs.signnow.com/docs/mcp-hosted-setup
+remotes:
+- id: default
+  label: SignNow
+  url: https://mcp-server.signnow.com/mcp
+  allowed_hosts:
+  - mcp-server.signnow.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access
+    - '*'

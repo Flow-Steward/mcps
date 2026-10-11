@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/tavily",
+  "title": "Tavily",
+  "description": "Search the web and extract, map, or crawl page content with the Tavily search API.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.tavily.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.tavily.com/mcp"
+    }
+  ]
+}

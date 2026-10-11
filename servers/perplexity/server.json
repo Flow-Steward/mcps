@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/perplexity",
+  "title": "Perplexity",
+  "description": "Run Perplexity web search, quick answers, deep research and reasoning queries from any AI assistant.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.perplexity.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.perplexity.ai/mcp"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://help.lucid.co/hc/en-us/articles/42578801807508
+# A Lucid account admin must enable MCP access first. Not available on FedRAMP accounts. Variants: /mcp/readonly and /mcp/repositories.
+revision: 1
+source:
+  registry: app.lucid.mcp/lucid
+title: Lucid
+description: Search, read, summarize, and edit Lucidchart and Lucidspark documents and create new diagrams.
+category: productivity
+website_url: https://lucid.co
+help_url: https://help.lucid.co/hc/en-us/articles/42578801807508
+official:
+  vendor: Lucid Software
+  evidence_url: https://help.lucid.co/hc/en-us/articles/42578801807508
+remotes:
+- id: default
+  label: Lucid
+  url: https://mcp.lucid.app/mcp
+  allowed_hosts:
+  - mcp.lucid.app
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

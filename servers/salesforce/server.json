@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/salesforce",
+  "title": "Salesforce",
+  "description": "Query, create, update and delete Salesforce records with the signed-in user's permissions and sharin",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.salesforce.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.salesforce.com/platform/mcp/v1/platform/sobject-all"
+    }
+  ]
+}

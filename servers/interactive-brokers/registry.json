@@ -1,0 +1,25 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "com.ibkr/interactive-brokers-ibkr",
+    "description": "Analyze global markets and manage your portfolio",
+    "title": "Interactive Brokers (IBKR)",
+    "version": "1.1.6",
+    "websiteUrl": "https://www.interactivebrokers.com/en/trading/ai-integrations.php",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://api.ibkr.com/v1/api/mcp-public"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-08-04T15:13:57.692072Z",
+      "publishedAt": "2026-08-04T15:13:57.692072Z",
+      "updatedAt": "2026-08-04T15:13:57.692072Z",
+      "isLatest": true
+    }
+  }
+}

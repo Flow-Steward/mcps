@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/deel",
+  "title": "Deel",
+  "description": "Look up Deel contracts, people, payroll, invoices, and time off, and manage HR workflows from an AI ",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.deel.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.letsdeel.com/mcp"
+    }
+  ]
+}

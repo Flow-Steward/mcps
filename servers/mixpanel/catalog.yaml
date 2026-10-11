@@ -1,0 +1,45 @@
+# Reviewed 2026-10-10: https://docs.mixpanel.com/docs/mcp
+# US default; EU https://mcp-eu.mixpanel.com/mcp and IN https://mcp-in.mixpanel.com/mcp. An org admin must enable MCP (Settings > Org > Overview). 600 requests/hour per user.
+revision: 1
+title: Mixpanel
+description: Query Mixpanel events, funnels, flows, retention, reports, and session replays.
+category: data
+website_url: https://mixpanel.com
+help_url: https://docs.mixpanel.com/docs/mcp
+official:
+  vendor: Mixpanel
+  evidence_url: https://docs.mixpanel.com/docs/mcp
+remotes:
+- id: default
+  label: Mixpanel
+  url: https://mcp.mixpanel.com/mcp
+  allowed_hosts:
+  - mcp.mixpanel.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - projects
+    - analysis
+    - events
+    - insights
+    - segmentation
+    - retention
+    - data:read
+    - funnels
+    - flows
+    - data_definitions
+    - alerts
+    - annotations
+    - bookmarks
+    - business_context
+    - cohorts
+    - context
+    - custom_alerts
+    - custom_events
+    - custom_properties
+    - dashboard_reports
+    - experiments
+    - feature_flags
+    - metrics
+    - user_details

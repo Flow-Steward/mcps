@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://mcp.platform.opentargets.org/
+# Public, no authentication. Official server landing page names the endpoint (shown there as http://; use https).
+revision: 1
+title: Open Targets Platform
+description: Query Open Targets data on drug targets, diseases, target-disease associations, evidence, and known
+  drugs.
+category: data
+website_url: https://www.opentargets.org
+help_url: https://mcp.platform.opentargets.org/
+keywords:
+- Open Targets
+official:
+  vendor: Open Targets
+  evidence_url: https://mcp.platform.opentargets.org/
+remotes:
+- id: default
+  label: Open Targets Platform
+  url: https://mcp.platform.opentargets.org/mcp
+  allowed_hosts:
+  - mcp.platform.opentargets.org
+  auth:
+    mode: none

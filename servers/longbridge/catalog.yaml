@@ -1,0 +1,27 @@
+# Reviewed 2026-10-10: https://open.longbridge.com/docs/mcp
+# Registry record com.longbridge/mcp declares an API-key header; this entry lists the OAuth endpoint only.
+# Global endpoint default; https://mcp.longbridge.cn serves AP accounts (SG/HK) only; US accounts must use global. Requires onboarded Longbridge account or paper account; tools vary by region, account level, and granted scopes.
+revision: 1
+title: Longbridge
+description: Get market quotes and research, and view or manage your Longbridge brokerage positions, orders, and
+  trades.
+category: finance
+website_url: https://longbridge.com
+help_url: https://open.longbridge.com/docs/mcp
+official:
+  vendor: Longbridge
+  evidence_url: https://open.longbridge.com/docs/mcp
+remotes:
+- id: default
+  label: Longbridge
+  url: https://mcp.longbridge.com
+  allowed_hosts:
+  - mcp.longbridge.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - '4'
+    - '6'
+    - '10'
+    - '11'

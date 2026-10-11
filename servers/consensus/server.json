@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/consensus",
+  "title": "Consensus",
+  "description": "Search peer-reviewed academic papers with filters for year, study type, sample size, and journal…",
+  "version": "1.0.0",
+  "websiteUrl": "https://consensus.app",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.consensus.app/mcp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/mercury",
+  "title": "Mercury",
+  "description": "Read Mercury business banking accounts, balances, transactions, statements, cards, recipients, and…",
+  "version": "1.0.0",
+  "websiteUrl": "https://mercury.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mercury.com/mcp"
+    }
+  ]
+}

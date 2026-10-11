@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://learn.microsoft.com/en-us/training/support/mcp
+# Public and free; no authentication.
+revision: 1
+source:
+  registry: com.microsoft/microsoft-learn-mcp
+title: Microsoft Learn
+description: Search Microsoft's official documentation, fetch full articles, and find code samples.
+category: developer-tools
+website_url: https://learn.microsoft.com
+help_url: https://learn.microsoft.com/en-us/training/support/mcp
+keywords:
+- Microsoft
+- Azure docs
+- Microsoft Docs
+official:
+  vendor: Microsoft
+  evidence_url: https://learn.microsoft.com/en-us/training/support/mcp
+remotes:
+- id: default
+  label: Microsoft Learn
+  url: https://learn.microsoft.com/api/mcp
+  allowed_hosts:
+  - learn.microsoft.com
+  auth:
+    mode: none

@@ -1,0 +1,30 @@
+# Reviewed 2026-10-10: https://docs.mercury.com/docs/connecting-mercury-mcp
+# Docs label it Beta and describe read-only access; probe advertises additional scopes (transactions:request, transfers:request, categories edit) so reviewer should confirm current capabilities. Sessions may need re-auth after ~3 days.
+revision: 1
+title: Mercury
+description: Read Mercury business banking accounts, balances, transactions, statements, cards, recipients, and
+  treasury data.
+category: finance
+website_url: https://mercury.com
+help_url: https://docs.mercury.com/docs/connecting-mercury-mcp
+preview_note: Preview
+official:
+  vendor: Mercury
+  evidence_url: https://docs.mercury.com/docs/connecting-mercury-mcp
+remotes:
+- id: default
+  label: Mercury
+  url: https://mcp.mercury.com/mcp
+  allowed_hosts:
+  - mcp.mercury.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - read
+    - offline_access
+    - transactions:request
+    - transfers:request
+    - categories:create
+    - categories:edit
+    - transactions:update

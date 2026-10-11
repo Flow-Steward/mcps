@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/
+# This endpoint is the read-only Documentation server, not the account-management servers. Cloudflare runs separate servers per product (bindings.mcp.cloudflare.com, builds, observability, radar, ...) and a full Cloudflare API server; those need OAuth and would be separate catalog entries.
+revision: 1
+source:
+  registry: com.cloudflare.mcp/mcp
+title: Cloudflare Documentation
+description: Search Cloudflare developer documentation for up-to-date reference on Workers, R2, D1, KV and other
+  Cloudflare products.
+category: developer-tools
+website_url: https://www.cloudflare.com
+help_url: https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/
+keywords:
+- Cloudflare
+official:
+  vendor: Cloudflare
+  evidence_url: https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/
+remotes:
+- id: default
+  label: Cloudflare Documentation
+  url: https://docs.mcp.cloudflare.com/mcp
+  allowed_hosts:
+  - docs.mcp.cloudflare.com
+  auth:
+    mode: none

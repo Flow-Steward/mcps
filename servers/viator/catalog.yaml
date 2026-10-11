@@ -1,0 +1,15 @@
+# Reviewed 2026-10-10: vendor docs not found
+# No vendor documentation found for this endpoint. Host is viator.com-owned and answered unauthenticated, but the root is behind DataDome bot protection and 'exp-app' suggests it backs a chat-app integration. Reviewer should verify before publishing.
+revision: 1
+title: Viator
+description: Search Viator tours, activities, and attractions by destination and view experience details and prices.
+category: other
+website_url: https://www.viator.com
+remotes:
+- id: default
+  label: Viator
+  url: https://exp-app-mcp.prod.ep.viator.com/mcp
+  allowed_hosts:
+  - exp-app-mcp.prod.ep.viator.com
+  auth:
+    mode: none

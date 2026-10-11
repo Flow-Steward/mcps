@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/openai-developer-docs",
+  "title": "OpenAI Developer Docs",
+  "description": "Search and read OpenAI developer documentation and API reference for up-to-date guidance.",
+  "version": "1.0.0",
+  "websiteUrl": "https://openai.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://developers.openai.com/mcp"
+    }
+  ]
+}

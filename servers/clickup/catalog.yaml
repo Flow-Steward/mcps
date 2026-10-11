@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server
+# OAuth only (OAuth 2.1 + PKCE); API keys and personal tokens are not accepted. User selects workspaces during authorization. Available on all ClickUp plans.
+revision: 1
+title: ClickUp
+description: Search, create, and update ClickUp tasks, lists, and Docs, add comments, and log time in a workspace.
+category: productivity
+website_url: https://clickup.com
+help_url: https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server
+official:
+  vendor: ClickUp
+  evidence_url: https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server
+remotes:
+- id: default
+  label: ClickUp
+  url: https://mcp.clickup.com/mcp
+  allowed_hosts:
+  - mcp.clickup.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - read
+    - write

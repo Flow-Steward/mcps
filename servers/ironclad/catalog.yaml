@@ -1,0 +1,36 @@
+# Reviewed 2026-10-10: https://support.ironcladapp.com/hc/en-us/articles/39887632957463-Connect-an-MCP-Client-to-Ironclad-MCP-Server
+# Regions: NA1 default; EU1 https://mcp.eu1.ironcladapp.com/mcp (demo host mcp.demo.ironcladapp.com is sandbox, do not list). DCR not supported; probe showed client metadata documents (used by Claude). Vendor officially supports only Claude clients — others need an Ironclad admin-registered OAuth app 
+revision: 1
+title: Ironclad
+description: Search Ironclad contracts in plain language to find agreement terms, and manage obligations.
+category: documents
+website_url: https://ironcladapp.com
+help_url: https://support.ironcladapp.com/hc/en-us/articles/39887632957463-Connect-an-MCP-Client-to-Ironclad-MCP-Server
+official:
+  vendor: Ironclad
+  evidence_url: https://support.ironcladapp.com/hc/en-us/articles/39887632957463-Connect-an-MCP-Client-to-Ironclad-MCP-Server
+remotes:
+- id: default
+  label: Ironclad
+  url: https://mcp.na1.ironcladapp.com/mcp
+  allowed_hosts:
+  - mcp.na1.ironcladapp.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - public.workflows.readWorkflows
+    - public.workflows.readSchemas
+    - public.workflows.createWorkflows
+    - public.workflows.readSignStatus
+    - public.workflows.readDocuments
+    - public.records.readRecords
+    - public.entities.readRelationshipTypes
+    - public.entities.readEntities
+    - public.obligations.readObligations
+    - public.obligations.createObligations
+    - public.obligations.updateObligations
+    - public.obligations.readTypes
+    - public.search.conversational
+    refresh_token_required: true
+    setup_url: https://ironcladapp.com/settings/api

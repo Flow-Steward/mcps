@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://planetscale.com/docs/mcp-server
+# Each client registers as an OAuth application on connect. Service tokens are supported for CI/headless clients.
+revision: 1
+title: PlanetScale
+description: Inspect PlanetScale organizations, databases, branches, and schemas, review Insights query performance,
+  and run queries.
+category: data
+website_url: https://planetscale.com
+help_url: https://planetscale.com/docs/mcp-server
+keywords:
+- MySQL
+- Postgres
+- Vitess
+official:
+  vendor: PlanetScale
+  evidence_url: https://planetscale.com/docs/mcp-server
+remotes:
+- id: default
+  label: PlanetScale
+  url: https://mcp.pscale.dev/mcp/planetscale
+  allowed_hosts:
+  - mcp.pscale.dev
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    setup_url: https://planetscale.com/docs/mcp/service-token

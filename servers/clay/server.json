@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/clay",
+  "title": "Clay",
+  "description": "Find and enrich people and company data with Clay's data providers and run Clay functions for…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.clay.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.clay.com/v3/mcp"
+    }
+  ]
+}

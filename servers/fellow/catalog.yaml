@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://developers.fellow.ai/reference/mcp-server
+# A workspace admin must enable Settings > Security > 'Allow users to create MCP connections'. Agenda write tools need write_meeting_agenda scope.
+revision: 1
+title: Fellow
+description: Search Fellow meetings and read summaries, transcripts, and action items, and edit meeting agendas.
+category: productivity
+website_url: https://fellow.ai
+help_url: https://developers.fellow.ai/reference/mcp-server
+official:
+  vendor: Fellow
+  evidence_url: https://developers.fellow.ai/reference/mcp-server
+remotes:
+- id: default
+  label: Fellow
+  url: https://fellow.app/mcp
+  allowed_hosts:
+  - fellow.app
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - read_calendar
+    - read_meeting_content
+    - read_action_items
+    - read_channels
+    - write_meeting_agenda

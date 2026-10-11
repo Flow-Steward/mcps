@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://help.pitchbook.com/s/article/Getting-started-with-PitchBook-Premium-Connectors
+# Could not find a vendor page printing the endpoint (only directories); input URL had no /mcp path, directories give /mcp. Requires a seat-based, unlimited, or trial PitchBook license with SSO; limits 150 tool calls/hour, 300/day.
+revision: 1
+title: PitchBook
+description: Look up private market companies, investors, deals, and funds from PitchBook data.
+category: finance
+website_url: https://pitchbook.com
+help_url: https://help.pitchbook.com/s/article/Getting-started-with-PitchBook-Premium-Connectors
+remotes:
+- id: default
+  label: PitchBook
+  url: https://premium.mcp.pitchbook.com/mcp
+  allowed_hosts:
+  - premium.mcp.pitchbook.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - profile
+    - email
+    - offline_access

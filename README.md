@@ -50,6 +50,7 @@ category: productivity            # an id from categories.json
 website_url: https://www.notion.com
 help_url: https://developers.notion.com/docs/get-started-with-mcp
 preview_note: ""                  # optional, e.g. "Developer Preview"
+keywords: [Jira, Confluence]      # optional: other names people search for (max 20)
 official:
   vendor: Notion
   evidence_url: https://developers.notion.com/docs/get-started-with-mcp
@@ -58,6 +59,8 @@ remotes:
     label: Notion
     url: https://mcp.notion.com/mcp   # must be a streamable-http remote of the record
     allowed_hosts: [mcp.notion.com]   # exact names or *.example.com
+    field_labels:                     # optional: what the install form calls each
+      Authorization: Notion API key   #   variable or header the record declares
     auth:
       mode: oauth2                # none | headers | oauth2
       client_registration: dcr    # dcr | client_metadata | user_supplied
@@ -71,7 +74,9 @@ The same endpoint may be listed twice with different sign-in methods (see
 `servers/monday`). Headers and URL variables a user fills in come from the
 server record (`remotes[].headers`, `remotes[].variables`), so they are never
 copied by hand. A URL whose host is a variable (`https://{api_host}/mcp`) is
-allowed when every choice is inside `allowed_hosts`, or with
+allowed when every choice is inside `allowed_hosts`; when the variable is the
+customer's own subdomain under the vendor's domain
+(`https://{subdomain}.freshdesk.com/mcp` with `*.freshdesk.com`); or with
 `user_defined_host: true` for self-hosted products, which Flow Steward then labels
 as an address the user sets.
 

@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://developers.make.com/mcp-server/connect-using-oauth
+# User picks organization and scopes on the OAuth consent screen; scenarios must be active with on-demand scheduling to appear as tools. /stateless and /stream path variants exist if connection fails; /sse is legacy SSE. MCP token alternative available in Make profile.
+revision: 1
+source:
+  registry: com.make/mcp-server
+title: Make
+description: Run your on-demand Make scenarios as tools and manage Make organizations, scenarios, and connections.
+category: operations
+website_url: https://www.make.com
+help_url: https://developers.make.com/mcp-server/connect-using-oauth
+keywords:
+- Integromat
+official:
+  vendor: Make (Celonis)
+  evidence_url: https://developers.make.com/mcp-server/connect-using-oauth
+remotes:
+- id: default
+  label: Make
+  url: https://mcp.make.com
+  allowed_hosts:
+  - mcp.make.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

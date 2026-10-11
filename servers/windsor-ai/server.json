@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/windsor-ai",
+  "title": "Windsor.ai",
+  "description": "Query marketing and ads data from 350+ connected sources and pause or enable Google and Meta ad…",
+  "version": "1.0.0",
+  "websiteUrl": "https://windsor.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.windsor.ai"
+    }
+  ]
+}

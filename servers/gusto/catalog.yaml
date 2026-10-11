@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: https://docs.gusto.com/app-integrations/docs/mcp
+# Use the core URL; the input /anthropic path is the Claude-specific variant and gusto-demo.com hosts are test-only. Requires a primary/global admin of the company. Tools are read-only per docs; Gusto recommends confirming every tool call and isolating from other MCP servers.
+revision: 1
+title: Gusto
+description: Read Gusto company, employee, contractor, payroll, and time-tracking data for the categories you grant.
+category: hr
+website_url: https://gusto.com
+help_url: https://docs.gusto.com/app-integrations/docs/mcp
+official:
+  vendor: Gusto
+  evidence_url: https://docs.gusto.com/app-integrations/docs/mcp
+remotes:
+- id: default
+  label: Gusto
+  url: https://mcp.api.gusto.com
+  allowed_hosts:
+  - mcp.api.gusto.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

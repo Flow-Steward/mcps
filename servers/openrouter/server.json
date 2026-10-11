@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/openrouter",
+  "title": "OpenRouter",
+  "description": "Browse OpenRouter models and prices, check credit balance and generation costs, and search the docs.",
+  "version": "1.0.0",
+  "websiteUrl": "https://openrouter.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.openrouter.ai/mcp"
+    }
+  ]
+}

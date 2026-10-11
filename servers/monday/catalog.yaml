@@ -1,15 +1,17 @@
 # Reviewed 2026-10-10: https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp names https://mcp.monday.com/mcp; sign-in is OAuth with dynamic client registration, or a personal API token in the Authorization header.
-revision: 1
+revision: 4
 source:
   registry: com.monday/monday.com
 title: monday.com
 description: Read and update monday.com boards, items, and updates, and create new items in the workspaces
-  you authorize.
+  you authorize. An account administrator may need to approve the connection. Tool calls count toward
+  the daily API limit.
 category: productivity
 website_url: https://monday.com
 help_url: https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp
-preview_note: An account administrator may need to approve the connection. Tool calls count toward the
-  daily API limit.
+keywords:
+- monday
+- monday work management
 official:
   vendor: monday.com
   evidence_url: https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp
@@ -28,6 +30,8 @@ remotes:
   url: https://mcp.monday.com/mcp
   allowed_hosts:
   - mcp.monday.com
+  field_labels:
+    Authorization: monday.com API token
   auth:
     mode: headers
     setup_url: https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp

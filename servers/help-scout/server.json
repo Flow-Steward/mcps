@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/help-scout",
+  "title": "Help Scout",
+  "description": "Search Help Scout conversations, customers and Docs articles and pull mailbox reports, read-only.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.helpscout.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.helpscout.net/mcp"
+    }
+  ]
+}

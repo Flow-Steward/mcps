@@ -1,0 +1,62 @@
+# Reviewed 2026-10-10: https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-gorgias-6310546
+# Open beta; available on all Helpdesk plans at no extra cost; actions depend on the user's Gorgias role. The subdomain is entered during sign-in; multiple brands use ?gorgias_subdomain=<sub> per connection. AS https://mcp.gorgias.com/ with DCR (/register). Some writes gated during beta.
+revision: 1
+title: Gorgias
+description: Work with Gorgias helpdesk tickets, customers, macros, tags and analytics, and configure AI Agent settings
+  from an AI assistant.
+category: support
+website_url: https://www.gorgias.com
+help_url: https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-gorgias-6310546
+preview_note: Preview
+official:
+  vendor: Gorgias
+  evidence_url: https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-gorgias-6310546
+remotes:
+- id: default
+  label: Gorgias
+  url: https://mcp.gorgias.com/mcp
+  allowed_hosts:
+  - mcp.gorgias.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - email
+    - profile
+    - offline
+    - account:read
+    - account:write
+    - users:read
+    - users:write
+    - customers:read
+    - customers:write
+    - segments:read
+    - tickets:read
+    - tickets:write
+    - custom_fields:read
+    - custom_fields:write
+    - events:read
+    - integrations:read
+    - integrations:write
+    - service_connection:read
+    - jobs:read
+    - jobs:write
+    - macros:read
+    - macros:write
+    - rules:read
+    - rules:write
+    - routines:read
+    - routines:write
+    - satisfaction_survey:read
+    - satisfaction_survey:write
+    - statistics:read
+    - tags:read
+    - tags:write
+    - apps:read
+    - apps:write
+    - help_center:read
+    - help_center:write
+    - ecommerce:read
+    - ecommerce:write
+    - billing:read

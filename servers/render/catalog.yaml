@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://render.com/docs/mcp-server
+# OAuth also offered (AS api.render.com) but without DCR/client metadata; works only for Render's own Claude Code/Codex/Cursor plugins, so use the API key. API keys are account-wide across workspaces.
+revision: 1
+title: Render
+description: Create and inspect Render services and Postgres databases, trigger deploys, read logs and metrics,
+  and update env vars.
+category: developer-tools
+website_url: https://render.com
+help_url: https://render.com/docs/mcp-server
+official:
+  vendor: Render
+  evidence_url: https://render.com/docs/mcp-server
+remotes:
+- id: default
+  label: Render
+  url: https://mcp.render.com/mcp
+  allowed_hosts:
+  - mcp.render.com
+  field_labels:
+    Authorization: Render API key
+  auth:
+    mode: headers
+    setup_url: https://dashboard.render.com/u/settings#api-keys

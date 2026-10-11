@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: vendor docs not found
+# No vendor documentation found; endpoint is on Block's squareup.com host and is listed by Block in the Claude connector directory. Probe shows no auth. Checkout completes via a Cash App link, not in the tool. Consumer use case; reviewer should decide relevance.
+revision: 1
+title: Order by Cash App
+description: Find nearby restaurants that sell through Square, browse menus, and build pickup orders to check out
+  in Cash App.
+category: ecommerce
+website_url: https://cash.app
+keywords:
+- Cash App
+- Square
+- Block
+remotes:
+- id: default
+  label: Order by Cash App
+  url: https://connect.squareup.com/v2/mcp/cash-app
+  allowed_hosts:
+  - connect.squareup.com
+  auth:
+    mode: none

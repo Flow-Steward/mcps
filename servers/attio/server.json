@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/attio",
+  "title": "Attio",
+  "description": "Look up and update Attio contacts, companies, and deals, search pipelines, log notes, and create…",
+  "version": "1.0.0",
+  "websiteUrl": "https://attio.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.attio.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/grafana-cloud",
+  "title": "Grafana Cloud",
+  "description": "Query metrics, logs, traces, dashboards, and alerts in your Grafana Cloud stack from an AI assistant",
+  "version": "1.0.0",
+  "websiteUrl": "https://grafana.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.grafana.com/mcp"
+    }
+  ]
+}

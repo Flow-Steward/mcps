@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://developers.fibery.com/guides/mcp/connecting
+# Older token-based local fibery-mcp-server is deprecated in favor of this remote server.
+revision: 1
+source:
+  registry: io.github.Fibery-inc/mcp
+title: Fibery
+description: Query, create, and update entities and documents in your Fibery workspace.
+category: productivity
+website_url: https://fibery.io
+help_url: https://developers.fibery.com/guides/mcp/connecting
+official:
+  vendor: Fibery
+  evidence_url: https://developers.fibery.com/guides/mcp/connecting
+remotes:
+- id: default
+  label: Fibery
+  url: https://mcp.fibery.io/mcp
+  allowed_hosts:
+  - mcp.fibery.io
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - offline

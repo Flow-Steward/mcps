@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/similarweb",
+  "title": "Similarweb",
+  "description": "Get website and app traffic, traffic sources, keyword rankings, audience demographics, and industry…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.similarweb.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.similarweb.com",
+      "headers": [
+        {
+          "name": "api-key",
+          "description": "Similarweb API key from your Similarweb account dashboard (API settings).",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

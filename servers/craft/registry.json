@@ -1,0 +1,24 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "do.craft.mcp/server",
+    "description": "Access and edit your Craft documents.",
+    "title": "Craft",
+    "version": "1.0.2",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.craft.do/my/mcp"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-02-24T16:16:27.411659Z",
+      "publishedAt": "2026-02-24T16:16:27.411659Z",
+      "updatedAt": "2026-02-24T16:16:27.411659Z",
+      "isLatest": true
+    }
+  }
+}

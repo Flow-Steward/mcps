@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/freshdesk",
+  "title": "Freshdesk",
+  "description": "Work with Freshdesk tickets, contacts, companies and agents from your helpdesk through the official…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{subdomain}.freshdesk.com/mcp",
+      "variables": {
+        "subdomain": {
+          "description": "The part before .freshdesk.com in your helpdesk address (custom domains are not supported for MCP) (for example: acme)",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Your personal Freshdesk API key sent as the bare header value (no Bearer/Basic prefix). Find it in Freshdesk under your profile picture > Profile settings > View API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://www.freshworks.com/freshdesk/"
+}

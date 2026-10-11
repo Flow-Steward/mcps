@@ -63,6 +63,8 @@ MAX_ICON_BYTES = 100 * 1024
 MIN_ICON_PX, MAX_ICON_PX = 32, 512
 MAX_SUMMARY_CHARS = 160
 MIN_DESCRIPTION_CHARS = 40
+MAX_KEYWORDS = 20
+MAX_KEYWORD_CHARS = 60
 
 AUTH_MODES = {"none", "headers", "oauth2"}
 CLIENT_REGISTRATIONS = {"dcr", "client_metadata", "user_supplied"}
@@ -98,10 +100,12 @@ _CATALOG_KEYS = {
     "website_url",
     "help_url",
     "preview_note",
+    "keywords",
     "official",
     "remotes",
 }
-_REMOTE_KEYS = {"id", "label", "url", "allowed_hosts", "user_defined_host", "auth"}
+_REMOTE_KEYS = {"id", "label", "url", "allowed_hosts", "user_defined_host", "auth", "field_labels"}
+MAX_FIELD_LABEL_CHARS = 120
 _AUTH_KEYS = {
     "mode",
     "client_registration",
@@ -341,11 +345,19 @@ def _check_remote(
         for name in host_variables:
             choices = (variables.get(name) or {}).get("choices")
             if not choices:
-                problems.append(
-                    f"{where}: host variable {{{name}}} has no choices; set user_defined_host: true"
-                )
-                hosts = []
-                break
+                # A customer's own subdomain under the vendor's domain
+                # ("{subdomain}.freshdesk.com" with "*.freshdesk.com"): free, but the
+                # fixed part after the last variable must be a wildcard the vendor owns.
+                suffix = host_template.rsplit("__", 1)[-1]
+                if not suffix.startswith(".") or f"*{suffix}" not in allowed_hosts:
+                    problems.append(
+                        f"{where}: host variable {{{name}}} has no choices; list them, end the host with a "
+                        "fixed domain covered by a '*.' entry in allowed_hosts, or set user_defined_host: true"
+                    )
+                    hosts = []
+                    break
+                hosts = [h.replace(f"__{name.lower()}__", "tenant") for h in hosts]
+                continue
             hosts = [h.replace(f"__{name.lower()}__", str(c).lower()) for h in hosts for c in choices]
         for host in hosts:
             if not host_allowed(host, allowed_hosts):
@@ -405,10 +417,23 @@ def _check_remote(
         problems.append(f"{where}: OAuth settings are only allowed with auth.mode oauth2")
     setup_url = _text(auth.get("setup_url"))
     if setup_url:
-        if not _https_url(setup_url):
-            problems.append(f"{where}: auth.setup_url must be https")
+        if not _https_url(setup_url) or _URL_VARIABLE.search(setup_url):
+            problems.append(f"{where}: auth.setup_url must be a fixed https URL")
         out_auth["setup_url"] = setup_url
-    return {
+    # What the install form calls each field the user fills in, keyed by the
+    # variable or header name the server record declares.
+    field_labels = remote.get("field_labels", {})
+    fields = {name.lower() for name in variables} | {_text(h.get("name")).lower() for h in headers}
+    if not isinstance(field_labels, dict) or not all(
+        isinstance(k, str) and isinstance(v, str) and 0 < len(v.strip()) <= MAX_FIELD_LABEL_CHARS
+        for k, v in field_labels.items()
+    ):
+        problems.append(f"{where}: field_labels must map field names to labels of 1-{MAX_FIELD_LABEL_CHARS} characters")
+        field_labels = {}
+    unknown_fields = sorted(k for k in field_labels if k.lower() not in fields)
+    if unknown_fields:
+        problems.append(f"{where}: field_labels names fields the server record does not declare: {unknown_fields}")
+    out = {
         "remote_id": remote_id,
         "label": _text(remote.get("label")) or remote_id,
         "url": url,
@@ -416,6 +441,9 @@ def _check_remote(
         "user_defined_host": user_defined_host,
         "auth": out_auth,
     }
+    if field_labels:
+        out["field_labels"] = {k: v.strip() for k, v in field_labels.items()}
+    return out
 
 
 def derive_item(
@@ -459,6 +487,17 @@ def derive_item(
     for key in ("website_url", "help_url"):
         if catalog.get(key) and not _https_url(catalog.get(key)):
             problems.append(f"{item_id}: {key} must be an https URL")
+
+    keywords = catalog.get("keywords", [])
+    if not isinstance(keywords, list) or not all(
+        isinstance(k, str) and 0 < len(k.strip()) <= MAX_KEYWORD_CHARS for k in keywords
+    ):
+        problems.append(f"{item_id}: keywords must list search terms of 1-{MAX_KEYWORD_CHARS} characters")
+        keywords = []
+    elif len(keywords) > MAX_KEYWORDS:
+        problems.append(f"{item_id}: keywords lists more than {MAX_KEYWORDS} terms")
+    elif len({k.strip().lower() for k in keywords}) != len(keywords):
+        problems.append(f"{item_id}: keywords repeat a term")
 
     official_out: dict[str, Any] | None = None
     official = catalog.get("official")
@@ -547,6 +586,7 @@ def derive_item(
         "website_url": _text(catalog.get("website_url")) or _text(server.get("websiteUrl")),
         "help_url": _text(catalog.get("help_url")),
         "preview_note": _text(catalog.get("preview_note")),
+        "keywords": [k.strip() for k in keywords],
         "official": official_out,
         "icon": icon_out,
         "remotes": remotes_out,

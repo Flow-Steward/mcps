@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/n8n",
+  "title": "n8n",
+  "description": "Search, run and build the workflows you have exposed to MCP on your own n8n Cloud or self-hosted…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp-server/http",
+      "variables": {
+        "instance_host": {
+          "description": "Host name of your n8n instance (n8n Cloud or self-hosted), without https:// or a path. The full Server URL is shown under Settings > Instance-level MCP > Connect a client. (for example: acme.app.n8n.cloud)",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Personal MCP access token: Settings > Instance-level MCP > Connect a client > API key tab. Paste the generated token as is. Enter it as: Bearer <value>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://n8n.io"
+}

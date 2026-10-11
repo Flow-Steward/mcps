@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/jenkins",
+  "title": "Jenkins",
+  "description": "Inspect jobs, trigger builds and read build logs and status on your own Jenkins controller through…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp-server/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "Host name of your Jenkins controller (the Jenkins URL from Manage Jenkins > System, without https://). If Jenkins runs under a context path such as /jenkins, the endpoint is <jenkins-url>/mcp-server/mcp. (for example: ci.acme.com)",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "base64 of '<jenkins-username>:<api-token>' (echo -n 'user:token' | base64). Create the API token under your user > Security > API Token. Enter it as: Basic <value>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://www.jenkins.io"
+}

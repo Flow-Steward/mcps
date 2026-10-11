@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/day-ai",
+  "title": "Day AI",
+  "description": "Search and update Day AI CRM contacts, companies, and opportunities, and read meeting transcripts.",
+  "version": "1.0.0",
+  "websiteUrl": "https://day.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://day.ai/api/mcp"
+    }
+  ]
+}

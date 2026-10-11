@@ -1,0 +1,31 @@
+# Reviewed 2026-10-10: https://www.mercadopago.com.ar/developers/en/docs/mcp-server/overview
+# Beta. OAuth (DCR at /oauth/register/mcp; scopes read/write/offline_access) or Authorization: Bearer <Access Token> (app/credential tools unavailable with token). Country chosen at OAuth. Developer-integration oriented tools.
+revision: 1
+title: Mercado Pago
+description: Search Mercado Pago developer docs, manage applications and credentials, and get integration guidance
+  for payments.
+category: finance
+website_url: https://www.mercadopago.com
+help_url: https://www.mercadopago.com.ar/developers/en/docs/mcp-server/overview
+preview_note: Preview
+keywords:
+- Mercado Libre
+- MercadoPago
+- Payments
+official:
+  vendor: Mercado Libre (Mercado Pago)
+  evidence_url: https://www.mercadopago.com.uy/developers/en/docs/mcp-server/connection.md
+remotes:
+- id: default
+  label: Mercado Pago
+  url: https://mcp.mercadopago.com/mcp
+  allowed_hosts:
+  - mcp.mercadopago.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access
+    - write
+    - read
+    setup_url: https://www.mercadopago.com/developers/panel/app

@@ -1,0 +1,32 @@
+# Reviewed 2026-10-10: https://elevenlabs.io/docs/eleven-agents/operate/hosted-mcp
+# Docs say clients supporting CIMD need no registration. Data-residency URLs: EU https://api.eu.residency.elevenlabs.io/v1/mcp, India https://api.in.residency.elevenlabs.io/v1/mcp, Singapore https://api.sg.residency.elevenlabs.io/v1/mcp (separate accounts). Directory remote_url api.us.elevenlabs.io is
+revision: 1
+title: ElevenLabs
+description: Create and manage ElevenLabs voice agents, review conversations and tests, and generate speech audio.
+category: ai
+website_url: https://elevenlabs.io
+help_url: https://elevenlabs.io/docs/eleven-agents/operate/hosted-mcp
+keywords:
+- Text to speech
+- TTS
+- Voice
+official:
+  vendor: ElevenLabs
+  evidence_url: https://elevenlabs.io/docs/eleven-agents/operate/hosted-mcp
+remotes:
+- id: default
+  label: ElevenLabs
+  url: https://api.elevenlabs.io/v1/mcp
+  allowed_hosts:
+  - api.elevenlabs.io
+  auth:
+    mode: oauth2
+    client_registration: client_metadata
+    requested_scopes:
+    - convai_read
+    - convai_write
+    - text_to_speech
+    - speech_history_read
+    - flows
+    - image_video_generation
+    - voice_generation

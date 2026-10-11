@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://docs.similarweb.com/api-v5/mcp/mcp-setup
+# Requires a subscription with API access (API-only, Business, or Enterprise); calls use the same data credits as the API. Header name 'api-key' comes from third-party guides and the probe (401, no OAuth metadata); vendor setup page did not show the header name - verify. Some directories mention OAuth
+revision: 1
+title: Similarweb
+description: Get website and app traffic, traffic sources, keyword rankings, audience demographics, and industry
+  benchmarks.
+category: marketing
+website_url: https://www.similarweb.com
+help_url: https://docs.similarweb.com/api-v5/mcp/mcp-setup
+official:
+  vendor: Similarweb
+  evidence_url: https://docs.similarweb.com/api-v5/mcp/mcp-setup
+remotes:
+- id: default
+  label: Similarweb
+  url: https://mcp.similarweb.com
+  allowed_hosts:
+  - mcp.similarweb.com
+  field_labels:
+    api-key: Similarweb API key
+  auth:
+    mode: headers

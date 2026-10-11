@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://docs.bitrise.io/bitrise-platform/ai/bitrise-mcp
+# Docs: remote server at mcp.bitrise.io with OAuth; clients without MCP OAuth can send a Bitrise Personal Access Token as a Bearer header instead.
+revision: 1
+source:
+  registry: io.github.bitrise-io/bitrise-mcp
+title: Bitrise
+description: Manage Bitrise apps, trigger and inspect CI builds, read build logs, and download build artifacts.
+category: developer-tools
+website_url: https://bitrise.io
+help_url: https://docs.bitrise.io/bitrise-platform/ai/bitrise-mcp
+official:
+  vendor: Bitrise
+  evidence_url: https://docs.bitrise.io/bitrise-platform/ai/bitrise-mcp
+remotes:
+- id: default
+  label: Bitrise
+  url: https://mcp.bitrise.io/
+  allowed_hosts:
+  - mcp.bitrise.io
+  field_labels:
+    x-bitrise-enabled-api-groups: Enabled API groups
+  auth:
+    mode: oauth2
+    client_registration: client_metadata
+    requested_scopes:
+    - offline_access

@@ -1,0 +1,46 @@
+# Reviewed 2026-10-10: https://developer.wordpress.com/docs/mcp/
+# User must turn on MCP in account preferences. Paid plans (free sites: first 30 days); Jetpack sites need Jetpack AI or Complete. Write tools are off unless Full access is granted.
+revision: 1
+title: WordPress.com
+description: Read and manage WordPress.com posts, pages, media, comments, and site settings.
+category: cms
+website_url: https://wordpress.com
+help_url: https://developer.wordpress.com/docs/mcp/
+keywords:
+- WordPress
+- Automattic
+official:
+  vendor: Automattic
+  evidence_url: https://developer.wordpress.com/docs/mcp/
+remotes:
+- id: default
+  label: WordPress.com
+  url: https://public-api.wordpress.com/wpcom/v2/mcp/v1
+  allowed_hosts:
+  - public-api.wordpress.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - global
+    - auth
+    - openid
+    - profile
+    - email
+    - users
+    - sites
+    - posts
+    - comments
+    - taxonomy
+    - follow
+    - sharing
+    - freshly-pressed
+    - notifications
+    - insights
+    - read
+    - stats
+    - media
+    - menus
+    - batch
+    - videos
+    setup_url: https://wordpress.com/me/preferences/mcp

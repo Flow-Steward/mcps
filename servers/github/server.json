@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/github",
+  "title": "GitHub",
+  "description": "Browse repositories and code, and manage issues, pull requests, Actions runs, and security alerts…",
+  "version": "1.0.0",
+  "websiteUrl": "https://github.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  ]
+}

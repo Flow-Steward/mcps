@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://help.surveymonkey.com/en/surveymonkey/integrations/llm-connectors/
+# Vendor help names only Claude and ChatGPT and does not print the URL; endpoint from directories plus probe (OAuth+DCR). US-data accounts only; excludes HIPAA and Enhanced Sensitive Data Protection accounts. Reviewer should confirm generic clients work.
+revision: 1
+title: SurveyMonkey
+description: Create, edit, and search SurveyMonkey surveys and analyze responses.
+category: marketing
+website_url: https://www.surveymonkey.com
+help_url: https://help.surveymonkey.com/en/surveymonkey/integrations/llm-connectors/
+remotes:
+- id: default
+  label: SurveyMonkey
+  url: https://mcp.surveymonkey.com/mcp
+  allowed_hosts:
+  - mcp.surveymonkey.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - surveys_read
+    - surveys_write
+    - collectors_write
+    - responses_read
+    - responses_read_detail
+    - users_read

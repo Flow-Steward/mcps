@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/financial-modeling-prep",
+  "title": "Financial Modeling Prep",
+  "description": "Look up stock quotes, financial statements, ratios, and market data for public companies, ETFs, and…",
+  "version": "1.0.0",
+  "websiteUrl": "https://site.financialmodelingprep.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://financialmodelingprep.com/mcp"
+    }
+  ]
+}

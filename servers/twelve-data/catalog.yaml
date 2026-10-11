@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://twelvedata.com/docs/llms/ai/mcp-server.md
+# OAuth 2.1 login with Twelve Data account (no API key). Data/endpoint access depends on subscription plan.
+revision: 1
+source:
+  registry: com.twelvedata/mcp
+title: Twelve Data
+description: Get real-time quotes, historical time series, and reference data for stocks, forex, crypto, and ETFs.
+category: finance
+website_url: https://twelvedata.com
+help_url: https://twelvedata.com/docs/llms/ai/mcp-server.md
+official:
+  vendor: Twelve Data
+  evidence_url: https://twelvedata.com/docs/llms/ai/mcp-server.md
+remotes:
+- id: default
+  label: Twelve Data
+  url: https://mcp.twelvedata.com/mcp
+  allowed_hosts:
+  - mcp.twelvedata.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - twelvedata

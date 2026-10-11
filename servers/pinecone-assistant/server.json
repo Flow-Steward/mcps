@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/pinecone-assistant",
+  "title": "Pinecone Assistant",
+  "description": "Retrieve grounded context from the documents uploaded to one of your Pinecone Assistants.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp/assistants/{assistant_name}",
+      "variables": {
+        "instance_host": {
+          "description": "The assistant's Host value from the Pinecone console (Assistants > your assistant), without https://. (for example: prod-1-data.ke.pinecone.io)",
+          "isRequired": true
+        },
+        "assistant_name": {
+          "description": "Name of the Pinecone Assistant, as shown in the console. (for example: support-docs)",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Pinecone API key from the Pinecone console (API keys) for the project that owns the assistant. Enter it as: Bearer <value>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://www.pinecone.io"
+}

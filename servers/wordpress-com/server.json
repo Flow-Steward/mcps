@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/wordpress-com",
+  "title": "WordPress.com",
+  "description": "Read and manage WordPress.com posts, pages, media, comments, and site settings.",
+  "version": "1.0.0",
+  "websiteUrl": "https://wordpress.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://public-api.wordpress.com/wpcom/v2/mcp/v1"
+    }
+  ]
+}

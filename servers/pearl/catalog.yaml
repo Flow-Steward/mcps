@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://docs.pearl.com/api/docs/pearl-api-mcp-server
+# Pearl blog documents /mcp with Bearer API key; Pearl API docs show /sse with X-API-KEY header. Probe advertised OAuth metadata (mcp:tools, mcp:resources) without DCR. Reviewer should verify which header /mcp accepts. docs.pearl.com could not be fetched directly.
+revision: 1
+source:
+  registry: com.pearl.mcp/pearl-api-mcp-server
+title: Pearl
+description: Send questions to Pearl's AI intake or route them to verified human experts and read conversation history.
+category: other
+website_url: https://www.pearl.com
+help_url: https://docs.pearl.com/api/docs/pearl-api-mcp-server
+official:
+  vendor: Pearl
+  evidence_url: https://blog.pearl.com/post/quick-start-guide-connect-your-ai-agent-to-pearl-s-mcp-server
+remotes:
+- id: default
+  label: Pearl
+  url: https://mcp.pearl.com/mcp
+  allowed_hosts:
+  - mcp.pearl.com
+  field_labels:
+    X-API-Key: Pearl API key
+  auth:
+    mode: headers

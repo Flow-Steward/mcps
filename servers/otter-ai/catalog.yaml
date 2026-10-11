@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://otter.ai/mcp-server
+# Could not open a vendor doc page naming the endpoint (help center blocked, otter.ai/mcp-server is a JS app); filled from probe (DCR, scopes profile:read conversations:read). Otter pricing lists 'MCP server integration' as a plan feature, so it may require a paid plan. Reviewer should verify.
+revision: 1
+title: Otter.ai
+description: Search Otter meeting conversations and read their transcripts, summaries, and action items.
+category: productivity
+website_url: https://otter.ai
+help_url: https://otter.ai/mcp-server
+keywords:
+- Otter
+- Meeting notes
+- Transcription
+remotes:
+- id: default
+  label: Otter.ai
+  url: https://mcp.otter.ai/mcp
+  allowed_hosts:
+  - mcp.otter.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - profile:read
+    - conversations:read

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/godaddy-domains",
+  "title": "GoDaddy Domains",
+  "description": "Suggest domain names from keywords or ideas and check whether specific domains are available to…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.godaddy.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.godaddy.com/v1/domains/mcp"
+    }
+  ]
+}

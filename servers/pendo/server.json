@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/pendo",
+  "title": "Pendo",
+  "description": "Query Pendo product analytics, including visitor and account metadata, feature and page usage, and…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.pendo.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.pendo.io/mcp/v0/shttp"
+    }
+  ]
+}

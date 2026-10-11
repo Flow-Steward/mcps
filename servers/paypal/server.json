@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/paypal",
+  "title": "PayPal",
+  "description": "Create invoices, orders, refunds, and subscriptions, and look up transactions and disputes in…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.paypal.com/mcp"
+    }
+  ]
+}

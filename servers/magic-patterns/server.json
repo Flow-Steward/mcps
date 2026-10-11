@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/magic-patterns",
+  "title": "Magic Patterns",
+  "description": "Pull Magic Patterns designs and their generated code into your project, and create or edit designs…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.magicpatterns.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.magicpatterns.com/mcp"
+    }
+  ]
+}

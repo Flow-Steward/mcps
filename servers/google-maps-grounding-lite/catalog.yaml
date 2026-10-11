@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://developers.google.com/maps/ai/grounding-lite
+# Tools: search_places, lookup_weather, compute_routes, resolve_names, resolve_maps_urls. Pay-as-you-go billing per request; needs a Cloud project with billing and the Maps Grounding Lite API enabled. OAuth alternative (Google OAuth client, scope https://www.googleapis.com/auth/maps-platform.mapstools
+revision: 1
+title: Google Maps Grounding Lite
+description: Search places, look up weather and compute routes with Google Maps Platform data from an AI agent.
+category: data
+website_url: https://mapsplatform.google.com
+help_url: https://developers.google.com/maps/ai/grounding-lite
+keywords:
+- Google Maps
+- Maps
+- Places
+official:
+  vendor: Google
+  evidence_url: https://developers.google.com/maps/ai/grounding-lite/reference/mcp
+remotes:
+- id: default
+  label: Google Maps Grounding Lite
+  url: https://mapstools.googleapis.com/mcp
+  allowed_hosts:
+  - mapstools.googleapis.com
+  field_labels:
+    X-Goog-Api-Key: Google Maps API key
+  auth:
+    mode: headers
+    setup_url: https://console.cloud.google.com/google/maps-apis/credentials

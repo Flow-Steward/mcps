@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://help.expensify.com/articles/new-expensify/connections/connect-ai-assistants/Use-the-Expensify-MCP-Server-With-AI-Assistants
+# Docs give https://www.expensify.com/mcp, which 308-redirects to /mcp/ (POST to /mcp/ returns 401 with resource_metadata). PRM resource is https://www.expensify.com/mcp; AS https://www.expensify.com has DCR (/oauth/register). Read-only; any Expensify member; launched June 2026.
+revision: 1
+title: Expensify
+description: Ask about Expensify expenses, reports, reimbursements, receipts, trips and spending trends; read-only
+  access through search.
+category: finance
+website_url: https://www.expensify.com
+help_url: https://help.expensify.com/articles/new-expensify/connections/connect-ai-assistants/Use-the-Expensify-MCP-Server-With-AI-Assistants
+official:
+  vendor: Expensify
+  evidence_url: https://help.expensify.com/articles/new-expensify/connections/connect-ai-assistants/Use-the-Expensify-MCP-Server-With-AI-Assistants
+remotes:
+- id: default
+  label: Expensify
+  url: https://www.expensify.com/mcp/
+  allowed_hosts:
+  - www.expensify.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:tools

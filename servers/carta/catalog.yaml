@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: https://carta.com/ai/connector/
+# No vendor page found that names mcp.app.carta.com (carta.com/ai/connector describes the Claude connector; page blocked fetch). Endpoint confirmed only via directories and probe. Reviewer should verify it is open to non-Claude clients.
+revision: 1
+title: Carta
+description: Look up cap tables, investors, fund performance, and CRM data in your Carta account.
+category: finance
+website_url: https://carta.com
+help_url: https://carta.com/ai/connector/
+remotes:
+- id: default
+  label: Carta
+  url: https://mcp.app.carta.com/mcp
+  allowed_hosts:
+  - mcp.app.carta.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - cuid

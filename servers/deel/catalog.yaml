@@ -1,0 +1,117 @@
+# Reviewed 2026-10-10: https://developer.deel.com/mcp/connecting-clients
+# AS api.letsdeel.com advertises DCR (/oauth/register). Alternative: personal access token as 'Authorization: Bearer <token>' (Developer Center). initialize answers 200 unauthenticated; OAuth access tokens last 1 hour. Docs mention HTTP with SSE responses.
+revision: 1
+title: Deel
+description: Look up Deel contracts, people, payroll, invoices, and time off, and manage HR workflows from an AI
+  assistant.
+category: hr
+website_url: https://www.deel.com
+help_url: https://developer.deel.com/mcp/connecting-clients
+official:
+  vendor: Deel
+  evidence_url: https://developer.deel.com/mcp/connecting-clients
+remotes:
+- id: default
+  label: Deel
+  url: https://api.letsdeel.com/mcp
+  allowed_hosts:
+  - api.letsdeel.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - accounting:read
+    - adjustments:read
+    - adjustments:write
+    - agentic-workflows:write
+    - ai:read
+    - ai:write
+    - api-logs:read
+    - approvals:read
+    - approvals:write
+    - ats.applications.notes:write
+    - ats:read
+    - ats:write
+    - auth:write
+    - benefits:read
+    - benefits:write
+    - candidates:read
+    - candidates:write
+    - compensation-management:read
+    - compensation-management:write
+    - contracts:read
+    - contracts:write
+    - equities:read
+    - equities:write
+    - files:read
+    - files:write
+    - forms:read
+    - global-payroll:read
+    - global-payroll:write
+    - groups:read
+    - groups:write
+    - hr-suite:read
+    - hr-suite:write
+    - i-9:read
+    - i-9:write
+    - immigration:read
+    - immigration:write
+    - invoice-adjustments:read
+    - invoice-adjustments:write
+    - invoice:create
+    - it-agreements:read
+    - it-assets:read
+    - it-assets:write
+    - it-orders:read
+    - it-orders:write
+    - it-policies:read
+    - it-policies:write
+    - it-products:read
+    - it-seats:read
+    - it-seats:write
+    - it-service-requests:read
+    - it-service-requests:write
+    - job-architecture:read
+    - job-architecture:write
+    - jobs:read
+    - jobs:write
+    - knowledge-hub:read
+    - legal-entity:read
+    - legal-entity:write
+    - milestones:read
+    - milestones:write
+    - off-cycle-payments:read
+    - off-cycle-payments:write
+    - on-demand-payroll:read
+    - on-demand-payroll:write
+    - organizations:read
+    - organizations:write
+    - payments:read
+    - payment-statements:read
+    - payment-statements:write
+    - payslips:read
+    - people:read
+    - people:write
+    - profile:read
+    - profile:write
+    - public-token:write
+    - screenings:read
+    - screenings:write
+    - talents:read
+    - talents:write
+    - tasks:read
+    - tasks:write
+    - time-off:read
+    - time-off:write
+    - timesheets:read
+    - timesheets:write
+    - time-tracking:read
+    - time-tracking:write
+    - treasury-vendorbill:write
+    - Users:read
+    - Users:write
+    - webhooks:read
+    - webhooks:write
+    - withdrawals:read
+    - worker:read
+    - worker:write

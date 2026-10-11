@@ -1,0 +1,27 @@
+# Reviewed 2026-10-10: https://help.close.com/docs/mcp-server
+# OAuth scopes mcp.read / mcp.write_safe / mcp.write_destructive chosen at consent. Alternative: Close-API-Key + Close-Scope headers.
+revision: 1
+source:
+  registry: com.close/close-mcp
+title: Close
+description: Look up and update Close CRM leads, contacts, opportunities, and activities.
+category: crm
+website_url: https://www.close.com
+help_url: https://help.close.com/docs/mcp-server
+official:
+  vendor: Close
+  evidence_url: https://help.close.com/docs/mcp-server
+remotes:
+- id: default
+  label: Close
+  url: https://mcp.close.com/mcp
+  allowed_hosts:
+  - mcp.close.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp.read
+    - mcp.write_destructive
+    - mcp.write_safe
+    - offline_access

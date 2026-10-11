@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server
+# No DCR: OAuth needs a user-created GitHub OAuth App. Docs also allow a PAT as 'Authorization: Bearer <PAT>' header (simpler alternative). Toolset paths /x/<toolset> and /readonly suffix available. Org policy 'MCP servers in Copilot' must be enabled for Copilot Business/Enterprise members; OAuth acce
+revision: 1
+title: GitHub
+description: Browse repositories and code, and manage issues, pull requests, Actions runs, and security alerts on
+  GitHub.
+category: developer-tools
+website_url: https://github.com
+help_url: https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server
+keywords:
+- Git
+- Copilot
+official:
+  vendor: GitHub
+  evidence_url: https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server
+remotes:
+- id: default
+  label: GitHub
+  url: https://api.githubcopilot.com/mcp/
+  allowed_hosts:
+  - api.githubcopilot.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    setup_url: https://github.com/settings/apps/new

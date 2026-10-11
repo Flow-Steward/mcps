@@ -1,0 +1,31 @@
+# Reviewed: https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714082142.html
+# Vendor docs give /services/mcp/v1/all (all SuiteApp and ACP tools) and /services/mcp/v1/suiteapp/<publisherid>.<projectid> (e.g. com.netsuite.mcpstandardtools). Admin enables Server SuiteScript, REST Web Services and OAuth 2.0, installs the MCP Standard Tools SuiteApp, and creates an integration record (Setup > Integration > Manage Integrations > New) with Authorization Code Grant, Public Client, 
+revision: 1
+title: NetSuite
+description: Query and update NetSuite records, saved searches and reports through the NetSuite AI Connector Service
+  MCP endpoint.
+category: finance
+website_url: https://www.netsuite.com/
+help_url: https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714082142.html
+keywords:
+- Oracle NetSuite
+- ERP
+- Accounting
+official:
+  vendor: Oracle NetSuite
+  evidence_url: https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714082142.html
+remotes:
+- id: default
+  label: NetSuite
+  url: https://{account_id}.suitetalk.api.netsuite.com/services/mcp/v1/all
+  allowed_hosts:
+  - '*.suitetalk.api.netsuite.com'
+  field_labels:
+    account_id: NetSuite account ID
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - mcp
+    refresh_token_required: true
+    setup_url: https://system.netsuite.com/app/common/integration/integrapp.nl

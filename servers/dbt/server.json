@@ -1,0 +1,40 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/dbt",
+  "title": "dbt",
+  "description": "Query metrics via the Semantic Layer, explore models, lineage and metadata, and run SQL against your",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.getdbt.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cloud.getdbt.com/api/ai/v1/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "dbt personal access token or service token (Semantic Layer + Developer permissions) Enter it as: Token <key>",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "x-dbt-prod-environment-id",
+          "description": "Numeric production environment ID",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "x-dbt-dev-environment-id",
+          "description": "Numeric development environment ID (needed for execute_sql)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "x-dbt-user-id",
+          "description": "Numeric dbt user ID (needed for execute_sql)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

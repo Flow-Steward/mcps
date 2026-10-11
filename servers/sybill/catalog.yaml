@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: vendor docs not found
+# UNRESOLVED: could not find a Sybill-owned doc page for the MCP server (search budget exhausted); details from directories and the probe. Read-only tools; acts as the signed-in user.
+revision: 1
+title: Sybill
+description: Read Sybill call summaries, deal and account insights, and ask questions about your pipeline before
+  meetings.
+category: sales
+website_url: https://www.sybill.ai
+remotes:
+- id: default
+  label: Sybill
+  url: https://mcp.sybill.ai/mcp
+  allowed_hosts:
+  - mcp.sybill.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - email
+    - profile
+    - offline_access

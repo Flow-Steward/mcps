@@ -1,0 +1,29 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "com.jitsu/mcp",
+    "description": "Manage Jitsu data pipelines: destinations, streams, connections, functions, live events.",
+    "title": "Jitsu",
+    "repository": {
+      "url": "https://github.com/jitsucom/jitsu",
+      "source": "github"
+    },
+    "version": "1.0.0",
+    "websiteUrl": "https://jitsu.com/docs/mcp",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://use.jitsu.com/mcp"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-07-31T19:25:22.656065Z",
+      "publishedAt": "2026-07-31T19:25:22.656065Z",
+      "updatedAt": "2026-07-31T19:25:22.656065Z",
+      "isLatest": true
+    }
+  }
+}

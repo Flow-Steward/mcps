@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/expensify",
+  "title": "Expensify",
+  "description": "Ask about Expensify expenses, reports, reimbursements, receipts, trips and spending trends; read-onl",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.expensify.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.expensify.com/mcp/"
+    }
+  ]
+}

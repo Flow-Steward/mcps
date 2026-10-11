@@ -1,0 +1,26 @@
+# Reviewed: https://docs.strapi.io/cms/features/strapi-mcp-server
+# Off by default: add mcp: { enabled: true } to config/server.js (or .ts) and restart. Built-in, Streamable HTTP, POST only (GET/DELETE return 405). Strapi 5; minimum 5.47 per earlier finding, not re-confirmed on the docs page. Strapi Cloud wildcard *.strapiapp.com is from general knowledge, not this page.
+revision: 1
+title: Strapi
+description: Create, read, update, publish and unpublish content in your own Strapi CMS through its Content Manager,
+  scoped by an Admin token.
+category: cms
+website_url: https://strapi.io
+help_url: https://docs.strapi.io/cms/features/strapi-mcp-server
+keywords:
+- Headless CMS
+official:
+  vendor: Strapi
+  evidence_url: https://docs.strapi.io/cms/features/strapi-mcp-server
+remotes:
+- id: default
+  label: Strapi
+  url: https://{instance_host}/mcp
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: Strapi address
+    Authorization: Strapi admin token
+  auth:
+    mode: headers
+    setup_url: https://docs.strapi.io/cms/features/strapi-mcp-server

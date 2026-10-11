@@ -1,0 +1,21 @@
+# Reviewed 2026-10-10: https://docs.coupler.io/ai/mcp
+# Vendor docs do not print mcp.coupler.io; their 'Custom MCP' destination uses a per-flow URL plus a generated Bearer token instead. Requires a paid plan (sources disagree Starter vs Professional) and data flows with an AI destination.
+revision: 1
+source:
+  registry: io.coupler/remote-mcp-server
+title: Coupler.io
+description: Query data flows from marketing, sales, finance, and ecommerce sources connected in Coupler.io.
+category: data
+website_url: https://www.coupler.io
+help_url: https://docs.coupler.io/ai/mcp
+remotes:
+- id: default
+  label: Coupler.io
+  url: https://mcp.coupler.io/mcp
+  allowed_hosts:
+  - mcp.coupler.io
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp

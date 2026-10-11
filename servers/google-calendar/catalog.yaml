@@ -2,13 +2,17 @@
 # Needs the Developer Preview Program, a Google Cloud project with the MCP service enabled,
 # and the user's own OAuth client (Google offers no dynamic client registration).
 # Scopes and authorization parameters carried over unchanged from Flow Steward's former template.
-revision: 1
+revision: 2
 title: Google Calendar
 description: Read calendars and events and check free/busy time in Google Calendar. Read-only access.
 category: productivity
 website_url: https://workspace.google.com
 help_url: https://developers.google.com/workspace/guides/configure-mcp-servers
 preview_note: Developer Preview
+keywords:
+- Google Workspace
+- G Suite
+- Calendar
 official:
   vendor: Google
   evidence_url: https://developers.google.com/workspace/guides/configure-mcp-servers

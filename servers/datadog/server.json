@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/datadog",
+  "title": "Datadog",
+  "description": "Search Datadog logs, metrics, traces, monitors, dashboards and incidents to investigate production i",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.datadoghq.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.datadoghq.com/api/unstable/mcp-server/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Datadog Personal Access Token or Service Access Token (alternative: DD_API_KEY + DD_APPLICATION_KEY headers from a scoped service account) Enter it as: Bearer <key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

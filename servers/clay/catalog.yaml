@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://university.clay.com/docs/connect-to-clay-mcp
+# Enrichment consumes Clay credits. Workspace admins manage MCP access, available functions, and credit budgets in workspace MCP settings.
+revision: 1
+title: Clay
+description: Find and enrich people and company data with Clay's data providers and run Clay functions for prospecting.
+category: sales
+website_url: https://www.clay.com
+help_url: https://university.clay.com/docs/connect-to-clay-mcp
+official:
+  vendor: Clay
+  evidence_url: https://university.clay.com/docs/connect-to-clay-mcp
+remotes:
+- id: default
+  label: Clay
+  url: https://api.clay.com/v3/mcp
+  allowed_hosts:
+  - api.clay.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp

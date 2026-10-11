@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: https://day.ai/mcp
+# Requires a paid Day AI Agent tier; tier limits and workspace role apply.
+revision: 1
+title: Day AI
+description: Search and update Day AI CRM contacts, companies, and opportunities, and read meeting transcripts.
+category: crm
+website_url: https://day.ai
+help_url: https://day.ai/mcp
+official:
+  vendor: Day AI
+  evidence_url: https://day.ai/mcp
+remotes:
+- id: default
+  label: Day AI
+  url: https://day.ai/api/mcp
+  allowed_hosts:
+  - day.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr

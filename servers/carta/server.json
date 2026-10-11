@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/carta",
+  "title": "Carta",
+  "description": "Look up cap tables, investors, fund performance, and CRM data in your Carta account.",
+  "version": "1.0.0",
+  "websiteUrl": "https://carta.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.app.carta.com/mcp"
+    }
+  ]
+}

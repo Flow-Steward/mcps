@@ -1,0 +1,29 @@
+# Reviewed 2026-10-10: https://docs.getdbt.com/docs/dbt-ai/setup-remote-mcp
+# Host varies per account/region (ACCOUNT_PREFIX.us1.dbt.com, EMEA/APAC hosts); copy from Account settings > Access URLs. OAuth (beta, DCR) works only on the account's unique URL - cloud.getdbt.com AS metadata says so. Starter/Enterprise plans.
+revision: 1
+title: dbt Cloud
+description: Query metrics via the Semantic Layer, explore models, lineage and metadata, and run SQL against your
+  dbt platform project.
+category: data
+website_url: https://www.getdbt.com
+help_url: https://docs.getdbt.com/docs/dbt-ai/setup-remote-mcp
+keywords:
+- dbt Labs
+- Data transformation
+official:
+  vendor: dbt Labs
+  evidence_url: https://docs.getdbt.com/docs/dbt-ai/setup-remote-mcp
+remotes:
+- id: default
+  label: dbt Cloud
+  url: https://cloud.getdbt.com/api/ai/v1/mcp/
+  allowed_hosts:
+  - cloud.getdbt.com
+  field_labels:
+    Authorization: dbt Cloud service token
+    x-dbt-prod-environment-id: Production environment ID
+    x-dbt-dev-environment-id: Development environment ID
+    x-dbt-user-id: dbt Cloud user ID
+  auth:
+    mode: headers
+    setup_url: https://cloud.getdbt.com/settings/profile

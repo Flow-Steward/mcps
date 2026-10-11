@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://support.craft.do/en/integrate/mcp
+# User picks the Craft space during browser authorization. Craft also offers per-connection generated MCP URLs scoped to selected documents (created in the Imagine tab); this entry is the space-level OAuth endpoint. Evidence page is on www-staff.craft.do (Craft-owned host).
+revision: 1
+source:
+  registry: do.craft.mcp/server
+title: Craft
+description: Search, create, and update Craft documents, daily notes, tasks, and collections in a connected space.
+category: productivity
+website_url: https://www.craft.do
+help_url: https://support.craft.do/en/integrate/mcp
+official:
+  vendor: Craft Docs
+  evidence_url: https://www-staff.craft.do/imagine/guide/mcp/claude_code
+remotes:
+- id: default
+  label: Craft
+  url: https://mcp.craft.do/my/mcp
+  allowed_hosts:
+  - mcp.craft.do
+  auth:
+    mode: oauth2
+    client_registration: dcr

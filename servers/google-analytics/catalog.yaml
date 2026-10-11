@@ -1,0 +1,32 @@
+# Reviewed 2026-10-10: https://developers.google.com/analytics/devguides/reporting/data/v1/mcp
+# Google-managed MCP endpoint (Data API). Must enable the API/MCP server in a Google Cloud project and create an OAuth client (Google has no DCR). PRM scopes: analytics.readonly, analytics. Unauthenticated initialize succeeded (200). The separate googleanalytics/google-analytics-mcp repo is a local pi
+revision: 1
+title: Google Analytics
+description: Run Google Analytics 4 reports and look up properties, dimensions and metrics from an AI assistant.
+category: marketing
+website_url: https://marketingplatform.google.com/about/analytics/
+help_url: https://developers.google.com/analytics/devguides/reporting/data/v1/mcp
+keywords:
+- GA4
+- Google Analytics 4
+- Analytics
+official:
+  vendor: Google
+  evidence_url: https://developers.google.com/analytics/devguides/reporting/data/v1/mcp
+remotes:
+- id: default
+  label: Google Analytics
+  url: https://analyticsdata.googleapis.com/mcp/v1
+  allowed_hosts:
+  - analyticsdata.googleapis.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - https://www.googleapis.com/auth/analytics.readonly
+    authorization_parameters:
+      access_type: offline
+      prompt: consent
+      include_granted_scopes: 'true'
+    refresh_token_required: true
+    setup_url: https://console.cloud.google.com/apis/credentials

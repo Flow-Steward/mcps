@@ -1,0 +1,28 @@
+# Reviewed 2026-10-10: https://www.interactivebrokers.com/en/index.php?f=78687
+# IBKR announcement (page returns 403 to fetchers; URL confirmed via search snippet and press coverage) says any MCP client can use /mcp-public; /v1/api/mcp is the variant used by official ChatGPT/Claude connectors. User authorizes access to a single account; trade instructions are not executed automa
+revision: 1
+source:
+  registry: com.ibkr/interactive-brokers-ibkr
+title: Interactive Brokers
+description: Review IBKR account positions, balances, P&L, and risk, research instruments, and draft trade instructions.
+category: finance
+website_url: https://www.interactivebrokers.com
+help_url: https://www.interactivebrokers.com/en/index.php?f=78687
+keywords:
+- IBKR
+official:
+  vendor: Interactive Brokers
+  evidence_url: https://www.interactivebrokers.com/en/index.php?f=78687
+remotes:
+- id: default
+  label: Interactive Brokers
+  url: https://api.ibkr.com/v1/api/mcp-public
+  allowed_hosts:
+  - api.ibkr.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp.read
+    - mcp.write
+    - mcp.orders.submit

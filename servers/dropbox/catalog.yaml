@@ -1,0 +1,39 @@
+# Reviewed 2026-10-10: https://help.dropbox.com/integrations/connect-dropbox-mcp-server
+# DCR only for a trusted client set; other clients create a Scoped/Full Dropbox app and add their redirect URI. Open beta. Team admins may block app connections. Separate Dash server at https://mcp.dropbox.com/dash.
+revision: 1
+title: Dropbox
+description: Browse Dropbox folders, read file metadata and contents, and manage shared links and file requests
+  from an AI assistant.
+category: documents
+website_url: https://www.dropbox.com
+help_url: https://help.dropbox.com/integrations/connect-dropbox-mcp-server
+preview_note: Preview
+keywords:
+- Files
+- Cloud storage
+official:
+  vendor: Dropbox
+  evidence_url: https://help.dropbox.com/integrations/connect-dropbox-mcp-server
+remotes:
+- id: default
+  label: Dropbox
+  url: https://mcp.dropbox.com/mcp
+  allowed_hosts:
+  - mcp.dropbox.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - account_info.read
+    - files.metadata.read
+    - files.metadata.write
+    - files.content.read
+    - files.content.write
+    - sharing.read
+    - sharing.write
+    - file_requests.read
+    - file_requests.write
+    authorization_parameters:
+      token_access_type: offline
+    refresh_token_required: true
+    setup_url: https://www.dropbox.com/developers/apps

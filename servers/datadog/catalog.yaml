@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://docs.datadoghq.com/mcp_server/setup/
+# Endpoint is per Datadog site (US1 default; us3, us5, datadoghq.eu, ap1, ap2, uk1 use their own mcp.<site> host); not available on GovCloud. Docs render the URL client-side only, so evidence_url is empty; host/path confirmed by live 401 probe. OAuth also exists (DCR at app.datadoghq.com/api/v2/oauth2
+revision: 1
+title: Datadog
+description: Search Datadog logs, metrics, traces, monitors, dashboards and incidents to investigate production
+  issues.
+category: developer-tools
+website_url: https://www.datadoghq.com
+help_url: https://docs.datadoghq.com/mcp_server/setup/
+keywords:
+- Observability
+- Monitoring
+- APM
+remotes:
+- id: default
+  label: Datadog
+  url: https://mcp.datadoghq.com/api/unstable/mcp-server/mcp
+  allowed_hosts:
+  - mcp.datadoghq.com
+  field_labels:
+    Authorization: Datadog access token
+  auth:
+    mode: headers
+    setup_url: https://app.datadoghq.com/personal-settings/application-keys

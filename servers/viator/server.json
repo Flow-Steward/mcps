@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/viator",
+  "title": "Viator",
+  "description": "Search Viator tours, activities, and attractions by destination and view experience details and…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.viator.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://exp-app-mcp.prod.ep.viator.com/mcp"
+    }
+  ]
+}

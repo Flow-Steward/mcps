@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/mailersend",
+  "title": "MailerSend",
+  "description": "Send and schedule transactional emails, manage domains, templates and webhooks, and review delivery ",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.mailersend.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mailersend.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# Reviewed 2026-10-10: https://www.mintlify.com/docs/ai/mintlify-mcp
+# Interactive OAuth login with a Mintlify account; requires a connected Git provider with write access to the deploy branch. Admin-only actions need admin role.
+revision: 1
+title: Mintlify
+description: Edit Mintlify documentation pages, navigation, and settings, and open pull requests for your docs projects.
+category: developer-tools
+website_url: https://www.mintlify.com
+help_url: https://www.mintlify.com/docs/ai/mintlify-mcp
+official:
+  vendor: Mintlify
+  evidence_url: https://www.mintlify.com/docs/ai/mintlify-mcp.md
+remotes:
+- id: default
+  label: Mintlify
+  url: https://mcp.mintlify.com
+  allowed_hosts:
+  - mcp.mintlify.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - docs:read
+    - docs:write
+    - nav:write
+    - config:write
+    - session:write
+    - deployment:read
+    - deployment:write
+    - members:read
+    - members:write
+    - billing:read
+    - integrations:write
+    - analytics:read
+    - offline_access

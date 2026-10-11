@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/tomba",
+  "title": "Tomba",
+  "description": "Find and verify email addresses, search domains, and enrich contacts and companies with Tomba data.",
+  "version": "1.0.0",
+  "websiteUrl": "https://tomba.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.tomba.io/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Tomba API key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "X-API-Secret",
+          "description": "Tomba API secret",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

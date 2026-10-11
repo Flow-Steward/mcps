@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://developer.box.com/guides/box-mcp/remote/
+# A Box admin must enable the Box MCP server integration in Admin Console > Integrations and add integration credentials (client ID/secret) for an unlisted client. Docs list scopes root_readwrite, ai.readwrite, docgen.readwrite; docgen.readwrite needs Enterprise Advanced. OAuth endpoints: account.box.
+revision: 1
+title: Box
+description: Search, read, and organize Box files and folders, and ask Box AI questions or extract metadata from
+  documents.
+category: documents
+website_url: https://www.box.com
+help_url: https://developer.box.com/guides/box-mcp/remote/
+official:
+  vendor: Box, Inc.
+  evidence_url: https://developer.box.com/guides/box-mcp/remote/
+remotes:
+- id: default
+  label: Box
+  url: https://mcp.box.com
+  allowed_hosts:
+  - mcp.box.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - root_readwrite
+    - ai.readwrite
+    refresh_token_required: true
+    setup_url: https://app.box.com/master/integrations

@@ -1,0 +1,30 @@
+# Reviewed 2026-10-10: https://docs.zapier.com/mcp/get-started/authentication
+# Streamable HTTP only. Zapier creates the MCP server during OAuth sign-in. Fallback: connection token from mcp.zapier.com (Other client) sent as Authorization: Bearer. MCP tool calls consume Zapier task quota.
+revision: 1
+source:
+  registry: com.zapier/mcp
+title: Zapier
+description: Run actions in thousands of apps connected to your Zapier account, such as sending emails or creating
+  records.
+category: productivity
+website_url: https://zapier.com
+help_url: https://docs.zapier.com/mcp/get-started/authentication
+keywords:
+- Automation
+- Workflows
+official:
+  vendor: Zapier
+  evidence_url: https://docs.zapier.com/mcp/get-started/authentication
+remotes:
+- id: default
+  label: Zapier
+  url: https://mcp.zapier.com/api/v1/connect
+  allowed_hosts:
+  - mcp.zapier.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - profile
+    - email

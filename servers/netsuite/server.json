@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/netsuite",
+  "title": "NetSuite",
+  "description": "Query and update NetSuite records, saved searches and reports through the NetSuite AI Connector…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{account_id}.suitetalk.api.netsuite.com/services/mcp/v1/all",
+      "variables": {
+        "account_id": {
+          "description": "Your NetSuite account ID (Setup > Company > Company Information), lowercase, with underscores replaced by hyphens for sandboxes (123456_SB1 becomes 123456-sb1) (for example: 1234567)",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+  "websiteUrl": "https://www.netsuite.com/"
+}

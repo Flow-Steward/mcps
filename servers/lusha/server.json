@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/lusha",
+  "title": "Lusha",
+  "description": "Search and enrich B2B contacts and companies with Lusha data for prospecting.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.lusha.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.lusha.com",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Lusha API key from API Hub in your Lusha account (Admin or Manager role required).",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

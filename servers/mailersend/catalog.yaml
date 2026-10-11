@@ -1,0 +1,21 @@
+# Reviewed 2026-10-10: https://developers.mailersend.com/mcp-server.html
+# Probe: 401 + PRM; AS https://mcp.mailersend.com with registration_endpoint /register. Docs say any streamable-HTTP client works.
+revision: 1
+title: MailerSend
+description: Send and schedule transactional emails, manage domains, templates and webhooks, and review delivery
+  activity and analytics.
+category: email
+website_url: https://www.mailersend.com
+help_url: https://developers.mailersend.com/mcp-server.html
+official:
+  vendor: MailerSend
+  evidence_url: https://developers.mailersend.com/mcp-server.html
+remotes:
+- id: default
+  label: MailerSend
+  url: https://mcp.mailersend.com/mcp
+  allowed_hosts:
+  - mcp.mailersend.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

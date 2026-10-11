@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/sentry",
+  "title": "Sentry",
+  "description": "Look up Sentry issues, errors, traces, and releases, and update projects, teams, and alerts in your…",
+  "version": "1.0.0",
+  "websiteUrl": "https://sentry.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.sentry.dev/mcp"
+    }
+  ]
+}

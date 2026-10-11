@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://developers.klaviyo.com/en/docs/klaviyo_mcp_server
+# Only Klaviyo users with Owner, Admin, or Manager role can connect. URL must have no trailing slash.
+revision: 1
+title: Klaviyo
+description: Review Klaviyo campaign and flow performance, manage profiles, lists, catalogs, and events, and draft
+  email campaigns.
+category: marketing
+website_url: https://www.klaviyo.com
+help_url: https://developers.klaviyo.com/en/docs/klaviyo_mcp_server
+keywords:
+- Email marketing
+- SMS marketing
+official:
+  vendor: Klaviyo
+  evidence_url: https://developers.klaviyo.com/en/docs/klaviyo_mcp_server
+remotes:
+- id: default
+  label: Klaviyo
+  url: https://mcp.klaviyo.com/mcp
+  allowed_hosts:
+  - mcp.klaviyo.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

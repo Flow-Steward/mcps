@@ -1,0 +1,29 @@
+# Reviewed 2026-10-10: https://clickhouse.com/docs/products/cloud/features/ai-ml/mcp/remote-mcp
+# MCP must be enabled per service (Connect > MCP). DCR at /register. Headless alternative: Cloud API key as HTTP Basic Authorization header.
+revision: 1
+title: ClickHouse Cloud
+description: Explore databases and schemas, run read-only SQL, and check services, backups, ClickPipes and billing
+  in ClickHouse Cloud.
+category: data
+website_url: https://clickhouse.com/cloud
+help_url: https://clickhouse.com/docs/products/cloud/features/ai-ml/mcp/remote-mcp
+keywords:
+- ClickHouse
+official:
+  vendor: ClickHouse
+  evidence_url: https://clickhouse.com/docs/products/cloud/features/ai-ml/mcp/remote-mcp
+remotes:
+- id: default
+  label: ClickHouse Cloud
+  url: https://mcp.clickhouse.cloud/mcp
+  allowed_hosts:
+  - mcp.clickhouse.cloud
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:access
+    - openid
+    - profile
+    - email
+    setup_url: https://console.clickhouse.cloud

@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://help.autodesk.com/cloudhelp/ENU/ADSKMCP-ProductHelpMcp/files/ADSKMCP_ProductHelpMcp_ide_integration_html.html
+# Vendor docs: public, read-only, no sign-in, no API key or headers. Probe saw OAuth metadata (client_metadata), but docs win.
+revision: 1
+title: Autodesk Product Help
+description: Search official Autodesk help and support documentation across more than 110 Autodesk products.
+category: other
+website_url: https://www.autodesk.com
+help_url: https://help.autodesk.com/cloudhelp/ENU/ADSKMCP-ProductHelpMcp/files/ADSKMCP_ProductHelpMcp_ide_integration_html.html
+keywords:
+- Autodesk
+- AutoCAD
+- Revit
+- Fusion
+official:
+  vendor: Autodesk
+  evidence_url: https://help.autodesk.com/cloudhelp/ENU/ADSKMCP-ProductHelpMcp/files/ADSKMCP_ProductHelpMcp_ide_integration_html.html
+remotes:
+- id: default
+  label: Autodesk Product Help
+  url: https://developer.api.autodesk.com/knowledge/public/v1/mcp
+  allowed_hosts:
+  - developer.api.autodesk.com
+  auth:
+    mode: none

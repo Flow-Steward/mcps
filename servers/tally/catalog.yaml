@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://tally.so/help/mcp
+# mcp.tally.so 301 -> api.tally.so/mcp. OAuth recommended (DCR /oauth/register/mcp); API key also accepted. Free on all plans.
+revision: 1
+title: Tally
+description: Create and edit Tally forms, and read and analyze form submissions from your workspace.
+category: productivity
+website_url: https://tally.so
+help_url: https://tally.so/help/mcp
+official:
+  vendor: Tally
+  evidence_url: https://tally.so/help/mcp
+remotes:
+- id: default
+  label: Tally
+  url: https://api.tally.so/mcp
+  allowed_hosts:
+  - api.tally.so
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp

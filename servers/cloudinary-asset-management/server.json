@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/cloudinary-asset-management",
+  "title": "Cloudinary Asset Management",
+  "description": "Upload, search, rename, tag, and transform images and videos in your Cloudinary media library.",
+  "version": "1.0.0",
+  "websiteUrl": "https://cloudinary.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://asset-management.mcp.cloudinary.com/mcp"
+    }
+  ]
+}

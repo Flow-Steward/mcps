@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://docs.digitalocean.com/reference/mcp/configure-mcp/
+# One server per service on *.mcp.digitalocean.com/mcp: apps, doks, droplets, functions, databases, spaces, networking, nfs, accounts, insights, marketplace, volumes, docr, docs (no auth), plus AI ones (dedicated-inference, inference-modelcatalog, genai-*, vector-databases, kbaas.do-ai.run/v1/mcp). Ca
+revision: 1
+title: DigitalOcean
+description: Deploy and manage DigitalOcean App Platform apps, view logs and deployments from an AI assistant.
+category: developer-tools
+website_url: https://www.digitalocean.com
+help_url: https://docs.digitalocean.com/reference/mcp/configure-mcp/
+keywords:
+- DO
+- App Platform
+official:
+  vendor: DigitalOcean
+  evidence_url: https://docs.digitalocean.com/reference/mcp/configure-mcp/
+remotes:
+- id: default
+  label: DigitalOcean
+  url: https://apps.mcp.digitalocean.com/mcp
+  allowed_hosts:
+  - apps.mcp.digitalocean.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - read
+    - write

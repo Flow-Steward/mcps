@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://www.jotform.com/developers/mcp
+# OAuth only, bearer tokens not supported. Only workspace admins can install the Jotform MCP app. A UI variant at https://mcp.jotform.com/mcp-app targets clients with MCP Apps support. Probe scopes: readOnly, full.
+revision: 1
+source:
+  registry: com.jotform/mcp
+title: Jotform
+description: List, create, and edit Jotform forms, and create or retrieve form submissions.
+category: productivity
+website_url: https://www.jotform.com
+help_url: https://www.jotform.com/developers/mcp
+official:
+  vendor: Jotform
+  evidence_url: https://www.jotform.com/developers/mcp
+remotes:
+- id: default
+  label: Jotform
+  url: https://mcp.jotform.com/
+  allowed_hosts:
+  - mcp.jotform.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - readOnly
+    - full

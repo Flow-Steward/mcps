@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/umami",
+  "title": "Umami",
+  "description": "Ask about your website traffic in Umami Cloud: page views, visitors, referrers, events, and other…",
+  "version": "1.0.0",
+  "websiteUrl": "https://umami.is",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cloud.umami.is/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Umami Cloud API key (starts with api_), created under Settings > API keys in Umami Cloud. Enter it as: Bearer <key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

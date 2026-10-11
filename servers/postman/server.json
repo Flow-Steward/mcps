@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/postman",
+  "title": "Postman",
+  "description": "Manage Postman workspaces, collections, environments, specs, and mocks, and run collection requests.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.postman.com/mcp"
+    }
+  ],
+  "websiteUrl": "https://www.postman.com/product/mcp-server/"
+}

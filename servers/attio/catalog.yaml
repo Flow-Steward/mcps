@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://attio.com/apps/mcp
+# Acts as the signed-in Attio user with that user's workspace access.
+revision: 1
+title: Attio
+description: Look up and update Attio contacts, companies, and deals, search pipelines, log notes, and create tasks.
+category: crm
+website_url: https://attio.com
+help_url: https://attio.com/apps/mcp
+official:
+  vendor: Attio
+  evidence_url: https://attio.com/apps/mcp
+remotes:
+- id: default
+  label: Attio
+  url: https://mcp.attio.com/mcp
+  allowed_hosts:
+  - mcp.attio.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - offline_access
+    - mcp

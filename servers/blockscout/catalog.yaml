@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://docs.blockscout.com/devs/mcp-server
+# Public, no authentication. Evidence is the vendor's MCP landing page, which names https://mcp.blockscout.com/mcp.
+revision: 1
+source:
+  registry: com.blockscout/mcp-server
+title: Blockscout
+description: Look up blockchain balances, tokens, NFTs, transactions, and contract ABIs across EVM chains indexed
+  by Blockscout.
+category: data
+website_url: https://www.blockscout.com
+help_url: https://docs.blockscout.com/devs/mcp-server
+official:
+  vendor: Blockscout
+  evidence_url: https://mcp.blockscout.com/
+remotes:
+- id: default
+  label: Blockscout
+  url: https://mcp.blockscout.com/mcp
+  allowed_hosts:
+  - mcp.blockscout.com
+  auth:
+    mode: none

@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: https://docs.incident.io/ai/remote-mcp
+# Input name refers to a community Go repo, but the endpoint is incident.io's own hosted server. An admin may need to enable Remote MCP under Settings > MCP. API keys (Settings > API keys) are an alternative for automation.
+revision: 1
+title: incident.io
+description: Create and update incidents, manage alerts and escalations, and check on-call schedules in incident.io.
+category: it
+website_url: https://incident.io
+help_url: https://docs.incident.io/ai/remote-mcp
+official:
+  vendor: incident.io
+  evidence_url: https://docs.incident.io/ai/remote-mcp
+remotes:
+- id: default
+  label: incident.io
+  url: https://mcp.incident.io/mcp
+  allowed_hosts:
+  - mcp.incident.io
+  auth:
+    mode: oauth2
+    client_registration: dcr

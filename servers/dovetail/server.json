@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/dovetail",
+  "title": "Dovetail",
+  "description": "Search Dovetail research, read transcripts, docs, and highlights, and create projects, docs, and…",
+  "version": "1.0.0",
+  "websiteUrl": "https://dovetail.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dovetail.com/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Dovetail personal API token from Settings > Account > Personal API keys Enter it as: Bearer <key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

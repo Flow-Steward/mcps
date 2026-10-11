@@ -1,0 +1,32 @@
+# Reviewed 2026-10-10: https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp
+# User must create a Google Cloud OAuth client (ID + secret) and enable the BigQuery remote MCP server in the project. execute_sql is the only write-capable tool; 3-minute query limit, 3,000-row result cap.
+revision: 1
+title: Google BigQuery
+description: Run SQL queries in BigQuery and inspect datasets, tables, and job metadata.
+category: data
+website_url: https://cloud.google.com/bigquery
+help_url: https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp
+keywords:
+- Google Cloud
+- GCP
+- BigQuery
+official:
+  vendor: Google
+  evidence_url: https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp
+remotes:
+- id: default
+  label: Google BigQuery
+  url: https://bigquery.googleapis.com/mcp
+  allowed_hosts:
+  - bigquery.googleapis.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - https://www.googleapis.com/auth/bigquery
+    authorization_parameters:
+      access_type: offline
+      prompt: consent
+      include_granted_scopes: 'true'
+    refresh_token_required: true
+    setup_url: https://console.cloud.google.com/apis/credentials

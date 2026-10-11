@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/twilio-docs",
+  "title": "Twilio Docs",
+  "description": "Search Twilio, SendGrid, and Segment API operations and docs and retrieve full request and response…",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.twilio.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.twilio.com/docs"
+    }
+  ]
+}

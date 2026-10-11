@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/coda",
+  "title": "Coda",
+  "description": "Read and edit Coda docs, pages and tables, including rows, views, charts and comments.",
+  "version": "1.0.0",
+  "websiteUrl": "https://coda.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://coda.io/apis/mcp"
+    }
+  ]
+}

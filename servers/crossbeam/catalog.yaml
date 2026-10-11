@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://help.crossbeam.com/en/articles/12601327-crossbeam-mcp-server
+# Docs: OAuth 2.1 + PKCE with DCR; endpoint has /mcp suffix. Available on all plans; tool calls consume Crossbeam Credits. Admins can restrict MCP access per role.
+revision: 1
+title: Crossbeam
+description: Find account overlaps with partners, partner activity, and co-sell opportunities from Crossbeam ecosystem
+  data.
+category: sales
+website_url: https://www.crossbeam.com
+help_url: https://help.crossbeam.com/en/articles/12601327-crossbeam-mcp-server
+official:
+  vendor: Crossbeam
+  evidence_url: https://help.crossbeam.com/en/articles/12601327-crossbeam-mcp-server
+remotes:
+- id: default
+  label: Crossbeam
+  url: https://mcp.crossbeam.com/mcp
+  allowed_hosts:
+  - mcp.crossbeam.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - email
+    - offline_access
+    - openid
+    - profile

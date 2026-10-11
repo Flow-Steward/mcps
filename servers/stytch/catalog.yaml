@@ -1,0 +1,30 @@
+# Reviewed 2026-10-10: https://stytch.com/docs/workspace-management/stytch-mcp
+# Launch blog used /sse; current docs use /mcp. Can change auth project settings and API keys, so tool calls are state-changing.
+revision: 1
+title: Stytch
+description: Manage Stytch projects, redirect URLs, API keys, and email templates in your Stytch workspace.
+category: developer-tools
+website_url: https://stytch.com
+help_url: https://stytch.com/docs/workspace-management/stytch-mcp
+official:
+  vendor: Stytch
+  evidence_url: https://stytch.com/docs/workspace-management/stytch-mcp
+remotes:
+- id: default
+  label: Stytch
+  url: https://mcp.stytch.dev/mcp
+  allowed_hosts:
+  - mcp.stytch.dev
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - email
+    - profile
+    - admin:projects
+    - manage:api_keys
+    - manage:api_keys:test
+    - manage:project_settings
+    - manage:project_data
+    - offline_access

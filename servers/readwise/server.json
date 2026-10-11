@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/readwise",
+  "title": "Readwise",
+  "description": "Search, create, and update Readwise highlights and save, tag, and organize Reader documents.",
+  "version": "1.0.0",
+  "websiteUrl": "https://readwise.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp2.readwise.io/mcp"
+    }
+  ]
+}

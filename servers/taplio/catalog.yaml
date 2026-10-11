@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://intercom.help/taplio/en/articles/15532514-getting-started-with-the-taplio-mcp
+# Recently launched ('some rough edges'). Needs active subscription/trial. DCR at /register. /mcp path 404 - use root URL.
+revision: 1
+title: Taplio
+description: Write, schedule and publish LinkedIn posts, search content inspiration, and view analytics in Taplio.
+category: marketing
+website_url: https://taplio.com
+help_url: https://intercom.help/taplio/en/articles/15532514-getting-started-with-the-taplio-mcp
+preview_note: Preview
+official:
+  vendor: Taplio
+  evidence_url: https://intercom.help/taplio/en/articles/15532514-getting-started-with-the-taplio-mcp
+remotes:
+- id: default
+  label: Taplio
+  url: https://mcp.taplio.com/
+  allowed_hosts:
+  - mcp.taplio.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - taplio:mcp

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/mem",
+  "title": "Mem",
+  "description": "Search, read, and create notes and collections in your Mem notebook.",
+  "version": "1.0.0",
+  "websiteUrl": "https://mem.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mem.ai/mcp"
+    }
+  ]
+}

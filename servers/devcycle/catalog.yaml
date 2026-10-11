@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://docs.devcycle.com/cli-mcp/mcp-getting-started
+# SSE fallback at https://mcp.devcycle.com/sse.
+revision: 1
+source:
+  registry: com.devcycle/mcp
+title: DevCycle
+description: Create and manage DevCycle feature flags, variations, and targeting, and review audit history.
+category: developer-tools
+website_url: https://www.devcycle.com
+help_url: https://docs.devcycle.com/cli-mcp/mcp-getting-started
+official:
+  vendor: DevCycle
+  evidence_url: https://docs.devcycle.com/cli-mcp/mcp-getting-started
+remotes:
+- id: default
+  label: DevCycle
+  url: https://mcp.devcycle.com/mcp
+  allowed_hosts:
+  - mcp.devcycle.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

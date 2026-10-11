@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: https://help.superlist.com/en/articles/658028-superlist-mcp-server
+# DCR at https://app.superlist.com/oauth/register. No public REST API found.
+revision: 1
+title: Superlist
+description: Read and update your Superlist lists and tasks from an AI assistant.
+category: productivity
+website_url: https://www.superlist.com
+help_url: https://help.superlist.com/en/articles/658028-superlist-mcp-server
+official:
+  vendor: Superlist
+  evidence_url: https://help.superlist.com/en/articles/658028-superlist-mcp-server
+remotes:
+- id: default
+  label: Superlist
+  url: https://app.superlist.com/mcp
+  allowed_hosts:
+  - app.superlist.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

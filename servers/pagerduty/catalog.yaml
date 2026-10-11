@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://support.pagerduty.com/main/docs/pagerduty-mcp-server
+# EU accounts: https://mcp.eu.pagerduty.com/mcp. OAuth also supported but requires registering your own app (Integrations > App Registration; probe shows no DCR). Some tools need user-level tokens.
+revision: 1
+title: PagerDuty
+description: View and manage PagerDuty incidents, services, schedules, and on-call assignments.
+category: it
+website_url: https://www.pagerduty.com
+help_url: https://support.pagerduty.com/main/docs/pagerduty-mcp-server
+official:
+  vendor: PagerDuty
+  evidence_url: https://support.pagerduty.com/main/docs/pagerduty-mcp-server
+remotes:
+- id: default
+  label: PagerDuty
+  url: https://mcp.pagerduty.com/mcp
+  allowed_hosts:
+  - mcp.pagerduty.com
+  field_labels:
+    Authorization: PagerDuty API token
+  auth:
+    mode: headers
+    setup_url: https://support.pagerduty.com/main/docs/api-access-keys

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/gusto",
+  "title": "Gusto",
+  "description": "Read Gusto company, employee, contractor, payroll, and time-tracking data for the categories you…",
+  "version": "1.0.0",
+  "websiteUrl": "https://gusto.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.api.gusto.com"
+    }
+  ]
+}

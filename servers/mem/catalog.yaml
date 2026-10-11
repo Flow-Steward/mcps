@@ -1,0 +1,19 @@
+# Reviewed 2026-10-10: vendor docs not found
+# UNRESOLVED: no vendor documentation for the MCP server found (help.mem.ai index has no MCP page). Endpoint is on the vendor's domain and advertises OAuth DCR with content/profile scopes.
+revision: 1
+title: Mem
+description: Search, read, and create notes and collections in your Mem notebook.
+category: productivity
+website_url: https://mem.ai
+remotes:
+- id: default
+  label: Mem
+  url: https://mcp.mem.ai/mcp
+  allowed_hosts:
+  - mcp.mem.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - content.read
+    - content.write

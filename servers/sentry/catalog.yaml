@@ -1,0 +1,29 @@
+# Reviewed 2026-10-10: https://docs.sentry.io/ai/mcp/
+# Sentry SaaS only; self-hosted Sentry needs the local stdio server. User picks tool groups during authorization.
+revision: 1
+title: Sentry
+description: Look up Sentry issues, errors, traces, and releases, and update projects, teams, and alerts in your
+  organization.
+category: developer-tools
+website_url: https://sentry.io
+help_url: https://docs.sentry.io/ai/mcp/
+keywords:
+- Error tracking
+official:
+  vendor: Sentry
+  evidence_url: https://docs.sentry.io/ai/mcp/
+remotes:
+- id: default
+  label: Sentry
+  url: https://mcp.sentry.dev/mcp
+  allowed_hosts:
+  - mcp.sentry.dev
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - org:read
+    - project:write
+    - team:write
+    - event:write
+    - alerts:write

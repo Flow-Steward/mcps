@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://tomba.io/integrations/remote-mcp
+# Docs name host https://mcp.tomba.io with X-API-Key/X-API-Secret headers; /mcp path probed (root 405). Also OAuth: PRM -> api.tomba.io AS with DCR + client_id_metadata_document_supported, scopes read/search/verify/enrich/leads/account.
+revision: 1
+title: Tomba
+description: Find and verify email addresses, search domains, and enrich contacts and companies with Tomba data.
+category: sales
+website_url: https://tomba.io
+help_url: https://tomba.io/integrations/remote-mcp
+official:
+  vendor: Tomba
+  evidence_url: https://tomba.io/integrations/remote-mcp
+remotes:
+- id: default
+  label: Tomba
+  url: https://mcp.tomba.io/mcp
+  allowed_hosts:
+  - mcp.tomba.io
+  field_labels:
+    X-API-Key: Tomba API key
+    X-API-Secret: Tomba API secret
+  auth:
+    mode: headers
+    setup_url: https://app.tomba.io/api

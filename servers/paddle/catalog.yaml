@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://developer.paddle.com/sdks/ai/paddle-mcp/
+# Live accepts OAuth (AS id.paddle.com: DCR + client_id_metadata_document_supported) or 'Authorization: Bearer <live API key>'. Sandbox https://sandbox-mcp.paddle.com/mcp is API-key only. OAuth connections start read-only; grant write under Paddle > Connectors > MCP. Codemode: tools search/execute/rep
+revision: 1
+title: Paddle
+description: Search and run Paddle Billing API operations for products, prices, customers, subscriptions, and transactions,
+  and pull reports.
+category: finance
+website_url: https://www.paddle.com
+help_url: https://developer.paddle.com/sdks/ai/paddle-mcp/
+official:
+  vendor: Paddle
+  evidence_url: https://developer.paddle.com/changelog/2026/remote-paddle-mcp-server
+remotes:
+- id: default
+  label: Paddle
+  url: https://mcp.paddle.com/mcp
+  allowed_hosts:
+  - mcp.paddle.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access

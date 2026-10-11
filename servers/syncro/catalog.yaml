@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://docs.syncrosecure.com/model-context-protocol/connect-syncro-mcp
+# DCR for public clients only (no secret). Alternative header mode: X-Syncro-API-Key (raw token from Admin > API - API Tokens) plus X-Syncro-Subdomain (subdomain only). Permissions follow the Syncro user.
+revision: 1
+source:
+  registry: com.syncrosecure/mcp-server
+title: Syncro
+description: Create and update Syncro tickets, look up customers, assets, and billing, and build reports from PSA
+  and RMM data.
+category: it
+website_url: https://syncrosecure.com
+help_url: https://docs.syncrosecure.com/model-context-protocol/connect-syncro-mcp
+official:
+  vendor: Syncro
+  evidence_url: https://docs.syncrosecure.com/model-context-protocol/connect-syncro-mcp
+remotes:
+- id: default
+  label: Syncro
+  url: https://mcp.services.syncromsp.com/mcp/stream
+  allowed_hosts:
+  - mcp.services.syncromsp.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp-server

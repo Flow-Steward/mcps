@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/new-relic",
+  "title": "New Relic",
+  "description": "Query New Relic telemetry with NRQL, inspect entities, alerts and incidents, and investigate perform",
+  "version": "1.0.0",
+  "websiteUrl": "https://newrelic.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.newrelic.com/mcp/"
+    }
+  ]
+}

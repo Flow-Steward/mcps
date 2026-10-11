@@ -1,0 +1,21 @@
+# Reviewed 2026-10-10: https://www.contentful.com/developers/docs/tools/mcp-server/
+# EU-provisioned orgs use https://mcp.eu.contentful.com/mcp. The Contentful MCP app must be installed in each space/environment to expose; user picks spaces/environments during consent. AS mcp.contentful.com offers DCR.
+revision: 1
+title: Contentful
+description: Read and write Contentful entries, manage content models and assets, and invoke AI Actions across spaces
+  and environments.
+category: cms
+website_url: https://www.contentful.com
+help_url: https://www.contentful.com/developers/docs/tools/mcp-server/
+official:
+  vendor: Contentful
+  evidence_url: https://www.contentful.com/developers/docs/tools/mcp-server/
+remotes:
+- id: default
+  label: Contentful
+  url: https://mcp.contentful.com/mcp
+  allowed_hosts:
+  - mcp.contentful.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

@@ -1,0 +1,42 @@
+# Reviewed 2026-10-10: https://www.typeform.com/developers/mcp/
+# AS api.typeform.com advertises DCR (/oauth/register) and client_id_metadata_document_supported=true. Streamable HTTP only (no SSE). EU-hosted accounts use a different endpoint (not listed). Plan gating at call time.
+revision: 1
+title: Typeform
+description: Create and edit Typeform forms, read responses and insights, and manage workspaces and webhooks from
+  an AI assistant.
+category: marketing
+website_url: https://www.typeform.com
+help_url: https://www.typeform.com/developers/mcp/
+keywords:
+- Forms
+- Surveys
+official:
+  vendor: Typeform
+  evidence_url: https://www.typeform.com/developers/mcp/
+remotes:
+- id: default
+  label: Typeform
+  url: https://api.typeform.com/mcp
+  allowed_hosts:
+  - api.typeform.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - accounts:read
+    - automations:read
+    - automations:write
+    - contacts:read
+    - contacts:write
+    - forms:read
+    - forms:write
+    - pages:read
+    - pages:write
+    - responses:read
+    - responses:write
+    - insights:read
+    - webhooks:read
+    - webhooks:write
+    - workspaces:read
+    - workspaces:write
+    - offline_access

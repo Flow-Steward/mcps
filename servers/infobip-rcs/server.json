@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/infobip-rcs",
+  "title": "Infobip RCS",
+  "description": "Send rich RCS messages with cards and suggestions and track delivery through Infobip.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.infobip.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.infobip.com/rcs"
+    }
+  ]
+}

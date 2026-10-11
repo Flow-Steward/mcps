@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://docs.getinboxzero.com/api-reference/mcp
+# Requires OAuth with PKCE + DCR + resource indicators; API keys not accepted. Sending mail needs separate mcp:send scope. Open source/self-hostable.
+revision: 1
+title: Inbox Zero
+description: Search and read your inbox, create drafts, manage automation rules, and read email statistics in Inbox
+  Zero.
+category: email
+website_url: https://www.getinboxzero.com
+help_url: https://docs.getinboxzero.com/api-reference/mcp
+official:
+  vendor: Inbox Zero
+  evidence_url: https://docs.getinboxzero.com/api-reference/mcp
+remotes:
+- id: default
+  label: Inbox Zero
+  url: https://www.getinboxzero.com/mcp
+  allowed_hosts:
+  - www.getinboxzero.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:read
+    - mcp:write
+    - mcp:send
+    - offline_access

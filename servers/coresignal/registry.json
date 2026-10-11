@@ -1,0 +1,27 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "com.coresignal/mcp",
+    "description": "Fresh company, employee, and jobs records in real time.",
+    "repository": {
+      "url": "https://github.com/Coresignal-com/coresignal-mcp",
+      "source": "github"
+    },
+    "version": "2.0.0",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.coresignal.com/mcp/v2"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-08-07T07:23:50.491119Z",
+      "publishedAt": "2026-08-07T07:23:50.491119Z",
+      "updatedAt": "2026-08-07T07:23:50.491119Z",
+      "isLatest": true
+    }
+  }
+}

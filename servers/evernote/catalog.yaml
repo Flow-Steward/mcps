@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://help.evernote.com/hc/en-us/articles/51596325640339-Evernote-MCP-Model-Context-Protocol
+# Official help article confirms an Evernote MCP server for all paid users (Enterprise coming) but its text could not be fetched (403) and search snippets did not show the URL; endpoint verified by probe: 401 + PRM resource https://mcp.evernote.com, AS https://accounts.evernote.com with registration_e
+revision: 1
+title: Evernote
+description: Search and read your Evernote notes and create new notes from an AI assistant.
+category: productivity
+website_url: https://evernote.com
+help_url: https://help.evernote.com/hc/en-us/articles/51596325640339-Evernote-MCP-Model-Context-Protocol
+remotes:
+- id: default
+  label: Evernote
+  url: https://mcp.evernote.com/mcp
+  allowed_hosts:
+  - mcp.evernote.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - read
+    - create
+    - write
+    - delete

@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://www.magicpatterns.com/docs/documentation/features/mcp-server/overview
+# Design generation consumes Magic Patterns credits; a paid plan may be needed for generation tools.
+revision: 1
+title: Magic Patterns
+description: Pull Magic Patterns designs and their generated code into your project, and create or edit designs
+  from prompts.
+category: developer-tools
+website_url: https://www.magicpatterns.com
+help_url: https://www.magicpatterns.com/docs/documentation/features/mcp-server/overview
+official:
+  vendor: Magic Patterns
+  evidence_url: https://www.magicpatterns.com/docs/documentation/features/mcp-server/overview
+remotes:
+- id: default
+  label: Magic Patterns
+  url: https://mcp.magicpatterns.com/mcp
+  allowed_hosts:
+  - mcp.magicpatterns.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - email
+    - profile
+    - offline_access

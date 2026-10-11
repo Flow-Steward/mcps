@@ -1,0 +1,65 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "io.github.EduBase/MCP",
+    "description": "EduBase MCP server",
+    "repository": {
+      "url": "https://github.com/EduBase/MCP",
+      "source": "github"
+    },
+    "version": "2.0.3",
+    "packages": [
+      {
+        "registryType": "npm",
+        "identifier": "@edubase/mcp",
+        "version": "2.0.3",
+        "transport": {
+          "type": "stdio"
+        },
+        "environmentVariables": [
+          {
+            "description": "The base URL of the EduBase API (default: https://www.edubase.net/api)",
+            "name": "EDUBASE_API_URL"
+          },
+          {
+            "description": "The integration app ID for EduBase",
+            "isRequired": true,
+            "name": "EDUBASE_API_APP"
+          },
+          {
+            "description": "The secret key for the EduBase API",
+            "isRequired": true,
+            "isSecret": true,
+            "name": "EDUBASE_API_SECRET"
+          }
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://www.edubase.net/mcp",
+        "headers": [
+          {
+            "description": "The integration app ID for EduBase",
+            "name": "EduBase-Api-App"
+          },
+          {
+            "description": "The secret key for the EduBase API",
+            "isSecret": true,
+            "name": "EduBase-Api-Secret"
+          }
+        ]
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-09-28T21:25:06.656339Z",
+      "publishedAt": "2026-09-28T21:25:06.656339Z",
+      "updatedAt": "2026-09-28T21:25:06.656339Z",
+      "isLatest": true
+    }
+  }
+}

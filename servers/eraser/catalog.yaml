@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://docs.eraser.io/docs/mcp
+revision: 1
+source:
+  registry: io.eraser/eraser
+title: Eraser
+description: Generate and update diagrams and technical documents in Eraser files from text descriptions.
+category: developer-tools
+website_url: https://www.eraser.io
+help_url: https://docs.eraser.io/docs/mcp
+official:
+  vendor: Eraser
+  evidence_url: https://docs.eraser.io/docs/mcp
+remotes:
+- id: default
+  label: Eraser
+  url: https://app.eraser.io/api/mcp
+  allowed_hosts:
+  - app.eraser.io
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - '*'

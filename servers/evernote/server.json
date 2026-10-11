@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/evernote",
+  "title": "Evernote",
+  "description": "Search and read your Evernote notes and create new notes from an AI assistant.",
+  "version": "1.0.0",
+  "websiteUrl": "https://evernote.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.evernote.com/mcp"
+    }
+  ]
+}

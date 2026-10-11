@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://mcp.coindesk.com/
+# OAuth 2.0 + PKCE; during sign-in the user enters a CoinDesk Data API key (from developers.coindesk.com), so a CoinDesk Data account is required.
+revision: 1
+title: CoinDesk Data
+description: Get crypto spot, index, futures, options, on-chain DEX data, and CoinDesk news headlines.
+category: finance
+website_url: https://data.coindesk.com
+help_url: https://mcp.coindesk.com/
+keywords:
+- CoinDesk
+official:
+  vendor: CoinDesk
+  evidence_url: https://mcp.coindesk.com/
+remotes:
+- id: default
+  label: CoinDesk Data
+  url: https://mcp.coindesk.com/mcp
+  allowed_hosts:
+  - mcp.coindesk.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    setup_url: https://developers.coindesk.com

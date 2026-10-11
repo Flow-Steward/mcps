@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/grain",
+  "title": "Grain",
+  "description": "Search Grain meeting recordings and transcripts, and pull summaries, clips, and deal insights.",
+  "version": "1.0.0",
+  "websiteUrl": "https://grain.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.grain.com/_/mcp"
+    }
+  ]
+}

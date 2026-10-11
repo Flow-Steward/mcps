@@ -1,0 +1,34 @@
+# Reviewed 2026-10-10: https://www.atlassian.com/platform/remote-mcp-server
+# Live probe 2026-10-10: PRM https://mcp.trello.com/.well-known/oauth-protected-resource/v1 -> AS auth.atlassian.com (DCR at /dcr/register and client_id_metadata_document_supported=true). Each connection is scoped to one Trello workspace chosen at consent; archive only, no permanent delete. Separate f
+revision: 1
+title: Trello
+description: Read and update Trello boards, lists, cards and checklists in an authorized workspace.
+category: productivity
+website_url: https://trello.com
+help_url: https://www.atlassian.com/platform/remote-mcp-server
+keywords:
+- Atlassian
+- Boards
+- Kanban
+remotes:
+- id: default
+  label: Trello
+  url: https://mcp.trello.com/v1
+  allowed_hosts:
+  - mcp.trello.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - offline_access
+    - read:me
+    - read:account
+    - read:board:trello
+    - write:board:trello
+    - read:organization:trello
+    - write:organization:trello
+    - read:member:trello
+    - read:member.inbox:trello
+    - write:member.inbox:trello
+    - read:member.planner:trello
+    - write:member.planner:trello

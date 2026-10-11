@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/google-cloud-run",
+  "title": "Google Cloud Run",
+  "description": "Deploy and manage Cloud Run services and inspect revisions, jobs and their configuration in a Google",
+  "version": "1.0.0",
+  "websiteUrl": "https://cloud.google.com/run",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://run.googleapis.com/mcp"
+    }
+  ]
+}

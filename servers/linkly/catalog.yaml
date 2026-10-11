@@ -1,0 +1,24 @@
+# Reviewed 2026-10-10: https://linklyhq.com/support/mcp-server
+# Endpoint is the bare host (no /mcp path) per vendor docs. Old npm API-key package deprecated.
+revision: 1
+source:
+  registry: com.linklyhq/linkly
+title: Linkly
+description: Create and manage short links, read click analytics, and configure custom domains and click webhooks.
+category: marketing
+website_url: https://linklyhq.com
+help_url: https://linklyhq.com/support/mcp-server
+official:
+  vendor: Linkly
+  evidence_url: https://linklyhq.com/support/mcp-server
+remotes:
+- id: default
+  label: Linkly
+  url: https://mcp.linklyhq.com
+  allowed_hosts:
+  - mcp.linklyhq.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - full_access

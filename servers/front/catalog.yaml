@@ -1,0 +1,27 @@
+# Reviewed 2026-10-10: https://dev.frontapp.com/docs/mcp-server
+# No DCR: create an OAuth app in Front developer settings with only 'MCP Server' feature access, confidential client, add your redirect URI. Scopes read/write/send (request narrowest). Help center calls it beta; admin may need to install.
+revision: 1
+title: Front
+description: Search Front conversations, read threads, draft replies, and add internal comments as the authorizing
+  teammate.
+category: support
+website_url: https://front.com
+help_url: https://dev.frontapp.com/docs/mcp-server
+preview_note: Preview
+keywords:
+- Frontapp
+- Shared inbox
+official:
+  vendor: Front
+  evidence_url: https://dev.frontapp.com/docs/mcp-server
+remotes:
+- id: default
+  label: Front
+  url: https://mcp.frontapp.com/mcp
+  allowed_hosts:
+  - mcp.frontapp.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    refresh_token_required: true
+    setup_url: https://app.frontapp.com/settings/developers

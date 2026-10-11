@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/dropbox",
+  "title": "Dropbox",
+  "description": "Browse Dropbox folders, read file metadata and contents, and manage shared links and file requests f",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.dropbox.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.dropbox.com/mcp"
+    }
+  ]
+}

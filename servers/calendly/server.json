@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/calendly",
+  "title": "Calendly",
+  "description": "View and manage Calendly event types, availability, scheduling links, and booked meetings.",
+  "version": "1.0.0",
+  "websiteUrl": "https://calendly.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.calendly.com"
+    }
+  ]
+}

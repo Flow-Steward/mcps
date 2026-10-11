@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: vendor docs not found
+# No Krisp doc page found (help center blocked fetch; search budget exhausted). Endpoint from directories and probe; plan requirements unknown.
+revision: 1
+title: Krisp
+description: Search Krisp meetings and read meeting notes, transcripts, and action items.
+category: productivity
+website_url: https://krisp.ai
+remotes:
+- id: default
+  label: Krisp
+  url: https://mcp.krisp.ai/mcp
+  allowed_hosts:
+  - mcp.krisp.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - user::me::read
+    - user::meetings:metadata::read
+    - user::meetings:metadata::write
+    - user::meetings:notes::read
+    - user::meetings:transcripts::read
+    - user::meetings::list
+    - user::activities::list
+    - user::recording::import

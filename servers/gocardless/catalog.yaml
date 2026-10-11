@@ -1,0 +1,20 @@
+# Reviewed 2026-10-10: https://docs.gocardless.com/docs/developer-resources/mcp
+# Vendor docs give the bare host (no /mcp path); input listed /mcp. Sign-in picks Sandbox or Live and permissions; reconnect every 2 weeks (read-write) or monthly (read-only). On Team/Enterprise plans an Owner/Primary Owner must connect first.
+revision: 1
+title: GoCardless
+description: Get GoCardless API guidance and query your account's payments, mandates, customers, and payouts.
+category: finance
+website_url: https://gocardless.com
+help_url: https://docs.gocardless.com/docs/developer-resources/mcp
+official:
+  vendor: GoCardless
+  evidence_url: https://docs.gocardless.com/docs/developer-resources/mcp
+remotes:
+- id: default
+  label: GoCardless
+  url: https://mcp.gocardless.com
+  allowed_hosts:
+  - mcp.gocardless.com
+  auth:
+    mode: oauth2
+    client_registration: dcr

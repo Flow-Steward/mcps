@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://www.infobip.com/docs/mcp
+# OAuth 2.1 via Keycloak auth.infobip.com (DCR); alt: Authorization: App <API key> with matching scope.
+revision: 1
+title: Infobip WhatsApp
+description: Send WhatsApp text, media and template messages and manage WhatsApp templates via Infobip.
+category: messaging
+website_url: https://www.infobip.com
+help_url: https://www.infobip.com/docs/mcp
+keywords:
+- Infobip
+- WhatsApp
+official:
+  vendor: Infobip
+  evidence_url: https://www.infobip.com/docs/mcp/using-mcp
+remotes:
+- id: default
+  label: Infobip WhatsApp
+  url: https://mcp.infobip.com/whatsapp
+  allowed_hosts:
+  - mcp.infobip.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - whatsapp:manage
+    setup_url: https://portal.infobip.com/dev/api-keys

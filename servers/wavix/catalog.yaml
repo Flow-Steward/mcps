@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://docs.wavix.com/mcp/overview
+# OAuth 2.1 also offered (AS app.wavix.com, DCR /oauth/register + client_id_metadata_document_supported, granular scopes) but docs verify OAuth only with Claude Code; API key documented as working with every client. Self-hostable (github Wavix/wavix-mcp-server).
+revision: 1
+title: Wavix
+description: Send SMS and MMS, manage phone numbers, SIP trunks and 2FA, search call records, and check billing
+  in your Wavix account.
+category: messaging
+website_url: https://wavix.com
+help_url: https://docs.wavix.com/mcp/overview
+official:
+  vendor: Wavix
+  evidence_url: https://docs.wavix.com/mcp/overview
+remotes:
+- id: default
+  label: Wavix
+  url: https://mcp.wavix.com/mcp
+  allowed_hosts:
+  - mcp.wavix.com
+  field_labels:
+    Authorization: Wavix API key
+  auth:
+    mode: headers
+    setup_url: https://app.wavix.com

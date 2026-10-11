@@ -1,0 +1,27 @@
+# Reviewed 2026-10-10: https://developers.fathom.ai/mcp-docs
+# Sign in with the Fathom account; not to be confused with Fathom Analytics or community Fathom MCP servers.
+revision: 1
+source:
+  registry: ai.fathom.api/mcp
+title: Fathom
+description: Search Fathom meeting recordings and read their transcripts, summaries, and action items.
+category: productivity
+website_url: https://fathom.ai
+help_url: https://developers.fathom.ai/mcp-docs
+keywords:
+- Meeting notes
+- Fathom Video
+official:
+  vendor: Fathom
+  evidence_url: https://developers.fathom.ai/mcp-docs
+remotes:
+- id: default
+  label: Fathom
+  url: https://api.fathom.ai/mcp
+  allowed_hosts:
+  - api.fathom.ai
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp

@@ -1,0 +1,26 @@
+# Reviewed 2026-10-10: https://lingo.dev/en/i18n-mcp/setup
+# Vendor docs: no installation or API key required for /main. Probe saw OAuth metadata, so verify. Scope limited to Next.js App Router projects. A separate account-scoped Localization engine MCP exists at https://mcp.lingo.dev/account (OAuth) and could be cataloged separately.
+revision: 1
+source:
+  registry: dev.lingo/main
+title: Lingo.dev i18n
+description: Guide a coding agent through setting up i18n in a Next.js App Router app, including locale routes and
+  a language switcher.
+category: developer-tools
+website_url: https://lingo.dev
+help_url: https://lingo.dev/en/i18n-mcp/setup
+keywords:
+- Lingo.dev
+- Localization
+- Translation
+official:
+  vendor: Lingo.dev
+  evidence_url: https://lingo.dev/en/i18n-mcp/setup
+remotes:
+- id: default
+  label: Lingo.dev i18n
+  url: https://mcp.lingo.dev/main
+  allowed_hosts:
+  - mcp.lingo.dev
+  auth:
+    mode: none

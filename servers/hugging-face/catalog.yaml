@@ -1,0 +1,35 @@
+# Reviewed 2026-10-10: https://huggingface.co/docs/hub/agents-mcp
+# ?login variant forces OAuth sign-in; plain https://huggingface.co/mcp also accepts an Authorization: Bearer <HF token> header or anonymous use. Tools and Spaces are configured per user at huggingface.co/settings/mcp.
+revision: 1
+source:
+  registry: co.huggingface/hf-mcp-server
+title: Hugging Face
+description: Search Hugging Face models, datasets, Spaces, papers, and docs, and run Gradio Space tools and Jobs.
+category: ai
+website_url: https://huggingface.co
+help_url: https://huggingface.co/docs/hub/agents-mcp
+keywords:
+- HF
+- Models
+- Datasets
+official:
+  vendor: Hugging Face
+  evidence_url: https://huggingface.co/docs/hub/agents-mcp
+remotes:
+- id: default
+  label: Hugging Face
+  url: https://huggingface.co/mcp
+  allowed_hosts:
+  - huggingface.co
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - profile
+    - read-mcp
+    - read-repos
+    - jobs
+    - contribute-repos
+    - inference-api
+    setup_url: https://huggingface.co/settings/mcp

@@ -1,0 +1,23 @@
+# Reviewed 2026-10-10: https://docs.railway.com/reference/mcp-server
+# OAuth tokens are short-lived and revocable in account settings; project tokens are not accepted (needs user identity). Docs also offer a CLI-based local mode.
+revision: 1
+title: Railway
+description: Deploy and manage Railway projects, services, environments, variables, and deployment logs.
+category: developer-tools
+website_url: https://railway.com
+help_url: https://docs.railway.com/reference/mcp-server
+official:
+  vendor: Railway
+  evidence_url: https://docs.railway.com/reference/mcp-server
+remotes:
+- id: default
+  label: Railway
+  url: https://mcp.railway.com
+  allowed_hosts:
+  - mcp.railway.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - workspace:member
+    - offline_access

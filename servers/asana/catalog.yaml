@@ -1,0 +1,22 @@
+# Reviewed 2026-10-10: https://developers.asana.com/docs/using-asanas-mcp-server
+# V2 uses OAuth pre-registration: create an app in the Asana developer console for client ID/secret (no DCR). Admins can allow/block MCP clients via App Management. V1 /sse server deprecated.
+revision: 1
+title: Asana
+description: Search, create, and update Asana tasks, projects, and comments in your workspace.
+category: productivity
+website_url: https://asana.com
+help_url: https://developers.asana.com/docs/using-asanas-mcp-server
+official:
+  vendor: Asana
+  evidence_url: https://developers.asana.com/docs/using-asanas-mcp-server
+remotes:
+- id: default
+  label: Asana
+  url: https://mcp.asana.com/v2/mcp
+  allowed_hosts:
+  - mcp.asana.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    refresh_token_required: true
+    setup_url: https://app.asana.com/0/my-apps

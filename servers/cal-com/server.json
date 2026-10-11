@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/cal-com",
+  "title": "Cal.com",
+  "description": "Manage Cal.com bookings, event types, schedules and availability, and reschedule or cancel meetings.",
+  "version": "1.0.0",
+  "websiteUrl": "https://cal.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.cal.com/mcp"
+    }
+  ]
+}

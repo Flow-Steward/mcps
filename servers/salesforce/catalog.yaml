@@ -1,0 +1,28 @@
+# Reviewed 2026-10-10: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview
+# Salesforce Hosted MCP Servers (GA April 2026 per secondary sources; v1-beta.2 path retired). Requires an External Client App in the org (classic Connected Apps not supported), with the client's callback URL. Other servers: platform/sobject-reads (read-only, recommended default), sobject-mutations, s
+revision: 1
+title: Salesforce
+description: Query, create, update and delete Salesforce records with the signed-in user's permissions and sharing
+  rules.
+category: crm
+website_url: https://www.salesforce.com
+help_url: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview
+keywords:
+- Sales Cloud
+- Service Cloud
+- CRM
+- SFDC
+remotes:
+- id: default
+  label: Salesforce
+  url: https://api.salesforce.com/platform/mcp/v1/platform/sobject-all
+  allowed_hosts:
+  - api.salesforce.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - mcp_api
+    - refresh_token
+    refresh_token_required: true
+    setup_url: https://login.salesforce.com/lightning/setup/ManageExternalClientApplication/home

@@ -1,0 +1,16 @@
+# Reviewed 2026-10-10: vendor docs not found
+# UNRESOLVED: no ZipRecruiter-owned doc page found (site returns 403 to fetch; search budget exhausted). Endpoint answers initialize unauthenticated with serverInfo 'jobseeker-mcp' 1.0.0. Verify it is not limited to specific AI clients before publishing.
+revision: 1
+title: ZipRecruiter
+description: Search live ZipRecruiter job listings by title, company, location, salary, work style, and posting
+  date.
+category: hr
+website_url: https://www.ziprecruiter.com
+remotes:
+- id: default
+  label: ZipRecruiter
+  url: https://api.ziprecruiter.com/mcp
+  allowed_hosts:
+  - api.ziprecruiter.com
+  auth:
+    mode: none

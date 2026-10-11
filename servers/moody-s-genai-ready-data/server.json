@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/moody-s-genai-ready-data",
+  "title": "Moody's GenAI-Ready Data",
+  "description": "Look up Moody's credit ratings, entity data, and risk research for companies and issuers.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.moodys.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.moodys.com/genai-ready-data/m1/mcp"
+    }
+  ]
+}

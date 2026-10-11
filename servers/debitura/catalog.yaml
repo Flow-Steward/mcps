@@ -1,0 +1,25 @@
+# Reviewed 2026-10-10: https://www.debitura.com/integration/mcp-server
+# Probe showed no auth challenge, but vendor docs require the XApiKey header (Bearer also reportedly accepted). Case submission asks for explicit confirmation.
+revision: 1
+source:
+  registry: com.debitura/mcp-server
+title: Debitura
+description: Submit cross-border debt collection cases, check case status and payments, read partner messages, and
+  preview pricing in Debitura.
+category: finance
+website_url: https://www.debitura.com
+help_url: https://www.debitura.com/integration/mcp-server
+official:
+  vendor: Debitura
+  evidence_url: https://www.debitura.com/integration/mcp-server
+remotes:
+- id: default
+  label: Debitura
+  url: https://mcp.debitura.com/mcp
+  allowed_hosts:
+  - mcp.debitura.com
+  field_labels:
+    XApiKey: Debitura API key
+  auth:
+    mode: headers
+    setup_url: https://app.debitura.com/CreditorApiKey
