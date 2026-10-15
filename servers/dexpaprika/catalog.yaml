@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://docs.dexpaprika.com/ai-integration/mcp-clients
 # Keyless. Docs recommend /sse as default but Streamable HTTP is served at /streamable-http. Registered key or Pro plan only raises rate limits.
-revision: 1
+revision: 2
 source:
   registry: com.dexpaprika/dexpaprika
 title: DexPaprika
