@@ -1,32 +1,28 @@
 {
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-14T18:11:25.589559Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-14T18:11:25.589559Z",
+      "updatedAt": "2026-10-14T18:11:25.589559Z"
+    }
+  },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-    "name": "com.porkbun/mcp",
     "description": "Official Porkbun MCP server: domains, DNS, SSL, hosting and Cloudflare via the Porkbun API.",
-    "title": "Porkbun (official)",
-    "repository": {
-      "url": "https://github.com/oborseth/Porkbun-MCP",
-      "source": "github"
-    },
-    "version": "0.50.0",
-    "websiteUrl": "https://porkbun.com/mcp",
     "icons": [
       {
-        "src": "https://porkbun.com/images/mcp/porkbun-connector-icon.png",
         "mimeType": "image/png",
         "sizes": [
           "1024x1024"
-        ]
+        ],
+        "src": "https://porkbun.com/images/mcp/porkbun-connector-icon.png"
       }
     ],
+    "name": "com.porkbun/mcp",
     "packages": [
       {
-        "registryType": "npm",
-        "identifier": "@porkbunllc/mcp-server",
-        "version": "0.50.0",
-        "transport": {
-          "type": "stdio"
-        },
         "environmentVariables": [
           {
             "description": "Porkbun API key (pk1_...). Optional: the documentation tools work without it.",
@@ -37,7 +33,13 @@
             "isSecret": true,
             "name": "PORKBUN_SECRET_API_KEY"
           }
-        ]
+        ],
+        "identifier": "@porkbunllc/mcp-server",
+        "registryType": "npm",
+        "transport": {
+          "type": "stdio"
+        },
+        "version": "0.51.1"
       }
     ],
     "remotes": [
@@ -45,15 +47,13 @@
         "type": "streamable-http",
         "url": "https://mcp.porkbun.com/mcp"
       }
-    ]
-  },
-  "_meta": {
-    "io.modelcontextprotocol.registry/official": {
-      "status": "active",
-      "statusChangedAt": "2026-10-09T18:56:38.734974Z",
-      "publishedAt": "2026-10-09T18:56:38.734974Z",
-      "updatedAt": "2026-10-09T18:56:38.734974Z",
-      "isLatest": true
-    }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/oborseth/Porkbun-MCP"
+    },
+    "title": "Porkbun (official)",
+    "version": "0.51.1",
+    "websiteUrl": "https://porkbun.com/mcp"
   }
 }

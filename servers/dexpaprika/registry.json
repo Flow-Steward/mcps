@@ -1,14 +1,17 @@
 {
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-14T07:17:52.860896Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-14T07:17:52.860896Z",
+      "updatedAt": "2026-10-14T07:17:52.860896Z"
+    }
+  },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
-    "name": "com.dexpaprika/dexpaprika",
     "description": "DEX and on-chain data: liquidity pools, token prices, swaps, and trading volume.",
-    "title": "DexPaprika",
-    "repository": {
-      "url": "https://github.com/coinpaprika/dexpaprika-mcp",
-      "source": "github"
-    },
-    "version": "2.7.1",
+    "name": "com.dexpaprika/dexpaprika",
     "remotes": [
       {
         "type": "streamable-http",
@@ -18,15 +21,12 @@
         "type": "sse",
         "url": "https://mcp.dexpaprika.com/sse"
       }
-    ]
-  },
-  "_meta": {
-    "io.modelcontextprotocol.registry/official": {
-      "status": "active",
-      "statusChangedAt": "2026-09-29T12:45:04.024248Z",
-      "publishedAt": "2026-09-29T12:45:04.024248Z",
-      "updatedAt": "2026-09-29T12:45:04.024248Z",
-      "isLatest": true
-    }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/coinpaprika/dexpaprika-mcp"
+    },
+    "title": "DexPaprika",
+    "version": "2.8.0"
   }
 }
