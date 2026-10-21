@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://fulcradynamics.github.io/developer-docs/mcp-server/
 # Personal (consumer) data; each user authorizes their own Fulcra account. Vendor-owned GitHub README names the public hosted endpoint.
-revision: 1
+revision: 2
 source:
   registry: com.fulcradynamics/context
 title: Fulcra Context
