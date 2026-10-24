@@ -1,5 +1,5 @@
 # Reviewed 2026-10-10: https://supabase.com/docs/guides/getting-started/mcp names https://mcp.supabase.com/mcp; sign-in is OAuth with dynamic client registration.
-revision: 3
+revision: 4
 source:
   registry: com.supabase/mcp
 title: Supabase
