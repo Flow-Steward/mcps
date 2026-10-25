@@ -1,29 +1,29 @@
 {
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-21T11:09:58.075381Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-21T11:09:58.075381Z",
+      "updatedAt": "2026-10-21T11:09:58.075381Z"
+    }
+  },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Agentic AI quality engineering: run, debug and triage tests on real browsers and devices",
     "name": "io.github.LambdaTest/mcp",
-    "description": "Agentic testing: HyperExecute jobs, test failure triage, SmartUI visual diffs, a11y audits",
-    "title": "TestMu AI (formerly LambdaTest)",
-    "repository": {
-      "url": "https://github.com/LambdaTest/mcp-server-guide",
-      "source": "github"
-    },
-    "version": "1.0.1",
-    "websiteUrl": "https://www.testmuai.com/mcp",
     "remotes": [
       {
         "type": "streamable-http",
         "url": "https://mcp.lambdatest.com/mcp"
       }
-    ]
-  },
-  "_meta": {
-    "io.modelcontextprotocol.registry/official": {
-      "status": "active",
-      "statusChangedAt": "2026-08-03T14:45:31.974075Z",
-      "publishedAt": "2026-08-03T14:45:31.974075Z",
-      "updatedAt": "2026-08-03T14:45:31.974075Z",
-      "isLatest": true
-    }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/LambdaTest/mcp-server-guide"
+    },
+    "title": "TestMu AI (formerly LambdaTest)",
+    "version": "1.0.7",
+    "websiteUrl": "https://www.testmuai.com/mcp"
   }
 }

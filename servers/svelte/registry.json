@@ -1,36 +1,36 @@
 {
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-19T15:08:17.938035Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-19T15:08:17.938035Z",
+      "updatedAt": "2026-10-19T15:08:17.938035Z"
+    }
+  },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-    "name": "dev.svelte/mcp",
     "description": "The official Svelte MCP server providing docs and autofixing tools for Svelte development",
-    "title": "Svelte MCP",
-    "repository": {
-      "url": "https://github.com/sveltejs/ai-tools",
-      "source": "github",
-      "id": "1054419133",
-      "subfolder": "packages/mcp-stdio"
-    },
-    "version": "0.1.26",
-    "websiteUrl": "https://svelte.dev/docs/mcp/overview",
     "icons": [
       {
-        "src": "https://mcp.svelte.dev/logo.svg",
-        "mimeType": "image/svg+xml"
+        "mimeType": "image/svg+xml",
+        "src": "https://mcp.svelte.dev/logo.svg"
       },
       {
-        "src": "https://mcp.svelte.dev/logo.png",
-        "mimeType": "image/png"
+        "mimeType": "image/png",
+        "src": "https://mcp.svelte.dev/logo.png"
       }
     ],
+    "name": "dev.svelte/mcp",
     "packages": [
       {
-        "registryType": "npm",
         "identifier": "@sveltejs/mcp",
-        "version": "0.1.26",
+        "registryType": "npm",
         "runtimeHint": "npx",
         "transport": {
           "type": "stdio"
-        }
+        },
+        "version": "0.1.27"
       }
     ],
     "remotes": [
@@ -38,15 +38,15 @@
         "type": "streamable-http",
         "url": "https://mcp.svelte.dev/mcp"
       }
-    ]
-  },
-  "_meta": {
-    "io.modelcontextprotocol.registry/official": {
-      "status": "active",
-      "statusChangedAt": "2026-08-07T19:40:31.652476Z",
-      "publishedAt": "2026-08-07T19:40:31.652476Z",
-      "updatedAt": "2026-08-07T19:40:31.652476Z",
-      "isLatest": true
-    }
+    ],
+    "repository": {
+      "id": "1054419133",
+      "source": "github",
+      "subfolder": "packages/mcp-stdio",
+      "url": "https://github.com/sveltejs/ai-tools"
+    },
+    "title": "Svelte MCP",
+    "version": "0.1.27",
+    "websiteUrl": "https://svelte.dev/docs/mcp/overview"
   }
 }
