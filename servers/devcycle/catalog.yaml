@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://docs.devcycle.com/cli-mcp/mcp-getting-started
 # SSE fallback at https://mcp.devcycle.com/sse.
-revision: 1
+revision: 2
 source:
   registry: com.devcycle/mcp
 title: DevCycle
