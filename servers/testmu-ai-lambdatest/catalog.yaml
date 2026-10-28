@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://www.lambdatest.com/support/docs/lambdatest-mcp-server/
 # LambdaTest rebranded as TestMu AI; OAuth sign-in redirects to testmuai.com.
-revision: 1
+revision: 2
 source:
   registry: io.github.LambdaTest/mcp
 title: TestMu AI (LambdaTest)
