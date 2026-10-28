@@ -108,7 +108,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/seamless-engineering/datev-extf-mcp",
+      "next_work_priority": "P3"
     },
     {
       "id": "lexware-office",
@@ -161,7 +164,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/JannikWempe/mcp-lexware-office",
+      "next_work_priority": "P1"
     },
     {
       "id": "sevdesk",
@@ -214,7 +220,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/joosthel/sevdesk-mcp",
+      "next_work_priority": "P1"
     },
     {
       "id": "pennylane",
@@ -269,7 +278,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "pennylane"
     },
     {
       "id": "holded",
@@ -324,7 +335,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "holded"
     },
     {
       "id": "fatture-in-cloud",
@@ -376,7 +389,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/NiccoloSalvini/fattureincloud-mcp",
+      "next_work_priority": "P2"
     },
     {
       "id": "exact-online",
@@ -404,7 +420,11 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://start.exactonline.nl/docs/HlpRestAPIResources.aspx",
+        "https://support.exactonline.com/community/s/article/All-All-DNO-Content-exactonline-sites?language=en_GB",
+        "https://files.exact.com/static/downloads/terms-and-conditions/Exact-Online-Connectivity-Voorwaarden-Belgie.pdf"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. Exact Online Bouw is a different product; do not substitute a construction MCP for Accounting.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -427,7 +447,24 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "exact-online",
+        "name": "Exact Online",
+        "APIavailability": "public",
+        "docs_url": "https://start.exactonline.nl/docs/HlpRestAPIResources.aspx",
+        "access_gate": "OAuth2 regional account/app registration and customer division/user rights. Specific public-app publication terms not established in accessible primary text.",
+        "scope": "Exact Online regional REST financial/CRM APIs; not Exact Online Bouw.",
+        "priority_note": "Candidate API discovery; country host and app category still need validation.",
+        "evidence_urls": [
+          "https://support.exactonline.com/community/s/article/All-All-DNO-Content-exactonline-sites?language=en_GB",
+          "https://files.exact.com/static/downloads/terms-and-conditions/Exact-Online-Connectivity-Voorwaarden-Belgie.pdf"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P2"
     },
     {
       "id": "moneybird",
@@ -482,7 +519,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "moneybird"
     },
     {
       "id": "fortnox",
@@ -535,7 +574,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/Walma-Labs/fortnox-mcp",
+      "next_work_priority": "P2"
     },
     {
       "id": "e-conomic",
@@ -587,7 +629,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/available-dev/e-conomic-mcp",
+      "next_work_priority": "P2"
     },
     {
       "id": "fakturownia",
@@ -640,7 +685,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "fakturownia"
     },
     {
       "id": "sage-business-cloud-accounting",
@@ -723,7 +770,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://cdn.cdata.com/help/GAK/mcp/pg_startintromcp.htm",
+      "next_work_priority": "P3"
     },
     {
       "id": "cegid-quadra",
@@ -749,7 +799,10 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://www.quadraondemand.com/QuadraODOpenApi",
+        "https://go.cegid.com/rs/818-MJH-876/images/Cegid_Quadra_Plus_Q-A_Fondamentaux_Pr%C3%A9requis_et_activation-V2.pdf?version=0"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -772,7 +825,24 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "cegid-quadra",
+        "name": "Cegid Quadra",
+        "APIavailability": "partner",
+        "docs_url": "https://www.quadraondemand.com/QuadraODOpenApi",
+        "access_gate": "Quadratus-issued client ID/secret and Cegid-issued vendor GUID for validated software publishers; client_credentials bearer tokens.",
+        "scope": "Primary source covers Quadra On Demand; Quadra Plus/CFE and CPA routes differ and need selected installation confirmation.",
+        "priority_note": "Do not label generic Quadra as turnkey REST; request exact product and approved publisher access.",
+        "evidence_urls": [
+          "https://www.quadraondemand.com/QuadraODOpenApi",
+          "https://go.cegid.com/rs/818-MJH-876/images/Cegid_Quadra_Plus_Q-A_Fondamentaux_Pr%C3%A9requis_et_activation-V2.pdf?version=0"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "cegid-loop",
@@ -826,7 +896,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://holco.co/ressources/mcp-cegid-loop-cabinet-comptable/",
+      "next_work_priority": "P3"
     },
     {
       "id": "tiime",
@@ -880,7 +953,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://holco.co/ressources/mcp-erp-comptable-comparatif-editeurs/",
+      "next_work_priority": "P3"
     },
     {
       "id": "fulll",
@@ -932,7 +1008,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://holco.co/mcp/fulll/",
+      "next_work_priority": "P3"
     },
     {
       "id": "afas",
@@ -983,7 +1062,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://registry.modelcontextprotocol.io/v0.1/servers?search=afas&version=latest",
+      "next_work_priority": "P3"
     },
     {
       "id": "twinfield",
@@ -1034,7 +1116,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://registry.modelcontextprotocol.io/v0.1/servers?search=twinfield&version=latest",
+      "next_work_priority": "P3"
     },
     {
       "id": "snelstart",
@@ -1086,7 +1171,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://cotlet.dev/integrations/snelstart-api-mcp-server",
+      "next_work_priority": "P3"
     },
     {
       "id": "yuki",
@@ -1137,7 +1225,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://www.npmjs.com/package/@codemill-solutions/yuki-mcp",
+      "next_work_priority": "P3"
     },
     {
       "id": "octopus-accounting",
@@ -1163,7 +1254,11 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://login.octopus.be/manual/NL/manual-api.htm",
+        "https://www.octopus.be/nl/boekhoudsoftware-integraties/",
+        "https://login.octopus.be/manual/NL/api_quick-steps.htm"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -1186,7 +1281,24 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "octopus-accounting",
+        "name": "Octopus accounting",
+        "APIavailability": "public",
+        "docs_url": "https://login.octopus.be/manual/NL/manual-api.htm",
+        "access_gate": "Request credentials/software house ID; OAuth or Basic flow; separate dossier token; demo dossier available.",
+        "scope": "Belgian Octopus accounting REST import/export; not Octopus Deploy or Octopus Energy.",
+        "priority_note": "Practical scoped adapter candidate after credentials and workflow validation.",
+        "evidence_urls": [
+          "https://www.octopus.be/nl/boekhoudsoftware-integraties/",
+          "https://login.octopus.be/manual/NL/api_quick-steps.htm"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "winbooks",
@@ -1237,7 +1349,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://mcp.peliqan.io/connectors/winbooks/",
+      "next_work_priority": "P3"
     },
     {
       "id": "visma-spiris",
@@ -1290,7 +1405,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "spiris"
     },
     {
       "id": "dinero",
@@ -1343,7 +1460,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "dinero"
     },
     {
       "id": "billy-accounting",
@@ -1394,7 +1513,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/markhm/billy-mcp-server",
+      "next_work_priority": "P3"
     },
     {
       "id": "uniconta",
@@ -1449,7 +1571,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://peliqan.io/model-context-protocol/uniconta-mcp/",
+      "next_work_priority": "P3"
     },
     {
       "id": "tripletex",
@@ -1502,7 +1627,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "tripletex"
     },
     {
       "id": "fiken",
@@ -1554,7 +1681,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://cotlet.dev/integrations/fiken-api-mcp-server",
+      "next_work_priority": "P3"
     },
     {
       "id": "poweroffice",
@@ -1580,7 +1710,11 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://developer.poweroffice.net/",
+        "https://hjelpesenter.poweroffice.no/poweroffice-api-integrasjoner",
+        "https://developer.poweroffice.net/gettingstarted/1"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -1603,7 +1737,24 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "poweroffice",
+        "name": "PowerOffice",
+        "APIavailability": "partner",
+        "docs_url": "https://developer.poweroffice.net/",
+        "access_gate": "Free developer/demo access; production integration-flow review, application permissions and explicit client consent. Financial-service integrations require separate agreement.",
+        "scope": "PowerOffice Go v2 data, accounting, orders, reports; exact privileges and Go modules apply.",
+        "priority_note": "API exists, but production review blocks a claim of immediately build-ready unrestricted access.",
+        "evidence_urls": [
+          "https://hjelpesenter.poweroffice.no/poweroffice-api-integrasjoner",
+          "https://developer.poweroffice.net/gettingstarted/1"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "procountor",
@@ -1655,7 +1806,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://cotlet.dev/integrations/procountor-api-mcp-server",
+      "next_work_priority": "P3"
     },
     {
       "id": "bexio",
@@ -1706,7 +1860,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/PromptPartner/bexio-mcp-server",
+      "next_work_priority": "P2"
     },
     {
       "id": "factusol",
@@ -1732,7 +1889,11 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://apidoc.sdelsol.com/",
+        "https://www.sdelsol.com/api/",
+        "https://ayuda.teamsystem.es/hc/es/articles/32074471063057-FACTUSOL-Acceso-por-API"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -1755,7 +1916,25 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "factusol",
+        "name": "FACTUSOL",
+        "APIavailability": "partner",
+        "docs_url": "https://apidoc.sdelsol.com/",
+        "access_gate": "Developer manufacturer registration/code; customer grants table/company-area permissions; token auth.",
+        "scope": "TeamSystem FACTUSOL cloud-hosted databases; local-only installations not established by this API.",
+        "priority_note": "Select cloud product first; manufacturer onboarding required.",
+        "evidence_urls": [
+          "https://www.sdelsol.com/api/",
+          "https://ayuda.teamsystem.es/hc/es/articles/32074471063057-FACTUSOL-Acceso-por-API",
+          "https://apidoc.sdelsol.com/"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "anfix",
@@ -1781,7 +1960,9 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://www.anfix.com/precios"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -1804,7 +1985,23 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "anfix",
+        "name": "Anfix",
+        "APIavailability": "product-unresolved",
+        "docs_url": "https://www.anfix.com/precios",
+        "access_gate": "Vendor pricing advertises API integration, but current public API reference, eligibility, credentials and read/write scope not verified.",
+        "scope": "Anfix accounting/invoicing product; do not substitute unrelated Ainfix LLM API.",
+        "priority_note": "Access-discovery item only; cannot yet estimate an implementation-ready connector.",
+        "evidence_urls": [
+          "https://www.anfix.com/precios"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "pleo",
@@ -1855,7 +2052,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "spendesk",
@@ -1908,7 +2108,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "spendesk"
     },
     {
       "id": "sage-50",
@@ -1934,7 +2136,10 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://developer-community.sage.com/topic/1472-sage-50-sdk-or-writing-to-sage-50/",
+        "https://gb-kb.sage.com/portal/app/portlets/results/viewsolution.jsp?page=1&position=0&q=developer&solutionid=200619123729317"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. Specify country and edition. Canadian Sage 50 MCP findings do not prove European Sage 50 coverage.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -1957,7 +2162,24 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "sage-50",
+        "name": "Sage 50",
+        "APIavailability": "product-unresolved",
+        "docs_url": "https://developer-community.sage.com/topic/1472-sage-50-sdk-or-writing-to-sage-50/",
+        "access_gate": "Sage moderator confirms different regional SDKs and developer programmes; UK SDK downloads require developer account.",
+        "scope": "Brand family across UK/IE, US, Canada and other products/versions; UK desktop SDK/local bridge, not generic cloud REST.",
+        "priority_note": "Invalid single connector unit. Resolve region/product/version and local deployment before counting development.",
+        "evidence_urls": [
+          "https://developer-community.sage.com/topic/1472-sage-50-sdk-or-writing-to-sage-50/",
+          "https://gb-kb.sage.com/portal/app/portlets/results/viewsolution.jsp?page=1&position=0&q=developer&solutionid=200619123729317"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "sage-100",
@@ -2009,7 +2231,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://holco.co/ressources/mcp-sage-100-cabinet-comptable/",
+      "next_work_priority": "P3"
     },
     {
       "id": "wolters-kluwer-a3",
@@ -2035,7 +2260,10 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://a3developers.wolterskluwer.es/doc/",
+        "https://a3developers.wolterskluwer.es/doc/a3factura/autenticacion/a3innuvaerp/"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. a3 is a product family. Select exact a3 product, supported API and commercial access first.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -2058,7 +2286,24 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "wolters-kluwer-a3",
+        "name": "Wolters Kluwer a3",
+        "APIavailability": "product-unresolved",
+        "docs_url": "https://a3developers.wolterskluwer.es/doc/",
+        "access_gate": "Product-specific subscription/Conectia. a3innuva Facturacion requires customer-contracted Conectia, WKA account and vendor-provisioned per-customer OAuth client plus subscription key.",
+        "scope": "Distinct a3innuva Nomina, Contabilidad, a3factura/ERP APIs; desktop a3ERP/a3asesor cannot be inferred from cloud API.",
+        "priority_note": "Invalid single connector unit. Split only chosen product/workflow; commercial/vendor onboarding remains.",
+        "evidence_urls": [
+          "https://a3developers.wolterskluwer.es/doc/",
+          "https://a3developers.wolterskluwer.es/doc/a3factura/autenticacion/a3innuvaerp/"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "teamleader",
@@ -2087,7 +2332,9 @@
       "mcp_status": "official_wrong_scope",
       "decision": "resolve_existing_mcp_before_building",
       "evidence_urls": [
-        "https://www.teamleader.eu/blog/teamleader-orbit-mcp"
+        "https://www.teamleader.eu/blog/teamleader-orbit-mcp",
+        "https://developer.focus.teamleader.eu/",
+        "https://support.focus.teamleader.eu/hc/en-150/articles/25691048319377-Getting-started-Can-I-build-a-custom-integration-with-Teamleader-Focus"
       ],
       "notes": "Official Teamleader Orbit MCP does not establish Teamleader Focus CRM coverage. Evaluate Focus API or third-party adapters separately.",
       "required_validation": [
@@ -2111,7 +2358,24 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "teamleader",
+        "name": "Teamleader",
+        "APIavailability": "public",
+        "docs_url": "https://developer.focus.teamleader.eu/",
+        "access_gate": "Teamleader Focus account; Build Page private integration creates OAuth client ID/secret; Marketplace public publication requires review.",
+        "scope": "Focus core objects read/write + webhooks; not Teamleader Orbit by assumption.",
+        "priority_note": "Feasible scoped adapter discovery; first assess existing workflow needs/upstream reuse.",
+        "evidence_urls": [
+          "https://support.focus.teamleader.eu/hc/en-150/articles/25691048319377-Getting-started-Can-I-build-a-custom-integration-with-Teamleader-Focus",
+          "https://developer.focus.teamleader.eu/"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P2"
     },
     {
       "id": "sellsy",
@@ -2166,7 +2430,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://mcp.pipedream.com/app/sellsy",
+      "next_work_priority": "P3"
     },
     {
       "id": "odoo",
@@ -2220,7 +2487,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "odoo"
     },
     {
       "id": "pipedrive",
@@ -2273,7 +2542,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "superoffice",
@@ -2324,7 +2596,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "capsule-crm",
@@ -2375,7 +2650,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "mollie",
@@ -2430,7 +2708,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "mollie"
     },
     {
       "id": "adyen",
@@ -2482,7 +2762,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "qonto",
@@ -2536,7 +2819,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "qonto"
     },
     {
       "id": "gocardless",
@@ -2619,7 +2904,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_direct",
+      "reuse_route": "gocardless"
     },
     {
       "id": "paysera",
@@ -2646,7 +2933,10 @@
       "mcp_status": "official_wrong_scope",
       "decision": "resolve_existing_mcp_before_building",
       "evidence_urls": [
-        "https://marketplace.paysera.com/developers/mcp?surface=buyer"
+        "https://marketplace.paysera.com/developers/mcp?surface=buyer",
+        "https://developers.paysera.com/guides/checkout-modern/getting-started",
+        "https://developers.paysera.com/guides/transfer/getting-started",
+        "https://developers.paysera.com/guides/open-banking/getting-started"
       ],
       "notes": "Paysera Marketplace MCP serves marketplace buyer/seller operations, not verified Paysera Checkout or business-bank operations. Marketplace server does not cover checkout/banking.",
       "required_validation": [
@@ -2670,7 +2960,25 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "paysera",
+        "name": "Paysera",
+        "APIavailability": "public",
+        "docs_url": "https://developers.paysera.com/guides/checkout-modern/getting-started",
+        "access_gate": "Merchant account/payment-collection service/project credentials. Modern Checkout available to merchants in LT/LV/EE; transfers need signed agreement and vendor credentials; Open Banking certificate registration.",
+        "scope": "Selected public route is merchant checkout. Transfer/Wallet/Open Banking have different contracts, credentials and geographic reach.",
+        "priority_note": "Do not count checkout, payouts and regulated bank access as one unrestricted capability.",
+        "evidence_urls": [
+          "https://developers.paysera.com/guides/checkout-modern/getting-started",
+          "https://developers.paysera.com/guides/transfer/getting-started",
+          "https://developers.paysera.com/guides/open-banking/getting-started"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "montonio",
@@ -2696,7 +3004,9 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://docs.montonio.com/introduction"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -2719,7 +3029,23 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "montonio",
+        "name": "Montonio",
+        "APIavailability": "public",
+        "docs_url": "https://docs.montonio.com/introduction",
+        "access_gate": "Partner System signup enables sandbox keys; production keys after profile completion and business approval.",
+        "scope": "Merchant payment/shipping API; selected products and carriers require account configuration.",
+        "priority_note": "Candidate after merchant approval; distinguish standard shipping operations from need for direct carrier adapters.",
+        "evidence_urls": [
+          "https://docs.montonio.com/introduction"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "klarna",
@@ -2747,7 +3073,9 @@
       "mcp_status": "official_wrong_scope",
       "decision": "resolve_existing_mcp_before_building",
       "evidence_urls": [
-        "https://s205.q4cdn.com/644747736/files/doc_news/Klarna-launches-AI-powered-Shopping-Search-app-in-ChatGPT-2026.pdf"
+        "https://s205.q4cdn.com/644747736/files/doc_news/Klarna-launches-AI-powered-Shopping-Search-app-in-ChatGPT-2026.pdf",
+        "https://docs.klarna.com/api/authentication/",
+        "https://docs.klarna.com/acquirer/klarna/get-started/integration-resilience/api-urls/"
       ],
       "notes": "Klarna Shopping Search app announcement does not establish merchant payment, settlement or refund MCP coverage. Verify merchant API and permitted operations separately.",
       "required_validation": [
@@ -2771,7 +3099,24 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "klarna",
+        "name": "Klarna",
+        "APIavailability": "public",
+        "docs_url": "https://docs.klarna.com/api/authentication/",
+        "access_gate": "Merchant account/MID-specific API keys; playground and production credentials/URLs distinct; acquirer-network integration is a separate partner route.",
+        "scope": "Merchant payment/order-management API selected; do not infer partner management or all Klarna product APIs.",
+        "priority_note": "API docs are available; live merchant agreement and chosen scope still precede implementation.",
+        "evidence_urls": [
+          "https://docs.klarna.com/api/authentication/",
+          "https://docs.klarna.com/acquirer/klarna/get-started/integration-resilience/api-urls/"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "revolut-business",
@@ -2854,7 +3199,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://jeff-nasseri.github.io/revolut-mcp/",
+      "next_work_priority": "P3"
     },
     {
       "id": "sumup",
@@ -2929,7 +3277,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "worldline",
@@ -2980,7 +3331,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "nets-payments",
@@ -3031,7 +3385,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "nexi",
@@ -3082,7 +3439,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "paysafe",
@@ -3110,7 +3470,8 @@
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
       "evidence_urls": [
-        "https://developer.paysafe.com/en/api-docs/payments-api/get-started/"
+        "https://developer.paysafe.com/en/api-docs/payments-api/get-started/",
+        "https://developer.paysafe.com/en/support/reference-information/authentication/"
       ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. MCP often means Multi-Currency Pricing in Paysafe material. No Model Context Protocol payment server verified. Payments API supports CAD Interac e-Transfer payments/payouts with merchant setup. Embedded Wallet OAuth is a different API; no brand-wide auth claim.",
       "required_validation": [
@@ -3167,7 +3528,24 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "paysafe",
+        "name": "Paysafe",
+        "APIavailability": "partner",
+        "docs_url": "https://developer.paysafe.com/en/api-docs/payments-api/get-started/",
+        "access_gate": "Paysafe must provision account/server API key; test account through relationship manager/integrations team; separate production keys.",
+        "scope": "Payments API payment/payout/settlement/refund; Embedded Wallets uses different OAuth product.",
+        "priority_note": "Choose exact product and commercial onboarding; do not equate all Paysafe products with this API.",
+        "evidence_urls": [
+          "https://developer.paysafe.com/en/api-docs/payments-api/get-started/",
+          "https://developer.paysafe.com/en/support/reference-information/authentication/"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "wise",
@@ -3244,7 +3622,23 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "wise",
+        "name": "Wise",
+        "APIavailability": "public",
+        "docs_url": "https://docs.wise.com/guides/developer/auth-and-security/personal-api-token",
+        "access_gate": "Own Wise Business account + two-step verification generates bearer token. Advanced/multi-customer access needs partnership discussion.",
+        "scope": "Own-account quotes, recipients, transfer drafting/batch groups/tracking. Funding and balance statements excluded outside US/CA/AU/NZ/SG/MY.",
+        "priority_note": "UK/EEA funding or statements are not covered by basic personal-token route; Canada exception does not prove full multi-client permission.",
+        "evidence_urls": [
+          "https://docs.wise.com/guides/developer/auth-and-security/personal-api-token"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "tink",
@@ -3273,7 +3667,9 @@
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
       "evidence_urls": [
-        "https://docs.tink.com/"
+        "https://docs.tink.com/",
+        "https://tink.com/scale/",
+        "https://docs.tink.com/entries/articles/consent-and-authentication-one-time-payments"
       ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. No vendor operational MCP verified; tink.bot is unrelated infrastructure product.",
       "required_validation": [
@@ -3319,7 +3715,24 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "tink",
+        "name": "Tink",
+        "APIavailability": "partner",
+        "docs_url": "https://docs.tink.com/",
+        "access_gate": "Console sandbox/demo app available; contact Tink to get verified for production; exact commercial/product contract must be obtained.",
+        "scope": "Open banking products by country/bank: transactions/account check/payments etc.",
+        "priority_note": "API exists but production access and scope are commercial discovery, not ready-made adapter commitment.",
+        "evidence_urls": [
+          "https://tink.com/scale/",
+          "https://docs.tink.com/entries/articles/consent-and-authentication-one-time-payments"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "truelayer",
@@ -3395,7 +3808,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "yapily",
@@ -3426,7 +3842,10 @@
       "decision": "resolve_existing_mcp_before_building",
       "evidence_urls": [
         "https://docs.yapily.com/mcp",
-        "https://docs.yapily.com/"
+        "https://docs.yapily.com/",
+        "https://docs.yapily.com/getting-started/get-started",
+        "https://docs.yapily.com/getting-started/overview",
+        "https://www.yapily.com/legal/website-terms-of-use"
       ],
       "notes": "Official documentation-search MCP is read-only public documentation, not authenticated bank accounts, transactions or payment operations. https://docs.yapily.com/mcp does not establish bank operations.",
       "required_validation": [
@@ -3472,7 +3891,25 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "yapily",
+        "name": "Yapily",
+        "APIavailability": "partner",
+        "docs_url": "https://docs.yapily.com/getting-started/get-started",
+        "access_gate": "Free Console sandbox; new app Hosted Pages scope only; Direct API scope via support; real data through contact onboarding/licensing/bank registrations.",
+        "scope": "Hosted consent/payment/data flow versus Direct API for bulk/scheduled/periodic/international payments; institution/product limits.",
+        "priority_note": "Prefer scoped Hosted Pages workflow first. Documentation MCP is not operational banking coverage.",
+        "evidence_urls": [
+          "https://docs.yapily.com/getting-started/get-started",
+          "https://docs.yapily.com/getting-started/overview",
+          "https://www.yapily.com/legal/website-terms-of-use"
+        ],
+        "account_tested": false
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "salt-edge",
@@ -3523,7 +3960,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/7BlockLabs/mcp-salt-edge-demo",
+      "next_work_priority": "P3"
     },
     {
       "id": "redsys",
@@ -3549,7 +3989,11 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://pagosonline.redsys.es/desarrolladores-inicio/",
+        "https://pagosonline.redsys.es/desarrolladores-inicio/documentacion-operativa/firmar-una-operacion/",
+        "https://pagosonline.redsys.es/desarrolladores-inicio/integrate-con-nosotros/tarjetas-y-entornos-de-prueba/"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -3572,7 +4016,30 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "redsys",
+        "name": "Redsys",
+        "access": "partner",
+        "docs_url": "https://pagosonline.redsys.es/desarrolladores-inicio/",
+        "access_gate": "Contract TPV Virtual with acquiring bank; bank supplies merchant/FUC, terminal and production signing key.",
+        "auth": "Signed merchant payloads; current signature guide HMAC SHA-512 (HMAC_SHA512_V2). Legacy SHA256 manuals must not determine new integration.",
+        "sandbox": "Public test endpoints/generic test data and test-terminal portal available; account credentials from bank.",
+        "scope": "TPV Virtual payment operations; choose redirection/REST/inSite and enabled terminal operation explicitly.",
+        "priority": "P3",
+        "priority_note": "Build for a named merchant/payment requirement; not a general payment-provider-first launch prerequisite.",
+        "evidence_urls": [
+          "https://pagosonline.redsys.es/desarrolladores-inicio/documentacion-operativa/firmar-una-operacion/",
+          "https://pagosonline.redsys.es/desarrolladores-inicio/integrate-con-nosotros/tarjetas-y-entornos-de-prueba/"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "shopware",
@@ -3625,7 +4092,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "prestashop",
@@ -3678,7 +4148,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "allegro",
@@ -3705,7 +4178,10 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://developer.allegro.pl/",
+        "https://developer.allegro.pl/tutorials/uwierzytelnianie-i-autoryzacja-zlq9e75GdIR"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. Allegro Audience/CDP is an unrelated vendor, not the Polish marketplace.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -3728,7 +4204,30 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "allegro",
+        "name": "Allegro",
+        "access": "public",
+        "docs_url": "https://developer.allegro.pl/",
+        "access_gate": "Active Allegro account + 2FA for production app registration; accept REST API terms. Use our app credentials and seller OAuth consent, not each seller's app secret.",
+        "auth": "OAuth2 Authorization Code (PKCE supported), device flow; client_credentials for supported public resources; DCR separately approved.",
+        "sandbox": "Dedicated Allegro Sandbox; separate registration/app credentials; sandbox 2FA exemption.",
+        "scope": "Offers/products, seller orders and related sales resources; choose marketplace and read/write scopes. Not Allegro Audience/CDP.",
+        "priority": "P1",
+        "priority_note": "Clear public contract, seller operations and test environment; sensible first marketplace adapter if selling into supplied European region. Validate existing aggregator route before writing full adapter.",
+        "evidence_urls": [
+          "https://developer.allegro.pl/tutorials/uwierzytelnianie-i-autoryzacja-zlq9e75GdIR",
+          "https://developer.allegro.pl/"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P2"
     },
     {
       "id": "baselinker",
@@ -3779,7 +4278,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/PiotrRaszkowski/baselinker-mcp",
+      "next_work_priority": "P1"
     },
     {
       "id": "bol-com",
@@ -3832,7 +4334,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://mcp.pipedream.com/app/bol_com",
+      "next_work_priority": "P3"
     },
     {
       "id": "zalando",
@@ -3858,7 +4363,9 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://partner.zalando.com/university/article/integration-options"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -3881,7 +4388,29 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "zalando",
+        "name": "Zalando Partner Program",
+        "access": "partner",
+        "docs_url": "https://partner.zalando.com/university/article/integration-options",
+        "access_gate": "Approved Partner Program seller and prior Direct Integration assessment, or approved third-party integrator.",
+        "auth": "Not established on reviewed public integration-options article; obtain actual DI credentials/specification after approval.",
+        "sandbox": "Not established by reviewed public source.",
+        "scope": "Article/product onboarding, stock, price and order/fulfilment synchronization through DI; zDirect UI/ZFS is distinct.",
+        "priority": "P3",
+        "priority_note": "Access-gated programme project; try approved integrator before bespoke DI. Do not count a public docs page as production access.",
+        "evidence_urls": [
+          "https://partner.zalando.com/university/article/integration-options"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "otto-marketplace",
@@ -3907,7 +4436,11 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://api.otto.market/",
+        "https://api.otto.market/docs/sp-integration/",
+        "https://www.otto.market/_Resources/Persistent/9/3/2/1/9321822c6e94b9144cba43d53ac5503712f25f45/20260119_Onboarding-Guide_english.pdf"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -3930,7 +4463,30 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "otto-marketplace",
+        "name": "OTTO Market",
+        "access": "partner",
+        "docs_url": "https://api.otto.market/",
+        "access_gate": "Seller registration/verification/OPC API access for own app. Service partners register, test sandbox and request Public Production Apps permission.",
+        "auth": "OAuth2; seller/service-partner app flows differ. Service partners use developer token then installation access token on behalf of seller.",
+        "sandbox": "https://sandbox.api.otto.market, documented service-partner sandbox.",
+        "scope": "Orders/products and published functional interfaces according to approved app scopes; seller and service-partner integrations distinct.",
+        "priority": "P3",
+        "priority_note": "Prioritize only after named German-market merchant/approval; a generic marketplace adapter cannot bypass onboarding.",
+        "evidence_urls": [
+          "https://api.otto.market/docs/sp-integration/",
+          "https://www.otto.market/_Resources/Persistent/9/3/2/1/9321822c6e94b9144cba43d53ac5503712f25f45/20260119_Onboarding-Guide_english.pdf"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "cdiscount",
@@ -3956,7 +4512,11 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://developer.octopia-io.net/home/",
+        "https://developer.octopia-io.net/user-guides/getting-started/",
+        "https://developer.octopia-io.net/cgu/"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -3979,7 +4539,30 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "cdiscount",
+        "name": "Cdiscount / Octopia seller API",
+        "access": "public",
+        "docs_url": "https://developer.octopia-io.net/home/",
+        "access_gate": "Professional seller account and linked clientId/clientSecret/sellerId. Integrators/feed aggregators have specific registration path.",
+        "auth": "OAuth2 client_credentials via https://auth.octopia-io.net/auth/realms/maas/protocol/openid-connect/token ; Bearer token + SellerId header; short-lived token (2h).",
+        "sandbox": "No dedicated public sandbox verified in reviewed getting-started guide; Postman/TryIt examples do not establish an isolated test environment.",
+        "scope": "Octopia seller/product/offer/order/invoice/discussion/fulfilment APIs; Cdiscount marketplace account/channel entitlement required.",
+        "priority": "P2",
+        "priority_note": "Specific France-market commerce expansion; use current REST OAuth contract rather than historical SOAP login, and check maintained aggregator coverage first.",
+        "evidence_urls": [
+          "https://developer.octopia-io.net/user-guides/getting-started/",
+          "https://developer.octopia-io.net/cgu/"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "vinted",
@@ -4005,7 +4588,10 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://pro-docs.svc.vinted.com/",
+        "https://pro-portal.svc.vinted.com/"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. Community search/scraping is not an official seller orders API. Confirm a permitted business API before committing implementation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -4028,7 +4614,30 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "vinted",
+        "name": "Vinted Pro Integrations",
+        "access": "partner",
+        "docs_url": "https://pro-docs.svc.vinted.com/",
+        "access_gate": "Limited allowlisted Vinted Pro businesses only; Pro membership alone insufficient.",
+        "auth": "X-Vpi-Access-Key plus timestamped X-Vpi-Hmac-Sha256 request signature from generated access/signing key.",
+        "sandbox": "Dev mode https://pro-public-sandbox.svc.vinted.com, separate token; production https://pro.svc.vinted.com.",
+        "scope": "Item inventory/ontology mapping, item-change webhooks, sold orders and shipment labels. Not general consumer browsing/scraping API.",
+        "priority": "P3",
+        "priority_note": "Do not build or promise generic Vinted automation before allowlist access; preserve official API route and avoid reverse-engineered consumer APIs.",
+        "evidence_urls": [
+          "https://pro-docs.svc.vinted.com/",
+          "https://pro-portal.svc.vinted.com/"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "dhl",
@@ -4055,11 +4664,14 @@
         "https://developer.dhl.com/dhl-api-assistant-anleitung-manuelle-mcp-integration"
       ],
       "mcp_status": "official_wrong_scope",
-      "decision": "resolve_existing_mcp_before_building",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
       "evidence_urls": [
-        "https://developer.dhl.com/dhl-api-assistant-manual-mcp-integration-guide"
+        "https://developer.dhl.com/dhl-api-assistant-manual-mcp-integration-guide",
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
       ],
-      "notes": "Official API Assistant MCP is sandbox-only. Does not close production label, shipment or tracking requirements.",
+      "notes": "Official API Assistant MCP is sandbox-only. Does not close production label, shipment or tracking requirements. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "required_validation": [
         "Exact product/region and required read/write operations",
         "Account-level tool discovery and sample execution",
@@ -4067,7 +4679,7 @@
         "Pagination, retries, rate limits and idempotency for writes",
         "Vendor access terms and EU data-processing/hosting requirements"
       ],
-      "manual_gap": "Candidate for a maintained adapter or reviewed upstream reuse; not yet an implementation-ready commitment.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "regions": [
         "Europe"
       ],
@@ -4081,7 +4693,14 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "inpost",
@@ -4108,11 +4727,13 @@
         "https://drukalo.pl/en"
       ],
       "mcp_status": "third_party_candidate",
-      "decision": "review_upstream_or_build_api_adapter",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
       "evidence_urls": [
-        "https://github.com/noxlabs-ai/inpost-consumer-mcp"
+        "https://github.com/noxlabs-ai/inpost-consumer-mcp",
+        "https://support.sendcloud.com/hc/en-us/articles/51464033398417-Connect-Sendcloud-to-Claude-with-MCP",
+        "https://support.sendcloud.com/hc/en-us/articles/360052598311-How-are-address-details-formatted"
       ],
-      "notes": "Third-party discovery only. Vendor endorsement, license, maintenance, transport and exact tool coverage have not been validated. Found consumer parcel MCP is not merchant ShipX. Sendcloud is an indirect option; verify the required carrier service and contract.",
+      "notes": "Third-party discovery only. Vendor endorsement, license, maintenance, transport and exact tool coverage have not been validated. Found consumer parcel MCP is not merchant ShipX. Sendcloud is an indirect option; verify the required carrier service and contract. sendcloud MCP in PR17: supported shipping actions through the active carrier contract/service; not direct API parity. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "required_validation": [
         "Exact product/region and required read/write operations",
         "Account-level tool discovery and sample execution",
@@ -4120,7 +4741,7 @@
         "Pagination, retries, rate limits and idempotency for writes",
         "Vendor access terms and EU data-processing/hosting requirements"
       ],
-      "manual_gap": "Candidate for a maintained adapter or reviewed upstream reuse; not yet an implementation-ready commitment.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "regions": [
         "Europe"
       ],
@@ -4134,7 +4755,13 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_indirect",
+      "reuse_route": "sendcloud MCP in PR17: supported shipping actions through the active carrier contract/service; not direct API parity.",
+      "indirect_route_evidence": [
+        "https://support.sendcloud.com/hc/en-us/articles/51464033398417-Connect-Sendcloud-to-Claude-with-MCP",
+        "https://support.sendcloud.com/hc/en-us/articles/360052598311-How-are-address-details-formatted"
+      ]
     },
     {
       "id": "sendcloud",
@@ -4189,7 +4816,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "sendcloud"
     },
     {
       "id": "dpd",
@@ -4215,9 +4844,13 @@
         "https://apify.com/green_trousers/canada-drug-recall-mcp"
       ],
       "mcp_status": "no_official_mcp_verified",
-      "decision": "review_claimed_bridge_or_api_before_building",
-      "evidence_urls": [],
-      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. DPD Digital Product Delivery is not the DPD parcel carrier.",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
+      "evidence_urls": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ],
+      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. DPD Digital Product Delivery is not the DPD parcel carrier. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "required_validation": [
         "Exact product/region and required read/write operations",
         "Account-level tool discovery and sample execution",
@@ -4225,7 +4858,7 @@
         "Pagination, retries, rate limits and idempotency for writes",
         "Vendor access terms and EU data-processing/hosting requirements"
       ],
-      "manual_gap": "Candidate for a maintained adapter or reviewed upstream reuse; not yet an implementation-ready commitment.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "regions": [
         "Europe"
       ],
@@ -4242,7 +4875,14 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "gls-shipping",
@@ -4266,9 +4906,13 @@
         "https://githubhelp.com/topic/gls"
       ],
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
-      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
+      "evidence_urls": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ],
+      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "required_validation": [
         "Exact product/region and required read/write operations",
         "Account-level tool discovery and sample execution",
@@ -4276,7 +4920,7 @@
         "Pagination, retries, rate limits and idempotency for writes",
         "Vendor access terms and EU data-processing/hosting requirements"
       ],
-      "manual_gap": "Candidate for a maintained adapter or reviewed upstream reuse; not yet an implementation-ready commitment.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "regions": [
         "Europe"
       ],
@@ -4290,7 +4934,14 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "postnl",
@@ -4315,11 +4966,13 @@
         "https://remote.mcp.pipedream.net/v3"
       ],
       "mcp_status": "third_party_candidate",
-      "decision": "review_upstream_or_build_api_adapter",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
       "evidence_urls": [
-        "https://github.com/BartWaardenburg/postnl-mcp"
+        "https://github.com/BartWaardenburg/postnl-mcp",
+        "https://support.sendcloud.com/hc/en-us/articles/51464033398417-Connect-Sendcloud-to-Claude-with-MCP",
+        "https://support.sendcloud.com/hc/en-us/articles/360052598311-How-are-address-details-formatted"
       ],
-      "notes": "Third-party discovery only. Vendor endorsement, license, maintenance, transport and exact tool coverage have not been validated.",
+      "notes": "Third-party discovery only. Vendor endorsement, license, maintenance, transport and exact tool coverage have not been validated. sendcloud MCP in PR17: supported shipping actions through the active carrier contract/service; not direct API parity. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "required_validation": [
         "Exact product/region and required read/write operations",
         "Account-level tool discovery and sample execution",
@@ -4327,7 +4980,7 @@
         "Pagination, retries, rate limits and idempotency for writes",
         "Vendor access terms and EU data-processing/hosting requirements"
       ],
-      "manual_gap": "Candidate for a maintained adapter or reviewed upstream reuse; not yet an implementation-ready commitment.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "regions": [
         "Europe"
       ],
@@ -4341,7 +4994,13 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_indirect",
+      "reuse_route": "sendcloud MCP in PR17: supported shipping actions through the active carrier contract/service; not direct API parity.",
+      "indirect_route_evidence": [
+        "https://support.sendcloud.com/hc/en-us/articles/51464033398417-Connect-Sendcloud-to-Claude-with-MCP",
+        "https://support.sendcloud.com/hc/en-us/articles/360052598311-How-are-address-details-formatted"
+      ]
     },
     {
       "id": "colissimo",
@@ -4366,9 +5025,13 @@
         "https://www.delibari.co/"
       ],
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
-      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
+      "evidence_urls": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ],
+      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "required_validation": [
         "Exact product/region and required read/write operations",
         "Account-level tool discovery and sample execution",
@@ -4376,7 +5039,7 @@
         "Pagination, retries, rate limits and idempotency for writes",
         "Vendor access terms and EU data-processing/hosting requirements"
       ],
-      "manual_gap": "Candidate for a maintained adapter or reviewed upstream reuse; not yet an implementation-ready commitment.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "regions": [
         "Europe"
       ],
@@ -4390,7 +5053,14 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "mondial-relay",
@@ -4415,9 +5085,13 @@
         "https://mcp.so/ja/servers/france-logistics-mcp"
       ],
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
-      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
+      "evidence_urls": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ],
+      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "required_validation": [
         "Exact product/region and required read/write operations",
         "Account-level tool discovery and sample execution",
@@ -4425,7 +5099,7 @@
         "Pagination, retries, rate limits and idempotency for writes",
         "Vendor access terms and EU data-processing/hosting requirements"
       ],
-      "manual_gap": "Candidate for a maintained adapter or reviewed upstream reuse; not yet an implementation-ready commitment.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "regions": [
         "Europe"
       ],
@@ -4439,7 +5113,14 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "myparcel",
@@ -4490,7 +5171,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "packlink",
@@ -4516,7 +5200,9 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://support-pro.packlink.com/hc/en-gb/articles/213431749-How-do-I-generate-an-API-key-on-Packlink-PRO"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -4539,7 +5225,29 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "packlink",
+        "name": "Packlink PRO",
+        "access": "public",
+        "docs_url": "https://support-pro.packlink.com/hc/en-gb/articles/213431749-How-do-I-generate-an-API-key-on-Packlink-PRO",
+        "access_gate": "Packlink PRO account; Settings > Packlink PRO API key > Generate. Current full direct API contract/custom developer support not verified.",
+        "auth": "Account-generated API key documented for available integrations; exact custom-client header not established from vendor source in this pass.",
+        "sandbox": "Not verified.",
+        "scope": "Vendor verifies integration API key; full direct shipment/label/booking endpoint coverage remains unverified. Public third-party specs are not vendor contracts.",
+        "priority": "P3",
+        "priority_note": "Use existing multi-carrier platform/MCP first for standard shipping. Build Packlink-specific adapter only for a required Packlink PRO account workflow unsupported elsewhere.",
+        "evidence_urls": [
+          "https://support-pro.packlink.com/hc/en-gb/articles/213431749-How-do-I-generate-an-API-key-on-Packlink-PRO"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "shippypro",
@@ -4591,7 +5299,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://zapier.com/mcp/shippypro",
+      "next_work_priority": "P3"
     },
     {
       "id": "chronopost",
@@ -4616,9 +5327,13 @@
         "https://raw.githubusercontent.com/api-evangelist/la-poste-groupe/refs/heads/main/mcp/la-poste-groupe-mcp.yml"
       ],
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
-      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
+      "evidence_urls": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ],
+      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "required_validation": [
         "Exact product/region and required read/write operations",
         "Account-level tool discovery and sample execution",
@@ -4626,7 +5341,7 @@
         "Pagination, retries, rate limits and idempotency for writes",
         "Vendor access terms and EU data-processing/hosting requirements"
       ],
-      "manual_gap": "Candidate for a maintained adapter or reviewed upstream reuse; not yet an implementation-ready commitment.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "regions": [
         "Europe"
       ],
@@ -4640,7 +5355,14 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "correos",
@@ -4665,9 +5387,13 @@
         "https://www.googleapis.com/auth/gmail.readonly`"
       ],
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
-      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
+      "evidence_urls": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ],
+      "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "required_validation": [
         "Exact product/region and required read/write operations",
         "Account-level tool discovery and sample execution",
@@ -4675,7 +5401,7 @@
         "Pagination, retries, rate limits and idempotency for writes",
         "Vendor access terms and EU data-processing/hosting requirements"
       ],
-      "manual_gap": "Candidate for a maintained adapter or reviewed upstream reuse; not yet an implementation-ready commitment.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "regions": [
         "Europe"
       ],
@@ -4689,7 +5415,14 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "brevo",
@@ -4746,7 +5479,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_direct",
+      "reuse_route": "brevo"
     },
     {
       "id": "getresponse",
@@ -4799,7 +5534,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "getresponse"
     },
     {
       "id": "mailerlite",
@@ -4854,7 +5591,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_direct",
+      "reuse_route": "mailerlite"
     },
     {
       "id": "typeform",
@@ -4909,7 +5648,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_direct",
+      "reuse_route": "typeform"
     },
     {
       "id": "personio",
@@ -4984,7 +5725,10 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "factorial-hr",
@@ -5039,7 +5783,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "factorial"
     },
     {
       "id": "payfit",
@@ -5122,7 +5868,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://holco.co/ressources/quel-connecteur-mcp-logiciel-comptable/",
+      "next_work_priority": "P3"
     },
     {
       "id": "lucca",
@@ -5147,7 +5896,12 @@
       ],
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
-      "evidence_urls": [],
+      "evidence_urls": [
+        "https://developers.luccasoftware.com/home",
+        "https://developers.luccasoftware.com/documentation/using-api/authentication",
+        "https://developers.luccasoftware.com/documentation/sandbox",
+        "https://support.lucca.fr/hc/en-us/articles/5780529138588-How-API-connectors-work-with-our-partners"
+      ],
       "notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation.",
       "required_validation": [
         "Exact product/region and required read/write operations",
@@ -5170,7 +5924,31 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "lucca",
+        "name": "Lucca",
+        "access": "public",
+        "docs_url": "https://developers.luccasoftware.com/home",
+        "access_gate": "Customer tenant and sufficient admin privilege to create client applications with module scopes/business establishments.",
+        "auth": "NEW Lucca API OAuth2 client_credentials; create under /identity/admin/integration-keys ; https://accounts.world.luccasoftware.com/connect/token ; token1800s. Legacy APIs use API keys separately.",
+        "sandbox": "Paid extra feature; Client Center > Sandbox; request sales entitlement and admin rights. Client apps must be redeclared in sandbox.",
+        "scope": "Exact Lucca product/module/API generation; employee data, leave/time or compensation rights differ. CoreHR read does not inherently include Compensation data.",
+        "priority": "P1",
+        "priority_note": "Clear current documentation and useful HR scope. Start one module/use case with scoped application; include sandbox cost and avoid legacy-key-only implementation.",
+        "evidence_urls": [
+          "https://developers.luccasoftware.com/documentation/using-api/authentication",
+          "https://developers.luccasoftware.com/documentation/sandbox",
+          "https://support.lucca.fr/hc/en-us/articles/5780529138588-How-API-connectors-work-with-our-partners"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P2"
     },
     {
       "id": "yousign",
@@ -5226,7 +6004,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://www.mcpbundles.com/skills/yousign",
+      "next_work_priority": "P2"
     },
     {
       "id": "signaturit",
@@ -5278,7 +6059,10 @@
       ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://zapier.com/mcp/signaturit",
+      "next_work_priority": "P3"
     },
     {
       "id": "sap",
@@ -5305,7 +6089,11 @@
       "mcp_status": "official_wrong_scope",
       "decision": "resolve_existing_mcp_before_building",
       "evidence_urls": [
-        "https://help.sap.com/docs/automation-pilot/automation-pilot/mcp-server"
+        "https://help.sap.com/docs/automation-pilot/automation-pilot/mcp-server",
+        "https://api.sap.com/",
+        "https://help.sap.com/docs/business-accelerator-hub/sap-business-accelerator-hub/trying-out-apis",
+        "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/2628c891a3a04f05a293c7ca5d23e4b6/1e60f14bdc224c2c975c8fa8bcfd7f3f.html?locale=en-US",
+        "https://learning.sap.com/courses/develop-cloud-applications-using-sap-business-application-studio/consuming-an-external-service-from-sap-s-4hana_faa318cd-9b48-48c4-b5fc-e6c205fb7685"
       ],
       "notes": "SAP provides product-specific MCP servers, including Automation Pilot/BTP. Developer documentation MCP is not business ERP coverage. Select the precise SAP product and workflow before further integration work. SAP is a suite/vendor, not one API. Choose S/4HANA, Business One, SuccessFactors or another product before claiming MCP coverage or estimating integration.",
       "required_validation": [
@@ -5329,7 +6117,31 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "sap",
+        "name": "SAP (unspecified suite)",
+        "access": "product-unresolved",
+        "docs_url": "https://api.sap.com/",
+        "access_gate": "Select exact SAP product, edition, version, tenant and API first; productive use requires relevant product license and customer access.",
+        "auth": "Product-specific; do not assign one SAP auth method. Business Accelerator Hub sandbox uses user's APIKey; that is not production credentials.",
+        "sandbox": "Business Accelerator Hub supports selected APIs in sandbox; GraphQL/SOAP and other categories have tryout limitations; availability per API.",
+        "scope": "SAP S/4HANA Cloud public/private/on-prem, Business One, SuccessFactors, Integration Suite and other products are independent integration scopes.",
+        "priority": "P3",
+        "priority_note": "Split into product-level work items after customer target is concrete. Never count SAP as one ready-to-build universal adapter.",
+        "evidence_urls": [
+          "https://help.sap.com/docs/business-accelerator-hub/sap-business-accelerator-hub/trying-out-apis",
+          "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/2628c891a3a04f05a293c7ca5d23e4b6/1e60f14bdc224c2c975c8fa8bcfd7f3f.html?locale=en-US",
+          "https://learning.sap.com/courses/develop-cloud-applications-using-sap-business-application-studio/consuming-an-external-service-from-sap-s-4hana_faa318cd-9b48-48c4-b5fc-e6c205fb7685"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "mistral-ai",
@@ -5354,11 +6166,13 @@
         "https://mcp.ai/mistral_ai/en"
       ],
       "mcp_status": "mcp_client_not_service_server",
-      "decision": "resolve_existing_mcp_before_building",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
       "evidence_urls": [
-        "https://docs.mistral.ai/agents/connectors/mcp"
+        "https://docs.mistral.ai/agents/connectors/mcp",
+        "https://openrouter.ai/mistralai/mistral-small-3.2-24b-instruct",
+        "https://github.com/Flow-Steward/ext-llm-openrouter"
       ],
-      "notes": "Mistral supports consuming MCP as an AI client. This does not expose Mistral inference through a vendor MCP server. Prefer a model-provider API integration.",
+      "notes": "Mistral supports consuming MCP as an AI client. This does not expose Mistral inference through a vendor MCP server. Prefer a model-provider API integration. Published flowsteward.openrouter extension; inference through supported Mistral models only. Direct Mistral API and residency requirements not established.",
       "required_validation": [
         "Exact product/region and required read/write operations",
         "Account-level tool discovery and sample execution",
@@ -5366,7 +6180,7 @@
         "Pagination, retries, rate limits and idempotency for writes",
         "Vendor access terms and EU data-processing/hosting requirements"
       ],
-      "manual_gap": "Candidate for a maintained adapter or reviewed upstream reuse; not yet an implementation-ready commitment.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "regions": [
         "Europe"
       ],
@@ -5377,10 +6191,18 @@
         "sandbox": "not reviewed"
       },
       "regional_findings": [],
-      "extension_catalog_ids": [],
+      "extension_catalog_ids": [
+        "flowsteward.openrouter"
+      ],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Published flowsteward.openrouter extension; inference through supported Mistral models only. Direct Mistral API and residency requirements not established.",
+      "indirect_route_evidence": [
+        "https://openrouter.ai/mistralai/mistral-small-3.2-24b-instruct",
+        "https://github.com/Flow-Steward/ext-llm-openrouter"
+      ]
     },
     {
       "id": "deepl",
@@ -5433,7 +6255,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "deepl"
     },
     {
       "id": "infobip",
@@ -5503,7 +6327,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_direct",
+      "reuse_route": "infobip-2fa; infobip-email; infobip-people; infobip-rcs; infobip-sms; infobip-viber; infobip-voice; infobip-whatsapp"
     },
     {
       "id": "sinch",
@@ -5558,7 +6384,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_direct",
+      "reuse_route": "sinch-engage"
     },
     {
       "id": "bird-messagebird",
@@ -5612,7 +6440,9 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "bird"
     },
     {
       "id": "gocardless-bank-account-data",
@@ -5631,7 +6461,11 @@
       "decision": "api_discovery_before_manual_implementation",
       "account_tested": false,
       "evidence_urls": [
-        "https://developer.gocardless.com/bank-account-data/overview"
+        "https://developer.gocardless.com/bank-account-data/overview",
+        "https://docs.gocardless.com/docs/bank-account-data",
+        "https://docs.gocardless.com/docs/bank-account-data/quickstart-guide",
+        "https://assets.ctfassets.net/40w0m41bmydz/3NuGGxoeVyKUEHQOZECAMf/4cb997a8f07eb5f8a063095f3a505fe7/Bank_Account_Data_Service_Terms_-_January_2026_.pdf",
+        "https://gocardless.com/bank-account-data/demo"
       ],
       "search_evidence_urls": [],
       "notes": "Existing gocardless MCP targets direct debit. Bank Account Data requires independent verification of current availability, eligibility, bank coverage and permitted access. Do not equate one aggregator with unrestricted access to all banks.",
@@ -5653,7 +6487,31 @@
       "extension_catalog_ids": [],
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "gocardless-bank-account-data",
+        "name": "GoCardless Bank Account Data",
+        "access": "partner",
+        "docs_url": "https://docs.gocardless.com/docs/bank-account-data",
+        "access_gate": "Current June2026 service terms section3.2: request portal access via help@gocardless.com; GoCardless determines eligibility/grants access. Do not sell as freely open standalone new-client onboarding.",
+        "auth": "Portal user secret_id/secret_key generate refresh/access tokens; Bearer on API; bank end-user consent/requisition separate.",
+        "sandbox": "Vendor offers Sandbox Finance/mock-bank demo; requires separate confirmation of portal/new-customer entitlement.",
+        "scope": "PSD2 account details, balances and transactions for supported UK/EEA institutions. Not GoCardless collection/DirectDebit/pay-by-bank API or payment initiation.",
+        "priority": "P3",
+        "priority_note": "Keep existing-customer support or approved payment-journey opportunity; request vendor confirmation before investing in new standalone data integration. Primary sources prove eligibility gate, not universal total shutdown.",
+        "evidence_urls": [
+          "https://docs.gocardless.com/docs/bank-account-data/quickstart-guide",
+          "https://assets.ctfassets.net/40w0m41bmydz/3NuGGxoeVyKUEHQOZECAMf/4cb997a8f07eb5f8a063095f3a505fe7/Bank_Account_Data_Service_Terms_-_January_2026_.pdf",
+          "https://gocardless.com/bank-account-data/demo"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "sage-50-uk",
@@ -5710,7 +6568,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "freeagent",
@@ -5779,7 +6640,10 @@
         "UK"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://usefulapi.io/freeagent/",
+      "next_work_priority": "P1"
     },
     {
       "id": "xero",
@@ -5883,7 +6747,9 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "xero"
     },
     {
       "id": "quickbooks-online",
@@ -5979,7 +6845,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "pandle",
@@ -6037,7 +6906,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "kashflow",
@@ -6103,7 +6975,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://usefulapi.io/kashflow/",
+      "next_work_priority": "P3"
     },
     {
       "id": "clear-books",
@@ -6161,7 +7036,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "brightpay",
@@ -6218,7 +7096,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "moorepay",
@@ -6276,7 +7157,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "iris-payroll",
@@ -6332,7 +7216,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "staffology",
@@ -6355,7 +7242,8 @@
       "decision": "api_discovery_before_manual_implementation",
       "evidence_urls": [
         "https://app.staffology.co.uk/api/docs/guides/intro/intro",
-        "https://app.staffology.co.uk/api/docs/guides/intro/auth"
+        "https://app.staffology.co.uk/api/docs/guides/intro/auth",
+        "https://api.staffology.co.uk/swagger/index.html"
       ],
       "notes": "",
       "regional_findings": [
@@ -6390,7 +7278,31 @@
         "UK"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "staffology",
+        "name": "Staffology Payroll by IRIS",
+        "access": "public",
+        "docs_url": "https://app.staffology.co.uk/api/docs/guides/intro/intro",
+        "access_gate": "Staffology Payroll account; employer/user permissions and paid production commercial terms. Free account/demo employer available.",
+        "auth": "Recommended API key as Basic-auth password, arbitrary username; same employer permissions as user. OAuth web session available for testing, not preferred long-lived integration.",
+        "sandbox": "Demo employer populated with employees/data in free account; not claimed as separate isolated sandbox.",
+        "scope": "UK Payroll REST JSON; employer, employee, payruns and published payroll resources. Staffology HR uses different API/auth.",
+        "priority": "P2",
+        "priority_note": "Strong technical candidate but full payroll posting/RTI operations require focused acceptance and domain scope; begin approved employee/time import/report use case.",
+        "evidence_urls": [
+          "https://app.staffology.co.uk/api/docs/guides/intro/intro",
+          "https://app.staffology.co.uk/api/docs/guides/intro/auth",
+          "https://api.staffology.co.uk/swagger/index.html"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "xero-payroll-uk",
@@ -6451,7 +7363,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "employment-hero-uk",
@@ -6509,7 +7424,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "companies-house",
@@ -6575,7 +7493,10 @@
         "UK"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/aicayzer/companies-house-mcp",
+      "next_work_priority": "P1"
     },
     {
       "id": "hmrc-vat-validation",
@@ -6632,7 +7553,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "hmrc-mtd-vat",
@@ -6656,7 +7580,10 @@
       "decision": "api_discovery_before_manual_implementation",
       "evidence_urls": [
         "https://developer.service.hmrc.gov.uk/guides/vat-mtd-end-to-end-service-guide/documentation/set-up.html",
-        "https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide"
+        "https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide",
+        "https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-api/1.0",
+        "https://developer.service.hmrc.gov.uk/guides/vat-mtd-end-to-end-service-guide/",
+        "https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints"
       ],
       "notes": "Fraud-prevention headers mandatory; separate filing compliance/agent authorisation work.",
       "regional_findings": [
@@ -6693,7 +7620,31 @@
         "UK"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "hmrc-mtd-vat",
+        "name": "HMRC MTD VAT",
+        "access": "public",
+        "docs_url": "https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-api/1.0",
+        "access_gate": "Developer app/sandbox first; production approval requires minimum product functionality, successful tests, fraud-prevention-header evidence, questionnaires and accepted terms; customer/agent authorizes.",
+        "auth": "OAuth2 Authorization Code, PKCE supported; user/organisation or Agent Services Account consent; endpoint-specific VAT scopes.",
+        "sandbox": "https://test-api.service.hmrc.gov.uk ; Create Test User and Gov-Test-Scenario canned responses; production https://api.service.hmrc.gov.uk.",
+        "scope": "VAT obligations, submit/view return, liabilities/payments/penalties/customer info. Not MTD IncomeTax or corporation/payroll filing.",
+        "priority": "P2",
+        "priority_note": "Separate tax-filing product workstream after accounting integration/customer sponsor; production approval and submission audit make this unsuitable as a config-only starter. API explicitly supports filing, unlike generic accounting API.",
+        "evidence_urls": [
+          "https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-api/1.0",
+          "https://developer.service.hmrc.gov.uk/guides/vat-mtd-end-to-end-service-guide/",
+          "https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "hmrc-mtd-income-tax",
@@ -6750,7 +7701,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "hmrc-paye-rti",
@@ -6807,7 +7761,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "hmrc-cis",
@@ -6866,7 +7823,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "moneyhub",
@@ -6927,7 +7887,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://github.com/moneyhub/moneyhub-api-client",
+      "next_work_priority": "P3"
     },
     {
       "id": "monzo-business",
@@ -6985,7 +7948,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "starling",
@@ -7041,7 +8007,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "tide",
@@ -7099,7 +8068,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "paddle",
@@ -7161,7 +8133,9 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "existing_direct",
+      "reuse_route": "paddle"
     },
     {
       "id": "checkout-com",
@@ -7219,7 +8193,9 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "checkout-com"
     },
     {
       "id": "worldpay",
@@ -7275,7 +8251,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "royal-mail",
@@ -7296,12 +8275,15 @@
       "account_tested": false,
       "coverage": "unverified",
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
       "evidence_urls": [
         "https://developer.royalmail.net/start",
-        "https://www.royalmail.com/business/parcels/shipping-solutions/api-shipping"
+        "https://www.royalmail.com/business/parcels/shipping-solutions/api-shipping",
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
       ],
-      "notes": "Tracking, Shipping, Local Collect are separate products.",
+      "notes": "Tracking, Shipping, Local Collect are separate products. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "regional_findings": [
         {
           "region": "UK",
@@ -7331,10 +8313,17 @@
         "auth": "application client ID+secret; product-specific",
         "sandbox": "sandbox onboarding for API Shipping"
       },
-      "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "click-drop",
@@ -7357,7 +8346,10 @@
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
       "evidence_urls": [
-        "https://help.parcel.royalmail.com/hc/en-gb/articles/360011462338-Integrating-with-the-Click-Drop-API"
+        "https://help.parcel.royalmail.com/hc/en-gb/articles/360011462338-Integrating-with-the-Click-Drop-API",
+        "https://api.parcel.royalmail.com/",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
       ],
       "notes": "https://api.parcel.royalmail.com/api/v1. OBA/OLP label limitations; supports ParcelForce package array. Strong scoped manual extension candidate.",
       "regional_findings": [
@@ -7393,7 +8385,31 @@
         "UK"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "click-drop",
+        "name": "Royal Mail Click & Drop",
+        "access": "public",
+        "docs_url": "https://api.parcel.royalmail.com/",
+        "access_gate": "Click & Drop account > Settings > Integrations > Click & Drop API; only one such integration per account; OBA vs OLP capabilities differ.",
+        "auth": "Raw API key in Authorization header.",
+        "sandbox": "No isolated sandbox verified; do not create chargeable live labels as a test without authorization.",
+        "scope": "Create/read/reset/despatch orders, create/retrieve labels and documents. Label/document retrieval for OBA; OLP restriction documented.",
+        "priority": "P2",
+        "priority_note": "First test existing Shippo RoyalMail route for standard labels/rates/tracking. Build only when customer must operate inside Click&Drop, preserve its order/import workflow, or requires actions absent from Shippo; carrier coverage alone does not replace Click&Drop account workflow.",
+        "evidence_urls": [
+          "https://help.parcel.royalmail.com/hc/en-gb/articles/360011462338-Integrating-with-the-Click-Drop-API",
+          "https://goshippo.com/carriers",
+          "https://goshippo.com/llm-info"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "dpd-uk",
@@ -7414,11 +8430,14 @@
       "account_tested": false,
       "coverage": "unverified",
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
       "evidence_urls": [
-        "https://developer.dpdgroup.com/"
+        "https://developer.dpdgroup.com/",
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
       ],
-      "notes": "Do not use Baltic/German/Czech DPD APIs as evidence for UK; public UK exact docs/onboarding not verified within bounded pass.",
+      "notes": "Do not use Baltic/German/Czech DPD APIs as evidence for UK; public UK exact docs/onboarding not verified within bounded pass. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "regional_findings": [
         {
           "region": "UK",
@@ -7447,10 +8466,17 @@
         "auth": "not verified",
         "sandbox": "not verified"
       },
-      "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "evri",
@@ -7471,12 +8497,15 @@
       "account_tested": false,
       "coverage": "unverified",
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
       "evidence_urls": [
         "https://www.evri.com/frequent-seller",
-        "https://www.evri.com/fulfilment-services"
+        "https://www.evri.com/fulfilment-services",
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
       ],
-      "notes": "Frequent Seller FAQ explicitly no API. Fulfilment advertises API/automation; cannot infer public carrier endpoint.",
+      "notes": "Frequent Seller FAQ explicitly no API. Fulfilment advertises API/automation; cannot infer public carrier endpoint. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "regional_findings": [
         {
           "region": "UK",
@@ -7506,12 +8535,19 @@
         "auth": "not verified",
         "sandbox": "not verified"
       },
-      "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "launch_regions": [
         "UK"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "parcelforce",
@@ -7531,11 +8567,14 @@
       "account_tested": false,
       "coverage": "unverified",
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
       "evidence_urls": [
-        "https://www9.parcelforce.com/sites/parcelforce.com/files/2025-08/pfw-uk-parcel-services-user-guide.pdf"
+        "https://www9.parcelforce.com/sites/parcelforce.com/files/2025-08/pfw-uk-parcel-services-user-guide.pdf",
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
       ],
-      "notes": "Prefer current Royal Mail/Click & Drop routing; do not recommend legacy Parcelforce endpoint without migration check.",
+      "notes": "Prefer current Royal Mail/Click & Drop routing; do not recommend legacy Parcelforce endpoint without migration check. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "regional_findings": [
         {
           "region": "UK",
@@ -7564,10 +8603,17 @@
         "auth": "product-specific",
         "sandbox": "product-specific"
       },
-      "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "parcelhub",
@@ -7623,7 +8669,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "shipstation",
@@ -7688,7 +8737,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "official_onboarding",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "shopify",
@@ -7769,7 +8821,9 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "existing_direct",
+      "reuse_route": "flowsteward.shopify"
     },
     {
       "id": "wealthsimple",
@@ -7836,7 +8890,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "questrade",
@@ -7903,7 +8960,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "lightspeed-retail-x-series",
@@ -7970,7 +9030,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "lightspeed-retail-r-series",
@@ -8037,7 +9100,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "lightspeed-restaurant",
@@ -8104,7 +9170,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "clio",
@@ -8188,7 +9257,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://docs.developers.clio.com/clio-manage/api-reference/",
+      "next_work_priority": "P3"
     },
     {
       "id": "servicetitan",
@@ -8261,7 +9333,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "jobber",
@@ -8341,7 +9416,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "third_party_review",
+      "reuse_route": "https://developer.getjobber.com/docs/",
+      "next_work_priority": "P3"
     },
     {
       "id": "hootsuite",
@@ -8441,7 +9519,9 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "hootsuite"
     },
     {
       "id": "wattpad",
@@ -8504,7 +9584,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "freshbooks",
@@ -8600,7 +9683,9 @@
         "Canada"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "freshbooks"
     },
     {
       "id": "wave",
@@ -8671,7 +9756,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "faire",
@@ -8744,7 +9832,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "ritual",
@@ -8811,7 +9902,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "nuvei",
@@ -8878,7 +9972,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "moneris",
@@ -8947,7 +10044,29 @@
         "Canada"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "moneris",
+        "name": "Moneris",
+        "access": "public",
+        "docs_url": "https://developer.moneris.com/moneris-api/docs/getting-started-guide",
+        "access_gate": "Developer portal sandbox self-registration; production credentials only known Moneris merchants. Third-party integrator clients create own merchant credentials.",
+        "auth": "OAuth2 client_credentials; API-key alternative documented but not recommended.",
+        "sandbox": "https://api.sb.moneris.io ; production https://api.moneris.io.",
+        "scope": "New Moneris REST payment gateway; payment/token/fraud flows per selected endpoints. Not generic Moneris Go/legacy-hosted suite.",
+        "priority": "P2",
+        "priority_note": "Concrete Canada payment expansion after merchant demand; begin reconciliation/read capability if available and scope payment writes separately. Not needed for minimal Shopify/Google/email offer.",
+        "evidence_urls": [
+          "https://developer.moneris.com/moneris-api/docs/getting-started-guide"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P2"
     },
     {
       "id": "interac-e-transfer",
@@ -9020,7 +10139,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "sage-50-canada",
@@ -9087,7 +10209,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "dext",
@@ -9150,7 +10275,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "dayforce",
@@ -9217,7 +10345,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "payworks",
@@ -9286,7 +10417,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "humi",
@@ -9357,7 +10491,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "wagepoint",
@@ -9426,7 +10563,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "rise-people",
@@ -9514,7 +10654,9 @@
         "Canada"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "pending_direct",
+      "reuse_route": "rise-people"
     },
     {
       "id": "flinks",
@@ -9536,7 +10678,9 @@
       "mcp_status": "no_official_mcp_verified",
       "decision": "api_discovery_before_manual_implementation",
       "evidence_urls": [
-        "https://docs.flinks.com/"
+        "https://docs.flinks.com/",
+        "https://www.flinks.com/terms-and-conditions",
+        "https://flinks.freshdesk.com/support/solutions/articles/43000765793-receive-data-automatically-an-introduction-to-flinks-webhooks"
       ],
       "notes": "Customer contract/onboarding; production integration review. Do not infer all bank/product coverage from aggregator brand.",
       "regional_findings": [
@@ -9583,7 +10727,31 @@
         "Canada"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "api_access_review": {
+        "id": "flinks",
+        "name": "Flinks",
+        "access": "partner",
+        "docs_url": "https://docs.flinks.com/",
+        "access_gate": "Client Order Form/service schedule; production integration review by Flinks. Full DEV/UAT/PROD private instance required for complete flow/webhook testing.",
+        "auth": "Product-specific bearer/auth-key/API-key credentials; exact surface selected with vendor.",
+        "sandbox": "Toolbox dummy-data tests; sandbox is limited; private DEV/UAT/PROD required for webhook tests.",
+        "scope": "Chosen financial-data/KYC/investment/Pay product and bank coverage. Flinks Pay Interac events different from general aggregation payloads.",
+        "priority": "P2",
+        "priority_note": "Use as financial-data aggregator only where existing approved provider cannot meet exact institution/data requirement; contract/consent and instance costs before build.",
+        "evidence_urls": [
+          "https://docs.flinks.com/",
+          "https://www.flinks.com/terms-and-conditions",
+          "https://flinks.freshdesk.com/support/solutions/articles/43000765793-receive-data-automatically-an-introduction-to-flinks-webhooks"
+        ],
+        "account_tested": false,
+        "checked_on": "2026-10-29",
+        "priority_basis": "Editorial implementation/access priority, not demand or market-share measurement.",
+        "implementation_status": "Research only; no connector implemented or account tested."
+      },
+      "next_work_priority": "P3"
     },
     {
       "id": "plaid",
@@ -9666,7 +10834,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "plaid-dashboard",
+      "next_work_priority": "P3"
     },
     {
       "id": "canada-post",
@@ -9687,11 +10858,14 @@
       "account_tested": false,
       "coverage": "unverified",
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
       "evidence_urls": [
-        "https://origin-www.canadapost.ca/info/mc/business/productsservices/developers/services/fundamentals.jsf"
+        "https://origin-www.canadapost.ca/info/mc/business/productsservices/developers/services/fundamentals.jsf",
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
       ],
-      "notes": "Legacy Developer Program documented; new Developer Portal exists separately. Commercial account/contracts for applicable shipping; label purchase writes incur charges.",
+      "notes": "Legacy Developer Program documented; new Developer Portal exists separately. Commercial account/contracts for applicable shipping; label purchase writes incur charges. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "regional_findings": [
         {
           "region": "Canada",
@@ -9732,12 +10906,19 @@
         "auth": "Development/production API keys in Authorization; https://ct.soa-gw.canadapost.ca sandbox",
         "sandbox": "See combined vendor auth/test-environment note"
       },
-      "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "launch_regions": [
         "Canada"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "purolator",
@@ -9758,11 +10939,14 @@
       "account_tested": false,
       "coverage": "unverified",
       "mcp_status": "no_official_mcp_verified",
-      "decision": "api_discovery_before_manual_implementation",
+      "decision": "verify_existing_indirect_route_before_direct_adapter",
       "evidence_urls": [
-        "https://www.purolator.com/en/services/technology-solutions/e-ship-web-services"
+        "https://www.purolator.com/en/services/technology-solutions/e-ship-web-services",
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
       ],
-      "notes": "E-Ship Web Services documented; production activation and shipping account required. ESS local Server/API is another product; keep separate.",
+      "notes": "E-Ship Web Services documented; production activation and shipping account required. ESS local Server/API is another product; keep separate. Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed. Account-specific carrier services, contracts and required MCP operations must be validated; no full direct API coverage claimed.",
       "regional_findings": [
         {
           "region": "Canada",
@@ -9803,12 +10987,19 @@
         "auth": null,
         "sandbox": "See combined vendor auth/test-environment note"
       },
-      "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
+      "manual_gap": "Implement direct API operations only for a confirmed gap after account-level testing of the existing extension or aggregator.",
       "launch_regions": [
         "Canada"
       ],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": true
+      "in_initial_scope": true,
+      "coverage_bucket": "existing_indirect",
+      "reuse_route": "Existing shippo MCP: rates, labels and tracking through supported carrier account/services; no direct carrier API parity claimed.",
+      "indirect_route_evidence": [
+        "https://docs.goshippo.com/guides/mcp-server",
+        "https://goshippo.com/carriers",
+        "https://goshippo.com/llm-info"
+      ]
     },
     {
       "id": "canpar",
@@ -9875,7 +11066,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "loomis-express",
@@ -9942,7 +11136,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "kijiji",
@@ -10005,7 +11202,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "ebay-canada",
@@ -10072,7 +11272,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "best-buy-canada",
@@ -10139,7 +11342,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "paymentevolution",
@@ -10206,7 +11412,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "collage-hr",
@@ -10273,7 +11482,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "chit-chats",
@@ -10342,7 +11554,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "stallion-express",
@@ -10409,7 +11624,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "float-financial",
@@ -10478,7 +11696,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "helcim",
@@ -10547,7 +11768,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "acomba",
@@ -10614,7 +11838,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "rbc",
@@ -10681,7 +11908,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "td",
@@ -10748,7 +11978,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "scotiabank",
@@ -10817,7 +12050,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "bmo",
@@ -10884,7 +12120,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "cibc",
@@ -10947,7 +12186,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     },
     {
       "id": "cra",
@@ -11016,7 +12258,10 @@
       "manual_gap": "Validate exact missing actions/triggers, API access and upstream reuse before committing an implementation.",
       "launch_regions": [],
       "scope_note": "Regions identify the supplied research lists, not a guarantee of product availability in every jurisdiction.",
-      "in_initial_scope": false
+      "in_initial_scope": false,
+      "coverage_bucket": "api_candidate",
+      "reuse_route": "",
+      "next_work_priority": "P3"
     }
   ],
   "launch_priorities": {
@@ -11044,7 +12289,7 @@
       {
         "name": "Evri",
         "use_case": "Parcel creation and tracking",
-        "next_action": "Confirm customer/partner API access before implementation."
+        "next_action": "Validate standard shipping through existing Shippo MCP or Sendcloud; direct business/fulfilment API only for verified uncovered requirements."
       },
       {
         "name": "Staffology",
@@ -11061,12 +12306,12 @@
       {
         "name": "Canada Post",
         "use_case": "Rates, shipping labels and shipment tracking",
-        "next_action": "Build a maintained shipping adapter with development credentials, then production activation."
+        "next_action": "Validate rates, labels and tracking through existing Shippo MCP and the required carrier account; build direct API operations only for verified gaps."
       },
       {
         "name": "Purolator",
         "use_case": "Domestic business shipping and tracking",
-        "next_action": "Build E-Ship Web Services adapter after shipping-account and production setup."
+        "next_action": "Validate rates, labels and tracking through existing Shippo MCP and the required carrier account; build direct API operations only for verified gaps."
       },
       {
         "name": "Flinks",
@@ -11494,6 +12739,15 @@
           "https://www.oqlf.gouv.qc.ca/francisation/entreprises/",
           "https://www.quebec.ca/gouvernement/ministeres-organismes/langue-francaise/cadre-legal-transparence/lois-reglements"
         ]
+      },
+      {
+        "claim": "Canada Post and Purolator necessarily need two hand-built adapters",
+        "correction": "Existing Shippo MCP and Shippo carrier support provide a documented reuse path for standard rates, labels and tracking. Validate the customer account/service/tool coverage first; implement direct APIs only for missing requirements.",
+        "sources": [
+          "https://docs.goshippo.com/guides/mcp-server",
+          "https://goshippo.com/carriers",
+          "https://goshippo.com/llm-info"
+        ]
       }
     ]
   },
@@ -11543,7 +12797,7 @@
       "Low-stock report and notification using supported inventory reads",
       "Update fulfillment tracking after shipment data is supplied by an operator or validated carrier integration"
     ],
-    "regional_delivery": "FreshBooks read-only financial reports and Rise People HR reports can be evaluated through added MCP entries. Canada Post/Purolator/Flinks/Moneris are planned adapter work, not shipped integrations.",
+    "regional_delivery": "FreshBooks and Rise reports through pending MCP configs. Standard Canada Post/Purolator shipping has a reuse path through existing Shippo MCP; validate account/service operations first. Moneris and Flinks remain API-adapter candidates after access approval.",
     "not_in_initial_offer": [
       "Automated CRA filing or payroll execution",
       "Guaranteed tax or Quebec legal compliance",
@@ -11565,5 +12819,52 @@
       "name": "HubSpot",
       "catalog_id": "hubspot"
     }
-  ]
+  ],
+  "coverage_reconciliation": {
+    "checked_on": "2026-10-29",
+    "definition": "Documented routes for limited operations, not live-account acceptance or full API coverage. Existing main and pending PR configs counted separately; indirect aggregator routes conditional on account, region, contract and required tool support.",
+    "counts": {
+      "initial": {
+        "third_party_review": 32,
+        "pending_direct": 18,
+        "api_candidate": 31,
+        "official_onboarding": 14,
+        "existing_direct": 6,
+        "existing_indirect": 11,
+        "pending_indirect": 2
+      },
+      "all": {
+        "third_party_review": 36,
+        "pending_direct": 21,
+        "api_candidate": 83,
+        "official_onboarding": 18,
+        "existing_direct": 8,
+        "existing_indirect": 14,
+        "pending_indirect": 2
+      },
+      "reserve": {
+        "api_candidate": 52,
+        "pending_direct": 3,
+        "official_onboarding": 4,
+        "third_party_review": 4,
+        "existing_direct": 2,
+        "existing_indirect": 3
+      }
+    },
+    "initial_api_access_counts": {
+      "public": 15,
+      "partner": 12,
+      "product-unresolved": 4
+    },
+    "pending_pr": "https://github.com/Flow-Steward/mcps/pull/17",
+    "bucket_definitions": {
+      "existing_direct": "Catalog or extension already published; documented subset only, not authenticated here",
+      "existing_indirect": "Documented functional route through existing aggregator/extension, account and tool eligibility still untested",
+      "pending_direct": "New direct catalog configuration in PR17; not yet main",
+      "pending_indirect": "Functional route through an aggregator config in PR17; not yet main",
+      "official_onboarding": "Official MCP exists but requires access/setup or hosting review",
+      "third_party_review": "External MCP/bridge discovered; not accepted into our catalog yet",
+      "api_candidate": "No suitable reusable route established; API and product access need validation before implementation"
+    }
+  }
 }
