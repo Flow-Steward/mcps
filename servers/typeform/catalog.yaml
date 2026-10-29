@@ -1,9 +1,9 @@
-# Reviewed 2026-10-10: https://www.typeform.com/developers/mcp/
-# AS api.typeform.com advertises DCR (/oauth/register) and client_id_metadata_document_supported=true. Streamable HTTP only (no SSE). EU-hosted accounts use a different endpoint (not listed). Plan gating at call time.
-revision: 1
+# Reviewed 2026-10-29: https://www.typeform.com/developers/mcp/
+# Regional endpoints and client metadata registration documented by Typeform; OAuth discovery checked without account access.
+revision: 2
 title: Typeform
-description: Create and edit Typeform forms, read responses and insights, and manage workspaces and webhooks from
-  an AI assistant.
+description: Create and edit Typeform forms, read responses and insights, and manage
+  workspaces and webhooks from an AI assistant.
 category: marketing
 website_url: https://www.typeform.com
 help_url: https://www.typeform.com/developers/mcp/
@@ -21,7 +21,7 @@ remotes:
   - api.typeform.com
   auth:
     mode: oauth2
-    client_registration: dcr
+    client_registration: client_metadata
     requested_scopes:
     - accounts:read
     - automations:read
@@ -40,3 +40,57 @@ remotes:
     - workspaces:read
     - workspaces:write
     - offline_access
+- id: eu
+  label: Typeform — EU-hosted account
+  url: https://api.eu.typeform.com/mcp
+  allowed_hosts:
+  - api.eu.typeform.com
+  auth:
+    mode: oauth2
+    client_registration: client_metadata
+    requested_scopes:
+    - accounts:read
+    - automations:read
+    - automations:write
+    - contacts:read
+    - contacts:write
+    - forms:read
+    - forms:write
+    - pages:read
+    - pages:write
+    - responses:read
+    - responses:write
+    - insights:read
+    - webhooks:read
+    - webhooks:write
+    - workspaces:read
+    - workspaces:write
+    - offline_access
+- id: eu-stack
+  label: Typeform — separate EU stack
+  url: https://api.typeform.eu/mcp
+  allowed_hosts:
+  - api.typeform.eu
+  auth:
+    mode: oauth2
+    client_registration: client_metadata
+    requested_scopes:
+    - accounts:read
+    - automations:read
+    - automations:write
+    - contacts:read
+    - contacts:write
+    - forms:read
+    - forms:write
+    - pages:read
+    - pages:write
+    - responses:read
+    - responses:write
+    - insights:read
+    - webhooks:read
+    - webhooks:write
+    - workspaces:read
+    - workspaces:write
+    - offline_access
+preview_note: Choose the endpoint matching your Typeform account hosting. OAuth client
+  metadata and PKCE are used; offline access supports token refresh.
