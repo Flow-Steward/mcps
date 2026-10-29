@@ -2,15 +2,15 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-10-15T00:29:24.570828Z",
+      "publishedAt": "2026-10-16T00:28:49.81148Z",
       "status": "active",
-      "statusChangedAt": "2026-10-15T00:29:24.570828Z",
-      "updatedAt": "2026-10-15T00:29:24.570828Z"
+      "statusChangedAt": "2026-10-16T00:28:49.81148Z",
+      "updatedAt": "2026-10-16T00:28:49.81148Z"
     }
   },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
-    "description": "Manage Appwrite projects, databases, auth, storage, functions, and messaging; search Appwrite docs",
+    "description": "Build and deploy backends: auth, Postgres/MySQL/vector databases, storage, functions, hosting, CDN",
     "name": "io.github.appwrite/mcp",
     "packages": [
       {
@@ -19,7 +19,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "1.0.16"
+        "version": "1.0.18"
       }
     ],
     "remotes": [
@@ -32,6 +32,6 @@
       "source": "github",
       "url": "https://github.com/appwrite/mcp"
     },
-    "version": "1.0.16"
+    "version": "1.0.18"
   }
 }
