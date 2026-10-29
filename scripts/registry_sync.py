@@ -584,7 +584,7 @@ def main(argv: list[str] | None = None) -> int:
         "--candidate-limit",
         type=int,
         default=25,
-        help="maximum total pending discovery candidates",
+        help="maximum active ranked discovery proposals; deferred drafts are retained",
     )
     sync.set_defaults(func=cmd_sync)
     args = parser.parse_args(argv)

@@ -17,3 +17,11 @@
 ## Review focus
 
 Pagination must not silently truncate; endpoint matching must preserve path case and query semantics; templates must not identify different customer installations as duplicates; failed fetches must not delete pending proposals; repeated runs must not open repeated PRs or change identical files. Tests belong to the owning task above.
+
+## Market-priority follow-up
+
+- Match the full `coverage/services.json` scope by exact normalized names/IDs and reviewed aliases; ambiguous product editions get no boost.
+- Rank reviewed vendor endpoints before namespace/domain candidates, other scoped matches and general candidates. Within groups prioritize uncovered services over reported indirect routes and current catalog/extension presence.
+- Keep provenance separate from publication approval. Record vendor evidence, access caveats and coverage rationale in review metadata and PR text; list reviewed vendor URLs absent from Registry for manual onboarding.
+- Bound active proposals to 25 while retaining deferred draft edits, so new market candidates cannot be starved by an earlier general batch.
+- Verify spoofed/mixed endpoints, aliases, current-versus-reported coverage, ambiguity, pending displacement, idempotence and the saved complete Registry snapshot.

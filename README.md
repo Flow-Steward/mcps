@@ -121,9 +121,28 @@ describing the change. A reviewer decides; nothing merges by itself:
   The check then refuses the entry until it is removed;
 - a server that disappeared from the Registry is reported, not removed.
 
-It also proposes up to **25 pending new remote servers**, prioritizing endpoints
-on their publisher's verified namespace domain. GitHub and cross-domain publishers
-are included for ownership review when queue space remains. Known aggregators,
+It also proposes up to **25 active new remote candidates**. Ranking uses all
+182 product scopes in `coverage/services.json` and reviewed aliases and endpoint
+evidence in `coverage/discovery-policy.json`, in this order:
+
+1. A market-list service whose remote URLs match reviewed vendor endpoint evidence.
+2. A market-list service with matching publisher namespace/domain signals; ownership is still unverified.
+3. Other exact market-list matches, explicitly marked unverified (including third-party wrappers).
+4. Services outside the market list.
+
+Within each group, an uncovered service comes before a reported indirect route,
+then an existing direct catalog entry or reported extension. Existing entries are
+also excluded by duplicate checks. Research flags are advisory: current catalog
+IDs and titles determine direct presence, while indirect/extension routes retain
+their reported and conditional status. No route establishes complete API coverage.
+The research's P1/P2/P3 priorities break ties before the general domain signal and
+alphabetical order. Display names, IDs and reviewed aliases match exactly after
+normalization, without substring matching; ambiguous product editions get no boost.
+Namespace fallback is limited to untitled records and a conservative root-domain
+label; a brand appearing in a nested subdomain is not vendor evidence. Reviewed
+identity mismatches can be excluded per service with a reason in the policy.
+
+Known aggregators,
 inactive records and local-only servers are excluded. This is discovery from the
 MCP Registry, not a crawl of vendor websites: official MCPs absent from that
 Registry still need manual research.
@@ -137,6 +156,18 @@ New proposals live in `discovery/candidates/<proposed-id>/`: the untouched
 and required checks. They are **excluded from index.json**. Domain alignment is
 only a priority signal: no proposal receives an Official badge or verified
 authentication automatically. Discovery does not contact candidate endpoints.
+Each review file and the PR report state the matched product, region, coverage,
+ranking tier and vendor evidence. A same-name third-party wrapper cannot inherit
+reviewed vendor status; every remote must match reviewed endpoint evidence.
+Reviewed vendor URLs absent from the Registry appear in the report as manual
+onboarding leads; sync does not invent Registry records for them.
+
+New market candidates can displace general proposals from the active 25. Existing
+drafts outside that active set are retained with `queue_state: deferred`, preserving
+human edits. Missing-source drafts are retained but ranked after available sources.
+A queued wrapper cannot reserve a vendor's candidate folder: distinct Registry
+identities get distinct staging directories, and displaced duplicate drafts stay
+deferred with their duplicate reasons until reviewed or explicitly rejected.
 
 Before proposing or manually adding a server, sync compares catalog IDs, Registry
 names, normalized product titles and literal remote endpoints. It checks both

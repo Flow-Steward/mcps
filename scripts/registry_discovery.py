@@ -114,7 +114,8 @@ def _write_json(path: Path, value: object) -> None:
 
 
 def discover(records: list[dict], *, limit: int = 25) -> dict:
-    """Stage review drafts after a complete scan. Limit is the total pending queue."""
+    """Stage ranked review drafts after a complete scan; retain deferred human work."""
+    from registry_priority import MarketPriorities
     from registry_sync import AGGREGATOR_NAMESPACES, draft_catalog, namespace, signals
 
     if limit < 1:
@@ -128,6 +129,9 @@ def discover(records: list[dict], *, limit: int = 25) -> dict:
     ):
         raise ValueError("discovery/ignored.json must map Registry names to rejection reasons")
     known = catalog_identities()
+    published_names = {name for item in known for name in item["names"]}
+    market = MarketPriorities(known)
+    unlisted = market.unlisted_endpoints(records, known)
     pending = {}
     # Read the complete queue before mutating it. A broken draft must not disappear silently.
     for folder in sorted(queue.glob("*")):
@@ -168,12 +172,27 @@ def discover(records: list[dict], *, limit: int = 25) -> dict:
             eligible[name] = record
             unavailable.append(name)
 
-    result = {"proposed": [], "duplicates": [], "deferred": 0, "unavailable": sorted(unavailable)}
+    priorities = {name: market.describe(record) for name, record in eligible.items()}
+    result = {
+        "proposed": [],
+        "duplicates": [],
+        "deferred": 0,
+        "unavailable": sorted(unavailable),
+        "priorities": {},
+        "scope_count": len(market.services),
+        "unlisted_vendor_endpoints": unlisted,
+    }
     selected = []
-    # Preserve existing proposals first; prioritize domain-aligned newcomers over unverified publishers.
+    retained = []
+    retired = set()
+    held_duplicates = {}
+    occupied = {folder.name: name for name, (folder, _) in pending.items()}
+    # Market relevance beats a previously queued general service or alphabetical order.
     ordered = sorted(
         eligible,
         key=lambda name: (
+            name in unavailable,
+            *market.sort_key(priorities[name]),
             name not in pending,
             not signals(eligible[name])["endpoints_on_namespace_domain"],
             name,
@@ -182,24 +201,39 @@ def discover(records: list[dict], *, limit: int = 25) -> dict:
     for name in ordered:
         record = eligible[name]
         item_id = pending[name][0].name if name in pending else proposed_id(record["server"])
+        if item_id in occupied and occupied[item_id] != name:
+            # Candidate folders are staging identities, not publication decisions.
+            # A previous wrapper must not reserve a vendor's name indefinitely.
+            item_id += "-" + hashlib.sha256(name.encode()).hexdigest()[:12]
+            if item_id in occupied and occupied[item_id] != name:
+                raise ValueError(f"candidate directory collision: {item_id}")
         candidate = identity(item_id, record["server"])
         matches = duplicate_matches(candidate, known)
         if matches:
-            result["duplicates"].append({"name": name, "matches": matches})
+            result["duplicates"].append({"name": name, "matches": matches, "priority": priorities[name]})
+            if name in pending and name not in published_names:
+                retained.append((item_id, record))
+                held_duplicates[name] = matches
+            else:
+                retired.add(name)
             continue
-        if len(selected) >= limit and name not in pending:
+        if len(selected) >= limit:
             result["deferred"] += 1
+            if name in pending:
+                retained.append((item_id, record))
             continue
         known.append(candidate)
+        occupied[item_id] = name
         selected.append((item_id, record))
         result["proposed"].append(name)
+        result["priorities"][name] = priorities[name]
 
     queue.mkdir(parents=True, exist_ok=True)
     selected_names = set(result["proposed"])
     for name, (folder, _) in pending.items():
-        if name not in selected_names:
+        if name in ignored or name in retired or name not in eligible:
             shutil.rmtree(folder)
-    for item_id, record in selected:
+    for item_id, record in selected + retained:
         name = record["server"]["name"]
         folder = pending[name][0] if name in pending else queue / item_id
         folder.mkdir(parents=True, exist_ok=True)
@@ -214,6 +248,9 @@ def discover(records: list[dict], *, limit: int = 25) -> dict:
                 "catalog_id": item_id,
                 "signals": signals(record),
                 "ownership": "unverified",
+                "priority": priorities[name],
+                "queue_state": "proposed" if name in selected_names else "deferred",
+                "duplicate_matches": held_duplicates.get(name, []),
                 "registry_presence": "missing_from_snapshot" if name in unavailable else "present",
                 "required_review": [
                     "Vendor-owned evidence page naming the exact endpoint",
@@ -234,7 +271,18 @@ def report(result: dict) -> list[str]:
         "New MCP candidates (ownership and authentication require review):",
         "",
     ]
-    lines += [f"- `{name}`" for name in result["proposed"]] or ["- No pending candidates."]
+    lines += [
+        f"Market scope: {result['scope_count']} services; vendor evidence first, then coverage gaps.",
+        "",
+    ]
+    for name in result["proposed"]:
+        priority = result["priorities"][name]
+        services = ", ".join(s["name"] for s in priority["target_services"]) or "outside market scope"
+        lines.append(f"- `{name}` — {services}; {priority['tier']}; {priority['coverage']}")
+        lines += [f"  - Vendor evidence: {url}" for url in priority["evidence_urls"]]
+        lines += [f"  - Access review: {note}" for note in priority["access_notes"]]
+    if not result["proposed"]:
+        lines.append("- No pending candidates.")
     lines += [
         "",
         f"Deferred by queue limit: {result['deferred']}.",
@@ -244,6 +292,17 @@ def report(result: dict) -> list[str]:
     if result["unavailable"]:
         lines += ["", "Pending sources missing from this Registry snapshot (drafts retained):"]
         lines += [f"- `{name}`" for name in result["unavailable"]]
+    if result["unlisted_vendor_endpoints"]:
+        lines += [
+            "",
+            "Reviewed vendor endpoints absent from Registry (manual onboarding, not invented records):",
+        ]
+        lines += [
+            f"- `{e['service_id']}`: {e['url']} — {e['evidence_url']}"
+            for e in result["unlisted_vendor_endpoints"]
+        ]
+    if result["duplicates"]:
+        lines += ["", "Possible duplicate records (not proposed):"]
     for duplicate in result["duplicates"][:30]:
         details = "; ".join(m["id"] + " (" + "; ".join(m["reasons"]) + ")" for m in duplicate["matches"])
         lines.append(f"- `{duplicate['name']}` → {details}")
