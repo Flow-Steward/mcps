@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-29.a4826166",
-  "published_at": "2026-10-29T06:31:37Z",
+  "catalog_revision": "2026-10-29.e0bbd40d",
+  "published_at": "2026-10-29T06:39:10Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -595,7 +595,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.0.23"
+            "version": "1.0.25"
           }
         ],
         "remotes": [
@@ -608,7 +608,7 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "1.0.23",
+        "version": "1.0.25",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
@@ -616,7 +616,7 @@
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "1.0.23"
+              "version": "1.0.25"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -787,17 +787,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:31:37Z"
+            "updated_at": "2026-10-29T06:39:10Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-22T00:29:52.438356Z",
+          "publishedAt": "2026-10-24T00:29:12.61863Z",
           "status": "active",
-          "statusChangedAt": "2026-10-22T00:29:52.438356Z",
-          "updatedAt": "2026-10-22T00:29:52.438356Z"
+          "statusChangedAt": "2026-10-24T00:29:12.61863Z",
+          "updatedAt": "2026-10-24T00:29:12.61863Z"
         }
       }
     },
@@ -7022,17 +7022,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fulcra-context",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:21:00Z"
+            "updated_at": "2026-10-29T06:39:10Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-16T22:11:41.881158Z",
+          "publishedAt": "2026-10-23T17:30:07.966851Z",
           "status": "active",
-          "statusChangedAt": "2026-10-16T22:11:41.881158Z",
-          "updatedAt": "2026-10-16T22:11:41.881158Z"
+          "statusChangedAt": "2026-10-23T17:30:07.966851Z",
+          "updatedAt": "2026-10-23T17:30:07.966851Z"
         }
       }
     },
@@ -11406,25 +11406,45 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "description": "MCP server for Linear project management and issue tracking",
+        "description": "Find and manage issues, projects, and documents in your Linear workspace.",
+        "icons": [
+          {
+            "mimeType": "image/svg+xml",
+            "sizes": [
+              "any"
+            ],
+            "src": "https://static.linear.app/integrations/mcp/icon.svg"
+          },
+          {
+            "mimeType": "image/png",
+            "sizes": [
+              "256x256"
+            ],
+            "src": "https://static.linear.app/integrations/mcp/icon-256.png"
+          }
+        ],
         "name": "app.linear/linear",
         "remotes": [
           {
             "type": "streamable-http",
             "url": "https://mcp.linear.app/mcp"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.linear.app/mcp/readonly"
           }
         ],
         "title": "Linear",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "websiteUrl": "https://linear.app",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "linear",
-            "revision": 3,
+            "revision": 4,
             "status": "active",
             "source": {
               "registry": "app.linear/linear",
-              "version": "1.0.1"
+              "version": "1.0.2"
             },
             "title": "Linear",
             "summary": "Find, create, and update Linear issues, projects, and comments, and read team and cycle information.",
@@ -11472,17 +11492,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/linear",
             "added_at": "2026-10-10T12:49:13Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:39:10Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-08-04T09:59:17.029443Z",
+          "publishedAt": "2026-10-22T16:47:17.1938Z",
           "status": "active",
-          "statusChangedAt": "2026-08-04T09:59:17.029443Z",
-          "updatedAt": "2026-08-04T09:59:17.029443Z"
+          "statusChangedAt": "2026-10-22T16:47:17.1938Z",
+          "updatedAt": "2026-10-22T16:47:17.1938Z"
         }
       }
     },
