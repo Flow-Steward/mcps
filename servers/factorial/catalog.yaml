@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Factorial
+description: Clock in and out, manage tasks, request time off and look up colleagues
+  in Factorial.
+category: hr
+website_url: https://factorialhr.com
+help_url: https://apidoc.factorialhr.com/docs/mcp-server
+preview_note: Acts with the signed-in user's permissions. Employee-facing tools do
+  not represent complete payroll or HR API coverage.
+official:
+  vendor: Factorial
+  evidence_url: https://apidoc.factorialhr.com/docs/mcp-server
+remotes:
+- id: default
+  label: Factorial
+  url: https://mcp.factorialhr.com
+  allowed_hosts:
+  - mcp.factorialhr.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []

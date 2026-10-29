@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/sendcloud",
+  "title": "Sendcloud",
+  "description": "Work with Sendcloud orders, shipping labels and other supported shipping tools.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.sendcloud.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.sendcloud.com/mcp"
+    }
+  ]
+}
