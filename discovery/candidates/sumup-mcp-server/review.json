@@ -1,0 +1,54 @@
+{
+  "catalog_id": "sumup-mcp-server",
+  "duplicate_matches": [],
+  "ownership": "unverified",
+  "priority": {
+    "access_notes": [
+      "Hosted OAuth application onboarding requires verification; a local API key is not a hosted MCP bearer token."
+    ],
+    "ambiguous_services": [],
+    "coverage": "uncovered",
+    "evidence_urls": [
+      "https://developer.sumup.com/tools/llms/mcp-server/"
+    ],
+    "target_services": [
+      {
+        "id": "sumup",
+        "name": "SumUp",
+        "priority": "P2",
+        "regions": [
+          "Europe",
+          "UK"
+        ],
+        "research_mcp_status": "official_setup_unresolved",
+        "research_notes": "Official https://mcp.sumup.com/mcp. Hosted OAuth metadata has neither DCR nor client metadata. Confirm third-party OAuth application onboarding; local API-key server is a different setup. https://mcp.sumup.com/mcp; do not duplicate EU addition."
+      }
+    ],
+    "tier": "target_vendor_verified"
+  },
+  "queue_state": "proposed",
+  "registry_presence": "present",
+  "required_review": [
+    "Vendor-owned evidence page naming the exact endpoint",
+    "Category and description",
+    "Authentication and access restrictions",
+    "Square PNG icon",
+    "Duplicate matches"
+  ],
+  "signals": {
+    "aggregator": false,
+    "declared_headers": [
+      "Authorization"
+    ],
+    "endpoints_on_namespace_domain": false,
+    "has_icon": false,
+    "name": "io.github.sumup/mcp",
+    "namespace": "github account",
+    "status": "active",
+    "streamable_http_endpoints": [
+      "https://mcp.sumup.com/mcp"
+    ],
+    "version": "0.1.2",
+    "website_on_namespace_domain": false
+  }
+}

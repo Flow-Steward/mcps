@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://porkbun.com/mcp
 # Official Porkbun hosted server (input name points to an unrelated community repo). Can spend account funds on registrations; safer variants /mcp/no-purchases and /mcp/no-topups.
-revision: 2
+revision: 3
 source:
   registry: com.porkbun/mcp
 title: Porkbun
