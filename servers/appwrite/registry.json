@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-10-13T11:33:29.063877Z",
+      "publishedAt": "2026-10-14T00:29:30.251568Z",
       "status": "active",
-      "statusChangedAt": "2026-10-13T11:33:29.063877Z",
-      "updatedAt": "2026-10-13T11:33:29.063877Z"
+      "statusChangedAt": "2026-10-14T00:29:30.251568Z",
+      "updatedAt": "2026-10-14T00:29:30.251568Z"
     }
   },
   "server": {
@@ -19,7 +19,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "1.0.14"
+        "version": "1.0.15"
       }
     ],
     "remotes": [
@@ -32,6 +32,6 @@
       "source": "github",
       "url": "https://github.com/appwrite/mcp"
     },
-    "version": "1.0.14"
+    "version": "1.0.15"
   }
 }
