@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+from collections import Counter
 import json
 import re
 import shutil
@@ -114,7 +115,39 @@ def _write_json(path: Path, value: object) -> None:
 
 
 def discover(records: list[dict], *, limit: int = 25) -> dict:
-    """Stage ranked review drafts after a complete scan; retain deferred human work."""
+    """Public sync boundary: only reviewed vendor MCPs for services needing a route."""
+    from registry_priority import MarketPriorities
+
+    market = MarketPriorities(catalog_identities())
+    rejected = {}
+    current_names = {record["server"]["name"] for record in records}
+    for record in records:
+        if reason := market.rejection_reason(record):
+            rejected[record["server"]["name"]] = reason
+    # Previously proposed wrappers must not be reinserted as missing-source drafts.
+    queue = bi.ROOT / "discovery/candidates"
+    for path in queue.glob("*/registry.json"):
+        record = json.loads(path.read_text(encoding="utf-8"))
+        if record["server"]["name"] in current_names:
+            continue
+        if reason := market.rejection_reason(record):
+            rejected[record["server"]["name"]] = reason
+    result = stage_candidates(records, limit=limit, rejected=rejected)
+    result["selection_policy"] = "reviewed_vendor_only"
+    result["excluded_counts"] = dict(sorted(Counter(rejected.values()).items()))
+    _write_json(
+        bi.ROOT / "discovery/filter-summary.json",
+        {
+            "policy": result["selection_policy"],
+            "excluded_counts": result["excluded_counts"],
+            "proposed_count": len(result["proposed"]),
+        },
+    )
+    return result
+
+
+def stage_candidates(records: list[dict], *, limit: int = 25, rejected: dict | None = None) -> dict:
+    """Low-level deterministic staging; production callers must use discover's eligibility gate."""
     from registry_priority import MarketPriorities
     from registry_sync import AGGREGATOR_NAMESPACES, draft_catalog, namespace, signals
 
@@ -128,6 +161,7 @@ def discover(records: list[dict], *, limit: int = 25) -> dict:
         not isinstance(v, str) or not v.strip() for v in ignored.values()
     ):
         raise ValueError("discovery/ignored.json must map Registry names to rejection reasons")
+    ignored = {**ignored, **(rejected or {})}
     known = catalog_identities()
     published_names = {name for item in known for name in item["names"]}
     market = MarketPriorities(known)
@@ -275,6 +309,13 @@ def report(result: dict) -> list[str]:
         f"Market scope: {result['scope_count']} services; vendor evidence first, then coverage gaps.",
         "",
     ]
+    if result.get("selection_policy") == "reviewed_vendor_only":
+        lines += [
+            "Only reviewed vendor endpoints are proposed. Existing catalog/extension services are excluded.",
+            "",
+        ]
+        lines += [f"- Excluded {reason}: {count}" for reason, count in result["excluded_counts"].items()]
+        lines.append("")
     for name in result["proposed"]:
         priority = result["priorities"][name]
         services = ", ".join(s["name"] for s in priority["target_services"]) or "outside market scope"
@@ -298,7 +339,7 @@ def report(result: dict) -> list[str]:
             "Reviewed vendor endpoints absent from Registry (manual onboarding, not invented records):",
         ]
         lines += [
-            f"- `{e['service_id']}`: {e['url']} — {e['evidence_url']}"
+            f"- `{e.get('service_id') or e['vendor']}`: {e['url']} — {e['evidence_url']}"
             for e in result["unlisted_vendor_endpoints"]
         ]
     if result["duplicates"]:

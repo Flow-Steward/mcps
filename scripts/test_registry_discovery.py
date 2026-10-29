@@ -54,7 +54,7 @@ def test_listing_does_not_return_a_partial_snapshot(monkeypatch):
 
 
 def test_discovery_stages_drafts_outside_catalog_and_is_idempotent(root):  # noqa: F811
-    from registry_discovery import discover
+    from registry_discovery import stage_candidates as discover
 
     result = discover([vendor()], limit=25)
     assert result["proposed"] == ["com.newco/mcp"]
@@ -78,7 +78,7 @@ def test_discovery_stages_drafts_outside_catalog_and_is_idempotent(root):  # noq
     ],
 )
 def test_discovery_blocks_existing_service_duplicates(root, record):  # noqa: F811
-    from registry_discovery import discover
+    from registry_discovery import stage_candidates as discover
 
     write_entry(root)
     result = discover([record], limit=25)
@@ -87,7 +87,7 @@ def test_discovery_blocks_existing_service_duplicates(root, record):  # noqa: F8
 
 
 def test_manual_records_and_curated_endpoints_are_also_compared(root):  # noqa: F811
-    from registry_discovery import discover
+    from registry_discovery import stage_candidates as discover
 
     body = catalog(remotes=[{"url": "https://reviewed.example.com/mcp"}])
     body.pop("source")
@@ -97,7 +97,7 @@ def test_manual_records_and_curated_endpoints_are_also_compared(root):  # noqa: 
 
 
 def test_templates_and_distinct_case_sensitive_paths_are_not_duplicates(root):  # noqa: F811
-    from registry_discovery import discover
+    from registry_discovery import stage_candidates as discover
 
     write_entry(
         root,
@@ -114,7 +114,7 @@ def test_templates_and_distinct_case_sensitive_paths_are_not_duplicates(root):  
 
 
 def test_queue_filters_inactive_aggregators_and_local_servers_and_caps_total(root):  # noqa: F811
-    from registry_discovery import discover
+    from registry_discovery import stage_candidates as discover
 
     inactive = vendor("com.inactive/mcp")
     inactive["_meta"][bi.OFFICIAL_META_KEY]["status"] = "deprecated"
@@ -134,7 +134,7 @@ def test_queue_filters_inactive_aggregators_and_local_servers_and_caps_total(roo
 
 
 def test_incoming_duplicates_and_rejections_are_not_reproposed(root):  # noqa: F811
-    from registry_discovery import discover
+    from registry_discovery import stage_candidates as discover
 
     (root / "discovery").mkdir()
     (root / "discovery/ignored.json").write_text(json.dumps({"com.rejected/mcp": "Not vendor operated"}))
@@ -144,7 +144,7 @@ def test_incoming_duplicates_and_rejections_are_not_reproposed(root):  # noqa: F
 
 
 def test_pending_draft_edits_survive_refresh_and_lowered_limit(root):  # noqa: F811
-    from registry_discovery import discover
+    from registry_discovery import stage_candidates as discover
 
     records = [vendor(), vendor("com.alpha/mcp", "https://alpha.com/mcp", "Alpha")]
     discover(records, limit=2)
@@ -157,7 +157,7 @@ def test_pending_draft_edits_survive_refresh_and_lowered_limit(root):  # noqa: F
 
 
 def test_promoted_or_rejected_candidates_leave_the_pending_queue(root):  # noqa: F811
-    from registry_discovery import discover
+    from registry_discovery import stage_candidates as discover
 
     discover([vendor()], limit=25)
     write_entry(root, item_id="newco", record=vendor(), body=catalog(title="NewCo"))
@@ -166,7 +166,7 @@ def test_promoted_or_rejected_candidates_leave_the_pending_queue(root):  # noqa:
 
 
 def test_missing_registry_record_does_not_erase_pending_review(root):  # noqa: F811
-    from registry_discovery import discover
+    from registry_discovery import stage_candidates as discover
 
     discover([vendor()], limit=25)
     result = discover([], limit=25)
@@ -184,7 +184,7 @@ def test_query_strings_are_not_erased_during_endpoint_comparison():
 
 
 def test_github_publisher_does_not_receive_an_official_badge(root):  # noqa: F811
-    from registry_discovery import discover
+    from registry_discovery import stage_candidates as discover
 
     record = vendor("io.github.vendor/tool", "https://vendor.com/mcp", "Vendor")
     discover([record], limit=25)

@@ -121,26 +121,30 @@ describing the change. A reviewer decides; nothing merges by itself:
   The check then refuses the entry until it is removed;
 - a server that disappeared from the Registry is reported, not removed.
 
-It also proposes up to **25 active new remote candidates**. Ranking uses all
-182 product scopes in `coverage/services.json` and reviewed aliases and endpoint
-evidence in `coverage/discovery-policy.json`, in this order:
+It proposes **up to 25 reviewed vendor MCPs**, never a minimum of 25. Every
+Streamable HTTP URL in a proposal must have exact endpoint evidence on the
+vendor's own documentation page, maintained in `coverage/discovery-policy.json`.
+A matching title, verified Registry namespace or same-domain URL is insufficient.
+Known third-party publishers are excluded even if their record repeats a vendor URL.
 
-1. A market-list service whose remote URLs match reviewed vendor endpoint evidence.
-2. A market-list service with matching publisher namespace/domain signals; ownership is still unverified.
-3. Other exact market-list matches, explicitly marked unverified (including third-party wrappers).
-4. Services outside the market list.
+Services already represented by a current direct catalog entry or a reported
+first-party extension are excluded from new proposals, including Shopify.
+Conditional indirect routes remain explicitly conditional. These coverage flags
+are advisory product-level routes, not a claim of complete API coverage.
 
-Within each group, an uncovered service comes before a reported indirect route,
-then an existing direct catalog entry or reported extension. Existing entries are
-also excluded by duplicate checks. Research flags are advisory: current catalog
-IDs and titles determine direct presence, while indirect/extension routes retain
-their reported and conditional status. No route establishes complete API coverage.
-The research's P1/P2/P3 priorities break ties before the general domain signal and
-alphabetical order. Display names, IDs and reviewed aliases match exactly after
-normalization, without substring matching; ambiguous product editions get no boost.
-Namespace fallback is limited to untitled records and a conservative root-domain
-label; a brand appearing in a nested subdomain is not vendor evidence. Reviewed
-identity mismatches can be excluded per service with a reason in the policy.
+Among eligible vendor MCPs, the 182 product scopes in `coverage/services.json`
+come before services outside that market list. Uncovered services rank before
+reported indirect routes, with the research P1/P2/P3 priorities as tie breakers.
+Display names, IDs and reviewed aliases match exactly after normalization;
+ambiguous editions and reviewed identity mismatches get no market boost.
+Reviewed vendor MCPs outside the 182-service list can be recorded separately in
+`reviewed_vendor_endpoints`, with a vendor name, URL and vendor-owned evidence URL.
+
+Rejected records are counted by reason in `discovery/filter-summary.json`; they
+are not drafted or used to fill empty queue slots. The catalog owner's explicit
+rejections are retained in `discovery/ignored.json`. Pending drafts that fail the
+vendor-only policy are removed; missing-source drafts are retained only while
+they still meet the vendor-evidence and coverage requirements.
 
 Known aggregators,
 inactive records and local-only servers are excluded. This is discovery from the
@@ -158,16 +162,16 @@ only a priority signal: no proposal receives an Official badge or verified
 authentication automatically. Discovery does not contact candidate endpoints.
 Each review file and the PR report state the matched product, region, coverage,
 ranking tier and vendor evidence. A same-name third-party wrapper cannot inherit
-reviewed vendor status; every remote must match reviewed endpoint evidence.
+reviewed vendor status; all remotes must belong to one reviewed vendor.
 Reviewed vendor URLs absent from the Registry appear in the report as manual
 onboarding leads; sync does not invent Registry records for them.
 
 New market candidates can displace general proposals from the active 25. Existing
 drafts outside that active set are retained with `queue_state: deferred`, preserving
 human edits. Missing-source drafts are retained but ranked after available sources.
-A queued wrapper cannot reserve a vendor's candidate folder: distinct Registry
-identities get distinct staging directories, and displaced duplicate drafts stay
-deferred with their duplicate reasons until reviewed or explicitly rejected.
+Distinct eligible Registry identities get distinct staging directories. Deferred
+retention applies only after the vendor-only eligibility gate; it cannot retain
+rejected wrappers as proposals.
 
 Before proposing or manually adding a server, sync compares catalog IDs, Registry
 names, normalized product titles and literal remote endpoints. It checks both
