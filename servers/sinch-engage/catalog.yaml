@@ -1,27 +1,38 @@
-# Reviewed 2026-10-10: https://support.app.sinch.com/hc/en-us/articles/16560195995663-Connect-to-the-Sinch-Engage-MCP-AU
-# Regional: AU https://au.app.api.sinch.com/mcp (documented), EU https://eu.app.api.sinch.com/mcp (EU guide; probed 401). Region-specific endpoint shown in API Settings. Admin + verified account needed. Old npx package messagemedia/sinch-engage-mcp-server deprecated (EOL 2026-11-30). Docs walk through
-revision: 1
+# Reviewed 2026-10-29: EU and AU regional vendor setup guides.
+revision: 2
 title: Sinch Engage
-description: Send SMS, manage contacts and contact groups, and run delivery and messaging reports in Sinch Engage
-  (MessageMedia).
+description: Send SMS, manage contacts and contact groups, and run delivery and messaging
+  reports in Sinch Engage (MessageMedia).
 category: messaging
 website_url: https://sinch.com/engage/
-help_url: https://support.app.sinch.com/hc/en-us/articles/16560195995663-Connect-to-the-Sinch-Engage-MCP-AU
+help_url: https://support.app.sinch.com/hc/en-us/articles/16560211294223-Connect-to-the-Sinch-Engage-MCP-EU
 keywords:
 - Sinch
 - MessageMedia
 - SMS
 official:
   vendor: Sinch
-  evidence_url: https://support.app.sinch.com/hc/en-us/articles/16560195995663-Connect-to-the-Sinch-Engage-MCP-AU
+  evidence_url: https://support.app.sinch.com/hc/en-us/articles/16560211294223-Connect-to-the-Sinch-Engage-MCP-EU
 remotes:
 - id: default
-  label: Sinch Engage
+  label: Sinch Engage — Australia
   url: https://au.app.api.sinch.com/mcp
   allowed_hosts:
   - au.app.api.sinch.com
   field_labels:
-    Authorization: Sinch API key and secret
+    Authorization: Basic authentication (base64 API key:secret)
   auth:
     mode: headers
     setup_url: https://hub.messagemedia.com/api-settings
+- id: eu
+  label: Sinch Engage — Europe
+  url: https://eu.app.api.sinch.com/mcp
+  allowed_hosts:
+  - eu.app.api.sinch.com
+  field_labels:
+    Authorization: Basic authentication (base64 API key:secret)
+  auth:
+    mode: headers
+    setup_url: https://hub.messagemedia.com/api-settings
+preview_note: Choose the account region. Requires an administrator and a verified
+  account. Enter Basic followed by the base64 encoding of API_KEY:API_SECRET.

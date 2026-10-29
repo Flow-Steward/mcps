@@ -9,6 +9,14 @@
     {
       "type": "streamable-http",
       "url": "https://api.typeform.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api.eu.typeform.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api.typeform.eu/mcp"
     }
   ]
 }
