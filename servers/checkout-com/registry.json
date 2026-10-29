@@ -1,0 +1,29 @@
+{
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "io.github.checkout/mcp",
+    "description": "Search Checkout.com docs and API reference, plus manage payments, refunds, and payment links.",
+    "title": "Checkout.com",
+    "repository": {
+      "url": "https://github.com/checkout/checkout-mcp",
+      "source": "github"
+    },
+    "version": "1.0.0",
+    "websiteUrl": "https://www.checkout.com/docs/developer-resources/checkout-com-mcp-server",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.checkout.com"
+      }
+    ]
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusChangedAt": "2026-08-14T12:57:45.361601Z",
+      "publishedAt": "2026-08-14T12:57:45.361601Z",
+      "updatedAt": "2026-08-14T12:57:45.361601Z",
+      "isLatest": true
+    }
+  }
+}

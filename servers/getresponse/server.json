@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/getresponse",
+  "title": "GetResponse",
+  "description": "Access GetResponse marketing tools and resources through the official hosted MCP server.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.getresponse.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.getresponse.com"
+    }
+  ]
+}

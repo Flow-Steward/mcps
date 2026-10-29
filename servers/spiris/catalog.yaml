@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Visma Spiris
+description: Use supported Spiris bookkeeping and invoicing tools, including invoices
+  and payment registration.
+category: finance
+website_url: https://www.spiris.se
+help_url: https://developer.vismaonline.com/docs/spiris-mcp-server
+preview_note: Beta with a limited tool set. An administrator must accept the terms
+  and activate MCP – Beta for each user. One company per connection.
+official:
+  vendor: Visma Spiris
+  evidence_url: https://developer.vismaonline.com/docs/spiris-mcp-server
+remotes:
+- id: default
+  label: Visma Spiris
+  url: https://mcp.spiris.se/mcp
+  allowed_hosts:
+  - mcp.spiris.se
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []

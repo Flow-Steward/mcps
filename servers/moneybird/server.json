@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/moneybird",
+  "title": "Moneybird",
+  "description": "Read Moneybird accounting data or create and update invoices, contacts and other supported records.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.moneybird.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://moneybird.com/mcp/v1/read_only"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://moneybird.com/mcp/v1/read_write"
+    }
+  ]
+}
