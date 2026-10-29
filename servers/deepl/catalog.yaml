@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: DeepL
+description: Use DeepL translation, writing, document and glossary tools through its
+  hosted AI connector.
+category: ai
+website_url: https://www.deepl.com
+help_url: https://support.deepl.com/hc/en-us/articles/28904115065884-Connect-DeepL-to-ChatGPT
+preview_note: Eligible DeepL API customers must contact DeepL to enable AI connectors
+  before connecting.
+official:
+  vendor: DeepL
+  evidence_url: https://support.deepl.com/hc/en-us/articles/28904115065884-Connect-DeepL-to-ChatGPT
+remotes:
+- id: default
+  label: DeepL
+  url: https://mcp.deepl.com/v1/mcp
+  allowed_hosts:
+  - mcp.deepl.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []

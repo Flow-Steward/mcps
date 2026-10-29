@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Sendcloud
+description: Work with Sendcloud orders, shipping labels and other supported shipping
+  tools.
+category: operations
+website_url: https://www.sendcloud.com
+help_url: https://support.sendcloud.com/hc/en-us/articles/51464033398417-Connect-Sendcloud-to-Claude-with-MCP
+preview_note: Uses OAuth client metadata. Available carriers, services and tools depend
+  on your Sendcloud account and shipping contracts.
+official:
+  vendor: Sendcloud
+  evidence_url: https://support.sendcloud.com/hc/en-us/articles/51464033398417-Connect-Sendcloud-to-Claude-with-MCP
+remotes:
+- id: default
+  label: Sendcloud
+  url: https://mcp.sendcloud.com/mcp
+  allowed_hosts:
+  - mcp.sendcloud.com
+  auth:
+    mode: oauth2
+    client_registration: client_metadata
+    requested_scopes: []
