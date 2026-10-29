@@ -3,8 +3,8 @@
     "excluded_publisher": 475,
     "existing_catalog": 17,
     "existing_extension": 5,
-    "out_of_scope_transport": 18464,
-    "vendor_endpoint_not_reviewed": 33292
+    "out_of_scope_transport": 18484,
+    "vendor_endpoint_not_reviewed": 33382
   },
   "policy": "reviewed_vendor_only",
   "proposed_count": 1
