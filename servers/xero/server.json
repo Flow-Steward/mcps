@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/xero",
+  "title": "Xero",
+  "description": "Read Xero invoices and contacts through its hosted MCP server using a registered OAuth application.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.xero.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.xero.com/mcp/v1"
+    }
+  ]
+}
