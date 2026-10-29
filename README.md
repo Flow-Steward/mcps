@@ -110,8 +110,9 @@ namespace instead of `registry.json`.
 
 ## Registry changes
 
-The **Registry sync** workflow reads the Registry once a day for every listed
-server. When a record changed — a new version, `deprecated`, `deleted` — it
+The **Registry sync** workflow reads every page of the Registry's latest-version
+listing once a day and also refreshes every listed server. When a record changed
+— a new version, `deprecated`, `deleted` — it
 stores the new record, raises the entry's revision and opens a pull request
 describing the change. A reviewer decides; nothing merges by itself:
 
@@ -120,10 +121,62 @@ describing the change. A reviewer decides; nothing merges by itself:
   The check then refuses the entry until it is removed;
 - a server that disappeared from the Registry is reported, not removed.
 
+It also proposes up to **25 pending new remote servers**, prioritizing endpoints
+on their publisher's verified namespace domain. GitHub and cross-domain publishers
+are included for ownership review when queue space remains. Known aggregators,
+inactive records and local-only servers are excluded. This is discovery from the
+MCP Registry, not a crawl of vendor websites: official MCPs absent from that
+Registry still need manual research.
+
+```bash
+python scripts/registry_sync.py sync --discover --candidate-limit 25 --report report.md
+```
+
+New proposals live in `discovery/candidates/<proposed-id>/`: the untouched
+`registry.json`, a draft `catalog.yaml`, and `review.json` with ownership signals
+and required checks. They are **excluded from index.json**. Domain alignment is
+only a priority signal: no proposal receives an Official badge or verified
+authentication automatically. Discovery does not contact candidate endpoints.
+
+Before proposing or manually adding a server, sync compares catalog IDs, Registry
+names, normalized product titles and literal remote endpoints. It checks both
+Registry and manual entries, including their reviewed endpoints. It also checks
+against the pending batch. Host case, HTTPS port 443 and trailing slashes are
+normalized; URL path case and queries are preserved. URL templates do not prove
+that two customer installations are the same service. Possible matches are
+held out of the queue and recorded with reasons in `discovery/duplicates.json`;
+a title collision requires a reviewer to decide whether the products differ.
+
+To accept a proposal, verify the vendor-owned page naming the exact MCP URL, set
+the category, description and authentication, obtain a square PNG icon, then move
+the completed folder into `servers/<id>/` (omit `review.json`). Run the catalog
+tests and validator before merging. An alternative is the existing `add` command
+to draft the entry and fetch its icon, followed by the same review. A subsequent
+discovery run removes proposals already represented in the catalog. To reject a
+proposal permanently, add its exact Registry name and a nonempty reason to
+`discovery/ignored.json`, for example:
+
+```json
+{"io.github.someone/unofficial-wrapper": "Third-party wrapper, not operated by the vendor"}
+```
+
+The workflow resumes one open draft PR on a `registry-sync/review-*` branch, preserving pending
+draft edits and rejections, and merges current main before scanning. A merge
+conflict or incomplete Registry scan stops the run. After the PR is closed or
+merged it uses a new branch, so a retained old branch cannot block future runs.
+It detects new untracked
+proposal files as well as updates; it never force-pushes or merges the PR.
+Accepting or rejecting pending proposals frees queue slots on the next run.
+If a pending source disappears from a complete Registry listing, its draft is
+retained and flagged for review rather than silently erased.
+
 Flow Steward never changes or deletes a connection a user already made because
 the catalog changed. A pull request opened by the workflow's built-in token does
 not start other workflows, so run **Validate submission** on it by hand (or close
-and reopen it) before merging.
+and reopen it) before merging. The sync workflow runs script tests before pushing
+and includes entry-validator results in the PR. Expected validation failures
+(such as a deleted Registry record) still reach review; they must be resolved
+before merging and publishing.
 
 ## What the check refuses
 

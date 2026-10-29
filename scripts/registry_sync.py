@@ -17,7 +17,9 @@ checks in a pull request:
     python scripts/registry_sync.py sync [--report report.md]
         For every listed server: fetch its latest Registry record, store it, and
         raise the entry's revision when it changed (a new version, deprecated,
-        deleted). Run on a schedule; the result is a pull request, never a merge.
+        deleted). With --discover, scan every latest-version page and stage new
+        remote candidates outside the published catalog. The scheduled result
+        is a review pull request, never an automatic merge.
 
 The Registry asks catalogs to read it "on a regular but infrequent basis" and to
 keep their own copy; it does not promise uptime or durable data.
@@ -102,6 +104,27 @@ def registry_search(term: str, *, limit: int = 100) -> list[dict[str, Any]]:
     return list(fetch_json(f"{REGISTRY}/v0.1/servers?{query}").get("servers") or [])
 
 
+def registry_all() -> list[dict[str, Any]]:
+    """Fetch a complete latest-version snapshot, preserving opaque pagination cursors."""
+    records = []
+    seen = set()
+    cursor = ""
+    while True:
+        query = {"version": "latest", "limit": 100}
+        if cursor:
+            query["cursor"] = cursor
+        page = fetch_json(f"{REGISTRY}/v0.1/servers?{urllib.parse.urlencode(query)}")
+        if not isinstance(page, dict) or not isinstance(page.get("servers"), list):
+            raise ValueError("invalid Registry page: servers must be a list")
+        records.extend(page["servers"])
+        cursor = (page.get("metadata") or {}).get("nextCursor")
+        if not cursor:
+            return records
+        if not isinstance(cursor, str) or cursor in seen:
+            raise ValueError("invalid or repeated Registry pagination cursor")
+        seen.add(cursor)
+
+
 # ---------------------------------------------------------------------------
 # signals for a reviewer
 # ---------------------------------------------------------------------------
@@ -137,7 +160,7 @@ def signals(record: dict[str, Any]) -> dict[str, Any]:
         "status": official.get("status"),
         "namespace": "github account" if domain is None else f"domain {domain}",
         "aggregator": namespace(name) in AGGREGATOR_NAMESPACES,
-        "endpoints_on_namespace_domain": bool(hosts) and all(_under(h, domain) for h in hosts if "{" not in h),
+        "endpoints_on_namespace_domain": bool(hosts) and all(_under(h, domain) for h in hosts),
         "website_on_namespace_domain": _under(website_host, domain),
         "streamable_http_endpoints": [r.get("url") for r in remotes],
         "declared_headers": sorted({h.get("name") for r in remotes for h in r.get("headers") or []}),
@@ -427,8 +450,20 @@ def cmd_add(args: argparse.Namespace) -> int:
         return 1
     status = ((record.get("_meta") or {}).get(build_index.OFFICIAL_META_KEY) or {}).get("status")
     if status != "active":
-        print(f"{args.name} is {status} in the Registry; only active servers are added", file=sys.stderr)
+        print(
+            f"{args.name} is {status} in the Registry; only active servers are added",
+            file=sys.stderr,
+        )
         return 1
+    from registry_discovery import catalog_identities, duplicate_matches, identity
+
+    matches = duplicate_matches(identity(item_id, record["server"]), catalog_identities())
+    if matches:
+        print(
+            "Possible duplicate: " + json.dumps(matches, ensure_ascii=False),
+            file=sys.stderr,
+        )
+        return 2
     hints = {
         r["url"]: probe_auth(r["url"])
         for r in record["server"].get("remotes") or []
@@ -488,7 +523,16 @@ def sync_entry(folder: Path) -> str | None:
 def cmd_sync(args: argparse.Namespace) -> int:
     lines = []
     failures = []
-    for folder in sorted(p for p in _servers_dir().iterdir() if p.is_dir()) if _servers_dir().is_dir() else []:
+    discovery_records = None
+    if args.discover:
+        try:
+            discovery_records = registry_all()
+        except Exception as exc:  # noqa: BLE001 - incomplete discovery must not publish a partial queue
+            print(f"Registry discovery failed: {exc}", file=sys.stderr)
+            return 1
+    for folder in (
+        sorted(p for p in _servers_dir().iterdir() if p.is_dir()) if _servers_dir().is_dir() else []
+    ):
         try:
             line = sync_entry(folder)
         except Exception as exc:  # noqa: BLE001 - one unreachable record must not stop the rest
@@ -501,11 +545,20 @@ def cmd_sync(args: argparse.Namespace) -> int:
         report += ["Registry changes for listed servers:", "", *lines]
     if failures:
         report += ["", "Could not refresh:", "", *failures]
+    if discovery_records is not None:
+        from registry_discovery import discover
+        from registry_discovery import report as discovery_report
+
+        try:
+            report += discovery_report(discover(discovery_records, limit=args.candidate_limit))
+        except Exception as exc:  # noqa: BLE001 - fail the workflow rather than publishing partial changes
+            failures.append(str(exc))
+            report += ["", f"Discovery failed: {exc}"]
     text = "\n".join(report) + ("\n" if report else "")
     if args.report:
         Path(args.report).write_text(text, encoding="utf-8")
     print(text or "No Registry changes.")
-    return 0
+    return 1 if failures else 0
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -522,6 +575,17 @@ def main(argv: list[str] | None = None) -> int:
     add.set_defaults(func=cmd_add)
     sync = sub.add_parser("sync", help="refresh every listed server from the Registry")
     sync.add_argument("--report", help="write the pull request body here")
+    sync.add_argument(
+        "--discover",
+        action="store_true",
+        help="also stage new remote servers for review",
+    )
+    sync.add_argument(
+        "--candidate-limit",
+        type=int,
+        default=25,
+        help="maximum total pending discovery candidates",
+    )
     sync.set_defaults(func=cmd_sync)
     args = parser.parse_args(argv)
     return args.func(args)
