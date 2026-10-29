@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-29.ddaef824",
-  "published_at": "2026-10-29T06:40:32Z",
+  "catalog_revision": "2026-10-29.bd15f1be",
+  "published_at": "2026-10-29T06:43:35Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -5411,7 +5411,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.0.7"
+            "version": "2.0.8"
           }
         ],
         "remotes": [
@@ -5435,7 +5435,7 @@
           "source": "github",
           "url": "https://github.com/EduBase/MCP"
         },
-        "version": "2.0.7",
+        "version": "2.0.8",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "edubase",
@@ -5443,7 +5443,7 @@
             "status": "active",
             "source": {
               "registry": "io.github.EduBase/MCP",
-              "version": "2.0.7"
+              "version": "2.0.8"
             },
             "title": "EduBase",
             "summary": "Create and manage EduBase quizzes, exams, questions, users, and classes on the EduBase e-learning platform.",
@@ -5490,17 +5490,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/edubase",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:23:06Z"
+            "updated_at": "2026-10-29T06:43:35Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-18T19:07:28.845934Z",
+          "publishedAt": "2026-10-25T15:46:27.638151Z",
           "status": "active",
-          "statusChangedAt": "2026-10-18T19:07:28.845934Z",
-          "updatedAt": "2026-10-18T19:07:28.845934Z"
+          "statusChangedAt": "2026-10-25T15:46:27.638151Z",
+          "updatedAt": "2026-10-25T15:46:27.638151Z"
         }
       }
     },
@@ -6953,7 +6953,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.2.5"
+            "version": "1.18.7"
           }
         ],
         "remotes": [
@@ -6967,7 +6967,7 @@
           "url": "https://github.com/fulcradynamics/fulcra-context-mcp"
         },
         "title": "Fulcra",
-        "version": "1.2.5",
+        "version": "1.18.7",
         "websiteUrl": "https://fulcradynamics.com",
         "_meta": {
           "io.github.flow-steward/catalog": {
@@ -6976,7 +6976,7 @@
             "status": "active",
             "source": {
               "registry": "com.fulcradynamics/context",
-              "version": "1.2.5"
+              "version": "1.18.7"
             },
             "title": "Fulcra Context",
             "summary": "Read your personal health, workout, sleep, location, and calendar data collected in Fulcra Context.",
@@ -7022,7 +7022,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fulcra-context",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:39:10Z"
+            "updated_at": "2026-10-29T06:43:35Z"
           }
         }
       },
