@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-29.03df0aac",
-  "published_at": "2026-10-29T06:29:10Z",
+  "catalog_revision": "2026-10-29.a4826166",
+  "published_at": "2026-10-29T06:31:37Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -595,7 +595,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.0.22"
+            "version": "1.0.23"
           }
         ],
         "remotes": [
@@ -608,7 +608,7 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "1.0.22",
+        "version": "1.0.23",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
@@ -616,7 +616,7 @@
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "1.0.22"
+              "version": "1.0.23"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -787,17 +787,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:29:10Z"
+            "updated_at": "2026-10-29T06:31:37Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-21T00:30:51.523506Z",
+          "publishedAt": "2026-10-22T00:29:52.438356Z",
           "status": "active",
-          "statusChangedAt": "2026-10-21T00:30:51.523506Z",
-          "updatedAt": "2026-10-21T00:30:51.523506Z"
+          "statusChangedAt": "2026-10-22T00:29:52.438356Z",
+          "updatedAt": "2026-10-22T00:29:52.438356Z"
         }
       }
     },
@@ -20215,29 +20215,29 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "description": "Agentic AI quality engineering: run, debug and triage tests on real browsers and devices",
         "name": "io.github.LambdaTest/mcp",
-        "description": "Agentic testing: HyperExecute jobs, test failure triage, SmartUI visual diffs, a11y audits",
-        "title": "TestMu AI (formerly LambdaTest)",
-        "repository": {
-          "url": "https://github.com/LambdaTest/mcp-server-guide",
-          "source": "github"
-        },
-        "version": "1.0.1",
-        "websiteUrl": "https://www.testmuai.com/mcp",
         "remotes": [
           {
             "type": "streamable-http",
             "url": "https://mcp.lambdatest.com/mcp"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/LambdaTest/mcp-server-guide"
+        },
+        "title": "TestMu AI (formerly LambdaTest)",
+        "version": "1.0.7",
+        "websiteUrl": "https://www.testmuai.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "testmu-ai-lambdatest",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "io.github.LambdaTest/mcp",
-              "version": "1.0.1"
+              "version": "1.0.7"
             },
             "title": "TestMu AI (LambdaTest)",
             "summary": "Debug failed automation tests, run HyperExecute jobs, review SmartUI diffs, and run accessibility checks.",
@@ -20281,17 +20281,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/testmu-ai-lambdatest",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:31:37Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-21T11:09:58.075381Z",
           "status": "active",
-          "statusChangedAt": "2026-08-03T14:45:31.974075Z",
-          "publishedAt": "2026-08-03T14:45:31.974075Z",
-          "updatedAt": "2026-08-03T14:45:31.974075Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-21T11:09:58.075381Z",
+          "updatedAt": "2026-10-21T11:09:58.075381Z"
         }
       }
     },
