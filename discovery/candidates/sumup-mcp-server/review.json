@@ -24,7 +24,8 @@
         "research_notes": "Official https://mcp.sumup.com/mcp. Hosted OAuth metadata has neither DCR nor client metadata. Confirm third-party OAuth application onboarding; local API-key server is a different setup. https://mcp.sumup.com/mcp; do not duplicate EU addition."
       }
     ],
-    "tier": "target_vendor_verified"
+    "tier": "target_vendor_verified",
+    "vendor_verified": true
   },
   "queue_state": "proposed",
   "registry_presence": "present",
