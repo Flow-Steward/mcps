@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-29.443247f5",
-  "published_at": "2026-10-29T05:57:52Z",
+  "catalog_revision": "2026-10-29.65b8205d",
+  "published_at": "2026-10-29T06:01:47Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -595,7 +595,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.0.15"
+            "version": "1.0.16"
           }
         ],
         "remotes": [
@@ -608,7 +608,7 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "1.0.15",
+        "version": "1.0.16",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
@@ -616,7 +616,7 @@
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "1.0.15"
+              "version": "1.0.16"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -787,17 +787,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T05:57:52Z"
+            "updated_at": "2026-10-29T06:01:47Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-14T00:29:30.251568Z",
+          "publishedAt": "2026-10-15T00:29:24.570828Z",
           "status": "active",
-          "statusChangedAt": "2026-10-14T00:29:30.251568Z",
-          "updatedAt": "2026-10-14T00:29:30.251568Z"
+          "statusChangedAt": "2026-10-15T00:29:24.570828Z",
+          "updatedAt": "2026-10-15T00:29:24.570828Z"
         }
       }
     },
@@ -4925,14 +4925,8 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "com.devcycle/mcp",
         "description": "DevCycle MCP server for feature flag management",
-        "repository": {
-          "url": "https://github.com/DevCycleHQ/cli",
-          "source": "github"
-        },
-        "version": "6.6.0",
-        "websiteUrl": "https://docs.devcycle.com/cli-mcp/mcp-getting-started",
+        "name": "com.devcycle/mcp",
         "remotes": [
           {
             "type": "streamable-http",
@@ -4943,14 +4937,20 @@
             "url": "https://mcp.devcycle.com/sse"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/DevCycleHQ/cli"
+        },
+        "version": "6.6.1",
+        "websiteUrl": "https://docs.devcycle.com/cli-mcp/mcp-getting-started",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "devcycle",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "com.devcycle/mcp",
-              "version": "6.6.0"
+              "version": "6.6.1"
             },
             "title": "DevCycle",
             "summary": "Create and manage DevCycle feature flags, variations, and targeting, and review audit history.",
@@ -4991,17 +4991,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/devcycle",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:01:47Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-14T18:43:08.982611Z",
           "status": "active",
-          "statusChangedAt": "2026-10-07T19:57:42.612908Z",
-          "publishedAt": "2026-10-07T19:57:42.612908Z",
-          "updatedAt": "2026-10-07T19:57:42.612908Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-14T18:43:08.982611Z",
+          "updatedAt": "2026-10-14T18:43:08.982611Z"
         }
       }
     },
@@ -6953,7 +6953,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.2.3"
+            "version": "1.2.4"
           }
         ],
         "remotes": [
@@ -6967,7 +6967,7 @@
           "url": "https://github.com/fulcradynamics/fulcra-context-mcp"
         },
         "title": "Fulcra",
-        "version": "1.2.3",
+        "version": "1.2.4",
         "websiteUrl": "https://fulcradynamics.com",
         "_meta": {
           "io.github.flow-steward/catalog": {
@@ -6976,7 +6976,7 @@
             "status": "active",
             "source": {
               "registry": "com.fulcradynamics/context",
-              "version": "1.2.3"
+              "version": "1.2.4"
             },
             "title": "Fulcra Context",
             "summary": "Read your personal health, workout, sleep, location, and calendar data collected in Fulcra Context.",
@@ -7022,17 +7022,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fulcra-context",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T05:57:52Z"
+            "updated_at": "2026-10-29T06:01:47Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-14T01:25:32.437799Z",
+          "publishedAt": "2026-10-14T19:17:17.315141Z",
           "status": "active",
-          "statusChangedAt": "2026-10-14T01:25:32.437799Z",
-          "updatedAt": "2026-10-14T01:25:32.437799Z"
+          "statusChangedAt": "2026-10-14T19:17:17.315141Z",
+          "updatedAt": "2026-10-14T19:17:17.315141Z"
         }
       }
     },
@@ -16186,32 +16186,19 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "com.porkbun/mcp",
         "description": "Official Porkbun MCP server: domains, DNS, SSL, hosting and Cloudflare via the Porkbun API.",
-        "title": "Porkbun (official)",
-        "repository": {
-          "url": "https://github.com/oborseth/Porkbun-MCP",
-          "source": "github"
-        },
-        "version": "0.50.0",
-        "websiteUrl": "https://porkbun.com/mcp",
         "icons": [
           {
-            "src": "https://porkbun.com/images/mcp/porkbun-connector-icon.png",
             "mimeType": "image/png",
             "sizes": [
               "1024x1024"
-            ]
+            ],
+            "src": "https://porkbun.com/images/mcp/porkbun-connector-icon.png"
           }
         ],
+        "name": "com.porkbun/mcp",
         "packages": [
           {
-            "registryType": "npm",
-            "identifier": "@porkbunllc/mcp-server",
-            "version": "0.50.0",
-            "transport": {
-              "type": "stdio"
-            },
             "environmentVariables": [
               {
                 "description": "Porkbun API key (pk1_...). Optional: the documentation tools work without it.",
@@ -16222,7 +16209,13 @@
                 "isSecret": true,
                 "name": "PORKBUN_SECRET_API_KEY"
               }
-            ]
+            ],
+            "identifier": "@porkbunllc/mcp-server",
+            "registryType": "npm",
+            "transport": {
+              "type": "stdio"
+            },
+            "version": "0.51.1"
           }
         ],
         "remotes": [
@@ -16231,14 +16224,21 @@
             "url": "https://mcp.porkbun.com/mcp"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/oborseth/Porkbun-MCP"
+        },
+        "title": "Porkbun (official)",
+        "version": "0.51.1",
+        "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.50.0"
+              "version": "0.51.1"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -16282,17 +16282,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:01:47Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-14T18:11:25.589559Z",
           "status": "active",
-          "statusChangedAt": "2026-10-09T18:56:38.734974Z",
-          "publishedAt": "2026-10-09T18:56:38.734974Z",
-          "updatedAt": "2026-10-09T18:56:38.734974Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-14T18:11:25.589559Z",
+          "updatedAt": "2026-10-14T18:11:25.589559Z"
         }
       }
     },
@@ -19225,7 +19225,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.13.0"
+            "version": "0.14.0"
           }
         ],
         "remotes": [
@@ -19240,16 +19240,16 @@
           "url": "https://github.com/supabase/mcp"
         },
         "title": "Supabase",
-        "version": "0.13.0",
+        "version": "0.14.0",
         "websiteUrl": "https://supabase.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "supabase",
-            "revision": 3,
+            "revision": 4,
             "status": "active",
             "source": {
               "registry": "com.supabase/mcp",
-              "version": "0.13.0"
+              "version": "0.14.0"
             },
             "title": "Supabase",
             "summary": "Manage Supabase projects: query and change database tables, run migrations, read logs, and look up project settings.",
@@ -19308,17 +19308,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/supabase",
             "added_at": "2026-10-10T12:49:13Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:01:47Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-09-17T13:43:48.019874Z",
+          "publishedAt": "2026-10-14T15:34:03.096613Z",
           "status": "active",
-          "statusChangedAt": "2026-09-17T13:43:48.019874Z",
-          "updatedAt": "2026-09-17T13:43:48.019874Z"
+          "statusChangedAt": "2026-10-14T15:34:03.096613Z",
+          "updatedAt": "2026-10-14T15:34:03.096613Z"
         }
       }
     },
