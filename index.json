@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-28.99a3cbaf",
-  "published_at": "2026-10-28T23:03:21Z",
+  "catalog_revision": "2026-10-29.8760b04b",
+  "published_at": "2026-10-29T05:53:42Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -1286,7 +1286,7 @@
               "evidence_url": "https://bird.com/docs/ai/mcp-server"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/bird/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/bird/icon.png",
               "sha256": "9724c499caeffd3dc47c4e0c9b1e0544c42bb1eefb0b04c29e96d4a34be13962",
               "bytes": 3054,
               "mime_type": "image/png",
@@ -1311,8 +1311,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       },
@@ -2293,7 +2293,7 @@
               "evidence_url": "https://github.com/checkout/checkout-mcp"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/checkout-com/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/checkout-com/icon.png",
               "sha256": "b9891ef805bbdea5ce4f85bdb55bd70d65e92f4fa1ee9f7335096424cd615c71",
               "bytes": 5175,
               "mime_type": "image/png",
@@ -2323,8 +2323,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/checkout-com",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       },
@@ -4891,7 +4891,7 @@
               "evidence_url": "https://support.deepl.com/hc/en-us/articles/28904115065884-Connect-DeepL-to-ChatGPT"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/deepl/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/deepl/icon.png",
               "sha256": "532de6cf12c868ff539d4b276261b45595cfa486286b3c8b317cde08d047c9d2",
               "bytes": 4853,
               "mime_type": "image/png",
@@ -4916,8 +4916,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/deepl",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -5193,7 +5193,7 @@
               "evidence_url": "https://dinero.dk/funktioner/mcp/"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/dinero/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/dinero/icon.png",
               "sha256": "26573a6e0d8fe6b14cb88e6f71de8a552d4a2edf44f4147223388dbb5b300e56",
               "bytes": 2038,
               "mime_type": "image/png",
@@ -5218,8 +5218,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/dinero",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -6135,7 +6135,7 @@
               "evidence_url": "https://apidoc.factorialhr.com/docs/mcp-server"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/factorial/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/factorial/icon.png",
               "sha256": "1edb9f05b525d35da6d13901752a27407a4b145bf2a72bce6d8bbeac2de7dfcc",
               "bytes": 9447,
               "mime_type": "image/png",
@@ -6160,8 +6160,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/factorial",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -6276,7 +6276,7 @@
               "evidence_url": "https://pomoc.fakturownia.pl/integracja-z-asystentami-ai-mcp-claude-chatgpt-i-inne"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/fakturownia/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/fakturownia/icon.png",
               "sha256": "6569a8983ae7d7709bb9eef02f9674fef12e7ae0fd2aaa71605c6798a20dcc84",
               "bytes": 3069,
               "mime_type": "image/png",
@@ -6304,8 +6304,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fakturownia",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -6742,7 +6742,7 @@
             "keywords": [],
             "official": null,
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/freshbooks/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/freshbooks/icon.png",
               "sha256": "9e1bf9c9938439ab0584bfd96d5c8ade2cdd5cdf4d85365fa978161fff110f8d",
               "bytes": 1291,
               "mime_type": "image/png",
@@ -6770,8 +6770,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/freshbooks",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -7072,7 +7072,7 @@
               "evidence_url": "https://www.getresponse.com/help/how-to-connect-getresponse-mcp-to-your-ai-application.html"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/getresponse/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/getresponse/icon.png",
               "sha256": "766c111f3c55965558984c5fcf5f8b122946a7084c3c3448447271e6350fb475",
               "bytes": 6096,
               "mime_type": "image/png",
@@ -7097,8 +7097,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/getresponse",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -9143,7 +9143,7 @@
               "evidence_url": "https://www.holded.com/developers/mcp"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/holded/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/holded/icon.png",
               "sha256": "188277f42ccb0e4294d1f53e9e260b41e4e3b124e86c9c0904b0a05a5db2de23",
               "bytes": 5096,
               "mime_type": "image/png",
@@ -9168,8 +9168,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/holded",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -9222,7 +9222,7 @@
               "evidence_url": "https://www.hootsuite.com/integrations/mcp"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/hootsuite/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/hootsuite/icon.png",
               "sha256": "41601e989e18a388837f44a950456079ef17b85031aaa3cbd13ff60c3193660c",
               "bytes": 7681,
               "mime_type": "image/png",
@@ -9303,8 +9303,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/hootsuite",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -13118,7 +13118,7 @@
               "evidence_url": "https://docs.mollie.com/docs/mollie-mcp-server"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/mollie/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/mollie/icon.png",
               "sha256": "f5bcc55556f2a4b7f051a8f952c710aefe36b57e9b215233abee2fe10814d96c",
               "bytes": 4132,
               "mime_type": "image/png",
@@ -13143,8 +13143,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/mollie",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -13305,7 +13305,7 @@
               "evidence_url": "https://developer.moneybird.com/tools/mcp"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/moneybird/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/moneybird/icon.png",
               "sha256": "a07aeac17401fc91cd5cc705902564729471b7f378f2e067a5037ce3e0b47f2d",
               "bytes": 6989,
               "mime_type": "image/png",
@@ -13346,8 +13346,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/moneybird",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -14584,7 +14584,7 @@
               "evidence_url": "https://www.odoo.com/documentation/20.0/applications/productivity/ai/mcp_server.html"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/odoo/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/odoo/icon.png",
               "sha256": "f4c8a20131580f1293de9610675fe16eeea9478c82a91d1f60439dbb2c7c779b",
               "bytes": 715,
               "mime_type": "image/png",
@@ -14610,8 +14610,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/odoo",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -15562,7 +15562,7 @@
               "evidence_url": "https://pennylane-mcp.readme.io/docs/getting-started"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/pennylane/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/pennylane/icon.png",
               "sha256": "9ca34647039569ce5654bf37f472b42dbbe9d804dc6d25a0b8135844514e548c",
               "bytes": 2263,
               "mime_type": "image/png",
@@ -15587,8 +15587,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/pennylane",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -16843,7 +16843,7 @@
               "evidence_url": "https://docs.qonto.com/mcp/install/quickstart"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/qonto/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/qonto/icon.png",
               "sha256": "3e18df97da03c440ce11c0835139ba9384c84b3ffa6624b2e10896951f0866df",
               "bytes": 9704,
               "mime_type": "image/png",
@@ -16884,8 +16884,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/qonto",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -17606,7 +17606,7 @@
               "evidence_url": "https://developer.risepeople.com/mcp/"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/rise-people/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/rise-people/icon.png",
               "sha256": "6ab1cc7fb47d5832afe6858060ed866631afd857b5e9790b9bb525143bdb2cb9",
               "bytes": 8397,
               "mime_type": "image/png",
@@ -17633,8 +17633,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/rise-people",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -17966,7 +17966,7 @@
               "evidence_url": "https://support.sendcloud.com/hc/en-us/articles/51464033398417-Connect-Sendcloud-to-Claude-with-MCP"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/sendcloud/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/sendcloud/icon.png",
               "sha256": "c284b071102bed1acf934cdcd7bf782040acdbeb4fb6d9eb683ddbf842b1924e",
               "bytes": 12324,
               "mime_type": "image/png",
@@ -17991,8 +17991,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/sendcloud",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -18494,7 +18494,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/sinch-engage",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -18851,7 +18851,7 @@
               "evidence_url": "https://developer.spendesk.com/reference/mcp-set-up-claude-chatgpt-dust"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/spendesk/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/spendesk/icon.png",
               "sha256": "fb949c91ca331909bea50943e0accd77a27c7c6149bf6ff0f34336469c0b5c50",
               "bytes": 2724,
               "mime_type": "image/png",
@@ -18876,8 +18876,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/spendesk",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -20717,7 +20717,7 @@
               "evidence_url": "https://github.com/Tripletex/tripletex-mcp"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/tripletex/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/tripletex/icon.png",
               "sha256": "8fb6d3b11eebf82d8a9c5d43571fcee2649ae18abac417f81fb1b644c04a0a7d",
               "bytes": 6192,
               "mime_type": "image/png",
@@ -20742,8 +20742,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/tripletex",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -21116,7 +21116,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/typeform",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -21384,7 +21384,7 @@
               "evidence_url": "https://peppol.verteco.digital/en/docs/developers"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/verteco-peppol/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/verteco-peppol/icon.png",
               "sha256": "08b098d2a0a1ba944298dbdbf79a00941198cfd7d765011ee841fa9c17a7e044",
               "bytes": 4085,
               "mime_type": "image/png",
@@ -21406,8 +21406,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/verteco-peppol",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -21508,7 +21508,7 @@
               "evidence_url": "https://developer.vismaonline.com/docs/spiris-mcp-server"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/spiris/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/spiris/icon.png",
               "sha256": "9aa08965b6ad5d8a7534669c3e9854ff2a15b926e8b007ae1fa14fc39a477906",
               "bytes": 5298,
               "mime_type": "image/png",
@@ -21533,8 +21533,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/spiris",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -22361,7 +22361,7 @@
               "evidence_url": "https://developer.xero.com/documentation/guides/remote-mcp/overview"
             },
             "icon": {
-              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/a6e9061f6e03bd243aafb4dcb0f6a33da18d75c2/servers/xero/icon.png",
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/xero/icon.png",
               "sha256": "15da21daed0e98448e574157c2899814591a18f650f0d9630f4842a9f190aa71",
               "bytes": 6555,
               "mime_type": "image/png",
@@ -22391,8 +22391,8 @@
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/xero",
-            "added_at": "2026-10-28T23:03:21Z",
-            "updated_at": "2026-10-28T23:03:21Z"
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
