@@ -1,0 +1,55 @@
+{
+  "schema_version": "market_discovery_policy/v1",
+  "reviewed_on": "2026-10-29",
+  "description": "Reviewed aliases and vendor-owned exact-endpoint evidence used only for discovery ranking. No automatic Official badge, access eligibility or authenticated workflow claim. Add evidence here after vendor-documentation review; do not derive official status from a Registry title or namespace alone.",
+  "services": {
+    "pipedrive": {
+      "official_endpoints": [
+        {
+          "url": "https://mcp.pipedrive.ai/mcp",
+          "evidence_url": "https://support.pipedrive.com/en/article/mcp-chatgpt",
+          "access_note": "Flow Steward OAuth/callback compatibility still requires verification."
+        }
+      ]
+    },
+    "sumup": {
+      "official_endpoints": [
+        {
+          "url": "https://mcp.sumup.com/mcp",
+          "evidence_url": "https://developer.sumup.com/tools/llms/mcp-server/",
+          "access_note": "Hosted OAuth application onboarding requires verification; a local API key is not a hosted MCP bearer token."
+        }
+      ]
+    },
+    "personio": {
+      "official_endpoints": [
+        {
+          "url": "https://app.personio.com/mcp",
+          "evidence_url": "https://support.personio.de/hc/en-us/articles/38314656674333-Personio-MCP-server-Beta-access-overview",
+          "access_note": "Beta activation and supported plan required. Custom clients need allowlisting; vendor recommends its API for unattended automation."
+        }
+      ]
+    },
+    "superoffice": {
+      "official_endpoints": [
+        {
+          "url": "https://mcp.superoffice.com/mcp",
+          "evidence_url": "https://mcp.superoffice.com/",
+          "access_note": "Vendor page contains both pilot enrolment restriction and October availability claim; confirm account eligibility."
+        }
+      ]
+    },
+    "lexware-office": {"aliases": ["lexoffice"]},
+    "visma-spiris": {"aliases": ["Spiris"]},
+    "brevo": {"aliases": ["Sendinblue"]},
+    "bird-messagebird": {"aliases": ["Bird", "MessageBird"]},
+    "click-drop": {"aliases": ["Royal Mail Click & Drop"]},
+    "canada-post": {"aliases": ["Canada Post API"]},
+    "companies-house": {"aliases": ["Companies House API"]},
+    "sap": {
+      "excluded_registry_names": {
+        "ai.oobeprotocol.sap.mcp/sap-mcp": "Registry describes a Solana/DeFi gateway, not SAP enterprise software. SAP in a nested domain is not vendor identity evidence."
+      }
+    }
+  }
+}
