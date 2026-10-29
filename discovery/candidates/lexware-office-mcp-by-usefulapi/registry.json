@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-28T20:04:53.945619Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-28T20:04:53.945619Z",
+      "updatedAt": "2026-10-28T20:04:53.945619Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Read Lexware Office contacts, articles, invoices and vouchers; create contacts and draft invoices.",
+    "icons": [
+      {
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ],
+        "src": "https://usefulapi.io/icon.svg"
+      },
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ],
+        "src": "https://usefulapi.io/icon-256.png"
+      },
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "512x512"
+        ],
+        "src": "https://usefulapi.io/icon-512.png"
+      }
+    ],
+    "name": "io.usefulapi/lexware-office",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://lexware-office.usefulapi.io/mcp"
+      }
+    ],
+    "repository": {
+      "source": "github",
+      "subfolder": "servers/lexware-office",
+      "url": "https://github.com/m190/usefulapi-mcp"
+    },
+    "title": "Lexware Office MCP by usefulapi",
+    "version": "1.18.0",
+    "websiteUrl": "https://usefulapi.io/lexware-office/"
+  }
+}

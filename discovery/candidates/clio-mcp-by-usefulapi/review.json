@@ -1,0 +1,47 @@
+{
+  "catalog_id": "clio-mcp-by-usefulapi",
+  "duplicate_matches": [],
+  "ownership": "unverified",
+  "priority": {
+    "access_notes": [],
+    "ambiguous_services": [],
+    "coverage": "uncovered",
+    "evidence_urls": [],
+    "target_services": [
+      {
+        "id": "clio",
+        "name": "Clio",
+        "priority": "P3",
+        "regions": [
+          "Canada"
+        ],
+        "research_mcp_status": "third_party_candidate",
+        "research_notes": "Manage v4 Canada base https://ca.app.clio.com/api/v4. Grow uses separate Clio Platform app/API. Do not claim Clio Accounting or all Clio products from Manage."
+      }
+    ],
+    "tier": "target_unverified"
+  },
+  "queue_state": "proposed",
+  "registry_presence": "present",
+  "required_review": [
+    "Vendor-owned evidence page naming the exact endpoint",
+    "Category and description",
+    "Authentication and access restrictions",
+    "Square PNG icon",
+    "Duplicate matches"
+  ],
+  "signals": {
+    "aggregator": false,
+    "declared_headers": [],
+    "endpoints_on_namespace_domain": true,
+    "has_icon": true,
+    "name": "io.usefulapi/clio",
+    "namespace": "domain usefulapi.io",
+    "status": "active",
+    "streamable_http_endpoints": [
+      "https://clio.usefulapi.io/mcp"
+    ],
+    "version": "1.11.0",
+    "website_on_namespace_domain": true
+  }
+}

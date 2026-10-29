@@ -1,0 +1,47 @@
+{
+  "catalog_id": "praat-met-je-boekhouding-chat-with-your-books",
+  "duplicate_matches": [],
+  "ownership": "unverified",
+  "priority": {
+    "access_notes": [],
+    "ambiguous_services": [],
+    "coverage": "uncovered",
+    "evidence_urls": [],
+    "target_services": [
+      {
+        "id": "exact-online",
+        "name": "Exact Online",
+        "priority": "P1",
+        "regions": [
+          "Europe"
+        ],
+        "research_mcp_status": "no_official_mcp_verified",
+        "research_notes": "No vendor-confirmed operational MCP endpoint verified in this bounded public search. This is not proof that no MCP exists. Public/partner API access and implementation scope still need validation. Exact Online Bouw is a different product; do not substitute a construction MCP for Accounting."
+      }
+    ],
+    "tier": "target_unverified"
+  },
+  "queue_state": "proposed",
+  "registry_presence": "present",
+  "required_review": [
+    "Vendor-owned evidence page naming the exact endpoint",
+    "Category and description",
+    "Authentication and access restrictions",
+    "Square PNG icon",
+    "Duplicate matches"
+  ],
+  "signals": {
+    "aggregator": false,
+    "declared_headers": [],
+    "endpoints_on_namespace_domain": true,
+    "has_icon": false,
+    "name": "nl.praatmetjeboekhouding/exact-online",
+    "namespace": "domain praatmetjeboekhouding.nl",
+    "status": "active",
+    "streamable_http_endpoints": [
+      "https://api.praatmetjeboekhouding.nl/mcp"
+    ],
+    "version": "0.3.0",
+    "website_on_namespace_domain": true
+  }
+}

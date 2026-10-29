@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-27T14:29:38.30668Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-27T14:29:38.30668Z",
+      "updatedAt": "2026-10-27T14:29:38.30668Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Read, write and run Odoo actions from any AI app, as each user, with approval rules per colleague.",
+    "icons": [
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "512x512"
+        ],
+        "src": "https://hawklify.com/logo-512.png"
+      },
+      {
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ],
+        "src": "https://hawklify.com/favicon.svg"
+      }
+    ],
+    "name": "com.hawklify/odoo",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.hawklify.com/mcp"
+      }
+    ],
+    "title": "Hawklify for Odoo",
+    "version": "1.10.0",
+    "websiteUrl": "https://hawklify.com/docs/"
+  }
+}

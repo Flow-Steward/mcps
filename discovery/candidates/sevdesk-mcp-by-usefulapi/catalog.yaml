@@ -1,0 +1,21 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "io.usefulapi/sevdesk", "version": "1.27.0", "status": "active", "namespace": "domain usefulapi.io", "aggregator": false, "endpoints_on_namespace_domain": true, "website_on_namespace_domain": true, "streamable_http_endpoints": ["https://sevdesk.usefulapi.io/mcp"], "declared_headers": [], "has_icon": true}
+revision: 1
+source:
+  registry: io.usefulapi/sevdesk
+title: sevdesk MCP by usefulapi
+description: Look up contacts, invoices, vouchers, orders, bank transactions and parts, and create drafts.
+category: TODO
+website_url: https://usefulapi.io/sevdesk/
+remotes:
+- id: default
+  label: sevdesk MCP by usefulapi
+  url: https://sevdesk.usefulapi.io/mcp
+  allowed_hosts:
+  - sevdesk.usefulapi.io
+  auth:
+    mode: TODO

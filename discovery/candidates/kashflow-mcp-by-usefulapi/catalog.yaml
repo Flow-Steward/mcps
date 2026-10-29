@@ -1,0 +1,21 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "io.usefulapi/kashflow", "version": "1.6.0", "status": "active", "namespace": "domain usefulapi.io", "aggregator": false, "endpoints_on_namespace_domain": true, "website_on_namespace_domain": true, "streamable_http_endpoints": ["https://kashflow.usefulapi.io/mcp"], "declared_headers": [], "has_icon": true}
+revision: 1
+source:
+  registry: io.usefulapi/kashflow
+title: KashFlow MCP by usefulapi
+description: Read KashFlow invoices, customers, suppliers, banking and reports; add customers, notes.
+category: TODO
+website_url: https://usefulapi.io/kashflow/
+remotes:
+- id: default
+  label: KashFlow MCP by usefulapi
+  url: https://kashflow.usefulapi.io/mcp
+  allowed_hosts:
+  - kashflow.usefulapi.io
+  auth:
+    mode: TODO

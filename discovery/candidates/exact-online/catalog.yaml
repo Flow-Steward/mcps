@@ -1,0 +1,21 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "com.iwebdevelopment/exact-online", "version": "1.0.0", "status": "active", "namespace": "domain iwebdevelopment.com", "aggregator": false, "endpoints_on_namespace_domain": true, "website_on_namespace_domain": false, "streamable_http_endpoints": ["https://mcp-exactonline.iwebdevelopment.com"], "declared_headers": [], "has_icon": false}
+revision: 1
+source:
+  registry: com.iwebdevelopment/exact-online
+title: exact-online
+description: 'Exact AI Connect: hosted MCP server for Exact Online.'
+category: TODO
+website_url: ''
+remotes:
+- id: default
+  label: com.iwebdevelopment/exact-online
+  url: https://mcp-exactonline.iwebdevelopment.com
+  allowed_hosts:
+  - mcp-exactonline.iwebdevelopment.com
+  auth:
+    mode: TODO

@@ -1,0 +1,21 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "se.nordsynk/fortnox", "version": "1.0.0", "status": "active", "namespace": "domain nordsynk.se", "aggregator": false, "endpoints_on_namespace_domain": true, "website_on_namespace_domain": true, "streamable_http_endpoints": ["https://mcp.nordsynk.se/"], "declared_headers": [], "has_icon": false}
+revision: 1
+source:
+  registry: se.nordsynk/fortnox
+title: Nordsynk — Fortnox MCP
+description: Hosted MCP server for Fortnox. Connect Claude, ChatGPT, Cursor to live Fortnox via OAuth.
+category: TODO
+website_url: https://nordsynk.se/fortnox-mcp
+remotes:
+- id: default
+  label: Nordsynk — Fortnox MCP
+  url: https://mcp.nordsynk.se/
+  allowed_hosts:
+  - mcp.nordsynk.se
+  auth:
+    mode: TODO

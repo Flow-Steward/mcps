@@ -1,0 +1,22 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "io.usefulapi/lexware-office", "version": "1.18.0", "status": "active", "namespace": "domain usefulapi.io", "aggregator": false, "endpoints_on_namespace_domain": true, "website_on_namespace_domain": true, "streamable_http_endpoints": ["https://lexware-office.usefulapi.io/mcp"], "declared_headers": [], "has_icon": true}
+revision: 1
+source:
+  registry: io.usefulapi/lexware-office
+title: Lexware Office MCP by usefulapi
+description: Read Lexware Office contacts, articles, invoices and vouchers; create contacts and draft
+  invoices.
+category: TODO
+website_url: https://usefulapi.io/lexware-office/
+remotes:
+- id: default
+  label: Lexware Office MCP by usefulapi
+  url: https://lexware-office.usefulapi.io/mcp
+  allowed_hosts:
+  - lexware-office.usefulapi.io
+  auth:
+    mode: TODO

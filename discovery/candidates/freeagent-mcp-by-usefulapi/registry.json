@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-28T20:04:53.714581Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-28T20:04:53.714581Z",
+      "updatedAt": "2026-10-28T20:04:53.714581Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Read FreeAgent contacts, invoices, bills, banking and reports; add contacts, draft invoices, time.",
+    "icons": [
+      {
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ],
+        "src": "https://usefulapi.io/icon.svg"
+      },
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ],
+        "src": "https://usefulapi.io/icon-256.png"
+      },
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "512x512"
+        ],
+        "src": "https://usefulapi.io/icon-512.png"
+      }
+    ],
+    "name": "io.usefulapi/freeagent",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://freeagent.usefulapi.io/mcp"
+      }
+    ],
+    "repository": {
+      "source": "github",
+      "subfolder": "servers/freeagent",
+      "url": "https://github.com/m190/usefulapi-mcp"
+    },
+    "title": "FreeAgent MCP by usefulapi",
+    "version": "1.20.0",
+    "websiteUrl": "https://usefulapi.io/freeagent/"
+  }
+}

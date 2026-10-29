@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://developers.fibery.com/guides/mcp/connecting
 # Older token-based local fibery-mcp-server is deprecated in favor of this remote server.
-revision: 1
+revision: 2
 source:
   registry: io.github.Fibery-inc/mcp
 title: Fibery

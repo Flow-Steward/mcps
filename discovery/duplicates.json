@@ -1,0 +1,4018 @@
+[
+  {
+    "matches": [
+      {
+        "id": "bird",
+        "reasons": [
+          "catalog_id",
+          "names: com.bird/mcp",
+          "titles: bird",
+          "endpoints: https://mcp.bird.com"
+        ]
+      }
+    ],
+    "name": "com.bird/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "bird-messagebird",
+          "name": "Bird MessageBird",
+          "priority": "P3",
+          "regions": [
+            "Europe"
+          ],
+          "research_mcp_status": "official_remote_added",
+          "research_notes": "Hosted tools exclude sign-up and local file-upload operations. Existing media references can be used; file uploads require the local server."
+        }
+      ],
+      "tier": "target_vendor_candidate"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "gocardless",
+        "reasons": [
+          "titles: gocardless"
+        ]
+      }
+    ],
+    "name": "com.gocardless/gc-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "gocardless",
+          "name": "GoCardless",
+          "priority": "P3",
+          "regions": [
+            "Europe",
+            "UK"
+          ],
+          "research_mcp_status": "existing_official_remote",
+          "research_notes": "Direct-debit product only; does not establish Bank Account Data coverage. Periodic interactive reauthorization limits unattended jobs. Parent verified https://mcp.gocardless.com; no duplicate addition."
+        }
+      ],
+      "tier": "target_vendor_candidate"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "infobip-2fa",
+        "reasons": [
+          "endpoints: https://mcp.infobip.com/2fa"
+        ]
+      },
+      {
+        "id": "infobip-people",
+        "reasons": [
+          "endpoints: https://mcp.infobip.com/people"
+        ]
+      },
+      {
+        "id": "infobip-rcs",
+        "reasons": [
+          "endpoints: https://mcp.infobip.com/rcs"
+        ]
+      },
+      {
+        "id": "infobip-sms",
+        "reasons": [
+          "names: com.infobip/mcp",
+          "endpoints: https://mcp.infobip.com/2fa, https://mcp.infobip.com/account-management, https://mcp.infobip.com/application-entity, https://mcp.infobip.com/people, https://mcp.infobip.com/rcs, https://mcp.infobip.com/search, https://mcp.infobip.com/sms, https://mcp.infobip.com/viber, https://mcp.infobip.com/whatsapp"
+        ]
+      },
+      {
+        "id": "infobip-viber",
+        "reasons": [
+          "endpoints: https://mcp.infobip.com/viber"
+        ]
+      },
+      {
+        "id": "infobip-whatsapp",
+        "reasons": [
+          "endpoints: https://mcp.infobip.com/whatsapp"
+        ]
+      }
+    ],
+    "name": "com.infobip/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "infobip",
+          "name": "Infobip",
+          "priority": "P3",
+          "regions": [
+            "Europe"
+          ],
+          "research_mcp_status": "existing_official_remote",
+          "research_notes": "Eight existing channel-specific entries. Does not establish coverage of every Infobip API; current Registry channel list differs from the catalog."
+        }
+      ],
+      "tier": "target_vendor_candidate"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "paddle",
+        "reasons": [
+          "catalog_id",
+          "titles: paddle",
+          "endpoints: https://mcp.paddle.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.paddle/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "paddle",
+          "name": "Paddle",
+          "priority": "P3",
+          "regions": [
+            "UK"
+          ],
+          "research_mcp_status": "existing_official_remote",
+          "research_notes": "Live https://mcp.paddle.com/mcp. Three codemode tools."
+        }
+      ],
+      "tier": "target_vendor_candidate"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "odoo",
+        "reasons": [
+          "catalog_id"
+        ]
+      }
+    ],
+    "name": "com.odooconsole/odoo",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "odoo",
+          "name": "Odoo",
+          "priority": "P3",
+          "regions": [
+            "Europe"
+          ],
+          "research_mcp_status": "official_remote_added",
+          "research_notes": "Official Odoo 20 remote MCP. Administrator must enable DCR and expose required actions; older versions are not covered automatically."
+        }
+      ],
+      "tier": "target_unverified"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "typeform",
+        "reasons": [
+          "catalog_id",
+          "titles: typeform",
+          "endpoints: https://api.eu.typeform.com/mcp, https://api.typeform.com/mcp, https://api.typeform.eu/mcp"
+        ]
+      }
+    ],
+    "name": "com.typeform/typeform",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "typeform",
+          "name": "Typeform",
+          "priority": "P3",
+          "regions": [
+            "Europe"
+          ],
+          "research_mcp_status": "existing_official_remote",
+          "research_notes": "Added both documented EU endpoints and client-metadata registration. Match endpoint to account hosting; no general EU-residency guarantee."
+        }
+      ],
+      "tier": "target_unverified"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "checkout-com",
+        "reasons": [
+          "catalog_id",
+          "names: io.github.checkout/mcp",
+          "titles: checkoutcom",
+          "endpoints: https://mcp.checkout.com"
+        ]
+      }
+    ],
+    "name": "io.github.checkout/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "checkout-com",
+          "name": "Checkout.com",
+          "priority": "P3",
+          "regions": [
+            "UK"
+          ],
+          "research_mcp_status": "official_remote_added",
+          "research_notes": "Production https://mcp.checkout.com (root endpoint). Vendor repository explicitly hosts registry metadata; underlying server vendor-operated. Inherits Dashboard role."
+        }
+      ],
+      "tier": "target_unverified"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "deepl",
+        "reasons": [
+          "catalog_id",
+          "titles: deepl"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/deepl",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "deepl",
+          "name": "DeepL",
+          "priority": "P3",
+          "regions": [
+            "Europe"
+          ],
+          "research_mcp_status": "official_remote_added",
+          "research_notes": "Eligible DeepL API customers must contact DeepL to enable AI connectors before connecting."
+        }
+      ],
+      "tier": "target_unverified"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "odoo",
+        "reasons": [
+          "catalog_id",
+          "titles: odoo"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/odoo",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "odoo",
+          "name": "Odoo",
+          "priority": "P3",
+          "regions": [
+            "Europe"
+          ],
+          "research_mcp_status": "official_remote_added",
+          "research_notes": "Official Odoo 20 remote MCP. Administrator must enable DCR and expose required actions; older versions are not covered automatically."
+        }
+      ],
+      "tier": "target_unverified"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "paddle",
+        "reasons": [
+          "catalog_id",
+          "titles: paddle"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/paddle",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "paddle",
+          "name": "Paddle",
+          "priority": "P3",
+          "regions": [
+            "UK"
+          ],
+          "research_mcp_status": "existing_official_remote",
+          "research_notes": "Live https://mcp.paddle.com/mcp. Three codemode tools."
+        }
+      ],
+      "tier": "target_unverified"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "xero",
+        "reasons": [
+          "catalog_id",
+          "titles: xero"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/xero",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "direct_catalog",
+      "evidence_urls": [],
+      "target_services": [
+        {
+          "id": "xero",
+          "name": "Xero",
+          "priority": "P3",
+          "regions": [
+            "UK",
+            "Canada"
+          ],
+          "research_mcp_status": "official_remote_added",
+          "research_notes": "Endpoint https://api.xero.com/mcp/v1. Core+ required for real organisations; accountant/bookkeeper API fee exemption may apply. Custom Connections ineligible. Grant only required tool scopes; writes require client-side confirmation. Read starter scopes: accounting.invoices.read accounting.contacts.read accounting.settings.read accounting.reports.aged.read; add offline_access for refresh. Scopes table: banking accounting.banktransactions.read; payments accounting.payments.read; manual journals accounting.manualjournals.read; reports granular. Canada accounting availability does not prove Canadian tax filing through API/MCP. Official remote MCP commercial-app Core+ entitlement; Starter demo only."
+        }
+      ],
+      "tier": "target_unverified"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "circleback",
+        "reasons": [
+          "catalog_id",
+          "titles: circleback",
+          "endpoints: https://circleback.ai/api/mcp"
+        ]
+      }
+    ],
+    "name": "ai.circleback/circleback",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "exa",
+        "reasons": [
+          "catalog_id",
+          "names: ai.exa/exa",
+          "endpoints: https://mcp.exa.ai/mcp"
+        ]
+      }
+    ],
+    "name": "ai.exa/exa",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "fathom",
+        "reasons": [
+          "names: ai.fathom.api/mcp",
+          "endpoints: https://api.fathom.ai/mcp"
+        ]
+      }
+    ],
+    "name": "ai.fathom.api/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "fireflies",
+        "reasons": [
+          "names: ai.fireflies/fireflies",
+          "titles: firefliesai",
+          "endpoints: https://api.fireflies.ai/mcp"
+        ]
+      }
+    ],
+    "name": "ai.fireflies/fireflies",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "parallel-search",
+        "reasons": [
+          "titles: parallelsearch"
+        ]
+      }
+    ],
+    "name": "ai.parallel/search-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "scite",
+        "reasons": [
+          "catalog_id",
+          "names: ai.scite/mcp",
+          "titles: scite",
+          "endpoints: https://api.scite.ai/mcp"
+        ]
+      }
+    ],
+    "name": "ai.scite/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "ticket-tailor",
+        "reasons": [
+          "names: ai.tickettailor/mcp",
+          "endpoints: https://mcp.tickettailor.ai/mcp"
+        ]
+      }
+    ],
+    "name": "ai.tickettailor/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "linear",
+        "reasons": [
+          "catalog_id",
+          "names: app.linear/linear",
+          "titles: linear",
+          "endpoints: https://mcp.linear.app/mcp, https://mcp.linear.app/mcp/readonly"
+        ]
+      }
+    ],
+    "name": "app.linear/linear",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "lucid",
+        "reasons": [
+          "catalog_id",
+          "names: app.lucid.mcp/lucid",
+          "titles: lucid",
+          "endpoints: https://mcp.lucid.app/mcp"
+        ]
+      }
+    ],
+    "name": "app.lucid.mcp/lucid",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-analytics",
+        "reasons": [
+          "catalog_id",
+          "titles: googleanalytics"
+        ]
+      }
+    ],
+    "name": "click.myagents/google-analytics",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-drive",
+        "reasons": [
+          "catalog_id",
+          "titles: googledrive"
+        ]
+      }
+    ],
+    "name": "click.myagents/google-drive",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "axiom",
+        "reasons": [
+          "catalog_id",
+          "names: co.axiom/mcp",
+          "endpoints: https://mcp.axiom.co/mcp"
+        ]
+      }
+    ],
+    "name": "co.axiom/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "hugging-face",
+        "reasons": [
+          "catalog_id",
+          "names: co.huggingface/hf-mcp-server",
+          "titles: huggingface",
+          "endpoints: https://huggingface.co/mcp, https://huggingface.co/mcp?login"
+        ]
+      }
+    ],
+    "name": "co.huggingface/hf-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "airtable",
+        "reasons": [
+          "catalog_id",
+          "names: com.airtable/mcp",
+          "endpoints: https://mcp.airtable.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.airtable/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "amplitude",
+        "reasons": [
+          "catalog_id",
+          "names: com.amplitude/mcp-server",
+          "titles: amplitude",
+          "endpoints: https://mcp.amplitude.com/mcp, https://mcp.eu.amplitude.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.amplitude/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "atlassian",
+        "reasons": [
+          "names: com.atlassian/atlassian-mcp-server",
+          "titles: atlassianrovo",
+          "endpoints: https://mcp.atlassian.com/v1/mcp/authv2, https://mcp.atlassian.com/v2/mcp"
+        ]
+      }
+    ],
+    "name": "com.atlassian/atlassian-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "autodesk-product-help",
+        "reasons": [
+          "titles: autodeskproducthelp"
+        ]
+      }
+    ],
+    "name": "com.autodesk.aps.api/product-help-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "axiom",
+        "reasons": [
+          "catalog_id",
+          "titles: axiom"
+        ]
+      }
+    ],
+    "name": "com.axiomide/axiom",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "bitly",
+        "reasons": [
+          "catalog_id",
+          "names: com.bitly/mcp",
+          "titles: bitly",
+          "endpoints: https://api-ssl.bitly.com/v4/mcp"
+        ]
+      }
+    ],
+    "name": "com.bitly/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "blockscout",
+        "reasons": [
+          "catalog_id",
+          "names: com.blockscout/mcp-server",
+          "endpoints: https://mcp.blockscout.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.blockscout/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "circleci",
+        "reasons": [
+          "catalog_id",
+          "titles: circleci",
+          "endpoints: https://mcp.circleci.com/v1/mcp"
+        ]
+      }
+    ],
+    "name": "com.circleci/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "close",
+        "reasons": [
+          "names: com.close/close-mcp",
+          "endpoints: https://mcp.close.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.close/close-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "cloudflare-documentation",
+        "reasons": [
+          "names: com.cloudflare.mcp/mcp",
+          "endpoints: https://ai-gateway.mcp.cloudflare.com/mcp, https://auditlogs.mcp.cloudflare.com/mcp, https://autorag.mcp.cloudflare.com/mcp, https://bindings.mcp.cloudflare.com/mcp, https://browser.mcp.cloudflare.com/mcp, https://builds.mcp.cloudflare.com/mcp, https://casb.mcp.cloudflare.com/mcp, https://containers.mcp.cloudflare.com/mcp, https://dex.mcp.cloudflare.com/mcp, https://dns-analytics.mcp.cloudflare.com/mcp, https://docs.mcp.cloudflare.com/mcp, https://graphql.mcp.cloudflare.com/mcp, https://logs.mcp.cloudflare.com/mcp, https://observability.mcp.cloudflare.com/mcp, https://radar.mcp.cloudflare.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.cloudflare.mcp/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "coresignal",
+        "reasons": [
+          "catalog_id",
+          "names: com.coresignal/mcp",
+          "endpoints: https://mcp.coresignal.com/mcp/v2"
+        ]
+      }
+    ],
+    "name": "com.coresignal/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "debitura",
+        "reasons": [
+          "catalog_id",
+          "names: com.debitura/mcp-server",
+          "endpoints: https://mcp.debitura.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.debitura/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "devcycle",
+        "reasons": [
+          "catalog_id",
+          "names: com.devcycle/mcp",
+          "endpoints: https://mcp.devcycle.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.devcycle/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "dexpaprika",
+        "reasons": [
+          "catalog_id",
+          "names: com.dexpaprika/dexpaprika",
+          "titles: dexpaprika",
+          "endpoints: https://mcp.dexpaprika.com/streamable-http"
+        ]
+      }
+    ],
+    "name": "com.dexpaprika/dexpaprika",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "egnyte",
+        "reasons": [
+          "endpoints: https://mcp-server.egnyte.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.egnyte/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "fulcra-context",
+        "reasons": [
+          "names: com.fulcradynamics/context",
+          "titles: fulcra",
+          "endpoints: https://mcp.fulcradynamics.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.fulcradynamics/context",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "guru",
+        "reasons": [
+          "endpoints: https://mcp.api.getguru.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.getguru/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "gitlab",
+        "reasons": [
+          "catalog_id",
+          "names: com.gitlab/mcp",
+          "endpoints: https://gitlab.com/api/v4/mcp"
+        ]
+      }
+    ],
+    "name": "com.gitlab/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-compute-engine",
+        "reasons": [
+          "names: com.googleapis.compute/mcp",
+          "endpoints: https://compute.googleapis.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.googleapis.compute/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-maps-grounding-lite",
+        "reasons": [
+          "endpoints: https://mapstools.googleapis.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.googleapis.mapstools/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-cloud-run",
+        "reasons": [
+          "catalog_id",
+          "titles: googlecloudrun",
+          "endpoints: https://run.googleapis.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.googleapis.run/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "interactive-brokers",
+        "reasons": [
+          "names: com.ibkr/interactive-brokers-ibkr",
+          "titles: interactivebrokersibkr",
+          "endpoints: https://api.ibkr.com/v1/api/mcp-public"
+        ]
+      }
+    ],
+    "name": "com.ibkr/interactive-brokers-ibkr",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "ifttt",
+        "reasons": [
+          "names: com.ifttt/mcp",
+          "titles: ifttt",
+          "endpoints: https://ifttt.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.ifttt/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "jitsu",
+        "reasons": [
+          "catalog_id",
+          "names: com.jitsu/mcp",
+          "titles: jitsu",
+          "endpoints: https://use.jitsu.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.jitsu/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "ahrefs",
+        "reasons": [
+          "catalog_id"
+        ]
+      }
+    ],
+    "name": "com.jojapi/ahrefs",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "similarweb",
+        "reasons": [
+          "catalog_id"
+        ]
+      }
+    ],
+    "name": "com.jojapi/similarweb",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "jotform",
+        "reasons": [
+          "catalog_id",
+          "names: com.jotform/mcp",
+          "endpoints: https://mcp.jotform.com"
+        ]
+      }
+    ],
+    "name": "com.jotform/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "keboola",
+        "reasons": [
+          "catalog_id"
+        ]
+      }
+    ],
+    "name": "com.keboola/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "linkly",
+        "reasons": [
+          "catalog_id",
+          "names: com.linklyhq/linkly",
+          "endpoints: https://mcp.linklyhq.com"
+        ]
+      }
+    ],
+    "name": "com.linklyhq/linkly",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "longbridge",
+        "reasons": [
+          "catalog_id",
+          "endpoints: https://mcp.longbridge.com"
+        ]
+      }
+    ],
+    "name": "com.longbridge/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "make",
+        "reasons": [
+          "catalog_id",
+          "names: com.make/mcp-server",
+          "endpoints: https://mcp.make.com"
+        ]
+      }
+    ],
+    "name": "com.make/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "microsoft-learn",
+        "reasons": [
+          "names: com.microsoft/microsoft-learn-mcp",
+          "titles: microsoftlearn",
+          "endpoints: https://learn.microsoft.com/api/mcp"
+        ]
+      }
+    ],
+    "name": "com.microsoft/microsoft-learn-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "mintlify",
+        "reasons": [
+          "endpoints: https://mcp.mintlify.com"
+        ]
+      }
+    ],
+    "name": "com.mintlify/adminmcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "monday",
+        "reasons": [
+          "names: com.monday/monday.com",
+          "endpoints: https://mcp.monday.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.monday/monday.com",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "mux",
+        "reasons": [
+          "catalog_id",
+          "names: com.mux/mcp",
+          "endpoints: https://mcp.mux.com"
+        ]
+      }
+    ],
+    "name": "com.mux/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "new-relic",
+        "reasons": [
+          "titles: newrelic",
+          "endpoints: https://mcp.newrelic.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.newrelic/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "notion",
+        "reasons": [
+          "catalog_id",
+          "names: com.notion/mcp",
+          "endpoints: https://mcp.notion.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.notion/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "pandadoc",
+        "reasons": [
+          "titles: pandadoc",
+          "endpoints: https://mcp.pandadoc.com/v1/mcp"
+        ]
+      }
+    ],
+    "name": "com.pandadoc.mcp/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "paypal",
+        "reasons": [
+          "endpoints: https://mcp.paypal.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.paypal.mcp/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "pearl",
+        "reasons": [
+          "names: com.pearl.mcp/pearl-api-mcp-server",
+          "endpoints: https://mcp.pearl.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.pearl.mcp/pearl-api-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "polar-analytics",
+        "reasons": [
+          "catalog_id",
+          "names: com.polaranalytics/polar",
+          "titles: polaranalytics",
+          "endpoints: https://api.polaranalytics.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.polaranalytics/polar",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "porkbun",
+        "reasons": [
+          "names: com.porkbun/mcp",
+          "titles: porkbunofficial",
+          "endpoints: https://mcp.porkbun.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.porkbun/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "postman",
+        "reasons": [
+          "titles: postman",
+          "endpoints: https://mcp.postman.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.postman/postman-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "railway",
+        "reasons": [
+          "titles: railway",
+          "endpoints: https://mcp.railway.com"
+        ]
+      }
+    ],
+    "name": "com.railway/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "sendpulse",
+        "reasons": [
+          "catalog_id",
+          "names: com.sendpulse.mcp/mcp-server",
+          "titles: sendpulse",
+          "endpoints: https://mcp.sendpulse.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.sendpulse.mcp/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "shippo",
+        "reasons": [
+          "catalog_id",
+          "titles: shippo",
+          "endpoints: https://mcp.shippo.com"
+        ]
+      }
+    ],
+    "name": "com.shippo/shippo-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "stripe",
+        "reasons": [
+          "catalog_id",
+          "names: com.stripe/mcp",
+          "endpoints: https://mcp.stripe.com"
+        ]
+      }
+    ],
+    "name": "com.stripe/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "supabase",
+        "reasons": [
+          "catalog_id",
+          "names: com.supabase/mcp",
+          "titles: supabase",
+          "endpoints: https://mcp.supabase.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.supabase/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "supermetrics",
+        "reasons": [
+          "catalog_id",
+          "names: com.supermetrics/supermetrics",
+          "endpoints: https://mcp.supermetrics.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.supermetrics/supermetrics",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "teamwork-com",
+        "reasons": [
+          "endpoints: https://mcp.ai.teamwork.com"
+        ]
+      }
+    ],
+    "name": "com.teamwork/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "trivago",
+        "reasons": [
+          "catalog_id",
+          "titles: trivago",
+          "endpoints: https://mcp.trivago.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.trivago.mcp/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "twelve-data",
+        "reasons": [
+          "names: com.twelvedata/mcp",
+          "endpoints: https://mcp.twelvedata.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.twelvedata/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "webflow",
+        "reasons": [
+          "catalog_id",
+          "names: com.webflow/mcp",
+          "endpoints: https://mcp.webflow.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.webflow/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "whimsical",
+        "reasons": [
+          "catalog_id",
+          "names: com.whimsical/mcp",
+          "titles: whimsical",
+          "endpoints: https://mcp.whimsical.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.whimsical/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "wix",
+        "reasons": [
+          "catalog_id",
+          "names: com.wix/mcp",
+          "endpoints: https://mcp.wix.com/mcp"
+        ]
+      }
+    ],
+    "name": "com.wix/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "zapier",
+        "reasons": [
+          "catalog_id",
+          "names: com.zapier/mcp",
+          "titles: zapier",
+          "endpoints: https://mcp.zapier.com/api/v1/connect"
+        ]
+      }
+    ],
+    "name": "com.zapier/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "currents",
+        "reasons": [
+          "catalog_id",
+          "names: dev.currents/mcp",
+          "titles: currents",
+          "endpoints: https://mcp.currents.dev/mcp"
+        ]
+      }
+    ],
+    "name": "dev.currents/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "lumin",
+        "reasons": [
+          "catalog_id",
+          "titles: lumin"
+        ]
+      }
+    ],
+    "name": "dev.getlumin/lumin",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "jam",
+        "reasons": [
+          "catalog_id",
+          "titles: jam",
+          "endpoints: https://mcp.jam.dev/mcp"
+        ]
+      }
+    ],
+    "name": "dev.jam/jam",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "lingo-dev-i18n",
+        "reasons": [
+          "names: dev.lingo/main",
+          "endpoints: https://mcp.lingo.dev/main"
+        ]
+      }
+    ],
+    "name": "dev.lingo/main",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "svelte",
+        "reasons": [
+          "names: dev.svelte/mcp",
+          "titles: svelte",
+          "endpoints: https://mcp.svelte.dev/mcp"
+        ]
+      }
+    ],
+    "name": "dev.svelte/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "clerk",
+        "reasons": [
+          "catalog_id",
+          "titles: clerk"
+        ]
+      }
+    ],
+    "name": "do.clerk/clerk",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "craft",
+        "reasons": [
+          "catalog_id",
+          "names: do.craft.mcp/server",
+          "titles: craft",
+          "endpoints: https://mcp.craft.do/my/mcp"
+        ]
+      }
+    ],
+    "name": "do.craft.mcp/server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "norman-finance",
+        "reasons": [
+          "names: finance.norman/mcp-server",
+          "titles: norman",
+          "endpoints: https://mcp.norman.finance/mcp"
+        ]
+      }
+    ],
+    "name": "finance.norman/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "coupler-io",
+        "reasons": [
+          "names: io.coupler/remote-mcp-server",
+          "endpoints: https://mcp.coupler.io/mcp"
+        ]
+      }
+    ],
+    "name": "io.coupler/remote-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "elevenlabs",
+        "reasons": [
+          "catalog_id",
+          "titles: elevenlabs"
+        ]
+      }
+    ],
+    "name": "io.elevenlabs/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "eraser",
+        "reasons": [
+          "catalog_id",
+          "names: io.eraser/eraser",
+          "endpoints: https://app.eraser.io/api/mcp"
+        ]
+      }
+    ],
+    "name": "io.eraser/eraser",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "craft",
+        "reasons": [
+          "catalog_id"
+        ]
+      }
+    ],
+    "name": "io.illumora/craft",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "snov-io",
+        "reasons": [
+          "endpoints: https://mcp.snov.io/mcp"
+        ]
+      }
+    ],
+    "name": "io.snov/snov-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "ybug",
+        "reasons": [
+          "catalog_id",
+          "titles: ybug",
+          "endpoints: https://mcp.ybug.io/mcp"
+        ]
+      }
+    ],
+    "name": "io.ybug/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "tally",
+        "reasons": [
+          "catalog_id"
+        ]
+      }
+    ],
+    "name": "markets.tally/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "todoist",
+        "reasons": [
+          "catalog_id",
+          "endpoints: https://ai.todoist.net/mcp"
+        ]
+      }
+    ],
+    "name": "net.todoist/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "neon",
+        "reasons": [
+          "catalog_id",
+          "names: com.neon/mcp",
+          "titles: neon",
+          "endpoints: https://mcp.neon.tech/mcp"
+        ]
+      }
+    ],
+    "name": "com.neon/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "syncro",
+        "reasons": [
+          "names: com.syncrosecure/mcp-server",
+          "endpoints: https://mcp.services.syncromsp.com/mcp/stream"
+        ]
+      }
+    ],
+    "name": "com.syncrosecure/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "edubase",
+        "reasons": [
+          "catalog_id",
+          "names: io.github.EduBase/MCP",
+          "endpoints: https://www.edubase.net/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.EduBase/MCP",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "fibery",
+        "reasons": [
+          "catalog_id",
+          "names: io.github.Fibery-inc/mcp",
+          "titles: fibery",
+          "endpoints: https://mcp.fibery.io/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.Fibery-inc/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "testmu-ai-lambdatest",
+        "reasons": [
+          "names: io.github.LambdaTest/mcp",
+          "titles: testmuaiformerlylambdatest",
+          "endpoints: https://mcp.lambdatest.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.LambdaTest/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "raygun",
+        "reasons": [
+          "catalog_id",
+          "names: io.github.MindscapeHQ/mcp-server-raygun",
+          "titles: raygun",
+          "endpoints: https://api.raygun.com/v3/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.MindscapeHQ/mcp-server-raygun",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "pearl",
+        "reasons": [
+          "catalog_id",
+          "titles: pearl"
+        ]
+      }
+    ],
+    "name": "io.github.Pearl-Passport/pearl-agent-plugin",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "posthog",
+        "reasons": [
+          "titles: posthog",
+          "endpoints: https://mcp.posthog.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.PostHog/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "skyvern",
+        "reasons": [
+          "catalog_id",
+          "titles: skyvern",
+          "endpoints: https://api.skyvern.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.Skyvern-AI/skyvern",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "taplio",
+        "reasons": [
+          "endpoints: https://mcp.taplio.com"
+        ]
+      }
+    ],
+    "name": "io.github.TaplioOfficial/taplio-linkedin-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "vonage-documentation",
+        "reasons": [
+          "endpoints: https://documentation-mcp.vonage.dev/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.Vonage/vonage-documentation-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "wavix",
+        "reasons": [
+          "catalog_id",
+          "titles: wavix",
+          "endpoints: https://mcp.wavix.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.Wavix/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "fathom",
+        "reasons": [
+          "titles: fathom"
+        ]
+      }
+    ],
+    "name": "io.github.agencyenterprise/fathom-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "apollo-graphos",
+        "reasons": [
+          "names: io.github.apollographql/graphos-mcp-server",
+          "titles: graphos",
+          "endpoints: https://mcp.apollographql.com"
+        ]
+      }
+    ],
+    "name": "io.github.apollographql/graphos-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "apollo-io",
+        "reasons": [
+          "catalog_id",
+          "names: io.github.apolloio/apollo-mcp",
+          "titles: apolloio",
+          "endpoints: https://mcp.apollo.io/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.apolloio/apollo-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "appwrite",
+        "reasons": [
+          "catalog_id",
+          "names: io.github.appwrite/mcp",
+          "endpoints: https://mcp.appwrite.io"
+        ]
+      }
+    ],
+    "name": "io.github.appwrite/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "trello",
+        "reasons": [
+          "titles: trello"
+        ]
+      }
+    ],
+    "name": "io.github.ashwaniarya/trello-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "bitrise",
+        "reasons": [
+          "catalog_id",
+          "names: io.github.bitrise-io/bitrise-mcp",
+          "titles: bitrise",
+          "endpoints: https://mcp.bitrise.io"
+        ]
+      }
+    ],
+    "name": "io.github.bitrise-io/bitrise-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "meta-ads",
+        "reasons": [
+          "titles: metaads"
+        ]
+      }
+    ],
+    "name": "io.github.cesteral/meta-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "clerk",
+        "reasons": [
+          "catalog_id",
+          "names: io.github.clerk/mcp-server",
+          "titles: clerk",
+          "endpoints: https://mcp.clerk.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.clerk/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "cloudinary-asset-management",
+        "reasons": [
+          "catalog_id",
+          "titles: cloudinaryassetmanagement",
+          "endpoints: https://asset-management.mcp.cloudinary.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.cloudinary/asset-management-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "inbox-zero",
+        "reasons": [
+          "catalog_id",
+          "titles: inboxzero",
+          "endpoints: https://www.getinboxzero.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.elie222/inbox-zero",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "sentry",
+        "reasons": [
+          "endpoints: https://mcp.sentry.dev/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.getsentry/sentry-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "github",
+        "reasons": [
+          "catalog_id",
+          "titles: github",
+          "endpoints: https://api.githubcopilot.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.github/github-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "grafana-cloud",
+        "reasons": [
+          "endpoints: https://mcp.grafana.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.grafana/mcp-grafana",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "financial-modeling-prep",
+        "reasons": [
+          "titles: financialmodelingprep"
+        ]
+      }
+    ],
+    "name": "io.github.imbenrabi/financial-modeling-prep-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "make",
+        "reasons": [
+          "catalog_id",
+          "titles: make"
+        ]
+      }
+    ],
+    "name": "io.github.integromat/make",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "gitlab",
+        "reasons": [
+          "titles: gitlab"
+        ]
+      }
+    ],
+    "name": "io.github.jmrplens/gitlab-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-sheets",
+        "reasons": [
+          "titles: googlesheets"
+        ]
+      }
+    ],
+    "name": "io.github.joshuawhite389/google-sheets-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "slack",
+        "reasons": [
+          "titles: slack"
+        ]
+      }
+    ],
+    "name": "io.github.jtalk22/slack-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "mapbox",
+        "reasons": [
+          "catalog_id",
+          "endpoints: https://mcp.mapbox.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.mapbox/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "consensus",
+        "reasons": [
+          "catalog_id"
+        ]
+      }
+    ],
+    "name": "io.github.masterblaster14/consensus",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "elevenlabs",
+        "reasons": [
+          "catalog_id",
+          "titles: elevenlabs"
+        ]
+      }
+    ],
+    "name": "io.github.mcp-dir/elevenlabs-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "mercado-pago",
+        "reasons": [
+          "titles: mercadopago"
+        ]
+      }
+    ],
+    "name": "io.github.mcp-dir/mercadopago-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "neon",
+        "reasons": [
+          "titles: neon"
+        ]
+      }
+    ],
+    "name": "io.github.mcp-dir/neon-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "stripe",
+        "reasons": [
+          "catalog_id",
+          "titles: stripe"
+        ]
+      }
+    ],
+    "name": "io.github.mcp-dir/stripe-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "supabase",
+        "reasons": [
+          "catalog_id",
+          "titles: supabase"
+        ]
+      }
+    ],
+    "name": "io.github.mcp-dir/supabase-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "mem",
+        "reasons": [
+          "catalog_id",
+          "titles: mem",
+          "endpoints: https://mcp.mem.ai/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.mem-labs/mem",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "miro",
+        "reasons": [
+          "catalog_id",
+          "titles: miro",
+          "endpoints: https://mcp.miro.com"
+        ]
+      }
+    ],
+    "name": "io.github.miroapp/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "monte-carlo",
+        "reasons": [
+          "catalog_id",
+          "titles: montecarlo",
+          "endpoints: https://mcp.getmontecarlo.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.monte-carlo-data/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "new-relic",
+        "reasons": [
+          "titles: newrelic",
+          "endpoints: https://mcp.newrelic.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.newrelic-partners/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "activecampaign",
+        "reasons": [
+          "catalog_id",
+          "titles: activecampaign"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/activecampaign",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "airtable",
+        "reasons": [
+          "catalog_id",
+          "titles: airtable"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/airtable",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "amplitude",
+        "reasons": [
+          "catalog_id",
+          "titles: amplitude"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/amplitude",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "asana",
+        "reasons": [
+          "catalog_id",
+          "titles: asana"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/asana",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "blockscout",
+        "reasons": [
+          "catalog_id",
+          "titles: blockscout"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/blockscout",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "box",
+        "reasons": [
+          "catalog_id",
+          "titles: box"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/box",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "calendly",
+        "reasons": [
+          "catalog_id",
+          "titles: calendly"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/calendly",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "chargebee",
+        "reasons": [
+          "catalog_id",
+          "titles: chargebee"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/chargebee",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "clickup",
+        "reasons": [
+          "catalog_id",
+          "titles: clickup"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/clickup",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "coresignal",
+        "reasons": [
+          "catalog_id",
+          "titles: coresignal"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/coresignal",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "currents",
+        "reasons": [
+          "catalog_id",
+          "titles: currents"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/currents",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "customer-io",
+        "reasons": [
+          "catalog_id",
+          "titles: customerio"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/customer-io",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "dropbox",
+        "reasons": [
+          "catalog_id",
+          "titles: dropbox"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/dropbox",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "exa",
+        "reasons": [
+          "catalog_id",
+          "titles: exa"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/exa",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "freshdesk",
+        "reasons": [
+          "catalog_id",
+          "titles: freshdesk"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/freshdesk",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "github",
+        "reasons": [
+          "catalog_id",
+          "titles: github"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/github",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "gitlab",
+        "reasons": [
+          "catalog_id",
+          "titles: gitlab"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/gitlab",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-gmail",
+        "reasons": [
+          "titles: gmail"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/gmail",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-analytics",
+        "reasons": [
+          "catalog_id",
+          "titles: googleanalytics"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/google_analytics",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-calendar",
+        "reasons": [
+          "catalog_id",
+          "titles: googlecalendar"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/google_calendar",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-docs",
+        "reasons": [
+          "catalog_id",
+          "titles: googledocs"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/google_docs",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-drive",
+        "reasons": [
+          "catalog_id",
+          "titles: googledrive"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/google_drive",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "google-sheets",
+        "reasons": [
+          "catalog_id",
+          "titles: googlesheets"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/google_sheets",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "help-scout",
+        "reasons": [
+          "catalog_id",
+          "titles: helpscout"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/help-scout",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "hubspot",
+        "reasons": [
+          "catalog_id",
+          "titles: hubspot"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/hubspot",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "hugging-face",
+        "reasons": [
+          "titles: huggingface"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/huggingface",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "intercom",
+        "reasons": [
+          "catalog_id",
+          "titles: intercom"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/intercom",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "klaviyo",
+        "reasons": [
+          "catalog_id",
+          "titles: klaviyo"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/klaviyo",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "linear",
+        "reasons": [
+          "catalog_id",
+          "titles: linear"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/linear",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "mapbox",
+        "reasons": [
+          "catalog_id",
+          "titles: mapbox"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/mapbox",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "mixpanel",
+        "reasons": [
+          "catalog_id",
+          "titles: mixpanel"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/mixpanel",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "monday",
+        "reasons": [
+          "catalog_id"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/monday",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "n8n",
+        "reasons": [
+          "catalog_id",
+          "titles: n8n"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/n8n",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "openrouter",
+        "reasons": [
+          "catalog_id",
+          "titles: openrouter"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/openrouter",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "paypal",
+        "reasons": [
+          "catalog_id",
+          "titles: paypal"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/paypal",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "posthog",
+        "reasons": [
+          "catalog_id",
+          "titles: posthog"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/posthog",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "salesforce",
+        "reasons": [
+          "catalog_id",
+          "titles: salesforce"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/salesforce",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "semrush",
+        "reasons": [
+          "catalog_id",
+          "titles: semrush"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/semrush",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "tavily",
+        "reasons": [
+          "catalog_id",
+          "titles: tavily"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/tavily",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "todoist",
+        "reasons": [
+          "catalog_id",
+          "titles: todoist"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/todoist",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "twelve-data",
+        "reasons": [
+          "titles: twelvedata"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/twelvedata",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "webflow",
+        "reasons": [
+          "catalog_id",
+          "titles: webflow"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/webflow",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "zoom",
+        "reasons": [
+          "catalog_id",
+          "titles: zoom"
+        ]
+      }
+    ],
+    "name": "io.github.pipeworx-io/zoom",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "planetscale",
+        "reasons": [
+          "catalog_id",
+          "titles: planetscale",
+          "endpoints: https://mcp.pscale.dev/mcp/planetscale"
+        ]
+      }
+    ],
+    "name": "io.github.planetscale/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "process-street",
+        "reasons": [
+          "catalog_id",
+          "titles: processstreet",
+          "endpoints: https://mcp.process.st"
+        ]
+      }
+    ],
+    "name": "io.github.process-street/process-street-mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "superlist",
+        "reasons": [
+          "catalog_id",
+          "titles: superlist",
+          "endpoints: https://app.superlist.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.superlistapp/superlist",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "taskade",
+        "reasons": [
+          "titles: taskade",
+          "endpoints: https://www.taskade.com/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.taskade/mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "pg-aiguide-tiger-data",
+        "reasons": [
+          "endpoints: https://mcp.tigerdata.com/docs"
+        ]
+      }
+    ],
+    "name": "io.github.timescale/pg-aiguide",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "tomba",
+        "reasons": [
+          "titles: tomba",
+          "endpoints: https://mcp.tomba.io/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.tomba-io/tomba-mcp-server",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "context7",
+        "reasons": [
+          "catalog_id",
+          "titles: context7"
+        ]
+      }
+    ],
+    "name": "io.github.upstash/context7",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "xata",
+        "reasons": [
+          "catalog_id",
+          "titles: xata",
+          "endpoints: https://api.xata.tech/mcp"
+        ]
+      }
+    ],
+    "name": "io.github.xataio/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "zoom",
+        "reasons": [
+          "endpoints: https://mcp.zoom.us/mcp/zoom/streamable"
+        ]
+      }
+    ],
+    "name": "io.github.zoom/zoom-workspace",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  },
+  {
+    "matches": [
+      {
+        "id": "sanity",
+        "reasons": [
+          "catalog_id",
+          "titles: sanity",
+          "endpoints: https://mcp.sanity.io"
+        ]
+      }
+    ],
+    "name": "io.sanity.www/mcp",
+    "priority": {
+      "access_notes": [],
+      "ambiguous_services": [],
+      "coverage": "unknown",
+      "evidence_urls": [],
+      "target_services": [],
+      "tier": "other"
+    }
+  }
+]

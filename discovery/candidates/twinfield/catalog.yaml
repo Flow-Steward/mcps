@@ -1,0 +1,21 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "com.iwebdevelopment/twinfield", "version": "1.0.0", "status": "active", "namespace": "domain iwebdevelopment.com", "aggregator": false, "endpoints_on_namespace_domain": true, "website_on_namespace_domain": false, "streamable_http_endpoints": ["https://mcp-twinfield.iwebdevelopment.com"], "declared_headers": [], "has_icon": false}
+revision: 1
+source:
+  registry: com.iwebdevelopment/twinfield
+title: twinfield
+description: 'Twinfield AI Connect: hosted MCP server for Twinfield.'
+category: TODO
+website_url: ''
+remotes:
+- id: default
+  label: com.iwebdevelopment/twinfield
+  url: https://mcp-twinfield.iwebdevelopment.com
+  allowed_hosts:
+  - mcp-twinfield.iwebdevelopment.com
+  auth:
+    mode: TODO

@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-09-22T22:22:49.246207Z",
+      "status": "active",
+      "statusChangedAt": "2026-09-22T22:22:49.246207Z",
+      "updatedAt": "2026-09-22T22:22:49.246207Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Tools to explore SumUp accounts, payments, customers, and payouts.",
+    "name": "io.github.sumup/mcp",
+    "remotes": [
+      {
+        "headers": [
+          {
+            "description": "OAuth bearer access token for authentication.",
+            "isRequired": true,
+            "isSecret": true,
+            "name": "Authorization"
+          }
+        ],
+        "type": "streamable-http",
+        "url": "https://mcp.sumup.com/mcp"
+      }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/sumup/sumup-mcp"
+    },
+    "title": "SumUp MCP Server",
+    "version": "0.1.2"
+  }
+}

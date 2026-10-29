@@ -1,0 +1,21 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "io.github.sumup/mcp", "version": "0.1.2", "status": "active", "namespace": "github account", "aggregator": false, "endpoints_on_namespace_domain": false, "website_on_namespace_domain": false, "streamable_http_endpoints": ["https://mcp.sumup.com/mcp"], "declared_headers": ["Authorization"], "has_icon": false}
+revision: 1
+source:
+  registry: io.github.sumup/mcp
+title: SumUp MCP Server
+description: Tools to explore SumUp accounts, payments, customers, and payouts.
+category: TODO
+website_url: ''
+remotes:
+- id: default
+  label: SumUp MCP Server
+  url: https://mcp.sumup.com/mcp
+  allowed_hosts:
+  - mcp.sumup.com
+  auth:
+    mode: TODO

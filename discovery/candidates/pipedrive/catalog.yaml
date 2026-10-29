@@ -1,0 +1,21 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "io.github.pipeworx-io/pipedrive", "version": "0.2.0", "status": "active", "namespace": "github account", "aggregator": false, "endpoints_on_namespace_domain": false, "website_on_namespace_domain": false, "streamable_http_endpoints": ["https://gateway.pipeworx.io/pipedrive/mcp"], "declared_headers": [], "has_icon": false}
+revision: 1
+source:
+  registry: io.github.pipeworx-io/pipedrive
+title: Pipedrive
+description: Pipedrive MCP Pack — wraps the Pipedrive REST API v1
+category: TODO
+website_url: https://pipeworx.io/packs/pipedrive
+remotes:
+- id: default
+  label: Pipedrive
+  url: https://gateway.pipeworx.io/pipedrive/mcp
+  allowed_hosts:
+  - gateway.pipeworx.io
+  auth:
+    mode: TODO

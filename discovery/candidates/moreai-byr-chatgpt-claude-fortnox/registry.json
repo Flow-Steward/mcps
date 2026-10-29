@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-25T19:37:29.920623Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-25T19:37:29.920623Z",
+      "updatedAt": "2026-10-25T19:37:29.920623Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Fortnox MCP for accounting firms: every consultant reaches every client, and approves each change.",
+    "icons": [
+      {
+        "mimeType": "image/svg+xml",
+        "src": "https://byra.amore.cloud/ikon.svg"
+      }
+    ],
+    "name": "cloud.amore.byra/fortnox",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://byra.amore.cloud/mcp"
+      }
+    ],
+    "title": "MoreAI - Byrå ChatGPT & Claude (Fortnox)",
+    "version": "1.0.2",
+    "websiteUrl": "https://byra.amore.cloud/"
+  }
+}

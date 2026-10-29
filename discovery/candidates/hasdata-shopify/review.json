@@ -1,0 +1,49 @@
+{
+  "catalog_id": "hasdata-shopify",
+  "duplicate_matches": [],
+  "ownership": "unverified",
+  "priority": {
+    "access_notes": [],
+    "ambiguous_services": [],
+    "coverage": "extension_reported",
+    "evidence_urls": [],
+    "target_services": [
+      {
+        "id": "shopify",
+        "name": "Shopify",
+        "priority": "P3",
+        "regions": [
+          "Canada"
+        ],
+        "research_mcp_status": "official_local_server_review",
+        "research_notes": "Published extension flowsteward.shopify 0.5.1 already covers Admin catalog/inventory/orders. Shopper UCP/customer MCP is a separate scope; do not replace the extension with it. Official current migration also maps policy/FAQ to Ask MCP ask_business on /api/ucp/mcp. Published merchant extension is the relevant foundation; storefront MCP does not replace Admin order/inventory automation. No native Shopify webhook surface in the current extension."
+      }
+    ],
+    "tier": "target_unverified"
+  },
+  "queue_state": "proposed",
+  "registry_presence": "present",
+  "required_review": [
+    "Vendor-owned evidence page naming the exact endpoint",
+    "Category and description",
+    "Authentication and access restrictions",
+    "Square PNG icon",
+    "Duplicate matches"
+  ],
+  "signals": {
+    "aggregator": false,
+    "declared_headers": [
+      "x-api-key"
+    ],
+    "endpoints_on_namespace_domain": true,
+    "has_icon": false,
+    "name": "com.hasdata/shopify",
+    "namespace": "domain hasdata.com",
+    "status": "active",
+    "streamable_http_endpoints": [
+      "https://mcp.hasdata.com/mcp?apis=shopify"
+    ],
+    "version": "1.0.3",
+    "website_on_namespace_domain": true
+  }
+}

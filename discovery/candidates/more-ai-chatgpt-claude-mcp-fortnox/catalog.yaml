@@ -1,0 +1,22 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "cloud.amore.accounting/fortnox", "version": "1.0.2", "status": "active", "namespace": "domain accounting.amore.cloud", "aggregator": false, "endpoints_on_namespace_domain": true, "website_on_namespace_domain": true, "streamable_http_endpoints": ["https://accounting.amore.cloud/mcp"], "declared_headers": [], "has_icon": true}
+revision: 1
+source:
+  registry: cloud.amore.accounting/fortnox
+title: More AI - ChatGPT & Claude MCP (Fortnox)
+description: 'Fortnox MCP server: ask ChatGPT, Claude, Grok or Gemini about your books. You approve every
+  change.'
+category: TODO
+website_url: https://accounting.amore.cloud/fortnox-mcp/
+remotes:
+- id: default
+  label: More AI - ChatGPT & Claude MCP (Fortnox)
+  url: https://accounting.amore.cloud/mcp
+  allowed_hosts:
+  - accounting.amore.cloud
+  auth:
+    mode: TODO

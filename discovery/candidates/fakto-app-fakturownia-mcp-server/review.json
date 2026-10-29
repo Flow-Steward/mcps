@@ -1,0 +1,47 @@
+{
+  "catalog_id": "fakto-app-fakturownia-mcp-server",
+  "duplicate_matches": [],
+  "ownership": "unverified",
+  "priority": {
+    "access_notes": [],
+    "ambiguous_services": [],
+    "coverage": "direct_catalog",
+    "evidence_urls": [],
+    "target_services": [
+      {
+        "id": "fakturownia",
+        "name": "Fakturownia",
+        "priority": "P2",
+        "regions": [
+          "Europe"
+        ],
+        "research_mcp_status": "official_remote_added",
+        "research_notes": "Owner or administrator access required. Enter the account subdomain; each account uses its own connection."
+      }
+    ],
+    "tier": "target_unverified"
+  },
+  "queue_state": "proposed",
+  "registry_presence": "present",
+  "required_review": [
+    "Vendor-owned evidence page naming the exact endpoint",
+    "Category and description",
+    "Authentication and access restrictions",
+    "Square PNG icon",
+    "Duplicate matches"
+  ],
+  "signals": {
+    "aggregator": false,
+    "declared_headers": [],
+    "endpoints_on_namespace_domain": true,
+    "has_icon": false,
+    "name": "app.fakto/fakturownia",
+    "namespace": "domain fakto.app",
+    "status": "active",
+    "streamable_http_endpoints": [
+      "https://fakto.app/fakturownia/stream"
+    ],
+    "version": "1.0.0",
+    "website_on_namespace_domain": true
+  }
+}

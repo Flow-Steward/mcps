@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-08-13T09:33:09.931103Z",
+      "status": "active",
+      "statusChangedAt": "2026-08-13T09:33:09.931103Z",
+      "updatedAt": "2026-08-13T09:33:09.931103Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Fakturownia.pl (Polish invoicing) via MCP: invoices, clients, products, warehouse. Full read-write.",
+    "name": "app.fakto/fakturownia",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://fakto.app/fakturownia/stream"
+      }
+    ],
+    "title": "Fakto.app — Fakturownia MCP Server",
+    "version": "1.0.0",
+    "websiteUrl": "https://fakto.app"
+  }
+}

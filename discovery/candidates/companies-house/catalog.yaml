@@ -1,0 +1,21 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "io.github.pipeworx-io/companies-house", "version": "0.2.0", "status": "active", "namespace": "github account", "aggregator": false, "endpoints_on_namespace_domain": false, "website_on_namespace_domain": false, "streamable_http_endpoints": ["https://gateway.pipeworx.io/companies-house/mcp"], "declared_headers": [], "has_icon": false}
+revision: 1
+source:
+  registry: io.github.pipeworx-io/companies-house
+title: Companies House
+description: Companies House MCP — UK statutory company registry (BYO key)
+category: TODO
+website_url: https://pipeworx.io/packs/companies-house
+remotes:
+- id: default
+  label: Companies House
+  url: https://gateway.pipeworx.io/companies-house/mcp
+  allowed_hosts:
+  - gateway.pipeworx.io
+  auth:
+    mode: TODO

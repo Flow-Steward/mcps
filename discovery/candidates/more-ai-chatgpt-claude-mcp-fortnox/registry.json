@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-25T19:37:28.488252Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-25T19:37:28.488252Z",
+      "updatedAt": "2026-10-25T19:37:28.488252Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Fortnox MCP server: ask ChatGPT, Claude, Grok or Gemini about your books. You approve every change.",
+    "icons": [
+      {
+        "mimeType": "image/svg+xml",
+        "src": "https://accounting.amore.cloud/ikon.svg"
+      }
+    ],
+    "name": "cloud.amore.accounting/fortnox",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://accounting.amore.cloud/mcp"
+      }
+    ],
+    "title": "More AI - ChatGPT & Claude MCP (Fortnox)",
+    "version": "1.0.2",
+    "websiteUrl": "https://accounting.amore.cloud/fortnox-mcp/"
+  }
+}

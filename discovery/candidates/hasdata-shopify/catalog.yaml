@@ -1,0 +1,21 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "com.hasdata/shopify", "version": "1.0.3", "status": "active", "namespace": "domain hasdata.com", "aggregator": false, "endpoints_on_namespace_domain": true, "website_on_namespace_domain": true, "streamable_http_endpoints": ["https://mcp.hasdata.com/mcp?apis=shopify"], "declared_headers": ["x-api-key"], "has_icon": false}
+revision: 1
+source:
+  registry: com.hasdata/shopify
+title: HasData Shopify
+description: The public product catalogue and collections of any Shopify storefront, as structured JSON.
+category: TODO
+website_url: https://hasdata.com/apis/shopify-api
+remotes:
+- id: default
+  label: HasData Shopify
+  url: https://mcp.hasdata.com/mcp?apis=shopify
+  allowed_hosts:
+  - mcp.hasdata.com
+  auth:
+    mode: TODO

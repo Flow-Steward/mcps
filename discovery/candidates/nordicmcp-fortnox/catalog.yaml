@@ -1,0 +1,21 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "eu.nordicmcp/fortnox", "version": "1.0.0", "status": "active", "namespace": "domain nordicmcp.eu", "aggregator": false, "endpoints_on_namespace_domain": true, "website_on_namespace_domain": true, "streamable_http_endpoints": ["https://nordicmcp.eu/mcp/fortnox/{token}"], "declared_headers": [], "has_icon": false}
+revision: 1
+source:
+  registry: eu.nordicmcp/fortnox
+title: NordicMCP — Fortnox
+description: 'Hosted Fortnox MCP server: ~120 tools over Fortnox API v3. OAuth2 handled by NordicMCP.'
+category: TODO
+website_url: https://nordicmcp.eu/docs/integrations/fortnox
+remotes:
+- id: default
+  label: NordicMCP — Fortnox
+  url: https://nordicmcp.eu/mcp/fortnox/{token}
+  allowed_hosts:
+  - nordicmcp.eu
+  auth:
+    mode: TODO

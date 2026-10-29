@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-28T20:05:04.156218Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-28T20:05:04.156218Z",
+      "updatedAt": "2026-10-28T20:05:04.156218Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Read Yuki administrations, open invoices, ledger balances, contacts and documents.",
+    "icons": [
+      {
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ],
+        "src": "https://usefulapi.io/icon.svg"
+      },
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ],
+        "src": "https://usefulapi.io/icon-256.png"
+      },
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "512x512"
+        ],
+        "src": "https://usefulapi.io/icon-512.png"
+      }
+    ],
+    "name": "io.usefulapi/yuki",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://yuki.usefulapi.io/mcp"
+      }
+    ],
+    "repository": {
+      "source": "github",
+      "subfolder": "servers/yuki",
+      "url": "https://github.com/m190/usefulapi-mcp"
+    },
+    "title": "Yuki MCP by usefulapi",
+    "version": "1.3.0",
+    "websiteUrl": "https://usefulapi.io/yuki/"
+  }
+}

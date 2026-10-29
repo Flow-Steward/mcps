@@ -1,0 +1,22 @@
+# Drafted by scripts/registry_sync.py add. A reviewer must:
+#   - rewrite title and description for people choosing a service (40+ characters);
+#   - set every remote's auth from the vendor's documentation (the probe below is a hint);
+#   - add official: {vendor, evidence_url} only with the vendor's own page naming the URL;
+#   - check icon.png.
+# signals: {"name": "io.github.mcp-dir/wise-mcp", "version": "0.1.0", "status": "active", "namespace": "github account", "aggregator": false, "endpoints_on_namespace_domain": false, "website_on_namespace_domain": false, "streamable_http_endpoints": ["https://api.mcp.ai/p_wise"], "declared_headers": [], "has_icon": false}
+revision: 1
+source:
+  registry: io.github.mcp-dir/wise-mcp
+title: Wise
+description: Wise (https://wise.com) MCP, multi-currency account access via Personal Token + SCA key.
+  Reads profi
+category: TODO
+website_url: ''
+remotes:
+- id: default
+  label: Wise
+  url: https://api.mcp.ai/p_wise
+  allowed_hosts:
+  - api.mcp.ai
+  auth:
+    mode: TODO

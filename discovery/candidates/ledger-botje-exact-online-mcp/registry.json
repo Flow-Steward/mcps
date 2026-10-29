@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-08-30T10:02:15.007549Z",
+      "status": "active",
+      "statusChangedAt": "2026-08-30T10:02:15.007549Z",
+      "updatedAt": "2026-08-30T10:02:15.007549Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Connect Exact Online to your AI assistant via MCP. Manage Exact Online with natural language.",
+    "name": "nl.ledgerbotje/exact-online",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://www.ledgerbotje.nl/app/mcp"
+      }
+    ],
+    "title": "Ledger Botje - Exact Online MCP",
+    "version": "1.1.4",
+    "websiteUrl": "https://ledgerbotje.nl"
+  }
+}

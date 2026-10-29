@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-08-16T20:07:08.399946Z",
+      "status": "active",
+      "statusChangedAt": "2026-08-16T20:07:08.399946Z",
+      "updatedAt": "2026-08-16T20:07:08.399946Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Hosted Fortnox MCP server: ~120 tools over Fortnox API v3. OAuth2 handled by NordicMCP.",
+    "name": "eu.nordicmcp/fortnox",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://nordicmcp.eu/mcp/fortnox/{token}",
+        "variables": {
+          "token": {
+            "description": "Your NordicMCP API token (36-char UUID) for the Fortnox integration — create one at https://nordicmcp.eu after connecting your Fortnox account",
+            "isRequired": true,
+            "isSecret": true
+          }
+        }
+      }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/pefman/nordicmcp.eu"
+    },
+    "title": "NordicMCP — Fortnox",
+    "version": "1.0.0",
+    "websiteUrl": "https://nordicmcp.eu/docs/integrations/fortnox"
+  }
+}

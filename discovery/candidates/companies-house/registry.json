@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-29T02:18:55.272038Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-29T02:18:55.272038Z",
+      "updatedAt": "2026-10-29T02:18:55.272038Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Companies House MCP — UK statutory company registry (BYO key)",
+    "name": "io.github.pipeworx-io/companies-house",
+    "packages": [
+      {
+        "environmentVariables": [
+          {
+            "description": "Optional Pipeworx API key. Without it calls are anonymous and capped daily; a free key raises the cap.",
+            "isSecret": true,
+            "name": "PIPEWORX_API_KEY"
+          }
+        ],
+        "identifier": "@pipeworx/mcp-companies-house",
+        "registryType": "npm",
+        "transport": {
+          "type": "stdio"
+        },
+        "version": "0.2.0"
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://gateway.pipeworx.io/companies-house/mcp"
+      }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/pipeworx-io/mcp-companies-house"
+    },
+    "title": "Companies House",
+    "version": "0.2.0",
+    "websiteUrl": "https://pipeworx.io/packs/companies-house"
+  }
+}

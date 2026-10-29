@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-10-28T20:04:49.549915Z",
+      "status": "active",
+      "statusChangedAt": "2026-10-28T20:04:49.549915Z",
+      "updatedAt": "2026-10-28T20:04:49.549915Z"
+    }
+  },
+  "server": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Read deals, persons, organizations, activities and pipelines; create and update CRM records.",
+    "icons": [
+      {
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ],
+        "src": "https://usefulapi.io/icon.svg"
+      },
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ],
+        "src": "https://usefulapi.io/icon-256.png"
+      },
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "512x512"
+        ],
+        "src": "https://usefulapi.io/icon-512.png"
+      }
+    ],
+    "name": "io.usefulapi/pipedrive",
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://pipedrive.usefulapi.io/mcp"
+      }
+    ],
+    "repository": {
+      "source": "github",
+      "subfolder": "servers/pipedrive",
+      "url": "https://github.com/m190/usefulapi-mcp"
+    },
+    "title": "Pipedrive MCP by usefulapi",
+    "version": "1.27.0",
+    "websiteUrl": "https://usefulapi.io/pipedrive/"
+  }
+}
