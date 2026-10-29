@@ -1,0 +1,31 @@
+# Reviewed 2026-10-29: vendor documentation and public OAuth metadata.
+# No authenticated tool execution.
+revision: 1
+title: Xero
+description: Read Xero invoices and contacts through its hosted MCP server using a
+  registered OAuth application.
+category: finance
+website_url: https://www.xero.com
+help_url: https://developer.xero.com/documentation/guides/remote-mcp/overview
+preview_note: Register a Commercial PKCE app with your client callback URL. Core or
+  higher is required for real organizations; Starter supports the demo organization.
+  Custom Connections are not supported. Default scopes read invoices and contacts;
+  other tools need additional consent.
+official:
+  vendor: Xero
+  evidence_url: https://developer.xero.com/documentation/guides/remote-mcp/overview
+remotes:
+- id: default
+  label: Xero
+  url: https://api.xero.com/mcp/v1
+  allowed_hosts:
+  - api.xero.com
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - offline_access
+    - accounting.invoices.read
+    - accounting.contacts.read
+    setup_url: https://developer.xero.com/app/manage
+    refresh_token_required: true

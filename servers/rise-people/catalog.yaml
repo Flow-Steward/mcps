@@ -1,0 +1,26 @@
+# Reviewed 2026-10-29: vendor documentation and public OAuth metadata.
+# No authenticated tool execution.
+revision: 1
+title: Rise People
+description: Read and run Rise People reports using the reporting access of the signed-in
+  user.
+category: hr
+website_url: https://risepeople.com
+help_url: https://developer.risepeople.com/mcp/
+preview_note: 'Account-by-account rollout: contact Rise if reports are unavailable.
+  Default connection is read-only reporting; saving or editing custom reports needs
+  reports:write. This is not a payroll-processing integration.'
+official:
+  vendor: Rise People
+  evidence_url: https://developer.risepeople.com/mcp/
+remotes:
+- id: default
+  label: Rise People reports
+  url: https://mcp.risepeople.com/mcp
+  allowed_hosts:
+  - mcp.risepeople.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - reports:read

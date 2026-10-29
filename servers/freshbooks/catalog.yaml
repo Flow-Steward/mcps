@@ -1,0 +1,25 @@
+# Reviewed 2026-10-29. Vendor confirms the hosted service in help_url.
+# Exact endpoint: https://claude.com/marketplace/connectors/freshbooks (Made by FreshBooks).
+# Public initialize returns 401 with FreshBooks OAuth metadata; DCR is advertised.
+# No official badge: vendor-owned exact-endpoint documentation not found. No authenticated account test.
+revision: 1
+title: FreshBooks
+description: Read FreshBooks invoices, clients and financial information through its
+  hosted, read-only connector.
+category: finance
+website_url: https://www.freshbooks.com
+help_url: https://support.freshbooks.com/hc/en-us/articles/47907329443597-How-does-the-FreshBooks-connector-in-Claude-work
+preview_note: Read-only connector; vendor help describes write access as coming soon.
+  Access follows your role across the active businesses available to the signed-in user.
+remotes:
+- id: default
+  label: FreshBooks — read-only
+  url: https://mcp.freshbooks.com/v1
+  allowed_hosts:
+  - mcp.freshbooks.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp:all:read
+    - offline_access

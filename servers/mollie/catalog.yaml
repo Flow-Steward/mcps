@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Mollie
+description: Use Mollie payment, balance, capture, invoice and payment-link tools
+  with your account permissions.
+category: finance
+website_url: https://www.mollie.com
+help_url: https://docs.mollie.com/docs/mollie-mcp-server
+preview_note: Uses OAuth client metadata. Available actions depend on the role and
+  permissions granted in Mollie.
+official:
+  vendor: Mollie
+  evidence_url: https://docs.mollie.com/docs/mollie-mcp-server
+remotes:
+- id: default
+  label: Mollie
+  url: https://mcp.mollie.com/mcp
+  allowed_hosts:
+  - mcp.mollie.com
+  auth:
+    mode: oauth2
+    client_registration: client_metadata
+    requested_scopes: []

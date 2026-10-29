@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/verteco-peppol",
+  "title": "Verteco Peppol",
+  "description": "Check Peppol participants, validate invoice XML, and send or retrieve documents through a Verteco account.",
+  "version": "1.0.0",
+  "websiteUrl": "https://peppol.verteco.digital",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://peppol.verteco.digital/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer <API key> using a key created under API keys > MCP server in the Verteco portal.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
