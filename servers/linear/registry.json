@@ -2,24 +2,44 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-08-04T09:59:17.029443Z",
+      "publishedAt": "2026-10-22T16:47:17.1938Z",
       "status": "active",
-      "statusChangedAt": "2026-08-04T09:59:17.029443Z",
-      "updatedAt": "2026-08-04T09:59:17.029443Z"
+      "statusChangedAt": "2026-10-22T16:47:17.1938Z",
+      "updatedAt": "2026-10-22T16:47:17.1938Z"
     }
   },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-    "description": "MCP server for Linear project management and issue tracking",
+    "description": "Find and manage issues, projects, and documents in your Linear workspace.",
+    "icons": [
+      {
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ],
+        "src": "https://static.linear.app/integrations/mcp/icon.svg"
+      },
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ],
+        "src": "https://static.linear.app/integrations/mcp/icon-256.png"
+      }
+    ],
     "name": "app.linear/linear",
     "remotes": [
       {
         "type": "streamable-http",
         "url": "https://mcp.linear.app/mcp"
+      },
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.linear.app/mcp/readonly"
       }
     ],
     "title": "Linear",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "websiteUrl": "https://linear.app"
   }
 }
