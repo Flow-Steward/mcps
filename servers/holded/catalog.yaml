@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Holded
+description: Query Holded business data and use the invoice, contact and management
+  tools permitted by your role.
+category: finance
+website_url: https://www.holded.com
+help_url: https://www.holded.com/developers/mcp
+preview_note: Enable API access first. Analyst is read-only; Operator and custom permissions
+  control write access.
+official:
+  vendor: Holded
+  evidence_url: https://www.holded.com/developers/mcp
+remotes:
+- id: default
+  label: Holded
+  url: https://mcp.holded.com/mcp
+  allowed_hosts:
+  - mcp.holded.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []

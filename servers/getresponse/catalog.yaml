@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: GetResponse
+description: Access GetResponse marketing tools and resources through the official
+  hosted MCP server.
+category: marketing
+website_url: https://www.getresponse.com
+help_url: https://www.getresponse.com/help/how-to-connect-getresponse-mcp-to-your-ai-application.html
+preview_note: For Starter, Marketer and Creator accounts. MAX accounts use a separate
+  account-specific endpoint supplied by GetResponse.
+official:
+  vendor: GetResponse
+  evidence_url: https://www.getresponse.com/help/how-to-connect-getresponse-mcp-to-your-ai-application.html
+remotes:
+- id: default
+  label: GetResponse
+  url: https://mcp.getresponse.com
+  allowed_hosts:
+  - mcp.getresponse.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []
