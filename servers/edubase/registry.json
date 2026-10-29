@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-10-25T15:46:27.638151Z",
+      "publishedAt": "2026-10-26T14:30:33.898463Z",
       "status": "active",
-      "statusChangedAt": "2026-10-25T15:46:27.638151Z",
-      "updatedAt": "2026-10-25T15:46:27.638151Z"
+      "statusChangedAt": "2026-10-26T14:30:33.898463Z",
+      "updatedAt": "2026-10-26T14:30:33.898463Z"
     }
   },
   "server": {
@@ -36,7 +36,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "2.0.8"
+        "version": "2.0.9"
       }
     ],
     "remotes": [
@@ -60,6 +60,6 @@
       "source": "github",
       "url": "https://github.com/EduBase/MCP"
     },
-    "version": "2.0.8"
+    "version": "2.0.9"
   }
 }
