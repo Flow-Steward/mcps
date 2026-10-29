@@ -1,0 +1,26 @@
+# Reviewed 2026-10-29: vendor documentation. No authenticated account test.
+revision: 1
+title: Odoo
+description: Read Odoo records and run the server actions exposed to MCP by your Odoo
+  administrator.
+category: operations
+website_url: https://www.odoo.com
+help_url: https://www.odoo.com/documentation/20.0/applications/productivity/ai/mcp_server.html
+preview_note: Requires Odoo 20 MCP support and administrator-enabled Dynamic Client
+  Registration. Only explicitly exposed server actions are tools. Access expires after
+  the duration selected during consent.
+official:
+  vendor: Odoo
+  evidence_url: https://www.odoo.com/documentation/20.0/applications/productivity/ai/mcp_server.html
+remotes:
+- id: default
+  label: Odoo
+  url: https://{instance_host}/mcp
+  allowed_hosts: []
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []
+  user_defined_host: true
+  field_labels:
+    instance_host: Odoo database hostname

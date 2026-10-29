@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-11.4d82c9d3",
-  "published_at": "2026-10-11T15:37:11Z",
+  "catalog_revision": "2026-10-29.03df0aac",
+  "published_at": "2026-10-29T06:29:10Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -586,21 +586,16 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+        "description": "Build and deploy backends: auth, Postgres/MySQL/vector databases, storage, functions, hosting, CDN",
         "name": "io.github.appwrite/mcp",
-        "description": "Manage Appwrite projects, databases, auth, storage, functions, and messaging; search Appwrite docs",
-        "repository": {
-          "url": "https://github.com/appwrite/mcp",
-          "source": "github"
-        },
-        "version": "1.0.10",
         "packages": [
           {
-            "registryType": "pypi",
             "identifier": "mcp-server-appwrite",
-            "version": "1.0.10",
+            "registryType": "pypi",
             "transport": {
               "type": "stdio"
-            }
+            },
+            "version": "1.0.22"
           }
         ],
         "remotes": [
@@ -609,14 +604,19 @@
             "url": "https://mcp.appwrite.io/"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/appwrite/mcp"
+        },
+        "version": "1.0.22",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 1,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "1.0.10"
+              "version": "1.0.22"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -787,17 +787,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:29:10Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-21T00:30:51.523506Z",
           "status": "active",
-          "statusChangedAt": "2026-10-09T10:22:33.327675Z",
-          "publishedAt": "2026-10-09T10:22:33.327675Z",
-          "updatedAt": "2026-10-09T10:22:33.327675Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-21T00:30:51.523506Z",
+          "updatedAt": "2026-10-21T00:30:51.523506Z"
         }
       }
     },
@@ -1219,6 +1219,109 @@
           "statusChangedAt": "2025-09-30T18:09:02.670593Z",
           "publishedAt": "2025-09-30T18:09:02.670593Z",
           "updatedAt": "2025-09-30T18:09:02.670593Z",
+          "isLatest": true
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "com.bird/mcp",
+        "description": "Send and receive across email, SMS, WhatsApp, and voice. One API, one contract.",
+        "title": "Bird",
+        "repository": {
+          "url": "https://github.com/messagebird/bird-ai",
+          "source": "github"
+        },
+        "version": "0.138.1",
+        "websiteUrl": "https://bird.com/docs/ai/mcp-server",
+        "icons": [
+          {
+            "src": "https://bird.com/bird-icon-512.png",
+            "mimeType": "image/png",
+            "sizes": [
+              "512x512"
+            ]
+          },
+          {
+            "src": "https://bird.com/bird-icon-256.png",
+            "mimeType": "image/png",
+            "sizes": [
+              "256x256"
+            ]
+          },
+          {
+            "src": "https://bird.com/.well-known/Bird-Avatar-Black-BIMI.svg",
+            "mimeType": "image/svg+xml",
+            "sizes": [
+              "any"
+            ]
+          }
+        ],
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.bird.com"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "bird",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "registry": "com.bird/mcp",
+              "version": "0.138.1"
+            },
+            "title": "Bird",
+            "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
+            "description": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
+            "category": "messaging",
+            "website_url": "https://bird.com",
+            "help_url": "https://bird.com/docs/ai/mcp-server",
+            "preview_note": "Hosted tools exclude sign-up and local file-upload operations. Existing media references can be used; file uploads require the local server.",
+            "keywords": [],
+            "official": {
+              "vendor": "Bird",
+              "evidence_url": "https://bird.com/docs/ai/mcp-server"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/bird/icon.png",
+              "sha256": "9724c499caeffd3dc47c4e0c9b1e0544c42bb1eefb0b04c29e96d4a34be13962",
+              "bytes": 3054,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Bird",
+                "url": "https://mcp.bird.com",
+                "allowed_hosts": [
+                  "mcp.bird.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      },
+      "_meta": {
+        "io.modelcontextprotocol.registry/official": {
+          "status": "active",
+          "statusChangedAt": "2026-10-28T15:50:58.506443Z",
+          "publishedAt": "2026-10-28T15:50:58.506443Z",
+          "updatedAt": "2026-10-28T15:50:58.506443Z",
           "isLatest": true
         }
       }
@@ -2147,6 +2250,91 @@
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
           }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.checkout/mcp",
+        "description": "Search Checkout.com docs and API reference, plus manage payments, refunds, and payment links.",
+        "title": "Checkout.com",
+        "repository": {
+          "url": "https://github.com/checkout/checkout-mcp",
+          "source": "github"
+        },
+        "version": "1.0.0",
+        "websiteUrl": "https://www.checkout.com/docs/developer-resources/checkout-com-mcp-server",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.checkout.com"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "checkout-com",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "registry": "io.github.checkout/mcp",
+              "version": "1.0.0"
+            },
+            "title": "Checkout.com",
+            "summary": "Search Checkout.com documentation and use supported payment, refund, void and payment-link tools.",
+            "description": "Search Checkout.com documentation and use supported payment, refund, void and payment-link tools.",
+            "category": "finance",
+            "website_url": "https://www.checkout.com",
+            "help_url": "https://github.com/checkout/checkout-mcp",
+            "preview_note": "Requires an active Checkout.com Dashboard account. Actions inherit your Dashboard user permissions. The published Registry record lists the production endpoint.",
+            "keywords": [],
+            "official": {
+              "vendor": "Checkout.com",
+              "evidence_url": "https://github.com/checkout/checkout-mcp"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/checkout-com/icon.png",
+              "sha256": "b9891ef805bbdea5ce4f85bdb55bd70d65e92f4fa1ee9f7335096424cd615c71",
+              "bytes": 5175,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Checkout.com",
+                "url": "https://mcp.checkout.com",
+                "allowed_hosts": [
+                  "mcp.checkout.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [
+                    "openid",
+                    "email",
+                    "mcp_full_access",
+                    "offline_access"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/checkout-com",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      },
+      "_meta": {
+        "io.modelcontextprotocol.registry/official": {
+          "status": "active",
+          "statusChangedAt": "2026-08-14T12:57:45.361601Z",
+          "publishedAt": "2026-08-14T12:57:45.361601Z",
+          "updatedAt": "2026-08-14T12:57:45.361601Z",
+          "isLatest": true
         }
       }
     },
@@ -4670,14 +4858,75 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "com.devcycle/mcp",
+        "name": "io.github.flow-steward/deepl",
+        "title": "DeepL",
+        "description": "Use DeepL translation, writing, document and glossary tools through its hosted AI connector.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.deepl.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.deepl.com/v1/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "deepl",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/deepl",
+              "version": "1.0.0"
+            },
+            "title": "DeepL",
+            "summary": "Use DeepL translation, writing, document and glossary tools through its hosted AI connector.",
+            "description": "Use DeepL translation, writing, document and glossary tools through its hosted AI connector.",
+            "category": "ai",
+            "website_url": "https://www.deepl.com",
+            "help_url": "https://support.deepl.com/hc/en-us/articles/28904115065884-Connect-DeepL-to-ChatGPT",
+            "preview_note": "Eligible DeepL API customers must contact DeepL to enable AI connectors before connecting.",
+            "keywords": [],
+            "official": {
+              "vendor": "DeepL",
+              "evidence_url": "https://support.deepl.com/hc/en-us/articles/28904115065884-Connect-DeepL-to-ChatGPT"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/deepl/icon.png",
+              "sha256": "532de6cf12c868ff539d4b276261b45595cfa486286b3c8b317cde08d047c9d2",
+              "bytes": 4853,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "DeepL",
+                "url": "https://mcp.deepl.com/v1/mcp",
+                "allowed_hosts": [
+                  "mcp.deepl.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/deepl",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "description": "DevCycle MCP server for feature flag management",
-        "repository": {
-          "url": "https://github.com/DevCycleHQ/cli",
-          "source": "github"
-        },
-        "version": "6.6.0",
-        "websiteUrl": "https://docs.devcycle.com/cli-mcp/mcp-getting-started",
+        "name": "com.devcycle/mcp",
         "remotes": [
           {
             "type": "streamable-http",
@@ -4688,14 +4937,20 @@
             "url": "https://mcp.devcycle.com/sse"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/DevCycleHQ/cli"
+        },
+        "version": "6.6.1",
+        "websiteUrl": "https://docs.devcycle.com/cli-mcp/mcp-getting-started",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "devcycle",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "com.devcycle/mcp",
-              "version": "6.6.0"
+              "version": "6.6.1"
             },
             "title": "DevCycle",
             "summary": "Create and manage DevCycle feature flags, variations, and targeting, and review audit history.",
@@ -4736,31 +4991,25 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/devcycle",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:01:47Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-14T18:43:08.982611Z",
           "status": "active",
-          "statusChangedAt": "2026-10-07T19:57:42.612908Z",
-          "publishedAt": "2026-10-07T19:57:42.612908Z",
-          "updatedAt": "2026-10-07T19:57:42.612908Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-14T18:43:08.982611Z",
+          "updatedAt": "2026-10-14T18:43:08.982611Z"
         }
       }
     },
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
-        "name": "com.dexpaprika/dexpaprika",
         "description": "DEX and on-chain data: liquidity pools, token prices, swaps, and trading volume.",
-        "title": "DexPaprika",
-        "repository": {
-          "url": "https://github.com/coinpaprika/dexpaprika-mcp",
-          "source": "github"
-        },
-        "version": "2.7.1",
+        "name": "com.dexpaprika/dexpaprika",
         "remotes": [
           {
             "type": "streamable-http",
@@ -4771,14 +5020,20 @@
             "url": "https://mcp.dexpaprika.com/sse"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/coinpaprika/dexpaprika-mcp"
+        },
+        "title": "DexPaprika",
+        "version": "2.8.0",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "dexpaprika",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "com.dexpaprika/dexpaprika",
-              "version": "2.7.1"
+              "version": "2.8.0"
             },
             "title": "DexPaprika",
             "summary": "Look up DEX pools, token prices, OHLCV data, and transactions across blockchain networks.",
@@ -4815,17 +5070,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/dexpaprika",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T05:57:52Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-14T07:17:52.860896Z",
           "status": "active",
-          "statusChangedAt": "2026-09-29T12:45:04.024248Z",
-          "publishedAt": "2026-09-29T12:45:04.024248Z",
-          "updatedAt": "2026-09-29T12:45:04.024248Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-14T07:17:52.860896Z",
+          "updatedAt": "2026-10-14T07:17:52.860896Z"
         }
       }
     },
@@ -4898,6 +5153,73 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/digitalocean",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/dinero",
+        "title": "Dinero",
+        "description": "Create Dinero invoices, vouchers and contacts and retrieve supported bookkeeping reports.",
+        "version": "1.0.0",
+        "websiteUrl": "https://dinero.dk",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.dinero.dk"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "dinero",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/dinero",
+              "version": "1.0.0"
+            },
+            "title": "Dinero",
+            "summary": "Create Dinero invoices, vouchers and contacts and retrieve supported bookkeeping reports.",
+            "description": "Create Dinero invoices, vouchers and contacts and retrieve supported bookkeeping reports.",
+            "category": "finance",
+            "website_url": "https://dinero.dk",
+            "help_url": "https://dinero.dk/funktioner/mcp/",
+            "preview_note": "Beta. Requires Dinero Pro or Total. The connection can access all companies available to the signed-in user.",
+            "keywords": [],
+            "official": {
+              "vendor": "Dinero",
+              "evidence_url": "https://dinero.dk/funktioner/mcp/"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/dinero/icon.png",
+              "sha256": "26573a6e0d8fe6b14cb88e6f71de8a552d4a2edf44f4147223388dbb5b300e56",
+              "bytes": 2038,
+              "mime_type": "image/png",
+              "size": "48x48"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Dinero",
+                "url": "https://mcp.dinero.dk",
+                "allowed_hosts": [
+                  "mcp.dinero.dk"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/dinero",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -5063,21 +5385,10 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "io.github.EduBase/MCP",
         "description": "EduBase MCP server",
-        "repository": {
-          "url": "https://github.com/EduBase/MCP",
-          "source": "github"
-        },
-        "version": "2.0.3",
+        "name": "io.github.EduBase/MCP",
         "packages": [
           {
-            "registryType": "npm",
-            "identifier": "@edubase/mcp",
-            "version": "2.0.3",
-            "transport": {
-              "type": "stdio"
-            },
             "environmentVariables": [
               {
                 "description": "The base URL of the EduBase API (default: https://www.edubase.net/api)",
@@ -5094,13 +5405,17 @@
                 "isSecret": true,
                 "name": "EDUBASE_API_SECRET"
               }
-            ]
+            ],
+            "identifier": "@edubase/mcp",
+            "registryType": "npm",
+            "transport": {
+              "type": "stdio"
+            },
+            "version": "2.0.7"
           }
         ],
         "remotes": [
           {
-            "type": "streamable-http",
-            "url": "https://www.edubase.net/mcp",
             "headers": [
               {
                 "description": "The integration app ID for EduBase",
@@ -5111,17 +5426,24 @@
                 "isSecret": true,
                 "name": "EduBase-Api-Secret"
               }
-            ]
+            ],
+            "type": "streamable-http",
+            "url": "https://www.edubase.net/mcp"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/EduBase/MCP"
+        },
+        "version": "2.0.7",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "edubase",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "io.github.EduBase/MCP",
-              "version": "2.0.3"
+              "version": "2.0.7"
             },
             "title": "EduBase",
             "summary": "Create and manage EduBase quizzes, exams, questions, users, and classes on the EduBase e-learning platform.",
@@ -5168,17 +5490,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/edubase",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:23:06Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-18T19:07:28.845934Z",
           "status": "active",
-          "statusChangedAt": "2026-09-28T21:25:06.656339Z",
-          "publishedAt": "2026-09-28T21:25:06.656339Z",
-          "updatedAt": "2026-09-28T21:25:06.656339Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-18T19:07:28.845934Z",
+          "updatedAt": "2026-10-18T19:07:28.845934Z"
         }
       }
     },
@@ -5780,6 +6102,73 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/factorial",
+        "title": "Factorial",
+        "description": "Clock in and out, manage tasks, request time off and look up colleagues in Factorial.",
+        "version": "1.0.0",
+        "websiteUrl": "https://factorialhr.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.factorialhr.com"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "factorial",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/factorial",
+              "version": "1.0.0"
+            },
+            "title": "Factorial",
+            "summary": "Clock in and out, manage tasks, request time off and look up colleagues in Factorial.",
+            "description": "Clock in and out, manage tasks, request time off and look up colleagues in Factorial.",
+            "category": "hr",
+            "website_url": "https://factorialhr.com",
+            "help_url": "https://apidoc.factorialhr.com/docs/mcp-server",
+            "preview_note": "Acts with the signed-in user's permissions. Employee-facing tools do not represent complete payroll or HR API coverage.",
+            "keywords": [],
+            "official": {
+              "vendor": "Factorial",
+              "evidence_url": "https://apidoc.factorialhr.com/docs/mcp-server"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/factorial/icon.png",
+              "sha256": "1edb9f05b525d35da6d13901752a27407a4b145bf2a72bce6d8bbeac2de7dfcc",
+              "bytes": 9447,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Factorial",
+                "url": "https://mcp.factorialhr.com",
+                "allowed_hosts": [
+                  "mcp.factorialhr.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/factorial",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/factset",
         "title": "FactSet",
         "description": "Query FactSet fundamentals, consensus estimates, prices, ownership, M&A, and people data.",
@@ -5841,6 +6230,82 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/factset",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/fakturownia",
+        "title": "Fakturownia",
+        "description": "Work with invoices, customers and products in a Fakturownia account through its official MCP server.",
+        "version": "1.0.0",
+        "websiteUrl": "https://fakturownia.pl",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://{subdomain}.fakturownia.pl/mcp",
+            "variables": {
+              "subdomain": {
+                "description": "Account subdomain before .fakturownia.pl, for example acme",
+                "isRequired": true
+              }
+            }
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "fakturownia",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/fakturownia",
+              "version": "1.0.0"
+            },
+            "title": "Fakturownia",
+            "summary": "Work with invoices, customers and products in a Fakturownia account through its official MCP server.",
+            "description": "Work with invoices, customers and products in a Fakturownia account through its official MCP server.",
+            "category": "finance",
+            "website_url": "https://fakturownia.pl",
+            "help_url": "https://pomoc.fakturownia.pl/integracja-z-asystentami-ai-mcp-claude-chatgpt-i-inne",
+            "preview_note": "Owner or administrator access required. Enter the account subdomain; each account uses its own connection.",
+            "keywords": [],
+            "official": {
+              "vendor": "Fakturownia",
+              "evidence_url": "https://pomoc.fakturownia.pl/integracja-z-asystentami-ai-mcp-claude-chatgpt-i-inne"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/fakturownia/icon.png",
+              "sha256": "6569a8983ae7d7709bb9eef02f9674fef12e7ae0fd2aaa71605c6798a20dcc84",
+              "bytes": 3069,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Fakturownia",
+                "url": "https://{subdomain}.fakturownia.pl/mcp",
+                "allowed_hosts": [
+                  "*.fakturownia.pl"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                },
+                "field_labels": {
+                  "subdomain": "Fakturownia account subdomain"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fakturownia",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -6247,6 +6712,73 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/freshbooks",
+        "title": "FreshBooks",
+        "description": "Read FreshBooks invoices, clients and financial information through its hosted, read-only connector.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.freshbooks.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.freshbooks.com/v1"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "freshbooks",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/freshbooks",
+              "version": "1.0.0"
+            },
+            "title": "FreshBooks",
+            "summary": "Read FreshBooks invoices, clients and financial information through its hosted, read-only connector.",
+            "description": "Read FreshBooks invoices, clients and financial information through its hosted, read-only connector.",
+            "category": "finance",
+            "website_url": "https://www.freshbooks.com",
+            "help_url": "https://support.freshbooks.com/hc/en-us/articles/47907329443597-How-does-the-FreshBooks-connector-in-Claude-work",
+            "preview_note": "Read-only connector; vendor help describes write access as coming soon. Access follows your role across the active businesses available to the signed-in user.",
+            "keywords": [],
+            "official": null,
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/freshbooks/icon.png",
+              "sha256": "9e1bf9c9938439ab0584bfd96d5c8ade2cdd5cdf4d85365fa978161fff110f8d",
+              "bytes": 1291,
+              "mime_type": "image/png",
+              "size": "96x96"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "FreshBooks — read-only",
+                "url": "https://mcp.freshbooks.com/v1",
+                "allowed_hosts": [
+                  "mcp.freshbooks.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [
+                    "mcp:all:read",
+                    "offline_access"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/freshbooks",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/freshdesk",
         "title": "Freshdesk",
         "description": "Work with Freshdesk tickets, contacts, companies and agents from your helpdesk through the official…",
@@ -6403,32 +6935,25 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "com.fulcradynamics/context",
         "description": "Use your Fulcra secure context lake to collaborate with other agents, read and write data, and more",
-        "title": "Fulcra",
-        "repository": {
-          "url": "https://github.com/fulcradynamics/fulcra-context-mcp",
-          "source": "github"
-        },
-        "version": "1.2.0",
-        "websiteUrl": "https://fulcradynamics.com",
         "icons": [
           {
-            "src": "https://mcp.fulcradynamics.com/icon.png",
             "mimeType": "image/png",
             "sizes": [
               "256x256"
-            ]
+            ],
+            "src": "https://mcp.fulcradynamics.com/icon.png"
           }
         ],
+        "name": "com.fulcradynamics/context",
         "packages": [
           {
-            "registryType": "pypi",
             "identifier": "fulcra-context-mcp",
-            "version": "1.2.0",
+            "registryType": "pypi",
             "transport": {
               "type": "stdio"
-            }
+            },
+            "version": "1.2.5"
           }
         ],
         "remotes": [
@@ -6437,14 +6962,21 @@
             "url": "https://mcp.fulcradynamics.com/mcp"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/fulcradynamics/fulcra-context-mcp"
+        },
+        "title": "Fulcra",
+        "version": "1.2.5",
+        "websiteUrl": "https://fulcradynamics.com",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "fulcra-context",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "com.fulcradynamics/context",
-              "version": "1.2.0"
+              "version": "1.2.5"
             },
             "title": "Fulcra Context",
             "summary": "Read your personal health, workout, sleep, location, and calendar data collected in Fulcra Context.",
@@ -6490,17 +7022,84 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fulcra-context",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:21:00Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-16T22:11:41.881158Z",
           "status": "active",
-          "statusChangedAt": "2026-10-09T18:44:10.497311Z",
-          "publishedAt": "2026-10-09T18:44:10.497311Z",
-          "updatedAt": "2026-10-09T18:44:10.497311Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-16T22:11:41.881158Z",
+          "updatedAt": "2026-10-16T22:11:41.881158Z"
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/getresponse",
+        "title": "GetResponse",
+        "description": "Access GetResponse marketing tools and resources through the official hosted MCP server.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.getresponse.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.getresponse.com"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "getresponse",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/getresponse",
+              "version": "1.0.0"
+            },
+            "title": "GetResponse",
+            "summary": "Access GetResponse marketing tools and resources through the official hosted MCP server.",
+            "description": "Access GetResponse marketing tools and resources through the official hosted MCP server.",
+            "category": "marketing",
+            "website_url": "https://www.getresponse.com",
+            "help_url": "https://www.getresponse.com/help/how-to-connect-getresponse-mcp-to-your-ai-application.html",
+            "preview_note": "For Starter, Marketer and Creator accounts. MAX accounts use a separate account-specific endpoint supplied by GetResponse.",
+            "keywords": [],
+            "official": {
+              "vendor": "GetResponse",
+              "evidence_url": "https://www.getresponse.com/help/how-to-connect-getresponse-mcp-to-your-ai-application.html"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/getresponse/icon.png",
+              "sha256": "766c111f3c55965558984c5fcf5f8b122946a7084c3c3448447271e6350fb475",
+              "bytes": 6096,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "GetResponse",
+                "url": "https://mcp.getresponse.com",
+                "allowed_hosts": [
+                  "mcp.getresponse.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/getresponse",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
         }
       }
     },
@@ -8504,6 +9103,208 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/hex",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/holded",
+        "title": "Holded",
+        "description": "Query Holded business data and use the invoice, contact and management tools permitted by your role.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.holded.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.holded.com/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "holded",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/holded",
+              "version": "1.0.0"
+            },
+            "title": "Holded",
+            "summary": "Query Holded business data and use the invoice, contact and management tools permitted by your role.",
+            "description": "Query Holded business data and use the invoice, contact and management tools permitted by your role.",
+            "category": "finance",
+            "website_url": "https://www.holded.com",
+            "help_url": "https://www.holded.com/developers/mcp",
+            "preview_note": "Enable API access first. Analyst is read-only; Operator and custom permissions control write access.",
+            "keywords": [],
+            "official": {
+              "vendor": "Holded",
+              "evidence_url": "https://www.holded.com/developers/mcp"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/holded/icon.png",
+              "sha256": "188277f42ccb0e4294d1f53e9e260b41e4e3b124e86c9c0904b0a05a5db2de23",
+              "bytes": 5096,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Holded",
+                "url": "https://mcp.holded.com/mcp",
+                "allowed_hosts": [
+                  "mcp.holded.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/holded",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/hootsuite",
+        "title": "Hootsuite",
+        "description": "Connect Hootsuite Perch publishing, Nest social care, Lumen listening or Parliament advocacy tools.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.hootsuite.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.hootsuite.com/perch"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.hootsuite.com/nest"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.hootsuite.com/lumen"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.hootsuite.com/parliament"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "hootsuite",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/hootsuite",
+              "version": "1.0.0"
+            },
+            "title": "Hootsuite",
+            "summary": "Connect Hootsuite Perch publishing, Nest social care, Lumen listening or Parliament advocacy tools.",
+            "description": "Connect Hootsuite Perch publishing, Nest social care, Lumen listening or Parliament advocacy tools.",
+            "category": "marketing",
+            "website_url": "https://www.hootsuite.com",
+            "help_url": "https://www.hootsuite.com/integrations/mcp",
+            "preview_note": "Requires the corresponding product entitlement and workspace permissions; Lumen needs a Talkwalker license. Network data exclusions and tool restrictions apply. Nest does not provide public replies. Verify required networks and actions before use.",
+            "keywords": [],
+            "official": {
+              "vendor": "Hootsuite",
+              "evidence_url": "https://www.hootsuite.com/integrations/mcp"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/hootsuite/icon.png",
+              "sha256": "41601e989e18a388837f44a950456079ef17b85031aaa3cbd13ff60c3193660c",
+              "bytes": 7681,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Hootsuite Perch",
+                "url": "https://mcp.hootsuite.com/perch",
+                "allowed_hosts": [
+                  "mcp.hootsuite.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [
+                    "offline"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              },
+              {
+                "remote_id": "nest",
+                "label": "Hootsuite Nest",
+                "url": "https://mcp.hootsuite.com/nest",
+                "allowed_hosts": [
+                  "mcp.hootsuite.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [
+                    "offline"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              },
+              {
+                "remote_id": "lumen",
+                "label": "Hootsuite Lumen",
+                "url": "https://mcp.hootsuite.com/lumen",
+                "allowed_hosts": [
+                  "mcp.hootsuite.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [
+                    "projects"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              },
+              {
+                "remote_id": "parliament",
+                "label": "Hootsuite Parliament",
+                "url": "https://mcp.hootsuite.com/parliament",
+                "allowed_hosts": [
+                  "mcp.hootsuite.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [
+                    "offline"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/hootsuite",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -12283,6 +13084,73 @@
     },
     {
       "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/mollie",
+        "title": "Mollie",
+        "description": "Use Mollie payment, balance, capture, invoice and payment-link tools with your account permissions.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.mollie.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.mollie.com/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "mollie",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/mollie",
+              "version": "1.0.0"
+            },
+            "title": "Mollie",
+            "summary": "Use Mollie payment, balance, capture, invoice and payment-link tools with your account permissions.",
+            "description": "Use Mollie payment, balance, capture, invoice and payment-link tools with your account permissions.",
+            "category": "finance",
+            "website_url": "https://www.mollie.com",
+            "help_url": "https://docs.mollie.com/docs/mollie-mcp-server",
+            "preview_note": "Uses OAuth client metadata. Available actions depend on the role and permissions granted in Mollie.",
+            "keywords": [],
+            "official": {
+              "vendor": "Mollie",
+              "evidence_url": "https://docs.mollie.com/docs/mollie-mcp-server"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/mollie/icon.png",
+              "sha256": "f5bcc55556f2a4b7f051a8f952c710aefe36b57e9b215233abee2fe10814d96c",
+              "bytes": 4132,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Mollie",
+                "url": "https://mcp.mollie.com/mcp",
+                "allowed_hosts": [
+                  "mcp.mollie.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "client_metadata",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/mollie",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
         "description": "MCP server for monday.com integration.",
         "name": "com.monday/monday.com",
@@ -12394,6 +13262,93 @@
           "status": "active",
           "statusChangedAt": "2025-10-23T14:57:35.277178Z",
           "updatedAt": "2025-10-23T14:57:35.277178Z"
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/moneybird",
+        "title": "Moneybird",
+        "description": "Read Moneybird accounting data or create and update invoices, contacts and other supported records.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.moneybird.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://moneybird.com/mcp/v1/read_only"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://moneybird.com/mcp/v1/read_write"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "moneybird",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/moneybird",
+              "version": "1.0.0"
+            },
+            "title": "Moneybird",
+            "summary": "Read Moneybird accounting data or create and update invoices, contacts and other supported records.",
+            "description": "Read Moneybird accounting data or create and update invoices, contacts and other supported records.",
+            "category": "finance",
+            "website_url": "https://www.moneybird.com",
+            "help_url": "https://developer.moneybird.com/tools/mcp",
+            "preview_note": "Choose an administration during OAuth. The read-write endpoint does not support deleting records.",
+            "keywords": [],
+            "official": {
+              "vendor": "Moneybird",
+              "evidence_url": "https://developer.moneybird.com/tools/mcp"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/moneybird/icon.png",
+              "sha256": "a07aeac17401fc91cd5cc705902564729471b7f378f2e067a5037ce3e0b47f2d",
+              "bytes": 6989,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Moneybird — read-only",
+                "url": "https://moneybird.com/mcp/v1/read_only",
+                "allowed_hosts": [
+                  "moneybird.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              },
+              {
+                "remote_id": "read-write",
+                "label": "Moneybird — read-write",
+                "url": "https://moneybird.com/mcp/v1/read_write",
+                "allowed_hosts": [
+                  "moneybird.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/moneybird",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
         }
       }
     },
@@ -13590,6 +14545,80 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/odoo",
+        "title": "Odoo",
+        "description": "Read Odoo records and run the server actions exposed to MCP by your Odoo administrator.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.odoo.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://{instance_host}/mcp",
+            "variables": {
+              "instance_host": {
+                "description": "Hostname of your Odoo database, without https:// or a path",
+                "isRequired": true
+              }
+            }
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "odoo",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/odoo",
+              "version": "1.0.0"
+            },
+            "title": "Odoo",
+            "summary": "Read Odoo records and run the server actions exposed to MCP by your Odoo administrator.",
+            "description": "Read Odoo records and run the server actions exposed to MCP by your Odoo administrator.",
+            "category": "operations",
+            "website_url": "https://www.odoo.com",
+            "help_url": "https://www.odoo.com/documentation/20.0/applications/productivity/ai/mcp_server.html",
+            "preview_note": "Requires Odoo 20 MCP support and administrator-enabled Dynamic Client Registration. Only explicitly exposed server actions are tools. Access expires after the duration selected during consent.",
+            "keywords": [],
+            "official": {
+              "vendor": "Odoo",
+              "evidence_url": "https://www.odoo.com/documentation/20.0/applications/productivity/ai/mcp_server.html"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/odoo/icon.png",
+              "sha256": "f4c8a20131580f1293de9610675fe16eeea9478c82a91d1f60439dbb2c7c779b",
+              "bytes": 715,
+              "mime_type": "image/png",
+              "size": "32x32"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Odoo",
+                "url": "https://{instance_host}/mcp",
+                "allowed_hosts": [],
+                "user_defined_host": true,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                },
+                "field_labels": {
+                  "instance_host": "Odoo database hostname"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/odoo",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/open-targets-platform",
         "title": "Open Targets Platform",
         "description": "Query Open Targets data on drug targets, diseases, target-disease associations, evidence, and known…",
@@ -14500,6 +15529,73 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/pennylane",
+        "title": "Pennylane",
+        "description": "Read accounting records, invoices, transactions and financial reports from Pennylane.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.pennylane.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.pennylane.com/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "pennylane",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/pennylane",
+              "version": "1.0.0"
+            },
+            "title": "Pennylane",
+            "summary": "Read accounting records, invoices, transactions and financial reports from Pennylane.",
+            "description": "Read accounting records, invoices, transactions and financial reports from Pennylane.",
+            "category": "finance",
+            "website_url": "https://www.pennylane.com",
+            "help_url": "https://pennylane-mcp.readme.io/docs/getting-started",
+            "preview_note": "Read-only. Cannot create invoices, record payments, reconcile transactions or file tax returns. Eligible Pennylane plan required.",
+            "keywords": [],
+            "official": {
+              "vendor": "Pennylane",
+              "evidence_url": "https://pennylane-mcp.readme.io/docs/getting-started"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/pennylane/icon.png",
+              "sha256": "9ca34647039569ce5654bf37f472b42dbbe9d804dc6d25a0b8135844514e548c",
+              "bytes": 2263,
+              "mime_type": "image/png",
+              "size": "48x48"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Pennylane",
+                "url": "https://mcp.pennylane.com/mcp",
+                "allowed_hosts": [
+                  "mcp.pennylane.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/pennylane",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/perplexity",
         "title": "Perplexity",
         "description": "Run Perplexity web search, quick answers, deep research and reasoning queries from any AI assistant.",
@@ -15090,32 +16186,19 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "com.porkbun/mcp",
         "description": "Official Porkbun MCP server: domains, DNS, SSL, hosting and Cloudflare via the Porkbun API.",
-        "title": "Porkbun (official)",
-        "repository": {
-          "url": "https://github.com/oborseth/Porkbun-MCP",
-          "source": "github"
-        },
-        "version": "0.50.0",
-        "websiteUrl": "https://porkbun.com/mcp",
         "icons": [
           {
-            "src": "https://porkbun.com/images/mcp/porkbun-connector-icon.png",
             "mimeType": "image/png",
             "sizes": [
               "1024x1024"
-            ]
+            ],
+            "src": "https://porkbun.com/images/mcp/porkbun-connector-icon.png"
           }
         ],
+        "name": "com.porkbun/mcp",
         "packages": [
           {
-            "registryType": "npm",
-            "identifier": "@porkbunllc/mcp-server",
-            "version": "0.50.0",
-            "transport": {
-              "type": "stdio"
-            },
             "environmentVariables": [
               {
                 "description": "Porkbun API key (pk1_...). Optional: the documentation tools work without it.",
@@ -15126,7 +16209,13 @@
                 "isSecret": true,
                 "name": "PORKBUN_SECRET_API_KEY"
               }
-            ]
+            ],
+            "identifier": "@porkbunllc/mcp-server",
+            "registryType": "npm",
+            "transport": {
+              "type": "stdio"
+            },
+            "version": "0.52.0"
           }
         ],
         "remotes": [
@@ -15135,14 +16224,21 @@
             "url": "https://mcp.porkbun.com/mcp"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/oborseth/Porkbun-MCP"
+        },
+        "title": "Porkbun (official)",
+        "version": "0.52.0",
+        "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.50.0"
+              "version": "0.52.0"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -15186,17 +16282,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:23:06Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-18T23:23:37.750426Z",
           "status": "active",
-          "statusChangedAt": "2026-10-09T18:56:38.734974Z",
-          "publishedAt": "2026-10-09T18:56:38.734974Z",
-          "updatedAt": "2026-10-09T18:56:38.734974Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-18T23:23:37.750426Z",
+          "updatedAt": "2026-10-18T23:23:37.750426Z"
         }
       }
     },
@@ -15703,6 +16799,93 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/pylon",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/qonto",
+        "title": "Qonto",
+        "description": "Read Qonto financial data and manage supported invoicing, transaction and card workflows.",
+        "version": "1.0.0",
+        "websiteUrl": "https://qonto.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.qonto.com/mcp"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.qonto.com/multi-organization/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "qonto",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/qonto",
+              "version": "1.0.0"
+            },
+            "title": "Qonto",
+            "summary": "Read Qonto financial data and manage supported invoicing, transaction and card workflows.",
+            "description": "Read Qonto financial data and manage supported invoicing, transaction and card workflows.",
+            "category": "finance",
+            "website_url": "https://qonto.com",
+            "help_url": "https://docs.qonto.com/mcp/install/quickstart",
+            "preview_note": "Cannot send money. Some supported actions require human approval. Multi-organization access is read-only.",
+            "keywords": [],
+            "official": {
+              "vendor": "Qonto",
+              "evidence_url": "https://docs.qonto.com/mcp/install/quickstart"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/qonto/icon.png",
+              "sha256": "3e18df97da03c440ce11c0835139ba9384c84b3ffa6624b2e10896951f0866df",
+              "bytes": 9704,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Qonto — single organization",
+                "url": "https://mcp.qonto.com/mcp",
+                "allowed_hosts": [
+                  "mcp.qonto.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              },
+              {
+                "remote_id": "multi-organization",
+                "label": "Qonto — multi-organization (read-only)",
+                "url": "https://mcp.qonto.com/multi-organization/mcp",
+                "allowed_hosts": [
+                  "mcp.qonto.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/qonto",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -16390,6 +17573,75 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/rise-people",
+        "title": "Rise People",
+        "description": "Read and run Rise People reports using the reporting access of the signed-in user.",
+        "version": "1.0.0",
+        "websiteUrl": "https://risepeople.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.risepeople.com/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "rise-people",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/rise-people",
+              "version": "1.0.0"
+            },
+            "title": "Rise People",
+            "summary": "Read and run Rise People reports using the reporting access of the signed-in user.",
+            "description": "Read and run Rise People reports using the reporting access of the signed-in user.",
+            "category": "hr",
+            "website_url": "https://risepeople.com",
+            "help_url": "https://developer.risepeople.com/mcp/",
+            "preview_note": "Account-by-account rollout: contact Rise if reports are unavailable. Default connection is read-only reporting; saving or editing custom reports needs reports:write. This is not a payroll-processing integration.",
+            "keywords": [],
+            "official": {
+              "vendor": "Rise People",
+              "evidence_url": "https://developer.risepeople.com/mcp/"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/rise-people/icon.png",
+              "sha256": "6ab1cc7fb47d5832afe6858060ed866631afd857b5e9790b9bb525143bdb2cb9",
+              "bytes": 8397,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Rise People reports",
+                "url": "https://mcp.risepeople.com/mcp",
+                "allowed_hosts": [
+                  "mcp.risepeople.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [
+                    "reports:read"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/rise-people",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/salesforce",
         "title": "Salesforce",
         "description": "Query, create, update and delete Salesforce records with the signed-in user's permissions and sharin",
@@ -16674,6 +17926,73 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/semrush",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/sendcloud",
+        "title": "Sendcloud",
+        "description": "Work with Sendcloud orders, shipping labels and other supported shipping tools.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.sendcloud.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.sendcloud.com/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "sendcloud",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/sendcloud",
+              "version": "1.0.0"
+            },
+            "title": "Sendcloud",
+            "summary": "Work with Sendcloud orders, shipping labels and other supported shipping tools.",
+            "description": "Work with Sendcloud orders, shipping labels and other supported shipping tools.",
+            "category": "operations",
+            "website_url": "https://www.sendcloud.com",
+            "help_url": "https://support.sendcloud.com/hc/en-us/articles/51464033398417-Connect-Sendcloud-to-Claude-with-MCP",
+            "preview_note": "Uses OAuth client metadata. Available carriers, services and tools depend on your Sendcloud account and shipping contracts.",
+            "keywords": [],
+            "official": {
+              "vendor": "Sendcloud",
+              "evidence_url": "https://support.sendcloud.com/hc/en-us/articles/51464033398417-Connect-Sendcloud-to-Claude-with-MCP"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/sendcloud/icon.png",
+              "sha256": "c284b071102bed1acf934cdcd7bf782040acdbeb4fb6d9eb683ddbf842b1924e",
+              "bytes": 12324,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Sendcloud",
+                "url": "https://mcp.sendcloud.com/mcp",
+                "allowed_hosts": [
+                  "mcp.sendcloud.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "client_metadata",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/sendcloud",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -17088,7 +18407,19 @@
             "headers": [
               {
                 "name": "Authorization",
-                "description": "Base64-encoded Basic Authentication API key from Settings > API Settings Enter it as: Basic <key>",
+                "description": "Enter Basic <base64(API_KEY:API_SECRET)> using credentials from Settings > API Settings.",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://eu.app.api.sinch.com/mcp",
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Enter Basic <base64(API_KEY:API_SECRET)> using credentials from Settings > API Settings.",
                 "isRequired": true,
                 "isSecret": true
               }
@@ -17098,7 +18429,7 @@
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "sinch-engage",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "catalog": "io.github.flow-steward/sinch-engage",
@@ -17109,8 +18440,8 @@
             "description": "Send SMS, manage contacts and contact groups, and run delivery and messaging reports in Sinch Engage (MessageMedia).",
             "category": "messaging",
             "website_url": "https://sinch.com/engage/",
-            "help_url": "https://support.app.sinch.com/hc/en-us/articles/16560195995663-Connect-to-the-Sinch-Engage-MCP-AU",
-            "preview_note": "",
+            "help_url": "https://support.app.sinch.com/hc/en-us/articles/16560211294223-Connect-to-the-Sinch-Engage-MCP-EU",
+            "preview_note": "Choose the account region. Requires an administrator and a verified account. Enter Basic followed by the base64 encoding of API_KEY:API_SECRET.",
             "keywords": [
               "Sinch",
               "MessageMedia",
@@ -17118,7 +18449,7 @@
             ],
             "official": {
               "vendor": "Sinch",
-              "evidence_url": "https://support.app.sinch.com/hc/en-us/articles/16560195995663-Connect-to-the-Sinch-Engage-MCP-AU"
+              "evidence_url": "https://support.app.sinch.com/hc/en-us/articles/16560211294223-Connect-to-the-Sinch-Engage-MCP-EU"
             },
             "icon": {
               "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/bf8cee5839c24aab9a0d303ef1dfbbe7c938880f/servers/sinch-engage/icon.png",
@@ -17130,7 +18461,7 @@
             "remotes": [
               {
                 "remote_id": "default",
-                "label": "Sinch Engage",
+                "label": "Sinch Engage — Australia",
                 "url": "https://au.app.api.sinch.com/mcp",
                 "allowed_hosts": [
                   "au.app.api.sinch.com"
@@ -17141,13 +18472,29 @@
                   "setup_url": "https://hub.messagemedia.com/api-settings"
                 },
                 "field_labels": {
-                  "Authorization": "Sinch API key and secret"
+                  "Authorization": "Basic authentication (base64 API key:secret)"
+                }
+              },
+              {
+                "remote_id": "eu",
+                "label": "Sinch Engage — Europe",
+                "url": "https://eu.app.api.sinch.com/mcp",
+                "allowed_hosts": [
+                  "eu.app.api.sinch.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://hub.messagemedia.com/api-settings"
+                },
+                "field_labels": {
+                  "Authorization": "Basic authentication (base64 API key:secret)"
                 }
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/sinch-engage",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -17464,6 +18811,73 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/snov-io",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/spendesk",
+        "title": "Spendesk",
+        "description": "Read Spendesk expenses and use supported spend-management actions according to company permissions.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.spendesk.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://public-api.spendesk.com/v1/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "spendesk",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/spendesk",
+              "version": "1.0.0"
+            },
+            "title": "Spendesk",
+            "summary": "Read Spendesk expenses and use supported spend-management actions according to company permissions.",
+            "description": "Read Spendesk expenses and use supported spend-management actions according to company permissions.",
+            "category": "finance",
+            "website_url": "https://www.spendesk.com",
+            "help_url": "https://developer.spendesk.com/reference/mcp-set-up-claude-chatgpt-dust",
+            "preview_note": "An administrator must enable MCP access and its permissions. Write tools are beta and disabled by default.",
+            "keywords": [],
+            "official": {
+              "vendor": "Spendesk",
+              "evidence_url": "https://developer.spendesk.com/reference/mcp-set-up-claude-chatgpt-dust"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/spendesk/icon.png",
+              "sha256": "fb949c91ca331909bea50943e0accd77a27c7c6149bf6ff0f34336469c0b5c50",
+              "bytes": 2724,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Spendesk",
+                "url": "https://public-api.spendesk.com/v1/mcp",
+                "allowed_hosts": [
+                  "public-api.spendesk.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/spendesk",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -17811,7 +19225,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.13.0"
+            "version": "0.14.0"
           }
         ],
         "remotes": [
@@ -17826,16 +19240,16 @@
           "url": "https://github.com/supabase/mcp"
         },
         "title": "Supabase",
-        "version": "0.13.0",
+        "version": "0.14.0",
         "websiteUrl": "https://supabase.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "supabase",
-            "revision": 3,
+            "revision": 4,
             "status": "active",
             "source": {
               "registry": "com.supabase/mcp",
-              "version": "0.13.0"
+              "version": "0.14.0"
             },
             "title": "Supabase",
             "summary": "Manage Supabase projects: query and change database tables, run migrations, read logs, and look up project settings.",
@@ -17894,17 +19308,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/supabase",
             "added_at": "2026-10-10T12:49:13Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:01:47Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-09-17T13:43:48.019874Z",
+          "publishedAt": "2026-10-14T15:34:03.096613Z",
           "status": "active",
-          "statusChangedAt": "2026-09-17T13:43:48.019874Z",
-          "updatedAt": "2026-09-17T13:43:48.019874Z"
+          "statusChangedAt": "2026-10-14T15:34:03.096613Z",
+          "updatedAt": "2026-10-14T15:34:03.096613Z"
         }
       }
     },
@@ -18206,36 +19620,27 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "dev.svelte/mcp",
         "description": "The official Svelte MCP server providing docs and autofixing tools for Svelte development",
-        "title": "Svelte MCP",
-        "repository": {
-          "url": "https://github.com/sveltejs/ai-tools",
-          "source": "github",
-          "id": "1054419133",
-          "subfolder": "packages/mcp-stdio"
-        },
-        "version": "0.1.26",
-        "websiteUrl": "https://svelte.dev/docs/mcp/overview",
         "icons": [
           {
-            "src": "https://mcp.svelte.dev/logo.svg",
-            "mimeType": "image/svg+xml"
+            "mimeType": "image/svg+xml",
+            "src": "https://mcp.svelte.dev/logo.svg"
           },
           {
-            "src": "https://mcp.svelte.dev/logo.png",
-            "mimeType": "image/png"
+            "mimeType": "image/png",
+            "src": "https://mcp.svelte.dev/logo.png"
           }
         ],
+        "name": "dev.svelte/mcp",
         "packages": [
           {
-            "registryType": "npm",
             "identifier": "@sveltejs/mcp",
-            "version": "0.1.26",
+            "registryType": "npm",
             "runtimeHint": "npx",
             "transport": {
               "type": "stdio"
-            }
+            },
+            "version": "0.1.27"
           }
         ],
         "remotes": [
@@ -18244,14 +19649,23 @@
             "url": "https://mcp.svelte.dev/mcp"
           }
         ],
+        "repository": {
+          "id": "1054419133",
+          "source": "github",
+          "subfolder": "packages/mcp-stdio",
+          "url": "https://github.com/sveltejs/ai-tools"
+        },
+        "title": "Svelte MCP",
+        "version": "0.1.27",
+        "websiteUrl": "https://svelte.dev/docs/mcp/overview",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "svelte",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "dev.svelte/mcp",
-              "version": "0.1.26"
+              "version": "0.1.27"
             },
             "title": "Svelte",
             "summary": "Search Svelte 5 and SvelteKit documentation and check generated Svelte code with the autofixer.",
@@ -18288,17 +19702,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/svelte",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:24:14Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-19T15:08:17.938035Z",
           "status": "active",
-          "statusChangedAt": "2026-08-07T19:40:31.652476Z",
-          "publishedAt": "2026-08-07T19:40:31.652476Z",
-          "updatedAt": "2026-08-07T19:40:31.652476Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-19T15:08:17.938035Z",
+          "updatedAt": "2026-10-19T15:08:17.938035Z"
         }
       }
     },
@@ -19270,6 +20684,73 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/tripletex",
+        "title": "Tripletex",
+        "description": "Work with supported Tripletex time entries, customers and invoicing tools through its hosted MCP server.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.tripletex.no",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.tripletex.no"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "tripletex",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/tripletex",
+              "version": "1.0.0"
+            },
+            "title": "Tripletex",
+            "summary": "Work with supported Tripletex time entries, customers and invoicing tools through its hosted MCP server.",
+            "description": "Work with supported Tripletex time entries, customers and invoicing tools through its hosted MCP server.",
+            "category": "finance",
+            "website_url": "https://www.tripletex.no",
+            "help_url": "https://github.com/Tripletex/tripletex-mcp",
+            "preview_note": "Beta with limited coverage. Interactive sign-in may need to be repeated after the session expires; beta pricing may change.",
+            "keywords": [],
+            "official": {
+              "vendor": "Tripletex",
+              "evidence_url": "https://github.com/Tripletex/tripletex-mcp"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/tripletex/icon.png",
+              "sha256": "8fb6d3b11eebf82d8a9c5d43571fcee2649ae18abac417f81fb1b644c04a0a7d",
+              "bytes": 6192,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Tripletex",
+                "url": "https://mcp.tripletex.no",
+                "allowed_hosts": [
+                  "mcp.tripletex.no"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/tripletex",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/trivago",
         "title": "trivago",
         "description": "Search hotels by destination or radius with prices from booking sites, and see destination price…",
@@ -19488,12 +20969,20 @@
           {
             "type": "streamable-http",
             "url": "https://api.typeform.com/mcp"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://api.eu.typeform.com/mcp"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://api.typeform.eu/mcp"
           }
         ],
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "typeform",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "catalog": "io.github.flow-steward/typeform",
@@ -19505,7 +20994,7 @@
             "category": "marketing",
             "website_url": "https://www.typeform.com",
             "help_url": "https://www.typeform.com/developers/mcp/",
-            "preview_note": "",
+            "preview_note": "Choose the endpoint matching your Typeform account hosting. OAuth client metadata and PKCE are used; offline access supports token refresh.",
             "keywords": [
               "Forms",
               "Surveys"
@@ -19532,7 +21021,75 @@
                 "user_defined_host": false,
                 "auth": {
                   "mode": "oauth2",
-                  "client_registration": "dcr",
+                  "client_registration": "client_metadata",
+                  "requested_scopes": [
+                    "accounts:read",
+                    "automations:read",
+                    "automations:write",
+                    "contacts:read",
+                    "contacts:write",
+                    "forms:read",
+                    "forms:write",
+                    "pages:read",
+                    "pages:write",
+                    "responses:read",
+                    "responses:write",
+                    "insights:read",
+                    "webhooks:read",
+                    "webhooks:write",
+                    "workspaces:read",
+                    "workspaces:write",
+                    "offline_access"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              },
+              {
+                "remote_id": "eu",
+                "label": "Typeform — EU-hosted account",
+                "url": "https://api.eu.typeform.com/mcp",
+                "allowed_hosts": [
+                  "api.eu.typeform.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "client_metadata",
+                  "requested_scopes": [
+                    "accounts:read",
+                    "automations:read",
+                    "automations:write",
+                    "contacts:read",
+                    "contacts:write",
+                    "forms:read",
+                    "forms:write",
+                    "pages:read",
+                    "pages:write",
+                    "responses:read",
+                    "responses:write",
+                    "insights:read",
+                    "webhooks:read",
+                    "webhooks:write",
+                    "workspaces:read",
+                    "workspaces:write",
+                    "offline_access"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              },
+              {
+                "remote_id": "eu-stack",
+                "label": "Typeform — separate EU stack",
+                "url": "https://api.typeform.eu/mcp",
+                "allowed_hosts": [
+                  "api.typeform.eu"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "client_metadata",
                   "requested_scopes": [
                     "accounts:read",
                     "automations:read",
@@ -19559,7 +21116,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/typeform",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -19786,6 +21343,78 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/verteco-peppol",
+        "title": "Verteco Peppol",
+        "description": "Check Peppol participants, validate invoice XML, and send or retrieve documents through a Verteco account.",
+        "version": "1.0.0",
+        "websiteUrl": "https://peppol.verteco.digital",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://peppol.verteco.digital/api/mcp",
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Enter Bearer <API key> using a key created under API keys > MCP server in the Verteco portal.",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "verteco-peppol",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/verteco-peppol",
+              "version": "1.0.0"
+            },
+            "title": "Verteco Peppol",
+            "summary": "Check Peppol participants, validate invoice XML, and send or retrieve documents through a Verteco account.",
+            "description": "Check Peppol participants, validate invoice XML, and send or retrieve documents through a Verteco account.",
+            "category": "finance",
+            "website_url": "https://peppol.verteco.digital",
+            "help_url": "https://peppol.verteco.digital/en/docs/developers",
+            "preview_note": "Requires a Verteco account, a company and an API key. Sending invoices requires explicit confirmation and provider onboarding. Covers this provider, not every Peppol access point or national tax system.",
+            "keywords": [],
+            "official": {
+              "vendor": "Verteco Peppol",
+              "evidence_url": "https://peppol.verteco.digital/en/docs/developers"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/verteco-peppol/icon.png",
+              "sha256": "08b098d2a0a1ba944298dbdbf79a00941198cfd7d765011ee841fa9c17a7e044",
+              "bytes": 4085,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Verteco Peppol",
+                "url": "https://peppol.verteco.digital/api/mcp",
+                "allowed_hosts": [
+                  "peppol.verteco.digital"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://peppol.verteco.digital/integracie/mcp"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/verteco-peppol",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/viator",
         "title": "Viator",
         "description": "Search Viator tours, activities, and attractions by destination and view experience details and…",
@@ -19839,6 +21468,73 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/viator",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/spiris",
+        "title": "Visma Spiris",
+        "description": "Use supported Spiris bookkeeping and invoicing tools, including invoices and payment registration.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.spiris.se",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.spiris.se/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "spiris",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/spiris",
+              "version": "1.0.0"
+            },
+            "title": "Visma Spiris",
+            "summary": "Use supported Spiris bookkeeping and invoicing tools, including invoices and payment registration.",
+            "description": "Use supported Spiris bookkeeping and invoicing tools, including invoices and payment registration.",
+            "category": "finance",
+            "website_url": "https://www.spiris.se",
+            "help_url": "https://developer.vismaonline.com/docs/spiris-mcp-server",
+            "preview_note": "Beta with a limited tool set. An administrator must accept the terms and activate MCP – Beta for each user. One company per connection.",
+            "keywords": [],
+            "official": {
+              "vendor": "Visma Spiris",
+              "evidence_url": "https://developer.vismaonline.com/docs/spiris-mcp-server"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/spiris/icon.png",
+              "sha256": "9aa08965b6ad5d8a7534669c3e9854ff2a15b926e8b007ae1fa14fc39a477906",
+              "bytes": 5298,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Visma Spiris",
+                "url": "https://mcp.spiris.se/mcp",
+                "allowed_hosts": [
+                  "mcp.spiris.se"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/spiris",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
           }
         }
       }
@@ -20632,6 +22328,78 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/xero",
+        "title": "Xero",
+        "description": "Read Xero invoices and contacts through its hosted MCP server using a registered OAuth application.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.xero.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://api.xero.com/mcp/v1"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "xero",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/xero",
+              "version": "1.0.0"
+            },
+            "title": "Xero",
+            "summary": "Read Xero invoices and contacts through its hosted MCP server using a registered OAuth application.",
+            "description": "Read Xero invoices and contacts through its hosted MCP server using a registered OAuth application.",
+            "category": "finance",
+            "website_url": "https://www.xero.com",
+            "help_url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+            "preview_note": "Register a Commercial PKCE app with your client callback URL. Core or higher is required for real organizations; Starter supports the demo organization. Custom Connections are not supported. Default scopes read invoices and contacts; other tools need additional consent.",
+            "keywords": [],
+            "official": {
+              "vendor": "Xero",
+              "evidence_url": "https://developer.xero.com/documentation/guides/remote-mcp/overview"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/be05efc13c7e082de721d555e9b5b8994502b256/servers/xero/icon.png",
+              "sha256": "15da21daed0e98448e574157c2899814591a18f650f0d9630f4842a9f190aa71",
+              "bytes": 6555,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Xero",
+                "url": "https://api.xero.com/mcp/v1",
+                "allowed_hosts": [
+                  "api.xero.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "user_supplied",
+                  "requested_scopes": [
+                    "offline_access",
+                    "accounting.invoices.read",
+                    "accounting.contacts.read"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": true,
+                  "setup_url": "https://developer.xero.com/app/manage"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/xero",
+            "added_at": "2026-10-29T05:53:42Z",
+            "updated_at": "2026-10-29T05:53:42Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/ybug",
         "title": "Ybug",
         "description": "Read and triage Ybug feedback reports: filter, change status, priority, assignee, and tags, and add…",
@@ -20916,6 +22684,6 @@
     }
   ],
   "metadata": {
-    "count": 255
+    "count": 277
   }
 }
