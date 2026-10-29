@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Tripletex
+description: Work with supported Tripletex time entries, customers and invoicing tools
+  through its hosted MCP server.
+category: finance
+website_url: https://www.tripletex.no
+help_url: https://github.com/Tripletex/tripletex-mcp
+preview_note: Beta with limited coverage. Interactive sign-in may need to be repeated
+  after the session expires; beta pricing may change.
+official:
+  vendor: Tripletex
+  evidence_url: https://github.com/Tripletex/tripletex-mcp
+remotes:
+- id: default
+  label: Tripletex
+  url: https://mcp.tripletex.no
+  allowed_hosts:
+  - mcp.tripletex.no
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []
