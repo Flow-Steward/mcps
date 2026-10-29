@@ -160,23 +160,29 @@ proposal permanently, add its exact Registry name and a nonempty reason to
 {"io.github.someone/unofficial-wrapper": "Third-party wrapper, not operated by the vendor"}
 ```
 
-The workflow resumes one open draft PR on a `registry-sync/review-*` branch, preserving pending
-draft edits and rejections, and merges current main before scanning. A merge
-conflict or incomplete Registry scan stops the run. After the PR is closed or
-merged it uses a new branch, so a retained old branch cannot block future runs.
-It detects new untracked
-proposal files as well as updates; it never force-pushes or merges the PR.
-Accepting or rejecting pending proposals frees queue slots on the next run.
-If a pending source disappears from a complete Registry listing, its draft is
-retained and flagged for review rather than silently erased.
+The workflow creates or refreshes one review PR on `registry-sync/latest`,
+rebuilt from current main. Candidate drafts and rejection reasons that should
+survive a refresh must be merged through a separate PR; the rolling branch is
+automation-owned. Accepting or rejecting pending proposals frees queue slots
+on the next run. A pending source absent from the Registry snapshot is retained
+and flagged for review when its draft already exists in main.
+
+The workflow requests review from `vasily-piksis` when creating the PR or changing
+its pending server files. Identical updates do not push or request review again.
+Set the repository Actions variable `REGISTRY_SYNC_REVIEWER` to another GitHub
+login to change the reviewer. Review-request emails follow the reviewer's GitHub
+notification settings (including the notification email and organization routes).
+After publishing the rolling PR and requesting review successfully, the workflow
+closes dated `registry-sync/YYYY-MM-DD` PRs opened by `github-actions[bot]` as
+superseded, linking to their replacement. It does not delete their branches.
+Pushes use an explicit force-with-lease; a concurrent change is rejected. If
+`main` advances during sync, rerun the workflow to regenerate revisions.
 
 Flow Steward never changes or deletes a connection a user already made because
-the catalog changed. A pull request opened by the workflow's built-in token does
-not start other workflows, so run **Validate submission** on it by hand (or close
-and reopen it) before merging. The sync workflow runs script tests before pushing
-and includes entry-validator results in the PR. Expected validation failures
-(such as a deleted Registry record) still reach review; they must be resolved
-before merging and publishing.
+the catalog changed. A PR created or updated with the built-in `GITHUB_TOKEN`
+can leave **Validate submission** waiting for approval: select **Approve
+workflows to run** before merging. See GitHub's
+[workflow triggering rules](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
 
 ## What the check refuses
 

@@ -1,6 +1,6 @@
 name: Registry sync
 
-# Refreshes listed servers and stages new remote candidates for ownership review.
+# Refreshes listed servers and discovers new remote MCP candidates for review.
 # Nothing is merged without review, and a change here never touches a
 # connection a Flow Steward user already made.
 on:
@@ -22,74 +22,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Resume the existing review branch
+      - name: Test Registry sync and publication
+        run: python -m pytest -q scripts
+      - name: Refresh listed servers and discover new candidates
+        run: python scripts/registry_sync.py sync --discover --candidate-limit 25 --report "$RUNNER_TEMP/report.md"
+      - name: Refresh the single Registry review request
         env:
           GH_TOKEN: ${{ github.token }}
+          REGISTRY_SYNC_REVIEWER: ${{ vars.REGISTRY_SYNC_REVIEWER || 'vasily-piksis' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          branch=$(gh pr list --base main --state open --limit 1000 --json headRefName \
-            --jq '[.[] | select(.headRefName | startswith("registry-sync/review-"))][0].headRefName // empty')
-          if [ -n "$branch" ]; then
-            git fetch origin "$branch"
-            git switch -c "$branch" FETCH_HEAD
-            git merge --no-edit origin/main
-          else
-            branch="registry-sync/review-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
-            git switch -c "$branch" origin/main
-          fi
-          echo "REGISTRY_REVIEW_BRANCH=$branch" >> "$GITHUB_ENV"
-      - name: Refresh listed servers and discover new candidates
-        run: python scripts/registry_sync.py sync --discover --candidate-limit 25 --report "$RUNNER_TEMP/report.md"
-      - name: Test sync and discovery
-        run: python -m pytest -q scripts
-      - name: Open a pull request when something changed
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          if [ -z "$(git status --porcelain -- servers discovery)" ]; then
-            echo "No Registry changes."
-            exit 0
-          fi
-          branch="$REGISTRY_REVIEW_BRANCH"
-          git add -- servers
-          if [ -d discovery ]; then git add -- discovery; fi
-          git commit -m "Refresh Registry records and propose new MCP candidates"
-          # Deleted records and removed upstream endpoints need a review PR even
-          # when the validator correctly blocks their publication.
-          if python scripts/build_index.py --check --base origin/main > "$RUNNER_TEMP/validation.txt" 2>&1; then
-            echo "Entry validation passed." >> "$RUNNER_TEMP/report.md"
-          else
-            {
-              echo
-              echo "**Entry validation failed. Resolve before merging:**"
-              echo '```text'
-              head -c 20000 "$RUNNER_TEMP/validation.txt"
-              echo
-              echo '```'
-            } >> "$RUNNER_TEMP/report.md"
-          fi
-          # Do not overwrite a reviewer's concurrent changes.
-          if git ls-remote --exit-code --heads origin "$branch" >/dev/null; then
-            git push origin "$branch"
-          else
-            git push --set-upstream origin "$branch"
-          fi
-          {
-            cat "$RUNNER_TEMP/report.md"
-            echo
-            echo "Check each change against the vendor's documentation before merging."
-          } > "$RUNNER_TEMP/body.md"
-          existing=$(gh pr list --base main --head "$branch" --state open --json number --jq '.[0].number // empty')
-          if [ -n "$existing" ]; then
-            gh pr edit "$existing" --body-file "$RUNNER_TEMP/body.md"
-          else
-            gh pr create --draft --base main --head "$branch" \
-              --title "Registry refresh and new MCP candidates" \
-              --body-file "$RUNNER_TEMP/body.md"
-          fi
+          python scripts/registry_sync_pr.py --report "$RUNNER_TEMP/report.md" \
+            --reviewer "$REGISTRY_SYNC_REVIEWER"
