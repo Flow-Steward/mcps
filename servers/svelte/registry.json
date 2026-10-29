@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-10-19T15:08:17.938035Z",
+      "publishedAt": "2026-10-26T17:40:15.720653Z",
       "status": "active",
-      "statusChangedAt": "2026-10-19T15:08:17.938035Z",
-      "updatedAt": "2026-10-19T15:08:17.938035Z"
+      "statusChangedAt": "2026-10-26T17:40:15.720653Z",
+      "updatedAt": "2026-10-26T17:40:15.720653Z"
     }
   },
   "server": {
@@ -30,7 +30,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "0.1.27"
+        "version": "0.1.28"
       }
     ],
     "remotes": [
@@ -46,7 +46,7 @@
       "url": "https://github.com/sveltejs/ai-tools"
     },
     "title": "Svelte MCP",
-    "version": "0.1.27",
+    "version": "0.1.28",
     "websiteUrl": "https://svelte.dev/docs/mcp/overview"
   }
 }

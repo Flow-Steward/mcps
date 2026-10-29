@@ -233,12 +233,6 @@ FS_MCP_CATALOG_URL=https://raw.githubusercontent.com/Flow-Steward/mcps/main/inde
 
 ## Maintainers
 
-[`coverage/services.json`](coverage/services.json) records the reviewed Europe,
-UK and Canada candidate scopes, source links, existing catalog/extension matches,
-and six proposed launch priorities each for UK and Canada. These are discovery
-and planning records: catalog presence does not establish full API coverage,
-unattended workflow support, regional eligibility or an authenticated account test.
-
 ```bash
 pip install -r requirements.txt
 python -m pytest -q scripts
