@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/hootsuite",
+  "title": "Hootsuite",
+  "description": "Connect Hootsuite Perch publishing, Nest social care, Lumen listening or Parliament advocacy tools.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.hootsuite.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hootsuite.com/perch"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hootsuite.com/nest"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hootsuite.com/lumen"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hootsuite.com/parliament"
+    }
+  ]
+}

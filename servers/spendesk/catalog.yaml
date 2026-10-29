@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Spendesk
+description: Read Spendesk expenses and use supported spend-management actions according
+  to company permissions.
+category: finance
+website_url: https://www.spendesk.com
+help_url: https://developer.spendesk.com/reference/mcp-set-up-claude-chatgpt-dust
+preview_note: An administrator must enable MCP access and its permissions. Write tools
+  are beta and disabled by default.
+official:
+  vendor: Spendesk
+  evidence_url: https://developer.spendesk.com/reference/mcp-set-up-claude-chatgpt-dust
+remotes:
+- id: default
+  label: Spendesk
+  url: https://public-api.spendesk.com/v1/mcp
+  allowed_hosts:
+  - public-api.spendesk.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []
