@@ -28,7 +28,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "1.2.5"
+        "version": "1.18.7"
       }
     ],
     "remotes": [
@@ -42,7 +42,7 @@
       "url": "https://github.com/fulcradynamics/fulcra-context-mcp"
     },
     "title": "Fulcra",
-    "version": "1.2.5",
+    "version": "1.18.7",
     "websiteUrl": "https://fulcradynamics.com"
   }
 }
