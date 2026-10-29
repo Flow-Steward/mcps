@@ -196,3 +196,48 @@ def test_refuses_to_publish_if_main_moves_during_sync(publication, monkeypatch):
     with pytest.raises(ValueError, match="main advanced"):
         pub.publish(report, "reviewer")
     assert state["prs"] == state["reviews"] == state["closed"] == []
+
+
+def test_untracked_discovery_alone_is_published_and_identical_runs_do_not_notify(
+    publication,
+):
+    pub, root, report, state = publication
+    draft = root / "discovery/candidates/newco/registry.json"
+    draft.parent.mkdir(parents=True)
+    draft.write_text(json.dumps(registry_record(name="com.newco/mcp")))
+    pub.publish(report, "reviewer")
+    first = git(root, "rev-parse", "HEAD")
+    assert git(root, "show", "HEAD:discovery/candidates/newco/registry.json")
+    assert len(state["prs"]) == 1
+    git(root, "switch", "main")
+    draft.parent.mkdir(parents=True, exist_ok=True)
+    draft.write_text(json.dumps(registry_record(name="com.newco/mcp")))
+    pub.publish(report, "reviewer")
+    assert git(root, "rev-parse", "origin/" + pub.BRANCH) == first
+    assert state["reviews"] == ["reviewer"]
+
+
+def test_closed_pr_with_retained_branch_does_not_block_new_discovery(
+    publication, monkeypatch
+):
+    pub, root, report, state = publication
+    refresh(root, monkeypatch, "2.0.0")
+    pub.publish(report, "reviewer")
+    state["prs"] = []  # review closed without deleting its remote branch
+    git(root, "switch", "main")
+    draft = root / "discovery/duplicates.json"
+    draft.parent.mkdir()
+    draft.write_text("[]\n")
+    pub.publish(report, "reviewer")
+    assert len(state["prs"]) == 1
+    assert git(root, "show", "HEAD:discovery/duplicates.json") == "[]"
+
+
+def test_deleted_registry_updates_can_still_reach_review(publication, monkeypatch):
+    pub, root, report, state = publication
+    monkeypatch.setattr(
+        rs, "registry_latest", lambda name: registry_record(status="deleted")
+    )
+    rs.sync_entry(root / "servers/example")
+    pub.publish(report, "reviewer")
+    assert len(state["prs"]) == 1

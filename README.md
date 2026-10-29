@@ -110,18 +110,62 @@ namespace instead of `registry.json`.
 
 ## Registry changes
 
-The **Registry sync** workflow reads the Registry once a day for every listed
-server. When a record changed — a new version, `deprecated`, `deleted` — it
-stores the new record and raises the entry's revision relative to current `main`.
-It creates or refreshes one pull request on `registry-sync/latest`, rebuilt from
-`main` each time, rather than opening a daily queue of overlapping updates.
-The branch belongs to automation; put manual catalog edits in a separate PR.
-A reviewer decides; nothing merges by itself:
+The **Registry sync** workflow reads every page of the Registry's latest-version
+listing once a day and also refreshes every listed server. When a record changed
+— a new version, `deprecated`, `deleted` — it
+stores the new record, raises the entry's revision and opens a pull request
+describing the change. A reviewer decides; nothing merges by itself:
 
 - `deprecated` stays listed and is shown as deprecated;
 - `deleted` means the Registry removed it as spam, malware or illegal content.
   The check then refuses the entry until it is removed;
 - a server that disappeared from the Registry is reported, not removed.
+
+It also proposes up to **25 pending new remote servers**, prioritizing endpoints
+on their publisher's verified namespace domain. GitHub and cross-domain publishers
+are included for ownership review when queue space remains. Known aggregators,
+inactive records and local-only servers are excluded. This is discovery from the
+MCP Registry, not a crawl of vendor websites: official MCPs absent from that
+Registry still need manual research.
+
+```bash
+python scripts/registry_sync.py sync --discover --candidate-limit 25 --report report.md
+```
+
+New proposals live in `discovery/candidates/<proposed-id>/`: the untouched
+`registry.json`, a draft `catalog.yaml`, and `review.json` with ownership signals
+and required checks. They are **excluded from index.json**. Domain alignment is
+only a priority signal: no proposal receives an Official badge or verified
+authentication automatically. Discovery does not contact candidate endpoints.
+
+Before proposing or manually adding a server, sync compares catalog IDs, Registry
+names, normalized product titles and literal remote endpoints. It checks both
+Registry and manual entries, including their reviewed endpoints. It also checks
+against the pending batch. Host case, HTTPS port 443 and trailing slashes are
+normalized; URL path case and queries are preserved. URL templates do not prove
+that two customer installations are the same service. Possible matches are
+held out of the queue and recorded with reasons in `discovery/duplicates.json`;
+a title collision requires a reviewer to decide whether the products differ.
+
+To accept a proposal, verify the vendor-owned page naming the exact MCP URL, set
+the category, description and authentication, obtain a square PNG icon, then move
+the completed folder into `servers/<id>/` (omit `review.json`). Run the catalog
+tests and validator before merging. An alternative is the existing `add` command
+to draft the entry and fetch its icon, followed by the same review. A subsequent
+discovery run removes proposals already represented in the catalog. To reject a
+proposal permanently, add its exact Registry name and a nonempty reason to
+`discovery/ignored.json`, for example:
+
+```json
+{"io.github.someone/unofficial-wrapper": "Third-party wrapper, not operated by the vendor"}
+```
+
+The workflow creates or refreshes one review PR on `registry-sync/latest`,
+rebuilt from current main. Candidate drafts and rejection reasons that should
+survive a refresh must be merged through a separate PR; the rolling branch is
+automation-owned. Accepting or rejecting pending proposals frees queue slots
+on the next run. A pending source absent from the Registry snapshot is retained
+and flagged for review when its draft already exists in main.
 
 The workflow requests review from `vasily-piksis` when creating the PR or changing
 its pending server files. Identical updates do not push or request review again.
@@ -188,12 +232,6 @@ FS_MCP_CATALOG_URL=https://raw.githubusercontent.com/Flow-Steward/mcps/main/inde
 ```
 
 ## Maintainers
-
-[`coverage/services.json`](coverage/services.json) records the reviewed Europe,
-UK and Canada candidate scopes, source links, existing catalog/extension matches,
-and six proposed launch priorities each for UK and Canada. These are discovery
-and planning records: catalog presence does not establish full API coverage,
-unattended workflow support, regional eligibility or an authenticated account test.
 
 ```bash
 pip install -r requirements.txt

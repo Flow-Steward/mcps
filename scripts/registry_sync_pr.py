@@ -16,7 +16,8 @@ from pathlib import Path
 import build_index
 
 BRANCH = "registry-sync/latest"
-TITLE = "Registry updates for listed servers"
+TITLE = "Registry updates and new MCP candidates"
+SYNC_PATHS = ("servers", "discovery")
 
 
 def run(*args: str) -> str:
@@ -35,7 +36,7 @@ def gh(*args: str) -> str:
 
 def different(ref: str) -> bool:
     result = subprocess.run(
-        ["git", "diff", "--quiet", ref, "--", "servers"], cwd=build_index.ROOT
+        ["git", "diff", "--quiet", ref, "--", *SYNC_PATHS], cwd=build_index.ROOT
     )
     if result.returncode not in (0, 1):
         result.check_returncode()
@@ -48,6 +49,15 @@ def publish(report: Path, reviewer: str) -> None:
     base = git("rev-parse", "origin/main")
     if git("rev-parse", "HEAD") != base:
         raise ValueError("sync must start from origin/main, not the previous PR branch")
+    # Include newly discovered, untracked drafts in comparisons with main and
+    # with the pending PR. git diff alone cannot see these new files.
+    paths = [
+        p
+        for p in SYNC_PATHS
+        if (build_index.ROOT / p).exists() or git("ls-files", "--", p)
+    ]
+    if paths:
+        git("add", "--", *paths)
     if not different(base):
         print("No Registry changes; no review notification sent.")
         return
@@ -81,8 +91,7 @@ def publish(report: Path, reviewer: str) -> None:
 
     if not same:
         git("switch", "-C", BRANCH)
-        git("add", "--", "servers")
-        git("commit", "-m", "Registry changes for listed servers")
+        git("commit", "-m", "Registry updates and new MCP candidates")
         problems = build_index.revision_problems("origin/main")
         if problems:
             raise ValueError("\n".join(problems))

@@ -1,7 +1,6 @@
 name: Registry sync
 
-# Reads the official MCP Registry once a day for the servers listed here and
-# opens a pull request with what changed (new versions, deprecated, deleted).
+# Refreshes listed servers and discovers new remote MCP candidates for review.
 # Nothing is merged without review, and a change here never touches a
 # connection a Flow Steward user already made.
 on:
@@ -31,8 +30,8 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Test Registry sync and publication
         run: python -m pytest -q scripts
-      - name: Refresh listed servers from the Registry
-        run: python scripts/registry_sync.py sync --report "$RUNNER_TEMP/report.md"
+      - name: Refresh listed servers and discover new candidates
+        run: python scripts/registry_sync.py sync --discover --candidate-limit 25 --report "$RUNNER_TEMP/report.md"
       - name: Refresh the single Registry review request
         env:
           GH_TOKEN: ${{ github.token }}
