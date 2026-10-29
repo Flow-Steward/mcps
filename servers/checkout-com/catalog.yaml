@@ -1,0 +1,30 @@
+# Reviewed 2026-10-29: vendor documentation and public OAuth metadata.
+# No authenticated tool execution.
+revision: 1
+title: Checkout.com
+description: Search Checkout.com documentation and use supported payment, refund,
+  void and payment-link tools.
+category: finance
+website_url: https://www.checkout.com
+help_url: https://github.com/checkout/checkout-mcp
+preview_note: Requires an active Checkout.com Dashboard account. Actions inherit your
+  Dashboard user permissions. The published Registry record lists the production endpoint.
+official:
+  vendor: Checkout.com
+  evidence_url: https://github.com/checkout/checkout-mcp
+remotes:
+- id: default
+  label: Checkout.com
+  url: https://mcp.checkout.com
+  allowed_hosts:
+  - mcp.checkout.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - email
+    - mcp_full_access
+    - offline_access
+source:
+  registry: io.github.checkout/mcp

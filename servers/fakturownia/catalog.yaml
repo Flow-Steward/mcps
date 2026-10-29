@@ -1,0 +1,26 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Fakturownia
+description: Work with invoices, customers and products in a Fakturownia account through
+  its official MCP server.
+category: finance
+website_url: https://fakturownia.pl
+help_url: https://pomoc.fakturownia.pl/integracja-z-asystentami-ai-mcp-claude-chatgpt-i-inne
+preview_note: Owner or administrator access required. Enter the account subdomain;
+  each account uses its own connection.
+official:
+  vendor: Fakturownia
+  evidence_url: https://pomoc.fakturownia.pl/integracja-z-asystentami-ai-mcp-claude-chatgpt-i-inne
+remotes:
+- id: default
+  label: Fakturownia
+  url: https://{subdomain}.fakturownia.pl/mcp
+  allowed_hosts:
+  - '*.fakturownia.pl'
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []
+  field_labels:
+    subdomain: Fakturownia account subdomain

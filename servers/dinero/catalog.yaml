@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Dinero
+description: Create Dinero invoices, vouchers and contacts and retrieve supported
+  bookkeeping reports.
+category: finance
+website_url: https://dinero.dk
+help_url: https://dinero.dk/funktioner/mcp/
+preview_note: Beta. Requires Dinero Pro or Total. The connection can access all companies
+  available to the signed-in user.
+official:
+  vendor: Dinero
+  evidence_url: https://dinero.dk/funktioner/mcp/
+remotes:
+- id: default
+  label: Dinero
+  url: https://mcp.dinero.dk
+  allowed_hosts:
+  - mcp.dinero.dk
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []
