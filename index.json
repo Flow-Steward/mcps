@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-29.5169ac32",
-  "published_at": "2026-10-29T06:46:34Z",
+  "catalog_revision": "2026-10-29.e5fe6f59",
+  "published_at": "2026-10-29T07:58:03Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -595,7 +595,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.0.2"
+            "version": "2.2.0"
           }
         ],
         "remotes": [
@@ -608,15 +608,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.0.2",
+        "version": "2.2.0",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 3,
+            "revision": 4,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.0.2"
+              "version": "2.2.0"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -787,17 +787,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:46:34Z"
+            "updated_at": "2026-10-29T07:58:03Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-28T09:18:19.441669Z",
+          "publishedAt": "2026-10-28T21:41:16.828431Z",
           "status": "active",
-          "statusChangedAt": "2026-10-28T09:18:19.441669Z",
-          "updatedAt": "2026-10-28T09:18:19.441669Z"
+          "statusChangedAt": "2026-10-28T21:41:16.828431Z",
+          "updatedAt": "2026-10-28T21:41:16.828431Z"
         }
       }
     },
@@ -1226,52 +1226,52 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "com.bird/mcp",
         "description": "Send and receive across email, SMS, WhatsApp, and voice. One API, one contract.",
-        "title": "Bird",
-        "repository": {
-          "url": "https://github.com/messagebird/bird-ai",
-          "source": "github"
-        },
-        "version": "0.138.1",
-        "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "icons": [
           {
-            "src": "https://bird.com/bird-icon-512.png",
             "mimeType": "image/png",
             "sizes": [
               "512x512"
-            ]
+            ],
+            "src": "https://bird.com/bird-icon-512.png"
           },
           {
-            "src": "https://bird.com/bird-icon-256.png",
             "mimeType": "image/png",
             "sizes": [
               "256x256"
-            ]
+            ],
+            "src": "https://bird.com/bird-icon-256.png"
           },
           {
-            "src": "https://bird.com/.well-known/Bird-Avatar-Black-BIMI.svg",
             "mimeType": "image/svg+xml",
             "sizes": [
               "any"
-            ]
+            ],
+            "src": "https://bird.com/.well-known/Bird-Avatar-Black-BIMI.svg"
           }
         ],
+        "name": "com.bird/mcp",
         "remotes": [
           {
             "type": "streamable-http",
             "url": "https://mcp.bird.com"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/messagebird/bird-ai"
+        },
+        "title": "Bird",
+        "version": "0.139.0",
+        "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.138.1"
+              "version": "0.139.0"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -1312,17 +1312,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-10-29T05:53:42Z"
+            "updated_at": "2026-10-29T07:58:03Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-29T06:40:38.427215Z",
           "status": "active",
-          "statusChangedAt": "2026-10-28T15:50:58.506443Z",
-          "publishedAt": "2026-10-28T15:50:58.506443Z",
-          "updatedAt": "2026-10-28T15:50:58.506443Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-29T06:40:38.427215Z",
+          "updatedAt": "2026-10-29T06:40:38.427215Z"
         }
       }
     },
@@ -6472,24 +6472,25 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "description": "Official Fibery MCP server: query and update your workspace from any AI client via OAuth.",
         "name": "io.github.Fibery-inc/mcp",
-        "description": "Connect AI Assistant to Fibery — operating system for orgs run by nerds.",
-        "title": "Fibery",
-        "version": "1.0.0",
         "remotes": [
           {
             "type": "streamable-http",
             "url": "https://mcp.fibery.io/mcp"
           }
         ],
+        "title": "Fibery",
+        "version": "1.1.0",
+        "websiteUrl": "https://developers.fibery.com/guides/mcp/overview",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "fibery",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "io.github.Fibery-inc/mcp",
-              "version": "1.0.0"
+              "version": "1.1.0"
             },
             "title": "Fibery",
             "summary": "Query, create, and update entities and documents in your Fibery workspace.",
@@ -6533,17 +6534,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fibery",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T07:58:03Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-28T16:37:13.89111Z",
           "status": "active",
-          "statusChangedAt": "2026-03-24T09:00:34.107458Z",
-          "publishedAt": "2026-03-24T09:00:34.107458Z",
-          "updatedAt": "2026-03-24T09:00:34.107458Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-28T16:37:13.89111Z",
+          "updatedAt": "2026-10-28T16:37:13.89111Z"
         }
       }
     },
@@ -16235,7 +16236,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.52.0"
+            "version": "0.54.0"
           }
         ],
         "remotes": [
@@ -16249,16 +16250,16 @@
           "url": "https://github.com/oborseth/Porkbun-MCP"
         },
         "title": "Porkbun (official)",
-        "version": "0.52.0",
+        "version": "0.54.0",
         "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 2,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.52.0"
+              "version": "0.54.0"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -16302,17 +16303,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:23:06Z"
+            "updated_at": "2026-10-29T07:58:03Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-18T23:23:37.750426Z",
+          "publishedAt": "2026-10-28T22:19:46.73952Z",
           "status": "active",
-          "statusChangedAt": "2026-10-18T23:23:37.750426Z",
-          "updatedAt": "2026-10-18T23:23:37.750426Z"
+          "statusChangedAt": "2026-10-28T22:19:46.73952Z",
+          "updatedAt": "2026-10-28T22:19:46.73952Z"
         }
       }
     },
