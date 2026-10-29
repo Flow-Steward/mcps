@@ -112,18 +112,33 @@ namespace instead of `registry.json`.
 
 The **Registry sync** workflow reads the Registry once a day for every listed
 server. When a record changed — a new version, `deprecated`, `deleted` — it
-stores the new record, raises the entry's revision and opens a pull request
-describing the change. A reviewer decides; nothing merges by itself:
+stores the new record and raises the entry's revision relative to current `main`.
+It creates or refreshes one pull request on `registry-sync/latest`, rebuilt from
+`main` each time, rather than opening a daily queue of overlapping updates.
+The branch belongs to automation; put manual catalog edits in a separate PR.
+A reviewer decides; nothing merges by itself:
 
 - `deprecated` stays listed and is shown as deprecated;
 - `deleted` means the Registry removed it as spam, malware or illegal content.
   The check then refuses the entry until it is removed;
 - a server that disappeared from the Registry is reported, not removed.
 
+The workflow requests review from `vasily-piksis` when creating the PR or changing
+its pending server files. Identical updates do not push or request review again.
+Set the repository Actions variable `REGISTRY_SYNC_REVIEWER` to another GitHub
+login to change the reviewer. Review-request emails follow the reviewer's GitHub
+notification settings (including the notification email and organization routes).
+After publishing the rolling PR and requesting review successfully, the workflow
+closes dated `registry-sync/YYYY-MM-DD` PRs opened by `github-actions[bot]` as
+superseded, linking to their replacement. It does not delete their branches.
+Pushes use an explicit force-with-lease; a concurrent change is rejected. If
+`main` advances during sync, rerun the workflow to regenerate revisions.
+
 Flow Steward never changes or deletes a connection a user already made because
-the catalog changed. A pull request opened by the workflow's built-in token does
-not start other workflows, so run **Validate submission** on it by hand (or close
-and reopen it) before merging.
+the catalog changed. A PR created or updated with the built-in `GITHUB_TOKEN`
+can leave **Validate submission** waiting for approval: select **Approve
+workflows to run** before merging. See GitHub's
+[workflow triggering rules](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
 
 ## What the check refuses
 
