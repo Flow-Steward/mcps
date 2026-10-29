@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-29.1788eb28",
-  "published_at": "2026-10-29T06:24:14Z",
+  "catalog_revision": "2026-10-29.03df0aac",
+  "published_at": "2026-10-29T06:29:10Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -595,7 +595,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.0.21"
+            "version": "1.0.22"
           }
         ],
         "remotes": [
@@ -608,7 +608,7 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "1.0.21",
+        "version": "1.0.22",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
@@ -616,7 +616,7 @@
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "1.0.21"
+              "version": "1.0.22"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -787,17 +787,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:24:14Z"
+            "updated_at": "2026-10-29T06:29:10Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-20T00:30:36.239386Z",
+          "publishedAt": "2026-10-21T00:30:51.523506Z",
           "status": "active",
-          "statusChangedAt": "2026-10-20T00:30:36.239386Z",
-          "updatedAt": "2026-10-20T00:30:36.239386Z"
+          "statusChangedAt": "2026-10-21T00:30:51.523506Z",
+          "updatedAt": "2026-10-21T00:30:51.523506Z"
         }
       }
     },
