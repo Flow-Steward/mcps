@@ -1,0 +1,33 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Moneybird
+description: Read Moneybird accounting data or create and update invoices, contacts
+  and other supported records.
+category: finance
+website_url: https://www.moneybird.com
+help_url: https://developer.moneybird.com/tools/mcp
+preview_note: Choose an administration during OAuth. The read-write endpoint does
+  not support deleting records.
+official:
+  vendor: Moneybird
+  evidence_url: https://developer.moneybird.com/tools/mcp
+remotes:
+- id: default
+  label: Moneybird — read-only
+  url: https://moneybird.com/mcp/v1/read_only
+  allowed_hosts:
+  - moneybird.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []
+- id: read-write
+  label: Moneybird — read-write
+  url: https://moneybird.com/mcp/v1/read_write
+  allowed_hosts:
+  - moneybird.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []

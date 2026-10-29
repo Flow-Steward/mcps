@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/rise-people",
+  "title": "Rise People",
+  "description": "Read and run Rise People reports using the reporting access of the signed-in user.",
+  "version": "1.0.0",
+  "websiteUrl": "https://risepeople.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.risepeople.com/mcp"
+    }
+  ]
+}

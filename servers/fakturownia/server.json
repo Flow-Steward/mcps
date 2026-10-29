@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/fakturownia",
+  "title": "Fakturownia",
+  "description": "Work with invoices, customers and products in a Fakturownia account through its official MCP server.",
+  "version": "1.0.0",
+  "websiteUrl": "https://fakturownia.pl",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{subdomain}.fakturownia.pl/mcp",
+      "variables": {
+        "subdomain": {
+          "description": "Account subdomain before .fakturownia.pl, for example acme",
+          "isRequired": true
+        }
+      }
+    }
+  ]
+}
