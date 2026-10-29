@@ -12,7 +12,19 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Base64-encoded Basic Authentication API key from Settings > API Settings Enter it as: Basic <key>",
+          "description": "Enter Basic <base64(API_KEY:API_SECRET)> using credentials from Settings > API Settings.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://eu.app.api.sinch.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Basic <base64(API_KEY:API_SECRET)> using credentials from Settings > API Settings.",
           "isRequired": true,
           "isSecret": true
         }

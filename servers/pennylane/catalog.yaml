@@ -1,0 +1,24 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Pennylane
+description: Read accounting records, invoices, transactions and financial reports
+  from Pennylane.
+category: finance
+website_url: https://www.pennylane.com
+help_url: https://pennylane-mcp.readme.io/docs/getting-started
+preview_note: Read-only. Cannot create invoices, record payments, reconcile transactions
+  or file tax returns. Eligible Pennylane plan required.
+official:
+  vendor: Pennylane
+  evidence_url: https://pennylane-mcp.readme.io/docs/getting-started
+remotes:
+- id: default
+  label: Pennylane
+  url: https://mcp.pennylane.com/mcp
+  allowed_hosts:
+  - mcp.pennylane.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []

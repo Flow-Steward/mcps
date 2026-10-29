@@ -1,0 +1,884 @@
+{
+  "checked_on": "2026-10-29",
+  "method": "Vendor documentation, public Registry discovery, unauthenticated initialize and OAuth metadata. No new OAuth client registration, credentials or business operations. Icons visually inspected.",
+  "account_tests_performed": false,
+  "probe_results": {
+    "https://mcp.pennylane.com/mcp": {
+      "endpoint": "https://mcp.pennylane.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.pennylane.com/.well-known/oauth-protected-resource/mcp\"",
+      "protected_resource_metadata": "https://mcp.pennylane.com/.well-known/oauth-protected-resource/mcp",
+      "authorization_server": "https://mcp.pennylane.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "mcp:account:read",
+        "mcp:changelog:read",
+        "mcp:companies:read",
+        "mcp:company:read",
+        "mcp:customer:read",
+        "mcp:customer_invoice:read",
+        "mcp:customer_payment:read",
+        "mcp:financial_report:read",
+        "mcp:firm_file:read",
+        "mcp:journal:read",
+        "mcp:ledger_account:read",
+        "mcp:ledger_entry:read",
+        "mcp:ledger_entry_line:read",
+        "mcp:product:read",
+        "mcp:supplier:read",
+        "mcp:supplier_invoice:read",
+        "mcp:supplier_payment:read",
+        "mcp:tax_return:read",
+        "mcp:transaction:read",
+        "mcp:trial_balance:read"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.holded.com/mcp": {
+      "endpoint": "https://mcp.holded.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.holded.com/.well-known/oauth-protected-resource\"",
+      "protected_resource_metadata": "https://mcp.holded.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://app.holded.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://moneybird.com/mcp/v1/read_only": {
+      "endpoint": "https://moneybird.com/mcp/v1/read_only",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://moneybird.com/.well-known/oauth-protected-resource\"",
+      "protected_resource_metadata": "https://moneybird.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://moneybird.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "sales_invoices",
+        "documents",
+        "estimates",
+        "bank",
+        "time_entries",
+        "settings"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://moneybird.com/mcp/v1/read_write": {
+      "endpoint": "https://moneybird.com/mcp/v1/read_write",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://moneybird.com/.well-known/oauth-protected-resource\"",
+      "protected_resource_metadata": "https://moneybird.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://moneybird.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "sales_invoices",
+        "documents",
+        "estimates",
+        "bank",
+        "time_entries",
+        "settings"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.spiris.se/mcp": {
+      "endpoint": "https://mcp.spiris.se/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.spiris.se/.well-known/oauth-protected-resource/mcp\"",
+      "protected_resource_metadata": "https://mcp.spiris.se/.well-known/oauth-protected-resource/mcp",
+      "authorization_server": "https://auth.mcp.spiris.se",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "mcp:ea",
+        "openid",
+        "profile",
+        "email",
+        "offline_access"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.tripletex.no": {
+      "endpoint": "https://mcp.tripletex.no",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"Missing Authorization header\", resource_metadata=\"https://mcp.tripletex.no/.well-known/oauth-protected-resource\"",
+      "protected_resource_metadata": "https://mcp.tripletex.no/.well-known/oauth-protected-resource",
+      "authorization_server": "https://mcp.tripletex.no/",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://public-api.spendesk.com/v1/mcp": {
+      "endpoint": "https://public-api.spendesk.com/v1/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://public-api.spendesk.com/.well-known/oauth-protected-resource/v1/mcp\"",
+      "protected_resource_metadata": "https://public-api.spendesk.com/.well-known/oauth-protected-resource/v1/mcp",
+      "authorization_server": "https://public-api.spendesk.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "experimental:company:read",
+        "wallet-summary:read",
+        "wallet-load:read",
+        "settlement:read",
+        "payable-attachment:read",
+        "payable:read",
+        "experimental:purchase-order:read",
+        "supplier:read",
+        "analytical-field:read",
+        "experimental:analytical-field-v2:write",
+        "cost-center:read",
+        "cost-center:manage",
+        "expense-category:read",
+        "experimental:expense-category-v2:read",
+        "experimental:expense-category-v2:write",
+        "experimental:supplier:manage",
+        "user:read",
+        "experimental:request:read",
+        "experimental:chart-of-accounts:read",
+        "experimental:chart-of-accounts:write"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.mollie.com/mcp": {
+      "endpoint": "https://mcp.mollie.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.mollie.com/.well-known/oauth-protected-resource/mcp\"",
+      "protected_resource_metadata": "https://mcp.mollie.com/.well-known/oauth-protected-resource/mcp",
+      "authorization_server": "https://my.mollie.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "balance-reports.read",
+        "balance-transfers.read",
+        "balance-transfers.write",
+        "balances.read",
+        "business-account-draft-transfers.read",
+        "business-account-draft-transfers.write",
+        "business-account-payee-verifications.write",
+        "business-account-transfers.read",
+        "business-account-transfers.write",
+        "business-accounts.read",
+        "clients.read",
+        "clients.write",
+        "customers.read",
+        "customers.write",
+        "disputes.read",
+        "disputes.write",
+        "events.read",
+        "external-accounts.read",
+        "external-accounts.write",
+        "files.read"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.qonto.com/mcp": {
+      "endpoint": "https://mcp.qonto.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.qonto.com/.well-known/oauth-protected-resource\"",
+      "protected_resource_metadata": "https://mcp.qonto.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://mcp.qonto.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.qonto.com/multi-organization/mcp": {
+      "endpoint": "https://mcp.qonto.com/multi-organization/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.qonto.com/.well-known/oauth-protected-resource/multi-organization/mcp\"",
+      "protected_resource_metadata": "https://mcp.qonto.com/.well-known/oauth-protected-resource/multi-organization/mcp",
+      "authorization_server": "https://mcp.qonto.com/multi-organization",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.sumup.com/mcp": {
+      "endpoint": "https://mcp.sumup.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"Missing Authorization header\", scope=\"offline_access email\", resource_metadata=\"https://mcp.sumup.com/.well-known/oauth-protected-resource/mcp\"",
+      "protected_resource_metadata": "https://mcp.sumup.com/.well-known/oauth-protected-resource/mcp",
+      "authorization_server": "https://auth.sumup.com",
+      "dynamic_client_registration": false,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "offline_access",
+        "members.read",
+        "members.write",
+        "merchants.read",
+        "merchants.write",
+        "roles.read",
+        "roles.write",
+        "checkouts.read",
+        "checkouts.write",
+        "customers.read",
+        "customers.write",
+        "api_keys.read",
+        "api_keys.write",
+        "receipts.read",
+        "refunds.write",
+        "transactions.read",
+        "payouts.read",
+        "readers.read",
+        "readers.write",
+        "sales.read"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "user_supplied"
+      }
+    },
+    "https://mcp.getresponse.com": {
+      "endpoint": "https://mcp.getresponse.com",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer realm=\"sse\", resource_metadata=\"https://mcp.getresponse.com/.well-known/oauth-protected-resource/sse\"",
+      "protected_resource_metadata": "https://mcp.getresponse.com/.well-known/oauth-protected-resource/sse",
+      "authorization_server": "https://mcp.getresponse.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "mcp:tools",
+        "mcp:resources"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.factorialhr.com": {
+      "endpoint": "https://mcp.factorialhr.com",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"Missing Authorization header\", resource_metadata=\"https://mcp.factorialhr.com/.well-known/oauth-protected-resource\"",
+      "protected_resource_metadata": "https://mcp.factorialhr.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://mcp.factorialhr.com/",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "one:read",
+        "one:write",
+        "company_holidays",
+        "company_legal_entities",
+        "company_locations",
+        "employees",
+        "shift_management",
+        "tasks",
+        "time_off",
+        "time_tracking"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.bird.com": {
+      "endpoint": "https://mcp.bird.com",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.bird.com/.well-known/oauth-protected-resource\"",
+      "protected_resource_metadata": "https://mcp.bird.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://platform.bird.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "access_restrictions:write",
+        "amb:write",
+        "amb_management:write",
+        "analytics:write",
+        "api_keys:write",
+        "assets:write",
+        "audit:write",
+        "competitive:write",
+        "compliance:write",
+        "domains:write",
+        "email_management:write",
+        "email_marketing:write",
+        "emails:write",
+        "esim:write",
+        "esim_credentials:write",
+        "inbox_insights:write",
+        "ip_pools:write",
+        "lookup:write",
+        "mailbox:write",
+        "mailbox_management:write"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.bird.com/dynamic": {
+      "endpoint": "https://mcp.bird.com/dynamic",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.bird.com/.well-known/oauth-protected-resource/dynamic\"",
+      "protected_resource_metadata": "https://mcp.bird.com/.well-known/oauth-protected-resource/dynamic",
+      "authorization_server": "https://platform.bird.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "access_restrictions:write",
+        "amb:write",
+        "amb_management:write",
+        "analytics:write",
+        "api_keys:write",
+        "assets:write",
+        "audit:write",
+        "competitive:write",
+        "compliance:write",
+        "domains:write",
+        "email_management:write",
+        "email_marketing:write",
+        "emails:write",
+        "esim:write",
+        "esim_credentials:write",
+        "inbox_insights:write",
+        "ip_pools:write",
+        "lookup:write",
+        "mailbox:write",
+        "mailbox_management:write"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.deepl.com/v1/mcp": {
+      "endpoint": "https://mcp.deepl.com/v1/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.deepl.com/.well-known/oauth-protected-resource\"",
+      "protected_resource_metadata": "https://mcp.deepl.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://mcp.deepl.com/",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "offline_access"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.sendcloud.com/mcp": {
+      "endpoint": "https://mcp.sendcloud.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.sendcloud.com/.well-known/oauth-protected-resource/mcp\"",
+      "protected_resource_metadata": "https://mcp.sendcloud.com/.well-known/oauth-protected-resource/mcp",
+      "authorization_server": "https://account.sendcloud.com/",
+      "dynamic_client_registration": false,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "api",
+        "offline",
+        "offline_access",
+        "openid",
+        "read:analytics",
+        "read:audit-log",
+        "read:brand",
+        "read:checkout",
+        "read:event-subscription",
+        "read:integration",
+        "read:invoice",
+        "read:notification",
+        "read:operational-settings",
+        "read:order",
+        "read:organization",
+        "read:parcel",
+        "read:pickup",
+        "read:price",
+        "read:return",
+        "read:return-settings"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "client_metadata"
+      }
+    },
+    "https://mcp.pleo.io/mcp": {
+      "endpoint": "https://mcp.pleo.io/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.pleo.io/.well-known/oauth-protected-resource\"",
+      "protected_resource_metadata": "https://mcp.pleo.io/.well-known/oauth-protected-resource",
+      "authorization_server": "https://mcp.pleo.io",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "authenticated"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.superoffice.com/mcp": {
+      "endpoint": "https://mcp.superoffice.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"Authentication failed. The provided bearer token is invalid, expired, or no longer recognized by the server. To resolve: clear authentication tokens in your MCP client and reconnect. Your client should automatically re-register and obtain new tokens.\"",
+      "protected_resource_metadata": "https://mcp.superoffice.com/.well-known/oauth-protected-resource/mcp",
+      "authorization_server": "https://mcp.superoffice.com/",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://app.personio.com/mcp": {
+      "endpoint": "https://app.personio.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://app.personio.com/.well-known/oauth-protected-resource/mcp\"",
+      "protected_resource_metadata": "https://app.personio.com/.well-known/oauth-protected-resource/mcp",
+      "authorization_server": "https://login.personio.com/",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "openid",
+        "profile",
+        "offline_access",
+        "name",
+        "given_name",
+        "family_name",
+        "nickname",
+        "email",
+        "email_verified",
+        "picture",
+        "created_at",
+        "identities",
+        "phone",
+        "address"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.dinero.dk": {
+      "endpoint": "https://mcp.dinero.dk",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.dinero.dk/.well-known/oauth-protected-resource\"",
+      "protected_resource_metadata": "https://mcp.dinero.dk/.well-known/oauth-protected-resource",
+      "authorization_server": "https://dinero.oauth.connect.visma.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "dineropublicapi:write",
+        "dineropublicapi:read",
+        "dinero_mcp:invoke_tools",
+        "offline_access"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.dinero.dk/mcp": {
+      "endpoint": "https://mcp.dinero.dk/mcp",
+      "initialize_status": 404,
+      "protected_resource_metadata": "https://mcp.dinero.dk/.well-known/oauth-protected-resource",
+      "authorization_server": "https://dinero.oauth.connect.visma.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "dineropublicapi:write",
+        "dineropublicapi:read",
+        "dinero_mcp:invoke_tools",
+        "offline_access"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.pipedrive.ai/mcp": {
+      "endpoint": "https://mcp.pipedrive.ai/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer error=\"invalid_request\", error_description=\"Unauthorized: No API token or authorization header provided.\", resource_metadata=\"https://mcp.pipedrive.ai/mcp/.well-known/oauth-protected-resource\", scope=\"activities:full admin base contact-fields:full contacts:full deal-fields:full deals:full lea",
+      "protected_resource_metadata": "https://mcp.pipedrive.ai/mcp/.well-known/oauth-protected-resource",
+      "authorization_server": "https://oauth.pipedrive.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "activities:full",
+        "admin",
+        "base",
+        "contact-fields:full",
+        "contacts:full",
+        "deal-fields:full",
+        "deals:full",
+        "leads:full",
+        "mail-sending:full",
+        "mail:full",
+        "product-fields:full",
+        "products:full",
+        "project-fields:full",
+        "projects:full",
+        "search:read",
+        "users:read"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://api.typeform.com/mcp": {
+      "endpoint": "https://api.typeform.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://api.typeform.com/.well-known/oauth-protected-resource\" scope=\"accounts:read automations:read automations:write contacts:read contacts:write forms:read forms:write pages:read pages:write responses:read responses:write insights:read packages:read subscriptions:read we",
+      "protected_resource_metadata": "https://api.typeform.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://api.typeform.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "offline_access",
+        "accounts:read",
+        "automations:read",
+        "automations:write",
+        "contacts:read",
+        "contacts:write",
+        "forms:read",
+        "forms:write",
+        "pages:read",
+        "pages:write",
+        "images:read",
+        "images:write",
+        "insights:read",
+        "packages:read",
+        "subscriptions:read",
+        "themes:read",
+        "themes:write",
+        "responses:read",
+        "responses:write",
+        "webhooks:read"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://api.eu.typeform.com/mcp": {
+      "endpoint": "https://api.eu.typeform.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://api.eu.typeform.com/.well-known/oauth-protected-resource\" scope=\"accounts:read automations:read automations:write contacts:read contacts:write forms:read forms:write pages:read pages:write responses:read responses:write insights:read packages:read subscriptions:read",
+      "protected_resource_metadata": "https://api.eu.typeform.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://api.typeform.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "offline_access",
+        "accounts:read",
+        "automations:read",
+        "automations:write",
+        "contacts:read",
+        "contacts:write",
+        "forms:read",
+        "forms:write",
+        "pages:read",
+        "pages:write",
+        "images:read",
+        "images:write",
+        "insights:read",
+        "packages:read",
+        "subscriptions:read",
+        "themes:read",
+        "themes:write",
+        "responses:read",
+        "responses:write",
+        "webhooks:read"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://api.typeform.eu/mcp": {
+      "endpoint": "https://api.typeform.eu/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://api.typeform.eu/.well-known/oauth-protected-resource\" scope=\"accounts:read automations:read automations:write contacts:read contacts:write forms:read forms:write pages:read pages:write responses:read responses:write insights:read packages:read subscriptions:read web",
+      "protected_resource_metadata": "https://api.typeform.eu/.well-known/oauth-protected-resource",
+      "authorization_server": "https://api.typeform.eu",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "offline_access",
+        "accounts:read",
+        "automations:read",
+        "automations:write",
+        "contacts:read",
+        "contacts:write",
+        "forms:read",
+        "forms:write",
+        "pages:read",
+        "pages:write",
+        "images:read",
+        "images:write",
+        "insights:read",
+        "packages:read",
+        "subscriptions:read",
+        "themes:read",
+        "themes:write",
+        "responses:read",
+        "responses:write",
+        "webhooks:read"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.myparcel.ai/beta": {
+      "endpoint": "https://mcp.myparcel.ai/beta",
+      "initialize_status": 406,
+      "protected_resource_metadata": "https://mcp.myparcel.ai/.well-known/oauth-protected-resource",
+      "authorization_server": "https://mcp.myparcel.ai",
+      "dynamic_client_registration": false,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "openid",
+        "webshop",
+        "offline_access"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "client_metadata"
+      }
+    },
+    "https://api.xero.com/mcp/v1": {
+      "endpoint": "https://api.xero.com/mcp/v1",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://api.xero.com/.well-known/oauth-protected-resource/mcp/v1\"",
+      "protected_resource_metadata": "https://api.xero.com/.well-known/oauth-protected-resource/mcp/v1",
+      "authorization_server": "https://identity.xero.com",
+      "dynamic_client_registration": false,
+      "client_id_metadata_document": false,
+      "scopes_supported": [],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "user_supplied"
+      }
+    },
+    "https://mcp.risepeople.com/mcp": {
+      "endpoint": "https://mcp.risepeople.com/mcp",
+      "initialize_status": 401,
+      "protected_resource_metadata": "https://mcp.risepeople.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://api.risepeople.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "reports:read",
+        "reports:write",
+        "user:read",
+        "user:write",
+        "payroll:read",
+        "payroll:write",
+        "time_off:read",
+        "time_off:write",
+        "performance:read",
+        "performance:write",
+        "employees:read",
+        "employees:write",
+        "employee_compliance:read",
+        "employee_compliance:write",
+        "organization:read",
+        "recruiting:read"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://data-partner.mcp.plaid.com/mcp": {
+      "endpoint": "https://data-partner.mcp.plaid.com/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer realm=\"plaid_mcp\", resource_metadata=\"https://data-partner.mcp.plaid.com/.well-known/oauth-protected-resource/mcp\", scope=\"mcp:data-partner\", error=\"invalid_request\", error_description=\"missing Bearer token\"",
+      "protected_resource_metadata": "https://data-partner.mcp.plaid.com/.well-known/oauth-protected-resource/mcp",
+      "authorization_server": "https://api.dashboard.plaid.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "mcp:dashboard"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.checkout.com": {
+      "endpoint": "https://mcp.checkout.com",
+      "initialize_status": 401,
+      "protected_resource_metadata": "https://mcp.checkout.com/.well-known/oauth-protected-resource",
+      "authorization_server": "https://access.mcp.checkout.com/payment-operations",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "openid",
+        "email",
+        "mcp_full_access",
+        "offline_access"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://checkout.mcp.sbox.cko.tech": {
+      "endpoint": "https://checkout.mcp.sbox.cko.tech",
+      "initialize_status": 401,
+      "protected_resource_metadata": "https://checkout.mcp.sbox.cko.tech/.well-known/oauth-protected-resource",
+      "authorization_server": "https://access.mcp.sandbox.checkout.com/payment-operations",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": true,
+      "scopes_supported": [
+        "openid",
+        "email",
+        "mcp_full_access",
+        "offline_access"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://peppol.verteco.digital/api/mcp": {
+      "endpoint": "https://peppol.verteco.digital/api/mcp",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer realm=\"peppol.verteco.digital\"",
+      "suggested": {
+        "mode": "headers"
+      }
+    },
+    "https://mcp.hootsuite.com/perch": {
+      "endpoint": "https://mcp.hootsuite.com/perch",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.hootsuite.com/.well-known/oauth-protected-resource/perch\"",
+      "protected_resource_metadata": "https://mcp.hootsuite.com/.well-known/oauth-protected-resource/perch",
+      "authorization_server": "https://platform.hootsuite.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "offline"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.hootsuite.com/nest": {
+      "endpoint": "https://mcp.hootsuite.com/nest",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.hootsuite.com/.well-known/oauth-protected-resource/nest\"",
+      "protected_resource_metadata": "https://mcp.hootsuite.com/.well-known/oauth-protected-resource/nest",
+      "suggested": {
+        "mode": "headers"
+      }
+    },
+    "https://mcp.hootsuite.com/lumen": {
+      "endpoint": "https://mcp.hootsuite.com/lumen",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"The access token is expired, revoked, or not bound to this resource. Re-authorize using the authorization server advertised by the resource metadata document, and include the resource parameter.\", resource_metadata=\"https://mcp.hootsuite.com/.well-kno",
+      "protected_resource_metadata": "https://mcp.hootsuite.com/.well-known/oauth-protected-resource/lumen",
+      "authorization_server": "https://app.talkwalker.com/app/oauth/lumen",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "projects"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    },
+    "https://mcp.hootsuite.com/parliament": {
+      "endpoint": "https://mcp.hootsuite.com/parliament",
+      "initialize_status": 401,
+      "www_authenticate": "Bearer resource_metadata=\"https://mcp.hootsuite.com/.well-known/oauth-protected-resource/parliament\"",
+      "protected_resource_metadata": "https://mcp.hootsuite.com/.well-known/oauth-protected-resource/parliament",
+      "authorization_server": "https://platform.hootsuite.com",
+      "dynamic_client_registration": true,
+      "client_id_metadata_document": false,
+      "scopes_supported": [
+        "offline"
+      ],
+      "suggested": {
+        "mode": "oauth2",
+        "client_registration": "dcr"
+      }
+    }
+  },
+  "icon_sources": {
+    "pennylane": "https://www.pennylane.com/favicon.ico",
+    "holded": "https://www.holded.com/assets/favicons/apple-touch-icon.png",
+    "moneybird": "https://www.moneybird.com/favicons/favicon-196.png",
+    "fakturownia": "https://assets2.intum.net/1/cms/assets/fakturownia-apple-touch-icon-144x144.png",
+    "spiris": "https://assets.spiris.se/favicons/apple-touch-icon.png",
+    "tripletex": "https://www.tripletex.no/wp-content/themes/tripletex/gfx/favicon-tt.png",
+    "spendesk": "https://www.spendesk.com/apple-touch-icon.png",
+    "mollie": "https://framerusercontent.com/images/qv5pP6IyH5pkUJsKlgG23E4RbBM.png",
+    "qonto": "https://qonto.com/blog/assets/apple-touch-icon-4d8a168a3ba8d53fa08beaf4d665da32d9a43f49b88fa9f08d3017e23663ef53.png",
+    "getresponse": "https://www.getresponse.com/global/favicons/apple-touch-icon-144x144.png",
+    "factorial": "https://factorialhr.com/next-favicons/apple-touch-icon.png",
+    "bird": "https://bird.com/favicon-light.png",
+    "deepl": "https://www.deepl.com/apple-icon?fb6f62776db8f84a",
+    "sendcloud": "https://framerusercontent.com/images/prlm5ywcyJBE7DyF4DgXNRNXtg.png",
+    "dinero": "https://dinero.dk/wp-content/themes/dinero-dk/assets/favicon.ico",
+    "xero": "https://www.xero.com/content/dam/xero/pilot-images/admin/icons/favicon/apple-touch-icon.png",
+    "rise-people": "https://risepeople.com/apple-icon-144x144.png",
+    "checkout-com": "https://cdn.prod.website-files.com/64db80a5e88c6b1723ff760b/652d4e6c02966c743d614ba5_Webclip.png",
+    "hootsuite": "https://www.hootsuite.com/images/apple-touch-icon.png",
+    "freshbooks": "https://www.freshbooks.com/favicon.ico",
+    "odoo": "https://odoocdn.com/web/image/website/1/favicon?unique=d5020f9",
+    "verteco-peppol": "https://peppol.verteco.digital/apple-icon.png?1946dcb4b4de12cf"
+  },
+  "exceptions": [
+    {
+      "server": "fakturownia",
+      "note": "Customer subdomain needed; template verified against vendor documentation, not a live customer account."
+    },
+    {
+      "server": "odoo",
+      "note": "Customer database needed; Odoo20 template verified against vendor documentation, not an installation."
+    },
+    {
+      "server": "freshbooks",
+      "note": "Exact endpoint from FreshBooks-attributed Anthropic connector listing. Vendor-owned service documentation confirms read-only connector; exact vendor-owned URL evidence not found. Official badge omitted. DCR and scopes verified from public challenge/discovery."
+    },
+    {
+      "server": "hootsuite",
+      "note": "Initial Nest discovery did not return issuer; direct protected-resource read subsequently confirmed same platform.hootsuite.com issuer as Perch and Parliament. Vendor setup blog explicitly documents OAuth and automatic registration."
+    },
+    {
+      "server": "plaid-data-partner",
+      "note": "Not added: advertised issuer scopes and resource challenge differ; purpose is FDX diagnostics, not merchant bank-data operations."
+    }
+  ]
+}

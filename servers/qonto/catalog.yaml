@@ -1,0 +1,33 @@
+# Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
+# Account authorization and tool execution have not been tested.
+revision: 1
+title: Qonto
+description: Read Qonto financial data and manage supported invoicing, transaction
+  and card workflows.
+category: finance
+website_url: https://qonto.com
+help_url: https://docs.qonto.com/mcp/install/quickstart
+preview_note: Cannot send money. Some supported actions require human approval. Multi-organization
+  access is read-only.
+official:
+  vendor: Qonto
+  evidence_url: https://docs.qonto.com/mcp/install/quickstart
+remotes:
+- id: default
+  label: Qonto — single organization
+  url: https://mcp.qonto.com/mcp
+  allowed_hosts:
+  - mcp.qonto.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []
+- id: multi-organization
+  label: Qonto — multi-organization (read-only)
+  url: https://mcp.qonto.com/multi-organization/mcp
+  allowed_hosts:
+  - mcp.qonto.com
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []

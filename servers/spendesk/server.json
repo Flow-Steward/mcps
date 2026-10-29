@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/spendesk",
+  "title": "Spendesk",
+  "description": "Read Spendesk expenses and use supported spend-management actions according to company permissions.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.spendesk.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://public-api.spendesk.com/v1/mcp"
+    }
+  ]
+}
