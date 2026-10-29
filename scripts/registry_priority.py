@@ -30,7 +30,13 @@ class MarketPriorities:
                 raise ValueError(f"duplicate coverage service: {row['id']}")
             self.services[row["id"]] = row
         path = bi.ROOT / "coverage/discovery-policy.json"
-        policy = json.loads(path.read_text(encoding="utf-8"))["services"] if path.exists() else {}
+        config = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+        policy = config.get("services", {})
+        self.excluded_publishers = config.get("excluded_publishers", {})
+        if not isinstance(self.excluded_publishers, dict) or any(
+            not isinstance(reason, str) or not reason.strip() for reason in self.excluded_publishers.values()
+        ):
+            raise ValueError("excluded publishers require nonempty review reasons")
         unknown = set(policy) - set(self.services)
         if unknown:
             raise ValueError("discovery policy references unknown service: " + ", ".join(sorted(unknown)))
@@ -76,6 +82,18 @@ class MarketPriorities:
                 if row.get("coverage_bucket") in {"existing_indirect", "pending_indirect"}
                 else "uncovered"
             )
+        for evidence in config.get("reviewed_vendor_endpoints", []):
+            key = endpoint_key(evidence["url"])
+            if (
+                not key
+                or not endpoint_key(evidence["evidence_url"])
+                or not isinstance(evidence.get("vendor"), str)
+                or not evidence["vendor"].strip()
+            ):
+                raise ValueError("reviewed non-market endpoints need vendor, HTTPS URL and evidence_url")
+            if key in self.endpoints:
+                raise ValueError(f"duplicate reviewed endpoint policy: {key}")
+            self.endpoints[key] = {**evidence, "service_id": None}
 
     def describe(self, record: dict) -> dict:
         from registry_sync import namespace_domain, signals
@@ -95,15 +113,28 @@ class MarketPriorities:
             ids.update(self.aliases.get(title_key(root_label[0]), set()))
         ids = {item_id for item_id in ids if name not in self.excluded[item_id]}
         # A reviewed URL is stronger than a Registry author's display name.
-        documented = {e["service_id"] for e in endpoint_evidence if e}
-        if len(documented) == 1 and endpoint_evidence and all(endpoint_evidence):
+        owners = {title_key(e["service_id"] or e["vendor"]) for e in endpoint_evidence if e}
+        vendor_verified = bool(endpoint_evidence) and all(endpoint_evidence) and len(owners) == 1
+        documented = {e["service_id"] for e in endpoint_evidence if e and e["service_id"]}
+        if len(documented) == 1 and vendor_verified:
             ids = documented
+        elif vendor_verified and not documented:
+            # Match a general evidence entry by the reviewed vendor label, never
+            # by an arbitrary Registry display title.
+            ids = set().union(*(self.aliases.get(title_key(e["vendor"]), set()) for e in endpoint_evidence))
         description = {
             "tier": "other",
             "coverage": "unknown",
             "target_services": [],
-            "evidence_urls": [],
-            "access_notes": [],
+            "vendor_verified": vendor_verified,
+            "evidence_urls": sorted({e["evidence_url"] for e in endpoint_evidence if e})
+            if vendor_verified
+            else [],
+            "access_notes": sorted(
+                {e["access_note"] for e in endpoint_evidence if e and e.get("access_note")}
+            )
+            if vendor_verified
+            else [],
             "ambiguous_services": [],
         }
         if len(ids) != 1:
@@ -111,7 +142,7 @@ class MarketPriorities:
             return description
         item_id = next(iter(ids))
         row = self.services[item_id]
-        verified = bool(endpoint_evidence) and all(endpoint_evidence) and documented == {item_id}
+        verified = vendor_verified and (not documented or documented == {item_id})
         namespace_keys = {title_key(part) for part in root_label}
         aligned = (
             bool(namespace_keys & self.keys[item_id]) and signals(record)["endpoints_on_namespace_domain"]
@@ -145,6 +176,22 @@ class MarketPriorities:
             }
         )
         return description
+
+    def rejection_reason(self, record: dict) -> str | None:
+        from registry_sync import namespace
+
+        if namespace(record["server"]["name"]) in self.excluded_publishers:
+            return "excluded_publisher"
+        if not any(r.get("type") == "streamable-http" for r in record["server"].get("remotes", []) or []):
+            return "out_of_scope_transport"
+        description = self.describe(record)
+        if description["coverage"] == "extension_reported":
+            return "existing_extension"
+        if description["coverage"] == "direct_catalog":
+            return "existing_catalog"
+        if not description["vendor_verified"]:
+            return "vendor_endpoint_not_reviewed"
+        return None
 
     def sort_key(self, description: dict) -> tuple:
         priority = min((s["priority"] for s in description["target_services"]), default="P3")

@@ -39,17 +39,51 @@
         }
       ]
     },
-    "lexware-office": {"aliases": ["lexoffice"]},
-    "visma-spiris": {"aliases": ["Spiris"]},
-    "brevo": {"aliases": ["Sendinblue"]},
-    "bird-messagebird": {"aliases": ["Bird", "MessageBird"]},
-    "click-drop": {"aliases": ["Royal Mail Click & Drop"]},
-    "canada-post": {"aliases": ["Canada Post API"]},
-    "companies-house": {"aliases": ["Companies House API"]},
+    "lexware-office": {
+      "aliases": [
+        "lexoffice"
+      ]
+    },
+    "visma-spiris": {
+      "aliases": [
+        "Spiris"
+      ]
+    },
+    "brevo": {
+      "aliases": [
+        "Sendinblue"
+      ]
+    },
+    "bird-messagebird": {
+      "aliases": [
+        "Bird",
+        "MessageBird"
+      ]
+    },
+    "click-drop": {
+      "aliases": [
+        "Royal Mail Click & Drop"
+      ]
+    },
+    "canada-post": {
+      "aliases": [
+        "Canada Post API"
+      ]
+    },
+    "companies-house": {
+      "aliases": [
+        "Companies House API"
+      ]
+    },
     "sap": {
       "excluded_registry_names": {
         "ai.oobeprotocol.sap.mcp/sap-mcp": "Registry describes a Solana/DeFi gateway, not SAP enterprise software. SAP in a nested domain is not vendor identity evidence."
       }
     }
+  },
+  "excluded_publishers": {
+    "io.usefulapi": "Third-party integration aggregator; excluded by catalog owner.",
+    "eu.nordicmcp": "Third-party MCP provider; not the underlying service vendor.",
+    "com.iwebdevelopment": "Third-party integration developer; not the underlying service vendor."
   }
 }
