@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-29.808a84bb",
-  "published_at": "2026-10-29T06:23:06Z",
+  "catalog_revision": "2026-10-29.1788eb28",
+  "published_at": "2026-10-29T06:24:14Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -595,7 +595,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.0.20"
+            "version": "1.0.21"
           }
         ],
         "remotes": [
@@ -608,7 +608,7 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "1.0.20",
+        "version": "1.0.21",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
@@ -616,7 +616,7 @@
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "1.0.20"
+              "version": "1.0.21"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -787,17 +787,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:23:06Z"
+            "updated_at": "2026-10-29T06:24:14Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-19T00:32:17.828256Z",
+          "publishedAt": "2026-10-20T00:30:36.239386Z",
           "status": "active",
-          "statusChangedAt": "2026-10-19T00:32:17.828256Z",
-          "updatedAt": "2026-10-19T00:32:17.828256Z"
+          "statusChangedAt": "2026-10-20T00:30:36.239386Z",
+          "updatedAt": "2026-10-20T00:30:36.239386Z"
         }
       }
     },
@@ -19620,36 +19620,27 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "dev.svelte/mcp",
         "description": "The official Svelte MCP server providing docs and autofixing tools for Svelte development",
-        "title": "Svelte MCP",
-        "repository": {
-          "url": "https://github.com/sveltejs/ai-tools",
-          "source": "github",
-          "id": "1054419133",
-          "subfolder": "packages/mcp-stdio"
-        },
-        "version": "0.1.26",
-        "websiteUrl": "https://svelte.dev/docs/mcp/overview",
         "icons": [
           {
-            "src": "https://mcp.svelte.dev/logo.svg",
-            "mimeType": "image/svg+xml"
+            "mimeType": "image/svg+xml",
+            "src": "https://mcp.svelte.dev/logo.svg"
           },
           {
-            "src": "https://mcp.svelte.dev/logo.png",
-            "mimeType": "image/png"
+            "mimeType": "image/png",
+            "src": "https://mcp.svelte.dev/logo.png"
           }
         ],
+        "name": "dev.svelte/mcp",
         "packages": [
           {
-            "registryType": "npm",
             "identifier": "@sveltejs/mcp",
-            "version": "0.1.26",
+            "registryType": "npm",
             "runtimeHint": "npx",
             "transport": {
               "type": "stdio"
-            }
+            },
+            "version": "0.1.27"
           }
         ],
         "remotes": [
@@ -19658,14 +19649,23 @@
             "url": "https://mcp.svelte.dev/mcp"
           }
         ],
+        "repository": {
+          "id": "1054419133",
+          "source": "github",
+          "subfolder": "packages/mcp-stdio",
+          "url": "https://github.com/sveltejs/ai-tools"
+        },
+        "title": "Svelte MCP",
+        "version": "0.1.27",
+        "websiteUrl": "https://svelte.dev/docs/mcp/overview",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "svelte",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "dev.svelte/mcp",
-              "version": "0.1.26"
+              "version": "0.1.27"
             },
             "title": "Svelte",
             "summary": "Search Svelte 5 and SvelteKit documentation and check generated Svelte code with the autofixer.",
@@ -19702,17 +19702,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/svelte",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-29T06:24:14Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-19T15:08:17.938035Z",
           "status": "active",
-          "statusChangedAt": "2026-08-07T19:40:31.652476Z",
-          "publishedAt": "2026-08-07T19:40:31.652476Z",
-          "updatedAt": "2026-08-07T19:40:31.652476Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-19T15:08:17.938035Z",
+          "updatedAt": "2026-10-19T15:08:17.938035Z"
         }
       }
     },
