@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-31.e6bb61e2",
-  "published_at": "2026-10-31T22:17:52Z",
+  "catalog_revision": "2026-10-31.eb7949b2",
+  "published_at": "2026-10-31T22:25:00Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -11837,17 +11837,33 @@
         "remotes": [
           {
             "type": "streamable-http",
-            "url": "https://mcp.llamaindex.ai/mcp"
+            "url": "https://mcp.llamaindex.ai/mcp",
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Enter the full value: Bearer followed by a space and your LlamaCloud API key for this region.",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
           },
           {
             "type": "streamable-http",
-            "url": "https://mcp.eu.llamaindex.ai/mcp"
+            "url": "https://mcp.eu.llamaindex.ai/mcp",
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Enter the full value: Bearer followed by a space and your LlamaCloud API key for this region.",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
           }
         ],
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "llamaparse",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "catalog": "io.github.flow-steward/llamaparse",
@@ -11859,7 +11875,7 @@
             "category": "documents",
             "website_url": "https://www.llamaindex.ai",
             "help_url": "https://developers.llamaindex.ai/llamaparse/for-agents/mcp/",
-            "preview_note": "Choose the region matching your LlamaCloud account: North America or Europe. Processing uses your LlamaCloud account and credits.",
+            "preview_note": "Choose your LlamaCloud account region. Processing uses your credits. API keys cannot use getUploadUrl; use uploadFileByUrl instead.",
             "keywords": [
               "LlamaIndex",
               "LlamaCloud",
@@ -11882,53 +11898,41 @@
             },
             "remotes": [
               {
-                "remote_id": "north-america",
-                "label": "LlamaParse — North America",
+                "remote_id": "north-america-api-key",
+                "label": "North America API key",
                 "url": "https://mcp.llamaindex.ai/mcp",
                 "allowed_hosts": [
                   "mcp.llamaindex.ai"
                 ],
                 "user_defined_host": false,
                 "auth": {
-                  "mode": "oauth2",
-                  "client_registration": "client_metadata",
-                  "requested_scopes": [
-                    "openid",
-                    "profile",
-                    "email",
-                    "offline_access"
-                  ],
-                  "authorization_parameters": {},
-                  "refresh_token_required": false,
-                  "setup_url": "https://developers.llamaindex.ai/llamaparse/for-agents/mcp/"
+                  "mode": "headers",
+                  "setup_url": "https://developers.llamaindex.ai/llamaparse/general/api_key/"
+                },
+                "field_labels": {
+                  "Authorization": "North America: Bearer <API key>"
                 }
               },
               {
-                "remote_id": "europe",
-                "label": "LlamaParse — Europe",
+                "remote_id": "europe-api-key",
+                "label": "Europe API key",
                 "url": "https://mcp.eu.llamaindex.ai/mcp",
                 "allowed_hosts": [
                   "mcp.eu.llamaindex.ai"
                 ],
                 "user_defined_host": false,
                 "auth": {
-                  "mode": "oauth2",
-                  "client_registration": "client_metadata",
-                  "requested_scopes": [
-                    "openid",
-                    "profile",
-                    "email",
-                    "offline_access"
-                  ],
-                  "authorization_parameters": {},
-                  "refresh_token_required": false,
-                  "setup_url": "https://developers.llamaindex.ai/llamaparse/for-agents/mcp/"
+                  "mode": "headers",
+                  "setup_url": "https://developers.llamaindex.ai/llamaparse/general/api_key/"
+                },
+                "field_labels": {
+                  "Authorization": "Europe: Bearer <API key>"
                 }
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/llamaparse",
             "added_at": "2026-10-31T13:16:14Z",
-            "updated_at": "2026-10-31T13:16:14Z"
+            "updated_at": "2026-10-31T22:25:00Z"
           }
         }
       }
