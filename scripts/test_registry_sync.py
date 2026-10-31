@@ -149,3 +149,18 @@ def test_bump_revision_keeps_comments(tmp_path: Path):
     path.write_text("# reviewed by a person\nrevision: 4\ntitle: X\n", encoding="utf-8")
     rs._bump_revision(path)
     assert path.read_text(encoding="utf-8") == "# reviewed by a person\nrevision: 5\ntitle: X\n"
+
+
+def test_signals_tolerate_an_unparsable_template_endpoint():
+    from registry_sync import signals
+
+    record = {
+        "server": {
+            "name": "com.example/templated",
+            "remotes": [{"type": "streamable-http", "url": "https://[{address}]/mcp"}],
+            "websiteUrl": "https://[{site}]/",
+        }
+    }
+    result = signals(record)
+    assert result["endpoints_on_namespace_domain"] is False
+    assert result["streamable_http_endpoints"] == ["https://[{address}]/mcp"]

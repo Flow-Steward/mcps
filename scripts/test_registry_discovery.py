@@ -223,3 +223,22 @@ def test_discovery_failure_returns_nonzero_and_preserves_queue(root, monkeypatch
     monkeypatch.setattr(rs, "registry_all", fail)
     assert rs.main(["sync", "--discover"]) == 1
     assert (queue / "registry.json").read_text() == "{}"
+
+
+def test_candidate_folder_collisions_pick_a_free_name():
+    import hashlib
+
+    from registry_discovery import free_candidate_id
+
+    digest = hashlib.sha256(b"io.github.collisiondemo/c").hexdigest()
+    occupied = {
+        "collisiondemo": "io.github.collisiondemo/a",
+        f"collisiondemo-{digest[:12]}": "io.github.collisiondemo/b",
+    }
+    chosen = free_candidate_id("collisiondemo", "io.github.collisiondemo/c", occupied)
+    assert chosen == f"collisiondemo-{digest}"
+    occupied[chosen] = "io.github.collisiondemo/d"
+    assert (
+        free_candidate_id("collisiondemo", "io.github.collisiondemo/c", occupied)
+        == f"collisiondemo-{digest}-2"
+    )

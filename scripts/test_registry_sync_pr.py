@@ -56,6 +56,7 @@ def publication(catalog_root, tmp_path, monkeypatch):  # noqa: F811 - imported f
                     "headRefName": pub.BRANCH,
                     "url": "https://github.com/x/y/pull/42",
                     "body": "",
+                    "isCrossRepository": False,
                 }
             )
             state["reviews"].append(args[args.index("--reviewer") + 1])
@@ -139,8 +140,9 @@ def test_no_change_does_not_open_or_notify(publication):
 def test_supersedes_only_dated_bot_prs_after_success(publication, monkeypatch):
     pub, root, report, state = publication
     state["prs"] = [
-        {"number": 4, "headRefName": "registry-sync/2026-10-16"},
-        {"number": 8, "headRefName": "registry-sync/manual"},
+        {"number": 4, "headRefName": "registry-sync/2026-10-16", "isCrossRepository": False},
+        {"number": 8, "headRefName": "registry-sync/manual", "isCrossRepository": False},
+        {"number": 9, "headRefName": "registry-sync/2026-10-17", "isCrossRepository": True},
     ]
     state["fail_create"] = True
     refresh(root, monkeypatch, "2.0.0")
@@ -241,3 +243,22 @@ def test_deleted_registry_updates_can_still_reach_review(publication, monkeypatc
     rs.sync_entry(root / "servers/example")
     pub.publish(report, "reviewer")
     assert len(state["prs"]) == 1
+
+
+def test_a_fork_pr_on_the_rolling_branch_name_is_not_reused(publication, monkeypatch):
+    pub, root, report, state = publication
+    state["prs"] = [
+        {
+            "number": 66,
+            "headRefName": pub.BRANCH,
+            "url": "https://github.com/attacker/y/pull/66",
+            "body": "",
+            "isCrossRepository": True,
+        }
+    ]
+    refresh(root, monkeypatch, "2.0.0")
+    pub.publish(report, "reviewer")
+    created = [pr for pr in state["prs"] if pr["number"] == 42]
+    assert len(created) == 1
+    assert state["prs"][0]["body"] == ""
+    assert state["reviews"] == ["reviewer"]
