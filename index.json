@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-31.eb7949b2",
-  "published_at": "2026-10-31T22:25:00Z",
+  "catalog_revision": "2026-10-31.612e3fac",
+  "published_at": "2026-10-31T22:40:13Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -11875,7 +11875,7 @@
             "category": "documents",
             "website_url": "https://www.llamaindex.ai",
             "help_url": "https://developers.llamaindex.ai/llamaparse/for-agents/mcp/",
-            "preview_note": "Choose your LlamaCloud account region. Processing uses your credits. API keys cannot use getUploadUrl; use uploadFileByUrl instead.",
+            "preview_note": "Sign in to your regional LlamaCloud console (NA: cloud.llamaindex.ai; EU: cloud.eu.llamaindex.ai). In API Key, choose Generate New Key, create and copy it. Enter Bearer followed by a space and the key. Processing uses credits. API keys cannot use getUploadUrl; use uploadFileByUrl.",
             "keywords": [
               "LlamaIndex",
               "LlamaCloud",
@@ -11932,7 +11932,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/llamaparse",
             "added_at": "2026-10-31T13:16:14Z",
-            "updated_at": "2026-10-31T22:25:00Z"
+            "updated_at": "2026-10-31T22:40:13Z"
           }
         }
       }
