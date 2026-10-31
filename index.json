@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-31.e1a2e4f0",
-  "published_at": "2026-10-31T12:00:41Z",
+  "catalog_revision": "2026-10-31.16f48d6d",
+  "published_at": "2026-10-31T13:16:14Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -5730,7 +5730,7 @@
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/elevenlabs",
         "title": "ElevenLabs",
-        "description": "Create and manage ElevenLabs voice agents, review conversations and tests, and generate speech…",
+        "description": "Manage ElevenLabs voice agents and conversations, and generate speech, music, sound effects, images and video from your workspace.",
         "version": "1.0.0",
         "websiteUrl": "https://elevenlabs.io",
         "remotes": [
@@ -5742,27 +5742,33 @@
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "elevenlabs",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "catalog": "io.github.flow-steward/elevenlabs",
               "version": "1.0.0"
             },
             "title": "ElevenLabs",
-            "summary": "Create and manage ElevenLabs voice agents, review conversations and tests, and generate speech audio.",
-            "description": "Create and manage ElevenLabs voice agents, review conversations and tests, and generate speech audio.",
+            "summary": "Manage ElevenLabs voice agents and conversations, and generate speech, music, sound effects, images and video from your workspace.",
+            "description": "Manage ElevenLabs voice agents and conversations, and generate speech, music, sound effects, images and video from your workspace.",
             "category": "ai",
             "website_url": "https://elevenlabs.io",
-            "help_url": "https://elevenlabs.io/docs/eleven-agents/operate/hosted-mcp",
+            "help_url": "https://elevenlabs.io/mcp",
             "preview_note": "",
             "keywords": [
               "Text to speech",
               "TTS",
-              "Voice"
+              "Voice",
+              "Music generation",
+              "Sound effects",
+              "Image generation",
+              "Video generation",
+              "Scribe",
+              "Dubbing"
             ],
             "official": {
               "vendor": "ElevenLabs",
-              "evidence_url": "https://elevenlabs.io/docs/eleven-agents/operate/hosted-mcp"
+              "evidence_url": "https://elevenlabs.io/mcp"
             },
             "icon": {
               "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/bf8cee5839c24aab9a0d303ef1dfbbe7c938880f/servers/elevenlabs/icon.png",
@@ -5799,7 +5805,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/elevenlabs",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-31T13:16:14Z"
           }
         }
       }
@@ -6313,6 +6319,84 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/fal-ai",
+        "title": "fal.ai",
+        "description": "Find generative models, inspect input schemas and pricing, upload inputs, and generate images, video and audio through your fal account.",
+        "version": "1.0.0",
+        "websiteUrl": "https://fal.ai",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.fal.ai/mcp-relay"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "fal-ai",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/fal-ai",
+              "version": "1.0.0"
+            },
+            "title": "fal.ai",
+            "summary": "Find generative models, inspect input schemas and pricing, upload inputs, and generate images, video and audio through your fal account.",
+            "description": "Find generative models, inspect input schemas and pricing, upload inputs, and generate images, video and audio through your fal account.",
+            "category": "media",
+            "website_url": "https://fal.ai",
+            "help_url": "https://fal.ai/docs/documentation/setting-up/mcp",
+            "preview_note": "Sign in with your fal account. Generations use its credits; this connects the model-generation MCP, not the documentation or Platform MCP.",
+            "keywords": [
+              "fal",
+              "Image generation",
+              "Video generation",
+              "Audio generation",
+              "Generative media"
+            ],
+            "official": {
+              "vendor": "fal.ai",
+              "evidence_url": "https://fal.ai/docs/documentation/setting-up/mcp"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/e4f6e7f55b3502a2f4c4c46b513261d3cab59cf4/servers/fal-ai/icon.png",
+              "sha256": "c97383682caff965427a3a138313a2cc4e619298117959c953070aa082189f93",
+              "bytes": 6002,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "fal.ai",
+                "url": "https://mcp.fal.ai/mcp-relay",
+                "allowed_hosts": [
+                  "mcp.fal.ai"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "client_metadata",
+                  "requested_scopes": [
+                    "openid",
+                    "profile",
+                    "email",
+                    "offline_access"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fal-ai",
+            "added_at": "2026-10-31T13:16:14Z",
+            "updated_at": "2026-10-31T13:16:14Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "ai.fathom.api/mcp",
         "description": "Give your AI assistant real meeting context via Fathom so every output grounded in your work",
         "version": "1.0.0",
@@ -6707,6 +6791,85 @@
           "publishedAt": "2026-09-14T18:59:03.896496Z",
           "updatedAt": "2026-09-14T18:59:03.896496Z",
           "isLatest": true
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/black-forest-labs",
+        "title": "FLUX (Black Forest Labs)",
+        "description": "Generate and edit FLUX images, create variations and video, browse previous generations, and check your BFL credit balance.",
+        "version": "1.0.0",
+        "websiteUrl": "https://bfl.ai",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.bfl.ai"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "black-forest-labs",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/black-forest-labs",
+              "version": "1.0.0"
+            },
+            "title": "FLUX (Black Forest Labs)",
+            "summary": "Generate and edit FLUX images, create variations and video, browse previous generations, and check your BFL credit balance.",
+            "description": "Generate and edit FLUX images, create variations and video, browse previous generations, and check your BFL credit balance.",
+            "category": "media",
+            "website_url": "https://bfl.ai",
+            "help_url": "https://docs.bfl.ai/api_integration/mcp_integration",
+            "preview_note": "Choose the BFL organization billed for generations during sign-in. To change the billed organization, disconnect and reconnect.",
+            "keywords": [
+              "BFL",
+              "Black Forest Labs",
+              "FLUX",
+              "FLUX.2",
+              "Image generation",
+              "Image editing",
+              "Video generation"
+            ],
+            "official": {
+              "vendor": "Black Forest Labs",
+              "evidence_url": "https://docs.bfl.ai/api_integration/mcp_integration"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/e4f6e7f55b3502a2f4c4c46b513261d3cab59cf4/servers/black-forest-labs/icon.png",
+              "sha256": "1fcf0b4967796dc6bb9f23e1e1d2ab06f4d7f97d82b454b74d582ae9321a1d1a",
+              "bytes": 5392,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "FLUX",
+                "url": "https://mcp.bfl.ai",
+                "allowed_hosts": [
+                  "mcp.bfl.ai"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [
+                    "openid",
+                    "email",
+                    "profile"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/black-forest-labs",
+            "added_at": "2026-10-31T13:16:14Z",
+            "updated_at": "2026-10-31T13:16:14Z"
+          }
         }
       }
     },
@@ -11660,6 +11823,113 @@
           "publishedAt": "2026-06-22T11:02:09.732622Z",
           "updatedAt": "2026-06-22T11:02:09.732622Z",
           "isLatest": true
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/llamaparse",
+        "title": "LlamaParse",
+        "description": "Parse documents into text and Markdown, extract structured fields, classify and split files, and build and search LlamaCloud indexes.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.llamaindex.ai",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.llamaindex.ai/mcp"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.eu.llamaindex.ai/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "llamaparse",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/llamaparse",
+              "version": "1.0.0"
+            },
+            "title": "LlamaParse",
+            "summary": "Parse documents into text and Markdown, extract structured fields, classify and split files, and build and search LlamaCloud indexes.",
+            "description": "Parse documents into text and Markdown, extract structured fields, classify and split files, and build and search LlamaCloud indexes.",
+            "category": "documents",
+            "website_url": "https://www.llamaindex.ai",
+            "help_url": "https://developers.llamaindex.ai/llamaparse/for-agents/mcp/",
+            "preview_note": "Choose the region matching your LlamaCloud account: North America or Europe. Processing uses your LlamaCloud account and credits.",
+            "keywords": [
+              "LlamaIndex",
+              "LlamaCloud",
+              "LlamaExtract",
+              "OCR",
+              "PDF",
+              "Document parsing",
+              "Structured extraction"
+            ],
+            "official": {
+              "vendor": "LlamaIndex",
+              "evidence_url": "https://developers.llamaindex.ai/llamaparse/for-agents/mcp/"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/e4f6e7f55b3502a2f4c4c46b513261d3cab59cf4/servers/llamaparse/icon.png",
+              "sha256": "9521c9c91cb829b9f4acdb28b113c1efc7a31e002859a6aa035c03574be22248",
+              "bytes": 8539,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "north-america",
+                "label": "LlamaParse — North America",
+                "url": "https://mcp.llamaindex.ai/mcp",
+                "allowed_hosts": [
+                  "mcp.llamaindex.ai"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "client_metadata",
+                  "requested_scopes": [
+                    "openid",
+                    "profile",
+                    "email",
+                    "offline_access"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false,
+                  "setup_url": "https://developers.llamaindex.ai/llamaparse/for-agents/mcp/"
+                }
+              },
+              {
+                "remote_id": "europe",
+                "label": "LlamaParse — Europe",
+                "url": "https://mcp.eu.llamaindex.ai/mcp",
+                "allowed_hosts": [
+                  "mcp.eu.llamaindex.ai"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "client_metadata",
+                  "requested_scopes": [
+                    "openid",
+                    "profile",
+                    "email",
+                    "offline_access"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false,
+                  "setup_url": "https://developers.llamaindex.ai/llamaparse/for-agents/mcp/"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/llamaparse",
+            "added_at": "2026-10-31T13:16:14Z",
+            "updated_at": "2026-10-31T13:16:14Z"
+          }
         }
       }
     },
@@ -22710,6 +22980,6 @@
     }
   ],
   "metadata": {
-    "count": 277
+    "count": 280
   }
 }
