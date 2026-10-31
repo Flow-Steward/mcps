@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-31.16f48d6d",
-  "published_at": "2026-10-31T13:16:14Z",
+  "catalog_revision": "2026-10-31.e6bb61e2",
+  "published_at": "2026-10-31T22:17:52Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -6805,13 +6805,13 @@
         "remotes": [
           {
             "type": "streamable-http",
-            "url": "https://mcp.bfl.ai"
+            "url": "https://mcp.bfl.ai/"
           }
         ],
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "black-forest-labs",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "catalog": "io.github.flow-steward/black-forest-labs",
@@ -6848,7 +6848,7 @@
               {
                 "remote_id": "default",
                 "label": "FLUX",
-                "url": "https://mcp.bfl.ai",
+                "url": "https://mcp.bfl.ai/",
                 "allowed_hosts": [
                   "mcp.bfl.ai"
                 ],
@@ -6868,7 +6868,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/black-forest-labs",
             "added_at": "2026-10-31T13:16:14Z",
-            "updated_at": "2026-10-31T13:16:14Z"
+            "updated_at": "2026-10-31T22:17:52Z"
           }
         }
       }
@@ -15061,7 +15061,7 @@
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "openrouter",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "catalog": "io.github.flow-steward/openrouter",
@@ -15072,12 +15072,12 @@
             "description": "Browse OpenRouter models and prices, check credit balance and generation costs, and search the docs.",
             "category": "ai",
             "website_url": "https://openrouter.ai",
-            "help_url": "https://openrouter.ai/docs/mcp-server",
+            "help_url": "https://openrouter.ai/docs/guides/overview/mcp-server",
             "preview_note": "",
             "keywords": [],
             "official": {
               "vendor": "OpenRouter",
-              "evidence_url": "https://openrouter.ai/docs/mcp-server"
+              "evidence_url": "https://openrouter.ai/docs/guides/overview/mcp-server"
             },
             "icon": {
               "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/bf8cee5839c24aab9a0d303ef1dfbbe7c938880f/servers/openrouter/icon.png",
@@ -15106,7 +15106,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/openrouter",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-31T22:17:52Z"
           }
         }
       }
