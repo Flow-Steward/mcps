@@ -7,7 +7,7 @@ description: Parse documents into text and Markdown, extract structured fields, 
 category: documents
 website_url: https://www.llamaindex.ai
 help_url: https://developers.llamaindex.ai/llamaparse/for-agents/mcp/
-preview_note: Choose your LlamaCloud account region. Processing uses your credits. API keys cannot use getUploadUrl; use uploadFileByUrl instead.
+preview_note: "Sign in to your regional LlamaCloud console (NA: cloud.llamaindex.ai; EU: cloud.eu.llamaindex.ai). In API Key, choose Generate New Key, create and copy it. Enter Bearer followed by a space and the key. Processing uses credits. API keys cannot use getUploadUrl; use uploadFileByUrl."
 keywords:
 - LlamaIndex
 - LlamaCloud
