@@ -8,11 +8,27 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.llamaindex.ai/mcp"
+      "url": "https://mcp.llamaindex.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter the full value: Bearer followed by a space and your LlamaCloud API key for this region.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
     },
     {
       "type": "streamable-http",
-      "url": "https://mcp.eu.llamaindex.ai/mcp"
+      "url": "https://mcp.eu.llamaindex.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter the full value: Bearer followed by a space and your LlamaCloud API key for this region.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

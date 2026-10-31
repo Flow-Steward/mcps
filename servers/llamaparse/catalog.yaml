@@ -1,14 +1,13 @@
 # Reviewed 2026-10-31: https://developers.llamaindex.ai/llamaparse/for-agents/mcp/
-# Both regional authorization servers advertise client metadata documents and refresh tokens.
-revision: 1
+# API keys use the matching region and a full Authorization Bearer value.
+revision: 2
 title: LlamaParse
 description: Parse documents into text and Markdown, extract structured fields, classify and split files, and build
   and search LlamaCloud indexes.
 category: documents
 website_url: https://www.llamaindex.ai
 help_url: https://developers.llamaindex.ai/llamaparse/for-agents/mcp/
-preview_note: 'Choose the region matching your LlamaCloud account: North America or Europe. Processing uses your
-  LlamaCloud account and credits.'
+preview_note: Choose your LlamaCloud account region. Processing uses your credits. API keys cannot use getUploadUrl; use uploadFileByUrl instead.
 keywords:
 - LlamaIndex
 - LlamaCloud
@@ -21,31 +20,23 @@ official:
   vendor: LlamaIndex
   evidence_url: https://developers.llamaindex.ai/llamaparse/for-agents/mcp/
 remotes:
-- id: north-america
-  label: LlamaParse — North America
+- id: north-america-api-key
+  label: North America API key
   url: https://mcp.llamaindex.ai/mcp
   allowed_hosts:
   - mcp.llamaindex.ai
+  field_labels:
+    Authorization: "North America: Bearer <API key>"
   auth:
-    mode: oauth2
-    client_registration: client_metadata
-    requested_scopes:
-    - openid
-    - profile
-    - email
-    - offline_access
-    setup_url: https://developers.llamaindex.ai/llamaparse/for-agents/mcp/
-- id: europe
-  label: LlamaParse — Europe
+    mode: headers
+    setup_url: https://developers.llamaindex.ai/llamaparse/general/api_key/
+- id: europe-api-key
+  label: Europe API key
   url: https://mcp.eu.llamaindex.ai/mcp
   allowed_hosts:
   - mcp.eu.llamaindex.ai
+  field_labels:
+    Authorization: "Europe: Bearer <API key>"
   auth:
-    mode: oauth2
-    client_registration: client_metadata
-    requested_scopes:
-    - openid
-    - profile
-    - email
-    - offline_access
-    setup_url: https://developers.llamaindex.ai/llamaparse/for-agents/mcp/
+    mode: headers
+    setup_url: https://developers.llamaindex.ai/llamaparse/general/api_key/
