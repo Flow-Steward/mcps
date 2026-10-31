@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-29.a99285ca",
-  "published_at": "2026-10-29T12:40:57Z",
+  "catalog_revision": "2026-10-31.4f8de0a2",
+  "published_at": "2026-10-31T10:30:00Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -595,7 +595,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.2.1"
+            "version": "2.2.2"
           }
         ],
         "remotes": [
@@ -608,15 +608,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.2.1",
+        "version": "2.2.2",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 5,
+            "revision": 6,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.2.1"
+              "version": "2.2.2"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -787,17 +787,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T12:40:57Z"
+            "updated_at": "2026-10-30T13:26:24Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-29T08:12:11.958727Z",
+          "publishedAt": "2026-10-30T00:23:54.83128Z",
           "status": "active",
-          "statusChangedAt": "2026-10-29T08:12:11.958727Z",
-          "updatedAt": "2026-10-29T08:12:11.958727Z"
+          "statusChangedAt": "2026-10-30T00:23:54.83128Z",
+          "updatedAt": "2026-10-30T00:23:54.83128Z"
         }
       }
     },
@@ -1262,16 +1262,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.140.0",
+        "version": "0.143.0",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 3,
+            "revision": 4,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.140.0"
+              "version": "0.143.0"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -1312,17 +1312,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-10-29T12:40:57Z"
+            "updated_at": "2026-10-30T13:26:24Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-29T10:22:18.348108Z",
+          "publishedAt": "2026-10-29T22:34:30.213404Z",
           "status": "active",
-          "statusChangedAt": "2026-10-29T10:22:18.348108Z",
-          "updatedAt": "2026-10-29T10:22:18.348108Z"
+          "statusChangedAt": "2026-10-29T22:34:30.213404Z",
+          "updatedAt": "2026-10-29T22:34:30.213404Z"
         }
       }
     },
@@ -6954,7 +6954,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.19.3"
+            "version": "1.19.8"
           }
         ],
         "remotes": [
@@ -6968,16 +6968,16 @@
           "url": "https://github.com/fulcradynamics/fulcra-context-mcp"
         },
         "title": "Fulcra",
-        "version": "1.19.3",
+        "version": "1.19.8",
         "websiteUrl": "https://fulcradynamics.com",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "fulcra-context",
-            "revision": 2,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "com.fulcradynamics/context",
-              "version": "1.19.3"
+              "version": "1.19.8"
             },
             "title": "Fulcra Context",
             "summary": "Read your personal health, workout, sleep, location, and calendar data collected in Fulcra Context.",
@@ -7023,17 +7023,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fulcra-context",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:46:34Z"
+            "updated_at": "2026-10-30T13:26:24Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-27T19:08:55.286607Z",
+          "publishedAt": "2026-10-29T19:07:02.24679Z",
           "status": "active",
-          "statusChangedAt": "2026-10-27T19:08:55.286607Z",
-          "updatedAt": "2026-10-27T19:08:55.286607Z"
+          "statusChangedAt": "2026-10-29T19:07:02.24679Z",
+          "updatedAt": "2026-10-29T19:07:02.24679Z"
         }
       }
     },
@@ -12266,23 +12266,28 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "description": "Build, run and debug Make automation scenarios.",
         "name": "com.make/mcp-server",
-        "description": "Give your AI agents the tools to build, manage, and run automation workflows.",
-        "version": "1.1.0",
         "remotes": [
           {
             "type": "streamable-http",
-            "url": "https://mcp.make.com"
+            "url": "https://mcp.make.com/v2"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/integromat/make-skills"
+        },
+        "title": "Make",
+        "version": "2.0.0",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "make",
-            "revision": 1,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "com.make/mcp-server",
-              "version": "1.1.0"
+              "version": "2.0.0"
             },
             "title": "Make",
             "summary": "Run your on-demand Make scenarios as tools and manage Make organizations, scenarios, and connections.",
@@ -12309,7 +12314,7 @@
               {
                 "remote_id": "default",
                 "label": "Make",
-                "url": "https://mcp.make.com",
+                "url": "https://mcp.make.com/v2",
                 "allowed_hosts": [
                   "mcp.make.com"
                 ],
@@ -12325,17 +12330,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/make",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-10-31T10:30:00Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-10-29T15:41:56.058984Z",
           "status": "active",
-          "statusChangedAt": "2026-02-08T00:26:38.903404Z",
-          "publishedAt": "2026-02-08T00:26:38.903404Z",
-          "updatedAt": "2026-02-08T00:26:38.903404Z",
-          "isLatest": true
+          "statusChangedAt": "2026-10-29T15:41:56.058984Z",
+          "updatedAt": "2026-10-29T15:41:56.058984Z"
         }
       }
     },
