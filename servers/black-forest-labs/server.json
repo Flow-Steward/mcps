@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/black-forest-labs",
+  "title": "FLUX (Black Forest Labs)",
+  "description": "Generate and edit FLUX images, create variations and video, browse previous generations, and check your BFL credit balance.",
+  "version": "1.0.0",
+  "websiteUrl": "https://bfl.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.bfl.ai"
+    }
+  ]
+}

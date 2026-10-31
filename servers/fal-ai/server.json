@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/fal-ai",
+  "title": "fal.ai",
+  "description": "Find generative models, inspect input schemas and pricing, upload inputs, and generate images, video and audio through your fal account.",
+  "version": "1.0.0",
+  "websiteUrl": "https://fal.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.fal.ai/mcp-relay"
+    }
+  ]
+}

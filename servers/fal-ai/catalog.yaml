@@ -1,0 +1,33 @@
+# Reviewed 2026-10-31: https://fal.ai/docs/documentation/setting-up/mcp
+revision: 1
+title: fal.ai
+description: Find generative models, inspect input schemas and pricing, upload inputs, and generate images, video
+  and audio through your fal account.
+category: media
+website_url: https://fal.ai
+help_url: https://fal.ai/docs/documentation/setting-up/mcp
+preview_note: Sign in with your fal account. Generations use its credits; this connects the model-generation MCP,
+  not the documentation or Platform MCP.
+keywords:
+- fal
+- Image generation
+- Video generation
+- Audio generation
+- Generative media
+official:
+  vendor: fal.ai
+  evidence_url: https://fal.ai/docs/documentation/setting-up/mcp
+remotes:
+- id: default
+  label: fal.ai
+  url: https://mcp.fal.ai/mcp-relay
+  allowed_hosts:
+  - mcp.fal.ai
+  auth:
+    mode: oauth2
+    client_registration: client_metadata
+    requested_scopes:
+    - openid
+    - profile
+    - email
+    - offline_access
