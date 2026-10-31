@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://appwrite.io/docs/tooling/ai/mcp-servers/api
 # Appwrite Cloud only; self-hosted Appwrite needs the local server with an API key.
-revision: 6
+revision: 7
 source:
   registry: io.github.appwrite/mcp
 title: Appwrite
