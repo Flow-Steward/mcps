@@ -1,14 +1,14 @@
-# Reviewed 2026-10-10: https://openrouter.ai/docs/mcp-server
+# Reviewed 2026-10-10: https://openrouter.ai/docs/guides/overview/mcp-server
 # Positioned as a developer aid; running models in apps still uses the OpenRouter API.
-revision: 1
+revision: 2
 title: OpenRouter
 description: Browse OpenRouter models and prices, check credit balance and generation costs, and search the docs.
 category: ai
 website_url: https://openrouter.ai
-help_url: https://openrouter.ai/docs/mcp-server
+help_url: https://openrouter.ai/docs/guides/overview/mcp-server
 official:
   vendor: OpenRouter
-  evidence_url: https://openrouter.ai/docs/mcp-server
+  evidence_url: https://openrouter.ai/docs/guides/overview/mcp-server
 remotes:
 - id: default
   label: OpenRouter

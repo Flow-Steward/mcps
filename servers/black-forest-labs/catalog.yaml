@@ -1,5 +1,5 @@
 # Reviewed 2026-10-31: https://docs.bfl.ai/api_integration/mcp_integration
-revision: 1
+revision: 2
 title: FLUX (Black Forest Labs)
 description: Generate and edit FLUX images, create variations and video, browse previous generations, and check
   your BFL credit balance.
@@ -22,7 +22,7 @@ official:
 remotes:
 - id: default
   label: FLUX
-  url: https://mcp.bfl.ai
+  url: https://mcp.bfl.ai/
   allowed_hosts:
   - mcp.bfl.ai
   auth:

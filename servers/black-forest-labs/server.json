@@ -8,7 +8,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.bfl.ai"
+      "url": "https://mcp.bfl.ai/"
     }
   ]
 }
