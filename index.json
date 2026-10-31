@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-31.4f8de0a2",
-  "published_at": "2026-10-31T10:30:00Z",
+  "catalog_revision": "2026-10-31.e1a2e4f0",
+  "published_at": "2026-10-31T12:00:41Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -595,7 +595,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.2.2"
+            "version": "2.2.3"
           }
         ],
         "remotes": [
@@ -608,15 +608,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.2.2",
+        "version": "2.2.3",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 6,
+            "revision": 7,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.2.2"
+              "version": "2.2.3"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -787,17 +787,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-30T13:26:24Z"
+            "updated_at": "2026-10-31T12:00:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-30T00:23:54.83128Z",
+          "publishedAt": "2026-10-31T00:21:00.607452Z",
           "status": "active",
-          "statusChangedAt": "2026-10-30T00:23:54.83128Z",
-          "updatedAt": "2026-10-30T00:23:54.83128Z"
+          "statusChangedAt": "2026-10-31T00:21:00.607452Z",
+          "updatedAt": "2026-10-31T00:21:00.607452Z"
         }
       }
     },
@@ -1262,16 +1262,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.143.0",
+        "version": "0.145.0",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 4,
+            "revision": 5,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.143.0"
+              "version": "0.145.0"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -1312,17 +1312,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-10-30T13:26:24Z"
+            "updated_at": "2026-10-31T12:00:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-29T22:34:30.213404Z",
+          "publishedAt": "2026-10-30T15:37:38.391861Z",
           "status": "active",
-          "statusChangedAt": "2026-10-29T22:34:30.213404Z",
-          "updatedAt": "2026-10-29T22:34:30.213404Z"
+          "statusChangedAt": "2026-10-30T15:37:38.391861Z",
+          "updatedAt": "2026-10-30T15:37:38.391861Z"
         }
       }
     },
@@ -16241,7 +16241,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.54.0"
+            "version": "0.55.0"
           }
         ],
         "remotes": [
@@ -16255,16 +16255,16 @@
           "url": "https://github.com/oborseth/Porkbun-MCP"
         },
         "title": "Porkbun (official)",
-        "version": "0.54.0",
+        "version": "0.55.0",
         "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 3,
+            "revision": 4,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.54.0"
+              "version": "0.55.0"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -16308,17 +16308,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T07:58:03Z"
+            "updated_at": "2026-10-31T12:00:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-28T22:19:46.73952Z",
+          "publishedAt": "2026-10-30T18:01:34.918916Z",
           "status": "active",
-          "statusChangedAt": "2026-10-28T22:19:46.73952Z",
-          "updatedAt": "2026-10-28T22:19:46.73952Z"
+          "statusChangedAt": "2026-10-30T18:01:34.918916Z",
+          "updatedAt": "2026-10-30T18:01:34.918916Z"
         }
       }
     },
