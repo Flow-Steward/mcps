@@ -73,9 +73,12 @@ def publish(report: Path, reviewer: str) -> None:
             "--head",
             BRANCH,
             "--json",
-            "number,url,body",
+            "number,url,body,isCrossRepository",
         )
     )
+    # `--head` matches a fork's branch of the same name too. Only a branch in this
+    # repository, which only automation and maintainers can push, is ours.
+    prs = [pr for pr in prs if pr.get("isCrossRepository") is False]
     old = git("ls-remote", "--heads", "origin", f"refs/heads/{BRANCH}")
     old_sha = old.split()[0] if old else ""
     if old_sha:
@@ -161,10 +164,12 @@ def retire_legacy(url: str) -> None:
             "--limit",
             "1000",
             "--json",
-            "number,headRefName",
+            "number,headRefName,isCrossRepository",
         )
     )
     for pr in legacy:
+        if pr.get("isCrossRepository") is not False:
+            continue
         if re.fullmatch(r"registry-sync/\d{4}-\d{2}-\d{2}", pr["headRefName"]):
             gh(
                 "pr",

@@ -146,14 +146,26 @@ def _under(host: str, domain: str | None) -> bool:
     return bool(host and domain) and (host == domain or host.endswith("." + domain))
 
 
+def _url_host(url: str) -> str:
+    """The URL's host, or "" when it has none or cannot be parsed.
+
+    Records are publisher data: a template such as https://[{address}]/mcp makes
+    urlsplit raise, and one such record must not stop the whole sync.
+    """
+    try:
+        return urllib.parse.urlsplit(url).hostname or ""
+    except ValueError:
+        return ""
+
+
 def signals(record: dict[str, Any]) -> dict[str, Any]:
     server = record.get("server") or {}
     official = (record.get("_meta") or {}).get(build_index.OFFICIAL_META_KEY) or {}
     name = str(server.get("name") or "")
     domain = namespace_domain(name)
     remotes = [r for r in server.get("remotes") or [] if r.get("type") == "streamable-http"]
-    hosts = [urllib.parse.urlsplit(r.get("url", "")).hostname or "" for r in remotes]
-    website_host = urllib.parse.urlsplit(str(server.get("websiteUrl") or "")).hostname or ""
+    hosts = [_url_host(r.get("url", "")) for r in remotes]
+    website_host = _url_host(str(server.get("websiteUrl") or ""))
     return {
         "name": name,
         "version": server.get("version"),

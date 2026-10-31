@@ -1,6 +1,6 @@
-# Reviewed 2026-10-10: https://developers.make.com/mcp-server/connect-using-oauth
+# Reviewed 2026-10-31: https://developers.make.com/mcp-server/connect-using-oauth (OAuth URL is now https://mcp.make.com/v2)
 # User picks organization and scopes on the OAuth consent screen; scenarios must be active with on-demand scheduling to appear as tools. /stateless and /stream path variants exist if connection fails; /sse is legacy SSE. MCP token alternative available in Make profile.
-revision: 2
+revision: 3
 source:
   registry: com.make/mcp-server
 title: Make
@@ -16,7 +16,7 @@ official:
 remotes:
 - id: default
   label: Make
-  url: https://mcp.make.com
+  url: https://mcp.make.com/v2
   allowed_hosts:
   - mcp.make.com
   auth:

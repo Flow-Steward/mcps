@@ -114,6 +114,22 @@ def _write_json(path: Path, value: object) -> None:
     )
 
 
+def free_candidate_id(item_id: str, name: str, occupied: dict[str, str]) -> str:
+    """A folder name for *name* that no other record holds.
+
+    Slugs and hash prefixes come from publisher data and can be chosen to collide;
+    a collision picks the next free name instead of stopping discovery.
+    """
+    digest = hashlib.sha256(name.encode()).hexdigest()
+    for candidate in (f"{item_id}-{digest[:12]}", f"{item_id}-{digest}"):
+        if occupied.get(candidate, name) == name:
+            return candidate
+    counter = 2
+    while occupied.get(f"{item_id}-{digest}-{counter}", name) != name:
+        counter += 1
+    return f"{item_id}-{digest}-{counter}"
+
+
 def discover(records: list[dict], *, limit: int = 25) -> dict:
     """Public sync boundary: only reviewed vendor MCPs for services needing a route."""
     from registry_priority import MarketPriorities
@@ -238,9 +254,7 @@ def stage_candidates(records: list[dict], *, limit: int = 25, rejected: dict | N
         if item_id in occupied and occupied[item_id] != name:
             # Candidate folders are staging identities, not publication decisions.
             # A previous wrapper must not reserve a vendor's name indefinitely.
-            item_id += "-" + hashlib.sha256(name.encode()).hexdigest()[:12]
-            if item_id in occupied and occupied[item_id] != name:
-                raise ValueError(f"candidate directory collision: {item_id}")
+            item_id = free_candidate_id(item_id, name, occupied)
         candidate = identity(item_id, record["server"])
         matches = duplicate_matches(candidate, known)
         if matches:
