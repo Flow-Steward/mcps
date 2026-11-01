@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-10-31.612e3fac",
-  "published_at": "2026-10-31T22:40:13Z",
+  "catalog_revision": "2026-11-01.8a04e1fd",
+  "published_at": "2026-11-01T16:18:23Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -5411,7 +5411,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.0.9"
+            "version": "2.0.10"
           }
         ],
         "remotes": [
@@ -5435,15 +5435,15 @@
           "source": "github",
           "url": "https://github.com/EduBase/MCP"
         },
-        "version": "2.0.9",
+        "version": "2.0.10",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "edubase",
-            "revision": 2,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "io.github.EduBase/MCP",
-              "version": "2.0.9"
+              "version": "2.0.10"
             },
             "title": "EduBase",
             "summary": "Create and manage EduBase quizzes, exams, questions, users, and classes on the EduBase e-learning platform.",
@@ -5490,17 +5490,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/edubase",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:45:07Z"
+            "updated_at": "2026-11-01T16:18:23Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-26T14:30:33.898463Z",
+          "publishedAt": "2026-10-31T23:23:53.892282Z",
           "status": "active",
-          "statusChangedAt": "2026-10-26T14:30:33.898463Z",
-          "updatedAt": "2026-10-26T14:30:33.898463Z"
+          "statusChangedAt": "2026-10-31T23:23:53.892282Z",
+          "updatedAt": "2026-10-31T23:23:53.892282Z"
         }
       }
     },
