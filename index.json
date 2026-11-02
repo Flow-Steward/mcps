@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-02.905d763e",
-  "published_at": "2026-11-02T14:53:13Z",
+  "catalog_revision": "2026-11-02.b61d309e",
+  "published_at": "2026-11-02T16:41:02Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -339,6 +339,92 @@
           "publishedAt": "2025-10-16T20:22:46.742037Z",
           "updatedAt": "2025-10-16T20:22:46.742037Z",
           "isLatest": true
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/apache-solr",
+        "title": "Apache Solr",
+        "description": "Search and index Apache Solr documents through your own secured MCP server.",
+        "version": "1.0.0",
+        "repository": {
+          "url": "https://github.com/apache/solr-mcp",
+          "source": "github"
+        },
+        "websiteUrl": "https://solr.apache.org",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://{instance_host}/mcp",
+            "variables": {
+              "instance_host": {
+                "description": "HTTPS hostname for your Apache Solr MCP HTTP server. Not the Solr database endpoint.",
+                "isRequired": true
+              }
+            },
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Enter Bearer followed by an access JWT from your configured identity provider. Its audience must match this MCP server URL. Replace the token when it expires.",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "apache-solr",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/apache-solr",
+              "version": "1.0.0"
+            },
+            "title": "Apache Solr",
+            "summary": "Search and index Apache Solr documents through your own secured MCP server.",
+            "description": "Search and index Apache Solr documents through your own secured MCP server. Requires building and hosting the Apache Solr MCP server in HTTP mode with TLS and a configured JWT issuer. Supports full-text search and indexing; document deletion and vector/KNN search are not exposed by the upstream MCP server.",
+            "category": "data",
+            "website_url": "https://solr.apache.org",
+            "help_url": "https://github.com/apache/solr-mcp/blob/main/docs/security/http.md",
+            "preview_note": "Self-hosted preview; build from source required",
+            "keywords": [
+              "Solr",
+              "Apache Solr",
+              "search",
+              "indexing"
+            ],
+            "official": null,
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/d457c8b1023d5851de3a481c15997411af599e97/servers/apache-solr/icon.png",
+              "sha256": "842445876927b2b6a21d26fc21cf8c361f52c28e8e8c0008a2a7b402f43731a7",
+              "bytes": 3385,
+              "mime_type": "image/png",
+              "size": "48x48"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Apache Solr",
+                "url": "https://{instance_host}/mcp",
+                "allowed_hosts": [],
+                "user_defined_host": true,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://github.com/apache/solr-mcp/blob/main/docs/security/http.md"
+                },
+                "field_labels": {
+                  "instance_host": "Solr MCP server address",
+                  "Authorization": "JWT bearer token"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/apache-solr",
+            "added_at": "2026-11-02T16:41:02Z",
+            "updated_at": "2026-11-02T16:41:02Z"
+          }
         }
       }
     },
@@ -13655,6 +13741,95 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/mongodb",
+        "title": "MongoDB (self-hosted MCP)",
+        "description": "Query, insert, update and delete MongoDB documents through your own HTTPS MCP gateway.",
+        "version": "1.0.0",
+        "repository": {
+          "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+          "source": "github"
+        },
+        "websiteUrl": "https://www.mongodb.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://{instance_host}/mcp",
+            "variables": {
+              "instance_host": {
+                "description": "HTTPS gateway hostname for your MongoDB MCP server, configured with bearer-token authentication. Not a MongoDB database hostname or mongodb:// connection string.",
+                "isRequired": true
+              }
+            },
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Enter Bearer followed by your gateway access token. Configure authentication at your HTTPS reverse proxy; MongoDB Local MCP HTTP does not supply this itself.",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "mongodb",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/mongodb",
+              "version": "1.0.0"
+            },
+            "title": "MongoDB (self-hosted MCP)",
+            "summary": "Query, insert, update and delete MongoDB documents through your own HTTPS MCP gateway.",
+            "description": "Query, insert, update and delete MongoDB documents through your own HTTPS MCP gateway. Requires a self-hosted MongoDB MCP HTTP service behind an authenticated TLS reverse proxy. Available operations depend on configured MongoDB roles and read-only mode. This connection is not the Atlas Managed MCP service.",
+            "category": "data",
+            "website_url": "https://www.mongodb.com",
+            "help_url": "https://www.mongodb.com/docs/mcp-server/local-mcp/configuration/standalone-service/",
+            "preview_note": "Self-hosted HTTPS gateway required",
+            "keywords": [
+              "MongoDB",
+              "Atlas",
+              "documents",
+              "NoSQL"
+            ],
+            "official": {
+              "vendor": "MongoDB",
+              "evidence_url": "https://www.mongodb.com/docs/mcp-server/local-mcp/configuration/standalone-service/"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/d457c8b1023d5851de3a481c15997411af599e97/servers/mongodb/icon.png",
+              "sha256": "362be04d8a9d58c651bf3a10c02776ccf01b5240aecd179170f34beee41b40c6",
+              "bytes": 24736,
+              "mime_type": "image/png",
+              "size": "256x256"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "MongoDB (self-hosted MCP)",
+                "url": "https://{instance_host}/mcp",
+                "allowed_hosts": [],
+                "user_defined_host": true,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://www.mongodb.com/docs/mcp-server/local-mcp/configuration/standalone-service/"
+                },
+                "field_labels": {
+                  "instance_host": "MongoDB MCP gateway address",
+                  "Authorization": "Gateway bearer token"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/mongodb",
+            "added_at": "2026-11-02T16:41:02Z",
+            "updated_at": "2026-11-02T16:41:02Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/monte-carlo",
         "title": "Monte Carlo",
         "description": "Investigate data quality alerts, monitors, incidents, and table lineage in Monte Carlo data…",
@@ -17563,6 +17738,97 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/readwise",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/redisvl",
+        "title": "RedisVL",
+        "description": "Search and upsert records in existing Redis search indexes through your own RedisVL MCP server.",
+        "version": "1.0.0",
+        "repository": {
+          "url": "https://github.com/redis/redis-vl-python",
+          "source": "github"
+        },
+        "websiteUrl": "https://redis.io",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://{instance_host}/mcp",
+            "variables": {
+              "instance_host": {
+                "description": "HTTPS hostname for your RedisVL MCP server configured with JWT authentication. Not a Redis database endpoint.",
+                "isRequired": true
+              }
+            },
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Enter Bearer followed by a JWT from your configured identity provider, with the audience and read/write scopes required by RedisVL. Replace the token when it expires.",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "redisvl",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/redisvl",
+              "version": "1.0.0"
+            },
+            "title": "RedisVL",
+            "summary": "Search and upsert records in existing Redis search indexes through your own RedisVL MCP server.",
+            "description": "Search and upsert records in existing Redis search indexes through your own RedisVL MCP server. Requires Redis with Search capabilities, existing indexes, and a self-hosted HTTPS RedisVL MCP service with JWT authentication. Supports vector, full-text or hybrid search according to index configuration, plus record upserts when enabled. Does not expose document deletion or general Redis key commands. Configured vectorizers and their credentials are managed on the server.",
+            "category": "data",
+            "website_url": "https://redis.io",
+            "help_url": "https://redis.io/docs/latest/develop/ai/redisvl/user_guide/how_to_guides/mcp/",
+            "preview_note": "Self-hosted; existing Redis Search indexes required",
+            "keywords": [
+              "Redis",
+              "RedisVL",
+              "vectors",
+              "search",
+              "embeddings",
+              "RAG"
+            ],
+            "official": {
+              "vendor": "Redis",
+              "evidence_url": "https://redis.io/docs/latest/develop/ai/redisvl/user_guide/how_to_guides/mcp/"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/d457c8b1023d5851de3a481c15997411af599e97/servers/redisvl/icon.png",
+              "sha256": "300f2097a8ea1b2ce630e891cb69ff1550ead9cfa99d76c7f76eef9b89c7e88b",
+              "bytes": 9278,
+              "mime_type": "image/png",
+              "size": "256x256"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "RedisVL",
+                "url": "https://{instance_host}/mcp",
+                "allowed_hosts": [],
+                "user_defined_host": true,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://redis.io/docs/latest/develop/ai/redisvl/user_guide/how_to_guides/mcp_authentication/"
+                },
+                "field_labels": {
+                  "instance_host": "RedisVL MCP server address",
+                  "Authorization": "JWT bearer token"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/redisvl",
+            "added_at": "2026-11-02T16:41:02Z",
+            "updated_at": "2026-11-02T16:41:02Z"
           }
         }
       }
@@ -22984,6 +23250,6 @@
     }
   ],
   "metadata": {
-    "count": 280
+    "count": 283
   }
 }
