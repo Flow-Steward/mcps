@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-01.8a04e1fd",
-  "published_at": "2026-11-01T16:18:23Z",
+  "catalog_revision": "2026-11-02.905d763e",
+  "published_at": "2026-11-02T14:53:13Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -1262,16 +1262,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.145.0",
+        "version": "0.147.0",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 5,
+            "revision": 6,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.145.0"
+              "version": "0.147.0"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -1312,17 +1312,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-10-31T12:00:41Z"
+            "updated_at": "2026-11-02T14:53:13Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-30T15:37:38.391861Z",
+          "publishedAt": "2026-11-02T13:00:13.527368Z",
           "status": "active",
-          "statusChangedAt": "2026-10-30T15:37:38.391861Z",
-          "updatedAt": "2026-10-30T15:37:38.391861Z"
+          "statusChangedAt": "2026-11-02T13:00:13.527368Z",
+          "updatedAt": "2026-11-02T13:00:13.527368Z"
         }
       }
     },
