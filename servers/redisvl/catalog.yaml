@@ -1,0 +1,26 @@
+# Reviewed Redis documentation; authenticated live deployment not available.
+revision: 1
+title: RedisVL
+summary: Search and upsert records in existing Redis search indexes through your own RedisVL MCP server.
+description: >-
+  Search and upsert records in existing Redis search indexes through your own RedisVL MCP server. Requires Redis with Search capabilities, existing indexes, and a self-hosted HTTPS RedisVL MCP service with JWT authentication. Supports vector, full-text or hybrid search according to index configuration, plus record upserts when enabled. Does not expose document deletion or general Redis key commands. Configured vectorizers and their credentials are managed on the server.
+category: data
+website_url: https://redis.io
+help_url: https://redis.io/docs/latest/develop/ai/redisvl/user_guide/how_to_guides/mcp/
+preview_note: Self-hosted; existing Redis Search indexes required
+keywords: [Redis, RedisVL, vectors, search, embeddings, RAG]
+official:
+  vendor: Redis
+  evidence_url: https://redis.io/docs/latest/develop/ai/redisvl/user_guide/how_to_guides/mcp/
+remotes:
+- id: default
+  label: RedisVL
+  url: https://{instance_host}/mcp
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: RedisVL MCP server address
+    Authorization: JWT bearer token
+  auth:
+    mode: headers
+    setup_url: https://redis.io/docs/latest/develop/ai/redisvl/user_guide/how_to_guides/mcp_authentication/

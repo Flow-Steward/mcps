@@ -1,0 +1,26 @@
+# Reviewed against upstream documentation and source; no live customer credentials used.
+revision: 1
+title: MongoDB (self-hosted MCP)
+summary: Query, insert, update and delete MongoDB documents through your own HTTPS MCP gateway.
+description: >-
+  Query, insert, update and delete MongoDB documents through your own HTTPS MCP gateway. Requires a self-hosted MongoDB MCP HTTP service behind an authenticated TLS reverse proxy. Available operations depend on configured MongoDB roles and read-only mode. This connection is not the Atlas Managed MCP service.
+category: data
+website_url: https://www.mongodb.com
+help_url: https://www.mongodb.com/docs/mcp-server/local-mcp/configuration/standalone-service/
+preview_note: Self-hosted HTTPS gateway required
+keywords: [MongoDB, Atlas, documents, NoSQL]
+official:
+  vendor: MongoDB
+  evidence_url: https://www.mongodb.com/docs/mcp-server/local-mcp/configuration/standalone-service/
+remotes:
+- id: default
+  label: MongoDB (self-hosted MCP)
+  url: https://{instance_host}/mcp
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: MongoDB MCP gateway address
+    Authorization: Gateway bearer token
+  auth:
+    mode: headers
+    setup_url: https://www.mongodb.com/docs/mcp-server/local-mcp/configuration/standalone-service/

@@ -1,0 +1,23 @@
+# Reviewed against upstream documentation and source; no live customer credentials used.
+revision: 1
+title: Apache Solr
+summary: Search and index Apache Solr documents through your own secured MCP server.
+description: >-
+  Search and index Apache Solr documents through your own secured MCP server. Requires building and hosting the Apache Solr MCP server in HTTP mode with TLS and a configured JWT issuer. Supports full-text search and indexing; document deletion and vector/KNN search are not exposed by the upstream MCP server.
+category: data
+website_url: https://solr.apache.org
+help_url: https://github.com/apache/solr-mcp/blob/main/docs/security/http.md
+preview_note: Self-hosted preview; build from source required
+keywords: [Solr, Apache Solr, search, indexing]
+remotes:
+- id: default
+  label: Apache Solr
+  url: https://{instance_host}/mcp
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: Solr MCP server address
+    Authorization: JWT bearer token
+  auth:
+    mode: headers
+    setup_url: https://github.com/apache/solr-mcp/blob/main/docs/security/http.md

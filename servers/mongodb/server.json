@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/mongodb",
+  "title": "MongoDB (self-hosted MCP)",
+  "description": "Query, insert, update and delete MongoDB documents through your own HTTPS MCP gateway.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "source": "github"
+  },
+  "websiteUrl": "https://www.mongodb.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "HTTPS gateway hostname for your MongoDB MCP server, configured with bearer-token authentication. Not a MongoDB database hostname or mongodb:// connection string.",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by your gateway access token. Configure authentication at your HTTPS reverse proxy; MongoDB Local MCP HTTP does not supply this itself.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

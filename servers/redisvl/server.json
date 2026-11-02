@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/redisvl",
+  "title": "RedisVL",
+  "description": "Search and upsert records in existing Redis search indexes through your own RedisVL MCP server.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/redis/redis-vl-python",
+    "source": "github"
+  },
+  "websiteUrl": "https://redis.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "HTTPS hostname for your RedisVL MCP server configured with JWT authentication. Not a Redis database endpoint.",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by a JWT from your configured identity provider, with the audience and read/write scopes required by RedisVL. Replace the token when it expires.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

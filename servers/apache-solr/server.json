@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/apache-solr",
+  "title": "Apache Solr",
+  "description": "Search and index Apache Solr documents through your own secured MCP server.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/apache/solr-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://solr.apache.org",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "HTTPS hostname for your Apache Solr MCP HTTP server. Not the Solr database endpoint.",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by an access JWT from your configured identity provider. Its audience must match this MCP server URL. Replace the token when it expires.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
