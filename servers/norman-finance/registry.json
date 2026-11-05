@@ -1,56 +1,35 @@
 {
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-11-02T21:23:31.404563Z",
+      "status": "active",
+      "statusChangedAt": "2026-11-02T21:23:31.404563Z",
+      "updatedAt": "2026-11-02T21:23:31.404563Z"
+    }
+  },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-    "name": "finance.norman/mcp-server",
-    "description": "AI-powered bookkeeping and tax filing for entrepreneurs at the heart of the European economy.",
-    "title": "Norman MCP Server",
-    "repository": {
-      "url": "https://github.com/norman-finance/norman-mcp-server",
-      "source": "github"
-    },
-    "version": "0.1.7",
-    "packages": [
+    "description": "Bookkeeping, invoices and tax workflows for European businesses, including Polish KPiR and JPK.",
+    "icons": [
       {
-        "registryType": "pypi",
-        "identifier": "norman-mcp-server",
-        "version": "0.1.7",
-        "transport": {
-          "type": "stdio"
-        },
-        "environmentVariables": [
-          {
-            "description": "Your Norman account email",
-            "isRequired": true,
-            "name": "NORMAN_EMAIL"
-          },
-          {
-            "description": "Your Norman account password",
-            "isRequired": true,
-            "isSecret": true,
-            "name": "NORMAN_PASSWORD"
-          },
-          {
-            "description": "API environment: 'production' or 'sandbox'",
-            "default": "production",
-            "name": "NORMAN_ENVIRONMENT"
-          }
-        ]
+        "mimeType": "image/png",
+        "src": "https://norman.finance/icon.png"
       }
     ],
+    "name": "finance.norman/mcp-server",
     "remotes": [
       {
         "type": "streamable-http",
         "url": "https://mcp.norman.finance/mcp"
       }
-    ]
-  },
-  "_meta": {
-    "io.modelcontextprotocol.registry/official": {
-      "status": "active",
-      "statusChangedAt": "2026-02-19T14:20:46.349672Z",
-      "publishedAt": "2026-02-19T14:20:46.349672Z",
-      "updatedAt": "2026-02-19T14:20:46.349672Z",
-      "isLatest": true
-    }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/norman-finance/norman-mcp-server"
+    },
+    "title": "Norman Finance — AI Bookkeeping, Accounting & Taxes",
+    "version": "0.1.8",
+    "websiteUrl": "https://norman.finance"
   }
 }

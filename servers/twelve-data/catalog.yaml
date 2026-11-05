@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://twelvedata.com/docs/llms/ai/mcp-server.md
 # OAuth 2.1 login with Twelve Data account (no API key). Data/endpoint access depends on subscription plan.
-revision: 1
+revision: 2
 source:
   registry: com.twelvedata/mcp
 title: Twelve Data
