@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-05.06b3208b",
-  "published_at": "2026-11-05T12:16:16Z",
+  "catalog_revision": "2026-11-05.1602b8d8",
+  "published_at": "2026-11-05T14:24:17Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -1022,7 +1022,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-31T12:00:41Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
@@ -2240,7 +2240,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-11-02T14:53:13Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
@@ -9266,7 +9266,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fulcra-context",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-30T13:26:24Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
@@ -18694,7 +18694,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/norman-finance",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
@@ -20849,7 +20849,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-31T12:00:41Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
@@ -25203,7 +25203,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/svelte",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:45:07Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
@@ -26455,7 +26455,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/twelve-data",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
