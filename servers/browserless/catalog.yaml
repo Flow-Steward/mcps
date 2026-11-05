@@ -1,0 +1,31 @@
+# Reviewed 2026-11-05: https://docs.browserless.io/mcp/browserless-mcp-server/setup
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Browserless
+description: Automate browsers, scrape and search pages, run audits, and execute browser tasks through
+  Browserless.
+category: developer-tools
+website_url: https://www.browserless.io
+help_url: https://docs.browserless.io/mcp/browserless-mcp-server/setup
+keywords:
+- browser automation
+- scraping
+- headless browser
+official:
+  vendor: Browserless
+  evidence_url: https://docs.browserless.io/mcp/browserless-mcp-server/setup
+remotes:
+- id: default
+  label: Sign in with Browserless
+  url: https://mcp.browserless.io/mcp
+  allowed_hosts:
+  - mcp.browserless.io
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - email
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://docs.browserless.io/mcp/browserless-mcp-server/setup

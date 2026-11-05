@@ -1,0 +1,24 @@
+# Reviewed 2026-11-05: https://developer.lemlist.com/mcp/setup.md
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Lemlist
+description: Manage outreach campaigns and leads, enrich contact data, and inspect lemlist performance.
+category: sales
+website_url: https://www.lemlist.com
+help_url: https://developer.lemlist.com/mcp/setup.md
+preview_note: Some enrichment and verification operations consume credits.
+keywords:
+- lemlist
+official:
+  vendor: lemlist
+  evidence_url: https://developer.lemlist.com/mcp/setup.md
+remotes:
+- id: default
+  label: lemlist API key
+  url: https://app.lemlist.com/mcp
+  allowed_hosts:
+  - app.lemlist.com
+  user_defined_host: false
+  auth:
+    mode: headers
+    setup_url: https://developer.lemlist.com/mcp/setup.md

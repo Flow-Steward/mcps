@@ -1,0 +1,33 @@
+# Reviewed 2026-11-05: https://www.beehiiv.com/support/article/39255979546263-getting-started-with-the-beehiiv-mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Beehiiv
+description: Read newsletter data and manage content and subscribers in beehiiv, subject to your plan.
+category: email
+website_url: https://www.beehiiv.com
+help_url: https://www.beehiiv.com/support/article/39255979546263-getting-started-with-the-beehiiv-mcp
+preview_note: Enable MCP in workspace settings. Free is read-only; Lite adds editing; Pro and Enterprise
+  add scheduling and sending.
+keywords:
+- newsletters
+- subscribers
+- publishing
+official:
+  vendor: beehiiv
+  evidence_url: https://www.beehiiv.com/support/article/39255979546263-getting-started-with-the-beehiiv-mcp
+remotes:
+- id: default
+  label: Sign in with beehiiv
+  url: https://mcp.beehiiv.com/mcp
+  allowed_hosts:
+  - mcp.beehiiv.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://www.beehiiv.com/support/article/39255979546263-getting-started-with-the-beehiiv-mcp
+    client_registration: dcr
+    requested_scopes:
+    - read
+    - write
+    authorization_parameters: {}
+    refresh_token_required: false

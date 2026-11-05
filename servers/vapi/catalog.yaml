@@ -1,0 +1,26 @@
+# Reviewed 2026-11-05: https://docs.vapi.ai/sdk/mcp-server
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Vapi
+description: Manage Vapi voice assistants, phone numbers, call records, and outbound call workflows.
+category: ai
+website_url: https://vapi.ai
+help_url: https://docs.vapi.ai/sdk/mcp-server
+preview_note: Requires a Vapi API key entered as a Bearer token in the Authorization header.
+keywords:
+- voice AI
+- telephony
+- assistants
+official:
+  vendor: Vapi
+  evidence_url: https://docs.vapi.ai/sdk/mcp-server
+remotes:
+- id: default
+  label: Vapi API key
+  url: https://mcp.vapi.ai/mcp
+  allowed_hosts:
+  - mcp.vapi.ai
+  user_defined_host: false
+  auth:
+    mode: headers
+    setup_url: https://docs.vapi.ai/sdk/mcp-server

@@ -1,0 +1,28 @@
+# Reviewed 2026-11-05: https://docs.whop.com/developer/guides/ai_and_mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Whop
+description: Explore Whop resources and manage authorized business data through its reviewed API tools.
+category: ecommerce
+website_url: https://whop.com
+help_url: https://docs.whop.com/developer/guides/ai_and_mcp
+keywords:
+- Whop
+official:
+  vendor: Whop
+  evidence_url: https://docs.whop.com/developer/guides/ai_and_mcp
+remotes:
+- id: default
+  label: Sign in with Whop
+  url: https://mcp.whop.com/mcp
+  allowed_hosts:
+  - mcp.whop.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://docs.whop.com/developer/guides/ai_and_mcp
+    client_registration: dcr
+    requested_scopes:
+    - admin
+    authorization_parameters: {}
+    refresh_token_required: false

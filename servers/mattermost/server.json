@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/mattermost",
+  "title": "Mattermost",
+  "description": "Search and read Mattermost messages, create posts and manage supported channel and team actions.",
+  "version": "1.0.0",
+  "websiteUrl": "https://mattermost.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{host}/plugins/mattermost-ai/mcp-server/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer followed by your Mattermost Personal Access Token.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "variables": {
+        "host": {
+          "description": "Your HTTPS instance hostname, without scheme or path."
+        }
+      }
+    }
+  ]
+}

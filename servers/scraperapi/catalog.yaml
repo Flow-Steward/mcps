@@ -1,0 +1,26 @@
+# Reviewed 2026-11-05: https://docs.scraperapi.com/integrations/llm-integrations/mcp-server/claude-code
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: ScraperAPI
+description: Retrieve webpages and images with JavaScript rendering, geotargeting and premium proxies,
+  and return text, Markdown or structured data for supported websites.
+category: data
+website_url: https://www.scraperapi.com
+help_url: https://docs.scraperapi.com/integrations/llm-integrations/mcp-server/claude-code
+keywords:
+- web scraping
+- data extraction
+- MCP
+official:
+  vendor: ScraperAPI
+  evidence_url: https://docs.scraperapi.com/integrations/llm-integrations/mcp-server/claude-code
+remotes:
+- id: default
+  label: ScraperAPI
+  url: https://mcp.scraperapi.com/mcp
+  allowed_hosts:
+  - mcp.scraperapi.com
+  user_defined_host: false
+  auth:
+    mode: headers
+    setup_url: https://dashboard.scraperapi.com/home

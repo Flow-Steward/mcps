@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/bright-data",
+  "title": "Bright Data",
+  "description": "Search the live web and scrape public pages into clean Markdown using Bright Data proxy and anti-bot infrastructure.",
+  "version": "1.0.0",
+  "websiteUrl": "https://brightdata.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.brightdata.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by a space and your Bright Data API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# Reviewed 2026-11-05: https://gumroad.com/.well-known/mcp.json
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Gumroad
+description: Manage digital products, review sales and payouts, and draft and publish products on Gumroad.
+category: ecommerce
+website_url: https://gumroad.com
+help_url: https://gumroad.com/.well-known/mcp.json
+keywords:
+- digital products
+- sales
+- payouts
+official:
+  vendor: Gumroad
+  evidence_url: https://gumroad.com/.well-known/mcp.json
+remotes:
+- id: default
+  label: Sign in with Gumroad
+  url: https://gumroad.com/muse/v1/mcp
+  allowed_hosts:
+  - gumroad.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://gumroad.com/.well-known/mcp.json
+    client_registration: dcr
+    requested_scopes:
+    - view_public
+    - view_profile
+    - view_sales
+    - edit_products
+    - view_payouts
+    authorization_parameters: {}
+    refresh_token_required: false

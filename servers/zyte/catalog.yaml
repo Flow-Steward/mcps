@@ -1,0 +1,34 @@
+# Reviewed 2026-11-05: https://docs.zyte.com/zyte-web-data/mcp.html
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Zyte
+description: Fetch protected pages with HTTP or browser rendering, extract structured web data, search
+  the web, and manage Scrapy Cloud projects and crawl jobs.
+category: data
+website_url: https://www.zyte.com
+help_url: https://docs.zyte.com/zyte-web-data/mcp.html
+preview_note: Some capabilities need an active Zyte API or Scrapy Cloud plan. Underlying API requests
+  and crawl jobs are billed to the selected organization.
+keywords:
+- web scraping
+- data extraction
+- MCP
+official:
+  vendor: Zyte
+  evidence_url: https://docs.zyte.com/zyte-web-data/mcp.html
+remotes:
+- id: default
+  label: Zyte
+  url: https://mcp.zyte.com/v1/mcp
+  allowed_hosts:
+  - mcp.zyte.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - zapi:read
+    - offline_access
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://docs.zyte.com/zyte-web-data/mcp.html

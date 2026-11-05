@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/dropcontact",
+  "title": "Dropcontact",
+  "description": "Enrich business contacts, find professional email addresses, validate emails, and check Dropcontact credits.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.dropcontact.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.dropcontact.com/mcp"
+    }
+  ]
+}

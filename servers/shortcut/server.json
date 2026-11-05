@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/shortcut",
+  "title": "Shortcut",
+  "description": "Find, create, and update Shortcut stories, epics, iterations, and documents in authorized workspaces.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.shortcut.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.shortcut.com/mcp"
+    }
+  ]
+}

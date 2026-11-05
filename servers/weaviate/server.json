@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/weaviate",
+  "title": "Weaviate",
+  "description": "Inspect collection schemas, search vector and hybrid data, and modify permitted objects in Weaviate.",
+  "version": "1.0.0",
+  "websiteUrl": "https://weaviate.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{host}/v1/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer followed by your Weaviate API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "variables": {
+        "host": {
+          "description": "Your HTTPS instance hostname, without scheme or path."
+        }
+      }
+    }
+  ]
+}

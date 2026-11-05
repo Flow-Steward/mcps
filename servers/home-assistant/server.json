@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/home-assistant",
+  "title": "Home Assistant",
+  "description": "Read home device states and run the Home Assistant tools your administrator exposes.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.home-assistant.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/api/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "Public HTTPS hostname of your Home Assistant instance, without scheme or path."
+        }
+      }
+    }
+  ]
+}

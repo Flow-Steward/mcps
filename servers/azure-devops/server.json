@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/azure-devops",
+  "title": "Azure DevOps",
+  "description": "Work with Azure DevOps projects, work items, repositories and pull requests through Microsoft hosted MCP.",
+  "version": "1.0.0",
+  "websiteUrl": "https://azure.microsoft.com/products/devops",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.dev.azure.com"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "variables": {
+        "organization": {
+          "description": "Azure DevOps organization name."
+        }
+      }
+    }
+  ]
+}

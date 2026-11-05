@@ -1,0 +1,44 @@
+# Reviewed 2026-11-05: https://www.docusign.com/blog/developers/docusign-mcp-server-general-availability
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Docusign
+description: Search agreements and prepare, send, and manage Docusign eSignature workflows.
+category: documents
+website_url: https://www.docusign.com
+help_url: https://www.docusign.com/blog/developers/docusign-mcp-server-general-availability
+preview_note: Register an Integration Key with the Flow Steward callback and client secret. Production
+  requires Docusign approval of your key; developer demo is available separately. Admins can disable MCP.
+keywords:
+- Docusign
+official:
+  vendor: Docusign
+  evidence_url: https://www.docusign.com/blog/developers/docusign-mcp-server-general-availability
+remotes:
+- id: production
+  label: Production
+  url: https://mcp.docusign.com/mcp
+  allowed_hosts:
+  - mcp.docusign.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - signature
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://www.docusign.com/blog/developers/docusign-mcp-server-general-availability
+- id: demo
+  label: Developer demo
+  url: https://mcp-d.docusign.com/mcp
+  allowed_hosts:
+  - mcp-d.docusign.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - signature
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://www.docusign.com/blog/developers/docusign-mcp-server-general-availability

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/beehiiv",
+  "title": "beehiiv",
+  "description": "Read newsletter data and manage content and subscribers in beehiiv, subject to your plan.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.beehiiv.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.beehiiv.com/mcp"
+    }
+  ]
+}

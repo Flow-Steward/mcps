@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/apify",
+  "title": "Apify",
+  "description": "Discover and run Apify Actors and retrieve their stored results for web data and automation.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com"
+    }
+  ]
+}

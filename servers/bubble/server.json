@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/bubble",
+  "title": "Bubble",
+  "description": "Build and edit Bubble applications, workflows, pages, and development data with an AI assistant.",
+  "version": "1.0.0",
+  "websiteUrl": "https://bubble.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.bubble.io/mcp"
+    }
+  ]
+}

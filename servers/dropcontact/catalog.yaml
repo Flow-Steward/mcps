@@ -1,0 +1,34 @@
+# Reviewed 2026-11-05: https://developer.dropcontact.com/en/mcp/
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Dropcontact
+description: Enrich business contacts, find professional email addresses, validate emails, and check Dropcontact
+  credits.
+category: sales
+website_url: https://www.dropcontact.com
+help_url: https://developer.dropcontact.com/en/mcp/
+preview_note: Enrichment is asynchronous and may take up to three minutes; credits apply.
+keywords:
+- email enrichment
+- B2B contacts
+- email validation
+official:
+  vendor: Dropcontact
+  evidence_url: https://developer.dropcontact.com/en/mcp/
+remotes:
+- id: default
+  label: Sign in with Dropcontact
+  url: https://mcp.dropcontact.com/mcp
+  allowed_hosts:
+  - mcp.dropcontact.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - openid
+    - email
+    - offline_access
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://developer.dropcontact.com/en/mcp/

@@ -1,0 +1,26 @@
+# Reviewed 2026-11-05: https://hasdata.com/integrations/mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: HasData
+description: Scrape public pages and retrieve structured search results, Maps businesses, product data,
+  property listings, job postings and other supported website datasets.
+category: data
+website_url: https://hasdata.com
+help_url: https://hasdata.com/integrations/mcp
+keywords:
+- web scraping
+- data extraction
+- MCP
+official:
+  vendor: HasData
+  evidence_url: https://hasdata.com/integrations/mcp
+remotes:
+- id: default
+  label: HasData
+  url: https://mcp.hasdata.com/mcp
+  allowed_hosts:
+  - mcp.hasdata.com
+  user_defined_host: false
+  auth:
+    mode: headers
+    setup_url: https://app.hasdata.com/

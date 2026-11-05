@@ -1,0 +1,28 @@
+# Reviewed 2026-11-05: https://basecamp.com/ai
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Basecamp
+description: Read and organize Basecamp projects, to-dos, messages, calendars, documents, and files.
+category: productivity
+website_url: https://basecamp.com
+help_url: https://basecamp.com/ai
+preview_note: Choose read-only or full access during sign-in.
+keywords:
+- Basecamp
+official:
+  vendor: Basecamp
+  evidence_url: https://basecamp.com/ai
+remotes:
+- id: default
+  label: Sign in with Basecamp
+  url: https://mcp.basecamp.com/mcp
+  allowed_hosts:
+  - mcp.basecamp.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://basecamp.com/ai
+    client_registration: dcr
+    requested_scopes: []
+    authorization_parameters: {}
+    refresh_token_required: false

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/buffer",
+  "title": "Buffer",
+  "description": "Read social channels, manage post queues and drafts, and review publishing analytics in Buffer.",
+  "version": "1.0.0",
+  "websiteUrl": "https://buffer.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.buffer.com/mcp"
+    }
+  ]
+}

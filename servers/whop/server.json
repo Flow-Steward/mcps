@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/whop",
+  "title": "Whop",
+  "description": "Explore Whop resources and manage authorized business data through its reviewed API tools.",
+  "version": "1.0.0",
+  "websiteUrl": "https://whop.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.whop.com/mcp"
+    }
+  ]
+}

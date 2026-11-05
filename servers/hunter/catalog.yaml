@@ -1,0 +1,24 @@
+# Reviewed 2026-11-05: https://hunter.io/api-documentation#mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Hunter
+description: Find and verify business email addresses, enrich company data, and manage Hunter leads.
+category: sales
+website_url: https://hunter.io
+help_url: https://hunter.io/api-documentation#mcp
+preview_note: A valid Hunter API key is required; account credits and API limits apply.
+keywords:
+- Hunter
+official:
+  vendor: Hunter
+  evidence_url: https://hunter.io/api-documentation#mcp
+remotes:
+- id: default
+  label: Hunter API key
+  url: https://mcp.hunter.io/mcp
+  allowed_hosts:
+  - mcp.hunter.io
+  user_defined_host: false
+  auth:
+    mode: headers
+    setup_url: https://hunter.io/api-documentation#mcp

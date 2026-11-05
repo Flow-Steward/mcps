@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/cloudconvert",
+  "title": "CloudConvert",
+  "description": "Convert, compress, merge, and process files, and inspect conversion jobs and webhooks.",
+  "version": "1.0.0",
+  "websiteUrl": "https://cloudconvert.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.cloudconvert.com"
+    }
+  ]
+}

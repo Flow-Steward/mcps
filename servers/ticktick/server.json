@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/ticktick",
+  "title": "TickTick",
+  "description": "Search and organize tasks, lists, habits, and focus records in your TickTick account.",
+  "version": "1.0.0",
+  "websiteUrl": "https://ticktick.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ticktick.com"
+    }
+  ]
+}

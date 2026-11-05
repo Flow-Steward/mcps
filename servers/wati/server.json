@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/wati",
+  "title": "WATI",
+  "description": "Manage WATI contacts, conversations, messages, campaigns, templates, segments, and webhooks.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.wati.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.wati.io/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://eu-mcp.wati.io/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://ksa-mcp.wati.io/mcp"
+    }
+  ]
+}

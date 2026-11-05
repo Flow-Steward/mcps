@@ -1,0 +1,33 @@
+# Reviewed 2026-11-05: https://api.circle.so/mcp.md
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Circle
+description: Explore and manage your Circle community members, spaces, posts, events, courses, and subscriptions.
+category: cms
+website_url: https://circle.so
+help_url: https://api.circle.so/mcp.md
+preview_note: 'Web callbacks require Circle approval: contact Circle Support with the full callback URI
+  before connecting. Admin API plan quotas apply.'
+keywords:
+- community
+- members
+- courses
+- circle.so
+official:
+  vendor: Circle
+  evidence_url: https://api.circle.so/mcp.md
+remotes:
+- id: default
+  label: Sign in with Circle
+  url: https://app.circle.so/api/mcp
+  allowed_hosts:
+  - app.circle.so
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    requested_scopes:
+    - read
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://api.circle.so/mcp.md
+    client_registration: dcr

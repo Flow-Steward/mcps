@@ -1,0 +1,57 @@
+# Reviewed 2026-11-05: https://docs.wati.io/reference/mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: WATI
+description: Manage WATI contacts, conversations, messages, campaigns, templates, segments, and webhooks.
+category: messaging
+website_url: https://www.wati.io
+help_url: https://docs.wati.io/reference/mcp
+preview_note: Select the region of your WATI workspace; tool access depends on role, plan, and channel.
+keywords:
+- Wati
+official:
+  vendor: WATI
+  evidence_url: https://docs.wati.io/reference/mcp
+remotes:
+- id: default
+  label: WATI Global
+  url: https://mcp.wati.io/mcp
+  allowed_hosts:
+  - mcp.wati.io
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://docs.wati.io/reference/mcp
+    client_registration: dcr
+    requested_scopes:
+    - all
+    authorization_parameters: {}
+    refresh_token_required: false
+- id: eu
+  label: WATI EU
+  url: https://eu-mcp.wati.io/mcp
+  allowed_hosts:
+  - eu-mcp.wati.io
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://docs.wati.io/reference/mcp
+    client_registration: dcr
+    requested_scopes:
+    - all
+    authorization_parameters: {}
+    refresh_token_required: false
+- id: ksa
+  label: WATI KSA
+  url: https://ksa-mcp.wati.io/mcp
+  allowed_hosts:
+  - ksa-mcp.wati.io
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://docs.wati.io/reference/mcp
+    client_registration: dcr
+    requested_scopes:
+    - all
+    authorization_parameters: {}
+    refresh_token_required: false

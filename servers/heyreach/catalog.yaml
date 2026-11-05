@@ -1,0 +1,26 @@
+# Reviewed 2026-11-05: https://docs.heyreach.io/mcp/mcp-connector
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: HeyReach
+description: Review LinkedIn outreach campaigns, manage leads and lists, and access workspace inbox conversations.
+category: sales
+website_url: https://www.heyreach.io
+help_url: https://docs.heyreach.io/mcp/mcp-connector
+preview_note: An MCP key grants access to its single workspace. Sign-in route is limited to Claude, Claude
+  Code, ChatGPT and Codex; use the documented MCP key route in Flow Steward.
+keywords:
+- LinkedIn
+- outreach
+- leads
+official:
+  vendor: HeyReach
+  evidence_url: https://docs.heyreach.io/mcp/mcp-connector
+remotes:
+- id: api-key
+  label: MCP API key
+  url: https://mcp.heyreach.io/mcp
+  allowed_hosts:
+  - mcp.heyreach.io
+  user_defined_host: false
+  auth:
+    mode: headers

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/hasdata",
+  "title": "HasData",
+  "description": "Scrape public pages and retrieve structured search results, Maps businesses, product data, property listings, job postings and other supported website datasets.",
+  "version": "1.0.0",
+  "websiteUrl": "https://hasdata.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hasdata.com/mcp",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Your HasData API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

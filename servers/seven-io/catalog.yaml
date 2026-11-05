@@ -1,0 +1,46 @@
+# Reviewed 2026-11-05: https://docs.seven.io/en/mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: seven.io
+description: Send and manage messages and work with voice, contacts, lookups, and account data through
+  seven.io.
+category: messaging
+website_url: https://www.seven.io
+help_url: https://docs.seven.io/en/mcp
+keywords:
+- SMS
+- RCS
+- voice
+- seven
+official:
+  vendor: seven.io
+  evidence_url: https://docs.seven.io/en/mcp
+remotes:
+- id: default
+  label: Sign in with seven.io
+  url: https://mcp.seven.io/mcp
+  allowed_hosts:
+  - mcp.seven.io
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://docs.seven.io/en/mcp
+    client_registration: dcr
+    requested_scopes:
+    - analytics
+    - balance
+    - contacts
+    - groups
+    - hooks
+    - journal
+    - lookup
+    - numbers
+    - pricing
+    - rcs
+    - sms
+    - status
+    - subaccounts
+    - validate_for_voice
+    - voice
+    authorization_parameters: {}
+    refresh_token_required: false

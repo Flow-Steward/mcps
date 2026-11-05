@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/instantly",
+  "title": "Instantly",
+  "description": "Manage outreach campaigns, leads, sending accounts, and email analytics in Instantly.",
+  "version": "1.0.0",
+  "websiteUrl": "https://instantly.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.instantly.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter your Instantly API key directly, without adding a Bearer prefix; the official configuration shows Authorization: YOUR_API_KEY.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

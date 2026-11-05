@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/octoparse",
+  "title": "Octoparse",
+  "description": "Find scraping templates, execute cloud-supported extraction tasks, inspect progress, and export structured web data such as products, business listings, and reviews.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.octoparse.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.octoparse.com",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Your Octoparse MCP API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

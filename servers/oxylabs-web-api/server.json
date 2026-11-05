@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/oxylabs-web-api",
+  "title": "Oxylabs Web API",
+  "description": "Search the live web, scrape pages as Markdown, HTML or structured JSON, run dedicated target scrapers, and retrieve queued JavaScript-rendering results.",
+  "version": "1.0.0",
+  "websiteUrl": "https://oxylabs.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.oxylabs.io/web-api-mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by a space and your Oxylabs Web API API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

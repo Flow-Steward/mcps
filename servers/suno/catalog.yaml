@@ -1,0 +1,35 @@
+# Reviewed 2026-11-05: https://suno.com/mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Suno
+description: Create songs, extend and remix music, and manage your Suno music library.
+category: media
+website_url: https://suno.com
+help_url: https://suno.com/mcp
+preview_note: Beta; creations use your Suno plan credits.
+keywords:
+- Suno
+official:
+  vendor: Suno
+  evidence_url: https://suno.com/mcp
+remotes:
+- id: default
+  label: Suno
+  url: https://api.suno.com/mcp
+  allowed_hosts:
+  - api.suno.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: client_metadata
+    requested_scopes:
+    - profile:read
+    - library:read
+    - library:search
+    - library:write
+    - credits:spend
+    - download
+    - offline_access
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://suno.com/mcp

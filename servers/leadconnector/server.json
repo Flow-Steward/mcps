@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/leadconnector",
+  "title": "LeadConnector",
+  "description": "Connect HighLevel CRM contacts, conversations, opportunities, and supported workflows.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.gohighlevel.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://services.leadconnectorhq.com/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer followed by your HighLevel integration token.",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "locationId",
+          "description": "HighLevel sub-account location ID to scope requests.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/pipedrive",
+  "title": "Pipedrive",
+  "description": "Search and manage CRM records through Pipedrive using your existing account permissions.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.pipedrive.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pipedrive.ai/mcp"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+# Reviewed 2026-11-05: https://developers.buffer.com/guides/integrations/mcp.html
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Buffer
+description: Read social channels, manage post queues and drafts, and review publishing analytics in Buffer.
+category: marketing
+website_url: https://buffer.com
+help_url: https://developers.buffer.com/guides/integrations/mcp.html
+keywords:
+- social media
+- publishing
+- posts
+official:
+  vendor: Buffer
+  evidence_url: https://developers.buffer.com/guides/integrations/mcp.html
+remotes:
+- id: default
+  label: Sign in with Buffer
+  url: https://mcp.buffer.com/mcp
+  allowed_hosts:
+  - mcp.buffer.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://developers.buffer.com/guides/integrations/mcp.html
+    client_registration: dcr
+    requested_scopes:
+    - offline_access
+    - posts:read
+    - posts:write
+    - ideas:read
+    - ideas:write
+    - account:read
+    - account:write
+    - insights:read
+    - engagements:read
+    - engagements:write
+    - snippets:read
+    - snippets:write
+    - channels:write
+    - notes:read
+    - notes:write
+    authorization_parameters: {}
+    refresh_token_required: false

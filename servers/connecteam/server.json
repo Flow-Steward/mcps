@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/connecteam",
+  "title": "Connecteam API Docs",
+  "description": "Search Connecteam API endpoint documentation and inspect operation schemas for building workforce integrations.",
+  "version": "1.0.0",
+  "websiteUrl": "https://connecteam.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://developer.connecteam.com/mcp"
+    }
+  ]
+}

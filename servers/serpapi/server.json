@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/serpapi",
+  "title": "SerpApi",
+  "description": "Search Google, Bing, and other engines and retrieve structured search results through your SerpApi subscription.",
+  "version": "1.0.0",
+  "websiteUrl": "https://serpapi.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.serpapi.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by a space and your SerpApi API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
