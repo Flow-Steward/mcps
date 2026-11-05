@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-02.b61d309e",
-  "published_at": "2026-11-02T16:41:02Z",
+  "catalog_revision": "2026-11-05.c8848b65",
+  "published_at": "2026-11-05T14:24:17Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -681,7 +681,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.2.3"
+            "version": "2.4.1"
           }
         ],
         "remotes": [
@@ -694,15 +694,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.2.3",
+        "version": "2.4.1",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 7,
+            "revision": 8,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.2.3"
+              "version": "2.4.1"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -873,17 +873,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-31T12:00:41Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-31T00:21:00.607452Z",
+          "publishedAt": "2026-11-05T00:21:32.305324Z",
           "status": "active",
-          "statusChangedAt": "2026-10-31T00:21:00.607452Z",
-          "updatedAt": "2026-10-31T00:21:00.607452Z"
+          "statusChangedAt": "2026-11-05T00:21:32.305324Z",
+          "updatedAt": "2026-11-05T00:21:32.305324Z"
         }
       }
     },
@@ -1348,16 +1348,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.147.0",
+        "version": "0.157.1",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 6,
+            "revision": 7,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.147.0"
+              "version": "0.157.1"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -1398,17 +1398,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-11-02T14:53:13Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-02T13:00:13.527368Z",
+          "publishedAt": "2026-11-05T12:14:44.716112Z",
           "status": "active",
-          "statusChangedAt": "2026-11-02T13:00:13.527368Z",
-          "updatedAt": "2026-11-02T13:00:13.527368Z"
+          "statusChangedAt": "2026-11-05T12:14:44.716112Z",
+          "updatedAt": "2026-11-05T12:14:44.716112Z"
         }
       }
     },
@@ -7203,7 +7203,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.19.8"
+            "version": "1.19.10"
           }
         ],
         "remotes": [
@@ -7217,16 +7217,16 @@
           "url": "https://github.com/fulcradynamics/fulcra-context-mcp"
         },
         "title": "Fulcra",
-        "version": "1.19.8",
+        "version": "1.19.10",
         "websiteUrl": "https://fulcradynamics.com",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "fulcra-context",
-            "revision": 3,
+            "revision": 4,
             "status": "active",
             "source": {
               "registry": "com.fulcradynamics/context",
-              "version": "1.19.8"
+              "version": "1.19.10"
             },
             "title": "Fulcra Context",
             "summary": "Read your personal health, workout, sleep, location, and calendar data collected in Fulcra Context.",
@@ -7272,17 +7272,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fulcra-context",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-30T13:26:24Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-29T19:07:02.24679Z",
+          "publishedAt": "2026-11-03T17:17:16.463476Z",
           "status": "active",
-          "statusChangedAt": "2026-10-29T19:07:02.24679Z",
-          "updatedAt": "2026-10-29T19:07:02.24679Z"
+          "statusChangedAt": "2026-11-03T17:17:16.463476Z",
+          "updatedAt": "2026-11-03T17:17:16.463476Z"
         }
       }
     },
@@ -14828,56 +14828,35 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "finance.norman/mcp-server",
-        "description": "AI-powered bookkeeping and tax filing for entrepreneurs at the heart of the European economy.",
-        "title": "Norman MCP Server",
-        "repository": {
-          "url": "https://github.com/norman-finance/norman-mcp-server",
-          "source": "github"
-        },
-        "version": "0.1.7",
-        "packages": [
+        "description": "Bookkeeping, invoices and tax workflows for European businesses, including Polish KPiR and JPK.",
+        "icons": [
           {
-            "registryType": "pypi",
-            "identifier": "norman-mcp-server",
-            "version": "0.1.7",
-            "transport": {
-              "type": "stdio"
-            },
-            "environmentVariables": [
-              {
-                "description": "Your Norman account email",
-                "isRequired": true,
-                "name": "NORMAN_EMAIL"
-              },
-              {
-                "description": "Your Norman account password",
-                "isRequired": true,
-                "isSecret": true,
-                "name": "NORMAN_PASSWORD"
-              },
-              {
-                "description": "API environment: 'production' or 'sandbox'",
-                "default": "production",
-                "name": "NORMAN_ENVIRONMENT"
-              }
-            ]
+            "mimeType": "image/png",
+            "src": "https://norman.finance/icon.png"
           }
         ],
+        "name": "finance.norman/mcp-server",
         "remotes": [
           {
             "type": "streamable-http",
             "url": "https://mcp.norman.finance/mcp"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/norman-finance/norman-mcp-server"
+        },
+        "title": "Norman Finance — AI Bookkeeping, Accounting & Taxes",
+        "version": "0.1.8",
+        "websiteUrl": "https://norman.finance",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "norman-finance",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "finance.norman/mcp-server",
-              "version": "0.1.7"
+              "version": "0.1.8"
             },
             "title": "Norman Finance",
             "summary": "Manage Norman bookkeeping: create invoices, manage clients, categorize transactions, and prepare tax reports.",
@@ -14918,17 +14897,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/norman-finance",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-11-02T21:23:31.404563Z",
           "status": "active",
-          "statusChangedAt": "2026-02-19T14:20:46.349672Z",
-          "publishedAt": "2026-02-19T14:20:46.349672Z",
-          "updatedAt": "2026-02-19T14:20:46.349672Z",
-          "isLatest": true
+          "statusChangedAt": "2026-11-02T21:23:31.404563Z",
+          "updatedAt": "2026-11-02T21:23:31.404563Z"
         }
       }
     },
@@ -16690,7 +16669,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.55.0"
+            "version": "0.59.0"
           }
         ],
         "remotes": [
@@ -16704,16 +16683,16 @@
           "url": "https://github.com/oborseth/Porkbun-MCP"
         },
         "title": "Porkbun (official)",
-        "version": "0.55.0",
+        "version": "0.59.0",
         "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 4,
+            "revision": 5,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.55.0"
+              "version": "0.59.0"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -16757,17 +16736,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-31T12:00:41Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-30T18:01:34.918916Z",
+          "publishedAt": "2026-11-03T00:52:14.509916Z",
           "status": "active",
-          "statusChangedAt": "2026-10-30T18:01:34.918916Z",
-          "updatedAt": "2026-10-30T18:01:34.918916Z"
+          "statusChangedAt": "2026-11-03T00:52:14.509916Z",
+          "updatedAt": "2026-11-03T00:52:14.509916Z"
         }
       }
     },
@@ -20206,7 +20185,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.1.28"
+            "version": "0.1.30"
           }
         ],
         "remotes": [
@@ -20222,16 +20201,16 @@
           "url": "https://github.com/sveltejs/ai-tools"
         },
         "title": "Svelte MCP",
-        "version": "0.1.28",
+        "version": "0.1.30",
         "websiteUrl": "https://svelte.dev/docs/mcp/overview",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "svelte",
-            "revision": 2,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "dev.svelte/mcp",
-              "version": "0.1.28"
+              "version": "0.1.30"
             },
             "title": "Svelte",
             "summary": "Search Svelte 5 and SvelteKit documentation and check generated Svelte code with the autofixer.",
@@ -20268,17 +20247,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/svelte",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T06:45:07Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-26T17:40:15.720653Z",
+          "publishedAt": "2026-11-04T15:14:33.723597Z",
           "status": "active",
-          "statusChangedAt": "2026-10-26T17:40:15.720653Z",
-          "updatedAt": "2026-10-26T17:40:15.720653Z"
+          "statusChangedAt": "2026-11-04T15:14:33.723597Z",
+          "updatedAt": "2026-11-04T15:14:33.723597Z"
         }
       }
     },
@@ -21379,29 +21358,30 @@
     },
     {
       "server": {
-        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "description": "Real-time and historical market data: stocks, forex, crypto, ETFs, fundamentals and 60+ indicators.",
         "name": "com.twelvedata/mcp",
-        "description": "Twelve Data MCP: real-time & historical market data (stocks, crypto, forex, etc).",
-        "repository": {
-          "url": "https://github.com/twelvedata/mcp",
-          "source": "github"
-        },
-        "version": "2.0.0",
-        "websiteUrl": "https://twelvedata.com",
         "remotes": [
           {
             "type": "streamable-http",
             "url": "https://mcp.twelvedata.com/mcp"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/twelvedata/mcp"
+        },
+        "title": "Twelve Data",
+        "version": "2.0.1",
+        "websiteUrl": "https://twelvedata.com",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "twelve-data",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "com.twelvedata/mcp",
-              "version": "2.0.0"
+              "version": "2.0.1"
             },
             "title": "Twelve Data",
             "summary": "Get real-time quotes, historical time series, and reference data for stocks, forex, crypto, and ETFs.",
@@ -21444,17 +21424,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/twelve-data",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-11-05T14:24:17Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-11-04T12:22:54.930901Z",
           "status": "active",
-          "statusChangedAt": "2026-07-23T15:13:03.720638Z",
-          "publishedAt": "2026-07-23T15:13:03.720638Z",
-          "updatedAt": "2026-07-23T15:13:03.720638Z",
-          "isLatest": true
+          "statusChangedAt": "2026-11-04T12:22:54.930901Z",
+          "updatedAt": "2026-11-04T12:22:54.930901Z"
         }
       }
     },
