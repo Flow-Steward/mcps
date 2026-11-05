@@ -1,28 +1,29 @@
 {
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-11-04T12:22:54.930901Z",
+      "status": "active",
+      "statusChangedAt": "2026-11-04T12:22:54.930901Z",
+      "updatedAt": "2026-11-04T12:22:54.930901Z"
+    }
+  },
   "server": {
-    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Real-time and historical market data: stocks, forex, crypto, ETFs, fundamentals and 60+ indicators.",
     "name": "com.twelvedata/mcp",
-    "description": "Twelve Data MCP: real-time & historical market data (stocks, crypto, forex, etc).",
-    "repository": {
-      "url": "https://github.com/twelvedata/mcp",
-      "source": "github"
-    },
-    "version": "2.0.0",
-    "websiteUrl": "https://twelvedata.com",
     "remotes": [
       {
         "type": "streamable-http",
         "url": "https://mcp.twelvedata.com/mcp"
       }
-    ]
-  },
-  "_meta": {
-    "io.modelcontextprotocol.registry/official": {
-      "status": "active",
-      "statusChangedAt": "2026-07-23T15:13:03.720638Z",
-      "publishedAt": "2026-07-23T15:13:03.720638Z",
-      "updatedAt": "2026-07-23T15:13:03.720638Z",
-      "isLatest": true
-    }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/twelvedata/mcp"
+    },
+    "title": "Twelve Data",
+    "version": "2.0.1",
+    "websiteUrl": "https://twelvedata.com"
   }
 }
