@@ -1,0 +1,33 @@
+# Reviewed 2026-11-05: https://support.servicem8.com/help-center/tips-trick-more/more/how-to-connect-servicem8-to-chatgpt-with-mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: ServiceM8
+description: Search clients and jobs, inspect job details, add notes, schedule staff, and manage job status.
+category: operations
+website_url: https://www.servicem8.com
+help_url: https://support.servicem8.com/help-center/tips-trick-more/more/how-to-connect-servicem8-to-chatgpt-with-mcp
+preview_note: Requires a ServiceM8 account authorized to connect. AI-client administrator controls may
+  apply.
+keywords:
+- field service
+- jobs
+- scheduling
+official:
+  vendor: ServiceM8
+  evidence_url: https://support.servicem8.com/help-center/tips-trick-more/more/how-to-connect-servicem8-to-chatgpt-with-mcp
+remotes:
+- id: default
+  label: Sign in with ServiceM8
+  url: https://api.servicem8.com/mcp
+  allowed_hosts:
+  - api.servicem8.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    requested_scopes:
+    - mcp
+    - mcp_client
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://support.servicem8.com/help-center/tips-trick-more/more/how-to-connect-servicem8-to-chatgpt-with-mcp
+    client_registration: dcr

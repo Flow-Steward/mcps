@@ -1,0 +1,30 @@
+# Reviewed 2026-11-05: https://help.honeybook.com/en/articles/16381018-set-up-the-honeybook-connector
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: HoneyBook
+description: Work with HoneyBook client contacts, projects, tasks, files, and business reporting.
+category: crm
+website_url: https://www.honeybook.com
+help_url: https://help.honeybook.com/en/articles/16381018-set-up-the-honeybook-connector
+preview_note: Requires a HoneyBook account and consent. Authenticated access has not been tested.
+keywords:
+- clients
+- projects
+- invoices
+official:
+  vendor: HoneyBook
+  evidence_url: https://help.honeybook.com/en/articles/16381018-set-up-the-honeybook-connector
+remotes:
+- id: default
+  label: Sign in with HoneyBook
+  url: https://mcp.api.honeybook.com/mcp
+  allowed_hosts:
+  - mcp.api.honeybook.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    requested_scopes: []
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://help.honeybook.com/en/articles/16381018-set-up-the-honeybook-connector
+    client_registration: dcr

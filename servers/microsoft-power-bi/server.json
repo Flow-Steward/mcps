@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/microsoft-power-bi",
+  "title": "Microsoft Power BI",
+  "description": "Query Power BI semantic models with natural language through the hosted Power BI Consumption MCP server.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.microsoft.com/power-platform/products/power-bi",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.fabric.microsoft.com/v1/mcp/powerbi"
+    }
+  ]
+}

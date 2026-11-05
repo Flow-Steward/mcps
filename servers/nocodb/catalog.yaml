@@ -1,0 +1,32 @@
+# Reviewed 2026-11-05: https://nocodb.com/docs/mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: NocoDB
+description: Query and edit NocoDB records and manage tables, views, and workflows where your edition
+  permits.
+category: data
+website_url: https://nocodb.com
+help_url: https://nocodb.com/docs/mcp
+preview_note: Cloud OAuth shown. Self-hosted and Community Edition connection URLs are supported by the
+  vendor; omitted here because their per-instance authentication was not probed.
+keywords:
+- database
+- tables
+- records
+official:
+  vendor: NocoDB
+  evidence_url: https://nocodb.com/docs/mcp
+remotes:
+- id: default
+  label: Sign in with NocoDB
+  url: https://app.nocodb.com/mcp
+  allowed_hosts:
+  - app.nocodb.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://nocodb.com/docs/mcp
+    client_registration: dcr
+    requested_scopes: []
+    authorization_parameters: {}
+    refresh_token_required: false

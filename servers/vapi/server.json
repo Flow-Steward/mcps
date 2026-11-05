@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/vapi",
+  "title": "Vapi",
+  "description": "Manage Vapi voice assistants, phone numbers, call records, and outbound call workflows.",
+  "version": "1.0.0",
+  "websiteUrl": "https://vapi.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.vapi.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Vapi API key, prefixed with Bearer and a space.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

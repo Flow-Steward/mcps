@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/zenrows",
+  "title": "Zenrows",
+  "description": "Scrape protected pages, extract structured JSON, capture screenshots or PDFs, run batch and crawl jobs, and automate browser interactions.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.zenrows.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.zenrows.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by a space and your Zenrows API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Reviewed 2026-11-05: https://docs.coingecko.com/ai-integration/mcp-server
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: CoinGecko
+description: Explore cryptocurrency prices, market trends, trading volumes, and onchain analytics.
+category: finance
+website_url: https://www.coingecko.com
+help_url: https://docs.coingecko.com/ai-integration/mcp-server
+preview_note: Free keyless server uses shared rate limits. The separate browser-authenticated Pro endpoint
+  is not included.
+keywords:
+- crypto
+- cryptocurrency
+- market data
+official:
+  vendor: CoinGecko
+  evidence_url: https://docs.coingecko.com/ai-integration/mcp-server
+remotes:
+- id: default
+  label: CoinGecko
+  url: https://mcp.api.coingecko.com/mcp
+  allowed_hosts:
+  - mcp.api.coingecko.com
+  user_defined_host: false
+  auth:
+    mode: none
+    setup_url: https://docs.coingecko.com/ai-integration/mcp-server

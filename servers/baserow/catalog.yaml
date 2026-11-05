@@ -1,0 +1,33 @@
+# Reviewed 2026-11-05: https://baserow.io/docs/testing/mcp-test-plan
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Baserow
+description: Read and manage rows in Baserow databases using workspace and tool permissions approved for
+  the connection.
+category: data
+website_url: https://baserow.io
+help_url: https://baserow.io/docs/testing/mcp-test-plan
+preview_note: OAuth consent selects a workspace and permitted tools; write tools require explicit selection.
+keywords:
+- database
+- rows
+- no-code
+official:
+  vendor: Baserow
+  evidence_url: https://baserow.io/docs/testing/mcp-test-plan
+remotes:
+- id: default
+  label: Sign in with Baserow
+  url: https://api.baserow.io/mcp
+  allowed_hosts:
+  - api.baserow.io
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - mcp
+    - offline_access
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://baserow.io/docs/testing/mcp-test-plan

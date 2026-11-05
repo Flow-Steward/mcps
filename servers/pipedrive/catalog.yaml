@@ -1,0 +1,45 @@
+# Reviewed 2026-11-05: https://support.pipedrive.com/en/article/mcp-chatgpt
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Pipedrive
+description: Search and manage CRM records through Pipedrive using your existing account permissions.
+category: crm
+website_url: https://www.pipedrive.com
+help_url: https://support.pipedrive.com/en/article/mcp-chatgpt
+keywords:
+- CRM
+- deals
+- contacts
+official:
+  vendor: Pipedrive
+  evidence_url: https://support.pipedrive.com/en/article/mcp-chatgpt
+remotes:
+- id: default
+  label: Sign in with Pipedrive
+  url: https://mcp.pipedrive.ai/mcp
+  allowed_hosts:
+  - mcp.pipedrive.ai
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes:
+    - activities:full
+    - admin
+    - base
+    - contact-fields:full
+    - contacts:full
+    - deal-fields:full
+    - deals:full
+    - leads:full
+    - mail-sending:full
+    - mail:full
+    - product-fields:full
+    - products:full
+    - project-fields:full
+    - projects:full
+    - search:read
+    - users:read
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://support.pipedrive.com/en/article/mcp-chatgpt

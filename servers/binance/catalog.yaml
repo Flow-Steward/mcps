@@ -1,0 +1,29 @@
+# Reviewed 2026-11-05: https://developers.binance.com/en/docs/agent-native/mcp-server/agentic
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Binance
+description: Read Binance market and account data and access permitted Agentic trading tools.
+category: finance
+website_url: https://www.binance.com
+help_url: https://developers.binance.com/en/docs/agent-native/mcp-server/agentic
+preview_note: Availability depends on your Binance account and region. Account actions use an Agentic
+  sub-account and approved scopes. Refresh tokens are not advertised.
+keywords:
+- Binance
+official:
+  vendor: Binance
+  evidence_url: https://developers.binance.com/en/docs/agent-native/mcp-server/agentic
+remotes:
+- id: default
+  label: Binance
+  url: https://agent.binance.com/mcp/agentic
+  allowed_hosts:
+  - agent.binance.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: client_metadata
+    requested_scopes: []
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://developers.binance.com/en/docs/agent-native/mcp-server/agentic

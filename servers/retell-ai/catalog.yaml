@@ -1,0 +1,24 @@
+# Reviewed 2026-11-05: https://docs.retellai.com/get-started/mcp-server
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Retell AI
+description: Build and manage Retell voice agents, calls, phone numbers, knowledge bases, and testing.
+category: ai
+website_url: https://www.retellai.com
+help_url: https://docs.retellai.com/get-started/mcp-server
+preview_note: Retell API key permissions and account billing apply to tool operations.
+keywords:
+- Retell AI
+official:
+  vendor: Retell AI
+  evidence_url: https://docs.retellai.com/get-started/mcp-server
+remotes:
+- id: default
+  label: Retell API key
+  url: https://mcp.retellai.com
+  allowed_hosts:
+  - mcp.retellai.com
+  user_defined_host: false
+  auth:
+    mode: headers
+    setup_url: https://docs.retellai.com/get-started/mcp-server

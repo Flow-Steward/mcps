@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/lemlist",
+  "title": "lemlist",
+  "description": "Manage outreach campaigns and leads, enrich contact data, and inspect lemlist performance.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.lemlist.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.lemlist.com/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Your lemlist API key from Settings > Team > Integrations.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

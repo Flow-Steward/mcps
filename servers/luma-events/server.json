@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/luma-events",
+  "title": "Luma Events",
+  "description": "Find events and manage Luma events, guests, calendars, invitations, and calendar contacts.",
+  "version": "1.0.0",
+  "websiteUrl": "https://luma.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.luma.com"
+    }
+  ]
+}

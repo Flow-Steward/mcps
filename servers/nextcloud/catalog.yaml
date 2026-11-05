@@ -1,0 +1,26 @@
+# Reviewed 2026-11-05: https://docs.nextcloud.com/server/latest/admin_manual/ai/app_context_agent.html
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Nextcloud
+description: Access files, calendars, tasks and other enabled Nextcloud tools through your instance Context
+  Agent.
+category: productivity
+website_url: https://nextcloud.com
+help_url: https://docs.nextcloud.com/server/latest/admin_manual/ai/app_context_agent.html
+preview_note: Requires Context Agent and its application prerequisites; capabilities depend on enabled
+  Nextcloud apps.
+keywords:
+- files
+- calendar
+- tasks
+official:
+  vendor: Nextcloud
+  evidence_url: https://docs.nextcloud.com/server/latest/admin_manual/ai/app_context_agent.html
+remotes:
+- id: default
+  label: Nextcloud instance
+  url: https://{host}/index.php/apps/app_api/proxy/context_agent/mcp/
+  allowed_hosts: []
+  user_defined_host: true
+  auth:
+    mode: headers

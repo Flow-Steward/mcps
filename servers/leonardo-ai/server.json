@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/leonardo-ai",
+  "title": "Leonardo.Ai",
+  "description": "Generate images with Leonardo.Ai models from prompts and image-generation settings.",
+  "version": "1.0.0",
+  "websiteUrl": "https://leonardo.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.leonardo.ai/v1/mcp",
+      "headers": [
+        {
+          "name": "API-Key",
+          "description": "Your Leonardo.Ai API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

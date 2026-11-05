@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/firecrawl",
+  "title": "Firecrawl",
+  "description": "Search the web, scrape pages, and parse documents with Firecrawl; an API key unlocks plan-dependent tools and limits.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.firecrawl.dev",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.firecrawl.dev/v2/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by a space and your Firecrawl API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

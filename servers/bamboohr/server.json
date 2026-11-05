@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/bamboohr",
+  "title": "BambooHR",
+  "description": "Query BambooHR employees, reports, time off, hiring, goals, and permitted HR actions.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.bamboohr.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{subdomain}.bamboohr.com/api/mcp",
+      "variables": {
+        "subdomain": {
+          "description": "Your BambooHR company subdomain, without .bamboohr.com."
+        }
+      }
+    }
+  ]
+}

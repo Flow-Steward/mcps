@@ -1,0 +1,40 @@
+# Reviewed 2026-11-05: https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq/mcp/retrieve
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Microsoft Work IQ
+description: Access Microsoft 365 work context across mail, meetings, Teams messages and OneDrive or SharePoint
+  documents.
+category: productivity
+website_url: https://www.microsoft.com/microsoft-365
+help_url: https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq/mcp/retrieve
+preview_note: Requires enabled tenant, registered Entra client, admin consent for WorkIQAgent.Ask, Copilot
+  Credits billing and a Work IQ spending policy. Tool and Excel-operation coverage must be discovered
+  after sign-in.
+keywords:
+- Microsoft 365
+- Office 365
+- Outlook
+- Exchange
+- Teams
+- SharePoint
+- OneDrive
+- Excel
+official:
+  vendor: Microsoft
+  evidence_url: https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq/mcp/retrieve
+remotes:
+- id: default
+  label: Microsoft 365
+  url: https://workiq.svc.cloud.microsoft/mcp
+  allowed_hosts:
+  - workiq.svc.cloud.microsoft
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - fdcc1f02-fc51-4226-8753-f668596af7f7/WorkIQAgent.Ask
+    - offline_access
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://github.com/microsoft/iq-series/blob/main/Work-IQ/3-Work-IQ-Tooling-with-MCP-and-Copilot-CLI/cookbook/work-iq-lab03.md

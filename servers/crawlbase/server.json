@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/crawlbase",
+  "title": "Crawlbase",
+  "description": "Crawl URLs as HTML or Markdown, render screenshots, and retrieve, enumerate or delete previously stored crawled pages.",
+  "version": "1.0.0",
+  "websiteUrl": "https://crawlbase.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.crawlbase.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by a space and your Crawlbase token.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

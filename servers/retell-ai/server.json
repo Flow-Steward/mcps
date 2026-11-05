@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/retell-ai",
+  "title": "Retell AI",
+  "description": "Build and manage Retell voice agents, calls, phone numbers, knowledge bases, and testing.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.retellai.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.retellai.com",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by your Retell API key, for example: Bearer <RETELL_API_KEY>.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

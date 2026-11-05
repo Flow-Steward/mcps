@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/gong",
+  "title": "Gong",
+  "description": "Ask account and deal questions and generate briefs from permitted Gong data.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.gong.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gong.io/mcp"
+    }
+  ]
+}

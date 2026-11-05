@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/scrapfly",
+  "title": "Scrapfly",
+  "description": "Scrape protected and JavaScript-rendered pages, extract structured data, capture screenshots, and interact with managed browser sessions.",
+  "version": "1.0.0",
+  "websiteUrl": "https://scrapfly.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.scrapfly.io/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by a space and your Scrapfly API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

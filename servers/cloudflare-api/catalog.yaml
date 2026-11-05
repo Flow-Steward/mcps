@@ -1,0 +1,31 @@
+# Reviewed 2026-11-05: https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Cloudflare API
+description: Search and call Cloudflare APIs for DNS, Workers, R2, Zero Trust, and other services with
+  authorized permissions.
+category: it
+website_url: https://www.cloudflare.com
+help_url: https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/
+keywords:
+- DNS
+- Workers
+- R2
+- Zero Trust
+official:
+  vendor: Cloudflare
+  evidence_url: https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/
+remotes:
+- id: default
+  label: Sign in with Cloudflare
+  url: https://mcp.cloudflare.com/mcp
+  allowed_hosts:
+  - mcp.cloudflare.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: []
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/

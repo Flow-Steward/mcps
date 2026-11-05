@@ -1,0 +1,24 @@
+# Reviewed 2026-11-05: https://docs.leonardo.ai/docs/connect-to-leonardoai-mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Leonardo.Ai
+description: Generate images with Leonardo.Ai models from prompts and image-generation settings.
+category: ai
+website_url: https://leonardo.ai
+help_url: https://docs.leonardo.ai/docs/connect-to-leonardoai-mcp
+preview_note: Requires a Leonardo.Ai API plan; image generation consumes plan credits.
+keywords:
+- Leonardo.Ai
+official:
+  vendor: Leonardo.Ai
+  evidence_url: https://docs.leonardo.ai/docs/connect-to-leonardoai-mcp
+remotes:
+- id: default
+  label: Leonardo.Ai API key
+  url: https://mcp.leonardo.ai/v1/mcp
+  allowed_hosts:
+  - mcp.leonardo.ai
+  user_defined_host: false
+  auth:
+    mode: headers
+    setup_url: https://docs.leonardo.ai/docs/connect-to-leonardoai-mcp

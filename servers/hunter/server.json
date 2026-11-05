@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/hunter",
+  "title": "Hunter",
+  "description": "Find and verify business email addresses, enrich company data, and manage Hunter leads.",
+  "version": "1.0.0",
+  "websiteUrl": "https://hunter.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hunter.io/mcp",
+      "headers": [
+        {
+          "name": "X-API-KEY",
+          "description": "Your Hunter API key from the Hunter dashboard.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Reviewed 2026-11-05: https://docs.zenrows.com/mcp/overview
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Zenrows
+description: Scrape protected pages, extract structured JSON, capture screenshots or PDFs, run batch and
+  crawl jobs, and automate browser interactions.
+category: data
+website_url: https://www.zenrows.com
+help_url: https://docs.zenrows.com/mcp/overview
+preview_note: Some extraction and batch features have beta or plan-specific limits.
+keywords:
+- web scraping
+- data extraction
+- MCP
+official:
+  vendor: Zenrows
+  evidence_url: https://docs.zenrows.com/mcp/overview
+remotes:
+- id: default
+  label: Zenrows
+  url: https://mcp.zenrows.com/mcp
+  allowed_hosts:
+  - mcp.zenrows.com
+  user_defined_host: false
+  auth:
+    mode: headers
+    setup_url: https://app.zenrows.com/

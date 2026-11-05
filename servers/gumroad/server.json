@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/gumroad",
+  "title": "Gumroad",
+  "description": "Manage digital products, review sales and payouts, and draft and publish products on Gumroad.",
+  "version": "1.0.0",
+  "websiteUrl": "https://gumroad.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gumroad.com/muse/v1/mcp"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/gravity-forms",
+  "title": "Gravity Forms",
+  "description": "Read forms and submissions and manage supported Gravity Forms operations on your WordPress site.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.gravityforms.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{host}/wp-json/mcp/gravityforms",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Basic followed by base64(username:application-password).",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "variables": {
+        "host": {
+          "description": "Your HTTPS instance hostname, without scheme or path."
+        }
+      }
+    }
+  ]
+}

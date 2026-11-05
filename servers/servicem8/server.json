@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/servicem8",
+  "title": "ServiceM8",
+  "description": "Search clients and jobs, inspect job details, add notes, schedule staff, and manage job status.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.servicem8.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.servicem8.com/mcp"
+    }
+  ]
+}

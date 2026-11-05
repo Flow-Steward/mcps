@@ -1,0 +1,47 @@
+# Reviewed 2026-11-05: https://www.canva.dev/docs/apps/quickstart/
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Canva
+description: Create, find, edit, and export Canva designs and manage design assets from an AI assistant.
+category: media
+website_url: https://www.canva.com
+help_url: https://www.canva.dev/docs/apps/quickstart/
+preview_note: Requires your own Canva Developer Portal app with Canva MCP enabled and a registered redirect
+  URL.
+keywords:
+- design
+- images
+- presentations
+official:
+  vendor: Canva
+  evidence_url: https://www.canva.dev/docs/apps/quickstart/
+remotes:
+- id: default
+  label: Sign in with Canva
+  url: https://api.canva.com/connect/v1/mcp
+  allowed_hosts:
+  - api.canva.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://www.canva.dev/docs/apps/quickstart/
+    client_registration: user_supplied
+    requested_scopes:
+    - profile:read
+    - design:meta:read
+    - design:content:write
+    - design:content:read
+    - folder:read
+    - folder:write
+    - brandtemplate:content:read
+    - brandtemplate:meta:read
+    - brandtemplate:content:write
+    - comment:write
+    - comment:read
+    - asset:read
+    - asset:write
+    - brandkit:read
+    - help:answers:read
+    - help:answers:write
+    authorization_parameters: {}
+    refresh_token_required: false

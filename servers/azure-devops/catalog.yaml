@@ -1,0 +1,49 @@
+# Reviewed 2026-11-05: https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Azure DevOps
+description: Work with Azure DevOps projects, work items, repositories and pull requests through Microsoft
+  hosted MCP.
+category: developer-tools
+website_url: https://azure.microsoft.com/products/devops
+help_url: https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server
+preview_note: Public preview. Requires Entra-backed organization, tenant provisioning, custom app registration
+  and delegated API permissions; use Flow Steward callback when registering the web client.
+keywords:
+- repositories
+- work items
+- pull requests
+official:
+  vendor: Microsoft
+  evidence_url: https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server
+remotes:
+- id: default
+  label: Azure DevOps
+  url: https://mcp.dev.azure.com
+  allowed_hosts:
+  - mcp.dev.azure.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - https://mcp.dev.azure.com/.default
+    - offline_access
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server
+- id: organization
+  label: Organization
+  url: https://mcp.dev.azure.com/{organization}
+  allowed_hosts:
+  - mcp.dev.azure.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - https://mcp.dev.azure.com/.default
+    - offline_access
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server

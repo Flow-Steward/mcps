@@ -1,0 +1,24 @@
+# Reviewed 2026-11-05: https://help.gohighlevel.com/support/solutions/articles/155000007777-automate-workflows-with-ghl-mcp-and-n8n
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: LeadConnector
+description: Connect HighLevel CRM contacts, conversations, opportunities, and supported workflows.
+category: crm
+website_url: https://www.gohighlevel.com
+help_url: https://help.gohighlevel.com/support/solutions/articles/155000007777-automate-workflows-with-ghl-mcp-and-n8n
+preview_note: Generic token endpoint exposes fewer operations than the client-specific OAuth integrations.
+  Supply a sub-account token and location ID as needed.
+keywords:
+- LeadConnector
+official:
+  vendor: LeadConnector
+  evidence_url: https://help.gohighlevel.com/support/solutions/articles/155000007777-automate-workflows-with-ghl-mcp-and-n8n
+remotes:
+- id: default
+  label: LeadConnector
+  url: https://services.leadconnectorhq.com/mcp/
+  allowed_hosts:
+  - services.leadconnectorhq.com
+  user_defined_host: false
+  auth:
+    mode: headers

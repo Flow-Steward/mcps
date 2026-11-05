@@ -1,0 +1,28 @@
+# Reviewed 2026-11-05: https://www.octoparse.com/mcp
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Octoparse
+description: Find scraping templates, execute cloud-supported extraction tasks, inspect progress, and
+  export structured web data such as products, business listings, and reviews.
+category: data
+website_url: https://www.octoparse.com
+help_url: https://www.octoparse.com/mcp
+preview_note: Cloud-executable templates only; tasks requiring local execution still need the desktop
+  app. Universal AI Scraper is marked Soon on the landing page.
+keywords:
+- web scraping
+- data extraction
+- MCP
+official:
+  vendor: Octoparse
+  evidence_url: https://www.octoparse.com/mcp
+remotes:
+- id: default
+  label: Octoparse
+  url: https://mcp.octoparse.com
+  allowed_hosts:
+  - mcp.octoparse.com
+  user_defined_host: false
+  auth:
+    mode: headers
+    setup_url: https://www.octoparse.com/mcp

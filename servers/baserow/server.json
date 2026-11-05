@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/baserow",
+  "title": "Baserow",
+  "description": "Read and manage rows in Baserow databases using workspace and tool permissions approved for the connection.",
+  "version": "1.0.0",
+  "websiteUrl": "https://baserow.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.baserow.io/mcp"
+    }
+  ]
+}

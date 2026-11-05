@@ -1,0 +1,25 @@
+# Reviewed 2026-11-05: https://docs.mattermost.com/administration-guide/configure/agents-admin-guide
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Mattermost
+description: Search and read Mattermost messages, create posts and manage supported channel and team actions.
+category: messaging
+website_url: https://mattermost.com
+help_url: https://docs.mattermost.com/administration-guide/configure/agents-admin-guide
+preview_note: Requires admin-enabled external MCP HTTP endpoint, Mattermost 11.2+ and Enterprise-level
+  access (Entry behaves as Enterprise). Tool availability follows instance policy.
+keywords:
+- chat
+- channels
+- teams
+official:
+  vendor: Mattermost
+  evidence_url: https://docs.mattermost.com/administration-guide/configure/agents-admin-guide
+remotes:
+- id: pat
+  label: Personal Access Token
+  url: https://{host}/plugins/mattermost-ai/mcp-server/mcp
+  allowed_hosts: []
+  user_defined_host: true
+  auth:
+    mode: headers

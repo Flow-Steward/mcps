@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/jina-ai",
+  "title": "Jina AI",
+  "description": "Read web pages and PDFs, search the web, and rerank or deduplicate results with Jina AI search APIs.",
+  "version": "1.0.0",
+  "websiteUrl": "https://jina.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.jina.ai/v1",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by a space and your Jina AI API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

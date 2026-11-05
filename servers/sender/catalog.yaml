@@ -1,0 +1,32 @@
+# Reviewed 2026-11-05: https://api.sender.net/mcp/
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Sender
+description: Manage subscribers and groups, analyze campaigns, and prepare draft email campaigns and automations.
+category: email
+website_url: https://www.sender.net
+help_url: https://api.sender.net/mcp/
+preview_note: Campaigns and workflows are drafted; MCP does not send campaigns. Account role permissions
+  apply.
+keywords:
+- email marketing
+- subscribers
+- campaigns
+official:
+  vendor: Sender
+  evidence_url: https://api.sender.net/mcp/
+remotes:
+- id: default
+  label: Sign in with Sender
+  url: https://mcp.sender.net/mcp
+  allowed_hosts:
+  - mcp.sender.net
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    requested_scopes:
+    - mcp:use
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://api.sender.net/mcp/
+    client_registration: dcr

@@ -1,0 +1,33 @@
+# Reviewed 2026-11-05: https://cloudconvert.com/docs/integrations/mcp-server
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: CloudConvert
+description: Convert, compress, merge, and process files, and inspect conversion jobs and webhooks.
+category: documents
+website_url: https://cloudconvert.com
+help_url: https://cloudconvert.com/docs/integrations/mcp-server
+preview_note: File processing consumes CloudConvert credits.
+keywords:
+- CloudConvert
+official:
+  vendor: CloudConvert
+  evidence_url: https://cloudconvert.com/docs/integrations/mcp-server
+remotes:
+- id: default
+  label: Sign in with CloudConvert
+  url: https://mcp.cloudconvert.com
+  allowed_hosts:
+  - mcp.cloudconvert.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    setup_url: https://cloudconvert.com/docs/integrations/mcp-server
+    client_registration: dcr
+    requested_scopes:
+    - user.read
+    - task.read
+    - task.write
+    - webhook.read
+    - webhook.write
+    authorization_parameters: {}
+    refresh_token_required: false

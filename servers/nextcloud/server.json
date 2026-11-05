@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/nextcloud",
+  "title": "Nextcloud",
+  "description": "Access files, calendars, tasks and other enabled Nextcloud tools through your instance Context Agent.",
+  "version": "1.0.0",
+  "websiteUrl": "https://nextcloud.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{host}/index.php/apps/app_api/proxy/context_agent/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer followed by a Nextcloud app password.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "variables": {
+        "host": {
+          "description": "Your HTTPS instance hostname, without scheme or path."
+        }
+      }
+    }
+  ]
+}

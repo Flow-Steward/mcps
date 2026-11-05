@@ -1,0 +1,35 @@
+# Reviewed 2026-11-05: https://learn.microsoft.com/en-us/power-bi/developer/mcp/remote-mcp-server-external-clients
+# Authentication follows vendor documentation and public discovery metadata; no account connection tested.
+revision: 1
+title: Microsoft Power BI
+description: Query Power BI semantic models with natural language through the hosted Power BI Consumption
+  MCP server.
+category: data
+website_url: https://www.microsoft.com/power-platform/products/power-bi
+help_url: https://learn.microsoft.com/en-us/power-bi/developer/mcp/remote-mcp-server-external-clients
+preview_note: Preview. Admin must enable tenant setting and grant delegated permissions. Microsoft recommends
+  Fabric IQ for new consumption scenarios; this Power BI endpoint remains documented.
+keywords:
+- Power BI
+- semantic models
+- DAX
+- Fabric
+official:
+  vendor: Microsoft
+  evidence_url: https://learn.microsoft.com/en-us/power-bi/developer/mcp/remote-mcp-server-external-clients
+remotes:
+- id: consumption
+  label: Query semantic models
+  url: https://api.fabric.microsoft.com/v1/mcp/powerbi
+  allowed_hosts:
+  - api.fabric.microsoft.com
+  user_defined_host: false
+  auth:
+    mode: oauth2
+    client_registration: user_supplied
+    requested_scopes:
+    - https://api.fabric.microsoft.com/.default
+    - offline_access
+    authorization_parameters: {}
+    refresh_token_required: false
+    setup_url: https://learn.microsoft.com/en-us/power-bi/developer/mcp/remote-mcp-server-external-clients

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/metricool",
+  "title": "Metricool",
+  "description": "Read social analytics and manage scheduled social media content in your Metricool brands.",
+  "version": "1.0.0",
+  "websiteUrl": "https://metricool.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ai.metricool.com/mcp"
+    }
+  ]
+}

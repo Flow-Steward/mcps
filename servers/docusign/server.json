@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/docusign",
+  "title": "Docusign",
+  "description": "Search agreements and prepare, send, and manage Docusign eSignature workflows.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.docusign.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.docusign.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-d.docusign.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/zyte",
+  "title": "Zyte",
+  "description": "Fetch protected pages with HTTP or browser rendering, extract structured web data, search the web, and manage Scrapy Cloud projects and crawl jobs.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.zyte.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.zyte.com/v1/mcp"
+    }
+  ]
+}

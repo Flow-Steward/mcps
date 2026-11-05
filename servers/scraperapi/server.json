@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/scraperapi",
+  "title": "ScraperAPI",
+  "description": "Retrieve webpages and images with JavaScript rendering, geotargeting and premium proxies, and return text, Markdown or structured data for supported websites.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.scraperapi.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.scraperapi.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by a space and your ScraperAPI API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
