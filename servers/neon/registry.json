@@ -1,37 +1,37 @@
 {
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-11-05T19:37:45.419648Z",
+      "status": "active",
+      "statusChangedAt": "2026-11-05T19:37:45.419648Z",
+      "updatedAt": "2026-11-05T19:37:45.419648Z"
+    }
+  },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-    "name": "com.neon/mcp",
     "description": "Official Neon MCP server for managing Neon projects and Lakebase Postgres databases.",
-    "title": "Neon",
-    "repository": {
-      "url": "https://github.com/neondatabase/mcp-server-neon",
-      "source": "github"
-    },
-    "version": "1.0.0",
-    "websiteUrl": "https://neon.com/docs/ai/neon-mcp-server",
     "icons": [
       {
-        "src": "https://neon.com/brand/neon-logo-light-color.svg",
         "mimeType": "image/svg+xml",
         "sizes": [
           "any"
         ],
+        "src": "https://neon.com/brand/neon-logomark-light-color.svg",
         "theme": "light"
       },
       {
-        "src": "https://neon.com/brand/neon-logo-dark-color.svg",
         "mimeType": "image/svg+xml",
         "sizes": [
           "any"
         ],
+        "src": "https://neon.com/brand/neon-logomark-dark-color.svg",
         "theme": "dark"
       }
     ],
+    "name": "com.neon/mcp",
     "remotes": [
       {
-        "type": "streamable-http",
-        "url": "https://mcp.neon.tech/mcp",
         "headers": [
           {
             "description": "Optional Bearer token with a Neon API key.",
@@ -39,22 +39,22 @@
             "name": "Authorization"
           },
           {
+            "default": "false",
             "description": "Optional header to enable read-only mode for tool filtering.",
             "format": "boolean",
-            "default": "false",
             "name": "x-read-only"
           }
-        ]
+        ],
+        "type": "streamable-http",
+        "url": "https://mcp.neon.tech/mcp"
       }
-    ]
-  },
-  "_meta": {
-    "io.modelcontextprotocol.registry/official": {
-      "status": "active",
-      "statusChangedAt": "2026-09-17T20:38:56.695242Z",
-      "publishedAt": "2026-09-17T20:38:56.695242Z",
-      "updatedAt": "2026-09-17T20:38:56.695242Z",
-      "isLatest": true
-    }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/neondatabase/mcp-server-neon"
+    },
+    "title": "Neon",
+    "version": "2.0.0",
+    "websiteUrl": "https://neon.com/docs/ai/neon-mcp-server"
   }
 }

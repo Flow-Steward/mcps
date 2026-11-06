@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://neon.com/docs/ai/neon-mcp-server
 # Alternative: Authorization: Bearer <Neon API key>. Neon recommends use for development/testing only, not production databases. OAuth covers personal-account projects by default; org projects need org_id/project_id. Allowlist 34.192.103.46 and 23.22.233.166 if IP Allow is enabled.
-revision: 1
+revision: 2
 source:
   registry: com.neon/mcp
 title: Neon
