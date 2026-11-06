@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-05.810a2dc3",
-  "published_at": "2026-11-05T14:54:06Z",
+  "catalog_revision": "2026-11-06.bf46eb36",
+  "published_at": "2026-11-06T18:38:28Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -830,7 +830,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.4.1"
+            "version": "2.4.2"
           }
         ],
         "remotes": [
@@ -843,15 +843,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.4.1",
+        "version": "2.4.2",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 8,
+            "revision": 9,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.4.1"
+              "version": "2.4.2"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -1022,17 +1022,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-05T14:24:17Z"
+            "updated_at": "2026-11-06T18:38:28Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-05T00:21:32.305324Z",
+          "publishedAt": "2026-11-06T00:21:53.691492Z",
           "status": "active",
-          "statusChangedAt": "2026-11-05T00:21:32.305324Z",
-          "updatedAt": "2026-11-05T00:21:32.305324Z"
+          "statusChangedAt": "2026-11-06T00:21:53.691492Z",
+          "updatedAt": "2026-11-06T00:21:53.691492Z"
         }
       }
     },
@@ -2190,16 +2190,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.157.1",
+        "version": "0.159.1",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 7,
+            "revision": 8,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.157.1"
+              "version": "0.159.1"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -2240,17 +2240,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-11-05T14:24:17Z"
+            "updated_at": "2026-11-06T18:38:28Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-05T12:14:44.716112Z",
+          "publishedAt": "2026-11-06T11:07:57.617326Z",
           "status": "active",
-          "statusChangedAt": "2026-11-05T12:14:44.716112Z",
-          "updatedAt": "2026-11-05T12:14:44.716112Z"
+          "statusChangedAt": "2026-11-06T11:07:57.617326Z",
+          "updatedAt": "2026-11-06T11:07:57.617326Z"
         }
       }
     },
@@ -7415,7 +7415,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.0.10"
+            "version": "2.0.11"
           }
         ],
         "remotes": [
@@ -7439,15 +7439,15 @@
           "source": "github",
           "url": "https://github.com/EduBase/MCP"
         },
-        "version": "2.0.10",
+        "version": "2.0.11",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "edubase",
-            "revision": 3,
+            "revision": 4,
             "status": "active",
             "source": {
               "registry": "io.github.EduBase/MCP",
-              "version": "2.0.10"
+              "version": "2.0.11"
             },
             "title": "EduBase",
             "summary": "Create and manage EduBase quizzes, exams, questions, users, and classes on the EduBase e-learning platform.",
@@ -7494,17 +7494,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/edubase",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-01T16:18:23Z"
+            "updated_at": "2026-11-06T18:38:28Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-31T23:23:53.892282Z",
+          "publishedAt": "2026-11-05T16:34:40.881782Z",
           "status": "active",
-          "statusChangedAt": "2026-10-31T23:23:53.892282Z",
-          "updatedAt": "2026-10-31T23:23:53.892282Z"
+          "statusChangedAt": "2026-11-05T16:34:40.881782Z",
+          "updatedAt": "2026-11-05T16:34:40.881782Z"
         }
       }
     },
@@ -18127,37 +18127,28 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "com.neon/mcp",
         "description": "Official Neon MCP server for managing Neon projects and Lakebase Postgres databases.",
-        "title": "Neon",
-        "repository": {
-          "url": "https://github.com/neondatabase/mcp-server-neon",
-          "source": "github"
-        },
-        "version": "1.0.0",
-        "websiteUrl": "https://neon.com/docs/ai/neon-mcp-server",
         "icons": [
           {
-            "src": "https://neon.com/brand/neon-logo-light-color.svg",
             "mimeType": "image/svg+xml",
             "sizes": [
               "any"
             ],
+            "src": "https://neon.com/brand/neon-logomark-light-color.svg",
             "theme": "light"
           },
           {
-            "src": "https://neon.com/brand/neon-logo-dark-color.svg",
             "mimeType": "image/svg+xml",
             "sizes": [
               "any"
             ],
+            "src": "https://neon.com/brand/neon-logomark-dark-color.svg",
             "theme": "dark"
           }
         ],
+        "name": "com.neon/mcp",
         "remotes": [
           {
-            "type": "streamable-http",
-            "url": "https://mcp.neon.tech/mcp",
             "headers": [
               {
                 "description": "Optional Bearer token with a Neon API key.",
@@ -18165,22 +18156,31 @@
                 "name": "Authorization"
               },
               {
+                "default": "false",
                 "description": "Optional header to enable read-only mode for tool filtering.",
                 "format": "boolean",
-                "default": "false",
                 "name": "x-read-only"
               }
-            ]
+            ],
+            "type": "streamable-http",
+            "url": "https://mcp.neon.tech/mcp"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/neondatabase/mcp-server-neon"
+        },
+        "title": "Neon",
+        "version": "2.0.0",
+        "websiteUrl": "https://neon.com/docs/ai/neon-mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "neon",
-            "revision": 1,
+            "revision": 2,
             "status": "active",
             "source": {
               "registry": "com.neon/mcp",
-              "version": "1.0.0"
+              "version": "2.0.0"
             },
             "title": "Neon",
             "summary": "Create and manage Neon Postgres projects, branches, and databases, run SQL queries, and plan schema migrations.",
@@ -18228,17 +18228,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/neon",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-11-06T18:38:28Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-11-05T19:37:45.419648Z",
           "status": "active",
-          "statusChangedAt": "2026-09-17T20:38:56.695242Z",
-          "publishedAt": "2026-09-17T20:38:56.695242Z",
-          "updatedAt": "2026-09-17T20:38:56.695242Z",
-          "isLatest": true
+          "statusChangedAt": "2026-11-05T19:37:45.419648Z",
+          "updatedAt": "2026-11-05T19:37:45.419648Z"
         }
       }
     },
@@ -20782,7 +20782,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.59.0"
+            "version": "0.61.0"
           }
         ],
         "remotes": [
@@ -20796,16 +20796,16 @@
           "url": "https://github.com/oborseth/Porkbun-MCP"
         },
         "title": "Porkbun (official)",
-        "version": "0.59.0",
+        "version": "0.61.0",
         "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 5,
+            "revision": 6,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.59.0"
+              "version": "0.61.0"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -20849,17 +20849,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-05T14:24:17Z"
+            "updated_at": "2026-11-06T18:38:28Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-03T00:52:14.509916Z",
+          "publishedAt": "2026-11-06T00:02:17.126274Z",
           "status": "active",
-          "statusChangedAt": "2026-11-03T00:52:14.509916Z",
-          "updatedAt": "2026-11-03T00:52:14.509916Z"
+          "statusChangedAt": "2026-11-06T00:02:17.126274Z",
+          "updatedAt": "2026-11-06T00:02:17.126274Z"
         }
       }
     },
@@ -24726,7 +24726,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.14.0"
+            "version": "0.16.1"
           }
         ],
         "remotes": [
@@ -24741,16 +24741,16 @@
           "url": "https://github.com/supabase/mcp"
         },
         "title": "Supabase",
-        "version": "0.14.0",
+        "version": "0.16.1",
         "websiteUrl": "https://supabase.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "supabase",
-            "revision": 4,
+            "revision": 5,
             "status": "active",
             "source": {
               "registry": "com.supabase/mcp",
-              "version": "0.14.0"
+              "version": "0.16.1"
             },
             "title": "Supabase",
             "summary": "Manage Supabase projects: query and change database tables, run migrations, read logs, and look up project settings.",
@@ -24809,17 +24809,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/supabase",
             "added_at": "2026-10-10T12:49:13Z",
-            "updated_at": "2026-10-29T06:01:47Z"
+            "updated_at": "2026-11-06T18:38:28Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-14T15:34:03.096613Z",
+          "publishedAt": "2026-11-06T12:08:29.489689Z",
           "status": "active",
-          "statusChangedAt": "2026-10-14T15:34:03.096613Z",
-          "updatedAt": "2026-10-14T15:34:03.096613Z"
+          "statusChangedAt": "2026-11-06T12:08:29.489689Z",
+          "updatedAt": "2026-11-06T12:08:29.489689Z"
         }
       }
     },
