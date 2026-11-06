@@ -1,0 +1,32 @@
+# Reviewed 2026-11-06: https://dchub.cloud/connect
+# Vendor connect page names https://dchub.cloud/mcp (Streamable HTTP). Free tier /
+# previews need no key; optional X-API-Key for paid plans. Probe saw OAuth metadata
+# on several paths, but the documented primary remote is keyless — docs win (same
+# pattern as Autodesk Product Help / Blockscout).
+revision: 1
+source:
+  registry: cloud.dchub/mcp-server
+title: DC Hub
+description: Live data for data-center site selection and the power, grid and energy
+  behind it. DCPI scores where data centers can get grid power across 300+ markets.
+  Agents can query it and cite it.
+category: data
+website_url: https://dchub.cloud
+help_url: https://dchub.cloud/connect
+keywords:
+- Data center
+- DCPI
+- Power grid
+- Site selection
+- Energy
+official:
+  vendor: DC Hub
+  evidence_url: https://dchub.cloud/connect
+remotes:
+- id: default
+  label: DC Hub
+  url: https://dchub.cloud/mcp
+  allowed_hosts:
+  - dchub.cloud
+  auth:
+    mode: none
