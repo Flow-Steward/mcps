@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-07.7402e7a2",
-  "published_at": "2026-11-07T14:19:26Z",
+  "catalog_revision": "2026-11-07.9881df8d",
+  "published_at": "2026-11-07T14:21:09Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -6435,6 +6435,156 @@
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
           }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "_meta": {
+          "io.modelcontextprotocol.registry/publisher-provided": {
+            "canonicalRemote": "https://dchub.cloud/mcp",
+            "deploymentType": "origin",
+            "freeTier": true,
+            "gatewayNote": "This entry is the ORIGIN. DC Hub is also reachable through hosted gateways, which share one upstream identity across many end users — a client that binds here directly is counted as itself, and its own key and clientInfo reach the server unaltered. When a call does arrive through a known gateway, the response says so in identity.connection; the field is absent otherwise, because a gateway forwarding a generic client identity cannot be distinguished from a direct caller.",
+            "license": "DCPI verdicts + composite CC-BY-4.0 after 30 days (dchub.cloud/terms#dcpi-current-data); methodology + grid analysis CC-BY-4.0; other layers per https://dchub.cloud/data-sources",
+            "tool": "dchub-registry-refresh",
+            "toolCount": 94,
+            "version": "1.0.0"
+          },
+          "io.github.flow-steward/catalog": {
+            "id": "dchub",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "registry": "cloud.dchub/mcp-server",
+              "version": "2.12.45"
+            },
+            "title": "DC Hub",
+            "summary": "Live data for data-center site selection and the power, grid and energy behind it.",
+            "description": "Live data for data-center site selection and the power, grid and energy behind it. DCPI scores where data centers can get grid power across 300+ markets. Agents can query it and cite it.",
+            "category": "data",
+            "website_url": "https://dchub.cloud",
+            "help_url": "https://dchub.cloud/connect",
+            "preview_note": "",
+            "keywords": [
+              "Data center",
+              "DCPI",
+              "Power grid",
+              "Site selection",
+              "Energy"
+            ],
+            "official": {
+              "vendor": "DC Hub",
+              "evidence_url": "https://dchub.cloud/connect"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/f77a3c8a7acf7cd418a83d06309978b4c25d7464/servers/dchub/icon.png",
+              "sha256": "4bbe10acbc4cdb81089f2ccbd82989eacf38d98fdc14ba5b501a35bf9d9ca1cd",
+              "bytes": 3214,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "DC Hub",
+                "url": "https://dchub.cloud/mcp",
+                "allowed_hosts": [
+                  "dchub.cloud"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "none"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/dchub",
+            "added_at": "2026-11-07T14:21:09Z",
+            "updated_at": "2026-11-07T14:21:09Z"
+          }
+        },
+        "description": "Data center energy, electricity & power grid data: DCPI to query and cite, capacity to buy or lease.",
+        "icons": [
+          {
+            "mimeType": "image/png",
+            "sizes": [
+              "512x512"
+            ],
+            "src": "https://dchub.cloud/icons/icon-512.png"
+          },
+          {
+            "mimeType": "image/png",
+            "sizes": [
+              "192x192"
+            ],
+            "src": "https://dchub.cloud/icons/icon-192.png"
+          },
+          {
+            "mimeType": "image/svg+xml",
+            "sizes": [
+              "any"
+            ],
+            "src": "https://dchub.cloud/icons/dchub-logo.svg"
+          }
+        ],
+        "name": "cloud.dchub/mcp-server",
+        "packages": [
+          {
+            "environmentVariables": [
+              {
+                "description": "Optional DC Hub API key. Leave unset to use the free tier with no key.",
+                "format": "string",
+                "isSecret": true,
+                "name": "DCHUB_API_KEY"
+              }
+            ],
+            "identifier": "dchub-mcp-server",
+            "registryBaseUrl": "https://registry.npmjs.org",
+            "registryType": "npm",
+            "transport": {
+              "type": "stdio"
+            },
+            "version": "2.12.45"
+          }
+        ],
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://dchub.cloud/mcp/registry"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://dchub.cloud/mcp/claude"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://dchub.cloud/mcp/grok"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://dchub.cloud/mcp/oauth"
+          },
+          {
+            "type": "streamable-http",
+            "url": "https://dchub.cloud/mcp"
+          }
+        ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/azmartone67/dchub-mcp-server"
+        },
+        "title": "DC Hub — Data Center Energy, Electricity & Power Grid Data: Site Selection, Colocation, Gas, Fiber",
+        "version": "2.12.45",
+        "websiteUrl": "https://dchub.cloud"
+      },
+      "_meta": {
+        "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-11-02T03:32:02.733882Z",
+          "status": "active",
+          "statusChangedAt": "2026-11-02T03:32:02.733882Z",
+          "updatedAt": "2026-11-02T03:32:02.733882Z"
         }
       }
     },
@@ -28756,6 +28906,6 @@
     }
   ],
   "metadata": {
-    "count": 353
+    "count": 354
   }
 }
