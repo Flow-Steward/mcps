@@ -1,0 +1,22 @@
+# Reviewed official project documentation; not a live integration verification.
+# Endpoint/auth evidence: https://github.com/MemTensor/MemOS/blob/main/docs/en/open_source/best_practice/mcp_for_cozespace_and_tools.md
+# The record version describes this catalog record, not an upstream package version.
+revision: 1
+title: MemOS
+description: "Add and search memories on your own MemOS deployment using the official HTTP MCP reference example backed by the MemOS Server API."
+category: ai
+website_url: https://github.com/MemTensor/MemOS
+help_url: https://github.com/MemTensor/MemOS/blob/main/docs/en/open_source/best_practice/mcp_for_cozespace_and_tools.md
+preview_note: "Self-hosted reference example with no built-in authentication; use a private trusted endpoint. No delete tool. Documentation reviewed; runtime calls not verified."
+keywords: [Memory, Persistent context]
+remotes:
+- id: default
+  label: MemOS
+  url: https://{instance_host}/mcp
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: "MemOS MCP example host"
+  auth:
+    mode: none
+    setup_url: https://github.com/MemTensor/MemOS/blob/main/docs/en/open_source/best_practice/mcp_for_cozespace_and_tools.md

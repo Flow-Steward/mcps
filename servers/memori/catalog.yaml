@@ -1,0 +1,23 @@
+# Reviewed official project documentation; not a live integration verification.
+# Endpoint/auth evidence: https://github.com/MemoriLabs/memori-mcp
+# The record version describes this catalog record, not an upstream package version.
+revision: 1
+title: Memori
+description: "Store durable preferences and recall relevant memories through the Memori hosted MCP service using your API key and entity identity."
+category: ai
+website_url: https://memorilabs.ai
+help_url: https://github.com/MemoriLabs/memori-mcp
+preview_note: "Requires a Memori account and API key. Documentation reviewed; runtime calls not verified."
+keywords: [Memory, Persistent context]
+remotes:
+- id: default
+  label: Memori
+  url: https://api.memorilabs.ai/mcp/
+  allowed_hosts: [api.memorilabs.ai]
+  field_labels:
+    X-Memori-API-Key: "Memori API key"
+    X-Memori-Entity-Id: "Memory entity ID"
+    X-Memori-Process-Id: "Process ID"
+  auth:
+    mode: headers
+    setup_url: https://github.com/MemoriLabs/memori-mcp

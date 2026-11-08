@@ -1,0 +1,23 @@
+# Icon: verified publisher organization avatar, https://avatars.githubusercontent.com/u/171979587?v=4&s=128 (downloaded unchanged; visually inspected).
+# Reviewed 2026-11-08: Vendor page names exact endpoint and OAuth. Read-only metadata on 2026-11-08: https://mcp.supermemory.ai/.well-known/oauth-protected-resource identifies https://api.supermemory.ai/api/auth; https://api.supermemory.ai/api/auth/.well-known/oauth-authorization-server advertises registration_endpoint, S256, authorization_code and refresh_token. DCR metadata verified; no OAuth grant or memory operation performed.
+revision: 1
+title: "Supermemory"
+description: "Save and search persistent memories and source documents across AI clients in Supermemory spaces. Sign in to choose the spaces and access level this connection may use."
+category: ai
+website_url: https://supermemory.ai
+help_url: https://supermemory.ai/mcp/
+preview_note: "Supermemory account and browser sign-in required"
+keywords: ["Agent memory", "Spaces", "Persistent memory"]
+official:
+  vendor: "Supermemory"
+  evidence_url: https://supermemory.ai/mcp/
+remotes:
+- id: default
+  label: "Supermemory"
+  url: "https://mcp.supermemory.ai/mcp"
+  allowed_hosts: ["mcp.supermemory.ai"]
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: ["openid", "profile", "email", "offline_access"]
+    setup_url: https://supermemory.ai/mcp/

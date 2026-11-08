@@ -1,0 +1,23 @@
+# Icon: verified publisher organization avatar, https://avatars.githubusercontent.com/u/132832125?v=4&s=128 (downloaded unchanged; visually inspected).
+# Reviewed 2026-11-08: Vendor docs name exact endpoint and OAuth 2.1 PKCE public clients. Read-only metadata on 2026-11-08: /.well-known/oauth-protected-resource/mcp identifies https://api.getzep.com/v1/oauth; /.well-known/oauth-authorization-server/v1/oauth advertises registration_endpoint, S256 and client_id_metadata_document_supported=true. Both DCR and CIMD advertised; DCR chosen here. No OAuth grant or memory operation performed.
+revision: 1
+title: "Zep Context"
+description: "Search and add information to your persistent Zep memory and authorized shared context graphs. Your organization must enable MCP access and configure its identity provider; deletion is not exposed by the documented MCP tools."
+category: ai
+website_url: https://www.getzep.com
+help_url: https://help.getzep.com/context-mcp-server
+preview_note: "Organization MCP setup and eligible identity required"
+keywords: ["Agent memory", "Context graphs", "Graphiti"]
+official:
+  vendor: "Zep"
+  evidence_url: https://help.getzep.com/context-mcp-server
+remotes:
+- id: default
+  label: "Zep Context"
+  url: "https://api.getzep.com/mcp"
+  allowed_hosts: ["api.getzep.com"]
+  auth:
+    mode: oauth2
+    client_registration: dcr
+    requested_scopes: ["graph:read", "graph:write"]
+    setup_url: https://help.getzep.com/context-mcp-server

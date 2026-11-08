@@ -1,0 +1,24 @@
+# Reviewed official project documentation; not a live integration verification.
+# Endpoint/auth evidence: https://github.com/EverMind-AI/EverOS-MCP
+# The record version describes this catalog record, not an upstream package version.
+revision: 1
+title: EverOS
+description: "Store and recall durable facts, browse memories and record task trajectories through your deployment of the official EverOS MCP server."
+category: ai
+website_url: https://evermind.ai
+help_url: https://github.com/EverMind-AI/EverOS-MCP
+preview_note: "Self-hosted MCP server required; the default backend is EverOS Cloud and requires its API key. Backend deletion support varies. Documentation reviewed; runtime calls not verified."
+keywords: [Memory, Persistent context]
+remotes:
+- id: default
+  label: EverOS
+  url: https://{instance_host}/mcp
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: "EverOS MCP server host"
+    Authorization: "EverOS Bearer API key"
+    X-EverOS-User-Id: "Memory user ID"
+  auth:
+    mode: headers
+    setup_url: https://github.com/EverMind-AI/EverOS-MCP

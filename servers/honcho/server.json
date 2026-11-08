@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/honcho",
+  "title": "Honcho",
+  "description": "Maintain persistent knowledge about users and conversations with Honcho. Store messages, create or search conclusions, and remove individual conclusions in your workspace.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.honcho.dev",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "API key from app.honcho.dev. Enter as: Bearer <Honcho API key>",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "X-Honcho-Workspace-ID",
+          "description": "Optional default workspace ID. If omitted, the agent must pass workspace_id on each workspace-scoped tool call.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://honcho.dev"
+}

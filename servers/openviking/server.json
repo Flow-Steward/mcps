@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/openviking",
+  "title": "OpenViking",
+  "description": "Write, read, retrieve and remove persistent context on your own OpenViking server through its native Streamable HTTP MCP endpoint.",
+  "version": "1.0.0",
+  "websiteUrl": "https://github.com/volcengine/OpenViking",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "HTTPS host name of your deployed MCP server, without a scheme or path. Configure TLS and publish the documented /mcp endpoint on this host.",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "OpenViking user or admin API key. Enter the complete header value: Bearer <api-key>.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

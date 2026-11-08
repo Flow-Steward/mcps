@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/zep",
+  "title": "Zep Context",
+  "description": "Search and add information to your persistent Zep memory and authorized shared context graphs. Your organization must enable MCP access and configure its identity provider; deletion is not exposed by the documented MCP tools.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.getzep.com/mcp"
+    }
+  ],
+  "websiteUrl": "https://www.getzep.com"
+}

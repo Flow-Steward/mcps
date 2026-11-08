@@ -27,6 +27,12 @@ that catalogs do the curation. Each entry here records what a person verified:
 Only remote servers over Streamable HTTP are listed. Servers that must be
 installed locally (`packages` in the Registry) are out of scope.
 
+## Agent memory
+
+See [agent-memory compatibility and verification](docs/agent-memory.md) for the
+reviewed memory services, their deployment requirements, and the distinction
+between documented compatibility and live memory acceptance.
+
 ## One server, one folder
 
 ```

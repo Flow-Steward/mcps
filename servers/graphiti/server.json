@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/graphiti",
+  "title": "Graphiti Memory",
+  "description": "Add and search persistent episodes, entities and facts in your own Graphiti context graph. Requires the upstream Graphiti MCP server, FalkorDB or Neo4j, configured inference and embeddings, and an HTTPS deployment.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "Host name of your HTTPS Graphiti MCP deployment, without https:// or a path. Upstream serves Streamable HTTP at /mcp and has no native authentication. Supply your own HTTPS deployment accessible to Flow Steward.",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+  "websiteUrl": "https://www.getzep.com/platform/graphiti/"
+}

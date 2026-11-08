@@ -1,0 +1,23 @@
+# Reviewed official project documentation; not a live integration verification.
+# Endpoint/auth evidence: https://github.com/volcengine/OpenViking/blob/main/docs/en/guides/06-mcp-integration.md
+# The record version describes this catalog record, not an upstream package version.
+revision: 1
+title: OpenViking
+description: "Write, read, retrieve and remove persistent context on your own OpenViking server through its native Streamable HTTP MCP endpoint."
+category: ai
+website_url: https://github.com/volcengine/OpenViking
+help_url: https://github.com/volcengine/OpenViking/blob/main/docs/en/guides/06-mcp-integration.md
+preview_note: "Self-hosted server required. Uses a user or admin API key; documentation reviewed, runtime calls not verified."
+keywords: [Memory, Persistent context]
+remotes:
+- id: default
+  label: OpenViking
+  url: https://{instance_host}/mcp
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: "OpenViking server host"
+    Authorization: "OpenViking Bearer API key"
+  auth:
+    mode: headers
+    setup_url: https://github.com/volcengine/OpenViking/blob/main/docs/en/guides/06-mcp-integration.md
