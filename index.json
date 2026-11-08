@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-07.9881df8d",
-  "published_at": "2026-11-07T14:21:09Z",
+  "catalog_revision": "2026-11-08.71b9581b",
+  "published_at": "2026-11-08T14:29:09Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -4961,6 +4961,78 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/cognee",
+        "title": "Cognee Memory",
+        "description": "Store, recall and forget memories through your own Cognee MCP deployment. Run the upstream server with Streamable HTTP at /mcp and expose it through HTTPS; configure its databases and model providers before connecting.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://{instance_host}/mcp",
+            "variables": {
+              "instance_host": {
+                "description": "Host name of your HTTPS Cognee MCP deployment, without https:// or a path. The upstream HTTP server must run with --transport http --path /mcp and be exposed through TLS. This entry assumes no additional inbound authentication.",
+                "isRequired": true
+              }
+            }
+          }
+        ],
+        "websiteUrl": "https://www.cognee.ai",
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "cognee",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/cognee",
+              "version": "1.0.0"
+            },
+            "title": "Cognee Memory",
+            "summary": "Store, recall and forget memories through your own Cognee MCP deployment.",
+            "description": "Store, recall and forget memories through your own Cognee MCP deployment. Run the upstream server with Streamable HTTP at /mcp and expose it through HTTPS; configure its databases and model providers before connecting.",
+            "category": "ai",
+            "website_url": "https://www.cognee.ai",
+            "help_url": "https://www.cognee.ai/mcp",
+            "preview_note": "Self-hosted MCP server; HTTPS deployment required",
+            "keywords": [
+              "Agent memory",
+              "Knowledge graph",
+              "Self-hosted"
+            ],
+            "official": null,
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/cognee/icon.png",
+              "sha256": "3be517d5ab1df6f0f33a13748bbe1bff7811935a34f153d29d665a78b4a4c9ae",
+              "bytes": 2012,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Cognee Memory",
+                "url": "https://{instance_host}/mcp",
+                "allowed_hosts": [],
+                "user_defined_host": true,
+                "auth": {
+                  "mode": "none",
+                  "setup_url": "https://www.cognee.ai/mcp"
+                },
+                "field_labels": {
+                  "instance_host": "Cognee MCP server host"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/cognee",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/coindesk-data",
         "title": "CoinDesk Data",
         "description": "Get crypto spot, index, futures, options, on-chain DEX data, and CoinDesk news headlines.",
@@ -8105,6 +8177,93 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/evernote",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/everos",
+        "title": "EverOS",
+        "description": "Store and recall durable facts, browse memories and record task trajectories through your deployment of the official EverOS MCP server.",
+        "version": "1.0.0",
+        "websiteUrl": "https://evermind.ai",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://{instance_host}/mcp",
+            "variables": {
+              "instance_host": {
+                "description": "HTTPS host name of your deployed MCP server, without a scheme or path. Configure TLS and publish the documented /mcp endpoint on this host.",
+                "isRequired": true
+              }
+            },
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Caller EverOS API key forwarded to the configured backend. Enter the complete header value: Bearer <api-key>.",
+                "isRequired": true,
+                "isSecret": true
+              },
+              {
+                "name": "X-EverOS-User-Id",
+                "description": "Optional memory owner within this API key space; defaults to default-user. This identifier is not an authorization boundary.",
+                "isRequired": false,
+                "isSecret": false
+              }
+            ]
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "everos",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/everos",
+              "version": "1.0.0"
+            },
+            "title": "EverOS",
+            "summary": "Store and recall durable facts, browse memories and record task trajectories through your deployment of the official EverOS MCP server.",
+            "description": "Store and recall durable facts, browse memories and record task trajectories through your deployment of the official EverOS MCP server.",
+            "category": "ai",
+            "website_url": "https://evermind.ai",
+            "help_url": "https://github.com/EverMind-AI/EverOS-MCP",
+            "preview_note": "Self-hosted MCP server required; the default backend is EverOS Cloud and requires its API key. Backend deletion support varies. Documentation reviewed; runtime calls not verified.",
+            "keywords": [
+              "Memory",
+              "Persistent context"
+            ],
+            "official": null,
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/everos/icon.png",
+              "sha256": "4538b6173f209161e356d4c1e67b0c7db00c52b0d78b597b956d77c167badf3f",
+              "bytes": 7493,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "EverOS",
+                "url": "https://{instance_host}/mcp",
+                "allowed_hosts": [],
+                "user_defined_host": true,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://github.com/EverMind-AI/EverOS-MCP"
+                },
+                "field_labels": {
+                  "instance_host": "EverOS MCP server host",
+                  "Authorization": "EverOS Bearer API key",
+                  "X-EverOS-User-Id": "Memory user ID"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/everos",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
           }
         }
       }
@@ -11298,6 +11457,79 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/graphiti",
+        "title": "Graphiti Memory",
+        "description": "Add and search persistent episodes, entities and facts in your own Graphiti context graph. Requires the upstream Graphiti MCP server, FalkorDB or Neo4j, configured inference and embeddings, and an HTTPS deployment.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://{instance_host}/mcp",
+            "variables": {
+              "instance_host": {
+                "description": "Host name of your HTTPS Graphiti MCP deployment, without https:// or a path. Upstream serves Streamable HTTP at /mcp and has no native authentication. Supply your own HTTPS deployment accessible to Flow Steward.",
+                "isRequired": true
+              }
+            }
+          }
+        ],
+        "websiteUrl": "https://www.getzep.com/platform/graphiti/",
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "graphiti",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/graphiti",
+              "version": "1.0.0"
+            },
+            "title": "Graphiti Memory",
+            "summary": "Add and search persistent episodes, entities and facts in your own Graphiti context graph.",
+            "description": "Add and search persistent episodes, entities and facts in your own Graphiti context graph. Requires the upstream Graphiti MCP server, FalkorDB or Neo4j, configured inference and embeddings, and an HTTPS deployment.",
+            "category": "ai",
+            "website_url": "https://www.getzep.com/platform/graphiti/",
+            "help_url": "https://help.getzep.com/graphiti/getting-started/mcp-server",
+            "preview_note": "Experimental self-hosted reference server; no native authentication",
+            "keywords": [
+              "Agent memory",
+              "Zep",
+              "Knowledge graph",
+              "Self-hosted"
+            ],
+            "official": null,
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/graphiti/icon.png",
+              "sha256": "cdf90420b964af87c28dd938aea7ef12d998388c58d1191e2d4c8145ce1fb222",
+              "bytes": 7205,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Graphiti Memory",
+                "url": "https://{instance_host}/mcp",
+                "allowed_hosts": [],
+                "user_defined_host": true,
+                "auth": {
+                  "mode": "none",
+                  "setup_url": "https://help.getzep.com/graphiti/getting-started/mcp-server"
+                },
+                "field_labels": {
+                  "instance_host": "Graphiti MCP server host"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/graphiti",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/gravity-forms",
         "title": "Gravity Forms",
         "description": "Read forms and submissions and manage supported Gravity Forms operations on your WordPress site.",
@@ -12033,6 +12265,92 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/hindsight",
+        "title": "Hindsight",
+        "description": "Store, recall and reflect on long-term memories in a Hindsight Cloud memory bank across agent sessions. Requires a Hindsight Cloud API key and available credits.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://api.hindsight.vectorize.io/mcp/{bank_id}/",
+            "variables": {
+              "bank_id": {
+                "description": "Your Hindsight memory bank ID from the Cloud Connect page. Use letters, digits, hyphens or underscores.",
+                "isRequired": true
+              }
+            },
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Hindsight Cloud API key from the Connect page. Enter as: Bearer <API key>",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
+          }
+        ],
+        "websiteUrl": "https://hindsight.vectorize.io",
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "hindsight",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/hindsight",
+              "version": "1.0.0"
+            },
+            "title": "Hindsight",
+            "summary": "Store, recall and reflect on long-term memories in a Hindsight Cloud memory bank across agent sessions.",
+            "description": "Store, recall and reflect on long-term memories in a Hindsight Cloud memory bank across agent sessions. Requires a Hindsight Cloud API key and available credits.",
+            "category": "ai",
+            "website_url": "https://hindsight.vectorize.io",
+            "help_url": "https://docs.hindsight.vectorize.io/cloud/mcp/",
+            "preview_note": "Cloud account and memory bank required",
+            "keywords": [
+              "Agent memory",
+              "Vectorize",
+              "Memory banks"
+            ],
+            "official": {
+              "vendor": "Vectorize",
+              "evidence_url": "https://docs.hindsight.vectorize.io/cloud/mcp/"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/hindsight/icon.png",
+              "sha256": "b30c239c9be4837747deec5f1a270ec0a2d0f8f5302d4500f0cebfb96a542f87",
+              "bytes": 4183,
+              "mime_type": "image/png",
+              "size": "100x100"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Hindsight API key",
+                "url": "https://api.hindsight.vectorize.io/mcp/{bank_id}/",
+                "allowed_hosts": [
+                  "api.hindsight.vectorize.io"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://docs.hindsight.vectorize.io/cloud/mcp/"
+                },
+                "field_labels": {
+                  "bank_id": "Hindsight memory bank ID",
+                  "Authorization": "Hindsight API key"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/hindsight",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/holded",
         "title": "Holded",
         "description": "Query Holded business data and use the invoice, contact and management tools permitted by your role.",
@@ -12166,6 +12484,92 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/home-assistant",
             "added_at": "2026-11-05T14:54:06Z",
             "updated_at": "2026-11-05T14:54:06Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/honcho",
+        "title": "Honcho",
+        "description": "Maintain persistent knowledge about users and conversations with Honcho. Store messages, create or search conclusions, and remove individual conclusions in your workspace.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.honcho.dev",
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "API key from app.honcho.dev. Enter as: Bearer <Honcho API key>",
+                "isRequired": true,
+                "isSecret": true
+              },
+              {
+                "name": "X-Honcho-Workspace-ID",
+                "description": "Optional default workspace ID. If omitted, the agent must pass workspace_id on each workspace-scoped tool call.",
+                "isRequired": false,
+                "isSecret": false
+              }
+            ]
+          }
+        ],
+        "websiteUrl": "https://honcho.dev",
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "honcho",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/honcho",
+              "version": "1.0.0"
+            },
+            "title": "Honcho",
+            "summary": "Maintain persistent knowledge about users and conversations with Honcho.",
+            "description": "Maintain persistent knowledge about users and conversations with Honcho. Store messages, create or search conclusions, and remove individual conclusions in your workspace.",
+            "category": "ai",
+            "website_url": "https://honcho.dev",
+            "help_url": "https://honcho.dev/docs/v3/guides/integrations/mcp",
+            "preview_note": "Honcho account, API key and workspace required",
+            "keywords": [
+              "Agent memory",
+              "Plastic Labs",
+              "Personalization"
+            ],
+            "official": {
+              "vendor": "Plastic Labs",
+              "evidence_url": "https://honcho.dev/docs/v3/guides/integrations/mcp"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/honcho/icon.png",
+              "sha256": "80bdcc69a96a73a63e3f559b833517f679bd5ee7f337777d2542b90ef15cb111",
+              "bytes": 7122,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Honcho API key",
+                "url": "https://mcp.honcho.dev",
+                "allowed_hosts": [
+                  "mcp.honcho.dev"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://honcho.dev/docs/v3/guides/integrations/mcp"
+                },
+                "field_labels": {
+                  "Authorization": "Honcho API key",
+                  "X-Honcho-Workspace-ID": "Honcho workspace ID"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/honcho",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
           }
         }
       }
@@ -14998,6 +15402,86 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/letta",
+        "title": "Letta Agents",
+        "description": "Create and message stateful Letta agents, delegate work, and retrieve their replies. Agents retain memory across conversations. This connection exposes agent delegation tools; direct memory CRUD and agent deletion are not documented MCP tools.",
+        "version": "1.0.0",
+        "websiteUrl": "https://www.letta.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://api.letta.com/mcp",
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Create a project API key in Letta Platform at platform.letta.com. Enter as: Bearer <LETTA_API_KEY>",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "letta",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/letta",
+              "version": "1.0.0"
+            },
+            "title": "Letta Agents",
+            "summary": "Create and message stateful Letta agents, delegate work, and retrieve their replies.",
+            "description": "Create and message stateful Letta agents, delegate work, and retrieve their replies. Agents retain memory across conversations. This connection exposes agent delegation tools; direct memory CRUD and agent deletion are not documented MCP tools.",
+            "category": "ai",
+            "website_url": "https://www.letta.com",
+            "help_url": "https://docs.letta.com/platform/hosted-mcp",
+            "preview_note": "Hosted agent delegation; Letta Platform API key required",
+            "keywords": [
+              "Stateful agents",
+              "Agent delegation",
+              "Letta",
+              "MemGPT"
+            ],
+            "official": {
+              "vendor": "Letta",
+              "evidence_url": "https://docs.letta.com/platform/hosted-mcp"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/letta/icon.png",
+              "sha256": "27410201a26b48250ab198e318de1c29141805391826bd4a25f0dc31c458cc3a",
+              "bytes": 946,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Letta Agents API key",
+                "url": "https://api.letta.com/mcp",
+                "allowed_hosts": [
+                  "api.letta.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://docs.letta.com/platform/hosted-mcp"
+                },
+                "field_labels": {
+                  "Authorization": "Letta Platform API key"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/letta",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "description": "Find and manage issues, projects, and documents in your Linear workspace.",
         "icons": [
           {
@@ -16330,6 +16814,244 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/mem",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/mem0",
+        "title": "Mem0",
+        "description": "Save, search, update and delete persistent memories for users and agents in Mem0 Platform. Memories are shared across connected clients through your Mem0 account.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.mem0.ai/mcp",
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "Mem0 Platform API key from app.mem0.ai. Enter as: Bearer <API key>",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
+          }
+        ],
+        "websiteUrl": "https://mem0.ai",
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "mem0",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/mem0",
+              "version": "1.0.0"
+            },
+            "title": "Mem0",
+            "summary": "Save, search, update and delete persistent memories for users and agents in Mem0 Platform.",
+            "description": "Save, search, update and delete persistent memories for users and agents in Mem0 Platform. Memories are shared across connected clients through your Mem0 account.",
+            "category": "ai",
+            "website_url": "https://mem0.ai",
+            "help_url": "https://docs.mem0.ai/platform/mem0-mcp",
+            "preview_note": "Mem0 Platform account and API key required",
+            "keywords": [
+              "Agent memory",
+              "Persistent memory"
+            ],
+            "official": {
+              "vendor": "Mem0",
+              "evidence_url": "https://docs.mem0.ai/platform/mem0-mcp"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/mem0/icon.png",
+              "sha256": "f0d4e286503f8fd9362a8050abf0bdcb63ec781fb4126b5af5162fd56e111abc",
+              "bytes": 5836,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Mem0 API key",
+                "url": "https://mcp.mem0.ai/mcp",
+                "allowed_hosts": [
+                  "mcp.mem0.ai"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://docs.mem0.ai/platform/mem0-mcp"
+                },
+                "field_labels": {
+                  "Authorization": "Mem0 Platform API key"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/mem0",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/memori",
+        "title": "Memori",
+        "description": "Store durable preferences and recall relevant memories through the Memori hosted MCP service using your API key and entity identity.",
+        "version": "1.0.0",
+        "websiteUrl": "https://memorilabs.ai",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://api.memorilabs.ai/mcp/",
+            "headers": [
+              {
+                "name": "X-Memori-API-Key",
+                "description": "Memori API key from app.memorilabs.ai.",
+                "isRequired": true,
+                "isSecret": true
+              },
+              {
+                "name": "X-Memori-Entity-Id",
+                "description": "Stable end-user or entity identifier whose memories this connection accesses.",
+                "isRequired": true,
+                "isSecret": false
+              },
+              {
+                "name": "X-Memori-Process-Id",
+                "description": "Optional process, app or workflow identifier for memory isolation.",
+                "isRequired": false,
+                "isSecret": false
+              }
+            ]
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "memori",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/memori",
+              "version": "1.0.0"
+            },
+            "title": "Memori",
+            "summary": "Store durable preferences and recall relevant memories through the Memori hosted MCP service using your API key and entity identity.",
+            "description": "Store durable preferences and recall relevant memories through the Memori hosted MCP service using your API key and entity identity.",
+            "category": "ai",
+            "website_url": "https://memorilabs.ai",
+            "help_url": "https://github.com/MemoriLabs/memori-mcp",
+            "preview_note": "Requires a Memori account and API key. Documentation reviewed; runtime calls not verified.",
+            "keywords": [
+              "Memory",
+              "Persistent context"
+            ],
+            "official": null,
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/memori/icon.png",
+              "sha256": "09406684158854e073bcdd3b0386d6c502cf0f895970f089988ad854dbe231de",
+              "bytes": 4538,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Memori",
+                "url": "https://api.memorilabs.ai/mcp/",
+                "allowed_hosts": [
+                  "api.memorilabs.ai"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://github.com/MemoriLabs/memori-mcp"
+                },
+                "field_labels": {
+                  "X-Memori-API-Key": "Memori API key",
+                  "X-Memori-Entity-Id": "Memory entity ID",
+                  "X-Memori-Process-Id": "Process ID"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/memori",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/memos",
+        "title": "MemOS",
+        "description": "Add and search memories on your own MemOS deployment using the official HTTP MCP reference example backed by the MemOS Server API.",
+        "version": "1.0.0",
+        "websiteUrl": "https://github.com/MemTensor/MemOS",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://{instance_host}/mcp",
+            "variables": {
+              "instance_host": {
+                "description": "HTTPS host name of your deployed MCP server, without a scheme or path. Configure TLS and publish the documented /mcp endpoint on this host.",
+                "isRequired": true
+              }
+            }
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "memos",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/memos",
+              "version": "1.0.0"
+            },
+            "title": "MemOS",
+            "summary": "Add and search memories on your own MemOS deployment using the official HTTP MCP reference example backed by the MemOS Server API.",
+            "description": "Add and search memories on your own MemOS deployment using the official HTTP MCP reference example backed by the MemOS Server API.",
+            "category": "ai",
+            "website_url": "https://github.com/MemTensor/MemOS",
+            "help_url": "https://github.com/MemTensor/MemOS/blob/main/docs/en/open_source/best_practice/mcp_for_cozespace_and_tools.md",
+            "preview_note": "Self-hosted reference example with no built-in authentication; use a private trusted endpoint. No delete tool. Documentation reviewed; runtime calls not verified.",
+            "keywords": [
+              "Memory",
+              "Persistent context"
+            ],
+            "official": null,
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/memos/icon.png",
+              "sha256": "0eef303c76fbe2d30a0d3d2d1ec10c3b02618367ec686197514f861691f410a1",
+              "bytes": 18052,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "MemOS",
+                "url": "https://{instance_host}/mcp",
+                "allowed_hosts": [],
+                "user_defined_host": true,
+                "auth": {
+                  "mode": "none",
+                  "setup_url": "https://github.com/MemTensor/MemOS/blob/main/docs/en/open_source/best_practice/mcp_for_cozespace_and_tools.md"
+                },
+                "field_labels": {
+                  "instance_host": "MemOS MCP example host"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/memos",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
           }
         }
       }
@@ -19288,6 +20010,86 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/openrouter",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-31T22:17:52Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/openviking",
+        "title": "OpenViking",
+        "description": "Write, read, retrieve and remove persistent context on your own OpenViking server through its native Streamable HTTP MCP endpoint.",
+        "version": "1.0.0",
+        "websiteUrl": "https://github.com/volcengine/OpenViking",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://{instance_host}/mcp",
+            "variables": {
+              "instance_host": {
+                "description": "HTTPS host name of your deployed MCP server, without a scheme or path. Configure TLS and publish the documented /mcp endpoint on this host.",
+                "isRequired": true
+              }
+            },
+            "headers": [
+              {
+                "name": "Authorization",
+                "description": "OpenViking user or admin API key. Enter the complete header value: Bearer <api-key>.",
+                "isRequired": true,
+                "isSecret": true
+              }
+            ]
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "openviking",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/openviking",
+              "version": "1.0.0"
+            },
+            "title": "OpenViking",
+            "summary": "Write, read, retrieve and remove persistent context on your own OpenViking server through its native Streamable HTTP MCP endpoint.",
+            "description": "Write, read, retrieve and remove persistent context on your own OpenViking server through its native Streamable HTTP MCP endpoint.",
+            "category": "ai",
+            "website_url": "https://github.com/volcengine/OpenViking",
+            "help_url": "https://github.com/volcengine/OpenViking/blob/main/docs/en/guides/06-mcp-integration.md",
+            "preview_note": "Self-hosted server required. Uses a user or admin API key; documentation reviewed, runtime calls not verified.",
+            "keywords": [
+              "Memory",
+              "Persistent context"
+            ],
+            "official": null,
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/openviking/icon.png",
+              "sha256": "592d1f0d7421416440e695390774a1e35d01d10e0d24d57d5f2d482d5c3a6305",
+              "bytes": 10603,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "OpenViking",
+                "url": "https://{instance_host}/mcp",
+                "allowed_hosts": [],
+                "user_defined_host": true,
+                "auth": {
+                  "mode": "headers",
+                  "setup_url": "https://github.com/volcengine/OpenViking/blob/main/docs/en/guides/06-mcp-integration.md"
+                },
+                "field_labels": {
+                  "instance_host": "OpenViking server host",
+                  "Authorization": "OpenViking Bearer API key"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/openviking",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
           }
         }
       }
@@ -25111,6 +25913,83 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/supermemory",
+        "title": "Supermemory",
+        "description": "Save and search persistent memories and source documents across AI clients in Supermemory spaces. Sign in to choose the spaces and access level this connection may use.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.supermemory.ai/mcp"
+          }
+        ],
+        "websiteUrl": "https://supermemory.ai",
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "supermemory",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/supermemory",
+              "version": "1.0.0"
+            },
+            "title": "Supermemory",
+            "summary": "Save and search persistent memories and source documents across AI clients in Supermemory spaces.",
+            "description": "Save and search persistent memories and source documents across AI clients in Supermemory spaces. Sign in to choose the spaces and access level this connection may use.",
+            "category": "ai",
+            "website_url": "https://supermemory.ai",
+            "help_url": "https://supermemory.ai/mcp/",
+            "preview_note": "Supermemory account and browser sign-in required",
+            "keywords": [
+              "Agent memory",
+              "Spaces",
+              "Persistent memory"
+            ],
+            "official": {
+              "vendor": "Supermemory",
+              "evidence_url": "https://supermemory.ai/mcp/"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/supermemory/icon.png",
+              "sha256": "f48e3855eedd14a1689cb4310a3cd942f97bc0aec1e2263089b5dfda81f1e03e",
+              "bytes": 1666,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Supermemory",
+                "url": "https://mcp.supermemory.ai/mcp",
+                "allowed_hosts": [
+                  "mcp.supermemory.ai"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [
+                    "openid",
+                    "profile",
+                    "email",
+                    "offline_access"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false,
+                  "setup_url": "https://supermemory.ai/mcp/"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/supermemory",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "com.supermetrics/supermetrics",
         "description": "Supermetrics MCP: discover data sources & fields, run marketing-data queries, manage campaigns.",
         "version": "1.14.20",
@@ -28704,6 +29583,81 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/zep",
+        "title": "Zep Context",
+        "description": "Search and add information to your persistent Zep memory and authorized shared context graphs. Your organization must enable MCP access and configure its identity provider; deletion is not exposed by the documented MCP tools.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://api.getzep.com/mcp"
+          }
+        ],
+        "websiteUrl": "https://www.getzep.com",
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "zep",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/zep",
+              "version": "1.0.0"
+            },
+            "title": "Zep Context",
+            "summary": "Search and add information to your persistent Zep memory and authorized shared context graphs.",
+            "description": "Search and add information to your persistent Zep memory and authorized shared context graphs. Your organization must enable MCP access and configure its identity provider; deletion is not exposed by the documented MCP tools.",
+            "category": "ai",
+            "website_url": "https://www.getzep.com",
+            "help_url": "https://help.getzep.com/context-mcp-server",
+            "preview_note": "Organization MCP setup and eligible identity required",
+            "keywords": [
+              "Agent memory",
+              "Context graphs",
+              "Graphiti"
+            ],
+            "official": {
+              "vendor": "Zep",
+              "evidence_url": "https://help.getzep.com/context-mcp-server"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/13174328376043a2ac2f801429bb3fc6cf0cdcc5/servers/zep/icon.png",
+              "sha256": "cdf90420b964af87c28dd938aea7ef12d998388c58d1191e2d4c8145ce1fb222",
+              "bytes": 7205,
+              "mime_type": "image/png",
+              "size": "128x128"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "Zep Context",
+                "url": "https://api.getzep.com/mcp",
+                "allowed_hosts": [
+                  "api.getzep.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "oauth2",
+                  "client_registration": "dcr",
+                  "requested_scopes": [
+                    "graph:read",
+                    "graph:write"
+                  ],
+                  "authorization_parameters": {},
+                  "refresh_token_required": false,
+                  "setup_url": "https://help.getzep.com/context-mcp-server"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/zep",
+            "added_at": "2026-11-08T14:29:09Z",
+            "updated_at": "2026-11-08T14:29:09Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
         "name": "io.github.flow-steward/ziprecruiter",
         "title": "ZipRecruiter",
         "description": "Search live ZipRecruiter job listings by title, company, location, salary, work style, and posting…",
@@ -28906,6 +29860,6 @@
     }
   ],
   "metadata": {
-    "count": 354
+    "count": 366
   }
 }
