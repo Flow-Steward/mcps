@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/hindsight",
+  "title": "Hindsight",
+  "description": "Store, recall and reflect on long-term memories in a Hindsight Cloud memory bank across agent sessions. Requires a Hindsight Cloud API key and available credits.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.hindsight.vectorize.io/mcp/{bank_id}/",
+      "variables": {
+        "bank_id": {
+          "description": "Your Hindsight memory bank ID from the Cloud Connect page. Use letters, digits, hyphens or underscores.",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Hindsight Cloud API key from the Connect page. Enter as: Bearer <API key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://hindsight.vectorize.io"
+}

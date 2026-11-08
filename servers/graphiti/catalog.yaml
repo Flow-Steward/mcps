@@ -1,0 +1,22 @@
+# Live HTTP check 2026-11-08, official MCP1.1.3 image: canonical endpoint /mcp; /mcp/ redirects307 and Core rejects redirects.
+# Icon: verified publisher organization avatar, https://avatars.githubusercontent.com/u/132832125?v=4&s=128 (downloaded unchanged; visually inspected).
+# Reviewed 2026-11-08: Vendor docs name Streamable HTTP at http://localhost:8000/mcp/. Official https://github.com/getzep/graphiti/blob/main/mcp_server/README.md identifies the implementation as experimental and states it has no authentication. HTTPS template is an operator-owned deployment, not hosted Zep. Local MCP1.1.3/Core0.31.2 acceptance and exact version/async scope are documented in docs/agent-memory.md.
+revision: 1
+title: "Graphiti Memory"
+description: "Add and search persistent episodes, entities and facts in your own Graphiti context graph. Requires the upstream Graphiti MCP server, FalkorDB or Neo4j, configured inference and embeddings, and an HTTPS deployment."
+category: ai
+website_url: https://www.getzep.com/platform/graphiti/
+help_url: https://help.getzep.com/graphiti/getting-started/mcp-server
+preview_note: "Experimental self-hosted reference server; no native authentication"
+keywords: ["Agent memory", "Zep", "Knowledge graph", "Self-hosted"]
+remotes:
+- id: default
+  label: "Graphiti Memory"
+  url: "https://{instance_host}/mcp"
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: "Graphiti MCP server host"
+  auth:
+    mode: none
+    setup_url: https://help.getzep.com/graphiti/getting-started/mcp-server

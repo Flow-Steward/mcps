@@ -1,0 +1,23 @@
+# Icon: verified publisher organization avatar, https://avatars.githubusercontent.com/u/137054526?v=4&s=128 (downloaded unchanged; visually inspected).
+# Reviewed 2026-11-08: Official Mem0 docs name the hosted HTTPS MCP endpoint and API-key Bearer route. Browser authorization is also supported; its registration mechanism is not assumed here. The archived mem0-mcp package is not this hosted service. Documentation review only; no live memory round trip.
+revision: 1
+title: "Mem0"
+description: "Save, search, update and delete persistent memories for users and agents in Mem0 Platform. Memories are shared across connected clients through your Mem0 account."
+category: ai
+website_url: https://mem0.ai
+help_url: https://docs.mem0.ai/platform/mem0-mcp
+preview_note: "Mem0 Platform account and API key required"
+keywords: ["Agent memory", "Persistent memory"]
+official:
+  vendor: "Mem0"
+  evidence_url: https://docs.mem0.ai/platform/mem0-mcp
+remotes:
+- id: default
+  label: "Mem0 API key"
+  url: "https://mcp.mem0.ai/mcp"
+  allowed_hosts: ["mcp.mem0.ai"]
+  field_labels:
+    Authorization: "Mem0 Platform API key"
+  auth:
+    mode: headers
+    setup_url: https://docs.mem0.ai/platform/mem0-mcp

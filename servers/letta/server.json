@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/letta",
+  "title": "Letta Agents",
+  "description": "Create and message stateful Letta agents, delegate work, and retrieve their replies. Agents retain memory across conversations. This connection exposes agent delegation tools; direct memory CRUD and agent deletion are not documented MCP tools.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.letta.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.letta.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Create a project API key in Letta Platform at platform.letta.com. Enter as: Bearer <LETTA_API_KEY>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

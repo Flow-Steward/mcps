@@ -1,0 +1,24 @@
+# Icon: verified publisher organization avatar, https://avatars.githubusercontent.com/u/81837244?v=4&s=128 (JPEG avatar converted to PNG without visual changes; visually inspected).
+# Reviewed 2026-11-08: Vendor docs name the exact per-bank URL and Bearer authentication. OAuth is also offered but this entry intentionally uses the documented API-key route. Hosted authentication is documentation-reviewed only. Local Hindsight1.2.0 with real local inference/embeddings passed both Core memory routes and deletion; see docs/agent-memory.md.
+revision: 1
+title: "Hindsight"
+description: "Store, recall and reflect on long-term memories in a Hindsight Cloud memory bank across agent sessions. Requires a Hindsight Cloud API key and available credits."
+category: ai
+website_url: https://hindsight.vectorize.io
+help_url: https://docs.hindsight.vectorize.io/cloud/mcp/
+preview_note: "Cloud account and memory bank required"
+keywords: ["Agent memory", "Vectorize", "Memory banks"]
+official:
+  vendor: "Vectorize"
+  evidence_url: https://docs.hindsight.vectorize.io/cloud/mcp/
+remotes:
+- id: default
+  label: "Hindsight API key"
+  url: "https://api.hindsight.vectorize.io/mcp/{bank_id}/"
+  allowed_hosts: ["api.hindsight.vectorize.io"]
+  field_labels:
+    bank_id: "Hindsight memory bank ID"
+    Authorization: "Hindsight API key"
+  auth:
+    mode: headers
+    setup_url: https://docs.hindsight.vectorize.io/cloud/mcp/

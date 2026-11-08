@@ -1,0 +1,24 @@
+# Icon: verified publisher organization avatar, https://avatars.githubusercontent.com/u/123981229?v=4&s=128 (downloaded unchanged; visually inspected).
+# Reviewed 2026-11-08: Official docs name https://mcp.honcho.dev and Streamable HTTP with Bearer credentials. Official mcp/src/config.ts documents optional X-Honcho-Workspace-ID; X-Honcho-Plugin is optional caller identity, not authentication. Documentation/source review only; no live memory round trip.
+revision: 1
+title: "Honcho"
+description: "Maintain persistent knowledge about users and conversations with Honcho. Store messages, create or search conclusions, and remove individual conclusions in your workspace."
+category: ai
+website_url: https://honcho.dev
+help_url: https://honcho.dev/docs/v3/guides/integrations/mcp
+preview_note: "Honcho account, API key and workspace required"
+keywords: ["Agent memory", "Plastic Labs", "Personalization"]
+official:
+  vendor: "Plastic Labs"
+  evidence_url: https://honcho.dev/docs/v3/guides/integrations/mcp
+remotes:
+- id: default
+  label: "Honcho API key"
+  url: "https://mcp.honcho.dev"
+  allowed_hosts: ["mcp.honcho.dev"]
+  field_labels:
+    Authorization: "Honcho API key"
+    X-Honcho-Workspace-ID: "Honcho workspace ID"
+  auth:
+    mode: headers
+    setup_url: https://honcho.dev/docs/v3/guides/integrations/mcp

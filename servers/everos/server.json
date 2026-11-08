@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/everos",
+  "title": "EverOS",
+  "description": "Store and recall durable facts, browse memories and record task trajectories through your deployment of the official EverOS MCP server.",
+  "version": "1.0.0",
+  "websiteUrl": "https://evermind.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "HTTPS host name of your deployed MCP server, without a scheme or path. Configure TLS and publish the documented /mcp endpoint on this host.",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Caller EverOS API key forwarded to the configured backend. Enter the complete header value: Bearer <api-key>.",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "X-EverOS-User-Id",
+          "description": "Optional memory owner within this API key space; defaults to default-user. This identifier is not an authorization boundary.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

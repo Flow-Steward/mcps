@@ -1,0 +1,21 @@
+# Icon: verified publisher organization avatar, https://avatars.githubusercontent.com/u/125468716?v=4&s=128 (downloaded unchanged; visually inspected).
+# Reviewed 2026-11-08: Vendor https://www.cognee.ai/mcp documents Streamable HTTP at http://localhost:8000/mcp. Official https://github.com/topoteretes/cognee/blob/main/cognee-mcp/README.md documents --transport http --path /mcp. This template is an operator-owned HTTPS deployment, not a vendor-hosted endpoint. Current upstream MCP server has no configured inbound authentication; upstream Cognee API credentials are separate. Live Cognee1.6.7/MCP0.5.8 keyless session-memory acceptance covered both Core dispatch routes and a real local LLM tool loop. Dataset/session deletion limits and exact scope: docs/agent-memory.md.
+revision: 1
+title: "Cognee Memory"
+description: "Store, recall and forget memories through your own Cognee MCP deployment. Run the upstream server with Streamable HTTP at /mcp and expose it through HTTPS; configure its databases and model providers before connecting."
+category: ai
+website_url: https://www.cognee.ai
+help_url: https://www.cognee.ai/mcp
+preview_note: "Self-hosted MCP server; HTTPS deployment required"
+keywords: ["Agent memory", "Knowledge graph", "Self-hosted"]
+remotes:
+- id: default
+  label: "Cognee Memory"
+  url: "https://{instance_host}/mcp"
+  allowed_hosts: []
+  user_defined_host: true
+  field_labels:
+    instance_host: "Cognee MCP server host"
+  auth:
+    mode: none
+    setup_url: https://www.cognee.ai/mcp

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/mem0",
+  "title": "Mem0",
+  "description": "Save, search, update and delete persistent memories for users and agents in Mem0 Platform. Memories are shared across connected clients through your Mem0 account.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mem0.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Mem0 Platform API key from app.mem0.ai. Enter as: Bearer <API key>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://mem0.ai"
+}

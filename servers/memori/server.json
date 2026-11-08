@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/memori",
+  "title": "Memori",
+  "description": "Store durable preferences and recall relevant memories through the Memori hosted MCP service using your API key and entity identity.",
+  "version": "1.0.0",
+  "websiteUrl": "https://memorilabs.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.memorilabs.ai/mcp/",
+      "headers": [
+        {
+          "name": "X-Memori-API-Key",
+          "description": "Memori API key from app.memorilabs.ai.",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "X-Memori-Entity-Id",
+          "description": "Stable end-user or entity identifier whose memories this connection accesses.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "X-Memori-Process-Id",
+          "description": "Optional process, app or workflow identifier for memory isolation.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

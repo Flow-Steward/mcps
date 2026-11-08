@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flow-steward/cognee",
+  "title": "Cognee Memory",
+  "description": "Store, recall and forget memories through your own Cognee MCP deployment. Run the upstream server with Streamable HTTP at /mcp and expose it through HTTPS; configure its databases and model providers before connecting.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance_host}/mcp",
+      "variables": {
+        "instance_host": {
+          "description": "Host name of your HTTPS Cognee MCP deployment, without https:// or a path. The upstream HTTP server must run with --transport http --path /mcp and be exposed through TLS. This entry assumes no additional inbound authentication.",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+  "websiteUrl": "https://www.cognee.ai"
+}

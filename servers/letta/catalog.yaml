@@ -1,0 +1,23 @@
+# Reviewed 2026-11-08: https://docs.letta.com/platform/hosted-mcp names https://api.letta.com/mcp and documents a remote HTTP client with Authorization: Bearer <LETTA_API_KEY>. OAuth-only clients are explicitly unsupported. Tools: list_agents, list_models, create_agent, send_agent_message, get_run, get_reply. No functional memory or delegation test performed.
+# Icon: verified Letta publisher organization avatar https://avatars.githubusercontent.com/u/177780362?v=4&s=128.
+revision: 1
+title: Letta Agents
+description: "Create and message stateful Letta agents, delegate work, and retrieve their replies. Agents retain memory across conversations. This connection exposes agent delegation tools; direct memory CRUD and agent deletion are not documented MCP tools."
+category: ai
+website_url: https://www.letta.com
+help_url: https://docs.letta.com/platform/hosted-mcp
+preview_note: "Hosted agent delegation; Letta Platform API key required"
+keywords: ["Stateful agents", "Agent delegation", "Letta", "MemGPT"]
+official:
+  vendor: Letta
+  evidence_url: https://docs.letta.com/platform/hosted-mcp
+remotes:
+- id: default
+  label: Letta Agents API key
+  url: https://api.letta.com/mcp
+  allowed_hosts: [api.letta.com]
+  field_labels:
+    Authorization: Letta Platform API key
+  auth:
+    mode: headers
+    setup_url: https://docs.letta.com/platform/hosted-mcp
