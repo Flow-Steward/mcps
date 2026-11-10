@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-09.4f5c1b10",
-  "published_at": "2026-11-09T15:15:08Z",
+  "catalog_revision": "2026-11-10.40753a18",
+  "published_at": "2026-11-10T14:30:11Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -830,7 +830,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.4.3"
+            "version": "2.4.4"
           }
         ],
         "remotes": [
@@ -843,15 +843,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.4.3",
+        "version": "2.4.4",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 10,
+            "revision": 11,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.4.3"
+              "version": "2.4.4"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -1022,17 +1022,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-07T14:19:26Z"
+            "updated_at": "2026-11-10T14:30:11Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-07T00:19:00.390243Z",
+          "publishedAt": "2026-11-10T00:19:37.599951Z",
           "status": "active",
-          "statusChangedAt": "2026-11-07T00:19:00.390243Z",
-          "updatedAt": "2026-11-07T00:19:00.390243Z"
+          "statusChangedAt": "2026-11-10T00:19:37.599951Z",
+          "updatedAt": "2026-11-10T00:19:37.599951Z"
         }
       }
     },
@@ -2190,16 +2190,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.162.0",
+        "version": "0.165.0",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 10,
+            "revision": 11,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.162.0"
+              "version": "0.165.0"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -2240,17 +2240,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-11-09T15:15:08Z"
+            "updated_at": "2026-11-10T14:30:11Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-09T11:20:12.337924Z",
+          "publishedAt": "2026-11-10T08:48:40.581517Z",
           "status": "active",
-          "statusChangedAt": "2026-11-09T11:20:12.337924Z",
-          "updatedAt": "2026-11-09T11:20:12.337924Z"
+          "statusChangedAt": "2026-11-10T08:48:40.581517Z",
+          "updatedAt": "2026-11-10T08:48:40.581517Z"
         }
       }
     },
