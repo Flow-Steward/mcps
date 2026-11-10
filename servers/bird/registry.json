@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-11-09T11:20:12.337924Z",
+      "publishedAt": "2026-11-10T08:48:40.581517Z",
       "status": "active",
-      "statusChangedAt": "2026-11-09T11:20:12.337924Z",
-      "updatedAt": "2026-11-09T11:20:12.337924Z"
+      "statusChangedAt": "2026-11-10T08:48:40.581517Z",
+      "updatedAt": "2026-11-10T08:48:40.581517Z"
     }
   },
   "server": {
@@ -46,7 +46,7 @@
       "url": "https://github.com/messagebird/bird-ai"
     },
     "title": "Bird",
-    "version": "0.162.0",
+    "version": "0.165.0",
     "websiteUrl": "https://bird.com/docs/ai/mcp-server"
   }
 }
