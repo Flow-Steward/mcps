@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-12.4db4220d",
-  "published_at": "2026-11-12T14:06:16Z",
+  "catalog_revision": "2026-11-12.0c6ebb7c",
+  "published_at": "2026-11-12T14:19:06Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -899,7 +899,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.4.4"
+            "version": "2.4.7"
           }
         ],
         "remotes": [
@@ -912,15 +912,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.4.4",
+        "version": "2.4.7",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 11,
+            "revision": 12,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.4.4"
+              "version": "2.4.7"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -1091,17 +1091,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-10T14:30:11Z"
+            "updated_at": "2026-11-12T14:06:53Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-10T00:19:37.599951Z",
+          "publishedAt": "2026-11-12T00:22:09.330186Z",
           "status": "active",
-          "statusChangedAt": "2026-11-10T00:19:37.599951Z",
-          "updatedAt": "2026-11-10T00:19:37.599951Z"
+          "statusChangedAt": "2026-11-12T00:22:09.330186Z",
+          "updatedAt": "2026-11-12T00:22:09.330186Z"
         }
       }
     },
@@ -2259,16 +2259,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.165.0",
+        "version": "0.169.1",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 11,
+            "revision": 12,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.165.0"
+              "version": "0.169.1"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -2309,17 +2309,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-11-10T14:30:11Z"
+            "updated_at": "2026-11-12T14:06:53Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-10T08:48:40.581517Z",
+          "publishedAt": "2026-11-11T16:10:55.69161Z",
           "status": "active",
-          "statusChangedAt": "2026-11-10T08:48:40.581517Z",
-          "updatedAt": "2026-11-10T08:48:40.581517Z"
+          "statusChangedAt": "2026-11-11T16:10:55.69161Z",
+          "updatedAt": "2026-11-11T16:10:55.69161Z"
         }
       }
     },
@@ -2402,18 +2402,10 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "io.github.bitrise-io/bitrise-mcp",
         "description": "Set up & manage mobile CI/CD on Bitrise: build, test, distribute iOS, Android, Flutter, RN apps.",
-        "title": "Bitrise",
-        "repository": {
-          "url": "https://github.com/bitrise-io/bitrise-mcp",
-          "source": "github"
-        },
-        "version": "2.5.0",
+        "name": "io.github.bitrise-io/bitrise-mcp",
         "remotes": [
           {
-            "type": "streamable-http",
-            "url": "https://mcp.bitrise.io/",
             "headers": [
               {
                 "description": "Optional. Bitrise Personal Access Token (format: 'Bearer YOUR_TOKEN') for MCP clients that don't yet support OAuth. Get your token from https://app.bitrise.io/me/account/security. Modern MCP clients (Claude, Cursor, VS Code, etc.) can leave this unset and the server will trigger the OAuth flow automatically on first tool use.",
@@ -2421,20 +2413,28 @@
                 "name": "Authorization"
               },
               {
-                "description": "Comma-separated list of API groups to enable (e.g., 'apps,builds,workspaces'). Leave empty to enable all groups.",
-                "name": "x-bitrise-enabled-api-groups"
+                "description": "Comma-separated list of toolsets to enable (e.g., 'apps,builds,workspaces'), or 'all'. Leave empty for the default toolsets.",
+                "name": "x-bitrise-enabled-toolset"
               }
-            ]
+            ],
+            "type": "streamable-http",
+            "url": "https://mcp.bitrise.io/"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/bitrise-io/bitrise-mcp"
+        },
+        "title": "Bitrise",
+        "version": "2.10.0",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bitrise",
-            "revision": 1,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "io.github.bitrise-io/bitrise-mcp",
-              "version": "2.5.0"
+              "version": "2.10.0"
             },
             "title": "Bitrise",
             "summary": "Manage Bitrise apps, trigger and inspect CI builds, read build logs, and download build artifacts.",
@@ -2474,23 +2474,23 @@
                   "refresh_token_required": false
                 },
                 "field_labels": {
-                  "x-bitrise-enabled-api-groups": "Enabled API groups"
+                  "x-bitrise-enabled-toolset": "Enabled toolsets"
                 }
               }
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bitrise",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-11T15:37:11Z"
+            "updated_at": "2026-11-12T14:19:06Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-11-10T14:28:06.130716Z",
           "status": "active",
-          "statusChangedAt": "2026-06-12T08:47:36.17637Z",
-          "publishedAt": "2026-06-12T08:47:36.17637Z",
-          "updatedAt": "2026-06-12T08:47:36.17637Z",
-          "isLatest": true
+          "statusChangedAt": "2026-11-10T14:28:06.130716Z",
+          "updatedAt": "2026-11-10T14:28:06.130716Z"
         }
       }
     },
@@ -6593,16 +6593,16 @@
               "https://dchub.cloud/mcp/core": "core profile: 10 tools for multi-server hosts"
             },
             "tool": "dchub-registry-refresh",
-            "toolCount": 94,
+            "toolCount": 95,
             "version": "1.0.0"
           },
           "io.github.flow-steward/catalog": {
             "id": "dchub",
-            "revision": 2,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "cloud.dchub/mcp-server",
-              "version": "2.12.46"
+              "version": "2.12.47"
             },
             "title": "DC Hub",
             "summary": "Live data for data-center site selection and the power, grid and energy behind it.",
@@ -6645,7 +6645,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/dchub",
             "added_at": "2026-11-07T14:21:09Z",
-            "updated_at": "2026-11-09T15:15:08Z"
+            "updated_at": "2026-11-12T14:06:53Z"
           }
         },
         "description": "Data center energy, electricity & power grid data: DCPI to query and cite, capacity to buy or lease.",
@@ -6689,7 +6689,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.12.46"
+            "version": "2.12.47"
           }
         ],
         "remotes": [
@@ -6723,16 +6723,16 @@
           "url": "https://github.com/azmartone67/dchub-mcp-server"
         },
         "title": "DC Hub — Data Center Energy, Electricity & Power Grid Data: Site Selection, Colocation, Gas, Fiber",
-        "version": "2.12.46",
+        "version": "2.12.47",
         "websiteUrl": "https://dchub.cloud"
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-09T10:01:30.059313Z",
+          "publishedAt": "2026-11-11T23:45:33.258304Z",
           "status": "active",
-          "statusChangedAt": "2026-11-09T10:01:30.059313Z",
-          "updatedAt": "2026-11-09T10:01:30.059313Z"
+          "statusChangedAt": "2026-11-11T23:45:33.258304Z",
+          "updatedAt": "2026-11-11T23:45:33.258304Z"
         }
       }
     },
@@ -9582,7 +9582,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.19.13"
+            "version": "1.19.14"
           }
         ],
         "remotes": [
@@ -9596,16 +9596,16 @@
           "url": "https://github.com/fulcradynamics/fulcra-context-mcp"
         },
         "title": "Fulcra",
-        "version": "1.19.13",
+        "version": "1.19.14",
         "websiteUrl": "https://fulcradynamics.com",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "fulcra-context",
-            "revision": 5,
+            "revision": 6,
             "status": "active",
             "source": {
               "registry": "com.fulcradynamics/context",
-              "version": "1.19.13"
+              "version": "1.19.14"
             },
             "title": "Fulcra Context",
             "summary": "Read your personal health, workout, sleep, location, and calendar data collected in Fulcra Context.",
@@ -9651,17 +9651,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fulcra-context",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-07T14:19:26Z"
+            "updated_at": "2026-11-12T14:06:53Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-06T18:32:06.517985Z",
+          "publishedAt": "2026-11-11T19:43:32.380465Z",
           "status": "active",
-          "statusChangedAt": "2026-11-06T18:32:06.517985Z",
-          "updatedAt": "2026-11-06T18:32:06.517985Z"
+          "statusChangedAt": "2026-11-11T19:43:32.380465Z",
+          "updatedAt": "2026-11-11T19:43:32.380465Z"
         }
       }
     },
@@ -21810,7 +21810,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.62.0"
+            "version": "0.64.0"
           }
         ],
         "remotes": [
@@ -21824,16 +21824,16 @@
           "url": "https://github.com/oborseth/Porkbun-MCP"
         },
         "title": "Porkbun (official)",
-        "version": "0.62.0",
+        "version": "0.64.0",
         "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 7,
+            "revision": 8,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.62.0"
+              "version": "0.64.0"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -21877,17 +21877,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-07T14:19:26Z"
+            "updated_at": "2026-11-12T14:06:53Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-06T23:36:43.491528Z",
+          "publishedAt": "2026-11-11T01:19:13.499946Z",
           "status": "active",
-          "statusChangedAt": "2026-11-06T23:36:43.491528Z",
-          "updatedAt": "2026-11-06T23:36:43.491528Z"
+          "statusChangedAt": "2026-11-11T01:19:13.499946Z",
+          "updatedAt": "2026-11-11T01:19:13.499946Z"
         }
       }
     },
