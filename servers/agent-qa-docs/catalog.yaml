@@ -1,0 +1,20 @@
+# Reviewed 2026-11-10: vendor documentation names this exact docs-only endpoint.
+# initialize and tools/list succeeded without credentials over Streamable HTTP.
+# This is separate from agent-qa's local test-authoring/execution MCP server.
+revision: 1
+title: agent-qa documentation
+description: Search and read official agent-qa documentation, QA recipes and product references from vostride. This remote is read-only; writing and executing tests requires agent-qa's separate local MCP server.
+category: developer-tools
+website_url: https://vostride.com
+help_url: https://vostride.com/docs/agent-qa/mcp
+keywords: [vostride, QA, testing, documentation, memidex]
+official:
+  vendor: vostride
+  evidence_url: https://vostride.com/docs/agent-qa/mcp
+remotes:
+  - id: default
+    label: vostride docs
+    url: https://vostride.com/mcp
+    allowed_hosts: [vostride.com]
+    auth:
+      mode: none
