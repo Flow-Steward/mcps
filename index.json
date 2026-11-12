@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-10.40753a18",
-  "published_at": "2026-11-10T14:30:11Z",
+  "catalog_revision": "2026-11-12.4db4220d",
+  "published_at": "2026-11-12T14:06:16Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -103,6 +103,75 @@
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/activecampaign",
             "added_at": "2026-10-11T15:37:11Z",
             "updated_at": "2026-10-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "io.github.flow-steward/agent-qa-docs",
+        "title": "agent-qa documentation",
+        "description": "Search and read official agent-qa documentation and QA recipes. Does not execute tests.",
+        "version": "1.3.0",
+        "websiteUrl": "https://vostride.com",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://vostride.com/mcp"
+          }
+        ],
+        "_meta": {
+          "io.github.flow-steward/catalog": {
+            "id": "agent-qa-docs",
+            "revision": 1,
+            "status": "active",
+            "source": {
+              "catalog": "io.github.flow-steward/agent-qa-docs",
+              "version": "1.3.0"
+            },
+            "title": "agent-qa documentation",
+            "summary": "Search and read official agent-qa documentation, QA recipes and product references from vostride.",
+            "description": "Search and read official agent-qa documentation, QA recipes and product references from vostride. This remote is read-only; writing and executing tests requires agent-qa's separate local MCP server.",
+            "category": "developer-tools",
+            "website_url": "https://vostride.com",
+            "help_url": "https://vostride.com/docs/agent-qa/mcp",
+            "preview_note": "",
+            "keywords": [
+              "vostride",
+              "QA",
+              "testing",
+              "documentation",
+              "memidex"
+            ],
+            "official": {
+              "vendor": "vostride",
+              "evidence_url": "https://vostride.com/docs/agent-qa/mcp"
+            },
+            "icon": {
+              "url": "https://raw.githubusercontent.com/Flow-Steward/mcps/0e50ba3732ce19a1ce8411358a5992185f3faf8d/servers/agent-qa-docs/icon.png",
+              "sha256": "8e96d9a10af9101a042e79f5a635900c3d1454185ce7b6ece6ad2a33f7da0dc0",
+              "bytes": 13618,
+              "mime_type": "image/png",
+              "size": "192x192"
+            },
+            "remotes": [
+              {
+                "remote_id": "default",
+                "label": "vostride docs",
+                "url": "https://vostride.com/mcp",
+                "allowed_hosts": [
+                  "vostride.com"
+                ],
+                "user_defined_host": false,
+                "auth": {
+                  "mode": "none"
+                }
+              }
+            ],
+            "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/agent-qa-docs",
+            "added_at": "2026-11-12T14:06:16Z",
+            "updated_at": "2026-11-12T14:06:16Z"
           }
         }
       }
@@ -29867,6 +29936,6 @@
     }
   ],
   "metadata": {
-    "count": 366
+    "count": 367
   }
 }
