@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-11-09T10:01:30.059313Z",
+      "publishedAt": "2026-11-11T23:45:33.258304Z",
       "status": "active",
-      "statusChangedAt": "2026-11-09T10:01:30.059313Z",
-      "updatedAt": "2026-11-09T10:01:30.059313Z"
+      "statusChangedAt": "2026-11-11T23:45:33.258304Z",
+      "updatedAt": "2026-11-11T23:45:33.258304Z"
     }
   },
   "server": {
@@ -21,7 +21,7 @@
           "https://dchub.cloud/mcp/core": "core profile: 10 tools for multi-server hosts"
         },
         "tool": "dchub-registry-refresh",
-        "toolCount": 94,
+        "toolCount": 95,
         "version": "1.0.0"
       }
     },
@@ -66,7 +66,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "2.12.46"
+        "version": "2.12.47"
       }
     ],
     "remotes": [
@@ -100,7 +100,7 @@
       "url": "https://github.com/azmartone67/dchub-mcp-server"
     },
     "title": "DC Hub — Data Center Energy, Electricity & Power Grid Data: Site Selection, Colocation, Gas, Fiber",
-    "version": "2.12.46",
+    "version": "2.12.47",
     "websiteUrl": "https://dchub.cloud"
   }
 }

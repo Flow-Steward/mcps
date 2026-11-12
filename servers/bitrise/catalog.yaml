@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://docs.bitrise.io/bitrise-platform/ai/bitrise-mcp
 # Docs: remote server at mcp.bitrise.io with OAuth; clients without MCP OAuth can send a Bitrise Personal Access Token as a Bearer header instead.
-revision: 1
+revision: 2
 source:
   registry: io.github.bitrise-io/bitrise-mcp
 title: Bitrise
