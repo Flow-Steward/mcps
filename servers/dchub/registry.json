@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-11-11T23:45:33.258304Z",
+      "publishedAt": "2026-11-12T22:49:20.095149Z",
       "status": "active",
-      "statusChangedAt": "2026-11-11T23:45:33.258304Z",
-      "updatedAt": "2026-11-11T23:45:33.258304Z"
+      "statusChangedAt": "2026-11-12T22:49:20.095149Z",
+      "updatedAt": "2026-11-12T22:49:20.095149Z"
     }
   },
   "server": {
@@ -66,7 +66,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "2.12.47"
+        "version": "2.12.48"
       }
     ],
     "remotes": [
@@ -100,7 +100,7 @@
       "url": "https://github.com/azmartone67/dchub-mcp-server"
     },
     "title": "DC Hub — Data Center Energy, Electricity & Power Grid Data: Site Selection, Colocation, Gas, Fiber",
-    "version": "2.12.47",
+    "version": "2.12.48",
     "websiteUrl": "https://dchub.cloud"
   }
 }
