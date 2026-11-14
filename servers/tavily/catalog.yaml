@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://docs.tavily.com/documentation/mcp
 # Docs also allow an API key in the Authorization header or as ?tavilyApiKey= query parameter (avoid the query form). Usage consumes Tavily API credits.
-revision: 1
+revision: 2
 title: Tavily
-description: Search the web and extract, map, or crawl page content with the Tavily search API.
+description: "Search the web and extract, map, or crawl page content with the Tavily search API. Use search and extracted page content as source material for research. Tool usage consumes Tavily API credits."
 category: ai
 website_url: https://www.tavily.com
 help_url: https://docs.tavily.com/documentation/mcp

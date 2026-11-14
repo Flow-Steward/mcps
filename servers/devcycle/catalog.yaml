@@ -1,10 +1,13 @@
 # Reviewed 2026-10-10: https://docs.devcycle.com/cli-mcp/mcp-getting-started
 # SSE fallback at https://mcp.devcycle.com/sse.
-revision: 2
+revision: 3
 source:
   registry: com.devcycle/mcp
 title: DevCycle
-description: Create and manage DevCycle feature flags, variations, and targeting, and review audit history.
+description: >-
+  Create and manage DevCycle feature flags, variations, and targeting, and review audit history. Use
+  flags, variations and targeting rules to configure a rollout, then consult audit history to review
+  related changes. Sign in to the DevCycle account intended for the flag-management workflow.
 category: developer-tools
 website_url: https://www.devcycle.com
 help_url: https://docs.devcycle.com/cli-mcp/mcp-getting-started

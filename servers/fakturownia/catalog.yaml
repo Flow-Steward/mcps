@@ -1,9 +1,8 @@
 # Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
 # Account authorization and tool execution have not been tested.
-revision: 1
+revision: 2
 title: Fakturownia
-description: Work with invoices, customers and products in a Fakturownia account through
-  its official MCP server.
+description: "Work with invoices, customers and products in a Fakturownia account through its official MCP server. Use the account records for billing and customer context. Owner or administrator access is required; enter the account subdomain, with a separate connection for each account."
 category: finance
 website_url: https://fakturownia.pl
 help_url: https://pomoc.fakturownia.pl/integracja-z-asystentami-ai-mcp-claude-chatgpt-i-inne

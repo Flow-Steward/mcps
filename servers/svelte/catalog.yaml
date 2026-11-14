@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://svelte.dev/docs/ai/remote-setup
 # Open-source project (not a company); no authentication.
-revision: 3
+revision: 4
 source:
   registry: dev.svelte/mcp
 title: Svelte
-description: Search Svelte 5 and SvelteKit documentation and check generated Svelte code with the autofixer.
+description: "Search Svelte 5 and SvelteKit documentation and check generated Svelte code with the autofixer. Use documentation and code feedback while implementing Svelte interfaces. The public server requires no authentication."
 category: developer-tools
 website_url: https://svelte.dev
 help_url: https://svelte.dev/docs/ai/remote-setup

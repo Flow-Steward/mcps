@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://docs.mapbox.com/api/guides/mcp-server/
 # AS mcp.mapbox.com with DCR (registration endpoint at api.mapbox.com/oauth/register). Scopes from WWW-Authenticate/PRM. Docs-only server at https://mcp-docs.mapbox.com/mcp (no auth). Usage bills against the Mapbox account.
-revision: 1
+revision: 2
 title: Mapbox
-description: Geocode places, search points of interest, get directions and travel-time isochrones, and render static
-  maps with Mapbox.
+description: "Geocode places, search points of interest, get directions and travel-time isochrones, and render static maps with Mapbox. Use place search and routing results to answer location questions or build map-based outputs. Usage is billed to the connected Mapbox account; this is the API server rather than the separate documentation-only server."
 category: developer-tools
 website_url: https://www.mapbox.com
 help_url: https://docs.mapbox.com/api/guides/mcp-server/

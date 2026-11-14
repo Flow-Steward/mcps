@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://help.elasticemail.com/en/articles/12595879-elastic-email-mcp
 # Docs give host https://mcp.elasticemail.com (root path; /mcp also answers 401). OAuth via oidc.elasticemail.com with DCR (/connect/register); alternative: API key in X-Auth-Token header. Campaign/contact tools not on Email API plans.
-revision: 1
+revision: 2
 title: Elastic Email
-description: Add contacts to lists, create campaigns, send transactional and bulk email, and fetch lists, segments
-  and templates.
+description: "Add contacts to lists, create campaigns, send transactional and bulk email, and fetch lists, segments and templates. Use contact, campaign, and delivery workflows for marketing or transactional email. Campaign and contact tools are not available on Email API plans."
 category: email
 website_url: https://elasticemail.com
 help_url: https://help.elasticemail.com/en/articles/12595879-elastic-email-mcp

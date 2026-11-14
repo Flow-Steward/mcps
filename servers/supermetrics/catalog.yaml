@@ -1,11 +1,14 @@
 # Reviewed 2026-10-10: https://docs.supermetrics.com/docs/supermetrics-mcp-server
 # Requires a Supermetrics subscription with Supermetrics API access. Vendor doc points to mcp.supermetrics.com for setup; API key access exists for server-to-server use. Campaign write tools limited to accounts enabled in Write settings.
-revision: 1
+revision: 2
 source:
   registry: com.supermetrics/supermetrics
 title: Supermetrics
-description: Query marketing data from ad, analytics, and social platforms connected in Supermetrics, and check
-  campaign pacing.
+description: >-
+  Query marketing data from ad, analytics, and social platforms connected in Supermetrics, and check
+  campaign pacing. Use connected-source data to compare marketing performance and campaign pacing.
+  Requires a Supermetrics subscription with Supermetrics API access. Campaign write tools are
+  limited to accounts explicitly enabled in Write settings.
 category: marketing
 website_url: https://supermetrics.com
 help_url: https://docs.supermetrics.com/docs/supermetrics-mcp-server

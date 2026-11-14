@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://docs.goshippo.com/docs/guides_general/mcpserver
 # Operates on the live Shippo account (label purchases incur charges). PRM AS https://goshippo.com, registration_endpoint https://goshippo.com/oauth/clients (DCR), scope '*'. Local alternative: @shippo/shippo-mcp npm with API key.
-revision: 1
+revision: 2
 title: Shippo
-description: Validate addresses, compare carrier rates, buy shipping labels and track shipments in your Shippo account.
+description: "Validate addresses, compare carrier rates, buy shipping labels and track shipments in your Shippo account. Use rate comparisons and shipment status for order fulfillment. The connection operates on the live Shippo account, and label purchases incur charges."
 category: ecommerce
 website_url: https://goshippo.com
 help_url: https://docs.goshippo.com/docs/guides_general/mcpserver

@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://tally.so/help/mcp
 # mcp.tally.so 301 -> api.tally.so/mcp. OAuth recommended (DCR /oauth/register/mcp); API key also accepted. Free on all plans.
-revision: 1
+revision: 2
 title: Tally
-description: Create and edit Tally forms, and read and analyze form submissions from your workspace.
+description: "Create and edit Tally forms, and read and analyze form submissions from your workspace. Use forms and submission data for data collection and response review. The MCP service is free on all Tally plans."
 category: productivity
 website_url: https://tally.so
 help_url: https://tally.so/help/mcp

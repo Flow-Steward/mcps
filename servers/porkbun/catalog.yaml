@@ -1,11 +1,10 @@
 # Reviewed 2026-10-10: https://porkbun.com/mcp
 # Official Porkbun hosted server (input name points to an unrelated community repo). Can spend account funds on registrations; safer variants /mcp/no-purchases and /mcp/no-topups.
-revision: 8
+revision: 9
 source:
   registry: com.porkbun/mcp
 title: Porkbun
-description: Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and
-  forwarding.
+description: "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding. Use it to maintain domain registrations and routing configuration. This endpoint can spend account funds on registrations; Porkbun offers separate no-purchases and no-topups endpoint variants."
 category: it
 website_url: https://porkbun.com
 help_url: https://porkbun.com/mcp

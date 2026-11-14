@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://exa.ai/docs/reference/exa-mcp
 # Docs list three modes: keyless (free, rate-limited), OAuth via https://mcp.exa.ai/mcp?login, or API key in x-api-key header. Tools selectable via ?tools= query param.
-revision: 1
+revision: 2
 source:
   registry: ai.exa/exa
 title: Exa
-description: Search the web, fetch page contents, and run research tasks with Exa's AI search engine.
+description: "Search the web, fetch page contents, and run research tasks with Exa's AI search engine. Use search and fetched page content as inputs to a multi-step research task. This entry uses the keyless endpoint, which is free and rate-limited."
 category: ai
 website_url: https://exa.ai
 help_url: https://exa.ai/docs/reference/exa-mcp

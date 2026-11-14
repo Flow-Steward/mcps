@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://www.jotform.com/developers/mcp
 # OAuth only, bearer tokens not supported. Only workspace admins can install the Jotform MCP app. A UI variant at https://mcp.jotform.com/mcp-app targets clients with MCP Apps support. Probe scopes: readOnly, full.
-revision: 1
+revision: 2
 source:
   registry: com.jotform/mcp
 title: Jotform
-description: List, create, and edit Jotform forms, and create or retrieve form submissions.
+description: "List, create, and edit Jotform forms, and create or retrieve form submissions. Use forms and responses for data collection workflows. Only workspace administrators can install the Jotform MCP app; the service uses OAuth rather than bearer-token authentication."
 category: productivity
 website_url: https://www.jotform.com
 help_url: https://www.jotform.com/developers/mcp

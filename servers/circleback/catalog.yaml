@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://circleback.ai/docs/mcp
 # Docs confirm Streamable HTTP with OAuth and dynamic client registration. Write tools need write access granted at connect time.
-revision: 1
+revision: 2
 title: Circleback
-description: Search Circleback meeting notes, transcripts, action items, calendar events, and emails, and manage
-  action items.
+description: "Search Circleback meeting notes, transcripts, action items, calendar events, and emails, and manage action items. Use meeting and inbox context to follow up on decisions and outstanding work. Updating action items requires write access granted when connecting."
 category: productivity
 website_url: https://circleback.ai
 help_url: https://circleback.ai/docs/mcp

@@ -1,11 +1,10 @@
 # Reviewed 2026-10-10: https://dev.wix.com/docs/sdk/articles/use-the-wix-mcp/about-the-wix-mcp
 # Alternative header auth documented for n8n-style clients: 'Authorization: <Wix API key>' (no prefix) plus 'wix-account-id: <account ID>'.
-revision: 1
+revision: 2
 source:
   registry: com.wix/mcp
 title: Wix
-description: Search Wix developer docs and manage Wix sites and their business data such as stores, bookings, and
-  CMS.
+description: "Search Wix developer docs and manage Wix sites and their business data such as stores, bookings, and CMS. Use documentation and site data together when developing or maintaining a Wix business site. Operations use the permissions of the authorized Wix connection."
 category: cms
 website_url: https://www.wix.com
 help_url: https://dev.wix.com/docs/sdk/articles/use-the-wix-mcp/about-the-wix-mcp

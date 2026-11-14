@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://www.atlassian.com/platform/remote-mcp-server
 # Live probe 2026-10-10: PRM https://mcp.trello.com/.well-known/oauth-protected-resource/v1 -> AS auth.atlassian.com (DCR at /dcr/register and client_id_metadata_document_supported=true). Each connection is scoped to one Trello workspace chosen at consent; archive only, no permanent delete. Separate f
-revision: 1
+revision: 2
 title: Trello
-description: Read and update Trello boards, lists, cards and checklists in an authorized workspace.
+description: "Read and update Trello boards, lists, cards and checklists in an authorized workspace. Use it to review and maintain board work. Each connection is scoped to one workspace selected during consent. Items can be archived, but permanent deletion is not supported."
 category: productivity
 website_url: https://trello.com
 help_url: https://www.atlassian.com/platform/remote-mcp-server

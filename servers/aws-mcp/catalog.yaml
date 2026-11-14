@@ -1,8 +1,12 @@
 # Reviewed 2026-11-05: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/getting-started-aws-mcp-server.html
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: AWS MCP Server
-description: Work with AWS services through a managed MCP server using your authorized AWS account access.
+description: >-
+  Work with AWS services through a managed MCP server using your authorized AWS account access.
+  Choose a listed regional endpoint and sign in with the IAM identity intended for the work. That
+  identity needs AWSMCPSignInOAuthAccessPolicy. Sign-in sessions can refresh for up to 12 hours;
+  account authorization still determines the AWS resources available.
 category: developer-tools
 website_url: https://aws.amazon.com
 help_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/getting-started-aws-mcp-server.html

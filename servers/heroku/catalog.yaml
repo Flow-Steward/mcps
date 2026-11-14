@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://devcenter.heroku.com/articles/heroku-remote-mcp-server
 # OAuth 2.0 browser flow; DCR at https://mcp.heroku.com/reg (scopes openid, offline_access). Local heroku-mcp-server package also exists.
-revision: 1
+revision: 2
 title: Heroku
-description: Manage Heroku apps, dynos, add-ons, config vars, logs and Postgres databases in your account.
+description: "Manage Heroku apps, dynos, add-ons, config vars, logs and Postgres databases in your account. Use application configuration and logs alongside database and runtime context to investigate or administer an app. Browser OAuth connects the hosted service to your Heroku account."
 category: developer-tools
 website_url: https://www.heroku.com
 help_url: https://devcenter.heroku.com/articles/heroku-remote-mcp-server

@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://jitsu.com/docs/mcp
 # Jitsu Cloud endpoint; self-hosted installs serve /mcp on their own console host. Headless clients can use a personal API key instead of OAuth.
-revision: 1
+revision: 2
 source:
   registry: com.jitsu/mcp
 title: Jitsu
-description: 'Manage Jitsu data pipelines: create destinations, connect streams, inspect live events, and edit functions.'
+description: "Manage Jitsu data pipelines: create destinations, connect streams, inspect live events, and edit functions. Use event inspection to investigate a pipeline while configuring its streams, destinations, and transformation functions. This entry connects to Jitsu Cloud; self-hosted installations expose MCP on their own console host."
 category: data
 website_url: https://jitsu.com
 help_url: https://jitsu.com/docs/mcp

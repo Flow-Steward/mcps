@@ -1,9 +1,8 @@
 # Reviewed: https://support.freshdesk.com/support/solutions/articles/50000012670
 # GA since 2026-09-10 for Freshdesk Standalone 2021 and Unified Omni 2026; plan limits Growth 25/min and 1,200 actions/yr, Pro 50/min and 6,000, Enterprise 100/min and 12,000. Vendor docs: API key only, OAuth not supported. The unauthenticated probe returns 401 with a WWW-Authenticate resource_metadata hint, but that metadata URL returns 404, so OAuth discovery is not usable. If the account enforces
-revision: 1
+revision: 2
 title: Freshdesk
-description: Work with Freshdesk tickets, contacts, companies and agents from your helpdesk through the official
-  Freshworks MCP server.
+description: "Work with Freshdesk tickets, contacts, companies and agents from your helpdesk through the official Freshworks MCP server. Use ticket and customer context for helpdesk work. Requires your Freshdesk subdomain and personal API key; custom domains are not supported. MCP rate and annual action allowances depend on the Freshdesk plan."
 category: support
 website_url: https://www.freshworks.com/freshdesk/
 help_url: https://support.freshdesk.com/support/solutions/articles/50000012670

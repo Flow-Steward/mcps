@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://www.twilio.com/docs/ai/mcp
 # Public Beta; documentation/API-reference search only, does not execute Twilio API calls. Twilio docs say no authentication required.
-revision: 1
+revision: 2
 title: Twilio Docs
-description: Search Twilio, SendGrid, and Segment API operations and docs and retrieve full request and response
-  schemas.
+description: "Search Twilio, SendGrid, and Segment API operations and docs and retrieve full request and response schemas. Use API reference material to understand integrations before writing requests. This public beta requires no authentication and does not execute Twilio API calls."
 category: developer-tools
 website_url: https://www.twilio.com
 help_url: https://www.twilio.com/docs/ai/mcp

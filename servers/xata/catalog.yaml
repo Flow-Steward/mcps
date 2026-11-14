@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://xata.io/docs/platform/mcp
 # Keycloak AS auth.xata.io with DCR; API key alternative as Authorization: Bearer. No SSE, no local version.
-revision: 1
+revision: 2
 title: Xata
-description: Inspect branch schemas, run read-only SQL, and call read-only Xata API operations for your Postgres
-  projects.
+description: "Inspect branch schemas, run read-only SQL, and call read-only Xata API operations for your Postgres projects. Use schema inspection and SQL to investigate data or understand a branch before developing application queries. This connection exposes read-only operations."
 category: data
 website_url: https://xata.io
 help_url: https://xata.io/docs/platform/mcp

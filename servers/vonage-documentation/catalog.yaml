@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp
 # Docs-only, read-only, no auth (initialize answered 200). Vonage's account-level Tooling MCP server (applications, numbers, messaging) is a local package with API key/secret, no hosted endpoint.
-revision: 1
+revision: 2
 title: Vonage Documentation
-description: Search Vonage API documentation, code snippets, tutorials and troubleshooting guides.
+description: "Search Vonage API documentation, code snippets, tutorials and troubleshooting guides. Use it for integration guidance and troubleshooting reference material. This server is read-only and needs no authentication; account-level application, number, and messaging operations belong to a separate local Tooling MCP server."
 category: developer-tools
 website_url: https://developer.vonage.com
 help_url: https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp

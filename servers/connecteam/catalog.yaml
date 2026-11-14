@@ -1,9 +1,12 @@
 # Reviewed 2026-11-05: https://developer.connecteam.com/docs/mcp
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Connecteam API Docs
-description: Search Connecteam API endpoint documentation and inspect operation schemas for building workforce
-  integrations.
+description: >-
+  Search Connecteam API endpoint documentation and inspect operation schemas for building workforce
+  integrations. Use it to find the right API operation and inspect request or response structures
+  while developing a workforce integration. The server is for API documentation only: it cannot
+  execute requests against a Connecteam account and requires no sign-in.
 category: developer-tools
 website_url: https://connecteam.com
 help_url: https://developer.connecteam.com/docs/mcp

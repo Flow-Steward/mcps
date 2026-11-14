@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://docs.gocardless.com/docs/developer-resources/mcp
 # Vendor docs give the bare host (no /mcp path); input listed /mcp. Sign-in picks Sandbox or Live and permissions; reconnect every 2 weeks (read-write) or monthly (read-only). On Team/Enterprise plans an Owner/Primary Owner must connect first.
-revision: 1
+revision: 2
 title: GoCardless
-description: Get GoCardless API guidance and query your account's payments, mandates, customers, and payouts.
+description: "Get GoCardless API guidance and query your account's payments, mandates, customers, and payouts. Use payment and mandate records to investigate collection status alongside API guidance. Choose Sandbox or Live and permissions at sign-in. Connections require periodic reauthorization; Team and Enterprise workspaces need an Owner or Primary Owner to connect first."
 category: finance
 website_url: https://gocardless.com
 help_url: https://docs.gocardless.com/docs/developer-resources/mcp

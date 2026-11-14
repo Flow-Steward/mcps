@@ -1,9 +1,13 @@
 # Reviewed 2026-10-10: https://github.com/Teamwork/mcp/blob/main/docs/usage/README.md
 # Registry record com.teamwork/mcp declares an API-key header; this entry lists the OAuth endpoint only.
 # Evidence is the vendor's GitHub org (not teamwork.com domain). An admin must enable MCP under Settings > AI. Profile endpoints narrow tools: /project-manager, /support, /analyst, /knowledge-manager, /ops. Bearer API token is an alternative.
-revision: 1
+revision: 2
 title: Teamwork.com
-description: Manage Teamwork.com projects, tasks, time logs, and people, plus Teamwork Desk tickets and Spaces pages.
+description: >-
+  Manage Teamwork.com projects, tasks, time logs, and people, plus Teamwork Desk tickets and Spaces
+  pages. Use project and task work alongside time logs, support tickets and knowledge pages. An
+  administrator must enable MCP under Settings > AI. Product-specific profiles can narrow the
+  available tools to project management, support, analysis, knowledge or operations work.
 category: productivity
 website_url: https://www.teamwork.com
 help_url: https://github.com/Teamwork/mcp/blob/main/docs/usage/README.md

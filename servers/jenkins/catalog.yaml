@@ -1,9 +1,8 @@
 # Reviewed: https://plugins.jenkins.io/mcp-server/
 # Install the MCP Server plugin (requires Jenkins 2.541.3+). Endpoints: Streamable HTTP /mcp-server/mcp (use this), SSE /mcp-server/sse + /mcp-server/message, stateless /mcp-server/stateless. Context paths (e.g. /jenkins) need a path variable or the user's host entry cannot express them.
-revision: 1
+revision: 2
 title: Jenkins
-description: Inspect jobs, trigger builds and read build logs and status on your own Jenkins controller through
-  the official MCP Server plugin.
+description: "Inspect jobs, trigger builds and read build logs and status on your own Jenkins controller through the official MCP Server plugin. Use build status and logs to investigate job failures or launch a build. Requires your own Jenkins controller with Jenkins 2.541.3 or later, the MCP Server plugin, and user credentials with an API token. The catalog URL does not represent controllers hosted under a context path."
 category: developer-tools
 website_url: https://www.jenkins.io
 help_url: https://plugins.jenkins.io/mcp-server/

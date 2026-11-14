@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://docs.slack.dev/ai/mcp-server/
 # No DCR, no SSE. User must create a Slack app and supply client_id/client_secret (confidential OAuth). Only Marketplace-published or internal apps may use MCP (unlisted distributed apps prohibited). Workspace admins approve MCP client integrations. Tools available depend on scopes granted.
-revision: 1
+revision: 2
 title: Slack
-description: Search Slack messages, files, channels, and users, read threads, and send messages.
+description: "Search Slack messages, files, channels, and users, read threads, and send messages. Use workspace conversations and threads for context and team communication. Requires a registered internal or Marketplace-published Slack app and administrator approval; unlisted distributed apps cannot use MCP. Granted scopes determine available tools."
 category: messaging
 website_url: https://slack.com
 help_url: https://docs.slack.dev/ai/mcp-server/

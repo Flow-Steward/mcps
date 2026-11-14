@@ -1,9 +1,8 @@
 # Reviewed: https://www.elastic.co/docs/explore-analyze/ai-features/agent-builder/mcp-server-api-keys
 # GA on Serverless (Elasticsearch, Observability, Security) and Elastic Stack 9.3+; preview in 9.2. Custom spaces: /s/{space}/api/agent_builder/mcp (a {space} path variable could be added). OAuth 2.1 is also available but only on Serverless. Docs show the header as 'Authorization: ApiKey ${API_KEY}' via mcp-remote and do not name the transport; Elastic Cloud hosts have no single suffix (*.kb.<region
-revision: 1
+revision: 2
 title: Elastic Agent Builder
-description: Use Elastic Agent Builder tools to search and analyze your Elasticsearch data through your own Kibana
-  deployment or Serverless project.
+description: "Use Elastic Agent Builder tools to search and analyze your Elasticsearch data through your own Kibana deployment or Serverless project. Connect to your own Kibana hostname using an Elasticsearch API key with Agent Builder privileges. The endpoint is available on Elastic Serverless and Elastic Stack 9.3 or later; custom Kibana spaces use a different endpoint path."
 category: data
 website_url: https://www.elastic.co
 help_url: https://www.elastic.co/docs/explore-analyze/ai-features/agent-builder/mcp-server-api-keys

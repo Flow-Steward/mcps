@@ -1,8 +1,12 @@
 # Reviewed 2026-10-10: https://docs.mixpanel.com/docs/mcp
 # US default; EU https://mcp-eu.mixpanel.com/mcp and IN https://mcp-in.mixpanel.com/mcp. An org admin must enable MCP (Settings > Org > Overview). 600 requests/hour per user.
-revision: 1
+revision: 2
 title: Mixpanel
-description: Query Mixpanel events, funnels, flows, retention, reports, and session replays.
+description: >-
+  Query Mixpanel events, funnels, flows, retention, reports, and session replays. Use behavioral
+  analytics to investigate conversion paths, retention and user sessions. An organization
+  administrator must enable MCP under Settings > Org > Overview. Use the server for your data
+  region; the documented limit is 600 requests per hour per user.
 category: data
 website_url: https://mixpanel.com
 help_url: https://docs.mixpanel.com/docs/mcp

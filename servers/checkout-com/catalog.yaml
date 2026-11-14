@@ -1,9 +1,12 @@
 # Reviewed 2026-10-29: vendor documentation and public OAuth metadata.
 # No authenticated tool execution.
-revision: 1
+revision: 2
 title: Checkout.com
-description: Search Checkout.com documentation and use supported payment, refund,
-  void and payment-link tools.
+description: >-
+  Search Checkout.com documentation and use supported payment, refund, void and payment-link tools.
+  Use documentation lookup for integration questions and the payment tools for supported merchant
+  operations. An active Checkout.com Dashboard account is required, and actions inherit that user’s
+  permissions. The listed endpoint is the production server.
 category: finance
 website_url: https://www.checkout.com
 help_url: https://github.com/checkout/checkout-mcp

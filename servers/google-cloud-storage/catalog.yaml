@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://docs.cloud.google.com/storage/docs/use-cloud-storage-mcp
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Google Cloud Storage
-description: List and manage Cloud Storage buckets and objects, read files, and write text content.
+description: "List and manage Cloud Storage buckets and objects, read files, and write text content. Use it to work with stored files and bucket contents in your Google Cloud project. Requires the Cloud Storage API to be enabled, suitable IAM permissions, and your own OAuth client."
 category: data
 website_url: https://cloud.google.com/storage
 help_url: https://docs.cloud.google.com/storage/docs/use-cloud-storage-mcp

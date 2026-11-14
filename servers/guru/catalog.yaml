@@ -1,8 +1,12 @@
 # Reviewed 2026-10-10: https://help.getguru.com/docs/connecting-gurus-mcp-server-to-custom-clients
 # Guru's OAuth (DCR) is pre-approved only for Claude, Cursor, and ChatGPT; other OAuth clients must be whitelisted by Guru, so the API-token header is the path for a generic client. Help center describes MCP as early access. Some tools need an agentId from a Knowledge Agent's API tab.
-revision: 1
+revision: 2
 title: Guru
-description: Search Guru knowledge, ask Guru Knowledge Agents questions, and create or update Guru cards.
+description: >-
+  Search Guru knowledge, ask Guru Knowledge Agents questions, and create or update Guru cards. Use
+  knowledge search and Knowledge Agent answers to find internal guidance, then maintain relevant
+  cards. This early-access connection uses a Guru email address and API token. Some tools require
+  the agentId from a Knowledge Agent’s API tab.
 category: productivity
 website_url: https://www.getguru.com
 help_url: https://help.getguru.com/docs/connecting-gurus-mcp-server-to-custom-clients

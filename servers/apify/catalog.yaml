@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://docs.apify.com/mcp
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Apify
-description: Discover and run Apify Actors and retrieve their stored results for web data and automation.
+description: "Discover and run Apify Actors and retrieve their stored results for web data and automation. Use Actors to collect web data or perform an automation, then retrieve the results stored by the run. The available work depends on the Actor you choose."
 category: data
 website_url: https://apify.com
 help_url: https://docs.apify.com/mcp

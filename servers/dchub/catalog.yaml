@@ -3,13 +3,11 @@
 # previews need no key; optional X-API-Key for paid plans. Probe saw OAuth metadata
 # on several paths, but the documented primary remote is keyless — docs win (same
 # pattern as Autodesk Product Help / Blockscout).
-revision: 3
+revision: 4
 source:
   registry: cloud.dchub/mcp-server
 title: DC Hub
-description: Live data for data-center site selection and the power, grid and energy
-  behind it. DCPI scores where data centers can get grid power across 300+ markets.
-  Agents can query it and cite it.
+description: "Query data-center power and grid data for site selection across more than 300 markets. Use DCPI scores and energy data to compare locations and cite the underlying information. Free previews require no API key; paid plans can use an optional API key."
 category: data
 website_url: https://dchub.cloud
 help_url: https://dchub.cloud/connect

@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://docs.bitrise.io/bitrise-platform/ai/bitrise-mcp
 # Docs: remote server at mcp.bitrise.io with OAuth; clients without MCP OAuth can send a Bitrise Personal Access Token as a Bearer header instead.
-revision: 3
+revision: 4
 source:
   registry: io.github.bitrise-io/bitrise-mcp
 title: Bitrise
-description: Manage Bitrise apps, trigger and inspect CI builds, read build logs, and download build artifacts.
+description: "Manage Bitrise apps, trigger and inspect CI builds, read build logs, and download build artifacts. Use build status, logs, and artifacts to investigate mobile CI failures. Available tools can be narrowed by toolset, such as apps, builds, or workspaces."
 category: developer-tools
 website_url: https://bitrise.io
 help_url: https://docs.bitrise.io/bitrise-platform/ai/bitrise-mcp

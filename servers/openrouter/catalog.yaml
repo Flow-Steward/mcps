@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://openrouter.ai/docs/guides/overview/mcp-server
 # Positioned as a developer aid; running models in apps still uses the OpenRouter API.
-revision: 2
+revision: 3
 title: OpenRouter
-description: Browse OpenRouter models and prices, check credit balance and generation costs, and search the docs.
+description: "Browse OpenRouter models and prices, check credit balance and generation costs, and search the docs. Use it to compare model options and inspect account usage while developing an integration. Running models in your application still uses the separate OpenRouter API."
 category: ai
 website_url: https://openrouter.ai
 help_url: https://openrouter.ai/docs/guides/overview/mcp-server

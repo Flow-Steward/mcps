@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://learn.microsoft.com/en-us/power-bi/developer/mcp/remote-mcp-server-external-clients
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Microsoft Power BI
-description: Query Power BI semantic models with natural language through the hosted Power BI Consumption
-  MCP server.
+description: "Query Power BI semantic models with natural language through the hosted Power BI Consumption MCP server. Use semantic model context for questions about business reporting data. This preview requires a tenant administrator to enable the service and grant delegated permissions."
 category: data
 website_url: https://www.microsoft.com/power-platform/products/power-bi
 help_url: https://learn.microsoft.com/en-us/power-bi/developer/mcp/remote-mcp-server-external-clients

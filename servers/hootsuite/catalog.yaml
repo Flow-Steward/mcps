@@ -1,9 +1,12 @@
 # Reviewed 2026-10-29: vendor documentation and public OAuth metadata.
 # No authenticated tool execution.
-revision: 1
+revision: 2
 title: Hootsuite
-description: Connect Hootsuite Perch publishing, Nest social care, Lumen listening
-  or Parliament advocacy tools.
+description: >-
+  Connect Hootsuite Perch publishing, Nest social care, Lumen listening or Parliament advocacy
+  tools. Choose the endpoint for the Hootsuite product you use. The corresponding entitlement and
+  workspace permissions are required, and Lumen needs a Talkwalker license. Network coverage and
+  tool restrictions vary; Nest does not provide public replies.
 category: marketing
 website_url: https://www.hootsuite.com
 help_url: https://www.hootsuite.com/integrations/mcp

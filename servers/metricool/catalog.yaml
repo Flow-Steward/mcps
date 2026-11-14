@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://help.metricool.com/how-to-connect-metricools-mcp-eqp9h
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Metricool
-description: Read social analytics and manage scheduled social media content in your Metricool brands.
+description: "Read social analytics and manage scheduled social media content in your Metricool brands. Use analytics and scheduled content to review publishing performance across connected brands. OAuth is available on all plans; API-key authentication requires a Metricool API key."
 category: marketing
 website_url: https://metricool.com
 help_url: https://help.metricool.com/how-to-connect-metricools-mcp-eqp9h

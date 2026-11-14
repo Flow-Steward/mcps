@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://developer.wordpress.com/docs/mcp/
 # User must turn on MCP in account preferences. Paid plans (free sites: first 30 days); Jetpack sites need Jetpack AI or Complete. Write tools are off unless Full access is granted.
-revision: 1
+revision: 2
 title: WordPress.com
-description: Read and manage WordPress.com posts, pages, media, comments, and site settings.
+description: "Read and manage WordPress.com posts, pages, media, comments, and site settings. Use content and comment context to maintain a site. Enable MCP in account preferences; write tools require Full access. Paid plans are supported, free sites have an initial 30-day window, and Jetpack sites need Jetpack AI or Complete."
 category: cms
 website_url: https://wordpress.com
 help_url: https://developer.wordpress.com/docs/mcp/

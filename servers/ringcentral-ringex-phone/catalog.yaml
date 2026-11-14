@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://developers.ringcentral.com/mcp/servers/
 # Labs/preview. Also RingEX Chat https://mcp.labs.ringcentral.com/ringex/team-chat, RingEX Admin https://mcp.labs.ringcentral.com/ringex/admin, App Connect (beta, CRM) https://unified-crm-extension.labs.ringcentral.com/mcp. Docs say 'SSE over HTTPS' but the endpoint takes JSON-RPC POSTs (401 + PRM), i
-revision: 1
+revision: 2
 title: RingCentral RingEX Phone
-description: Review RingCentral call logs, voicemail, SMS, contacts, and presence, and send SMS from an AI assistant.
+description: "Review RingCentral call logs, voicemail, SMS, contacts, and presence, and send SMS from an AI assistant. Use phone activity and voicemail context to review communications and send text replies. This preview connection is the RingEX Phone surface; team chat and administration have separate MCP endpoints."
 category: messaging
 website_url: https://www.ringcentral.com
 help_url: https://developers.ringcentral.com/mcp/servers/

@@ -1,8 +1,7 @@
 # Reviewed 2026-10-29: vendor documentation. No authenticated account test.
-revision: 1
+revision: 2
 title: Verteco Peppol
-description: Check Peppol participants, validate invoice XML, and send or retrieve
-  documents through a Verteco account.
+description: "Check Peppol participants, validate invoice XML, and send or retrieve documents through a Verteco account. Requires a Verteco account, a company, and an API key. Sending invoices requires explicit confirmation and provider onboarding. The connection covers Verteco, rather than every Peppol access point or national tax system."
 category: finance
 website_url: https://peppol.verteco.digital
 help_url: https://peppol.verteco.digital/en/docs/developers

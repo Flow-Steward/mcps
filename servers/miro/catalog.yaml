@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://developers.miro.com/docs/mcp-intro
 # User selects one team during OAuth; only that team's boards are accessible. Disabled by default on Enterprise plans until an admin enables it (Admin settings > Apps & Integrations > MCP).
-revision: 1
+revision: 2
 title: Miro
-description: Read and summarize Miro boards and create frames, sticky notes, shapes, tables, and diagrams on them.
+description: "Read and summarize Miro boards and create frames, sticky notes, shapes, tables, and diagrams on them. Use existing board content for collaborative planning and turn ideas into board objects. Each OAuth connection accesses one selected team; Enterprise administrators must enable MCP before users can connect."
 category: productivity
 website_url: https://miro.com
 help_url: https://developers.miro.com/docs/mcp-intro

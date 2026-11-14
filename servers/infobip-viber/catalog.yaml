@@ -1,8 +1,11 @@
 # Reviewed 2026-10-10: https://www.infobip.com/docs/mcp
 # OAuth 2.1 via Keycloak auth.infobip.com (DCR); alt: Authorization: App <API key> with matching scope.
-revision: 1
+revision: 2
 title: Infobip Viber
-description: Send Viber Business messages and check delivery status through Infobip.
+description: >-
+  Send Viber Business messages and check delivery status through Infobip. Use it for Viber Business
+  messaging and delivery follow-up in the connected Infobip account. This endpoint is specific to
+  Viber; customer profile management in Infobip People uses a separate MCP server.
 category: messaging
 website_url: https://www.infobip.com
 help_url: https://www.infobip.com/docs/mcp

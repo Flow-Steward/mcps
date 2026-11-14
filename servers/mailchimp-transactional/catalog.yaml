@@ -1,9 +1,12 @@
 # Reviewed 2026-10-10: https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/
 # Covers Transactional (Mandrill) only. Marketing (campaigns/audiences) MCP exists only as Claude/ChatGPT/Perplexity connectors (host ai-inc.mailchimp.com/claude/mcp/v2, DCR) for Standard/Premium plans - platform-specific, not offered for generic clients. Docs-search MCP: https://mailchimp.com/develop
-revision: 1
+revision: 2
 title: Mailchimp Transactional
-description: Send transactional emails, manage templates and check delivery status through Mailchimp Transactional
-  (Mandrill).
+description: >-
+  Send transactional emails, manage templates and check delivery status through Mailchimp
+  Transactional (Mandrill). Use it for application-generated email and delivery follow-up in
+  Mandrill. This endpoint covers Mailchimp Transactional, not Marketing campaigns or audiences.
+  Supply a Transactional API key; restricted keys need the AI Agents permission group.
 category: email
 website_url: https://mailchimp.com
 help_url: https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/

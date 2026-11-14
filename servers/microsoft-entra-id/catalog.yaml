@@ -1,9 +1,12 @@
 # Reviewed 2026-11-05: https://learn.microsoft.com/en-us/graph/mcp-server/overview
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Microsoft Entra ID
-description: Query users, groups, applications and devices in your Entra tenant with Microsoft MCP Server
-  for Enterprise.
+description: >-
+  Query users, groups, applications and devices in your Entra tenant with Microsoft MCP Server for
+  Enterprise. Use read-only identity queries to inspect tenant directory information. This public
+  preview supports the global cloud only. A tenant administrator must provision the server and grant
+  the client application the required delegated MCP permissions.
 category: it
 website_url: https://www.microsoft.com/security/business/identity-access/microsoft-entra-id
 help_url: https://learn.microsoft.com/en-us/graph/mcp-server/overview

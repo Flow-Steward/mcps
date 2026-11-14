@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://www.magicpatterns.com/docs/documentation/features/mcp-server/overview
 # Design generation consumes Magic Patterns credits; a paid plan may be needed for generation tools.
-revision: 1
+revision: 2
 title: Magic Patterns
-description: Pull Magic Patterns designs and their generated code into your project, and create or edit designs
-  from prompts.
+description: "Pull Magic Patterns designs and their generated code into your project, and create or edit designs from prompts. Use generated designs and code to iterate on a product interface. Design generation consumes Magic Patterns credits and may require a paid plan."
 category: developer-tools
 website_url: https://www.magicpatterns.com
 help_url: https://www.magicpatterns.com/docs/documentation/features/mcp-server/overview

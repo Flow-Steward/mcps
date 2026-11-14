@@ -1,8 +1,12 @@
 # Reviewed 2026-10-10: https://stytch.com/docs/workspace-management/stytch-mcp
 # Launch blog used /sse; current docs use /mcp. Can change auth project settings and API keys, so tool calls are state-changing.
-revision: 1
+revision: 2
 title: Stytch
-description: Manage Stytch projects, redirect URLs, API keys, and email templates in your Stytch workspace.
+description: >-
+  Manage Stytch projects, redirect URLs, API keys, and email templates in your Stytch workspace. Use
+  project configuration and template management when maintaining an authentication integration. The
+  server can change authentication project settings and API keys, so these tools perform account
+  changes as well as providing configuration context.
 category: developer-tools
 website_url: https://stytch.com
 help_url: https://stytch.com/docs/workspace-management/stytch-mcp

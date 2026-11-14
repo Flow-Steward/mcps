@@ -1,8 +1,12 @@
 # Reviewed 2026-10-10: https://developer.godaddy.com/docs/api-users/mcp
 # Read-only, public domain data; no GoDaddy account or API key. Cannot register domains or change DNS. Excessive requests may be throttled.
-revision: 1
+revision: 2
 title: GoDaddy Domains
-description: Suggest domain names from keywords or ideas and check whether specific domains are available to register.
+description: >-
+  Suggest domain names from keywords or ideas and check whether specific domains are available to
+  register. Use keyword-based suggestions to explore naming options and check a shortlist before
+  registration. The server uses public domain data and needs no GoDaddy account or API key. It
+  cannot register domains or change DNS, and excessive requests may be throttled.
 category: it
 website_url: https://www.godaddy.com
 help_url: https://developer.godaddy.com/docs/api-users/mcp

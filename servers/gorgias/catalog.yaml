@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-gorgias-6310546
 # Open beta; available on all Helpdesk plans at no extra cost; actions depend on the user's Gorgias role. The subdomain is entered during sign-in; multiple brands use ?gorgias_subdomain=<sub> per connection. AS https://mcp.gorgias.com/ with DCR (/register). Some writes gated during beta.
-revision: 1
+revision: 2
 title: Gorgias
-description: Work with Gorgias helpdesk tickets, customers, macros, tags and analytics, and configure AI Agent settings
-  from an AI assistant.
+description: "Work with Gorgias helpdesk tickets, customers, macros, tags and analytics, and configure AI Agent settings from an AI assistant. Use helpdesk context to investigate support work and maintain its configuration. This integration is in open beta; actions follow the user's Gorgias role and some writes remain restricted during beta."
 category: support
 website_url: https://www.gorgias.com
 help_url: https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-gorgias-6310546

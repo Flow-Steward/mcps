@@ -1,9 +1,13 @@
 # Reviewed 2026-10-10: https://docs.cloud.google.com/mcp/supported-products
 # Google Cloud runs one remote MCP server per product (60+): e.g. compute.googleapis.com/mcp, container.googleapis.com/mcp (GKE), logging.googleapis.com/mcp, monitoring.googleapis.com/mcp, sqladmin.googleapis.com/mcp, storage.googleapis.com/storage/mcp, cloudresourcemanager.googleapis.com/mcp, cloudcl
-revision: 1
+revision: 2
 title: Google Cloud Run
-description: Deploy and manage Cloud Run services and inspect revisions, jobs and their configuration in a Google
-  Cloud project.
+description: >-
+  Deploy and manage Cloud Run services and inspect revisions, jobs and their configuration in a
+  Google Cloud project. Use service and revision information to review an application deployment or
+  inspect job configuration before making supported changes. This entry connects the Cloud Run
+  product endpoint for your Google Cloud project, rather than the separate MCP servers for other
+  Google Cloud products.
 category: developer-tools
 website_url: https://cloud.google.com/run
 help_url: https://docs.cloud.google.com/mcp/supported-products

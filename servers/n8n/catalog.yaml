@@ -1,8 +1,8 @@
 # Reviewed: https://docs.n8n.io/advanced-ai/accessing-n8n-mcp-server/
 # An instance owner/admin must select Enable MCP access under Settings > Instance-level MCP, and each workflow must be enabled for MCP. The vendor also offers OAuth (recommended for interactive clients); whether it uses DCR was not verified, so the documented personal-token Bearer header is used here. Connect-a-client dialog since 2.33.0; workflow building via MCP since 2.13.0. Self-hosted N8N_DISAB
-revision: 1
+revision: 2
 title: n8n Workflows
-description: Search, run and build the workflows you have exposed to MCP on your own n8n Cloud or self-hosted instance.
+description: "Search, run and build the workflows you have exposed to MCP on your own n8n Cloud or self-hosted instance. An instance owner or administrator must enable instance-level MCP access and explicitly enable each workflow for MCP. This connection uses a personal access token and accesses only the exposed workflows."
 category: developer-tools
 website_url: https://n8n.io
 help_url: https://docs.n8n.io/advanced-ai/accessing-n8n-mcp-server/

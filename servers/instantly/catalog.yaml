@@ -1,8 +1,12 @@
 # Reviewed 2026-11-05: https://help.instantly.ai/en/articles/12980002-instantly-mcp-model-context-protocol
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Instantly
-description: Manage outreach campaigns, leads, sending accounts, and email analytics in Instantly.
+description: >-
+  Manage outreach campaigns, leads, sending accounts, and email analytics in Instantly. Use lead and
+  campaign data alongside sending-account information and email analytics when reviewing outbound
+  outreach. Supply your Instantly API key directly as the Authorization value, following the vendor
+  configuration; do not add a Bearer prefix.
 category: sales
 website_url: https://instantly.ai
 help_url: https://help.instantly.ai/en/articles/12980002-instantly-mcp-model-context-protocol

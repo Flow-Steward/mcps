@@ -1,9 +1,13 @@
 # Reviewed: https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714082142.html
 # Vendor docs give /services/mcp/v1/all (all SuiteApp and ACP tools) and /services/mcp/v1/suiteapp/<publisherid>.<projectid> (e.g. com.netsuite.mcpstandardtools). Admin enables Server SuiteScript, REST Web Services and OAuth 2.0, installs the MCP Standard Tools SuiteApp, and creates an integration record (Setup > Integration > Manage Integrations > New) with Authorization Code Grant, Public Client, 
-revision: 1
+revision: 2
 title: NetSuite
-description: Query and update NetSuite records, saved searches and reports through the NetSuite AI Connector Service
-  MCP endpoint.
+description: >-
+  Query and update NetSuite records, saved searches and reports through the NetSuite AI Connector
+  Service MCP endpoint. Use account records, saved searches and reports for ERP and accounting
+  workflows. An administrator must enable Server SuiteScript, REST Web Services and OAuth 2.0,
+  install the MCP Standard Tools SuiteApp and create an integration record for the client. Connect
+  using your NetSuite account ID.
 category: finance
 website_url: https://www.netsuite.com/
 help_url: https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714082142.html

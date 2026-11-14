@@ -1,8 +1,11 @@
 # Reviewed 2026-10-10: https://www.moodys.com/web/en/us/genai/model-context-protocol.html
 # Requires Moody's entitlement: users must request credentials from Moody's first. Docs say any MCP-standard client works, but setup steps are shown only for Claude, and the advertised scopes include 'claudeai' - verify a non-Claude client can complete authorization.
-revision: 1
+revision: 2
 title: Moody's GenAI-Ready Data
-description: Look up Moody's credit ratings, entity data, and risk research for companies and issuers.
+description: >-
+  Look up Moody's credit ratings, entity data, and risk research for companies and issuers. Use
+  licensed ratings, issuer information and research as source material for credit and risk analysis.
+  Requires Moody’s entitlement and credentials requested from Moody’s.
 category: finance
 website_url: https://www.moodys.com
 help_url: https://www.moodys.com/web/en/us/genai/model-context-protocol.html

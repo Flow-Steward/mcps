@@ -1,9 +1,11 @@
 # Reviewed 2026-10-10: https://support.contentsquare.com/hc/en-us/articles/41563169756945
 # Vendor support article (403 to fetch) confirms MCP on Free/Growth/Pro/Enterprise with monthly tool-call limits per plan; endpoint URL only confirmed in third-party directories. Tokens expire hourly and refresh.
-revision: 1
+revision: 2
 title: Contentsquare
-description: Query Contentsquare digital experience analytics such as page metrics, journeys, and conversion data
-  for your projects.
+description: >-
+  Query Contentsquare page metrics, journeys and conversion data for your projects. Use
+  project-level metrics and journey data to investigate website behavior and conversion performance.
+  Monthly tool-call limits depend on the Contentsquare plan.
 category: data
 website_url: https://contentsquare.com
 help_url: https://support.contentsquare.com/hc/en-us/articles/41563169756945

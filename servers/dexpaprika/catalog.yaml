@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://docs.dexpaprika.com/ai-integration/mcp-clients
 # Keyless. Docs recommend /sse as default but Streamable HTTP is served at /streamable-http. Registered key or Pro plan only raises rate limits.
-revision: 2
+revision: 3
 source:
   registry: com.dexpaprika/dexpaprika
 title: DexPaprika
-description: Look up DEX pools, token prices, OHLCV data, and transactions across blockchain networks.
+description: "Look up DEX pools, token prices, OHLCV data, and transactions across blockchain networks. Use liquidity-pool, swap, and trading-volume data to investigate onchain market activity. This connection is keyless; a registered key or Pro plan raises the rate limits."
 category: finance
 website_url: https://dexpaprika.com
 help_url: https://docs.dexpaprika.com/ai-integration/mcp-clients

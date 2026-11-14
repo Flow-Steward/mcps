@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://www.mintlify.com/docs/ai/mintlify-mcp
 # Interactive OAuth login with a Mintlify account; requires a connected Git provider with write access to the deploy branch. Admin-only actions need admin role.
-revision: 1
+revision: 2
 title: Mintlify
-description: Edit Mintlify documentation pages, navigation, and settings, and open pull requests for your docs projects.
+description: "Edit Mintlify documentation pages, navigation, and settings, and open pull requests for your docs projects. Use it to maintain a documentation project through changes that can be reviewed in a pull request. Requires a connected Git provider with write access to the deploy branch; administrator actions also require the Mintlify admin role."
 category: developer-tools
 website_url: https://www.mintlify.com
 help_url: https://www.mintlify.com/docs/ai/mintlify-mcp

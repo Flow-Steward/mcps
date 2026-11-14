@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://developers.tickettailor.com/docs/mcp
 # Docs list /sse and /mcp; use /mcp. Older blog described API-key entry at sign-in. Vendor suggests enabling 'Hide personal data from responses' in API settings.
-revision: 1
+revision: 2
 source:
   registry: ai.tickettailor/mcp
 title: Ticket Tailor
-description: Manage Ticket Tailor events, ticket types, orders, discounts, and box office operations.
+description: "Manage Ticket Tailor events, ticket types, orders, discounts, and box office operations. Use box office context to coordinate event ticketing and review orders. Ticket Tailor recommends enabling the API setting that hides personal data from responses."
 category: ecommerce
 website_url: https://www.tickettailor.com
 help_url: https://developers.tickettailor.com/docs/mcp

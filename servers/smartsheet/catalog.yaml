@@ -1,8 +1,12 @@
 # Reviewed 2026-10-10: https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server
 # Regions: EU https://mcp.smartsheet.eu, AU https://mcp.smartsheet.au. Requires a plan with API access (Business/Enterprise/AWM). OAuth exists only for listed platform clients (ChatGPT, Claude, Gemini Enterprise, M365 Copilot); AS metadata has no registration_endpoint, so generic clients use the API t
-revision: 1
+revision: 2
 title: Smartsheet
-description: Read and update Smartsheet sheets, rows, workspaces and reports from an AI assistant.
+description: >-
+  Read and update Smartsheet sheets, rows, workspaces and reports from an AI assistant. Use sheet
+  and row data with workspace or report context to maintain work tracking. Requires a plan with API
+  access, such as Business, Enterprise or Advanced Work Management. Generic clients connect with a
+  Smartsheet API access token; OAuth is limited to listed platform clients.
 category: productivity
 website_url: https://www.smartsheet.com
 help_url: https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server

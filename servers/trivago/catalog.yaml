@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://mcp.trivago.com/docs
 # Vendor page says no API keys or configuration needed; probe confirmed unauthenticated access. Third-party directories wrongly list OAuth.
-revision: 1
+revision: 2
 title: Trivago
-description: Search hotels by destination or radius with prices from booking sites, and see destination price trends.
+description: "Search hotels by destination or radius with prices from booking sites, and see destination price trends. This public discovery server requires no API key or account configuration."
 category: other
 website_url: https://www.trivago.com
 help_url: https://mcp.trivago.com/docs

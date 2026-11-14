@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://developers.webflow.com/mcp/reference/overview
 # Each authorization grants access to one workspace; switching workspaces requires re-authorizing. Designer (canvas) tools need the MCP Bridge App open in the Designer; Data API tools work without it.
-revision: 1
+revision: 2
 source:
   registry: com.webflow/mcp
 title: Webflow
-description: Manage Webflow sites, CMS collections and items, pages, assets, and custom code.
+description: "Manage Webflow sites, CMS collections and items, pages, assets, and custom code. Use site and structured-content context to maintain a Webflow website. Each authorization accesses one workspace. Designer canvas tools require the MCP Bridge App open in the Designer; Data API tools work without it."
 category: cms
 website_url: https://webflow.com
 help_url: https://developers.webflow.com/mcp/reference/overview

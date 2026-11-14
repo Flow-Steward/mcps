@@ -1,10 +1,14 @@
 # Reviewed 2026-10-10: https://docs.fireflies.ai/getting-started/mcp-configuration
 # OAuth with Fireflies account; docs also show Authorization: Bearer <API key> (Settings > Developer Settings) as an alternative. Separate docs-search server at docs.fireflies.ai/mcp is a different product.
-revision: 1
+revision: 2
 source:
   registry: ai.fireflies/fireflies
 title: Fireflies
-description: Search past meetings and read Fireflies transcripts, summaries, and action items.
+description: >-
+  Search past meetings and read Fireflies transcripts, summaries, and action items. Use searchable
+  meeting history to recover decisions, review discussion context and follow up on action items.
+  Connect the Fireflies account containing those meetings. This is the meeting-data server;
+  Fireflies documentation search is a separate MCP service.
 category: productivity
 website_url: https://fireflies.ai
 help_url: https://docs.fireflies.ai/getting-started/mcp-configuration

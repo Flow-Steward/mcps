@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://fulcradynamics.github.io/developer-docs/mcp-server/
 # Personal (consumer) data; each user authorizes their own Fulcra account. Vendor-owned GitHub README names the public hosted endpoint.
-revision: 6
+revision: 7
 source:
   registry: com.fulcradynamics/context
 title: Fulcra Context
-description: Read your personal health, workout, sleep, location, and calendar data collected in Fulcra Context.
+description: "Read your personal health, workout, sleep, location, and calendar data collected in Fulcra Context. Use the collected personal data as context for questions about your activities and schedule. Each user authorizes their own Fulcra account."
 category: data
 website_url: https://www.fulcradynamics.com
 help_url: https://fulcradynamics.github.io/developer-docs/mcp-server/

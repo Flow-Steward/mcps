@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: vendor docs not found
 # UNRESOLVED: no ZipRecruiter-owned doc page found (site returns 403 to fetch; search budget exhausted). Endpoint answers initialize unauthenticated with serverInfo 'jobseeker-mcp' 1.0.0. Verify it is not limited to specific AI clients before publishing.
-revision: 1
+revision: 2
 title: ZipRecruiter
-description: Search live ZipRecruiter job listings by title, company, location, salary, work style, and posting
-  date.
+description: "Search live ZipRecruiter job listings by keyword, location, salary, work style, and posting date. Narrow results by employment type or seniority in the US or Canada. The search tool returns up to five listings per call, with links to ZipRecruiter and an optional interactive carousel for compatible clients. No end-user OAuth sign-in is required."
 category: hr
 website_url: https://www.ziprecruiter.com
 remotes:

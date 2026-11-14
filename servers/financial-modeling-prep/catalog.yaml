@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://site.financialmodelingprep.com/developer/docs/mcp-server
 # Vendor MCP doc page returned 403, so endpoint/auth not confirmed from vendor docs; probe shows OAuth with Client ID Metadata Documents. A third-party review reports an API-key-in-URL option. Data returned depends on FMP plan and uses plan quota.
-revision: 1
+revision: 2
 title: Financial Modeling Prep
-description: Look up stock quotes, financial statements, ratios, and market data for public companies, ETFs, and
-  crypto.
+description: "Look up stock quotes, financial statements, ratios, and market data for public companies, ETFs, and crypto. Tools cover grouped financial-data categories, including historical statements and technical indicators, for company and market research. Requests count toward existing plan limits. This OAuth connection requires the vendor to register or allowlist the client in advance; open dynamic registration is not available."
 category: finance
 website_url: https://site.financialmodelingprep.com
 help_url: https://site.financialmodelingprep.com/developer/docs/mcp-server

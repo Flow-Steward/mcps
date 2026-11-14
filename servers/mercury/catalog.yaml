@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://docs.mercury.com/docs/connecting-mercury-mcp
 # Docs label it Beta and describe read-only access; probe advertises additional scopes (transactions:request, transfers:request, categories edit) so reviewer should confirm current capabilities. Sessions may need re-auth after ~3 days.
-revision: 1
+revision: 2
 title: Mercury
-description: Read Mercury business banking accounts, balances, transactions, statements, cards, recipients, and
-  treasury data.
+description: "Read Mercury business banking accounts, balances, transactions, statements, cards, recipients, and treasury data. Use banking records to review balances, cash movements, and statements. The reviewed beta provides read-only access; connections may need reauthorization after a few days."
 category: finance
 website_url: https://mercury.com
 help_url: https://docs.mercury.com/docs/connecting-mercury-mcp

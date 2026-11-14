@@ -2,9 +2,13 @@
 # Needs the Developer Preview Program, a Google Cloud project with the MCP service enabled,
 # and the user's own OAuth client (Google offers no dynamic client registration).
 # Scopes and authorization parameters carried over unchanged from Flow Steward's former template.
-revision: 2
+revision: 3
 title: Google Slides
-description: 'Read and edit Google Slides presentations: list slides, read their content, and update them.'
+description: >-
+  Read and edit Google Slides presentations: list slides, read their content, and update them. Use
+  slide content to review a deck and write supported updates back to the presentation. This Google
+  Workspace Developer Preview requires program access, a Google Cloud project with the MCP service
+  enabled, and your own OAuth client; Google does not provide dynamic client registration.
 category: documents
 website_url: https://workspace.google.com
 help_url: https://developers.google.com/workspace/guides/configure-mcp-servers

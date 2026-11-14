@@ -1,8 +1,12 @@
 # Reviewed 2026-11-05: https://cloudconvert.com/docs/integrations/mcp-server
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: CloudConvert
-description: Convert, compress, merge, and process files, and inspect conversion jobs and webhooks.
+description: >-
+  Convert, compress, merge, and process files, and inspect conversion jobs and webhooks. Prepare
+  file-processing workflows and inspect the jobs that perform them, including related webhook
+  information. Processing consumes CloudConvert credits, so conversions and other file operations
+  are charged to the connected account.
 category: documents
 website_url: https://cloudconvert.com
 help_url: https://cloudconvert.com/docs/integrations/mcp-server

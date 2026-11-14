@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://ads.tiktok.com/resources/help/article/about-tiktok-for-business-mcp-server
 # Two endpoints: progressive disclosure .../tt-ads-mcp-layer (~40 core tools, chosen here) and full disclosure .../tt-ads-mcp-flat (~400 tools, TikTok's recommendation for Claude). Each has its own OAuth AS at <endpoint>/oauth with DCR (public clients). Scope mcp:tt4b. Third parties report 30-day auth
-revision: 1
+revision: 2
 title: TikTok for Business
-description: Create and manage TikTok ad campaigns, budgets, targeting, audiences, and creatives, and pull performance
-  reports.
+description: "Create and manage TikTok ad campaigns, budgets, targeting, audiences, and creatives, and pull performance reports. Use it to maintain advertising work and review campaign results. This entry uses the progressive-disclosure endpoint, which exposes core tools; TikTok also offers a separate full-disclosure endpoint."
 category: marketing
 website_url: https://ads.tiktok.com
 help_url: https://ads.tiktok.com/resources/help/article/about-tiktok-for-business-mcp-server

@@ -1,9 +1,12 @@
 # Reviewed 2026-10-10: https://ybug.io/docs/mcp
 # Not on FREE plan; read on BASIC, triage needs STARTUP or higher. Site banner key suggests recent beta launch.
-revision: 1
+revision: 2
 title: Ybug
-description: 'Read and triage Ybug feedback reports: filter, change status, priority, assignee, and tags, and add
-  comments.'
+description: >-
+  Read and triage Ybug feedback reports: filter, change status, priority, assignee, and tags, and
+  add comments. Use feedback reports to prioritize incoming issues, assign follow-up work and keep
+  report discussions current. The free plan does not include MCP. Reading requires Basic; triage
+  actions require Startup or higher.
 category: support
 website_url: https://ybug.io
 help_url: https://ybug.io/docs/mcp

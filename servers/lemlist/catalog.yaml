@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://developer.lemlist.com/mcp/setup.md
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Lemlist
-description: Manage outreach campaigns and leads, enrich contact data, and inspect lemlist performance.
+description: "Manage outreach campaigns and leads, enrich contact data, and inspect lemlist performance. Use lead and campaign context to prepare sales outreach and review results. Some enrichment and verification operations consume credits."
 category: sales
 website_url: https://www.lemlist.com
 help_url: https://developer.lemlist.com/mcp/setup.md

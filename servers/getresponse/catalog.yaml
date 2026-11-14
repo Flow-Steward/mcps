@@ -1,9 +1,8 @@
 # Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
 # Account authorization and tool execution have not been tested.
-revision: 1
+revision: 2
 title: GetResponse
-description: Access GetResponse marketing tools and resources through the official
-  hosted MCP server.
+description: "Analyze GetResponse email performance, find contacts by engagement, and create or edit email drafts and marketing campaigns. Review newsletters, autoresponders, automation messages, custom fields, and contact activity to prepare targeted marketing work. This connection serves Starter, Marketer, and Creator accounts; MAX accounts require a separate account-specific endpoint supplied by GetResponse."
 category: marketing
 website_url: https://www.getresponse.com
 help_url: https://www.getresponse.com/help/how-to-connect-getresponse-mcp-to-your-ai-application.html

@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://data.crunchbase.com/docs/connecting-ai-tools
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Crunchbase
-description: Research companies, funding rounds, investors, and market signals using your authorized Crunchbase
-  data access.
+description: "Research companies, funding rounds, investors, and market signals using your authorized Crunchbase data access. Use it to investigate company funding and investor activity. A Crunchbase account is required, and the data-token allowance for that account applies."
 category: data
 website_url: https://www.crunchbase.com
 help_url: https://data.crunchbase.com/docs/connecting-ai-tools

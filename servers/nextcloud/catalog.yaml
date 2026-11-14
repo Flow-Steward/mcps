@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://docs.nextcloud.com/server/latest/admin_manual/ai/app_context_agent.html
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Nextcloud
-description: Access files, calendars, tasks and other enabled Nextcloud tools through your instance Context
-  Agent.
+description: "Access files, calendars, tasks and other enabled Nextcloud tools through your instance Context Agent. Use the connected instance as a source of personal or team working context. Requires Context Agent and its application prerequisites; the enabled Nextcloud apps determine available capabilities."
 category: productivity
 website_url: https://nextcloud.com
 help_url: https://docs.nextcloud.com/server/latest/admin_manual/ai/app_context_agent.html

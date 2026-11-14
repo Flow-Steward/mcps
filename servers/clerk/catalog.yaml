@@ -1,11 +1,10 @@
 # Reviewed 2026-10-10: https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server
 # Beta. Docs show a plain URL connection; the endpoint advertises OAuth (DCR) with Clerk account scopes. Content is mostly developer docs/snippets.
-revision: 1
+revision: 2
 source:
   registry: io.github.clerk/mcp-server
 title: Clerk
-description: Get Clerk SDK snippets, framework-specific examples, and implementation guides for authentication and
-  organizations.
+description: "Get Clerk SDK snippets, framework-specific examples, and implementation guides for authentication and organizations. Use the documentation and examples to implement Clerk authentication in your application framework. This preview focuses on developer reference material and SDK guidance."
 category: developer-tools
 website_url: https://clerk.com
 help_url: https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server

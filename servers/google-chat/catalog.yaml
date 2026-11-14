@@ -2,9 +2,9 @@
 # Needs the Developer Preview Program, a Google Cloud project with the MCP service enabled,
 # and the user's own OAuth client (Google offers no dynamic client registration).
 # Scopes and authorization parameters carried over unchanged from Flow Steward's former template.
-revision: 2
+revision: 3
 title: Google Chat
-description: Read Google Chat spaces, members, and messages, and post new messages to spaces.
+description: "Read Google Chat spaces, members, and messages, and post new messages to spaces. Use conversation context to review team discussions and contribute messages. Requires the Google Workspace Developer Preview Program, an enabled MCP service in a Google Cloud project, and your own OAuth client."
 category: messaging
 website_url: https://workspace.google.com
 help_url: https://developers.google.com/workspace/guides/configure-mcp-servers

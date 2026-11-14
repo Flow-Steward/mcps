@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://help.lucid.co/hc/en-us/articles/42578801807508
 # A Lucid account admin must enable MCP access first. Not available on FedRAMP accounts. Variants: /mcp/readonly and /mcp/repositories.
-revision: 1
+revision: 2
 source:
   registry: app.lucid.mcp/lucid
 title: Lucid
-description: Search, read, summarize, and edit Lucidchart and Lucidspark documents and create new diagrams.
+description: "Search, read, summarize, and edit Lucidchart and Lucidspark documents and create new diagrams. Use existing visual documents as context or build a new diagram from that context. A Lucid account administrator must enable MCP access; FedRAMP accounts are not supported."
 category: productivity
 website_url: https://lucid.co
 help_url: https://help.lucid.co/hc/en-us/articles/42578801807508

@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://www.taskade.com/docs/mcp/hosted-mcp
 # Paid plans only (docs differ: Business+ vs all paid). Local npm @taskade/mcp-server also exists. DCR at /oauth2/register.
-revision: 1
+revision: 2
 title: Taskade
-description: Read and manage Taskade workspaces, projects, tasks and AI agents from an AI assistant.
+description: "Read and manage Taskade workspaces, projects, tasks and AI agents from an AI assistant. Use project and task context alongside the AI agents in your workspace. The hosted server requires a paid plan; the local package is a separate connection option."
 category: productivity
 website_url: https://www.taskade.com
 help_url: https://www.taskade.com/docs/mcp/hosted-mcp

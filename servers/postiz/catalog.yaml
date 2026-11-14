@@ -1,9 +1,12 @@
 # Reviewed 2026-10-10: https://docs.postiz.com/mcp/setup
 # Docs also allow API key in path (/mcp/<api-key>). Intro mentions OAuth token too but no AS metadata found. Self-hostable open-source; this is the hosted cloud endpoint.
-revision: 1
+revision: 2
 title: Postiz
-description: List connected social accounts, schedule, draft or publish posts, and generate images and videos for
-  social media.
+description: >-
+  List connected social accounts, schedule, draft or publish posts, and generate images and videos
+  for social media. Use connected social accounts to prepare a draft, schedule content or publish
+  it, with media generation available for post assets. This catalog entry connects the hosted Postiz
+  cloud service and uses a Postiz API key from Settings.
 category: marketing
 website_url: https://postiz.com
 help_url: https://docs.postiz.com/mcp/setup

@@ -1,9 +1,13 @@
 # Reviewed 2026-10-10: https://dev.frontapp.com/docs/mcp-server
 # No DCR: create an OAuth app in Front developer settings with only 'MCP Server' feature access, confidential client, add your redirect URI. Scopes read/write/send (request narrowest). Help center calls it beta; admin may need to install.
-revision: 1
+revision: 2
 title: Front
-description: Search Front conversations, read threads, draft replies, and add internal comments as the authorizing
-  teammate.
+description: >-
+  Search Front conversations, read threads, draft replies, and add internal comments as the
+  authorizing teammate. Use shared conversation history to prepare customer responses and leave
+  internal context for teammates. This preview requires a confidential OAuth app created in Front
+  developer settings with the MCP Server feature and the client’s callback URL; an administrator may
+  need to install it.
 category: support
 website_url: https://front.com
 help_url: https://dev.frontapp.com/docs/mcp-server

@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://docs.customer.io/ai/mcp-server
 # EU region: https://mcp-eu.customer.io/mcp. An account admin must enable Customer.io MCP first; editing live data and reading sensitive attributes need separate admin toggles. Scopes advertised: configure, read, read:sensitive, write, write:live. DCR at https://mcp.customer.io/oauth2/register.
-revision: 1
+revision: 2
 title: Customer.io
-description: Query people, segments, campaigns and messaging performance in Customer.io and make changes with your
-  role's permissions.
+description: "Query people, segments, campaigns and messaging performance in Customer.io and make changes with your role's permissions. Use it to review audience and messaging performance alongside the related campaign data. An account administrator must enable MCP; reading sensitive attributes and editing live data require separate administrator settings."
 category: marketing
 website_url: https://customer.io
 help_url: https://docs.customer.io/ai/mcp-server

@@ -1,11 +1,10 @@
 # Reviewed 2026-10-10: https://github.com/norman-finance/norman-mcp-server
 # Vendor docs live in the vendor's GitHub README. Aimed at German freelancers and small businesses. Some features (Inbox, MCP Events) marked in development.
-revision: 2
+revision: 3
 source:
   registry: finance.norman/mcp-server
 title: Norman Finance
-description: 'Manage Norman bookkeeping: create invoices, manage clients, categorize transactions, and prepare tax
-  reports.'
+description: "Manage Norman bookkeeping: create invoices, manage clients, categorize transactions, and prepare tax reports. Supported European bookkeeping workflows include Polish KPiR and JPK. Check regional availability for the business you operate."
 category: finance
 website_url: https://norman.finance
 help_url: https://github.com/norman-finance/norman-mcp-server

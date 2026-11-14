@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://learn.hex.tech/docs/administration/mcp-server
 # Beta; Team and Enterprise plans only; Explorer role for read tools, Editor for notebook editing. Single-tenant/EU/HIPAA customers use their own host (e.g. https://eu.hex.tech/mcp).
-revision: 1
+revision: 2
 title: Hex
-description: Search Hex projects, ask data questions through Hex Threads, and create or edit notebooks.
+description: "Search Hex projects, ask data questions through Hex Threads, and create or edit notebooks. Use existing analyses and Threads to investigate data questions, then maintain notebooks where permitted. Requires a Team or Enterprise plan; read tools need an Explorer role, and notebook editing needs an Editor role."
 category: data
 website_url: https://hex.tech
 help_url: https://learn.hex.tech/docs/administration/mcp-server

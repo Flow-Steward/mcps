@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://www.braze.com/docs/user_guide/brazeai/mcp_server/setup/
 # EU endpoint https://mcp.braze.eu/mcp (EU customers must use it). Admin must enable 'MCP OAuth access' (Settings > Admin Settings > OAuth) and grant users 'Use MCP Server' per workspace. Not available to customers using IP allowlisting. Early Access per some Braze pages. Scopes advertised: mcp:tools 
-revision: 1
+revision: 2
 title: Braze
-description: Query Braze campaign and Canvas analytics, segments, custom attributes and other workspace data from
-  an AI assistant.
+description: "Query Braze campaign and Canvas analytics, segments, custom attributes and other workspace data from an AI assistant. Use the workspace data to review campaign performance and audience definitions. An administrator must enable MCP OAuth access and grant the user MCP permission for each workspace. Customers using IP allowlisting cannot use this service."
 category: marketing
 website_url: https://www.braze.com
 help_url: https://www.braze.com/docs/user_guide/brazeai/mcp_server/setup/

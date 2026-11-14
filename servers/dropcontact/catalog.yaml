@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://developer.dropcontact.com/en/mcp/
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Dropcontact
-description: Enrich business contacts, find professional email addresses, validate emails, and check Dropcontact
-  credits.
+description: "Enrich business contacts, find professional email addresses, validate emails, and check Dropcontact credits. Use it to complete or validate prospect contact records. Enrichment runs asynchronously and can take up to three minutes; Dropcontact credits apply."
 category: sales
 website_url: https://www.dropcontact.com
 help_url: https://developer.dropcontact.com/en/mcp/

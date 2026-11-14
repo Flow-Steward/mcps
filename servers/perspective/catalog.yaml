@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://developers.perspective.co/mcp/connecting
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Perspective
-description: Build and manage Perspective funnels, email sequences, analytics, and CRM contacts.
+description: "Build and manage Perspective funnels, email sequences, analytics, and CRM contacts. Use it to maintain a lead-generation funnel alongside its email follow-up and contact data. A Perspective account is required; the default endpoint exposes all tool groups."
 category: marketing
 website_url: https://www.perspective.co
 help_url: https://developers.perspective.co/mcp/connecting

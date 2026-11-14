@@ -1,8 +1,12 @@
 # Reviewed 2026-10-10: https://www.infobip.com/docs/mcp
 # OAuth 2.1 via Keycloak auth.infobip.com (DCR); alt: Authorization: App <API key> with matching scope.
-revision: 1
+revision: 2
 title: Infobip People
-description: Create, update and search customer profiles, tags and attributes in Infobip People CDP.
+description: >-
+  Create, update and search customer profiles, tags and attributes in Infobip People CDP. Use
+  customer profiles and their tags or attributes to look up audience context and maintain CDP
+  records. This entry connects Infobip People through OAuth; Viber messaging is exposed through a
+  separate Infobip MCP endpoint.
 category: crm
 website_url: https://www.infobip.com
 help_url: https://www.infobip.com/docs/mcp

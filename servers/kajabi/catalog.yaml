@@ -1,8 +1,12 @@
 # Reviewed 2026-11-05: https://help.kajabi.com/en/articles/17175695-connect-kajabi-to-claude-or-chatgpt
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Kajabi
-description: Browse Kajabi sites and contacts, create course and marketing content, and draft automations.
+description: >-
+  Browse Kajabi sites and contacts, create course and marketing content, and draft automations. Use
+  site and contact context to prepare course or marketing content and draft automation work. Select
+  permissions during consent. Availability depends on the Kajabi account, and some changes can
+  publish immediately.
 category: cms
 website_url: https://kajabi.com
 help_url: https://help.kajabi.com/en/articles/17175695-connect-kajabi-to-claude-or-chatgpt

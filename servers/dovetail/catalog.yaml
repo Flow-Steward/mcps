@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://developers.dovetail.com/docs/mcp
 # Docs say hosted OAuth does not support DCR or CIMD; clients needing those must use the API token (probe suggested DCR, docs win). Available on all plans.
-revision: 1
+revision: 2
 title: Dovetail
-description: Search Dovetail research, read transcripts, docs, and highlights, and create projects, docs, and highlights.
+description: "Search Dovetail research, read transcripts, docs, and highlights, and create projects, docs, and highlights. Use research source material to investigate findings and maintain project documentation. Available on all plans; the listed connection uses an API token."
 category: productivity
 website_url: https://dovetail.com
 help_url: https://developers.dovetail.com/docs/mcp

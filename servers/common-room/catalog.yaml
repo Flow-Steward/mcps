@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://www.commonroom.io/docs/signals/mcp
 # Docs give the URL with a trailing slash. Requires a Common Room subscription.
-revision: 1
+revision: 2
 title: Common Room
-description: Query Common Room contacts, organizations, activity, and segments for account research.
+description: "Query Common Room contacts, organizations, activity, and segments for account research. Use customer and organization signals to understand an account before sales or customer conversations. Requires a Common Room subscription."
 category: sales
 website_url: https://www.commonroom.io
 help_url: https://www.commonroom.io/docs/signals/mcp
