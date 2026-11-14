@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-13.9555b359",
-  "published_at": "2026-11-13T15:23:31Z",
+  "catalog_revision": "2026-11-14.7b382476",
+  "published_at": "2026-11-14T14:16:52Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -899,7 +899,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.5.1"
+            "version": "2.6.2"
           }
         ],
         "remotes": [
@@ -912,15 +912,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.5.1",
+        "version": "2.6.2",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 13,
+            "revision": 14,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.5.1"
+              "version": "2.6.2"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -1091,17 +1091,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-13T15:23:31Z"
+            "updated_at": "2026-11-14T14:16:52Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-13T00:21:24.044469Z",
+          "publishedAt": "2026-11-14T00:20:30.56658Z",
           "status": "active",
-          "statusChangedAt": "2026-11-13T00:21:24.044469Z",
-          "updatedAt": "2026-11-13T00:21:24.044469Z"
+          "statusChangedAt": "2026-11-14T00:20:30.56658Z",
+          "updatedAt": "2026-11-14T00:20:30.56658Z"
         }
       }
     },
@@ -6586,23 +6586,22 @@
           "io.modelcontextprotocol.registry/publisher-provided": {
             "canonicalRemote": "https://dchub.cloud/mcp",
             "deploymentType": "origin",
-            "freeTier": true,
             "gatewayNote": "This entry is the ORIGIN. DC Hub is also reachable through hosted gateways, which share one upstream identity across many end users — a client that binds here directly is counted as itself, and its own key and clientInfo reach the server unaltered. When a call does arrive through a known gateway, the response says so in identity.connection; the field is absent otherwise, because a gateway forwarding a generic client identity cannot be distinguished from a direct caller.",
             "license": "DCPI verdicts + composite CC-BY-4.0 after 30 days (dchub.cloud/terms#dcpi-current-data); methodology + grid analysis CC-BY-4.0; other layers per https://dchub.cloud/data-sources",
             "remoteProfiles": {
               "https://dchub.cloud/mcp/core": "core profile: 10 tools for multi-server hosts"
             },
             "tool": "dchub-registry-refresh",
-            "toolCount": 95,
+            "toolCount": 96,
             "version": "1.0.0"
           },
           "io.github.flow-steward/catalog": {
             "id": "dchub",
-            "revision": 4,
+            "revision": 5,
             "status": "active",
             "source": {
               "registry": "cloud.dchub/mcp-server",
-              "version": "2.12.48"
+              "version": "2.12.54"
             },
             "title": "DC Hub",
             "summary": "Live data for data-center site selection and the power, grid and energy behind it.",
@@ -6645,10 +6644,10 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/dchub",
             "added_at": "2026-11-07T14:21:09Z",
-            "updated_at": "2026-11-13T15:23:31Z"
+            "updated_at": "2026-11-14T14:16:52Z"
           }
         },
-        "description": "Data center energy, electricity & power grid data: DCPI to query and cite, capacity to buy or lease.",
+        "description": "Orchestration layer for data center and energy intelligence. Start with execute_plan.",
         "icons": [
           {
             "mimeType": "image/png",
@@ -6677,7 +6676,7 @@
           {
             "environmentVariables": [
               {
-                "description": "Optional DC Hub API key. Leave unset to use the free tier with no key.",
+                "description": "Optional DC Hub API key, sent as the X-API-Key header. Leave it unset to connect without one.",
                 "format": "string",
                 "isSecret": true,
                 "name": "DCHUB_API_KEY"
@@ -6689,7 +6688,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.12.48"
+            "version": "2.12.54"
           }
         ],
         "remotes": [
@@ -6722,17 +6721,17 @@
           "source": "github",
           "url": "https://github.com/azmartone67/dchub-mcp-server"
         },
-        "title": "DC Hub — Data Center Energy, Electricity & Power Grid Data: Site Selection, Colocation, Gas, Fiber",
-        "version": "2.12.48",
+        "title": "DC Hub",
+        "version": "2.12.54",
         "websiteUrl": "https://dchub.cloud"
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-12T22:49:20.095149Z",
+          "publishedAt": "2026-11-14T08:24:20.438401Z",
           "status": "active",
-          "statusChangedAt": "2026-11-12T22:49:20.095149Z",
-          "updatedAt": "2026-11-12T22:49:20.095149Z"
+          "statusChangedAt": "2026-11-14T08:24:20.438401Z",
+          "updatedAt": "2026-11-14T08:24:20.438401Z"
         }
       }
     },
@@ -7156,15 +7155,16 @@
           "url": "https://github.com/coinpaprika/dexpaprika-mcp"
         },
         "title": "DexPaprika",
-        "version": "2.8.0",
+        "version": "2.12.1",
+        "websiteUrl": "https://docs.dexpaprika.com/ai-integration/hosted-mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "dexpaprika",
-            "revision": 2,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "com.dexpaprika/dexpaprika",
-              "version": "2.8.0"
+              "version": "2.12.1"
             },
             "title": "DexPaprika",
             "summary": "Look up DEX pools, token prices, OHLCV data, and transactions across blockchain networks.",
@@ -7201,17 +7201,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/dexpaprika",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-10-29T05:57:52Z"
+            "updated_at": "2026-11-14T14:16:52Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-10-14T07:17:52.860896Z",
+          "publishedAt": "2026-11-13T16:43:30.775269Z",
           "status": "active",
-          "statusChangedAt": "2026-10-14T07:17:52.860896Z",
-          "updatedAt": "2026-10-14T07:17:52.860896Z"
+          "statusChangedAt": "2026-11-13T16:43:30.775269Z",
+          "updatedAt": "2026-11-13T16:43:30.775269Z"
         }
       }
     },
@@ -21810,7 +21810,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.64.0"
+            "version": "0.65.3"
           }
         ],
         "remotes": [
@@ -21824,16 +21824,16 @@
           "url": "https://github.com/oborseth/Porkbun-MCP"
         },
         "title": "Porkbun (official)",
-        "version": "0.64.0",
+        "version": "0.65.3",
         "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 8,
+            "revision": 9,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.64.0"
+              "version": "0.65.3"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -21877,17 +21877,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-12T14:06:53Z"
+            "updated_at": "2026-11-14T14:16:52Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-11T01:19:13.499946Z",
+          "publishedAt": "2026-11-13T22:17:43.236989Z",
           "status": "active",
-          "statusChangedAt": "2026-11-11T01:19:13.499946Z",
-          "updatedAt": "2026-11-11T01:19:13.499946Z"
+          "statusChangedAt": "2026-11-13T22:17:43.236989Z",
+          "updatedAt": "2026-11-13T22:17:43.236989Z"
         }
       }
     },
