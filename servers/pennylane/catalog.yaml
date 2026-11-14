@@ -1,9 +1,8 @@
 # Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
 # Account authorization and tool execution have not been tested.
-revision: 1
+revision: 2
 title: Pennylane
-description: Read accounting records, invoices, transactions and financial reports
-  from Pennylane.
+description: "Read accounting records, invoices, transactions and financial reports from Pennylane. Use the records to review financial activity. Requires an eligible Pennylane plan. Access is read-only: it cannot create invoices, record payments, reconcile transactions, or file tax returns."
 category: finance
 website_url: https://www.pennylane.com
 help_url: https://pennylane-mcp.readme.io/docs/getting-started

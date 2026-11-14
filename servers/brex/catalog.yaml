@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://developer.brex.com/docs/mcp
 # Beta. An account/card admin must accept the Developer API agreement (Settings > Developer) and enable 'Brex in AI assistants' under Settings > Beta features. API token as Bearer header is an alternative for admins.
-revision: 1
+revision: 2
 title: Brex
-description: Review and update Brex expenses, receipts, cards, spend limits, bills, vendors, and travel bookings.
+description: "Review and update Brex expenses, receipts, cards, spend limits, bills, vendors, and travel bookings. Use it to review company spending and maintain the related finance records. An account or card administrator must accept the Developer API agreement and enable Brex in AI assistants. This integration is in beta."
 category: finance
 website_url: https://www.brex.com
 help_url: https://developer.brex.com/docs/mcp

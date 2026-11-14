@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://docs.newrelic.com/docs/agentic-ai/mcp/setup/
 # Public preview under New Relic pre-release policy; not for FedRAMP accounts. Regions: EU https://mcp.eu.newrelic.com/mcp/, JP https://mcp.jp.newrelic.com/mcp/. Alternative auth: 'api-key' header with a User API key (NRAK-...). Optional 'include-tags' header filters tool groups. DCR at https://dcr.se
-revision: 1
+revision: 2
 title: New Relic
-description: Query New Relic telemetry with NRQL, inspect entities, alerts and incidents, and investigate performance
-  issues.
+description: "Query New Relic telemetry with NRQL, inspect entities, alerts and incidents, and investigate performance issues. Use telemetry and incident context to investigate application performance. This entry connects to the US endpoint in public preview; EU and Japan use separate endpoints, and FedRAMP accounts are excluded."
 category: developer-tools
 website_url: https://newrelic.com
 help_url: https://docs.newrelic.com/docs/agentic-ai/mcp/setup/

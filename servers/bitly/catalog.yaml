@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://dev.bitly.com/bitly-mcp/
 # OAuth 2.1 recommended; docs also allow an Authorization: Bearer <Bitly API token> header as an alternative for clients without OAuth.
-revision: 1
+revision: 2
 source:
   registry: com.bitly/mcp
 title: Bitly
-description: Create and manage Bitly short links and QR codes, and view click analytics.
+description: "Create and manage Bitly short links and QR codes, and view click analytics. Use short links and QR codes in campaigns, then inspect click data to review performance. Sign in to the Bitly account whose links you want to manage; the connection uses OAuth."
 category: marketing
 website_url: https://bitly.com
 help_url: https://dev.bitly.com/bitly-mcp/

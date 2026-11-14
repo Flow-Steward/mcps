@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://serpapi.com/integrations/mcp
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: SerpApi
-description: Search Google, Bing, and other engines and retrieve structured search results through your
-  SerpApi subscription.
+description: "Search Google, Bing, and other engines and retrieve structured search results through your SerpApi subscription. Use structured engine results for web research and search comparisons. Requires a SerpApi API key; searches consume your account allowance."
 category: data
 website_url: https://serpapi.com
 help_url: https://serpapi.com/integrations/mcp

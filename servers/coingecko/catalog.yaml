@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://docs.coingecko.com/ai-integration/mcp-server
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: CoinGecko
-description: Explore cryptocurrency prices, market trends, trading volumes, and onchain analytics.
+description: "Explore cryptocurrency prices, market trends, trading volumes, and onchain analytics. Use it to research crypto markets and onchain activity. This entry uses the free, keyless server with shared rate limits; the separate Pro endpoint is not included."
 category: finance
 website_url: https://www.coingecko.com
 help_url: https://docs.coingecko.com/ai-integration/mcp-server

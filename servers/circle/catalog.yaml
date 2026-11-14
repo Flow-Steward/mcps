@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://api.circle.so/mcp.md
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Circle
-description: Explore and manage your Circle community members, spaces, posts, events, courses, and subscriptions.
+description: "Explore and manage your Circle community members, spaces, posts, events, courses, and subscriptions. Use it to work with community content and member activity. Circle Support must approve the full callback URI before a web client can connect, and Admin API plan quotas apply."
 category: cms
 website_url: https://circle.so
 help_url: https://api.circle.so/mcp.md

@@ -1,11 +1,10 @@
 # Reviewed 2026-10-10: https://www.mux.com/docs/integrations/mcp-server
 # User chooses the Mux environment during authorization. Code-mode server (docs search + sandboxed TypeScript execution); query options like ?tools=dynamic or ?resource=video.* narrow the tool set.
-revision: 1
+revision: 2
 source:
   registry: com.mux/mcp
 title: Mux
-description: Upload and manage Mux video assets, live streams, captions, and playback policies, and query Mux Data
-  metrics.
+description: "Upload and manage Mux video assets, live streams, captions, and playback policies, and query Mux Data metrics. Use it to manage video delivery alongside playback and performance data. Choose the Mux environment during authorization. The server provides documentation search and sandboxed TypeScript execution for working with the API."
 category: media
 website_url: https://www.mux.com
 help_url: https://www.mux.com/docs/integrations/mcp-server

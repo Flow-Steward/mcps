@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://support.ironcladapp.com/hc/en-us/articles/39887632957463-Connect-an-MCP-Client-to-Ironclad-MCP-Server
 # Regions: NA1 default; EU1 https://mcp.eu1.ironcladapp.com/mcp (demo host mcp.demo.ironcladapp.com is sandbox, do not list). DCR not supported; probe showed client metadata documents (used by Claude). Vendor officially supports only Claude clients — others need an Ironclad admin-registered OAuth app 
-revision: 1
+revision: 2
 title: Ironclad
-description: Search Ironclad contracts in plain language to find agreement terms, and manage obligations.
+description: "Search Ironclad contracts in plain language to find agreement terms, and manage obligations. Use contract search to locate agreement terms and support obligation follow-up. The vendor officially supports Claude clients; another client needs an Ironclad administrator to register an OAuth app. Use the regional server appropriate to your Ironclad account."
 category: documents
 website_url: https://ironcladapp.com
 help_url: https://support.ironcladapp.com/hc/en-us/articles/39887632957463-Connect-an-MCP-Client-to-Ironclad-MCP-Server

@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://www.lambdatest.com/support/docs/lambdatest-mcp-server/
 # LambdaTest rebranded as TestMu AI; OAuth sign-in redirects to testmuai.com.
-revision: 2
+revision: 3
 source:
   registry: io.github.LambdaTest/mcp
 title: TestMu AI (LambdaTest)
-description: Debug failed automation tests, run HyperExecute jobs, review SmartUI diffs, and run accessibility checks.
+description: "Debug failed automation tests, run HyperExecute jobs, review SmartUI diffs, and run accessibility checks. Use browser and device test results to investigate failures and review visual or accessibility findings. TestMu AI is the current name for LambdaTest, and browser sign-in redirects to testmuai.com."
 category: developer-tools
 website_url: https://www.testmuai.com
 help_url: https://www.lambdatest.com/support/docs/lambdatest-mcp-server/

@@ -1,10 +1,10 @@
 # Reviewed 2026-10-31: https://developers.make.com/mcp-server/connect-using-oauth (OAuth URL is now https://mcp.make.com/v2)
 # User picks organization and scopes on the OAuth consent screen; scenarios must be active with on-demand scheduling to appear as tools. /stateless and /stream path variants exist if connection fails; /sse is legacy SSE. MCP token alternative available in Make profile.
-revision: 3
+revision: 4
 source:
   registry: com.make/mcp-server
 title: Make
-description: Run your on-demand Make scenarios as tools and manage Make organizations, scenarios, and connections.
+description: "Run your on-demand Make scenarios as tools and manage Make organizations, scenarios, and connections. Use existing automation scenarios as callable workflow steps or work with their Make configuration. Scenarios must be active and use on-demand scheduling to appear as tools. Choose the organization and access permissions during OAuth consent."
 category: operations
 website_url: https://www.make.com
 help_url: https://developers.make.com/mcp-server/connect-using-oauth

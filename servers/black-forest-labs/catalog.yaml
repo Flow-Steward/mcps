@@ -1,8 +1,7 @@
 # Reviewed 2026-10-31: https://docs.bfl.ai/api_integration/mcp_integration
-revision: 2
+revision: 3
 title: FLUX (Black Forest Labs)
-description: Generate and edit FLUX images, create variations and video, browse previous generations, and check
-  your BFL credit balance.
+description: "Generate and edit FLUX images, create variations and video, browse previous generations, and check your BFL credit balance. Use past generations and variations to iterate on visual work. Select the BFL organization billed for generations during sign-in; changing the billed organization requires reconnecting."
 category: media
 website_url: https://bfl.ai
 help_url: https://docs.bfl.ai/api_integration/mcp_integration

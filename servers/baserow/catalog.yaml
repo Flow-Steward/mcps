@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://baserow.io/docs/testing/mcp-test-plan
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Baserow
-description: Read and manage rows in Baserow databases using workspace and tool permissions approved for
-  the connection.
+description: "Read and manage rows in Baserow databases using workspace and tool permissions approved for the connection. Use database rows as structured context for reviewing or maintaining workspace records. Select the workspace and permitted tools during OAuth consent; write tools must be explicitly enabled."
 category: data
 website_url: https://baserow.io
 help_url: https://baserow.io/docs/testing/mcp-test-plan

@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://docs.weaviate.io/weaviate/configuration/mcp-server
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Weaviate
-description: Inspect collection schemas, search vector and hybrid data, and modify permitted objects in
-  Weaviate.
+description: "Inspect collection schemas, search vector and hybrid data, and modify permitted objects in Weaviate. Requires Weaviate 1.38 or later. Cloud enables MCP by default, while self-hosted instances must enable it. Connect to your cluster hostname with an API key; write access and role permissions are configured separately."
 category: data
 website_url: https://weaviate.io
 help_url: https://docs.weaviate.io/weaviate/configuration/mcp-server

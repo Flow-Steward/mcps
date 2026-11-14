@@ -1,9 +1,8 @@
 # Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
 # Account authorization and tool execution have not been tested.
-revision: 1
+revision: 2
 title: Mollie
-description: Use Mollie payment, balance, capture, invoice and payment-link tools
-  with your account permissions.
+description: "Use Mollie payment, balance, capture, invoice and payment-link tools with your account permissions. Use it to work with billing and payment information exposed by the connected Mollie account. Available actions depend on the role and permissions granted during authorization."
 category: finance
 website_url: https://www.mollie.com
 help_url: https://docs.mollie.com/docs/mollie-mcp-server

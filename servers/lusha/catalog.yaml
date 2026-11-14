@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://docs.lusha.com/mcp-docs
 # Docs: OAuth only via directory listings in Claude, ChatGPT and Codex; all other clients use the x-api-key header. Input URL /mcp returned 404. Uses Lusha credits. setup_url is a best guess for API Hub.
-revision: 1
+revision: 2
 title: Lusha
-description: Search and enrich B2B contacts and companies with Lusha data for prospecting.
+description: "Search and enrich B2B contacts and companies with Lusha data for prospecting. Enrichment consumes Lusha credits. This connection requires a Lusha API key from API Hub, which requires an Admin or Manager role; browser-only directory integrations use a different sign-in route."
 category: sales
 website_url: https://www.lusha.com
 help_url: https://docs.lusha.com/mcp-docs

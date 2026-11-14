@@ -1,9 +1,8 @@
 # Reviewed 2026-10-31: https://developers.llamaindex.ai/llamaparse/for-agents/mcp/
 # API keys use the matching region and a full Authorization Bearer value.
-revision: 2
+revision: 3
 title: LlamaParse
-description: Parse documents into text and Markdown, extract structured fields, classify and split files, and build
-  and search LlamaCloud indexes.
+description: "Parse documents into text and Markdown, extract structured fields, classify and split files, and build and search LlamaCloud indexes. Use parsing and extraction to turn source documents into searchable or structured data. API keys must match the selected LlamaCloud region, and processing consumes credits. API-key connections must upload files by URL rather than request an upload URL."
 category: documents
 website_url: https://www.llamaindex.ai
 help_url: https://developers.llamaindex.ai/llamaparse/for-agents/mcp/

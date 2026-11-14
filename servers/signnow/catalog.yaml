@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://docs.signnow.com/docs/mcp-hosted-setup
 # Included with paid SignNow plans. Open-source self-hosted variant also exists.
-revision: 1
+revision: 2
 title: SignNow
-description: Send SignNow documents and templates for e-signature, manage invites and signing order, and check signing
-  status.
+description: "Send SignNow documents and templates for e-signature, manage invites and signing order, and check signing status. Use it to coordinate a document signing workflow and follow its progress. The hosted integration is included with paid SignNow plans; a separate self-hosted variant is also available."
 category: documents
 website_url: https://www.signnow.com
 help_url: https://docs.signnow.com/docs/mcp-hosted-setup

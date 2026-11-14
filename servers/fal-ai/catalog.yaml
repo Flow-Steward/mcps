@@ -1,8 +1,7 @@
 # Reviewed 2026-10-31: https://fal.ai/docs/documentation/setting-up/mcp
-revision: 1
+revision: 2
 title: fal.ai
-description: Find generative models, inspect input schemas and pricing, upload inputs, and generate images, video
-  and audio through your fal account.
+description: "Find generative models, inspect input schemas and pricing, upload inputs, and generate images, video and audio through your fal account. Use model discovery and schema inspection to choose a generation model and prepare its inputs before running it. Generations consume your fal account credits. This connects the model-generation MCP server; documentation and Platform MCP servers are separate."
 category: media
 website_url: https://fal.ai
 help_url: https://fal.ai/docs/documentation/setting-up/mcp

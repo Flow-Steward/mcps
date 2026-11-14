@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://developers.openai.com/learn/docs-mcp
 # Read-only documentation server, no auth (initialize answered 200). OpenAI does not host an account/API-management MCP server.
-revision: 1
+revision: 2
 title: OpenAI Developer Docs
-description: Search and read OpenAI developer documentation and API reference for up-to-date guidance.
+description: "Search and read OpenAI developer documentation and API reference for up-to-date guidance. Use documentation search and page reading to check API behavior and implementation guidance while developing. This public server is read-only and requires no authentication. It does not provide OpenAI account management or execute API operations on your behalf."
 category: ai
 website_url: https://openai.com
 help_url: https://developers.openai.com/learn/docs-mcp

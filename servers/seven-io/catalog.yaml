@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://docs.seven.io/en/mcp
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: seven.io
-description: Send and manage messages and work with voice, contacts, lookups, and account data through
-  seven.io.
+description: "Send and manage messages and work with voice, contacts, lookups, and account data through seven.io. Use the messaging surface alongside contact information, number lookups, and account context for communications work."
 category: messaging
 website_url: https://www.seven.io
 help_url: https://docs.seven.io/en/mcp

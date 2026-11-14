@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://motherduck.com/docs/sql-reference/mcp
 # Requests are routed to the nearest regional MCP server automatically. Docs pages disagree on read-only vs read-write; current page describes read-write.
-revision: 1
+revision: 2
 title: MotherDuck
-description: Run SQL queries against MotherDuck and DuckDB databases and explore schemas, tables, and shared data.
+description: "Run SQL queries against MotherDuck and DuckDB databases and explore schemas, tables, and shared data. Use SQL and schema context to explore data and investigate query results. Access is through the MotherDuck service, which routes requests to a nearby regional MCP server."
 category: data
 website_url: https://motherduck.com
 help_url: https://motherduck.com/docs/sql-reference/mcp

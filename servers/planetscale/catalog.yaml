@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://planetscale.com/docs/mcp-server
 # Each client registers as an OAuth application on connect. Service tokens are supported for CI/headless clients.
-revision: 1
+revision: 2
 title: PlanetScale
-description: Inspect PlanetScale organizations, databases, branches, and schemas, review Insights query performance,
-  and run queries.
+description: "Inspect PlanetScale organizations, databases, branches, and schemas, review Insights query performance, and run queries. Use database structure and Insights context to investigate query performance and explore data. The client registers as an OAuth application when connecting."
 category: data
 website_url: https://planetscale.com
 help_url: https://planetscale.com/docs/mcp-server

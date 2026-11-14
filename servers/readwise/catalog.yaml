@@ -1,7 +1,7 @@
 # Reviewed 2026-10-10: https://readwise.io/mcp
-revision: 1
+revision: 2
 title: Readwise
-description: Search, create, and update Readwise highlights and save, tag, and organize Reader documents.
+description: "Search, create, and update Readwise highlights and save, tag, and organize Reader documents. Use saved reading material and highlights as research context, then maintain the tags and organization of Reader documents."
 category: productivity
 website_url: https://readwise.io
 help_url: https://readwise.io/mcp

@@ -1,9 +1,9 @@
 # Reviewed 2026-10-10: https://whimsical.com/learn/integrations/remote-mcp
-revision: 1
+revision: 2
 source:
   registry: com.whimsical/mcp
 title: Whimsical
-description: Create flowcharts, mind maps, and wireframes, and search files in your Whimsical workspace.
+description: "Create and edit flowcharts, mind maps, wireframes, and documents in your Whimsical workspace, and search existing files. Develop visual explanations and revise diagrams alongside their supporting documents."
 category: productivity
 website_url: https://whimsical.com
 help_url: https://whimsical.com/learn/integrations/remote-mcp

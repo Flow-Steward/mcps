@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: vendor docs not found
 # No vendor documentation page found. Endpoint is Metaview-run: protected-resource metadata names https://auth.metaview.ai/. Filled from probe; reviewer should verify.
-revision: 1
+revision: 2
 title: Metaview
-description: Search Metaview interview notes and recruiting conversations to summarize candidates and support hiring
-  decisions.
+description: "Search Metaview interview notes and recruiting conversations to summarize candidates and support hiring decisions. Create reports and note templates, work with sourcing searches, review screening and application data, and manage sequences and job posts. Access follows your Metaview permissions. Some tools change live candidate communications or ATS records, and contact enrichment uses credits."
 category: hr
 website_url: https://www.metaview.ai
 remotes:

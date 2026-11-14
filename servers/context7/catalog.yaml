@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://context7.com/docs/howto/oauth
 # OAuth requires the /mcp/oauth path. The plain https://mcp.context7.com/mcp endpoint instead takes an API key in a CONTEXT7_API_KEY header (key from context7.com dashboard).
-revision: 1
+revision: 2
 title: Context7
-description: Look up current, version-specific documentation and code examples for programming libraries and frameworks.
+description: "Look up current, version-specific documentation and code examples for programming libraries and frameworks. Use it to ground implementation questions in the documentation and examples for the library version you are using. This entry uses the browser-authorized endpoint rather than the separate API-key endpoint."
 category: developer-tools
 website_url: https://context7.com
 help_url: https://context7.com/docs/howto/oauth

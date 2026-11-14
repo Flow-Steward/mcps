@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://mcp.crypto.com/docs
 # Docs say no API keys needed; probe returned 200 without auth. Vendor docs only give setup guides for ChatGPT and Claude and do not print the exact /market-data/mcp path (host only); reviewer should confirm generic-client use.
-revision: 1
+revision: 2
 title: Crypto.com Market Data
-description: Get live cryptocurrency prices, order books, currency conversions, and candlestick charts.
+description: "Get live cryptocurrency prices, order books, currency conversions, and candlestick charts. Use the market data to inspect price movements and liquidity. The documented service does not require an API key."
 category: finance
 website_url: https://crypto.com
 help_url: https://mcp.crypto.com/docs

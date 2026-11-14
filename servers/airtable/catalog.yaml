@@ -1,10 +1,9 @@
 # Reviewed 2026-10-10: https://airtable.com/developers/agents/mcp/getting-started names https://mcp.airtable.com/mcp; sign-in is OAuth with dynamic client registration.
-revision: 2
+revision: 3
 source:
   registry: com.airtable/mcp
 title: Airtable
-description: Read and write Airtable records, inspect base schemas, and create tables and fields in the bases you
-  authorize.
+description: "Read and write Airtable records, inspect base schemas, and create tables and fields in the bases you authorize. Use it to look up operational data, maintain records, or extend a base with tables and fields. Access is limited to the bases you authorize during sign-in, so select the bases needed for the workflow."
 category: data
 website_url: https://www.airtable.com
 help_url: https://airtable.com/developers/agents/mcp/getting-started

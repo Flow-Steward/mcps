@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://www.sanity.io/docs/ai/mcp-server
 # GA (Dec 2025). Works with any MCP client. AS https://mcp.sanity.io has DCR (/register), scope 'global'. Alternative: Sanity API token in Authorization header instead of OAuth. Image tools consume AI credits.
-revision: 1
+revision: 2
 title: Sanity
-description: Query and edit Sanity content, manage documents, schemas and releases, and generate images in your
-  Sanity projects.
+description: "Query and edit Sanity content, manage documents, schemas and releases, and generate images in your Sanity projects. Use it to maintain structured content and release work alongside generated visual assets. Image-generation tools consume Sanity AI credits."
 category: cms
 website_url: https://www.sanity.io
 help_url: https://www.sanity.io/docs/ai/mcp-server

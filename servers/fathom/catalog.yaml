@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://developers.fathom.ai/mcp-docs
 # Sign in with the Fathom account; not to be confused with Fathom Analytics or community Fathom MCP servers.
-revision: 1
+revision: 2
 source:
   registry: ai.fathom.api/mcp
 title: Fathom
-description: Search Fathom meeting recordings and read their transcripts, summaries, and action items.
+description: "Search Fathom meeting recordings and read their transcripts, summaries, and action items. Use meeting transcripts and action items to recover discussion context or prepare a follow-up. Sign in with the Fathom meeting-recording account; this service is separate from Fathom Analytics."
 category: productivity
 website_url: https://fathom.ai
 help_url: https://developers.fathom.ai/mcp-docs

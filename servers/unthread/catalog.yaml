@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://docs.unthread.io/docs/unthread-mcp
 # OAuth 2.0 with PKCE. Service-account alternative: https://api.unthread.io/api/mcp with X-Api-Key header.
-revision: 1
+revision: 2
 title: Unthread
-description: Search support conversations, manage tickets, monitor SLAs, and analyze support metrics in Unthread.
+description: "Search support conversations, manage tickets, monitor SLAs, and analyze support metrics in Unthread. Use conversation history and ticket context for support follow-up, with SLA and metric information for service review. This catalog entry connects through OAuth; the vendor documents a separate service-account endpoint for API-key access."
 category: support
 website_url: https://unthread.io
 help_url: https://docs.unthread.io/docs/unthread-mcp

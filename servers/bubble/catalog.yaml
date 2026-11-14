@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://bubble.io/support/en/articles/17351301-bubble-mcp
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Bubble
-description: Build and edit Bubble applications, workflows, pages, and development data with an AI assistant.
+description: "Build and edit Bubble applications, workflows, pages, and development data with an AI assistant. Use it to develop an app by working on its pages, workflows, and development data together. Browser sign-in uses OAuth client metadata documents."
 category: developer-tools
 website_url: https://bubble.io
 help_url: https://bubble.io/support/en/articles/17351301-bubble-mcp

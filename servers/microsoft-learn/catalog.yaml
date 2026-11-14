@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://learn.microsoft.com/en-us/training/support/mcp
 # Public and free; no authentication.
-revision: 1
+revision: 2
 source:
   registry: com.microsoft/microsoft-learn-mcp
 title: Microsoft Learn
-description: Search Microsoft's official documentation, fetch full articles, and find code samples.
+description: "Search Microsoft's official documentation, fetch full articles, and find code samples. Use it to look up implementation guidance and retrieve the full source article or relevant examples. The public documentation server is free and requires no authentication."
 category: developer-tools
 website_url: https://learn.microsoft.com
 help_url: https://learn.microsoft.com/en-us/training/support/mcp

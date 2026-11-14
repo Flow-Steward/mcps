@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://help.gong.io/docs/enable-supported-ai-tools-for-gong
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Gong
-description: Ask account and deal questions and generate briefs from permitted Gong data.
+description: "Ask account and deal questions and generate briefs from permitted Gong data. Use it to prepare account or deal context from the Gong information you can access. A technical administrator must create a Manual MCP integration with the callback and client credentials, and users need paid Gong seats."
 category: sales
 website_url: https://www.gong.io
 help_url: https://help.gong.io/docs/enable-supported-ai-tools-for-gong

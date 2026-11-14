@@ -1,9 +1,8 @@
 # Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
 # Account authorization and tool execution have not been tested.
-revision: 1
+revision: 2
 title: DeepL
-description: Use DeepL translation, writing, document and glossary tools through its
-  hosted AI connector.
+description: "Use DeepL translation, writing, document and glossary tools through its hosted AI connector. Use the connector for translation and writing work with documents and terminology. Eligible DeepL API customers must contact DeepL to enable AI connectors before connecting."
 category: ai
 website_url: https://www.deepl.com
 help_url: https://support.deepl.com/hc/en-us/articles/28904115065884-Connect-DeepL-to-ChatGPT

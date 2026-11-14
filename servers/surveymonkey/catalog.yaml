@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://help.surveymonkey.com/en/surveymonkey/integrations/llm-connectors/
 # Vendor help names only Claude and ChatGPT and does not print the URL; endpoint from directories plus probe (OAuth+DCR). US-data accounts only; excludes HIPAA and Enhanced Sensitive Data Protection accounts. Reviewer should confirm generic clients work.
-revision: 1
+revision: 2
 title: SurveyMonkey
-description: Create, edit, and search SurveyMonkey surveys and analyze responses.
+description: "Create, edit, and search SurveyMonkey surveys and analyze responses. Add or reorder questions, generate a shareable survey link, retrieve answer data, and get statistical summaries. Account data must be stored in the US; HIPAA-enabled and Enhanced Sensitive Data Protection accounts are excluded. Plan, seat, and role affect available response data and paid features."
 category: marketing
 website_url: https://www.surveymonkey.com
 help_url: https://help.surveymonkey.com/en/surveymonkey/integrations/llm-connectors/

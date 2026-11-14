@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://basecamp.com/ai
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Basecamp
-description: Read and organize Basecamp projects, to-dos, messages, calendars, documents, and files.
+description: "Read and organize Basecamp projects, to-dos, messages, calendars, documents, and files. Use project conversations and to-dos to review ongoing work and keep project information organized. Choose read-only or full access during sign-in."
 category: productivity
 website_url: https://basecamp.com
 help_url: https://basecamp.com/ai

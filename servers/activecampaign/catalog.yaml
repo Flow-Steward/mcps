@@ -1,9 +1,8 @@
 # Reviewed: https://help.activecampaign.com/hc/en-us/articles/22566179229596
 # Vendor help article (Cloudflare-blocked to automated fetch) says to copy the account-unique Remote MCP URL from Settings > Developer; the option reportedly appears only when ActiveCampaign branding is On. URL pattern comes from a secondary source plus an earlier live probe: the per-account host returned 401 with protected-resource metadata, and the same-host authorization server exposes DCR at /ap
-revision: 1
+revision: 2
 title: ActiveCampaign
-description: Manage ActiveCampaign contacts, lists, tags, deals and automations through the account-specific ActiveCampaign
-  MCP server.
+description: "Manage ActiveCampaign contacts, lists, tags, deals and automations through the account-specific ActiveCampaign MCP server. Use the account name from your ActiveCampaign address. The account-specific Remote MCP URL is available in Settings > Developer; connect to that account to work with its marketing and CRM data."
 category: marketing
 website_url: https://www.activecampaign.com/
 help_url: https://help.activecampaign.com/hc/en-us/articles/22566179229596

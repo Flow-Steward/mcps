@@ -1,11 +1,10 @@
 # Reviewed 2026-10-10: https://appwrite.io/docs/tooling/ai/mcp-servers/api
 # Appwrite Cloud only; self-hosted Appwrite needs the local server with an API key.
-revision: 14
+revision: 15
 source:
   registry: io.github.appwrite/mcp
 title: Appwrite
-description: Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the
-  docs.
+description: "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs. Use it to build and administer an application backend alongside the Appwrite documentation. This hosted connection is for Appwrite Cloud; self-hosted Appwrite requires the separate local server and an API key."
 category: developer-tools
 website_url: https://appwrite.io
 help_url: https://appwrite.io/docs/tooling/ai/mcp-servers/api

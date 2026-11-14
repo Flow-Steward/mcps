@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://investor.factset.com/news-releases/news-release-details/factset-meets-demand-ai-ready-data-first-announce-mcp-sans
 # Could not find a vendor doc page naming the endpoint (only directories + press release, which was 403 to fetch). Requires a FactSet subscription; data limited to the firm's entitlements.
-revision: 1
+revision: 2
 title: FactSet
-description: Query FactSet fundamentals, consensus estimates, prices, ownership, M&A, and people data.
+description: "Query FactSet fundamentals, consensus estimates, prices, ownership, M&A, and people data. Use it to research companies and markets using your firm's licensed data. A FactSet subscription is required, and returned data is limited to the firm's entitlements."
 category: finance
 website_url: https://www.factset.com
 help_url: https://investor.factset.com/news-releases/news-release-details/factset-meets-demand-ai-ready-data-first-announce-mcp-sans

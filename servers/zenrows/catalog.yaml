@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://docs.zenrows.com/mcp/overview
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Zenrows
-description: Scrape protected pages, extract structured JSON, capture screenshots or PDFs, run batch and
-  crawl jobs, and automate browser interactions.
+description: "Scrape protected pages, extract structured JSON, capture screenshots or PDFs, run batch and crawl jobs, and automate browser interactions. Use page content, captures, and extraction jobs for web data collection. Requires a Zenrows API key; some extraction and batch features have beta or plan-specific limits."
 category: data
 website_url: https://www.zenrows.com
 help_url: https://docs.zenrows.com/mcp/overview

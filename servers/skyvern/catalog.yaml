@@ -1,10 +1,9 @@
 # Reviewed 2026-10-10: https://www.skyvern.com/docs/integrations/mcp
 # Registry record io.github.Skyvern-AI/skyvern declares an API-key header; this entry lists the OAuth endpoint only.
 # OAuth via standard MCP discovery (no static client). Headless alternative: Skyvern API key in x-api-key header (Settings in Skyvern dashboard). Skyvern Cloud usage is billed.
-revision: 1
+revision: 2
 title: Skyvern
-description: 'Automate browser tasks: navigate sites, click, fill forms, extract data, and run Skyvern workflows
-  in the cloud.'
+description: "Automate browser tasks: navigate sites, click, fill forms, extract data, and run Skyvern workflows in the cloud. Use it to execute web tasks through managed browser interaction or existing Skyvern workflows. This entry connects to Skyvern Cloud, where usage is billed."
 category: operations
 website_url: https://www.skyvern.com
 help_url: https://www.skyvern.com/docs/integrations/mcp

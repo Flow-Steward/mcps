@@ -1,10 +1,9 @@
 # Reviewed 2026-10-10: https://posthog.com/docs/model-context-protocol
 # Registry record io.github.PostHog/mcp declares an API-key header; this entry lists the OAuth endpoint only.
 # EU endpoint: https://mcp-eu.posthog.com/mcp. Personal API key with 'MCP Server' preset can be used as Bearer if OAuth is unsupported. Some AI-powered tools bill as PostHog AI spend and need AI data processing enabled.
-revision: 1
+revision: 2
 title: PostHog
-description: Query product analytics, insights, feature flags, experiments, and error tracking data in your PostHog
-  projects.
+description: "Query product analytics, insights, feature flags, experiments, and error tracking data in your PostHog projects. Use analytics and project context to investigate product behavior and errors. Some AI-powered tools require AI data processing to be enabled and are billed as PostHog AI spend."
 category: data
 website_url: https://posthog.com
 help_url: https://posthog.com/docs/model-context-protocol

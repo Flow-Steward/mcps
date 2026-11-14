@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://business-support.udemy.com/hc/articles/34213384429335/
 # Requires Udemy Business with the AI Connectors (MCP Server) feature enabled by an org admin (Enterprise plan + paid add-on per third-party sources). Support article returned 403 to fetch; endpoint confirmed via search snippet of that page.
-revision: 1
+revision: 2
 title: Udemy Business
-description: Search Udemy Business courses and labs and surface learning content for a topic or skill.
+description: "Search Udemy Business courses and labs and surface learning content for a topic or skill. Use topic or skill searches to find relevant learning material. Requires Udemy Business with the AI Connectors MCP Server feature enabled by an organization administrator."
 category: hr
 website_url: https://business.udemy.com
 help_url: https://business-support.udemy.com/hc/articles/34213384429335/

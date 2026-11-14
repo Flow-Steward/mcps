@@ -1,9 +1,8 @@
 # Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
 # Account authorization and tool execution have not been tested.
-revision: 1
+revision: 2
 title: Tripletex
-description: Work with supported Tripletex time entries, customers and invoicing tools
-  through its hosted MCP server.
+description: "Work with supported Tripletex time entries, customers and invoicing tools through its hosted MCP server. Use time-entry and customer context for the supported invoicing workflows. This beta has limited coverage, and interactive sign-in may need to be repeated after session expiry."
 category: finance
 website_url: https://www.tripletex.no
 help_url: https://github.com/Tripletex/tripletex-mcp

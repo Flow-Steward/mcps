@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://github.com/EduBase/MCP
 # Vendor README recommends the EduBase-hosted server for www.edubase.net users and shows the pattern https://domain.edubase.net/mcp; the exact www path is not spelled out. OAuth with dynamic registration, or a Bearer token (base64 of App ID:secret) as an alternative. Instance-specific domains exist fo
-revision: 4
+revision: 5
 source:
   registry: io.github.EduBase/MCP
 title: EduBase
-description: Create and manage EduBase quizzes, exams, questions, users, and classes on the EduBase e-learning platform.
+description: "Create and manage EduBase quizzes, exams, questions, users, and classes on the EduBase e-learning platform. Use quizzes, question content, and class records to support learning and assessment workflows. This connection targets the hosted EduBase service at www.edubase.net."
 category: other
 website_url: https://www.edubase.net
 help_url: https://github.com/EduBase/MCP

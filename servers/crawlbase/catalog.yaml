@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://crawlbase.com/docs/ai-mcp
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Crawlbase
-description: Crawl URLs as HTML or Markdown, render screenshots, and retrieve, enumerate or delete previously
-  stored crawled pages.
+description: "Crawl URLs as HTML or Markdown, render screenshots, and retrieve, enumerate or delete previously stored crawled pages. Use crawled pages and stored results as source material for web research or content processing. Requires a Crawlbase API token."
 category: data
 website_url: https://crawlbase.com
 help_url: https://crawlbase.com/docs/ai-mcp

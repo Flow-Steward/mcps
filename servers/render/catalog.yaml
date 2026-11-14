@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://render.com/docs/mcp-server
 # OAuth also offered (AS api.render.com) but without DCR/client metadata; works only for Render's own Claude Code/Codex/Cursor plugins, so use the API key. API keys are account-wide across workspaces.
-revision: 1
+revision: 2
 title: Render
-description: Create and inspect Render services and Postgres databases, trigger deploys, read logs and metrics,
-  and update env vars.
+description: "Create and inspect Render services and Postgres databases, trigger deploys, read logs and metrics, and update env vars. Use deployment context, service logs and metrics to investigate an application or make supported infrastructure changes. Supply a Render API key from Account Settings > API Keys. Keys are account-wide across workspaces, so the connection is not limited to a single workspace."
 category: developer-tools
 website_url: https://render.com
 help_url: https://render.com/docs/mcp-server

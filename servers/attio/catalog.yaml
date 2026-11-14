@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://attio.com/apps/mcp
 # Acts as the signed-in Attio user with that user's workspace access.
-revision: 1
+revision: 2
 title: Attio
-description: Look up and update Attio contacts, companies, and deals, search pipelines, log notes, and create tasks.
+description: "Look up and update Attio contacts, companies, and deals, search pipelines, log notes, and create tasks. Use it to prepare account context, maintain CRM records, and record follow-up work. It acts as the signed-in user and follows that user's workspace access."
 category: crm
 website_url: https://attio.com
 help_url: https://attio.com/apps/mcp

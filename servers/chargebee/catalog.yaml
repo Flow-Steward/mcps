@@ -1,9 +1,8 @@
 # Reviewed: https://www.chargebee.com/docs/billing/2.0/ai-in-chargebee/custom-mcp-server
 # US data center only in this template; EU sites use https://{site}.mcp.eu.chargebee.com/{server_slug} and AU sites https://{site}.mcp.au.chargebee.com/{server_slug} (would need separate entries, wildcards *.mcp.eu.chargebee.com / *.mcp.au.chargebee.com). knowledge_base_agent is public and needs no key (probe: initialize returned 200, protocol 2025-11-25). OAuth also exists but needs a site-issued c
-revision: 1
+revision: 2
 title: Chargebee
-description: Look up Chargebee customers, subscriptions, invoices and credit notes, or run your custom Chargebee
-  MCP server tools.
+description: "Look up Chargebee customers, subscriptions, invoices and credit notes, or run your custom Chargebee MCP server tools. Use billing records to investigate a subscription or invoice. This connection targets the US data center and a selected server slug. It requires an MCP API key for that server, rather than the REST API Basic-auth key."
 category: finance
 website_url: https://www.chargebee.com/
 help_url: https://www.chargebee.com/docs/billing/2.0/ai-in-chargebee/custom-mcp-server

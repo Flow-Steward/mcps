@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://quartr.com/mcp
 # Vendor product page does not print the endpoint (directories only). Included with Quartr Pro subscription; vendor says it works with Claude, Codex, or any MCP client.
-revision: 1
+revision: 2
 title: Quartr
-description: Pull earnings call transcripts, filings, and presentation slides for public companies.
+description: "Pull earnings call transcripts, filings, and presentation slides for public companies. Use company disclosures and earnings materials as sources for financial research. Access is included with a Quartr Pro subscription."
 category: finance
 website_url: https://quartr.com
 help_url: https://quartr.com/mcp

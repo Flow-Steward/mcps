@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://developers.binance.com/en/docs/agent-native/mcp-server/agentic
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Binance
-description: Read Binance market and account data and access permitted Agentic trading tools.
+description: "Read Binance market and account data and access permitted Agentic trading tools. Availability depends on your Binance account and region. Account actions use an Agentic sub-account and the scopes approved for that connection; this is not unrestricted access to a main trading account."
 category: finance
 website_url: https://www.binance.com
 help_url: https://developers.binance.com/en/docs/agent-native/mcp-server/agentic

@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://www.contentful.com/developers/docs/tools/mcp-server/
 # EU-provisioned orgs use https://mcp.eu.contentful.com/mcp. The Contentful MCP app must be installed in each space/environment to expose; user picks spaces/environments during consent. AS mcp.contentful.com offers DCR.
-revision: 1
+revision: 2
 title: Contentful
-description: Read and write Contentful entries, manage content models and assets, and invoke AI Actions across spaces
-  and environments.
+description: "Read and write Contentful entries, manage content models and assets, and invoke AI Actions across spaces and environments. Use space and environment context to maintain structured content. Install the Contentful MCP app in each space and environment you want to expose, then select them during consent."
 category: cms
 website_url: https://www.contentful.com
 help_url: https://www.contentful.com/developers/docs/tools/mcp-server/

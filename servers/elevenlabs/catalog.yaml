@@ -1,9 +1,8 @@
 # Reviewed 2026-10-31: https://elevenlabs.io/mcp
 # Existing OAuth settings and endpoint retained; creative tools depend on workspace access.
-revision: 2
+revision: 3
 title: ElevenLabs
-description: Manage ElevenLabs voice agents and conversations, and generate speech, music, sound effects, images
-  and video from your workspace.
+description: "Manage ElevenLabs voice agents and conversations, and generate speech, music, sound effects, images and video from your workspace. Use agent and conversation management alongside creative generation in the connected workspace. Available creative tools depend on workspace access, so the media operations exposed to the assistant can differ between accounts."
 category: ai
 website_url: https://elevenlabs.io
 help_url: https://elevenlabs.io/mcp

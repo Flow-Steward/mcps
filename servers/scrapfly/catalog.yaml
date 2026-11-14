@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://scrapfly.io/docs/mcp
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Scrapfly
-description: Scrape protected and JavaScript-rendered pages, extract structured data, capture screenshots,
-  and interact with managed browser sessions.
+description: "Scrape protected and JavaScript-rendered pages, extract structured data, capture screenshots, and interact with managed browser sessions. Use it to collect page content, screenshots, or structured extraction results as part of a web automation. Requires a Scrapfly API key supplied as a Bearer token."
 category: data
 website_url: https://scrapfly.io
 help_url: https://scrapfly.io/docs/mcp

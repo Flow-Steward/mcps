@@ -1,9 +1,8 @@
 # Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
 # Account authorization and tool execution have not been tested.
-revision: 1
+revision: 2
 title: Qonto
-description: Read Qonto financial data and manage supported invoicing, transaction
-  and card workflows.
+description: "Read Qonto financial data and manage supported invoicing, transaction and card workflows. Use it to review business finances alongside supported operational records. The server cannot send money, some actions require human approval, and the separate multi-organization route is read-only."
 category: finance
 website_url: https://qonto.com
 help_url: https://docs.qonto.com/mcp/install/quickstart

@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview
 # Salesforce Hosted MCP Servers (GA April 2026 per secondary sources; v1-beta.2 path retired). Requires an External Client App in the org (classic Connected Apps not supported), with the client's callback URL. Other servers: platform/sobject-reads (read-only, recommended default), sobject-mutations, s
-revision: 1
+revision: 2
 title: Salesforce
-description: Query, create, update and delete Salesforce records with the signed-in user's permissions and sharing
-  rules.
+description: "Query, create, update and delete Salesforce records with the signed-in user's permissions and sharing rules. Use CRM records for lookups and supported record maintenance while respecting Salesforce sharing rules. The organization must provide an External Client App with the client’s callback URL; classic Connected Apps are not supported by this hosted MCP setup."
 category: crm
 website_url: https://www.salesforce.com
 help_url: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview

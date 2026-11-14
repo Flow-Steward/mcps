@@ -1,11 +1,10 @@
 # Reviewed 2026-10-10: https://docs.cloud.google.com/compute/docs/use-compute-engine-mcp
 # User must create a Google OAuth client ID in their Google Cloud project, enable the MCP server per project (gcloud beta services mcp enable compute.googleapis.com), and hold roles/mcp.toolUser plus Compute IAM roles. Read-only scope https://www.googleapis.com/auth/compute.read-only is an option.
-revision: 1
+revision: 2
 source:
   registry: com.googleapis.compute/mcp
 title: Google Compute Engine
-description: List, create, start, stop, and inspect Compute Engine VM instances, disks, snapshots, and instance
-  templates.
+description: "List, create, start, stop, and inspect Compute Engine VM instances, disks, snapshots, and instance templates. Use instance and storage context to operate Google Cloud compute resources. Enable the Compute Engine MCP server in the project, register your own Google OAuth client, and grant both MCP tool-user and relevant Compute IAM roles."
 category: it
 website_url: https://cloud.google.com/compute
 help_url: https://docs.cloud.google.com/compute/docs/use-compute-engine-mcp

@@ -1,9 +1,8 @@
 # Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
 # Account authorization and tool execution have not been tested.
-revision: 1
+revision: 2
 title: Spendesk
-description: Read Spendesk expenses and use supported spend-management actions according
-  to company permissions.
+description: "Read Spendesk expenses and use supported spend-management actions according to company permissions. Use expense context to review company spending. An administrator must enable MCP access and its permissions. Write tools are beta and disabled by default."
 category: finance
 website_url: https://www.spendesk.com
 help_url: https://developer.spendesk.com/reference/mcp-set-up-claude-chatgpt-dust

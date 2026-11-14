@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://support.pendo.io/hc/en-us/articles/41102236924955
 # A Pendo subscription admin must enable it (Settings > Subscription settings > AI access; write tools are a separate toggle). Region endpoints: US https://app.pendo.io/mcp/v0/shttp (default), US1 https://us1.app.pendo.io/mcp/v0/shttp, EU https://app.eu.pendo.io/mcp/v0/shttp, JP https://app.jpn.pendo.
-revision: 1
+revision: 2
 title: Pendo
-description: Query Pendo product analytics, including visitor and account metadata, feature and page usage, and
-  guides.
+description: "Query Pendo product analytics, including visitor and account metadata, feature and page usage, and guides. Use usage and visitor context to investigate product adoption. A subscription administrator must enable AI access, and write tools have a separate toggle. This entry connects to the default US endpoint."
 category: data
 website_url: https://www.pendo.io
 help_url: https://support.pendo.io/hc/en-us/articles/41102236924955

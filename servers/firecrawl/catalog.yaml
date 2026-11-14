@@ -1,9 +1,8 @@
 # Reviewed 2026-11-05: https://docs.firecrawl.dev/mcp-server/keyless
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Firecrawl
-description: Search the web, scrape pages, and parse documents with Firecrawl; an API key unlocks plan-dependent
-  tools and limits.
+description: "Search the web, scrape pages, and parse documents with Firecrawl; an API key unlocks plan-dependent tools and limits. Use search results, pages, and documents as source material for research or extraction. Keyless access has daily limits; API-key tools depend on the team plan and policy."
 category: data
 website_url: https://www.firecrawl.dev
 help_url: https://docs.firecrawl.dev/mcp-server/keyless

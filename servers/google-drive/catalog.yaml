@@ -2,10 +2,9 @@
 # Needs the Developer Preview Program, a Google Cloud project with the MCP service enabled,
 # and the user's own OAuth client (Google offers no dynamic client registration).
 # Scopes and authorization parameters carried over unchanged from Flow Steward's former template.
-revision: 2
+revision: 3
 title: Google Drive
-description: Search, read, and create files in Google Drive, limited to files the connection opens or
-  creates for writing.
+description: "Search, read, and create files in Google Drive, limited to files the connection opens or creates for writing. Use it to retrieve document context and create files within the authorized file access. Requires the Google Workspace Developer Preview Program, a Google Cloud project with the MCP service enabled, and your own OAuth client."
 category: documents
 website_url: https://workspace.google.com
 help_url: https://developers.google.com/workspace/guides/configure-mcp-servers

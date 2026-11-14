@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://docs.wati.io/reference/mcp
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: WATI
-description: Manage WATI contacts, conversations, messages, campaigns, templates, segments, and webhooks.
+description: "Manage WATI contacts, conversations, messages, campaigns, templates, segments, and webhooks. Use customer and conversation context for messaging workflows. Select the region of your WATI workspace; available tools depend on the account role, plan, and channel."
 category: messaging
 website_url: https://www.wati.io
 help_url: https://docs.wati.io/reference/mcp

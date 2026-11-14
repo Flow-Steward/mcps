@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://github.com/cbinsights/cbi-mcp-server
 # Only vendor-owned mention found is the deprecation notice in CB Insights' GitHub repo pointing to mcp.cbinsights.com (host only, no path). Requires a CB Insights subscription.
-revision: 1
+revision: 2
 title: CB Insights
-description: Research private companies, markets, investors, and deals with CB Insights data and ChatCBI.
+description: "Research private companies, markets, investors, and deals with CB Insights data and ChatCBI. Use it to investigate company and market questions using licensed CB Insights intelligence. Requires licensed MCP access, with contractual tool-call caps and possible overage charges."
 category: finance
 website_url: https://www.cbinsights.com
 help_url: https://github.com/cbinsights/cbi-mcp-server

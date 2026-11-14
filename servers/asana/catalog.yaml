@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://developers.asana.com/docs/using-asanas-mcp-server
 # V2 uses OAuth pre-registration: create an app in the Asana developer console for client ID/secret (no DCR). Admins can allow/block MCP clients via App Management. V1 /sse server deprecated.
-revision: 1
+revision: 2
 title: Asana
-description: Search, create, and update Asana tasks, projects, and comments in your workspace.
+description: "Search, create, and update Asana tasks, projects, and comments in your workspace. Use workspace context to organize project work and keep task discussions up to date. Register an Asana developer app for the connection; workspace administrators can allow or block MCP clients."
 category: productivity
 website_url: https://asana.com
 help_url: https://developers.asana.com/docs/using-asanas-mcp-server

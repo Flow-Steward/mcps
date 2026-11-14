@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://docs.parallel.ai/search/search-mcp
 # Docs list https://search.parallel.ai/mcp (anonymous, lower limits; optional 'Authorization: Bearer <Parallel API key>' for higher limits) and https://search.parallel.ai/mcp-oauth (OAuth or API key required). Input host search-mcp.parallel.ai is listed in the MCP quickstart but not on the Search MCP 
-revision: 1
+revision: 2
 title: Parallel Search
-description: Search the web and fetch page content for AI agents using Parallel's search API.
+description: "Search the web and fetch page content for AI agents using Parallel's search API. Use retrieved page content as source material for a web research task. This entry connects to the anonymous endpoint with lower request limits; the separate OAuth endpoint requires authorization."
 category: ai
 website_url: https://parallel.ai
 help_url: https://docs.parallel.ai/search/search-mcp

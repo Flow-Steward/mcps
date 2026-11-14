@@ -1,9 +1,8 @@
 # Reviewed 2026-10-10: https://www.mercadopago.com.ar/developers/en/docs/mcp-server/overview
 # Beta. OAuth (DCR at /oauth/register/mcp; scopes read/write/offline_access) or Authorization: Bearer <Access Token> (app/credential tools unavailable with token). Country chosen at OAuth. Developer-integration oriented tools.
-revision: 1
+revision: 2
 title: Mercado Pago
-description: Search Mercado Pago developer docs, manage applications and credentials, and get integration guidance
-  for payments.
+description: "Search Mercado Pago developer docs, manage applications and credentials, and get integration guidance for payments. Use it to develop a payment integration using documentation and application setup tools. This beta connection uses browser OAuth; the alternative access-token route does not expose application and credential tools."
 category: finance
 website_url: https://www.mercadopago.com
 help_url: https://www.mercadopago.com.ar/developers/en/docs/mcp-server/overview

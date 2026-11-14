@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://raygun.com/documentation/product-guides/raygun-mcp-server/
 # Requires an active Raygun plan; each OAuth connection is tied to one plan. Personal Access Token as Bearer header is an alternative.
-revision: 1
+revision: 2
 source:
   registry: io.github.MindscapeHQ/mcp-server-raygun
 title: Raygun
-description: Investigate crash reports, real user monitoring, APM traces, and deployments in your Raygun account.
+description: "Investigate crash reports, real user monitoring, APM traces, and deployments in your Raygun account. Use error and performance context to investigate issues around deployments. Requires an active Raygun plan; each OAuth connection is tied to one plan."
 category: developer-tools
 website_url: https://raygun.com
 help_url: https://raygun.com/documentation/product-guides/raygun-mcp-server/

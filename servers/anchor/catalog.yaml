@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://help.sayanchor.com/en/articles/15002538-claude-connector
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Anchor
-description: Manage client contacts, proposals, agreements, invoices, and payouts in your Anchor business.
+description: "Manage client contacts, proposals, agreements, invoices, and payouts in your Anchor business. Use these records to work through client billing from proposals and agreements to invoices and payouts. Requires an active Anchor Service Provider account; select the business during authorization."
 category: finance
 website_url: https://www.sayanchor.com
 help_url: https://help.sayanchor.com/en/articles/15002538-claude-connector

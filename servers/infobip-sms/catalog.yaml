@@ -1,10 +1,10 @@
 # Reviewed 2026-10-10: https://www.infobip.com/docs/mcp
 # Infobip runs one MCP server per product (e.g. /sms, /whatsapp, /voice, /2fa, /people, /search); this entry is SMS only. OAuth 2.1 or API key header 'Authorization: App <key>' (key needs sms:message:send scope). Docs mark provisioning as early access. Streamable HTTP; /sse suffix for SSE.
-revision: 1
+revision: 2
 source:
   registry: com.infobip/mcp
 title: Infobip SMS
-description: Send SMS messages and check delivery reports and message logs through your Infobip account.
+description: "Send SMS messages and check delivery reports and message logs through your Infobip account. Use delivery reports and logs to investigate SMS communication. This preview connection exposes SMS only; Infobip provides separate servers for its other messaging products."
 category: messaging
 website_url: https://www.infobip.com
 help_url: https://www.infobip.com/docs/mcp

@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://developer.morningstar.com/content/documentation/morningstar-ai-integrations/morningstar-mcp-server/overview/morningstar-mcp-server
 # Requires a licensed Morningstar account.
-revision: 1
+revision: 2
 title: Morningstar
-description: Search Morningstar analyst research, articles, and investment data for funds, stocks, and markets.
+description: "Search Morningstar analyst research, articles, and investment data for funds, stocks, and markets. Retrieve research and supporting data available through your licensed Morningstar account."
 category: finance
 website_url: https://www.morningstar.com
 help_url: https://developer.morningstar.com/content/documentation/morningstar-ai-integrations/morningstar-mcp-server/overview/morningstar-mcp-server

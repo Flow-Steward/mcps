@@ -1,9 +1,8 @@
 # Reviewed 2026-10-29: vendor documentation and unauthenticated OAuth discovery.
 # Account authorization and tool execution have not been tested.
-revision: 1
+revision: 2
 title: Holded
-description: Query Holded business data and use the invoice, contact and management
-  tools permitted by your role.
+description: "Query Holded business data and use the invoice, contact and management tools permitted by your role. Use business records for invoice and contact context. Enable API access first. Analyst access is read-only; Operator and custom permissions determine write access."
 category: finance
 website_url: https://www.holded.com
 help_url: https://www.holded.com/developers/mcp

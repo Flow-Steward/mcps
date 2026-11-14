@@ -1,8 +1,8 @@
 # Reviewed 2026-10-10: https://razorpay.com/docs/mcp-server/
 # Docs support DCR (or a manually issued client id via Razorpay support). Alternative: merchant token = base64(key_id:key_secret) in an Authorization header. The /sse endpoint was deprecated Aug 2025. India-focused payments platform.
-revision: 1
+revision: 2
 title: Razorpay
-description: Look up Razorpay payments, orders, refunds, settlements, and payment links in a merchant account.
+description: "Look up Razorpay payments, orders, refunds, settlements, and payment links in a merchant account. Use payment, refund and settlement information to investigate merchant transactions and payment-link activity. Connect the intended Razorpay merchant account through OAuth; the listed surface is for looking up account payment data."
 category: finance
 website_url: https://razorpay.com
 help_url: https://razorpay.com/docs/mcp-server/

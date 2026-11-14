@@ -1,8 +1,8 @@
 # Reviewed 2026-11-05: https://www.canva.dev/docs/apps/quickstart/
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
-revision: 1
+revision: 2
 title: Canva
-description: Create, find, edit, and export Canva designs and manage design assets from an AI assistant.
+description: "Create, find, edit, and export Canva designs and manage design assets from an AI assistant. Use existing designs and assets as a starting point for visual content, then export the result. Requires your own Canva Developer Portal app with Canva MCP enabled and a registered redirect URL."
 category: media
 website_url: https://www.canva.com
 help_url: https://www.canva.dev/docs/apps/quickstart/

@@ -1,9 +1,8 @@
 # Reviewed 2026-10-29: https://bird.com/docs/ai/mcp-server
 # OAuth discovery checked; no authenticated account test.
-revision: 12
+revision: 13
 title: Bird
-description: Use Bird messaging and customer-platform tools from its official hosted
-  MCP server.
+description: "Use Bird messaging and customer-platform tools from its official hosted MCP server. The hosted service excludes account sign-up and local file uploads. Existing media references can be used; uploading files requires the local server."
 category: messaging
 website_url: https://bird.com
 help_url: https://bird.com/docs/ai/mcp-server
