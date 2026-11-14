@@ -2,11 +2,7 @@
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
 revision: 2
 title: Shortcut
-description: >-
-  Find, create, and update Shortcut stories, epics, iterations, and documents in authorized
-  workspaces. Use stories, epics and iterations to organize delivery work and keep related documents
-  in the same workspace context. Connect the Shortcut workspaces intended for the workflow through
-  OAuth authorization.
+description: "Find, create, and update Shortcut stories, epics, iterations, and documents in authorized workspaces. Use stories, epics and iterations to organize delivery work and keep related documents in the same workspace context. Connect the Shortcut workspaces intended for the workflow through OAuth authorization."
 category: productivity
 website_url: https://www.shortcut.com
 help_url: https://www.shortcut.com/help/integrations/mcp-server/

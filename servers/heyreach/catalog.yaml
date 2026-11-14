@@ -2,11 +2,7 @@
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
 revision: 2
 title: HeyReach
-description: >-
-  Review LinkedIn outreach campaigns, manage leads and lists, and access workspace inbox
-  conversations. Use campaign, lead and inbox context together when reviewing LinkedIn outreach.
-  Supply a HeyReach workspace MCP API key. Each key grants access to a single workspace, so use the
-  key for the workspace intended for this connection.
+description: "Review LinkedIn outreach campaigns, manage leads and lists, and access workspace inbox conversations. Use campaign, lead and inbox context together when reviewing LinkedIn outreach. Supply a HeyReach workspace MCP API key. Each key grants access to a single workspace, so use the key for the workspace intended for this connection."
 category: sales
 website_url: https://www.heyreach.io
 help_url: https://docs.heyreach.io/mcp/mcp-connector

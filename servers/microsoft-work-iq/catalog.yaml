@@ -2,12 +2,7 @@
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
 revision: 2
 title: Microsoft Work IQ
-description: >-
-  Access Microsoft 365 work context across mail, meetings, Teams messages and OneDrive or SharePoint
-  documents. Use Microsoft 365 context to answer work questions across these sources. Requires an
-  enabled tenant, registered Entra client, administrator consent for WorkIQAgent.Ask, Copilot
-  Credits billing and a Work IQ spending policy. Available tools, including any Excel operations,
-  must be checked after sign-in.
+description: "Access Microsoft 365 work context across mail, meetings, Teams messages and OneDrive or SharePoint documents. Use Microsoft 365 context to answer work questions across these sources. Requires an enabled tenant, registered Entra client, administrator consent for WorkIQAgent.Ask, Copilot Credits billing and a Work IQ spending policy. Available tools, including any Excel operations, must be checked after sign-in."
 category: productivity
 website_url: https://www.microsoft.com/microsoft-365
 help_url: https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq/mcp/retrieve

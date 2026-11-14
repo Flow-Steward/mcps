@@ -2,11 +2,7 @@
 # OAuth 2.0 + PKCE; during sign-in the user enters a CoinDesk Data API key (from developers.coindesk.com), so a CoinDesk Data account is required.
 revision: 2
 title: CoinDesk Data
-description: >-
-  Get crypto spot, index, futures, options, on-chain DEX data, and CoinDesk news headlines. Use
-  market and news data for crypto research across spot and derivatives markets, with on-chain DEX
-  coverage where available. A CoinDesk Data account and API key are required; the sign-in flow asks
-  for that key.
+description: "Get crypto spot, index, futures, options, on-chain DEX data, and CoinDesk news headlines. Use market and news data for crypto research across spot and derivatives markets, with on-chain DEX coverage where available. A CoinDesk Data account and API key are required; the sign-in flow asks for that key."
 category: finance
 website_url: https://data.coindesk.com
 help_url: https://mcp.coindesk.com/

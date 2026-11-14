@@ -4,11 +4,7 @@
 # Scopes and authorization parameters carried over unchanged from Flow Steward's former template.
 revision: 3
 title: Google Docs
-description: >-
-  Read and edit Google Docs documents: find a document, read its content, and write changes back.
-  Use document content as working context and write edits back to the source document. This Google
-  Workspace Developer Preview requires program access, a Google Cloud project with the MCP service
-  enabled, and your own OAuth client; Google does not provide dynamic client registration.
+description: "Read and edit Google Docs documents: find a document, read its content, and write changes back. Use document content as working context and write edits back to the source document. This Google Workspace Developer Preview requires program access, a Google Cloud project with the MCP service enabled, and your own OAuth client; Google does not provide dynamic client registration."
 category: documents
 website_url: https://workspace.google.com
 help_url: https://developers.google.com/workspace/guides/configure-mcp-servers

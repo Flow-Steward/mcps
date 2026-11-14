@@ -2,11 +2,7 @@
 # Regional endpoints and client metadata registration documented by Typeform; OAuth discovery checked without account access.
 revision: 3
 title: Typeform
-description: >-
-  Create and edit Typeform forms, read responses and insights, and manage workspaces and webhooks
-  from an AI assistant. Use form and response data to maintain questionnaires and analyze collected
-  answers, with workspace and webhook management for the surrounding workflow. Choose the endpoint
-  matching your account’s hosting region. The connection uses OAuth client metadata and PKCE.
+description: "Create and edit Typeform forms, read responses and insights, and manage workspaces and webhooks from an AI assistant. Use form and response data to maintain questionnaires and analyze collected answers, with workspace and webhook management for the surrounding workflow. Choose the endpoint matching your account’s hosting region. The connection uses OAuth client metadata and PKCE."
 category: marketing
 website_url: https://www.typeform.com
 help_url: https://www.typeform.com/developers/mcp/

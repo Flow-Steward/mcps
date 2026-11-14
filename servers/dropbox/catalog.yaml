@@ -2,12 +2,7 @@
 # DCR only for a trusted client set; other clients create a Scoped/Full Dropbox app and add their redirect URI. Open beta. Team admins may block app connections. Separate Dash server at https://mcp.dropbox.com/dash.
 revision: 2
 title: Dropbox
-description: >-
-  Browse Dropbox folders, read file metadata and contents, and manage shared links and file requests
-  from an AI assistant. Use folder and file access to locate reference material and work with
-  sharing or file collection. This is a preview. Generic OAuth clients need their own Dropbox app
-  and registered callback URL because dynamic registration is limited to trusted clients; team
-  administrators may block connections.
+description: "Browse Dropbox folders, read file metadata and contents, and manage shared links and file requests from an AI assistant. Use folder and file access to locate reference material and work with sharing or file collection. This is a preview. Generic OAuth clients need their own Dropbox app and registered callback URL because dynamic registration is limited to trusted clients; team administrators may block connections."
 category: documents
 website_url: https://www.dropbox.com
 help_url: https://help.dropbox.com/integrations/connect-dropbox-mcp-server

@@ -2,11 +2,7 @@
 # Main server covers 27 modules; per-module servers at https://mcp.brevo.com/v1/brevo_<module>/mcp (e.g. brevo_contacts). Server also advertises an OAuth AS with DCR at mcp.brevo.com but docs only describe the bearer token.
 revision: 2
 title: Brevo
-description: >-
-  Manage Brevo contacts, lists, email campaigns, deals, and transactional templates from an AI
-  assistant. Bring contact and campaign work together with sales deals and transactional email
-  templates. Create a Brevo API key with the MCP option enabled under Account > SMTP & API > API
-  Keys, then supply it as the connection credential.
+description: "Manage Brevo contacts, lists, email campaigns, deals, and transactional templates from an AI assistant. Bring contact and campaign work together with sales deals and transactional email templates. Create a Brevo API key with the MCP option enabled under Account > SMTP & API > API Keys, then supply it as the connection credential."
 category: marketing
 website_url: https://www.brevo.com
 help_url: https://developers.brevo.com/docs/mcp-protocol

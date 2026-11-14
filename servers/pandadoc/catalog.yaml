@@ -2,10 +2,7 @@
 # Public API rate limits and plan document limits apply. AS metadata at https://mcp.pandadoc.com/.well-known/oauth-authorization-server has registration_endpoint (DCR); no PRM document found, endpoint answers 401 without token.
 revision: 2
 title: PandaDoc
-description: >-
-  Search templates, create documents, send them for e-signature and track their status in PandaDoc.
-  Use templates to prepare a document, send it for signature and follow its status through the
-  signing workflow. Public API rate limits and the connected account’s plan document limits apply.
+description: "Search templates, create documents, send them for e-signature and track their status in PandaDoc. Use templates to prepare a document, send it for signature and follow its status through the signing workflow. Public API rate limits and the connected account’s plan document limits apply."
 category: documents
 website_url: https://www.pandadoc.com
 help_url: https://developers.pandadoc.com/docs/how-to-use-the-pandadoc-mcp-server

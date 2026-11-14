@@ -2,10 +2,7 @@
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
 revision: 2
 title: Hunter
-description: >-
-  Find and verify business email addresses, enrich company data, and manage Hunter leads. Use domain
-  and email research to prepare business contacts, verify their addresses and maintain lead records.
-  A Hunter API key is required. Account credits and API limits apply to the connected account.
+description: "Find and verify business email addresses, enrich company data, and manage Hunter leads. Use domain and email research to prepare business contacts, verify their addresses and maintain lead records. A Hunter API key is required. Account credits and API limits apply to the connected account."
 category: sales
 website_url: https://hunter.io
 help_url: https://hunter.io/api-documentation#mcp

@@ -3,7 +3,7 @@
 # previews need no key; optional X-API-Key for paid plans. Probe saw OAuth metadata
 # on several paths, but the documented primary remote is keyless — docs win (same
 # pattern as Autodesk Product Help / Blockscout).
-revision: 4
+revision: 6
 source:
   registry: cloud.dchub/mcp-server
 title: DC Hub

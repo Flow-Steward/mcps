@@ -1,11 +1,7 @@
 # Reviewed 2026-10-29: EU and AU regional vendor setup guides.
 revision: 3
 title: Sinch Engage
-description: >-
-  Send SMS, manage contacts and contact groups, and run delivery and messaging reports in Sinch
-  Engage (MessageMedia). Use outbound messaging with contact groups and delivery reports to manage
-  SMS communication. Choose the regional endpoint for your account. Requires an administrator and a
-  verified account, plus the API key and secret from Settings > API Settings.
+description: "Send SMS, manage contacts and contact groups, and run delivery and messaging reports in Sinch Engage (MessageMedia). Use outbound messaging with contact groups and delivery reports to manage SMS communication. Choose the regional endpoint for your account. Requires an administrator and a verified account, plus the API key and secret from Settings > API Settings."
 category: messaging
 website_url: https://sinch.com/engage/
 help_url: https://support.app.sinch.com/hc/en-us/articles/16560211294223-Connect-to-the-Sinch-Engage-MCP-EU

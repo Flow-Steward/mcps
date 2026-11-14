@@ -2,11 +2,7 @@
 # Hosted server uses OAuth (DCR at https://mcp.cal.com/oauth/register); self-hosted npx variant uses a cal_live API key.
 revision: 2
 title: Cal.com
-description: >-
-  Manage Cal.com bookings, event types, schedules and availability, and reschedule or cancel
-  meetings. Check scheduling availability and event configuration before managing a booking, or
-  change an existing meeting by rescheduling or cancelling it. This entry connects the hosted
-  Cal.com server through OAuth sign-in.
+description: "Manage Cal.com bookings, event types, schedules and availability, and reschedule or cancel meetings. Check scheduling availability and event configuration before managing a booking, or change an existing meeting by rescheduling or cancelling it. This entry connects the hosted Cal.com server through OAuth sign-in."
 category: productivity
 website_url: https://cal.com
 help_url: https://cal.com/help/cal-ai/mcp-server

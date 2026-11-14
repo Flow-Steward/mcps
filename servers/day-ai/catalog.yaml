@@ -2,11 +2,7 @@
 # Requires a paid Day AI Agent tier; tier limits and workspace role apply.
 revision: 2
 title: Day AI
-description: >-
-  Search and update Day AI CRM contacts, companies, and opportunities, and read meeting transcripts.
-  Use CRM records and meeting transcripts together when preparing account updates or following up on
-  opportunities. A paid Day AI Agent tier is required; tier limits and the connected user’s
-  workspace role determine access.
+description: "Search and update Day AI CRM contacts, companies, and opportunities, and read meeting transcripts. Use CRM records and meeting transcripts together when preparing account updates or following up on opportunities. A paid Day AI Agent tier is required; tier limits and the connected user’s workspace role determine access."
 category: crm
 website_url: https://day.ai
 help_url: https://day.ai/mcp

@@ -2,11 +2,7 @@
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
 revision: 2
 title: NocoDB
-description: >-
-  Query and edit NocoDB records and manage tables, views, and workflows where your edition permits.
-  Use structured records and their table or view context for database workflows. This catalog entry
-  connects NocoDB Cloud through OAuth. The vendor also supports self-hosted and Community Edition
-  connection URLs, but those per-instance connections are not included here.
+description: "Query and edit NocoDB records and manage tables, views, and workflows where your edition permits. Use structured records and their table or view context for database workflows. This catalog entry connects NocoDB Cloud through OAuth. The vendor also supports self-hosted and Community Edition connection URLs, but those per-instance connections are not included here."
 category: data
 website_url: https://nocodb.com
 help_url: https://nocodb.com/docs/mcp

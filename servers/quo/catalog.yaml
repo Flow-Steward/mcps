@@ -2,10 +2,7 @@
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
 revision: 2
 title: Quo
-description: >-
-  Work with Quo conversations, messages, contacts, call transcripts, inbox settings, and follow-up
-  tasks. Use communication history and transcripts with contact and follow-up information for
-  customer conversations. Connect the intended Quo workspace and approve access to its data.
+description: "Work with Quo conversations, messages, contacts, call transcripts, inbox settings, and follow-up tasks. Use communication history and transcripts with contact and follow-up information for customer conversations. Connect the intended Quo workspace and approve access to its data."
 category: messaging
 website_url: https://www.quo.com
 help_url: https://www.quo.com/docs/mcp/overview

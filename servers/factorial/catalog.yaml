@@ -2,11 +2,7 @@
 # Account authorization and tool execution have not been tested.
 revision: 2
 title: Factorial
-description: >-
-  Clock in and out, manage tasks, request time off and look up colleagues in Factorial. Use the
-  employee-facing tools for attendance, task follow-up and leave requests. Actions run with the
-  signed-in user’s permissions. The exposed tools do not represent complete coverage of Factorial
-  payroll or HR APIs.
+description: "Clock in and out, manage tasks, request time off and look up colleagues in Factorial. Use the employee-facing tools for attendance, task follow-up and leave requests. Actions run with the signed-in user’s permissions. The exposed tools do not represent complete coverage of Factorial payroll or HR APIs."
 category: hr
 website_url: https://factorialhr.com
 help_url: https://apidoc.factorialhr.com/docs/mcp-server

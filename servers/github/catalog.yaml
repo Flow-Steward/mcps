@@ -2,12 +2,7 @@
 # No DCR: OAuth needs a user-created GitHub OAuth App. Docs also allow a PAT as 'Authorization: Bearer <PAT>' header (simpler alternative). Toolset paths /x/<toolset> and /readonly suffix available. Org policy 'MCP servers in Copilot' must be enabled for Copilot Business/Enterprise members; OAuth acce
 revision: 2
 title: GitHub
-description: >-
-  Browse repositories and code, and manage issues, pull requests, Actions runs, and security alerts
-  on GitHub. Use repository context with issue and pull-request work, build-run investigation or
-  security-alert review. This catalog uses OAuth with a user-created GitHub OAuth App; dynamic
-  client registration is not available. Access follows the authorizing account and applicable
-  organization policies.
+description: "Browse repositories and code, and manage issues, pull requests, Actions runs, and security alerts on GitHub. Use repository context with issue and pull-request work, build-run investigation or security-alert review. This catalog uses OAuth with a user-created GitHub OAuth App; dynamic client registration is not available. Access follows the authorizing account and applicable organization policies."
 category: developer-tools
 website_url: https://github.com
 help_url: https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server

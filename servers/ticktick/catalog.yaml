@@ -2,10 +2,7 @@
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
 revision: 2
 title: TickTick
-description: >-
-  Search and organize tasks, lists, habits, and focus records in your TickTick account. Use task and
-  list context with habits and focus records when organizing personal work. This entry connects your
-  TickTick account through OAuth; the available surface is the account data exposed by the server.
+description: "Search and organize tasks, lists, habits, and focus records in your TickTick account. Use task and list context with habits and focus records when organizing personal work. This entry connects your TickTick account through OAuth; the available surface is the account data exposed by the server."
 category: productivity
 website_url: https://ticktick.com
 help_url: https://help.ticktick.com/articles/7438129581631995904

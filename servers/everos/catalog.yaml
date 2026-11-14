@@ -3,12 +3,7 @@
 # The record version describes this catalog record, not an upstream package version.
 revision: 2
 title: EverOS
-description: >-
-  Store and recall durable facts, browse memories and record task trajectories through your
-  deployment of the official EverOS MCP server. Deploy the MCP server on your own HTTPS host before
-  connecting. Its default backend is EverOS Cloud and requires an API key. Memory ownership can be
-  selected with a user ID, but that ID is not an authorization boundary; deletion support depends on
-  the backend.
+description: "Store and recall durable facts, browse memories and record task trajectories through your deployment of the official EverOS MCP server. Deploy the MCP server on your own HTTPS host before connecting. Its default backend is EverOS Cloud and requires an API key. Memory ownership can be selected with a user ID, but that ID is not an authorization boundary; deletion support depends on the backend."
 category: ai
 website_url: https://evermind.ai
 help_url: https://github.com/EverMind-AI/EverOS-MCP

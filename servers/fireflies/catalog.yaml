@@ -4,11 +4,7 @@ revision: 2
 source:
   registry: ai.fireflies/fireflies
 title: Fireflies
-description: >-
-  Search past meetings and read Fireflies transcripts, summaries, and action items. Use searchable
-  meeting history to recover decisions, review discussion context and follow up on action items.
-  Connect the Fireflies account containing those meetings. This is the meeting-data server;
-  Fireflies documentation search is a separate MCP service.
+description: "Search past meetings and read Fireflies transcripts, summaries, and action items. Use searchable meeting history to recover decisions, review discussion context and follow up on action items. Connect the Fireflies account containing those meetings. This is the meeting-data server; Fireflies documentation search is a separate MCP service."
 category: productivity
 website_url: https://fireflies.ai
 help_url: https://docs.fireflies.ai/getting-started/mcp-configuration

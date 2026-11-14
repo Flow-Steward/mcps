@@ -2,11 +2,7 @@
 # Account authorization and tool execution have not been tested.
 revision: 2
 title: Visma Spiris
-description: >-
-  Use supported Spiris bookkeeping and invoicing tools, including invoices and payment registration.
-  Use the available invoice and payment tools within one connected company. This beta has a limited
-  tool set. An administrator must accept the terms and activate MCP – Beta for each user before
-  connection.
+description: "Use supported Spiris bookkeeping and invoicing tools, including invoices and payment registration. Use the available invoice and payment tools within one connected company. This beta has a limited tool set. An administrator must accept the terms and activate MCP – Beta for each user before connection."
 category: finance
 website_url: https://www.spiris.se
 help_url: https://developer.vismaonline.com/docs/spiris-mcp-server

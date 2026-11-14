@@ -2,11 +2,7 @@
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
 revision: 2
 title: Oxylabs Web API
-description: >-
-  Search the live web, scrape pages as Markdown, HTML or structured JSON, run dedicated target
-  scrapers, and retrieve queued JavaScript-rendering results. Use search and target-specific
-  scraping to collect source material in the format needed for analysis. Requires an Oxylabs Web API
-  product instance key; credentials for other Oxylabs products do not work with this server.
+description: "Search the live web, scrape pages as Markdown, HTML or structured JSON, run dedicated target scrapers, and retrieve queued JavaScript-rendering results. Use search and target-specific scraping to collect source material in the format needed for analysis. Requires an Oxylabs Web API product instance key; credentials for other Oxylabs products do not work with this server."
 category: data
 website_url: https://oxylabs.io
 help_url: https://developers.oxylabs.io/ai-workflows/mcp.md

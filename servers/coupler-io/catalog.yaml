@@ -4,11 +4,7 @@ revision: 2
 source:
   registry: io.coupler/remote-mcp-server
 title: Coupler.io
-description: >-
-  Query data flows from marketing, sales, finance, and ecommerce sources connected in Coupler.io.
-  Use the data flows already connected in Coupler.io as the source for cross-platform questions and
-  reporting. A paid plan and data flows configured with an AI destination are required; the exact
-  eligible plan should be checked in Coupler.io before setup.
+description: "Query data flows from marketing, sales, finance, and ecommerce sources connected in Coupler.io. Use the data flows already connected in Coupler.io as the source for cross-platform questions and reporting. A paid plan and data flows configured with an AI destination are required; the exact eligible plan should be checked in Coupler.io before setup."
 category: data
 website_url: https://www.coupler.io
 help_url: https://docs.coupler.io/ai/mcp

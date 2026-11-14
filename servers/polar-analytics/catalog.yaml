@@ -4,11 +4,7 @@ revision: 2
 source:
   registry: com.polaranalytics/polar
 title: Polar Analytics
-description: >-
-  Query ecommerce metrics such as revenue, orders, ad spend, and ROAS from your Polar Analytics
-  workspace. Use workspace metrics to compare sales and advertising performance or investigate
-  changes in return on ad spend. This connection is read-only and queries the data available in your
-  Polar Analytics workspace.
+description: "Query ecommerce metrics such as revenue, orders, ad spend, and ROAS from your Polar Analytics workspace. Use workspace metrics to compare sales and advertising performance or investigate changes in return on ad spend. This connection is read-only and queries the data available in your Polar Analytics workspace."
 category: data
 website_url: https://www.polaranalytics.com
 help_url: https://intercom.help/polar-app/en/articles/12892599-using-polar-mcp-in-claude

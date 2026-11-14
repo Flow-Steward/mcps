@@ -4,11 +4,7 @@ revision: 2
 source:
   registry: com.blockscout/mcp-server
 title: Blockscout
-description: >-
-  Look up blockchain balances, tokens, NFTs, transactions, and contract ABIs across EVM chains
-  indexed by Blockscout. Use the indexed chain data to investigate an address, trace a transaction,
-  or inspect a contract interface. This public lookup server requires no sign-in or API key and
-  covers chains indexed by Blockscout.
+description: "Look up blockchain balances, tokens, NFTs, transactions, and contract ABIs across EVM chains indexed by Blockscout. Use the indexed chain data to investigate an address, trace a transaction, or inspect a contract interface. This public lookup server requires no sign-in or API key and covers chains indexed by Blockscout."
 category: data
 website_url: https://www.blockscout.com
 help_url: https://docs.blockscout.com/devs/mcp-server

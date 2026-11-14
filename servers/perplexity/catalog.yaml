@@ -2,11 +2,7 @@
 # Usage billed to the chosen Perplexity API organization. Alt auth: 'Authorization: Bearer <Perplexity API key>'. AS supports DCR (https://api.perplexity.ai/oauth/register) and client_id_metadata_document_supported=true; scope perplexity_api.
 revision: 2
 title: Perplexity
-description: >-
-  Run Perplexity web search, quick answers, deep research and reasoning queries from any AI
-  assistant. Use quick queries for focused questions or research and reasoning queries for broader
-  investigations. Usage is billed to the Perplexity API organization selected during authorization,
-  so connect the organization intended to cover these requests.
+description: "Run Perplexity web search, quick answers, deep research and reasoning queries from any AI assistant. Use quick queries for focused questions or research and reasoning queries for broader investigations. Usage is billed to the Perplexity API organization selected during authorization, so connect the organization intended to cover these requests."
 category: ai
 website_url: https://www.perplexity.ai
 help_url: https://docs.perplexity.ai/guides/mcp-server

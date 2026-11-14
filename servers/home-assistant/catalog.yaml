@@ -2,12 +2,7 @@
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
 revision: 2
 title: Home Assistant
-description: >-
-  Read home device states and run the Home Assistant tools your administrator exposes. Use exposed
-  device information and tools for home automation through your own Home Assistant instance. Enable
-  the MCP integration, configure its external HTTPS address and permitted tools or accounts, and
-  ensure Flow Steward can reach that address. Available actions depend on the administrator’s
-  configuration.
+description: "Read home device states and run the Home Assistant tools your administrator exposes. Use exposed device information and tools for home automation through your own Home Assistant instance. Enable the MCP integration, configure its external HTTPS address and permitted tools or accounts, and ensure Flow Steward can reach that address. Available actions depend on the administrator’s configuration."
 category: it
 website_url: https://www.home-assistant.io
 help_url: https://www.home-assistant.io/integrations/mcp_server/

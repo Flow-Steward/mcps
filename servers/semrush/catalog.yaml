@@ -2,11 +2,7 @@
 # Input URL was the Claude-specific /claude/v1/mcp; vendor docs now give the generic /v2/mcp. API-key fallback: Authorization: Apikey <key>. Calls consume Semrush API units; needs a plan with API access (Semrush One, SEO, or Trends API).
 revision: 2
 title: Semrush
-description: >-
-  Pull Semrush SEO data: keyword research, domain and backlink analytics, and traffic trends. Use
-  keyword, backlink and domain data for SEO research and performance comparisons. Requires a
-  subscription with API access, such as Semrush One, SEO or Trends API. Tool calls consume Semrush
-  API units.
+description: "Pull Semrush SEO data: keyword research, domain and backlink analytics, and traffic trends. Use keyword, backlink and domain data for SEO research and performance comparisons. Requires a subscription with API access, such as Semrush One, SEO or Trends API. Tool calls consume Semrush API units."
 category: marketing
 website_url: https://www.semrush.com
 help_url: https://developer.semrush.com/api/basics/semrush-mcp/

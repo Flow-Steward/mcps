@@ -3,11 +3,7 @@
 # Global endpoint default; https://mcp.longbridge.cn serves AP accounts (SG/HK) only; US accounts must use global. Requires onboarded Longbridge account or paper account; tools vary by region, account level, and granted scopes.
 revision: 2
 title: Longbridge
-description: >-
-  Get market quotes and research, and view or manage your Longbridge brokerage positions, orders,
-  and trades. Use market information with account positions and order context for brokerage
-  workflows. Requires an onboarded Longbridge account or paper account. Available tools vary by
-  region, account level and granted access; US accounts must use the global endpoint.
+description: "Get market quotes and research, and view or manage your Longbridge brokerage positions, orders, and trades. Use market information with account positions and order context for brokerage workflows. Requires an onboarded Longbridge account or paper account. Available tools vary by region, account level and granted access; US accounts must use the global endpoint."
 category: finance
 website_url: https://longbridge.com
 help_url: https://open.longbridge.com/docs/mcp

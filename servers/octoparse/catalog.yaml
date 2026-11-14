@@ -2,12 +2,7 @@
 # Authentication follows vendor documentation and public discovery metadata; no account connection tested.
 revision: 2
 title: Octoparse
-description: >-
-  Find scraping templates, execute cloud-supported extraction tasks, inspect progress, and export
-  structured web data such as products, business listings, and reviews. Use available templates to
-  collect web data and follow extraction progress before export. An Octoparse MCP API key is
-  required. Only cloud-executable templates run through this server; tasks that require local
-  execution still need the desktop application.
+description: "Find scraping templates, execute cloud-supported extraction tasks, inspect progress, and export structured web data such as products, business listings, and reviews. Use available templates to collect web data and follow extraction progress before export. An Octoparse MCP API key is required. Only cloud-executable templates run through this server; tasks that require local execution still need the desktop application."
 category: data
 website_url: https://www.octoparse.com
 help_url: https://www.octoparse.com/mcp

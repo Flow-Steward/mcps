@@ -4,11 +4,7 @@ revision: 2
 source:
   registry: com.sendpulse.mcp/mcp-server
 title: SendPulse
-description: >-
-  Run SendPulse email and messaging campaigns, read statistics, and update contacts and mailing
-  lists. Use contact and list maintenance with campaign execution and statistics to support
-  messaging workflows. This entry connects through SendPulse OAuth. The vendor also documents API
-  client credentials as an alternative authentication method.
+description: "Run SendPulse email and messaging campaigns, read statistics, and update contacts and mailing lists. Use contact and list maintenance with campaign execution and statistics to support messaging workflows. This entry connects through SendPulse OAuth. The vendor also documents API client credentials as an alternative authentication method."
 category: marketing
 website_url: https://sendpulse.com
 help_url: https://sendpulse.com/knowledge-base/account-settings/mcp-server

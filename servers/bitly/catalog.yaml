@@ -4,10 +4,7 @@ revision: 2
 source:
   registry: com.bitly/mcp
 title: Bitly
-description: >-
-  Create and manage Bitly short links and QR codes, and view click analytics. Use short links and QR
-  codes in campaigns, then inspect click data to review performance. Sign in to the Bitly account
-  whose links you want to manage; the connection uses OAuth.
+description: "Create and manage Bitly short links and QR codes, and view click analytics. Use short links and QR codes in campaigns, then inspect click data to review performance. Sign in to the Bitly account whose links you want to manage; the connection uses OAuth."
 category: marketing
 website_url: https://bitly.com
 help_url: https://dev.bitly.com/bitly-mcp/

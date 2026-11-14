@@ -4,12 +4,7 @@ revision: 2
 source:
   registry: io.github.apolloio/apollo-mcp
 title: Apollo.io
-description: >-
-  Search and enrich people and companies, manage contacts, lists, sequences, and tasks in Apollo.
-  Use prospect search and enrichment to prepare lead lists, then work with contacts and outreach
-  sequences. Enrichment consumes Apollo credits. Free accounts registered with a personal email
-  cannot use search or enrichment; Apollo also requires model training to be disabled in the AI
-  client.
+description: "Search and enrich people and companies, manage contacts, lists, sequences, and tasks in Apollo. Use prospect search and enrichment to prepare lead lists, then work with contacts and outreach sequences. Enrichment consumes Apollo credits. Free accounts registered with a personal email cannot use search or enrichment; Apollo also requires model training to be disabled in the AI client."
 category: sales
 website_url: https://www.apollo.io
 help_url: https://docs.apollo.io/docs/apollo-mcp
