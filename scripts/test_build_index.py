@@ -132,6 +132,31 @@ def test_canonical_filename_must_be_a_file(root):
         bi.entry_dirs()
 
 
+
+@pytest.mark.parametrize("target_kind", ["file", "directory", "missing"])
+def test_server_symlinks_are_not_silently_followed_or_skipped(root, target_kind):
+    (root / "servers").mkdir()
+    target = root / "target"
+    if target_kind == "file":
+        target.write_text("revision: 1")
+    elif target_kind == "directory":
+        target.mkdir()
+    (root / "servers" / "alias").symlink_to(target)
+
+    with pytest.raises(bi.CatalogError, match="servers/alias"):
+        bi.entry_dirs()
+
+
+def test_entry_file_symlink_is_reported_as_invalid_path(root):
+    folder = write_entry(root)
+    target = root / "catalog.yaml"
+    (folder / "catalog.yaml").rename(target)
+    (folder / "catalog.yaml").symlink_to(target)
+
+    with pytest.raises(bi.CatalogError, match="servers/example/catalog.yaml"):
+        bi.entry_dirs()
+
+
 def test_supported_entry_files_readme_and_root_gitkeep_are_accepted(root):
     folder = write_entry(root)
     (folder / "README.md").write_text("Setup instructions")
