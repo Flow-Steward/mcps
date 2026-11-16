@@ -227,6 +227,10 @@ def load_category_labels() -> dict[str, str]:
 
 def entry_dirs() -> list[str]:
     base = ROOT / SERVERS_DIR
+    if base.is_symlink() or (base.exists() and not base.is_dir()):
+        raise CatalogError(
+            f"{SERVERS_DIR}: catalog root must be a real directory, not a file or symbolic link"
+        )
     if not base.is_dir():
         return []
     entries: list[str] = []
