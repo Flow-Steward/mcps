@@ -92,6 +92,25 @@ def problems(root: Path) -> str:
 
 
 
+
+@pytest.mark.parametrize("root_kind", ["file", "directory-link", "missing-link"])
+@pytest.mark.parametrize("args", [[], ["--check"]])
+def test_invalid_servers_root_fails_cli_without_overwriting_index(root, capsys, root_kind, args):
+    base = root / "servers"
+    if root_kind == "file":
+        base.write_text("misplaced catalog registration")
+    else:
+        target = root / "server-target"
+        if root_kind == "directory-link":
+            target.mkdir()
+        base.symlink_to(target)
+    (root / "index.json").write_text("previous catalog")
+
+    assert bi.main([*args, "--repository", REPO]) == 1
+    assert "servers" in capsys.readouterr().err
+    assert (root / "index.json").read_text() == "previous catalog"
+
+
 @pytest.mark.parametrize("filename", ["new-server", "new-server.yaml", "new-server.yml", "catalog.yaml.bak"])
 def test_top_level_registration_files_are_not_silently_skipped(root, filename):
     (root / "servers").mkdir()
