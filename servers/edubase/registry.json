@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-11-14T23:32:15.217198Z",
+      "publishedAt": "2026-11-15T20:51:50.355226Z",
       "status": "active",
-      "statusChangedAt": "2026-11-14T23:32:15.217198Z",
-      "updatedAt": "2026-11-14T23:32:15.217198Z"
+      "statusChangedAt": "2026-11-15T20:51:50.355226Z",
+      "updatedAt": "2026-11-15T20:51:50.355226Z"
     }
   },
   "server": {
@@ -25,10 +25,10 @@
             "name": "EDUBASE_API_APP"
           },
           {
-            "description": "The secret key for the EduBase API",
+            "description": "The secret key of the integration app on EduBase (the secret on the EduBase API)",
             "isRequired": true,
             "isSecret": true,
-            "name": "EDUBASE_API_SECRET"
+            "name": "EDUBASE_API_KEY"
           }
         ],
         "identifier": "@edubase/mcp",
@@ -36,7 +36,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "2.0.12"
+        "version": "2.0.14"
       }
     ],
     "remotes": [
@@ -60,6 +60,6 @@
       "source": "github",
       "url": "https://github.com/EduBase/MCP"
     },
-    "version": "2.0.12"
+    "version": "2.0.14"
   }
 }
