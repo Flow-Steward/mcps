@@ -91,6 +91,78 @@ def problems(root: Path) -> str:
     return str(caught.value)
 
 
+
+@pytest.mark.parametrize("filename", ["new-server", "new-server.yaml", "new-server.yml", "catalog.yaml.bak"])
+def test_top_level_registration_files_are_not_silently_skipped(root, filename):
+    (root / "servers").mkdir()
+    (root / "servers" / filename).write_text("revision: 1\n")
+
+    with pytest.raises(bi.CatalogError) as error:
+        bi.entry_dirs()
+
+    assert f"servers/{filename}" in str(error.value)
+    assert "servers/<id>/" in str(error.value)
+
+
+@pytest.mark.parametrize("filename", ["catalog", "catalog.yml", "registry", "server.json.bak"])
+def test_misnamed_entry_files_are_not_silently_skipped(root, filename):
+    folder = write_entry(root)
+    (folder / filename).write_text("mistyped registration")
+
+    with pytest.raises(bi.CatalogError) as error:
+        bi.entry_dirs()
+
+    assert f"servers/example/{filename}" in str(error.value)
+
+
+def test_nested_entry_directory_is_not_silently_skipped(root):
+    folder = write_entry(root)
+    (folder / "nested").mkdir()
+
+    with pytest.raises(bi.CatalogError, match="servers/example/nested"):
+        bi.entry_dirs()
+
+
+def test_canonical_filename_must_be_a_file(root):
+    folder = write_entry(root)
+    (folder / "catalog.yaml").unlink()
+    (folder / "catalog.yaml").mkdir()
+
+    with pytest.raises(bi.CatalogError, match="servers/example/catalog.yaml"):
+        bi.entry_dirs()
+
+
+def test_supported_entry_files_readme_and_root_gitkeep_are_accepted(root):
+    folder = write_entry(root)
+    (folder / "README.md").write_text("Setup instructions")
+    (root / "servers" / ".gitkeep").write_text("")
+
+    assert bi.entry_dirs() == ["example"]
+
+
+def test_all_invalid_server_paths_are_reported_together(root):
+    folder = write_entry(root)
+    (folder / "catalog").write_text("revision: 1")
+    (root / "servers" / "stray").write_text("revision: 1")
+
+    with pytest.raises(bi.CatalogError) as error:
+        bi.entry_dirs()
+
+    assert "servers/example/catalog:" in str(error.value)
+    assert "servers/stray:" in str(error.value)
+
+
+@pytest.mark.parametrize("args", [[], ["--check"]])
+def test_invalid_registration_fails_cli_without_overwriting_index(root, capsys, args):
+    (root / "servers").mkdir()
+    (root / "servers" / "new-server").write_text("revision: 1\n")
+    (root / "index.json").write_text("previous catalog")
+
+    assert bi.main([*args, "--repository", REPO]) == 1
+    assert "servers/new-server" in capsys.readouterr().err
+    assert (root / "index.json").read_text() == "previous catalog"
+
+
 def test_index_has_the_registry_list_shape_with_the_reviewed_overlay(root):
     write_entry(root)
     _git(root, "add", "-A")
