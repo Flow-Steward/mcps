@@ -229,7 +229,29 @@ def entry_dirs() -> list[str]:
     base = ROOT / SERVERS_DIR
     if not base.is_dir():
         return []
-    return sorted(path.name for path in base.iterdir() if path.is_dir())
+    entries: list[str] = []
+    problems: list[str] = []
+    allowed_files = {CATALOG_FILE, REGISTRY_FILE, SERVER_FILE, ICON_FILE, "README.md"}
+    for path in sorted(base.iterdir()):
+        if path.name == ".gitkeep" and path.is_file() and not path.is_symlink():
+            continue
+        if not path.is_dir() or path.is_symlink():
+            problems.append(
+                f"{SERVERS_DIR}/{path.name}: each registration must be a real directory "
+                f"at {SERVERS_DIR}/<id>/"
+            )
+            continue
+        entries.append(path.name)
+        for child in sorted(path.iterdir()):
+            if child.name not in allowed_files or not child.is_file() or child.is_symlink():
+                problems.append(
+                    f"{SERVERS_DIR}/{path.name}/{child.name}: expected a regular file named "
+                    f"{', '.join(sorted(allowed_files))}; subdirectories and symbolic links "
+                    "are not supported"
+                )
+    if problems:
+        raise CatalogError("\n".join(problems))
+    return entries
 
 
 # ---------------------------------------------------------------------------

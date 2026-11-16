@@ -44,6 +44,11 @@ servers/<id>/
   icon.png        square PNG, 32–512 px, at most 100 KB
 ```
 
+Files placed directly in `servers/`, unexpected filenames inside an entry,
+subdirectories and symbolic links fail validation and publication with their
+paths. Use the exact filenames above. An entry may also include `README.md`
+for setup instructions; a root `servers/.gitkeep` placeholder is allowed.
+
 `catalog.yaml`:
 
 ```yaml
