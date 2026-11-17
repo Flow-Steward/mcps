@@ -2,15 +2,15 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-11-15T20:51:50.355226Z",
+      "publishedAt": "2026-11-16T23:24:29.867949Z",
       "status": "active",
-      "statusChangedAt": "2026-11-15T20:51:50.355226Z",
-      "updatedAt": "2026-11-15T20:51:50.355226Z"
+      "statusChangedAt": "2026-11-16T23:24:29.867949Z",
+      "updatedAt": "2026-11-16T23:24:29.867949Z"
     }
   },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-    "description": "EduBase MCP server",
+    "description": "Official EduBase MCP server: training, exams, competencies and results from your AI assistant",
     "name": "io.github.EduBase/MCP",
     "packages": [
       {
@@ -36,7 +36,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "2.0.14"
+        "version": "2.0.15"
       }
     ],
     "remotes": [
@@ -60,6 +60,6 @@
       "source": "github",
       "url": "https://github.com/EduBase/MCP"
     },
-    "version": "2.0.14"
+    "version": "2.0.15"
   }
 }

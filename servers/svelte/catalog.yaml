@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://svelte.dev/docs/ai/remote-setup
 # Open-source project (not a company); no authentication.
-revision: 4
+revision: 5
 source:
   registry: dev.svelte/mcp
 title: Svelte
