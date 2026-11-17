@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-16.fbafc1f1",
-  "published_at": "2026-11-16T14:00:50Z",
+  "catalog_revision": "2026-11-17.aa623ba0",
+  "published_at": "2026-11-17T14:54:37Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -899,7 +899,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.6.2"
+            "version": "2.6.3"
           }
         ],
         "remotes": [
@@ -912,15 +912,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.6.2",
+        "version": "2.6.3",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 15,
+            "revision": 16,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.6.2"
+              "version": "2.6.3"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -1091,17 +1091,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-14T19:44:57Z"
+            "updated_at": "2026-11-17T14:54:37Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-14T00:20:30.56658Z",
+          "publishedAt": "2026-11-17T00:21:11.280465Z",
           "status": "active",
-          "statusChangedAt": "2026-11-14T00:20:30.56658Z",
-          "updatedAt": "2026-11-14T00:20:30.56658Z"
+          "statusChangedAt": "2026-11-17T00:21:11.280465Z",
+          "updatedAt": "2026-11-17T00:21:11.280465Z"
         }
       }
     },
@@ -2259,16 +2259,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.173.0",
+        "version": "0.176.0",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 14,
+            "revision": 15,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.173.0"
+              "version": "0.176.0"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -2309,17 +2309,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-11-16T14:00:50Z"
+            "updated_at": "2026-11-17T14:54:37Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-16T11:54:45.158311Z",
+          "publishedAt": "2026-11-17T11:43:29.489447Z",
           "status": "active",
-          "statusChangedAt": "2026-11-16T11:54:45.158311Z",
-          "updatedAt": "2026-11-16T11:54:45.158311Z"
+          "statusChangedAt": "2026-11-17T11:43:29.489447Z",
+          "updatedAt": "2026-11-17T11:43:29.489447Z"
         }
       }
     },
@@ -7664,7 +7664,7 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "description": "EduBase MCP server",
+        "description": "Official EduBase MCP server: training, exams, competencies and results from your AI assistant",
         "name": "io.github.EduBase/MCP",
         "packages": [
           {
@@ -7690,7 +7690,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.0.14"
+            "version": "2.0.15"
           }
         ],
         "remotes": [
@@ -7714,15 +7714,15 @@
           "source": "github",
           "url": "https://github.com/EduBase/MCP"
         },
-        "version": "2.0.14",
+        "version": "2.0.15",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "edubase",
-            "revision": 7,
+            "revision": 8,
             "status": "active",
             "source": {
               "registry": "io.github.EduBase/MCP",
-              "version": "2.0.14"
+              "version": "2.0.15"
             },
             "title": "EduBase",
             "summary": "Create and manage EduBase quizzes, exams, questions, users, and classes on the EduBase e-learning platform.",
@@ -7769,17 +7769,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/edubase",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-16T14:00:50Z"
+            "updated_at": "2026-11-17T14:54:37Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-15T20:51:50.355226Z",
+          "publishedAt": "2026-11-16T23:24:29.867949Z",
           "status": "active",
-          "statusChangedAt": "2026-11-15T20:51:50.355226Z",
-          "updatedAt": "2026-11-15T20:51:50.355226Z"
+          "statusChangedAt": "2026-11-16T23:24:29.867949Z",
+          "updatedAt": "2026-11-16T23:24:29.867949Z"
         }
       }
     },
@@ -21787,7 +21787,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.65.3"
+            "version": "0.65.8"
           }
         ],
         "remotes": [
@@ -21801,16 +21801,16 @@
           "url": "https://github.com/oborseth/Porkbun-MCP"
         },
         "title": "Porkbun (official)",
-        "version": "0.65.3",
+        "version": "0.65.8",
         "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 10,
+            "revision": 11,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.65.3"
+              "version": "0.65.8"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -21854,17 +21854,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-14T19:44:57Z"
+            "updated_at": "2026-11-17T14:54:37Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-13T22:17:43.236989Z",
+          "publishedAt": "2026-11-16T23:18:46.684865Z",
           "status": "active",
-          "statusChangedAt": "2026-11-13T22:17:43.236989Z",
-          "updatedAt": "2026-11-13T22:17:43.236989Z"
+          "statusChangedAt": "2026-11-16T23:18:46.684865Z",
+          "updatedAt": "2026-11-16T23:18:46.684865Z"
         }
       }
     },
@@ -26223,7 +26223,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.1.30"
+            "version": "0.1.31"
           }
         ],
         "remotes": [
@@ -26239,16 +26239,16 @@
           "url": "https://github.com/sveltejs/ai-tools"
         },
         "title": "Svelte MCP",
-        "version": "0.1.30",
+        "version": "0.1.31",
         "websiteUrl": "https://svelte.dev/docs/mcp/overview",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "svelte",
-            "revision": 4,
+            "revision": 5,
             "status": "active",
             "source": {
               "registry": "dev.svelte/mcp",
-              "version": "0.1.30"
+              "version": "0.1.31"
             },
             "title": "Svelte",
             "summary": "Search Svelte 5 and SvelteKit documentation and check generated Svelte code with the autofixer.",
@@ -26285,17 +26285,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/svelte",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-14T19:26:32Z"
+            "updated_at": "2026-11-17T14:54:37Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-04T15:14:33.723597Z",
+          "publishedAt": "2026-11-17T14:18:06.836757Z",
           "status": "active",
-          "statusChangedAt": "2026-11-04T15:14:33.723597Z",
-          "updatedAt": "2026-11-04T15:14:33.723597Z"
+          "statusChangedAt": "2026-11-17T14:18:06.836757Z",
+          "updatedAt": "2026-11-17T14:18:06.836757Z"
         }
       }
     },
