@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-17.aa623ba0",
-  "published_at": "2026-11-17T14:54:37Z",
+  "catalog_revision": "2026-11-18.7954784b",
+  "published_at": "2026-11-18T14:32:41Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -899,7 +899,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.6.3"
+            "version": "2.6.4"
           }
         ],
         "remotes": [
@@ -912,15 +912,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.6.3",
+        "version": "2.6.4",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 16,
+            "revision": 17,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.6.3"
+              "version": "2.6.4"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -1091,17 +1091,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-17T14:54:37Z"
+            "updated_at": "2026-11-18T14:32:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-17T00:21:11.280465Z",
+          "publishedAt": "2026-11-18T00:21:37.97506Z",
           "status": "active",
-          "statusChangedAt": "2026-11-17T00:21:11.280465Z",
-          "updatedAt": "2026-11-17T00:21:11.280465Z"
+          "statusChangedAt": "2026-11-18T00:21:37.97506Z",
+          "updatedAt": "2026-11-18T00:21:37.97506Z"
         }
       }
     },
@@ -2259,16 +2259,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.176.0",
+        "version": "0.178.0",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 15,
+            "revision": 16,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.176.0"
+              "version": "0.178.0"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -2309,17 +2309,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-11-17T14:54:37Z"
+            "updated_at": "2026-11-18T14:32:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-17T11:43:29.489447Z",
+          "publishedAt": "2026-11-18T13:28:18.028487Z",
           "status": "active",
-          "statusChangedAt": "2026-11-17T11:43:29.489447Z",
-          "updatedAt": "2026-11-17T11:43:29.489447Z"
+          "statusChangedAt": "2026-11-18T13:28:18.028487Z",
+          "updatedAt": "2026-11-18T13:28:18.028487Z"
         }
       }
     },
@@ -21787,7 +21787,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.65.8"
+            "version": "0.65.14"
           }
         ],
         "remotes": [
@@ -21801,16 +21801,16 @@
           "url": "https://github.com/oborseth/Porkbun-MCP"
         },
         "title": "Porkbun (official)",
-        "version": "0.65.8",
+        "version": "0.65.14",
         "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 11,
+            "revision": 12,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.65.8"
+              "version": "0.65.14"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -21854,17 +21854,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-17T14:54:37Z"
+            "updated_at": "2026-11-18T14:32:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-16T23:18:46.684865Z",
+          "publishedAt": "2026-11-18T01:30:37.229959Z",
           "status": "active",
-          "statusChangedAt": "2026-11-16T23:18:46.684865Z",
-          "updatedAt": "2026-11-16T23:18:46.684865Z"
+          "statusChangedAt": "2026-11-18T01:30:37.229959Z",
+          "updatedAt": "2026-11-18T01:30:37.229959Z"
         }
       }
     },
@@ -25731,7 +25731,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.17.0"
+            "version": "0.18.0"
           }
         ],
         "remotes": [
@@ -25746,16 +25746,16 @@
           "url": "https://github.com/supabase/mcp"
         },
         "title": "Supabase",
-        "version": "0.17.0",
+        "version": "0.18.0",
         "websiteUrl": "https://supabase.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "supabase",
-            "revision": 7,
+            "revision": 8,
             "status": "active",
             "source": {
               "registry": "com.supabase/mcp",
-              "version": "0.17.0"
+              "version": "0.18.0"
             },
             "title": "Supabase",
             "summary": "Manage Supabase projects: query and change database tables, run migrations, read logs, and look up project settings.",
@@ -25814,17 +25814,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/supabase",
             "added_at": "2026-10-10T12:49:13Z",
-            "updated_at": "2026-11-14T19:44:57Z"
+            "updated_at": "2026-11-18T14:32:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-13T09:46:10.474672Z",
+          "publishedAt": "2026-11-17T18:07:45.178076Z",
           "status": "active",
-          "statusChangedAt": "2026-11-13T09:46:10.474672Z",
-          "updatedAt": "2026-11-13T09:46:10.474672Z"
+          "statusChangedAt": "2026-11-17T18:07:45.178076Z",
+          "updatedAt": "2026-11-17T18:07:45.178076Z"
         }
       }
     },
