@@ -1,10 +1,10 @@
 {
   "excluded_counts": {
-    "excluded_publisher": 1010,
-    "existing_catalog": 23,
+    "excluded_publisher": 1047,
+    "existing_catalog": 24,
     "existing_extension": 7,
-    "out_of_scope_transport": 21904,
-    "vendor_endpoint_not_reviewed": 43145
+    "out_of_scope_transport": 22090,
+    "vendor_endpoint_not_reviewed": 43643
   },
   "policy": "reviewed_vendor_only",
   "proposed_count": 1
