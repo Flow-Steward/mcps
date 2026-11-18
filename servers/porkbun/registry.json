@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-11-16T23:18:46.684865Z",
+      "publishedAt": "2026-11-18T01:30:37.229959Z",
       "status": "active",
-      "statusChangedAt": "2026-11-16T23:18:46.684865Z",
-      "updatedAt": "2026-11-16T23:18:46.684865Z"
+      "statusChangedAt": "2026-11-18T01:30:37.229959Z",
+      "updatedAt": "2026-11-18T01:30:37.229959Z"
     }
   },
   "server": {
@@ -39,7 +39,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "0.65.8"
+        "version": "0.65.14"
       }
     ],
     "remotes": [
@@ -53,7 +53,7 @@
       "url": "https://github.com/oborseth/Porkbun-MCP"
     },
     "title": "Porkbun (official)",
-    "version": "0.65.8",
+    "version": "0.65.14",
     "websiteUrl": "https://porkbun.com/mcp"
   }
 }
