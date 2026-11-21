@@ -1,29 +1,29 @@
 {
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "isLatest": true,
+      "publishedAt": "2026-11-18T15:37:01.882383Z",
+      "status": "active",
+      "statusChangedAt": "2026-11-18T15:37:01.882383Z",
+      "updatedAt": "2026-11-18T15:37:01.882383Z"
+    }
+  },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "description": "Automate workflows across 10,000+ apps. Run one-off actions or build automations with triggers.",
     "name": "com.zapier/mcp",
-    "description": "Hosted MCP server connecting AI assistants to 9,000+ apps and 40,000+ actions via Zapier.",
-    "title": "Zapier",
-    "repository": {
-      "url": "https://github.com/zapier/zapier-mcp",
-      "source": "github"
-    },
-    "version": "1.0.1",
-    "websiteUrl": "https://docs.zapier.com/mcp/home",
     "remotes": [
       {
         "type": "streamable-http",
         "url": "https://mcp.zapier.com/api/v1/connect"
       }
-    ]
-  },
-  "_meta": {
-    "io.modelcontextprotocol.registry/official": {
-      "status": "active",
-      "statusChangedAt": "2026-07-29T18:56:40.112909Z",
-      "publishedAt": "2026-07-29T18:56:40.112909Z",
-      "updatedAt": "2026-07-29T18:56:40.112909Z",
-      "isLatest": true
-    }
+    ],
+    "repository": {
+      "source": "github",
+      "url": "https://github.com/zapier/zapier-mcp"
+    },
+    "title": "Zapier",
+    "version": "1.0.2",
+    "websiteUrl": "https://docs.zapier.com/mcp/home"
   }
 }

@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://exa.ai/docs/reference/exa-mcp
 # Docs list three modes: keyless (free, rate-limited), OAuth via https://mcp.exa.ai/mcp?login, or API key in x-api-key header. Tools selectable via ?tools= query param.
-revision: 2
+revision: 3
 source:
   registry: ai.exa/exa
 title: Exa

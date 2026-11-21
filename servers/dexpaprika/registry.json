@@ -2,15 +2,31 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-11-13T16:43:30.775269Z",
+      "publishedAt": "2026-11-20T11:30:12.875682Z",
       "status": "active",
-      "statusChangedAt": "2026-11-13T16:43:30.775269Z",
-      "updatedAt": "2026-11-13T16:43:30.775269Z"
+      "statusChangedAt": "2026-11-20T11:30:12.875682Z",
+      "updatedAt": "2026-11-20T11:30:12.875682Z"
     }
   },
   "server": {
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
     "description": "DEX and on-chain data: liquidity pools, token prices, swaps, and trading volume.",
+    "icons": [
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "512x512"
+        ],
+        "src": "https://dexpaprika.com/android-chrome-512x512.png"
+      },
+      {
+        "mimeType": "image/png",
+        "sizes": [
+          "180x180"
+        ],
+        "src": "https://dexpaprika.com/apple-touch-icon.png"
+      }
+    ],
     "name": "com.dexpaprika/dexpaprika",
     "remotes": [
       {
@@ -27,7 +43,7 @@
       "url": "https://github.com/coinpaprika/dexpaprika-mcp"
     },
     "title": "DexPaprika",
-    "version": "2.12.1",
+    "version": "2.12.3",
     "websiteUrl": "https://docs.dexpaprika.com/ai-integration/hosted-mcp-server"
   }
 }
