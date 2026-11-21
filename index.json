@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-18.7954784b",
-  "published_at": "2026-11-18T14:32:41Z",
+  "catalog_revision": "2026-11-20.8740a3f6",
+  "published_at": "2026-11-20T14:21:41Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -899,7 +899,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.6.4"
+            "version": "2.6.6"
           }
         ],
         "remotes": [
@@ -912,15 +912,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.6.4",
+        "version": "2.6.6",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 17,
+            "revision": 18,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.6.4"
+              "version": "2.6.6"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -1091,17 +1091,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-18T14:32:41Z"
+            "updated_at": "2026-11-20T14:21:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-18T00:21:37.97506Z",
+          "publishedAt": "2026-11-20T00:19:17.758576Z",
           "status": "active",
-          "statusChangedAt": "2026-11-18T00:21:37.97506Z",
-          "updatedAt": "2026-11-18T00:21:37.97506Z"
+          "statusChangedAt": "2026-11-20T00:19:17.758576Z",
+          "updatedAt": "2026-11-20T00:19:17.758576Z"
         }
       }
     },
@@ -2259,16 +2259,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.178.0",
+        "version": "0.180.0",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 16,
+            "revision": 17,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.178.0"
+              "version": "0.180.0"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -2309,17 +2309,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-11-18T14:32:41Z"
+            "updated_at": "2026-11-20T14:21:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-18T13:28:18.028487Z",
+          "publishedAt": "2026-11-19T16:40:01.70797Z",
           "status": "active",
-          "statusChangedAt": "2026-11-18T13:28:18.028487Z",
-          "updatedAt": "2026-11-18T13:28:18.028487Z"
+          "statusChangedAt": "2026-11-19T16:40:01.70797Z",
+          "updatedAt": "2026-11-19T16:40:01.70797Z"
         }
       }
     },
@@ -7116,6 +7116,22 @@
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
         "description": "DEX and on-chain data: liquidity pools, token prices, swaps, and trading volume.",
+        "icons": [
+          {
+            "mimeType": "image/png",
+            "sizes": [
+              "512x512"
+            ],
+            "src": "https://dexpaprika.com/android-chrome-512x512.png"
+          },
+          {
+            "mimeType": "image/png",
+            "sizes": [
+              "180x180"
+            ],
+            "src": "https://dexpaprika.com/apple-touch-icon.png"
+          }
+        ],
         "name": "com.dexpaprika/dexpaprika",
         "remotes": [
           {
@@ -7132,16 +7148,16 @@
           "url": "https://github.com/coinpaprika/dexpaprika-mcp"
         },
         "title": "DexPaprika",
-        "version": "2.12.1",
+        "version": "2.12.3",
         "websiteUrl": "https://docs.dexpaprika.com/ai-integration/hosted-mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "dexpaprika",
-            "revision": 4,
+            "revision": 5,
             "status": "active",
             "source": {
               "registry": "com.dexpaprika/dexpaprika",
-              "version": "2.12.1"
+              "version": "2.12.3"
             },
             "title": "DexPaprika",
             "summary": "Look up DEX pools, token prices, OHLCV data, and transactions across blockchain networks.",
@@ -7178,17 +7194,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/dexpaprika",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-14T19:44:57Z"
+            "updated_at": "2026-11-20T14:21:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-13T16:43:30.775269Z",
+          "publishedAt": "2026-11-20T11:30:12.875682Z",
           "status": "active",
-          "statusChangedAt": "2026-11-13T16:43:30.775269Z",
-          "updatedAt": "2026-11-13T16:43:30.775269Z"
+          "statusChangedAt": "2026-11-20T11:30:12.875682Z",
+          "updatedAt": "2026-11-20T11:30:12.875682Z"
         }
       }
     },
@@ -7690,7 +7706,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.0.15"
+            "version": "2.0.16"
           }
         ],
         "remotes": [
@@ -7714,15 +7730,15 @@
           "source": "github",
           "url": "https://github.com/EduBase/MCP"
         },
-        "version": "2.0.15",
+        "version": "2.0.16",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "edubase",
-            "revision": 8,
+            "revision": 9,
             "status": "active",
             "source": {
               "registry": "io.github.EduBase/MCP",
-              "version": "2.0.15"
+              "version": "2.0.16"
             },
             "title": "EduBase",
             "summary": "Create and manage EduBase quizzes, exams, questions, users, and classes on the EduBase e-learning platform.",
@@ -7769,17 +7785,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/edubase",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-17T14:54:37Z"
+            "updated_at": "2026-11-20T14:21:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-16T23:24:29.867949Z",
+          "publishedAt": "2026-11-18T22:11:30.141475Z",
           "status": "active",
-          "statusChangedAt": "2026-11-16T23:24:29.867949Z",
-          "updatedAt": "2026-11-16T23:24:29.867949Z"
+          "statusChangedAt": "2026-11-18T22:11:30.141475Z",
+          "updatedAt": "2026-11-18T22:11:30.141475Z"
         }
       }
     },
@@ -8324,27 +8340,45 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "description": "Official Exa MCP for web search, content fetching, and multi-step research.",
+        "icons": [
+          {
+            "mimeType": "image/svg+xml",
+            "sizes": [
+              "any"
+            ],
+            "src": "https://exa.ai/images/logo/exa-logomark-blue.svg"
+          },
+          {
+            "mimeType": "image/png",
+            "sizes": [
+              "32x32"
+            ],
+            "src": "https://exa.ai/images/favicon-32x32.png"
+          }
+        ],
         "name": "ai.exa/exa",
-        "description": "Connect AI agents to Exa for web search, content fetching, and multi-step research.",
-        "repository": {
-          "url": "https://github.com/exa-labs/exa-mcp-server",
-          "source": "github"
-        },
-        "version": "3.4.1",
         "remotes": [
           {
             "type": "streamable-http",
             "url": "https://mcp.exa.ai/mcp"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/exa-labs/exa-mcp-server"
+        },
+        "title": "Exa",
+        "version": "3.5.1",
+        "websiteUrl": "https://exa.ai",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "exa",
-            "revision": 2,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "ai.exa/exa",
-              "version": "3.4.1"
+              "version": "3.5.1"
             },
             "title": "Exa",
             "summary": "Search the web, fetch page contents, and run research tasks with Exa's AI search engine.",
@@ -8388,17 +8422,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/exa",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-14T19:26:32Z"
+            "updated_at": "2026-11-20T14:21:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-11-19T20:45:09.888185Z",
           "status": "active",
-          "statusChangedAt": "2026-09-23T00:29:56.602357Z",
-          "publishedAt": "2026-09-23T00:29:56.602357Z",
-          "updatedAt": "2026-09-23T00:29:56.602357Z",
-          "isLatest": true
+          "statusChangedAt": "2026-11-19T20:45:09.888185Z",
+          "updatedAt": "2026-11-19T20:45:09.888185Z"
         }
       }
     },
@@ -9559,7 +9593,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "1.19.14"
+            "version": "1.19.17"
           }
         ],
         "remotes": [
@@ -9573,16 +9607,16 @@
           "url": "https://github.com/fulcradynamics/fulcra-context-mcp"
         },
         "title": "Fulcra",
-        "version": "1.19.14",
+        "version": "1.19.17",
         "websiteUrl": "https://fulcradynamics.com",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "fulcra-context",
-            "revision": 7,
+            "revision": 8,
             "status": "active",
             "source": {
               "registry": "com.fulcradynamics/context",
-              "version": "1.19.14"
+              "version": "1.19.17"
             },
             "title": "Fulcra Context",
             "summary": "Read your personal health, workout, sleep, location, and calendar data collected in Fulcra Context.",
@@ -9628,17 +9662,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/fulcra-context",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-14T19:26:32Z"
+            "updated_at": "2026-11-20T14:21:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-11T19:43:32.380465Z",
+          "publishedAt": "2026-11-19T18:12:25.471166Z",
           "status": "active",
-          "statusChangedAt": "2026-11-11T19:43:32.380465Z",
-          "updatedAt": "2026-11-11T19:43:32.380465Z"
+          "statusChangedAt": "2026-11-19T18:12:25.471166Z",
+          "updatedAt": "2026-11-19T18:12:25.471166Z"
         }
       }
     },
@@ -21787,7 +21821,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.65.14"
+            "version": "0.65.17"
           }
         ],
         "remotes": [
@@ -21801,16 +21835,16 @@
           "url": "https://github.com/oborseth/Porkbun-MCP"
         },
         "title": "Porkbun (official)",
-        "version": "0.65.14",
+        "version": "0.65.17",
         "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 12,
+            "revision": 13,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.65.14"
+              "version": "0.65.17"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -21854,17 +21888,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-18T14:32:41Z"
+            "updated_at": "2026-11-20T14:21:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-18T01:30:37.229959Z",
+          "publishedAt": "2026-11-18T20:18:44.180839Z",
           "status": "active",
-          "statusChangedAt": "2026-11-18T01:30:37.229959Z",
-          "updatedAt": "2026-11-18T01:30:37.229959Z"
+          "statusChangedAt": "2026-11-18T20:18:44.180839Z",
+          "updatedAt": "2026-11-18T20:18:44.180839Z"
         }
       }
     },
@@ -25731,7 +25765,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.18.0"
+            "version": "0.19.0"
           }
         ],
         "remotes": [
@@ -25746,16 +25780,16 @@
           "url": "https://github.com/supabase/mcp"
         },
         "title": "Supabase",
-        "version": "0.18.0",
+        "version": "0.19.0",
         "websiteUrl": "https://supabase.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "supabase",
-            "revision": 8,
+            "revision": 9,
             "status": "active",
             "source": {
               "registry": "com.supabase/mcp",
-              "version": "0.18.0"
+              "version": "0.19.0"
             },
             "title": "Supabase",
             "summary": "Manage Supabase projects: query and change database tables, run migrations, read logs, and look up project settings.",
@@ -25814,17 +25848,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/supabase",
             "added_at": "2026-10-10T12:49:13Z",
-            "updated_at": "2026-11-18T14:32:41Z"
+            "updated_at": "2026-11-20T14:21:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-17T18:07:45.178076Z",
+          "publishedAt": "2026-11-20T13:32:25.117929Z",
           "status": "active",
-          "statusChangedAt": "2026-11-17T18:07:45.178076Z",
-          "updatedAt": "2026-11-17T18:07:45.178076Z"
+          "statusChangedAt": "2026-11-20T13:32:25.117929Z",
+          "updatedAt": "2026-11-20T13:32:25.117929Z"
         }
       }
     },
@@ -29473,29 +29507,29 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "description": "Automate workflows across 10,000+ apps. Run one-off actions or build automations with triggers.",
         "name": "com.zapier/mcp",
-        "description": "Hosted MCP server connecting AI assistants to 9,000+ apps and 40,000+ actions via Zapier.",
-        "title": "Zapier",
-        "repository": {
-          "url": "https://github.com/zapier/zapier-mcp",
-          "source": "github"
-        },
-        "version": "1.0.1",
-        "websiteUrl": "https://docs.zapier.com/mcp/home",
         "remotes": [
           {
             "type": "streamable-http",
             "url": "https://mcp.zapier.com/api/v1/connect"
           }
         ],
+        "repository": {
+          "source": "github",
+          "url": "https://github.com/zapier/zapier-mcp"
+        },
+        "title": "Zapier",
+        "version": "1.0.2",
+        "websiteUrl": "https://docs.zapier.com/mcp/home",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "zapier",
-            "revision": 2,
+            "revision": 3,
             "status": "active",
             "source": {
               "registry": "com.zapier/mcp",
-              "version": "1.0.1"
+              "version": "1.0.2"
             },
             "title": "Zapier",
             "summary": "Run actions in thousands of apps connected to your Zapier account, such as sending emails or creating records.",
@@ -29543,17 +29577,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/zapier",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-14T19:26:32Z"
+            "updated_at": "2026-11-20T14:21:41Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2026-11-18T15:37:01.882383Z",
           "status": "active",
-          "statusChangedAt": "2026-07-29T18:56:40.112909Z",
-          "publishedAt": "2026-07-29T18:56:40.112909Z",
-          "updatedAt": "2026-07-29T18:56:40.112909Z",
-          "isLatest": true
+          "statusChangedAt": "2026-11-18T15:37:01.882383Z",
+          "updatedAt": "2026-11-18T15:37:01.882383Z"
         }
       }
     },
