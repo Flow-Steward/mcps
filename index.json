@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-22.eae42ec6",
-  "published_at": "2026-11-22T13:36:52Z",
+  "catalog_revision": "2026-11-22.c8876131",
+  "published_at": "2026-11-22T16:56:05Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -6594,15 +6594,15 @@
           },
           "io.github.flow-steward/catalog": {
             "id": "dchub",
-            "revision": 9,
+            "revision": 10,
             "status": "active",
             "source": {
               "registry": "cloud.dchub/mcp-server",
               "version": "2.12.61"
             },
             "title": "DC Hub",
-            "summary": "Query data-center power and grid data for site selection across more than 300 markets.",
-            "description": "Query data-center power and grid data for site selection across more than 300 markets. Use DCPI scores and energy data to compare locations and cite the underlying information. Free previews require no API key; paid plans can use an optional API key.",
+            "summary": "DC Hub is the orchestration layer for data center and energy intelligence.",
+            "description": "DC Hub is the orchestration layer for data center and energy intelligence. Start with execute_plan for questions about power, grid, interconnection queues, capacity, fiber, sites or markets; it chains the right tools and returns one dated, cited answer. It also publishes the Data Center Power Index (DCPI). DCHUB_API_KEY is optional.",
             "category": "data",
             "website_url": "https://dchub.cloud",
             "help_url": "https://dchub.cloud/connect",
@@ -6641,7 +6641,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/dchub",
             "added_at": "2026-11-07T14:21:09Z",
-            "updated_at": "2026-11-22T13:36:52Z"
+            "updated_at": "2026-11-22T16:56:05Z"
           }
         },
         "description": "Orchestration layer for data center and energy intelligence. execute_plan, DCPI, power grid, fiber.",
