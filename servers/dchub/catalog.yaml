@@ -1,7 +1,8 @@
 # Reviewed 2026-11-06: https://dchub.cloud/connect
-# Vendor connect page names https://dchub.cloud/mcp (Streamable HTTP). DCHUB_API_KEY is optional.
-# Probe saw OAuth metadata on several paths, but the documented primary remote is
-# the Streamable HTTP endpoint — docs win (same pattern as Autodesk Product Help / Blockscout).
+# Vendor connect page names https://dchub.cloud/mcp (Streamable HTTP). Free tier /
+# previews need no key; optional X-API-Key for paid plans. Probe saw OAuth metadata
+# on several paths, but the documented primary remote is keyless — docs win (same
+# pattern as Autodesk Product Help / Blockscout).
 revision: 9
 source:
   registry: cloud.dchub/mcp-server
