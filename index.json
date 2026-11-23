@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-22.c8876131",
-  "published_at": "2026-11-22T16:56:05Z",
+  "catalog_revision": "2026-11-23.a3db94ad",
+  "published_at": "2026-11-23T16:28:27Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -2259,16 +2259,16 @@
           "url": "https://github.com/messagebird/bird-ai"
         },
         "title": "Bird",
-        "version": "0.180.0",
+        "version": "0.181.0",
         "websiteUrl": "https://bird.com/docs/ai/mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "bird",
-            "revision": 17,
+            "revision": 18,
             "status": "active",
             "source": {
               "registry": "com.bird/mcp",
-              "version": "0.180.0"
+              "version": "0.181.0"
             },
             "title": "Bird",
             "summary": "Use Bird messaging and customer-platform tools from its official hosted MCP server.",
@@ -2309,17 +2309,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/bird",
             "added_at": "2026-10-29T05:53:42Z",
-            "updated_at": "2026-11-20T14:21:41Z"
+            "updated_at": "2026-11-23T16:28:27Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-19T16:40:01.70797Z",
+          "publishedAt": "2026-11-23T11:24:58.30827Z",
           "status": "active",
-          "statusChangedAt": "2026-11-19T16:40:01.70797Z",
-          "updatedAt": "2026-11-19T16:40:01.70797Z"
+          "statusChangedAt": "2026-11-23T11:24:58.30827Z",
+          "updatedAt": "2026-11-23T11:24:58.30827Z"
         }
       }
     },
@@ -6594,11 +6594,11 @@
           },
           "io.github.flow-steward/catalog": {
             "id": "dchub",
-            "revision": 10,
+            "revision": 11,
             "status": "active",
             "source": {
               "registry": "cloud.dchub/mcp-server",
-              "version": "2.12.61"
+              "version": "2.12.63"
             },
             "title": "DC Hub",
             "summary": "DC Hub is the orchestration layer for data center and energy intelligence.",
@@ -6641,7 +6641,7 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/dchub",
             "added_at": "2026-11-07T14:21:09Z",
-            "updated_at": "2026-11-22T16:56:05Z"
+            "updated_at": "2026-11-23T16:28:27Z"
           }
         },
         "description": "Orchestration layer for data center and energy intelligence. execute_plan, DCPI, power grid, fiber.",
@@ -6685,7 +6685,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.12.61"
+            "version": "2.12.63"
           }
         ],
         "remotes": [
@@ -6699,16 +6699,16 @@
           "url": "https://github.com/azmartone67/dchub-mcp-server"
         },
         "title": "DC Hub: Data Center & Energy Intelligence",
-        "version": "2.12.61",
+        "version": "2.12.63",
         "websiteUrl": "https://dchub.cloud"
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-22T10:39:40.382233Z",
+          "publishedAt": "2026-11-23T08:12:11.591972Z",
           "status": "active",
-          "statusChangedAt": "2026-11-22T10:39:40.382233Z",
-          "updatedAt": "2026-11-22T10:39:40.382233Z"
+          "statusChangedAt": "2026-11-23T08:12:11.591972Z",
+          "updatedAt": "2026-11-23T08:12:11.591972Z"
         }
       }
     },
