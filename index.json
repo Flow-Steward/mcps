@@ -1,7 +1,7 @@
 {
   "schema_version": "mcp_server_catalog/v1",
-  "catalog_revision": "2026-11-23.a3db94ad",
-  "published_at": "2026-11-23T16:28:27Z",
+  "catalog_revision": "2026-11-24.2a8dfa4f",
+  "published_at": "2026-11-24T16:22:32Z",
   "category_labels": {
     "ai": "AI",
     "cms": "CMS",
@@ -899,7 +899,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "2.6.6"
+            "version": "2.7.0"
           }
         ],
         "remotes": [
@@ -912,15 +912,15 @@
           "source": "github",
           "url": "https://github.com/appwrite/mcp"
         },
-        "version": "2.6.6",
+        "version": "2.7.0",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "appwrite",
-            "revision": 18,
+            "revision": 19,
             "status": "active",
             "source": {
               "registry": "io.github.appwrite/mcp",
-              "version": "2.6.6"
+              "version": "2.7.0"
             },
             "title": "Appwrite",
             "summary": "Manage Appwrite Cloud projects, databases, users, functions, storage, and messaging, and search the docs.",
@@ -1091,17 +1091,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/appwrite",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-20T14:21:41Z"
+            "updated_at": "2026-11-24T16:22:32Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-20T00:19:17.758576Z",
+          "publishedAt": "2026-11-24T13:34:04.044832Z",
           "status": "active",
-          "statusChangedAt": "2026-11-20T00:19:17.758576Z",
-          "updatedAt": "2026-11-20T00:19:17.758576Z"
+          "statusChangedAt": "2026-11-24T13:34:04.044832Z",
+          "updatedAt": "2026-11-24T13:34:04.044832Z"
         }
       }
     },
@@ -4016,40 +4016,40 @@
     {
       "server": {
         "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "io.github.clerk/mcp-server",
         "description": "Access Clerk authentication docs, SDK snippets, and quickstart guides",
-        "title": "Clerk",
-        "version": "0.1.0",
-        "websiteUrl": "https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server",
         "icons": [
           {
-            "src": "https://clerk.com/v2/downloads/symbol-light.svg",
             "mimeType": "image/svg+xml",
             "sizes": [
               "any"
             ],
+            "src": "https://clerk.com/v2/downloads/symbol-light.svg",
             "theme": "light"
           },
           {
-            "src": "https://clerk.com/v2/downloads/symbol-dark.svg",
             "mimeType": "image/svg+xml",
             "sizes": [
               "any"
             ],
+            "src": "https://clerk.com/v2/downloads/symbol-dark.svg",
             "theme": "dark"
           }
         ],
+        "name": "io.github.clerk/mcp-server",
         "remotes": [
           {
             "type": "streamable-http",
             "url": "https://mcp.clerk.com/mcp"
           }
         ],
+        "title": "Clerk",
+        "version": "0.1.0",
+        "websiteUrl": "https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "clerk",
-            "revision": 2,
-            "status": "active",
+            "revision": 3,
+            "status": "deprecated",
             "source": {
               "registry": "io.github.clerk/mcp-server",
               "version": "0.1.0"
@@ -4102,17 +4102,18 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/clerk",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-14T19:26:32Z"
+            "updated_at": "2026-11-24T16:22:32Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
-          "status": "active",
-          "statusChangedAt": "2026-03-09T21:12:24.707489Z",
+          "isLatest": true,
           "publishedAt": "2026-03-09T21:12:24.707489Z",
-          "updatedAt": "2026-03-09T21:12:24.707489Z",
-          "isLatest": true
+          "status": "deprecated",
+          "statusChangedAt": "2026-11-24T09:13:25.092412Z",
+          "statusMessage": "Moved to com.clerk/mcp",
+          "updatedAt": "2026-11-24T09:13:25.092412Z"
         }
       }
     },
@@ -21821,7 +21822,7 @@
             "transport": {
               "type": "stdio"
             },
-            "version": "0.65.18"
+            "version": "0.65.22"
           }
         ],
         "remotes": [
@@ -21835,16 +21836,16 @@
           "url": "https://github.com/oborseth/Porkbun-MCP"
         },
         "title": "Porkbun (official)",
-        "version": "0.65.18",
+        "version": "0.65.22",
         "websiteUrl": "https://porkbun.com/mcp",
         "_meta": {
           "io.github.flow-steward/catalog": {
             "id": "porkbun",
-            "revision": 14,
+            "revision": 15,
             "status": "active",
             "source": {
               "registry": "com.porkbun/mcp",
-              "version": "0.65.18"
+              "version": "0.65.22"
             },
             "title": "Porkbun",
             "summary": "Check domain availability and pricing, register and renew domains, and manage DNS, nameservers, and forwarding.",
@@ -21888,17 +21889,17 @@
             ],
             "entry_url": "https://github.com/Flow-Steward/mcps/tree/main/servers/porkbun",
             "added_at": "2026-10-11T15:37:11Z",
-            "updated_at": "2026-11-22T13:36:52Z"
+            "updated_at": "2026-11-24T16:22:32Z"
           }
         }
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
           "isLatest": true,
-          "publishedAt": "2026-11-20T22:36:35.048312Z",
+          "publishedAt": "2026-11-23T22:51:21.006842Z",
           "status": "active",
-          "statusChangedAt": "2026-11-20T22:36:35.048312Z",
-          "updatedAt": "2026-11-20T22:36:35.048312Z"
+          "statusChangedAt": "2026-11-23T22:51:21.006842Z",
+          "updatedAt": "2026-11-23T22:51:21.006842Z"
         }
       }
     },
