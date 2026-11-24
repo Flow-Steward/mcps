@@ -1,6 +1,6 @@
 # Reviewed 2026-10-10: https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server
 # Beta. Docs show a plain URL connection; the endpoint advertises OAuth (DCR) with Clerk account scopes. Content is mostly developer docs/snippets.
-revision: 2
+revision: 3
 source:
   registry: io.github.clerk/mcp-server
 title: Clerk
