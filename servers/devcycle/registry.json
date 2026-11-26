@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-10-14T18:43:08.982611Z",
+      "publishedAt": "2026-11-24T20:27:21.117237Z",
       "status": "active",
-      "statusChangedAt": "2026-10-14T18:43:08.982611Z",
-      "updatedAt": "2026-10-14T18:43:08.982611Z"
+      "statusChangedAt": "2026-11-24T20:27:21.117237Z",
+      "updatedAt": "2026-11-24T20:27:21.117237Z"
     }
   },
   "server": {
@@ -26,7 +26,7 @@
       "source": "github",
       "url": "https://github.com/DevCycleHQ/cli"
     },
-    "version": "6.6.1",
+    "version": "6.6.2",
     "websiteUrl": "https://docs.devcycle.com/cli-mcp/mcp-getting-started"
   }
 }
