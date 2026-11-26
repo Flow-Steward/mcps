@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-11-20T16:50:49.346086Z",
+      "publishedAt": "2026-11-24T22:41:44.939386Z",
       "status": "active",
-      "statusChangedAt": "2026-11-20T16:50:49.346086Z",
-      "updatedAt": "2026-11-20T16:50:49.346086Z"
+      "statusChangedAt": "2026-11-24T22:41:44.939386Z",
+      "updatedAt": "2026-11-24T22:41:44.939386Z"
     }
   },
   "server": {
@@ -28,7 +28,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "1.19.18"
+        "version": "1.19.19"
       }
     ],
     "remotes": [
@@ -42,7 +42,7 @@
       "url": "https://github.com/fulcradynamics/fulcra-context-mcp"
     },
     "title": "Fulcra",
-    "version": "1.19.18",
+    "version": "1.19.19",
     "websiteUrl": "https://fulcradynamics.com"
   }
 }
