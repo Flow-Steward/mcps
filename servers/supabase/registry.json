@@ -2,10 +2,10 @@
   "_meta": {
     "io.modelcontextprotocol.registry/official": {
       "isLatest": true,
-      "publishedAt": "2026-11-26T12:02:00.631688Z",
+      "publishedAt": "2026-11-26T19:57:10.671147Z",
       "status": "active",
-      "statusChangedAt": "2026-11-26T12:02:00.631688Z",
-      "updatedAt": "2026-11-26T12:02:00.631688Z"
+      "statusChangedAt": "2026-11-26T19:57:10.671147Z",
+      "updatedAt": "2026-11-26T19:57:10.671147Z"
     }
   },
   "server": {
@@ -107,7 +107,7 @@
         "transport": {
           "type": "stdio"
         },
-        "version": "0.20.0"
+        "version": "0.21.0"
       }
     ],
     "remotes": [
@@ -122,7 +122,7 @@
       "url": "https://github.com/supabase/mcp"
     },
     "title": "Supabase",
-    "version": "0.20.0",
+    "version": "0.21.0",
     "websiteUrl": "https://supabase.com/mcp"
   }
 }
